@@ -7,8 +7,34 @@ print("")
 
 -- Open the file
 file = "data/SlmodStats.lua"
-
 assert(loadfile(file))()
+
+-- [[
+    I want to start by creating some objects.  The first will be a object called pilot which will contain some basic information like
+    - pilotID,
+    - name,
+    - service,
+    - rank,
+    - primary squadron,
+    - secondary squadron,
+    - last flight, and
+    - total hours.
+]]
+
+
+
+-- [[
+    Next I want to have an object called logbook.  This will be unique to a pilot.  It will contain the following information:
+    - pilotID,
+    - name,
+    - typeTotal as an array of tuples:
+        - type
+        - total
+    - endorsements as another array:
+        - description
+        - name
+        - date
+]]
 
 -- Turn seconds into hours
 
