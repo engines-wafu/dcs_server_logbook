@@ -9,32 +9,69 @@ print("")
 file = "data/SlmodStats.lua"
 assert(loadfile(file))()
 
--- [[
-    I want to start by creating some objects.  The first will be a object called pilot which will contain some basic information like
-    - pilotID,
-    - name,
-    - service,
-    - rank,
-    - primary squadron,
-    - secondary squadron,
-    - last flight, and
-    - total hours.
-]]
+--  I want to start by creating some objects.  The first will be a object called pilot which will contain some basic information like
+--  - pilotID,
+--  - name,
+--  - service,
+--  - rank,
+--  - last flight, and
+--  - total hours.
+
+local function Pilot(pilotID, name, service, rank)
+    name = name or "Biggles"
+    return {
+        name = name,
+        pilotID = pilotID,
+        service = service,
+        rank = rank,
+    }
+end
+
+-- Test case for a new pilot called Engines:
+
+local pEngines = Pilot(nil, "Engines", "RN", "Lt")
+print(pEngines.rank .. " " .. pEngines.name .. " " .. pEngines.service)
+
+-- There are some pilot administration functions that we'll need to do, i.e. promote, move, change service.
+
+local function Promote(pilot, newRank)
+    pilot.rank = newRank
+end
+
+-- Test cases for some pilot administration
+
+Promote(pEngines, "Lt Cdr")
+print(pEngines.rank .. " " .. pEngines.name .. " " .. pEngines.service)
+
+-- We also need a squadron.  A squadron has a name, motto, aircraft, CO, and pilots
+
+local function Squadron(name, motto, co, pilots, aircraft)
+    name = name or "Biggles"
+    return {
+        name = name,
+        motto = motto,
+        co = co,
+        pilots = {},
+        aircraft = {}
+    }
+end
+
+-- Test case for a squadron
+
+s800NAS = Squadron("800 NAS", "", pEngines)
+print("The Commanding Officer of " .. s800NAS.name .. " is " .. s800NAS.co.name)
 
 
-
--- [[
-    Next I want to have an object called logbook.  This will be unique to a pilot.  It will contain the following information:
-    - pilotID,
-    - name,
-    - typeTotal as an array of tuples:
-        - type
-        - total
-    - endorsements as another array:
-        - description
-        - name
-        - date
-]]
+--  Next I want to have an object called logbook.  This will be unique to a pilot.  It will contain the following information:
+--  - pilotID,
+--  - name,
+--  - typeTotal as an array of tuples:
+--      - type
+--      - total
+--  - endorsements as another array:
+--      - description
+--      - name
+--      - date
 
 -- Turn seconds into hours
 
@@ -105,4 +142,4 @@ function parseStatsToLogbook(stats)
     end
 end
 
-parseStatsToLogbook(stats)
+-- parseStatsToLogbook(stats)
