@@ -7,9 +7,18 @@ print(" Starting the pilot management system")
 print(" Created by Engines, 2023")
 print("--------------------------------------------------\n")
 
--- Open the file
-file = "data/SlmodStatsSimple.lua"
-assert(loadfile(file))()
+local PILOTS_FILE_PATH = "data/pilots.lua"
+local SQUADRONS_FILE_PATH = "data/squadrons.lua"
+local STATS_FILE_PATH = "data/SlmodStats.lua"
+
+local success, slmodStatsContents = pcall(loadfile, STATS_FILE_PATH)
+
+if not success then
+    print("Error loading SlmodStats file: " .. slmodStatsContents)
+    return
+end
+
+slmodStatsContents()  -- Execute the loaded file
 
 --------------------------------------------------
 -- General functions
@@ -26,8 +35,30 @@ end
 -- Turn epoch date to human readable format
 
 function epochToDateString(epochTime)
-    local formattedDate = os.date("%Y-%m-%d %H:%M:%S", epochTime)
+    --local formattedDate = os.date("%Y-%m-%d %H:%M:%S", epochTime)
+    local formattedDate = os.date("%Y%m%d", epochTime)
     return formattedDate
+end
+
+-- Truncate the pilotIDs into something more manageable
+
+function truncatePilotID(pilotID)
+    return pilotID:sub(1, 4)
+end
+
+-- Get the pilot names from stats
+
+function grabPilotNames(stats)
+    local pilots = {}
+    for pilotID, pilotLog in pairs(stats) do
+        for logKey, logValue in pairs(pilotLog) do
+            if logKey == "names" then
+                local pilotName = logValue[#logValue]  -- Corrected: declare pilotName as local
+                pilots[pilotID] = pilotName
+            end
+        end
+    end
+    return pilots
 end
 
 --------------------------------------------------
@@ -142,11 +173,8 @@ end
 -- Read static information from files
 --------------------------------------------------
 
--- Specify the path to the pilots file
-local pilotsFilePath = "data/pilots.lua"
-
 -- Load the pilots file
-local pilotsFileContents, pilotsErrorMessage = loadfile(pilotsFilePath)
+local pilotsFileContents, pilotsErrorMessage = loadfile(PILOTS_FILE_PATH)
 
 -- Check if the file was loaded successfully
 if not pilotsFileContents then
@@ -157,11 +185,8 @@ end
 -- Execute the loaded file to get the pilots table
 local pilotsList = pilotsFileContents()
 
--- Specify the path to the squadrons file
-local squadronsFilePath = "data/squadrons.lua"
-
 -- Load the squadrons file
-local squadronsFileContents, squadronsErrorMessage = loadfile(squadronsFilePath)
+local squadronsFileContents, squadronsErrorMessage = loadfile(SQUADRONS_FILE_PATH)
 
 -- Check if the file was loaded successfully
 if not squadronsFileContents then
@@ -182,6 +207,71 @@ function getPilotInfoByID(pilotID)
     return nil  -- Pilot not found
 end
 
+function parseStatsForPilot(stats, pilotList, pilotID)
+    local pilotName = pilotList[pilotID]
+    if not pilotName then
+        print("Pilot with ID " .. pilotID .. " not found in the pilot list.")
+        return
+    end
+
+    local pilotLog = stats[pilotID]
+    if not pilotLog then
+        print("No logbook information found for pilot " .. pilotName)
+        return
+    end
+
+    local totalSeconds = 0
+    local lastJoinEpoch = 0
+
+    for logKey, logValue in pairs(pilotLog) do
+        if logKey == "times" then
+            for aircraftType, timeValue in pairs(logValue) do
+                for state, seconds in pairs(timeValue) do
+                    if state == "total" and seconds >= 600 then
+                        totalSeconds = totalSeconds + seconds
+                        --print("    " .. aircraftType .. ": " .. secToHours(seconds))
+                    end
+                end
+            end
+        elseif logKey == "lastJoin" then
+            lastJoinEpoch = logValue
+        end
+    end
+
+    print("    Total time: " .. secToHours(totalSeconds) .. ". Last flight: " .. epochToDateString(lastJoinEpoch))
+end
+
+function getListOfPilots(stats, outputFile)
+    local pilots = grabPilotNames(stats)
+
+    -- Open the CSV file for writing
+    local file = io.open(outputFile, "w")
+
+    -- Check if the file was opened successfully
+    if not file then
+        print("Error opening file for writing: " .. outputFile)
+        return
+    end
+
+    -- Write the header to the CSV file
+    file:write("PilotID, PilotName\n")
+
+    -- Write each pilot to the CSV file
+    for id, pilot in pairs(pilots) do
+        -- Check if the pilot name starts with "=" and omit it
+        if pilot:sub(1, 1) == "=" then
+            pilot = pilot:sub(2)  -- Remove the "="
+        end
+
+        file:write(id .. "," .. pilot .. "\n")
+    end
+
+    -- Close the file
+    file:close()
+
+    print("CSV file created successfully: " .. outputFile)
+end
+
 -- Display information about each squadron
 for _, squadron in ipairs(squadronsList) do
     print("Squadron Name: " .. squadron.name)
@@ -191,103 +281,25 @@ for _, squadron in ipairs(squadronsList) do
     -- Get and display commanding officer information
     local coInfo = getPilotInfoByID(squadron.co)
     if coInfo then
-        print("- Pilot ID: " .. coInfo.id .. ", Name: " .. coInfo.name .. ", Rank: " .. coInfo.rank .. ", Service: " .. coInfo.service)
+        print("- " .. coInfo.rank .. " " .. coInfo.name .. " " .. coInfo.service .. " [" .. truncatePilotID(coInfo.id) .. "]")
     else
         print("- None")
     end
 
-    print("Pilots in Squadron:")
+    print("Pilots:")
     for _, pilotID in ipairs(squadron.pilots) do
         local pilotInfo = getPilotInfoByID(pilotID)
         if pilotInfo then
-            print("- Pilot ID: " .. pilotInfo.id .. ", Name: " .. pilotInfo.name .. ", Rank: " .. pilotInfo.rank .. ", Service: " .. pilotInfo.service)
+            print("- " .. pilotInfo.rank .. " " .. pilotInfo.name .. " " .. pilotInfo.service .. " [" .. truncatePilotID(pilotInfo.id) .. "]")
+            parseStatsForPilot(stats, grabPilotNames(stats), pilotInfo.id)
         else
             print("- Pilot ID: " .. pilotID .. " (Pilot not found)")
-        end
+        end        
     end
-
-    print("----------------------")
+    print("--------------------------------------------------\n")
 end
 
---------------------------------------------------
--- Test cases
---------------------------------------------------
-
--- Display information about each pilot
--- for _, pilot in ipairs(pilotsList) do
---     print("Pilot ID: " .. pilot.id)
---     print("Name: " .. pilot.name)
---     print("Rank: " .. pilot.rank)
---     print("----------------------")
--- end
-
--- Example usage creating a Squadron:
--- local s_800NAS = Squadron.new("800 NAS", "Nunquam non-paratus")
-
--- Example usage creating a Pilot:
--- local p_Engines = Pilot.new("ea2dca05dc204673da916448f77f00f1", "Gavin Edwards", "Lt Cdr", "RN")
-
--- Example usage drafting a Pilot to the Squadron:
--- s_800NAS:draft(p_Engines)
-
--- Display the Squadron information
--- print("Squadron Name: " .. s_800NAS.name)
--- print("Motto: " .. s_800NAS.motto)
--- print("Commanding Officer: " .. (s_800NAS.co and s_800NAS.co.name or "None"))
--- print("Pilots in Squadron:")
--- for _, pilot in ipairs(s_800NAS.pilots) do
---     print("- " .. pilot.name)
--- end
-
--- Go through the file and grab the pilotIDs to associate with names.
--- Todo: create a table of only JSW IDs to cross reference
-
-function grabPilotNames(stats)
-    local pilots = {}
-    for pilotID, pilotLog in pairs(stats) do
-        for logKey, logValue in pairs(pilotLog) do
-            if logKey == "names" then
-                pilotName = logValue[#logValue]
-                pilots[pilotID] = pilotName
-            end
-        end
-    end
-    return pilots
-end
-
-function parseStatsToLogbook(stats)
-    for pilotID, pilotLog in pairs(stats) do
-        local totalSeconds = 0
-        local lastJoinEpoch = 0
-
-        local pilotName = grabPilotNames(stats)[pilotID]
-        print("Logbook information for pilot " .. pilotName)
-        print("--------------------------------------------------")
-        print("  PilotID: " .. pilotID)
-
-        for logKey, logValue in pairs(pilotLog) do
-            -- print(logKey) -- use this line to check what values are available.
-            if logKey == "times" then
-                for aircraftType, timeValue in pairs(logValue) do
-                    for state, seconds in pairs(timeValue) do
-                        -- print(state)
-                        if state == "total" and seconds >= 600 then
-                            totalSeconds = totalSeconds + seconds
-                            print("    " .. aircraftType .. ": " .. secToHours(seconds))
-                        end
-                    end
-                end
-            elseif logKey == "lastJoin" then
-                lastJoinEpoch = logValue
-            end
-        end
-
-        print("  Total time: " .. secToHours(totalSeconds))
-        print("  Last joined: " .. epochToDateString(lastJoinEpoch))
-        print("")
-    end
-end
-
-
-
-parseStatsToLogbook(stats)
+-- Example usage:
+--getListOfPilots(stats, "data/pilots_list.csv")
+--parseStatsToLogbook(stats, pilotsList)
+--parseStatsForPilot(stats, grabPilotNames(stats), "ea2dca05dc204673da916448f77f00f1")
