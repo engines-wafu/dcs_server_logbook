@@ -4,8 +4,8 @@
 
 local PILOTS_FILE_PATH = "data/pilots.lua"
 local SQUADRONS_FILE_PATH = "data/squadrons.lua"
-local STATS_FILE_PATH = "data/SlmodStats.lua"
 local HTML_OUTPUT_PATH = "html/index.html"
+local STATS_FILE_PATH = "data/SlmodStats.lua"
 
 print("\n--------------------------------------------------")
 print(" Starting the pilot management system")
