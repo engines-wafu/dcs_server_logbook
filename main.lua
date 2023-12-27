@@ -5,6 +5,7 @@
 local PILOTS_FILE_PATH = "data/pilots.lua"
 local SQUADRONS_FILE_PATH = "data/squadrons.lua"
 local STATS_FILE_PATH = "data/SlmodStats.lua"
+local HTML_OUTPUT_PATH = "html/index.html"
 
 print("\n--------------------------------------------------")
 print(" Starting the pilot management system")
@@ -260,7 +261,6 @@ function parseStatsForPilot(stats, pilotList, pilotID)
             lastJoinEpoch = logValue
         end
     end
-
     print("    Total time: " .. secToHours(totalSeconds) .. ". Kills: " .. noKills .. ". Currency: " .. daysElapsedSince(lastJoinEpoch) .. " days")
 end
 
@@ -332,31 +332,177 @@ function printPilotInfo(stats, pilotList, pilotID)
 end
 
 -- Display information about each squadron
-for _, squadron in ipairs(squadronsList) do
-    print("Squadron Name: " .. squadron.name)
-    print("Motto: " .. squadron.motto)
-    print("Commanding Officer:")
-    
-    -- Get and display commanding officer information
-    local coInfo = getPilotInfoByID(squadron.co)
-    if coInfo then
-        print("  " .. coInfo.rank .. " " .. coInfo.name .. " " .. coInfo.service .. " [" .. truncatePilotID(coInfo.id) .. "]")
-    else
-        print("- None")
+
+function outputSquadronData()
+    for _, squadron in ipairs(squadronsList) do
+        print("Squadron Name: " .. squadron.name)
+        print("Motto: " .. squadron.motto)
+        print("Commanding Officer:")
+
+        -- Get and display commanding officer information
+        local coInfo = getPilotInfoByID(squadron.co)
+        if coInfo then
+            print("  " .. coInfo.rank .. " " .. coInfo.name .. " " .. coInfo.service .. " [" .. truncatePilotID(coInfo.id) .. "]")
+        else
+            print("- None")
+        end
+
+        print("Pilots:")
+        for _, pilotID in ipairs(squadron.pilots) do
+            local pilotInfo = getPilotInfoByID(pilotID)
+            if pilotInfo then
+                print("  " .. pilotInfo.rank .. " " .. pilotInfo.name .. " " .. pilotInfo.service .. " [" .. truncatePilotID(pilotInfo.id) .. "]")
+                parseStatsForPilot(stats, grabPilotNames(stats), pilotInfo.id)
+            else
+                print("  Pilot ID: " .. pilotID .. " (Pilot not found)")
+            end        
+        end
+        print("--------------------------------------------------\n")
+    end
+end
+
+--------------------------------------------------
+-- HTML Output Functions
+--------------------------------------------------
+
+function parseStatsForPilotHTML(stats, pilotList, pilotID, includeTableTags)
+    local pilotInfo = getPilotInfoByID(pilotID)
+    if not pilotInfo then
+        return "<tr><td>" .. pilotID .. "</td><td colspan='3'>Pilot not found in the list</td></tr>\n"
     end
 
-    print("Pilots:")
-    for _, pilotID in ipairs(squadron.pilots) do
-        local pilotInfo = getPilotInfoByID(pilotID)
-        if pilotInfo then
-            print("  " .. pilotInfo.rank .. " " .. pilotInfo.name .. " " .. pilotInfo.service .. " [" .. truncatePilotID(pilotInfo.id) .. "]")
-            parseStatsForPilot(stats, grabPilotNames(stats), pilotInfo.id)
-        else
-            print("  Pilot ID: " .. pilotID .. " (Pilot not found)")
-        end        
+    local pilotLog = stats[pilotID]
+    if not pilotLog then
+        return "<tr><td>" .. pilotID .. "</td><td colspan='3'>No logbook information found for " .. pilotInfo.name .. "</td></tr>\n"
     end
-    print("--------------------------------------------------\n")
+
+    local totalSeconds = 0
+    local lastJoinEpoch = 0
+    local noKills = 0
+
+    for logKey, logValue in pairs(pilotLog) do
+        if logKey == "times" then
+            for aircraftType, timeValue in pairs(logValue) do
+                for key, val in pairs(timeValue) do
+                    if key == "total" and val >= 600 then
+                        totalSeconds = totalSeconds + val
+                    end
+                    if key == "weapons" then -- val will be each aircraft type
+                        for weaponType, weaponStat in pairs(val) do
+                            --print("Type: " .. weaponType)
+                            if type(weaponStat) == "table" then
+                                for killType, killCount in pairs(weaponStat) do
+                                    --print (killType .. ": " .. killCount)
+                                    if killType == "kills" then
+                                        noKills = noKills + killCount
+                                    end
+                                end
+                            end
+                        end
+                    end
+                end
+            end
+        elseif logKey == "lastJoin" then
+            lastJoinEpoch = logValue
+        end
+    end
+
+    local hours = secToHours(totalSeconds)
+    local currency = daysElapsedSince(lastJoinEpoch)
+    local backgroundColor = ""
+
+    -- Determine background color based on currency value
+    if currency > 30 then
+        backgroundColor = "red"
+    elseif currency > 14 then
+        backgroundColor = "orange"  -- Amber color needs to be defined in your CSS or use "orange"
+    end
+
+    -- Return a table row with columns for pilot name, hours, kills, and currency
+    local tableRow = "<tr><td>" .. pilotInfo.rank .. " " .. pilotInfo.name .. "</td><td>" .. hours .. "</td><td>" .. noKills .. "</td><td style='background-color:" .. backgroundColor .. "'>" .. currency .. " days</td></tr>\n"
+
+    if includeTableTags then
+        return tableRow
+    else
+        return "<ul>\n" .. tableRow .. "</ul>\n"
+    end
 end
+
+function outputSquadronDataHTML(stats)
+    local htmlContent = ""
+
+    for _, squadron in ipairs(squadronsList) do
+        htmlContent = htmlContent .. "<h2>Squadron: " .. squadron.name .. "</h2>\n"
+        htmlContent = htmlContent .. "<p>Motto: " .. squadron.motto .. "</p>\n"
+        htmlContent = htmlContent .. "<h3>Commanding Officer:</h3>\n"
+
+        -- Get and display commanding officer information
+        local coInfo = getPilotInfoByID(squadron.co)
+        if coInfo then
+            htmlContent = htmlContent .. "<p>&nbsp;&nbsp;" .. coInfo.rank .. " " .. coInfo.name .. " " .. coInfo.service .. " [" .. truncatePilotID(coInfo.id) .. "]</p>\n"
+        else
+            htmlContent = htmlContent .. "<p>&nbsp;&nbsp;None</p>\n"
+        end
+
+        htmlContent = htmlContent .. "<h3>Pilots:</h3>\n"
+        htmlContent = htmlContent .. "<table style='width:60%' border='1'>\n"
+        htmlContent = htmlContent .. "<tr><th>Name</th><th>Hours</th><th>Kills</th><th>Currency</th></tr>\n"
+
+        for _, pilotID in ipairs(squadron.pilots) do
+            local pilotInfo = getPilotInfoByID(pilotID)
+            if pilotInfo then
+                htmlContent = htmlContent .. parseStatsForPilotHTML(stats, grabPilotNames(stats), pilotInfo.id, true)
+            end
+        end
+
+        htmlContent = htmlContent .. "</table>\n"
+        htmlContent = htmlContent .. "<hr>\n"
+    end
+
+    return htmlContent
+end
+
+-- Function to generate HTML content
+function generateHTMLContent(stats, pilotList, pilotID)
+    local pilotName = "TEST PILOT"
+    local htmlContent = "<h1>Logbook information for JSW Pilots</h1>\n"
+
+    -- Add squadron data
+    htmlContent = htmlContent .. outputSquadronDataHTML(stats)
+
+    return htmlContent
+end
+
+-- Function to generate HTML file
+function generateHTMLFile(stats, pilotList, pilotID, outputFilePath)
+    local htmlContent = generateHTMLContent(stats, pilotList, pilotID)
+
+    -- Open the HTML file for writing
+    local file = io.open(outputFilePath, "w")
+
+    -- Check if the file was opened successfully
+    if not file then
+        print("Error opening file for writing: " .. outputFilePath)
+        return
+    end
+
+    -- Write HTML content to the file
+    file:write("<html>\n<head>\n<title>Pilot Logbook</title>\n</head>\n<body>\n")
+    file:write(htmlContent)
+    file:write("\n</body>\n</html>")
+
+    -- Close the file
+    file:close()
+
+    print("HTML file created successfully: " .. outputFilePath)
+end
+
+-- Example usage:
+--local stats = { -- your stats data here }
+--local pilotList = { -- your pilot list data here }
+local pilotID = "ea2dca05dc204673da916448f77f00f1" -- replace with the desired pilot ID
+generateHTMLFile(stats, pilotsList, pilotID, HTML_OUTPUT_PATH)
+
 
 -- Example usage:
 --getListOfPilots(stats, "data/pilots_list.csv")
