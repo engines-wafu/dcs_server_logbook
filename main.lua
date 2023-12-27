@@ -2,14 +2,14 @@
 -- PILOT MANAGEMENT SYSTEM
 --------------------------------------------------
 
+local PILOTS_FILE_PATH = "data/pilots.lua"
+local SQUADRONS_FILE_PATH = "data/squadrons.lua"
+local STATS_FILE_PATH = "data/SlmodStats.lua"
+
 print("\n--------------------------------------------------")
 print(" Starting the pilot management system")
 print(" Created by Engines, 2023")
 print("--------------------------------------------------\n")
-
-local PILOTS_FILE_PATH = "data/pilots.lua"
-local SQUADRONS_FILE_PATH = "data/squadrons.lua"
-local STATS_FILE_PATH = "data/SlmodStats.lua"
 
 local success, slmodStatsContents = pcall(loadfile, STATS_FILE_PATH)
 
@@ -24,20 +24,30 @@ slmodStatsContents()  -- Execute the loaded file
 -- General functions
 --------------------------------------------------
 
--- Some general functions, starting with turn seconds into hours
+-- Some general functions, starting with turning seconds into hours
 
 function secToHours(sec)
-    hours = sec / 3600
+    local hours = sec / 3600
     local roundedHours = math.floor(hours * 10 + 0.5) / 10  -- Round to one-tenth of an hour
     return roundedHours
 end
 
--- Turn epoch date to human readable format
+-- Turn epoch date to a human-readable format
 
 function epochToDateString(epochTime)
-    --local formattedDate = os.date("%Y-%m-%d %H:%M:%S", epochTime)
     local formattedDate = os.date("%Y%m%d", epochTime)
+    --local formattedDate = os.date("%Y-%m-%d %H:%M:%S", epochTime)
     return formattedDate
+end
+
+-- Days since a given epoch
+
+function daysElapsedSince(epochTime)
+    local currentTime = os.time()
+    local secondsElapsed = currentTime - epochTime
+    local daysElapsed = secondsElapsed / (24 * 3600)  -- Convert seconds to days
+    local roundedDays = math.floor(daysElapsed + 0.5)  -- Round to the nearest day
+    return roundedDays
 end
 
 -- Truncate the pilotIDs into something more manageable
@@ -92,13 +102,13 @@ function Pilot:promote(new_rank)
     self.rank = new_rank
 end
 
--- Method to set pilot's total hours
+-- Method to set the pilot's total hours
 function Pilot:loghours(new_seconds)
     print("Updating logbook total for " .. self.name .. " to " .. secToHours(new_seconds))
     self.time = new_seconds
 end
 
--- Method to set pilot's last flight
+-- Method to set the pilot's last flight
 function Pilot:lastflight(last_flight)
     print("Updating last flight for " .. self.name .. " to " .. last_flight)
     self.last_flight = last_flight
@@ -238,7 +248,8 @@ function parseStatsForPilot(stats, pilotList, pilotID)
         end
     end
 
-    print("    Total time: " .. secToHours(totalSeconds) .. ". Last flight: " .. epochToDateString(lastJoinEpoch))
+--    print("    Total time: " .. secToHours(totalSeconds) .. ". Last flight: " .. epochToDateString(lastJoinEpoch))
+    print("    Total time: " .. secToHours(totalSeconds) .. ". Currency: " .. daysElapsedSince(lastJoinEpoch) .. " days")
 end
 
 function getListOfPilots(stats, outputFile)
@@ -272,6 +283,42 @@ function getListOfPilots(stats, outputFile)
     print("CSV file created successfully: " .. outputFile)
 end
 
+function printPilotInfo(stats, pilotList, pilotID)
+    local pilotName = pilotList[pilotID]
+    if not pilotName then
+        print("Pilot with ID " .. pilotID .. " not found in the pilot list.")
+        return
+    end
+
+    local pilotLog = stats[pilotID]
+    if not pilotLog then
+        print("No logbook information found for pilot " .. pilotName)
+        return
+    end
+
+    print("Logbook information for pilot " .. pilotName)
+    print("--------------------------------------------------")
+
+    for logKey, logValue in pairs(pilotLog) do
+        --print(logKey)
+        if logKey == "times" then
+            print("Total Flight Times:")
+            for aircraftType, timeValue in pairs(logValue) do
+                for state, seconds in pairs(timeValue) do
+                    print(state)
+                    if state == "total" then
+                        print("  " .. aircraftType .. ": " .. secToHours(seconds))
+                    end
+                end
+            end
+        elseif logKey == "lastJoin" then
+            print("Last Joined: " .. epochToDateString(logValue))
+        end
+    end
+
+    print("--------------------------------------------------")
+end
+
 -- Display information about each squadron
 for _, squadron in ipairs(squadronsList) do
     print("Squadron Name: " .. squadron.name)
@@ -281,7 +328,7 @@ for _, squadron in ipairs(squadronsList) do
     -- Get and display commanding officer information
     local coInfo = getPilotInfoByID(squadron.co)
     if coInfo then
-        print("- " .. coInfo.rank .. " " .. coInfo.name .. " " .. coInfo.service .. " [" .. truncatePilotID(coInfo.id) .. "]")
+        print("  " .. coInfo.rank .. " " .. coInfo.name .. " " .. coInfo.service .. " [" .. truncatePilotID(coInfo.id) .. "]")
     else
         print("- None")
     end
@@ -290,10 +337,10 @@ for _, squadron in ipairs(squadronsList) do
     for _, pilotID in ipairs(squadron.pilots) do
         local pilotInfo = getPilotInfoByID(pilotID)
         if pilotInfo then
-            print("- " .. pilotInfo.rank .. " " .. pilotInfo.name .. " " .. pilotInfo.service .. " [" .. truncatePilotID(pilotInfo.id) .. "]")
+            print("  " .. pilotInfo.rank .. " " .. pilotInfo.name .. " " .. pilotInfo.service .. " [" .. truncatePilotID(pilotInfo.id) .. "]")
             parseStatsForPilot(stats, grabPilotNames(stats), pilotInfo.id)
         else
-            print("- Pilot ID: " .. pilotID .. " (Pilot not found)")
+            print("  Pilot ID: " .. pilotID .. " (Pilot not found)")
         end        
     end
     print("--------------------------------------------------\n")
@@ -303,3 +350,4 @@ end
 --getListOfPilots(stats, "data/pilots_list.csv")
 --parseStatsToLogbook(stats, pilotsList)
 --parseStatsForPilot(stats, grabPilotNames(stats), "ea2dca05dc204673da916448f77f00f1")
+printPilotInfo(stats, grabPilotNames(stats), "1a1cba06dd0066c82910007ab36a3c1f")
