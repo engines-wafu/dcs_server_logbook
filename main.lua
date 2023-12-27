@@ -85,7 +85,7 @@ local Pilot = {
 }
 
 -- Constructor function for creating a new pilot object
-function Pilot.new(pilotID, name, rank, service, time, last_flight)
+function Pilot.new(pilotID, name, rank, service, time, last_flight, kills)
     local self = setmetatable({}, { __index = Pilot })
     self.pilotID = pilotID or ""
     self.name = name or ""
@@ -93,6 +93,7 @@ function Pilot.new(pilotID, name, rank, service, time, last_flight)
     self.service = service or ""
     self.time = time or 0
     self.last_flight = last_flight or 0
+    self.kills = kills or 0
     return self
 end
 
@@ -113,8 +114,6 @@ function Pilot:lastflight(last_flight)
     print("Updating last flight for " .. self.name .. " to " .. last_flight)
     self.last_flight = last_flight
 end
-
--- We also need a squadron.  A squadron has a name, motto, aircraft, CO, and pilots
 
 --------------------------------------------------
 -- Aircraft objects
@@ -232,14 +231,28 @@ function parseStatsForPilot(stats, pilotList, pilotID)
 
     local totalSeconds = 0
     local lastJoinEpoch = 0
+    local noKills = 0
 
     for logKey, logValue in pairs(pilotLog) do
         if logKey == "times" then
             for aircraftType, timeValue in pairs(logValue) do
-                for state, seconds in pairs(timeValue) do
-                    if state == "total" and seconds >= 600 then
-                        totalSeconds = totalSeconds + seconds
+                for key, val in pairs(timeValue) do
+                    if key == "total" and val >= 600 then
+                        totalSeconds = totalSeconds + val
                         --print("    " .. aircraftType .. ": " .. secToHours(seconds))
+                    end
+                    if key == "weapons" then -- val will be each aircraft type
+                        for weaponType, weaponStat in pairs(val) do
+                            --print("Type: " .. weaponType)
+                            if type(weaponStat) == "table" then
+                                for killType, killCount in pairs(weaponStat) do
+                                    --print (killType .. ": " .. killCount)
+                                    if killType == "kills" then
+                                        noKills = noKills + killCount
+                                    end
+                                end
+                            end
+                        end
                     end
                 end
             end
@@ -248,8 +261,7 @@ function parseStatsForPilot(stats, pilotList, pilotID)
         end
     end
 
---    print("    Total time: " .. secToHours(totalSeconds) .. ". Last flight: " .. epochToDateString(lastJoinEpoch))
-    print("    Total time: " .. secToHours(totalSeconds) .. ". Currency: " .. daysElapsedSince(lastJoinEpoch) .. " days")
+    print("    Total time: " .. secToHours(totalSeconds) .. ". Kills: " .. noKills .. ". Currency: " .. daysElapsedSince(lastJoinEpoch) .. " days")
 end
 
 function getListOfPilots(stats, outputFile)
@@ -350,4 +362,4 @@ end
 --getListOfPilots(stats, "data/pilots_list.csv")
 --parseStatsToLogbook(stats, pilotsList)
 --parseStatsForPilot(stats, grabPilotNames(stats), "ea2dca05dc204673da916448f77f00f1")
-printPilotInfo(stats, grabPilotNames(stats), "1a1cba06dd0066c82910007ab36a3c1f")
+--printPilotInfo(stats, grabPilotNames(stats), "1a1cba06dd0066c82910007ab36a3c1f")
