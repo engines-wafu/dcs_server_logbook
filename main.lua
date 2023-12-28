@@ -2,15 +2,16 @@
 -- PILOT MANAGEMENT SYSTEM
 --------------------------------------------------
 
-local PILOTS_FILE_PATH = "data/pilots.lua"
-local SQUADRONS_FILE_PATH = "data/squadrons.lua"
-local HTML_OUTPUT_PATH = "html/index.html"
-local STATS_FILE_PATH = "data/SlmodStats.lua"
-
 print("\n--------------------------------------------------")
 print(" Starting the pilot management system")
 print(" Created by Engines, 2023")
 print("--------------------------------------------------\n")
+
+local PILOTS_FILE_PATH = "data/pilots.lua"
+local SQUADRONS_FILE_PATH = "data/squadrons.lua"
+local STATS_FILE_PATH = "data/SlmodStats_server1.lua"
+local HTML_OUTPUT_PATH = "html/index.html"
+local THRESHOLD_SECONDS = 1
 
 local success, slmodStatsContents = pcall(loadfile, STATS_FILE_PATH)
 
@@ -19,58 +20,13 @@ if not success then
     return
 end
 
-slmodStatsContents()  -- Execute the loaded file
+slmodStatsContents() -- Execute the loaded file
 
 --------------------------------------------------
 -- General functions
 --------------------------------------------------
 
--- Some general functions, starting with turning seconds into hours
-
-function secToHours(sec)
-    local hours = sec / 3600
-    local roundedHours = math.floor(hours * 10 + 0.5) / 10  -- Round to one-tenth of an hour
-    return roundedHours
-end
-
--- Turn epoch date to a human-readable format
-
-function epochToDateString(epochTime)
-    local formattedDate = os.date("%Y%m%d", epochTime)
-    --local formattedDate = os.date("%Y-%m-%d %H:%M:%S", epochTime)
-    return formattedDate
-end
-
--- Days since a given epoch
-
-function daysElapsedSince(epochTime)
-    local currentTime = os.time()
-    local secondsElapsed = currentTime - epochTime
-    local daysElapsed = secondsElapsed / (24 * 3600)  -- Convert seconds to days
-    local roundedDays = math.floor(daysElapsed + 0.5)  -- Round to the nearest day
-    return roundedDays
-end
-
--- Truncate the pilotIDs into something more manageable
-
-function truncatePilotID(pilotID)
-    return pilotID:sub(1, 4)
-end
-
--- Get the pilot names from stats
-
-function grabPilotNames(stats)
-    local pilots = {}
-    for pilotID, pilotLog in pairs(stats) do
-        for logKey, logValue in pairs(pilotLog) do
-            if logKey == "names" then
-                local pilotName = logValue[#logValue]  -- Corrected: declare pilotName as local
-                pilots[pilotID] = pilotName
-            end
-        end
-    end
-    return pilots
-end
+local utils = require("src.utils")
 
 --------------------------------------------------
 -- Pilot objects
@@ -106,7 +62,7 @@ end
 
 -- Method to set the pilot's total hours
 function Pilot:loghours(new_seconds)
-    print("Updating logbook total for " .. self.name .. " to " .. secToHours(new_seconds))
+    print("Updating logbook total for " .. self.name .. " to " .. utils.secToHours(new_seconds))
     self.time = new_seconds
 end
 
@@ -144,6 +100,7 @@ end
 local Squadron = {
     name = "",
     motto = "",
+    type = "",
     aircraft = {},
     co = nil,  -- Commanding Officer (initially nil)
     pilots = {}
@@ -154,6 +111,7 @@ function Squadron.new(name, motto)
     local self = setmetatable({}, { __index = Squadron })
     self.name = name or ""
     self.motto = motto or ""
+    self.type = type or ""
     self.aircraft = {}
     self.co = nil
     self.pilots = {}
@@ -238,9 +196,9 @@ function parseStatsForPilot(stats, pilotList, pilotID)
         if logKey == "times" then
             for aircraftType, timeValue in pairs(logValue) do
                 for key, val in pairs(timeValue) do
-                    if key == "total" and val >= 600 then
+                    if key == "total" and val >= THRESHOLD_SECONDS then
                         totalSeconds = totalSeconds + val
-                        --print("    " .. aircraftType .. ": " .. secToHours(seconds))
+                        --print("    " .. aircraftType .. ": " .. utils.secToHours(seconds))
                     end
                     if key == "weapons" then -- val will be each aircraft type
                         for weaponType, weaponStat in pairs(val) do
@@ -261,11 +219,11 @@ function parseStatsForPilot(stats, pilotList, pilotID)
             lastJoinEpoch = logValue
         end
     end
-    print("    Total time: " .. secToHours(totalSeconds) .. ". Kills: " .. noKills .. ". Currency: " .. daysElapsedSince(lastJoinEpoch) .. " days")
+    print("    Total time: " .. utils.secToHours(totalSeconds) .. ". Kills: " .. noKills .. ". Currency: " .. utils.daysElapsedSince(lastJoinEpoch) .. " days")
 end
 
 function getListOfPilots(stats, outputFile)
-    local pilots = grabPilotNames(stats)
+    local pilots = utils.grabPilotNames(stats)
 
     -- Open the CSV file for writing
     local file = io.open(outputFile, "w")
@@ -317,14 +275,14 @@ function printPilotInfo(stats, pilotList, pilotID)
             print("Total Flight Times:")
             for aircraftType, timeValue in pairs(logValue) do
                 for state, seconds in pairs(timeValue) do
-                    print(state)
+                    --print(state)
                     if state == "total" then
-                        print("  " .. aircraftType .. ": " .. secToHours(seconds))
+                        print("  " .. aircraftType .. ": " .. utils.secToHours(seconds))
                     end
                 end
             end
         elseif logKey == "lastJoin" then
-            print("Last Joined: " .. epochToDateString(logValue))
+            print("Last Joined: " .. utils.epochToDateString(logValue))
         end
     end
 
@@ -342,7 +300,7 @@ function outputSquadronData()
         -- Get and display commanding officer information
         local coInfo = getPilotInfoByID(squadron.co)
         if coInfo then
-            print("  " .. coInfo.rank .. " " .. coInfo.name .. " " .. coInfo.service .. " [" .. truncatePilotID(coInfo.id) .. "]")
+            print("  " .. coInfo.rank .. " " .. coInfo.name .. " " .. coInfo.service .. " [" .. utils.truncatePilotID(coInfo.id) .. "]")
         else
             print("- None")
         end
@@ -351,8 +309,8 @@ function outputSquadronData()
         for _, pilotID in ipairs(squadron.pilots) do
             local pilotInfo = getPilotInfoByID(pilotID)
             if pilotInfo then
-                print("  " .. pilotInfo.rank .. " " .. pilotInfo.name .. " " .. pilotInfo.service .. " [" .. truncatePilotID(pilotInfo.id) .. "]")
-                parseStatsForPilot(stats, grabPilotNames(stats), pilotInfo.id)
+                print("  " .. pilotInfo.rank .. " " .. pilotInfo.name .. " " .. pilotInfo.service .. " [" .. utils.truncatePilotID(pilotInfo.id) .. "]")
+                parseStatsForPilot(stats, utils.grabPilotNames(stats), pilotInfo.id)
             else
                 print("  Pilot ID: " .. pilotID .. " (Pilot not found)")
             end        
@@ -365,7 +323,7 @@ end
 -- HTML Output Functions
 --------------------------------------------------
 
-function parseStatsForPilotHTML(stats, pilotList, pilotID, includeTableTags)
+function parseStatsForPilotHTML(stats, pilotList, pilotID, includeTableTags, sqnType)
     local pilotInfo = getPilotInfoByID(pilotID)
     if not pilotInfo then
         return "<tr><td>" .. pilotID .. "</td><td colspan='3'>Pilot not found in the list</td></tr>\n"
@@ -373,16 +331,18 @@ function parseStatsForPilotHTML(stats, pilotList, pilotID, includeTableTags)
 
     local pilotLog = stats[pilotID]
     if not pilotLog then
-        return "<tr><td>" .. pilotID .. "</td><td colspan='3'>No logbook information found for " .. pilotInfo.name .. "</td></tr>\n"
+        return "<tr><td>" .. pilotInfo.rank .. " " .. pilotInfo.name .. "</td><td colspan='4'>No logbook information found for " .. pilotInfo.name .. "</td></tr>\n"
     end
 
     local totalSeconds = 0
+    local primarySeconds = 0
     local lastJoinEpoch = 0
     local noKills = 0
 
     for logKey, logValue in pairs(pilotLog) do
         if logKey == "times" then
             for aircraftType, timeValue in pairs(logValue) do
+                --print(aircraftType)
                 for key, val in pairs(timeValue) do
                     if key == "total" and val >= 600 then
                         totalSeconds = totalSeconds + val
@@ -401,25 +361,44 @@ function parseStatsForPilotHTML(stats, pilotList, pilotID, includeTableTags)
                         end
                     end
                 end
+                if sqnType then
+                    -- Here we are trying to find any time logged specifically to the squadron aircraft type.
+                    -- If success, then primarySeconds are added.
+                    local prefix = (sqnType)
+                    --print("P: " .. pilotInfo.name .. "... Looking for type starting with: " .. prefix .. ". Logged type is: " .. aircraftType)
+                    if utils.starts_with(aircraftType, prefix) then
+                        for key, val in pairs(timeValue) do
+                            if key == "total" and val >= 600 then
+                                primarySeconds = primarySeconds + val
+                            end
+                        end
+                        --print("MATCH!  Primary time: " .. utils.secToHours(primarySeconds))
+                    else
+                        --print("No good match")
+                    end
+                end
             end
         elseif logKey == "lastJoin" then
             lastJoinEpoch = logValue
         end
     end
 
-    local hours = secToHours(totalSeconds)
-    local currency = daysElapsedSince(lastJoinEpoch)
+    local hours = utils.secToHours(totalSeconds)
+    local primary_hours = utils.secToHours(primarySeconds)
+    local currency = utils.daysElapsedSince(lastJoinEpoch)
     local backgroundColor = ""
 
     -- Determine background color based on currency value
-    if currency > 30 then
+    if currency > 90 then
+        backgroundColor = "gray"
+    elseif currency > 30 then
         backgroundColor = "red"
     elseif currency > 14 then
         backgroundColor = "orange"  -- Amber color needs to be defined in your CSS or use "orange"
     end
 
     -- Return a table row with columns for pilot name, hours, kills, and currency
-    local tableRow = "<tr><td>" .. pilotInfo.rank .. " " .. pilotInfo.name .. "</td><td>" .. hours .. "</td><td>" .. noKills .. "</td><td style='background-color:" .. backgroundColor .. "'>" .. currency .. " days</td></tr>\n"
+    local tableRow = "<tr><td>" .. pilotInfo.rank .. " " .. pilotInfo.name .. "</td><td>" .. primary_hours .. "</td><td>" .. hours .. "</td><td>" .. noKills .. "</td><td style='background-color:" .. backgroundColor .. "'>" .. currency .. " days</td></tr>\n"
 
     if includeTableTags then
         return tableRow
@@ -432,26 +411,30 @@ function outputSquadronDataHTML(stats)
     local htmlContent = ""
 
     for _, squadron in ipairs(squadronsList) do
+
         htmlContent = htmlContent .. "<h2>Squadron: " .. squadron.name .. "</h2>\n"
         htmlContent = htmlContent .. "<p>Motto: " .. squadron.motto .. "</p>\n"
+        if squadron.type then
+            htmlContent = htmlContent .. "<p>Aircraft Type: " .. squadron.type .. "</p>\n"
+        end
         htmlContent = htmlContent .. "<h3>Commanding Officer:</h3>\n"
 
         -- Get and display commanding officer information
         local coInfo = getPilotInfoByID(squadron.co)
         if coInfo then
-            htmlContent = htmlContent .. "<p>&nbsp;&nbsp;" .. coInfo.rank .. " " .. coInfo.name .. " " .. coInfo.service .. " [" .. truncatePilotID(coInfo.id) .. "]</p>\n"
+            htmlContent = htmlContent .. "<p>&nbsp;&nbsp;" .. coInfo.rank .. " " .. coInfo.name .. " " .. coInfo.service .. " [" .. coInfo.id .. "]</p>\n"
         else
             htmlContent = htmlContent .. "<p>&nbsp;&nbsp;None</p>\n"
         end
 
         htmlContent = htmlContent .. "<h3>Pilots:</h3>\n"
         htmlContent = htmlContent .. "<table style='width:60%' border='1'>\n"
-        htmlContent = htmlContent .. "<tr><th>Name</th><th>Hours</th><th>Kills</th><th>Currency</th></tr>\n"
+        htmlContent = htmlContent .. "<tr><th style='width:30%'>Name</th><th style='width:10%'>Primary hours</th><th style='width:10%'>Total hours</th><th style='width:10%'>Kills</th><th style='width:10%'>Currency</th></tr>\n"
 
         for _, pilotID in ipairs(squadron.pilots) do
             local pilotInfo = getPilotInfoByID(pilotID)
             if pilotInfo then
-                htmlContent = htmlContent .. parseStatsForPilotHTML(stats, grabPilotNames(stats), pilotInfo.id, true)
+                htmlContent = htmlContent .. parseStatsForPilotHTML(stats, utils.grabPilotNames(stats), pilotInfo.id, true, squadron.type)
             end
         end
 
@@ -464,8 +447,9 @@ end
 
 -- Function to generate HTML content
 function generateHTMLContent(stats, pilotList, pilotID)
-    local pilotName = "TEST PILOT"
     local htmlContent = "<h1>Logbook information for JSW Pilots</h1>\n"
+    htmlContent = htmlContent .. "<h2>Server log: " .. STATS_FILE_PATH .. "</h2>\n"
+
 
     -- Add squadron data
     htmlContent = htmlContent .. outputSquadronDataHTML(stats)
@@ -494,18 +478,16 @@ function generateHTMLFile(stats, pilotList, pilotID, outputFilePath)
     -- Close the file
     file:close()
 
-    print("HTML file created successfully: " .. outputFilePath)
+    print("HTML file created successfully: " .. outputFilePath .. "\n")
 end
+
+generateHTMLFile(stats, pilotsList, pilotID, HTML_OUTPUT_PATH)
 
 -- Example usage:
 --local stats = { -- your stats data here }
 --local pilotList = { -- your pilot list data here }
-local pilotID = "ea2dca05dc204673da916448f77f00f1" -- replace with the desired pilot ID
-generateHTMLFile(stats, pilotsList, pilotID, HTML_OUTPUT_PATH)
-
-
--- Example usage:
+--local pilotID = "ea2dca05dc204673da916448f77f00f1" -- replace with the desired pilot ID
 --getListOfPilots(stats, "data/pilots_list.csv")
 --parseStatsToLogbook(stats, pilotsList)
---parseStatsForPilot(stats, grabPilotNames(stats), "ea2dca05dc204673da916448f77f00f1")
---printPilotInfo(stats, grabPilotNames(stats), "1a1cba06dd0066c82910007ab36a3c1f")
+--parseStatsForPilot(stats, utils.grabPilotNames(stats), "d924195f7dfe499a192c11f00489df4a")
+printPilotInfo(stats, utils.grabPilotNames(stats), "db0d1a3afa403f1e41991e71ebd9f384")

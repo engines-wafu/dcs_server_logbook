@@ -23,10 +23,18 @@ return {
     {id = "e97263dc4e93acc39e37d4b76054c16c", name = "Swift One", rank = "Flt Lt", service = "RAF"},
     {id = "880046c63693ceeee0727f5e56209ae4", name = "Scooby", rank = "Flt Lt", service = "RAF"},
     -- SO4
-    {id = "915811de9b95ea8f1496085b5a833cb5", name = "Skuba", rank = "Lt", service = "AAC"},
     {id = "d30a8bc09f9e453798bfc601e9f607c6", name = "Madog", rank = "S/Lt", service = "RN"},
+    {id = "168ad57dbcf420e400e1175b6b461974", name = "Obic", rank = "S/Lt", service = "RN"},
+    {id = "eba02d205566d321799ab513188ddcd7", name = "Mort", rank = "S/Lt", service = "RN"},
+    {id = "33088421d26097eef47da9a002488516", name = "Spanner", rank = "S/Lt", service = "RN"},
+    {id = "915811de9b95ea8f1496085b5a833cb5", name = "Skuba", rank = "Lt", service = "AAC"},
+    {id = "e698907134a269f5ee2c4155cb589540", name = "DJ", rank = "Lt", service = "AAC"},
     {id = "1ae5c656623ee0792397970e46ed00ad", name = "Hawk", rank = "Plt Off", service = "RAF"},
     {id = "b564266749ac14a3fe3e5df7d29cf243", name = "Blythe", rank = "Plt Off", service = "RAF"},
     {id = "e5ad0b08b97038d7c064b3d64943a324", name = "Liminal", rank = "Plt Off", service = "RAF"},
     {id = "520d768a67604b6328ecc5c6cd829fc5", name = "Falcon", rank = "Plt Off", service = "RAF"},
+    {id = "66e4049ecc6c5fe805362d0088023edf", name = "Funky", rank = "Plt Off", service = "RAF"},
+    {id = "fd287e3dabf2b4645499972792ebba30", name = "Steph", rank = "Plt Off", service = "RAF"},
+    -- SO5
+    {id = "7567ee520811f12f54cd2471c4ff0016", name = "Cowan", rank = "2Lt", service = "AAC"},
 }
