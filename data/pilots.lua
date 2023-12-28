@@ -1,9 +1,9 @@
 return {
     -- SO1
-    {id = "813759da956084866e9e72540e544b68", name = "Razor", rank = "Wg Cdr", service = "RAF"},
+    {id = "813759da956084866e9e72540e544b68", name = "Razor", rank = "Wg Cdr", service = "RAF", awards = {"Test: DFC","Test: VC"}},
     {id = "e473f6817732c53fd33b3b5b923bb3b8", name = "Dangerman", rank = "Wg Cdr", service = "RAF"},
     -- SO2
-    {id = "ea2dca05dc204673da916448f77f00f1", name = "Engines", rank = "Lt Cdr", service = "RN"},
+    {id = "ea2dca05dc204673da916448f77f00f1", name = "Engines", rank = "Lt Cdr", service = "RN", quals = {"CQ Day", "CQ Night"}},
     {id = "d924195f7dfe499a192c11f00489df4a", name = "Mailman", rank = "Lt Cdr", service = "RN"},
     {id = "c82a053e0cc44ca3fafbcd435609b6e9", name = "Duke", rank = "Lt Cdr", service = "RN"},
     {id = "88dae793ecd2d2ed030fbd6bca2297f7", name = "Gimbal", rank = "Maj", service = "AAC"},

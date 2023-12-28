@@ -70,6 +70,8 @@ local Pilot = {
     name = "",
     rank = "",
     service = "",
+    awards = "",
+    quals = "",
     hours = 0
 }
 
@@ -476,7 +478,7 @@ end
 
 -- Function to generate HTML content
 function generateHTMLContent(stats, pilotList, pilotID)
-    local htmlContent = "<h1>Logbook information for JSW Pilots</h1>\n"
+    local htmlContent = "<h1>Joint Strike Wing Squadron Dashboard</h1>\n"
     --htmlContent = htmlContent .. "<h2>Server log: " .. STATS_FILE_PATH .. "</h2>\n"
 
 
@@ -500,8 +502,10 @@ function generateHTMLFile(stats, pilotList, pilotID, outputFilePath)
     end
 
     -- Write HTML content to the file
-    file:write("<html>\n<head>\n<title>Pilot Logbook</title>\n</head>\n<body>\n")
+    file:write("<html>\n<head>\n<title>Pilot Logbook</title>\n<link rel='stylesheet' type='text/css' href='styles.css'>\n</head>\n<body>\n")
+    file:write("<div class='container'>")
     file:write(htmlContent)
+    file:write("</div>")
     file:write("\n</body>\n</html>")
 
     -- Close the file

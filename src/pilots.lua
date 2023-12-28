@@ -31,6 +31,24 @@ function pilotsModule.generatePilotHTML(stats, pilotList, pilotID, outputFilePat
     htmlContent = htmlContent .. "<p>Pilot Service: " .. pilotInfo.service .. "</p>\n"
     htmlContent = htmlContent .. "<p>Pilot Rank: " .. pilotInfo.rank .. "</p>\n"
     htmlContent = htmlContent .. "<p>Pilot Name: " .. pilotInfo.name .. "</p>\n"
+    htmlContent = htmlContent .. "<h2>Qualifications</h2>\n"
+    if pilotInfo.quals then
+        for _, qual in ipairs(pilotInfo.quals) do
+            htmlContent = htmlContent .. "<li>" .. qual .. "</li>\n"
+        end
+        htmlContent = htmlContent .. "</ul>\n"
+    else
+        htmlContent = htmlContent .. "No qualifications logged.\n"
+    end
+    htmlContent = htmlContent .. "<h2>Awards</h2>\n"
+    if pilotInfo.awards then
+        for _, award in ipairs(pilotInfo.awards) do
+            htmlContent = htmlContent .. "<li>" .. award .. "</li>\n"
+        end
+        htmlContent = htmlContent .. "</ul>\n"
+    else
+        htmlContent = htmlContent .. "No awards.\n"
+    end
     htmlContent = htmlContent .. "<h2>Logbook</h2>\n"
 
     local killLog = {}  -- Table to store kills by type
@@ -99,8 +117,10 @@ function pilotsModule.generatePilotHTML(stats, pilotList, pilotID, outputFilePat
     end
 
     -- Write HTML content to the file
-    file:write("<html>\n<head>\n<title>Pilot Information</title>\n</head>\n<body>\n")
+    file:write("<html>\n<head>\n<title>Pilot Information</title>\n<link rel='stylesheet' type='text/css' href='styles.css'>\n</head>\n<body>\n")
+    file:write("<div class='container'>")
     file:write(htmlContent)
+    file:write("</div>")
     file:write("\n</body>\n</html>")
 
     -- Close the file
