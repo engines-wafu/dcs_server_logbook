@@ -37,6 +37,23 @@ return {
         }
     },
     {
+        name = "656 Sqn",
+        motto = "Volans et videns",
+        type = "AH-64",
+        aircraft = {
+            {tailNumber = "ZA123", type = "FGR1", status = "Serviceable"},
+        },
+        co = "88dae793ecd2d2ed030fbd6bca2297f7", -- Gimbal
+        pilots = {
+            "88dae793ecd2d2ed030fbd6bca2297f7", -- Gimbal
+            "3316bca529c797f031d8c54c14a0f5d3", -- Wee Neal
+            "1a1cba06dd0066c82910007ab36a3c1f", -- Torchy
+            "915811de9b95ea8f1496085b5a833cb5", -- Skuba
+            "e698907134a269f5ee2c4155cb589540", -- DJ
+            "7567ee520811f12f54cd2471c4ff0016", -- Cowan
+        }
+    },
+    {
         name = "XI Sqn",
         motto = "Ociores acrioresque aquilis",
         type = "F-16",
@@ -73,20 +90,20 @@ return {
         }
     },
     {
-        name = "656 Sqn",
-        motto = "Volans et videns",
-        type = "AH-64",
+        name = "IV Sqn",
+        motto = "In futurum videre",
+        type = "T-45",
         aircraft = {
             {tailNumber = "ZA123", type = "FGR1", status = "Serviceable"},
         },
-        co = "88dae793ecd2d2ed030fbd6bca2297f7", -- Gimbal
+        co = "6b7faedbf5e4500cda9efe482cf5d764", -- Cactus
         pilots = {
-            "88dae793ecd2d2ed030fbd6bca2297f7", -- Gimbal
-            "3316bca529c797f031d8c54c14a0f5d3", -- Wee Neal
-            "1a1cba06dd0066c82910007ab36a3c1f", -- Torchy
-            "915811de9b95ea8f1496085b5a833cb5", -- Skuba
-            "e698907134a269f5ee2c4155cb589540", -- DJ
-            "7567ee520811f12f54cd2471c4ff0016", -- Cowan
+            "6b7faedbf5e4500cda9efe482cf5d764", -- Cactus
+            "534894c6525946fcf1ba1b7f55233590", -- Poacher
+            "c153e49b73efbf650cd11ac76f3831df", -- RJF
+            "366f6f18abaafd5dc38ca634655f462f", -- Puddles
+            "a450226ca342ba4235e5734f73989e9e", -- Jxckmc
+            "7248624f73137d934947745d6379c93a", -- Spectre
         }
     },
 }

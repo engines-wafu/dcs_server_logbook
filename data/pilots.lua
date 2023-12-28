@@ -3,17 +3,17 @@ return {
     {id = "813759da956084866e9e72540e544b68", name = "Razor", rank = "Wg Cdr", service = "RAF", awards = {"Test: DFC","Test: VC"}},
     {id = "e473f6817732c53fd33b3b5b923bb3b8", name = "Dangerman", rank = "Wg Cdr", service = "RAF"},
     -- SO2
-    {id = "ea2dca05dc204673da916448f77f00f1", name = "Engines", rank = "Lt Cdr", service = "RN", quals = {"CQ Day", "CQ Night"}},
+    {id = "ea2dca05dc204673da916448f77f00f1", name = "Engines", rank = "Lt Cdr", service = "RN", quals = {"CQ, STOVL, Day", "CQ, STOVL, Night"}},
     {id = "d924195f7dfe499a192c11f00489df4a", name = "Mailman", rank = "Lt Cdr", service = "RN"},
-    {id = "c82a053e0cc44ca3fafbcd435609b6e9", name = "Duke", rank = "Lt Cdr", service = "RN"},
+    {id = "c82a053e0cc44ca3fafbcd435609b6e9", name = "Duke", rank = "Lt Cdr", service = "RN", quals = {"CQ, STOVL, Day", "CQ, STOVL, Night"}},
     {id = "88dae793ecd2d2ed030fbd6bca2297f7", name = "Gimbal", rank = "Maj", service = "AAC"},
     {id = "c153e49b73efbf650cd11ac76f3831df", name = "RJF", rank = "Sqn Ldr", service = "RAF"},
     {id = "ed937ad7fd31fd6633644b7128b14166", name = "Ajax", rank = "Sqn Ldr", service = "RAF"},
     {id = "534894c6525946fcf1ba1b7f55233590", name = "Poacher", rank = "Sqn Ldr", service = "RAF"},
     {id = "6b7faedbf5e4500cda9efe482cf5d764", name = "Cactus", rank = "Sqn Ldr", service = "RAF"},
     -- SO3
-    {id = "d4dfacf7d87e9a24c1f705bb886ab0dd", name = "Pete G", rank = "Lt", service = "RN"},
-    {id = "8433bf314f50b089c4a8fb0e540c2698", name = "Ganduwulf", rank = "Lt", service = "RN"},
+    {id = "d4dfacf7d87e9a24c1f705bb886ab0dd", name = "Pete G", rank = "Lt", service = "RN", quals = {"CQ, STOVL, Day", "CQ, STOVL, Night"}},
+    {id = "8433bf314f50b089c4a8fb0e540c2698", name = "Ganduwulf", rank = "Lt", service = "RN", quals = {"CQ, STOVL, Day", "CQ, STOVL, Night"}},
     {id = "891c8993e8fdbcb509aa0dbe2c9fe43e", name = "Shakes", rank = "Lt", service = "RN"},
     {id = "67685fc9d16c0e4701d43a82ecb4ca82", name = "Slippy", rank = "Lt", service = "RN"},
     {id = "339df0e69cc97e60f2befbcfbdcfcee2", name = "Bogus", rank = "Lt", service = "RN"},
@@ -23,7 +23,7 @@ return {
     {id = "e97263dc4e93acc39e37d4b76054c16c", name = "Swift One", rank = "Flt Lt", service = "RAF"},
     {id = "880046c63693ceeee0727f5e56209ae4", name = "Scooby", rank = "Flt Lt", service = "RAF"},
     -- SO4
-    {id = "d30a8bc09f9e453798bfc601e9f607c6", name = "Madog", rank = "S/Lt", service = "RN"},
+    {id = "d30a8bc09f9e453798bfc601e9f607c6", name = "Madog", rank = "S/Lt", service = "RN", quals = {"CQ, STOVL, Day", "CQ, STOVL, Night"}},
     {id = "168ad57dbcf420e400e1175b6b461974", name = "Obic", rank = "S/Lt", service = "RN"},
     {id = "eba02d205566d321799ab513188ddcd7", name = "Mort", rank = "S/Lt", service = "RN"},
     {id = "33088421d26097eef47da9a002488516", name = "Spanner", rank = "S/Lt", service = "RN"},
@@ -37,4 +37,7 @@ return {
     {id = "fd287e3dabf2b4645499972792ebba30", name = "Steph", rank = "Plt Off", service = "RAF"},
     -- SO5
     {id = "7567ee520811f12f54cd2471c4ff0016", name = "Cowan", rank = "2Lt", service = "AAC"},
+    {id = "366f6f18abaafd5dc38ca634655f462f", name = "Puddles", rank = "Off Cdt", service = "RAF"},
+    {id = "a450226ca342ba4235e5734f73989e9e", name = "Jxckmc", rank = "Off Cdt", service = "RAF"},
+    {id = "7248624f73137d934947745d6379c93a", name = "Spectre", rank = "Off Cdt", service = "RAF"},
 }
