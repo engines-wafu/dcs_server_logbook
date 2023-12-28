@@ -2,7 +2,7 @@
 
 local utils = require("src.utils")
 
-print(type(utils.getPilotInfoByID))
+--print(type(utils.getPilotInfoByID))
 
 local pilotsModule = {}
 
@@ -33,6 +33,8 @@ function pilotsModule.generatePilotHTML(stats, pilotList, pilotID, outputFilePat
     htmlContent = htmlContent .. "<p>Pilot Name: " .. pilotInfo.name .. "</p>\n"
     htmlContent = htmlContent .. "<h2>Logbook</h2>\n"
 
+    local killLog = {}  -- Table to store kills by type
+
     for logKey, logValue in pairs(pilotLog) do
         if logKey == "times" then
             for aircraftType, timeValue in pairs(logValue) do
@@ -42,12 +44,27 @@ function pilotsModule.generatePilotHTML(stats, pilotList, pilotID, outputFilePat
                         table.insert(typeLog, {name = aircraftType, time = seconds})
                     end
                 end
+
+                -- Summing up kills across all types
+                if timeValue["kills"] then
+                    for killType, killDetails in pairs(timeValue["kills"]) do
+                        if type(killDetails) == "number" then
+                            killLog[killType] = (killLog[killType] or 0) + killDetails
+                        elseif type(killDetails) == "table" then
+                            for _, killCount in pairs(killDetails) do
+                                if type(killCount) == "number" then
+                                    killLog[killType] = (killLog[killType] or 0) + killCount
+                                end
+                            end
+                        end
+                    end
+                end
             end
         elseif logKey == "lastJoin" then
             lastJoinContent = "<p>Last Joined: " .. utils.epochToDateString(logValue) .. "</p>\n"
-            --htmlContent = htmlContent .. "<p>Last Joined: " .. utils.epochToDateString(logValue) .. "</p>\n"
         end
     end
+
 
     htmlContent = htmlContent .. "<h3>Totals</h3>\n"
     htmlContent = htmlContent .. lastJoinContent
@@ -62,6 +79,15 @@ function pilotsModule.generatePilotHTML(stats, pilotList, pilotID, outputFilePat
     htmlContent = htmlContent .. "</table>\n"
 
     htmlContent = htmlContent .. typeContent
+
+    -- Generate HTML content for Kills
+    htmlContent = htmlContent .. "<h3>Kills</h3>\n"
+    htmlContent = htmlContent .. "<table style=\'width:40%\' border=\'1\'>\n"
+    htmlContent = htmlContent .. "<tr><th style=\'width:20%\'>Type</th><th style=\'width:20%\'>Kills</th></tr>\n"
+    for killType, killCount in pairs(killLog) do
+        htmlContent = htmlContent .. "<tr><td>" .. killType .. "</td><td>" .. killCount .. "</td></tr>\n"
+    end
+    htmlContent = htmlContent .. "</table>\n"
 
     -- Open the HTML file for writing
     local file = io.open(outputFilePath, "w")
@@ -80,7 +106,7 @@ function pilotsModule.generatePilotHTML(stats, pilotList, pilotID, outputFilePat
     -- Close the file
     file:close()
 
-    print("HTML file created successfully: " .. outputFilePath .. "\n")
+    --print("HTML file created successfully: " .. outputFilePath .. "\n")
 end
 
 return pilotsModule

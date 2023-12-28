@@ -1,7 +1,7 @@
 return {
     {
         name = "801 NAS",
-        motto = "Nunquam non-paratus",
+        motto = "On Les Aura",
         type = "AV8BNA",
         aircraft = {
             {tailNumber = "XZ489", type = "GR9", status = "Serviceable"},

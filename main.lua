@@ -9,18 +9,48 @@ print("--------------------------------------------------\n")
 
 local PILOTS_FILE_PATH = "data/pilots.lua"
 local SQUADRONS_FILE_PATH = "data/squadrons.lua"
-local STATS_FILE_PATH = "data/SlmodStats_server1.lua"
+local STATS_FILE_PATH = "data/SlmodStats_combined.lua"
 local HTML_OUTPUT_PATH = "html/index.html"
 local THRESHOLD_SECONDS = 600
 
-local success, slmodStatsContents = pcall(loadfile, STATS_FILE_PATH)
+--------------------------------------------------
+-- Data management functions
+--------------------------------------------------
 
-if not success then
-    print("Error loading SlmodStats file: " .. slmodStatsContents)
+print("- Sourcing merge.lua.")
+
+local merge = require("src.merge")
+
+local combinedStats = {}
+local fileNames = {
+    "data/SlmodStats_server1.lua",
+    "data/SlmodStats_server2.lua"
+    -- Add other file names as needed
+}
+
+print("- Iterating through server stats files.")
+
+for _, fileName in ipairs(fileNames) do
+    print("- merging " .. fileName)
+    local stats = merge.parseLuaFile(fileName)
+    merge.mergeStats(combinedStats, stats)
+end
+
+writeStatsToFile(combinedStats, "data/SlmodStats_combined.lua")
+
+local success, slmodStatsContents = pcall(loadfile, STATS_FILE_PATH)
+if not success or not slmodStatsContents then
+    print("Error loading SlmodStats file. Success: " .. tostring(success) .. ", Error: " .. tostring(slmodStatsContents))
     return
 end
 
-slmodStatsContents() -- Execute the loaded file
+-- Check if the loaded file is a function before trying to call it
+if type(slmodStatsContents) == "function" then
+    slmodStatsContents()
+else
+    print("Loaded content is not a function. Type: " .. type(slmodStatsContents))
+    return
+end
 
 --------------------------------------------------
 -- General functions
@@ -290,7 +320,7 @@ function outputSquadronData()
         print("Commanding Officer:")
 
         -- Get and display commanding officer information
-        local coInfo = getPilotInfoByID(squadron.co)
+        local coInfo = utils.getPilotInfoByID(squadron.co)
         if coInfo then
             print("  " .. coInfo.rank .. " " .. coInfo.name .. " " .. coInfo.service .. " [" .. utils.truncatePilotID(coInfo.id) .. "]")
         else
@@ -299,7 +329,7 @@ function outputSquadronData()
 
         print("Pilots:")
         for _, pilotID in ipairs(squadron.pilots) do
-            local pilotInfo = getPilotInfoByID(pilotID)
+            local pilotInfo = utils.getPilotInfoByID(pilotID)
             if pilotInfo then
                 print("  " .. pilotInfo.rank .. " " .. pilotInfo.name .. " " .. pilotInfo.service .. " [" .. utils.truncatePilotID(pilotInfo.id) .. "]")
                 parseStatsForPilot(stats, utils.grabPilotNames(stats), pilotInfo.id)
@@ -338,49 +368,47 @@ function parseStatsForPilotHTML(stats, pilotList, pilotID, includeTableTags, sqn
     local lastJoinEpoch = 0
     local noKills = 0
 
-    for logKey, logValue in pairs(pilotLog) do
-        if logKey == "times" then
-            for aircraftType, timeValue in pairs(logValue) do
-                --print(aircraftType)
-                for key, val in pairs(timeValue) do
-                    if key == "total" and val >= THRESHOLD_SECONDS then
-                        totalSeconds = totalSeconds + val
-                    end
-                    if key == "weapons" then -- val will be each aircraft type
-                        for weaponType, weaponStat in pairs(val) do
-                            --print("Type: " .. weaponType)
-                            if type(weaponStat) == "table" then
-                                for killType, killCount in pairs(weaponStat) do
-                                    --print (killType .. ": " .. killCount)
-                                    if killType == "kills" then
-                                        noKills = noKills + killCount
-                                    end
-                                end
+for logKey, logValue in pairs(pilotLog) do
+    if logKey == "times" then
+        for aircraftType, timeValue in pairs(logValue) do
+            -- Summing up total time
+            totalSeconds = totalSeconds + (timeValue["total"] or 0)
+
+            -- Summing up kills across all types
+            if timeValue["kills"] then
+                for killType, killDetails in pairs(timeValue["kills"]) do
+                    if type(killDetails) == "table" then
+                        for killCategory, killCount in pairs(killDetails) do
+                            if type(killCount) == "number" then
+                                noKills = noKills + killCount
                             end
                         end
-                    end
-                end
-                if sqnType then
-                    -- Here we are trying to find any time logged specifically to the squadron aircraft type.
-                    -- If success, then primarySeconds are added.
-                    local prefix = (sqnType)
-                    --print("P: " .. pilotInfo.name .. "... Looking for type starting with: " .. prefix .. ". Logged type is: " .. aircraftType)
-                    if utils.starts_with(aircraftType, prefix) then
-                        for key, val in pairs(timeValue) do
-                            if key == "total" and val >= 600 then
-                                primarySeconds = primarySeconds + val
-                            end
-                        end
-                        --print("MATCH!  Primary time: " .. utils.secToHours(primarySeconds))
-                    else
-                        --print("No good match")
+                    elseif type(killDetails) == "number" then
+                        noKills = noKills + killDetails
                     end
                 end
             end
-        elseif logKey == "lastJoin" then
-            lastJoinEpoch = logValue
+            if sqnType then
+                -- Here we are trying to find any time logged specifically to the squadron aircraft type.
+                -- If success, then primarySeconds are added.
+                local prefix = (sqnType)
+                --print("P: " .. pilotInfo.name .. "... Looking for type starting with: " .. prefix .. ". Logged type is: " .. aircraftType)
+                if utils.starts_with(aircraftType, prefix) then
+                    for key, val in pairs(timeValue) do
+                        if key == "total" and val >= 600 then
+                            primarySeconds = primarySeconds + val
+                        end
+                    end
+                    --print("MATCH!  Primary time: " .. utils.secToHours(primarySeconds))
+                else
+                    --print("No good match")
+                end
+            end
         end
+    elseif logKey == "lastJoin" then
+        lastJoinEpoch = logValue
     end
+end
 
     local hours = utils.secToHours(totalSeconds)
     local primary_hours = utils.secToHours(primarySeconds)
@@ -396,11 +424,8 @@ function parseStatsForPilotHTML(stats, pilotList, pilotID, includeTableTags, sqn
         backgroundColor = "orange"  -- Amber color needs to be defined in your CSS or use "orange"
     end
 
-    -- Create a new column for the "PILOT_URL"
-    local pilotURLColumn = "<td><a href='" .. PILOT_URL .. "'>View Profile</a></td>\n"
-
     -- Combine all columns into the table row
-    local tableRow = "<tr><td>" .. pilotInfo.rank .. " " .. pilotInfo.name .. "</td><td>" .. primary_hours .. "</td><td>" .. hours .. "</td><td>" .. noKills .. "</td><td style='background-color:" .. backgroundColor .. "'>" .. currency .. " days</td>" .. pilotURLColumn .. "</tr>\n"
+    local tableRow = "<tr><td><a href='" .. PILOT_URL .. "'>" .. pilotInfo.rank .. " " .. pilotInfo.name .. "</a></td><td>" .. primary_hours .. "</td><td>" .. hours .. "</td><td>" .. noKills .. "</td><td style='background-color:" .. backgroundColor .. "'>" .. currency .. " days</td></tr>\n"
 
 
 
@@ -426,14 +451,14 @@ function outputSquadronDataHTML(stats)
         -- Get and display commanding officer information
         local coInfo = utils.getPilotInfoByID(pilotsList, squadron.co)
         if coInfo then
-            htmlContent = htmlContent .. "<p>&nbsp;&nbsp;" .. coInfo.rank .. " " .. coInfo.name .. " " .. coInfo.service .. " [" .. coInfo.id .. "]</p>\n"
+            htmlContent = htmlContent .. "<p>&nbsp;&nbsp;" .. coInfo.rank .. " " .. coInfo.name .. " " .. coInfo.service .. " [" .. utils.truncatePilotID(coInfo.id) .. "]</p>\n"
         else
             htmlContent = htmlContent .. "<p>&nbsp;&nbsp;None</p>\n"
         end
 
         htmlContent = htmlContent .. "<h3>Pilots:</h3>\n"
         htmlContent = htmlContent .. "<table style='width:60%' border='1'>\n"
-        htmlContent = htmlContent .. "<tr><th style='width:30%'>Name</th><th style='width:10%'>Primary hours</th><th style='width:10%'>Total hours</th><th style='width:10%'>Kills</th><th style='width:10%'>Currency</th></tr>\n"
+        htmlContent = htmlContent .. "<tr><th style='width:30%'>Name</th><th style='width:10%'>Type hours</th><th style='width:10%'>Total hours</th><th style='width:10%'>Kills</th><th style='width:10%'>Currency</th></tr>\n"
 
         for _, pilotID in ipairs(squadron.pilots) do
             local pilotInfo = utils.getPilotInfoByID(pilotsList, pilotID)
@@ -452,7 +477,7 @@ end
 -- Function to generate HTML content
 function generateHTMLContent(stats, pilotList, pilotID)
     local htmlContent = "<h1>Logbook information for JSW Pilots</h1>\n"
-    htmlContent = htmlContent .. "<h2>Server log: " .. STATS_FILE_PATH .. "</h2>\n"
+    --htmlContent = htmlContent .. "<h2>Server log: " .. STATS_FILE_PATH .. "</h2>\n"
 
 
     -- Add squadron data
@@ -482,7 +507,7 @@ function generateHTMLFile(stats, pilotList, pilotID, outputFilePath)
     -- Close the file
     file:close()
 
-    print("HTML file created successfully: " .. outputFilePath .. "\n")
+    --print("HTML file created successfully: " .. outputFilePath .. "\n")
 end
 
 -- Example usage:

@@ -684,18 +684,4 @@ stats =
             [11] = "Trident 1-1 =JSW=Engines",
         }, -- end of ["names"]
     }, -- end of ["ea2dca05dc204673da916448f77f00f1"]
-    ["e698907134a269f5ee2c4155cb589540"] = 
-    {
-        ["times"] = 
-        {
-        }, -- end of ["times"]
-        ["joinDate"] = 1685994370,
-        ["lastJoin"] = 1703023400,
-        ["id"] = 219,
-        ["names"] = 
-        {
-            [1] = "[BSD] DJ",
-            [2] = "DJ",
-        }, -- end of ["names"]
-    }, -- end of ["e698907134a269f5ee2c4155cb589540"]
 } -- end of stats
