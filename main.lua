@@ -11,7 +11,7 @@ local PILOTS_FILE_PATH = "data/pilots.lua"
 local SQUADRONS_FILE_PATH = "data/squadrons.lua"
 local STATS_FILE_PATH = "data/SlmodStats_server1.lua"
 local HTML_OUTPUT_PATH = "html/index.html"
-local THRESHOLD_SECONDS = 1
+local THRESHOLD_SECONDS = 600
 
 local success, slmodStatsContents = pcall(loadfile, STATS_FILE_PATH)
 
@@ -31,6 +31,8 @@ local utils = require("src.utils")
 --------------------------------------------------
 -- Pilot objects
 --------------------------------------------------
+
+local pilots = require("src.pilots")
 
 -- Define the pilot object
 local Pilot = {
@@ -164,16 +166,6 @@ end
 
 -- Execute the loaded file to get the squadrons table
 local squadronsList = squadronsFileContents()
-
--- Function to get pilot information by ID
-function getPilotInfoByID(pilotID)
-    for _, pilot in ipairs(pilotsList) do
-        if pilot.id == pilotID then
-            return pilot
-        end
-    end
-    return nil  -- Pilot not found
-end
 
 function parseStatsForPilot(stats, pilotList, pilotID)
     local pilotName = pilotList[pilotID]
@@ -324,7 +316,14 @@ end
 --------------------------------------------------
 
 function parseStatsForPilotHTML(stats, pilotList, pilotID, includeTableTags, sqnType)
-    local pilotInfo = getPilotInfoByID(pilotID)
+
+    local pilotInfo = utils.getPilotInfoByID(pilotsList, pilotID)
+    local pilotID = pilotID
+    local PILOT_URL = pilotID .. ".html"
+    local HTML_OUTPUT_PATH = "html/" .. PILOT_URL
+
+    pilots.generatePilotHTML(stats, pilotsList, pilotID, HTML_OUTPUT_PATH, THRESHOLD_SECONDS)
+
     if not pilotInfo then
         return "<tr><td>" .. pilotID .. "</td><td colspan='3'>Pilot not found in the list</td></tr>\n"
     end
@@ -344,7 +343,7 @@ function parseStatsForPilotHTML(stats, pilotList, pilotID, includeTableTags, sqn
             for aircraftType, timeValue in pairs(logValue) do
                 --print(aircraftType)
                 for key, val in pairs(timeValue) do
-                    if key == "total" and val >= 600 then
+                    if key == "total" and val >= THRESHOLD_SECONDS then
                         totalSeconds = totalSeconds + val
                     end
                     if key == "weapons" then -- val will be each aircraft type
@@ -397,8 +396,13 @@ function parseStatsForPilotHTML(stats, pilotList, pilotID, includeTableTags, sqn
         backgroundColor = "orange"  -- Amber color needs to be defined in your CSS or use "orange"
     end
 
-    -- Return a table row with columns for pilot name, hours, kills, and currency
-    local tableRow = "<tr><td>" .. pilotInfo.rank .. " " .. pilotInfo.name .. "</td><td>" .. primary_hours .. "</td><td>" .. hours .. "</td><td>" .. noKills .. "</td><td style='background-color:" .. backgroundColor .. "'>" .. currency .. " days</td></tr>\n"
+    -- Create a new column for the "PILOT_URL"
+    local pilotURLColumn = "<td><a href='" .. PILOT_URL .. "'>View Profile</a></td>\n"
+
+    -- Combine all columns into the table row
+    local tableRow = "<tr><td>" .. pilotInfo.rank .. " " .. pilotInfo.name .. "</td><td>" .. primary_hours .. "</td><td>" .. hours .. "</td><td>" .. noKills .. "</td><td style='background-color:" .. backgroundColor .. "'>" .. currency .. " days</td>" .. pilotURLColumn .. "</tr>\n"
+
+
 
     if includeTableTags then
         return tableRow
@@ -420,7 +424,7 @@ function outputSquadronDataHTML(stats)
         htmlContent = htmlContent .. "<h3>Commanding Officer:</h3>\n"
 
         -- Get and display commanding officer information
-        local coInfo = getPilotInfoByID(squadron.co)
+        local coInfo = utils.getPilotInfoByID(pilotsList, squadron.co)
         if coInfo then
             htmlContent = htmlContent .. "<p>&nbsp;&nbsp;" .. coInfo.rank .. " " .. coInfo.name .. " " .. coInfo.service .. " [" .. coInfo.id .. "]</p>\n"
         else
@@ -432,7 +436,7 @@ function outputSquadronDataHTML(stats)
         htmlContent = htmlContent .. "<tr><th style='width:30%'>Name</th><th style='width:10%'>Primary hours</th><th style='width:10%'>Total hours</th><th style='width:10%'>Kills</th><th style='width:10%'>Currency</th></tr>\n"
 
         for _, pilotID in ipairs(squadron.pilots) do
-            local pilotInfo = getPilotInfoByID(pilotID)
+            local pilotInfo = utils.getPilotInfoByID(pilotsList, pilotID)
             if pilotInfo then
                 htmlContent = htmlContent .. parseStatsForPilotHTML(stats, utils.grabPilotNames(stats), pilotInfo.id, true, squadron.type)
             end
@@ -481,13 +485,14 @@ function generateHTMLFile(stats, pilotList, pilotID, outputFilePath)
     print("HTML file created successfully: " .. outputFilePath .. "\n")
 end
 
-generateHTMLFile(stats, pilotsList, pilotID, HTML_OUTPUT_PATH)
-
 -- Example usage:
---local stats = { -- your stats data here }
---local pilotList = { -- your pilot list data here }
 --local pilotID = "ea2dca05dc204673da916448f77f00f1" -- replace with the desired pilot ID
+--local HTML_OUTPUT_PATH = "html/" .. pilotID .. ".html"
+
 --getListOfPilots(stats, "data/pilots_list.csv")
 --parseStatsToLogbook(stats, pilotsList)
 --parseStatsForPilot(stats, utils.grabPilotNames(stats), "d924195f7dfe499a192c11f00489df4a")
-printPilotInfo(stats, utils.grabPilotNames(stats), "db0d1a3afa403f1e41991e71ebd9f384")
+--printPilotInfo(stats, utils.grabPilotNames(stats), "db0d1a3afa403f1e41991e71ebd9f384")
+--pilots.generatePilotHTML(stats, pilotsList, pilotID, HTML_OUTPUT_PATH, THRESHOLD_SECONDS)
+
+generateHTMLFile(stats, pilotsList, pilotID, HTML_OUTPUT_PATH)

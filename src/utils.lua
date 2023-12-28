@@ -1,4 +1,4 @@
--- utils.lua
+-- src/utils.lua
 
 local utils = {}
 
@@ -41,7 +41,6 @@ function utils.starts_with(str, start)
 end
 
 -- Get the pilot names from stats
-
 function utils.grabPilotNames(stats)
     local pilots = {}
     for pilotID, pilotLog in pairs(stats) do
@@ -53,6 +52,17 @@ function utils.grabPilotNames(stats)
         end
     end
     return pilots
+end
+
+-- Function to get pilot information by ID
+
+function utils.getPilotInfoByID(pilotList, pilotID)
+    for _, pilot in ipairs(pilotList) do
+        if pilot.id == pilotID then
+            return pilot
+        end
+    end
+    return nil  -- Pilot not found
 end
 
 return utils
