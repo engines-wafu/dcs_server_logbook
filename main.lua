@@ -359,7 +359,7 @@ function parseStatsForPilotHTML(stats, pilotList, pilotID, includeTableTags, sqn
 
     local pilotInfo = utils.getPilotInfoByID(pilotsList, pilotID)
     local pilotID = pilotID
-    local PILOT_URL = pilotID .. ".html"
+    local PILOT_URL = "usr/" .. utils.truncatePilotID(pilotID) .. ".html"
     local HTML_OUTPUT_PATH = "html/" .. PILOT_URL
 
     pilots.generatePilotHTML(stats, pilotsList, pilotID, HTML_OUTPUT_PATH, THRESHOLD_SECONDS)

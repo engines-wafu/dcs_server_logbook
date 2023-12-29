@@ -117,7 +117,7 @@ function pilotsModule.generatePilotHTML(stats, pilotList, pilotID, outputFilePat
     end
 
     -- Write HTML content to the file
-    file:write("<html>\n<head>\n<title>Pilot Information</title>\n<meta name='viewport' content='width=device-width, initial-scale=1'>\n<link rel='stylesheet' type='text/css' href='styles.css'>\n</head>\n<body>\n")
+    file:write("<html>\n<head>\n<title>Pilot Information</title>\n<meta name='viewport' content='width=device-width, initial-scale=1'>\n<link rel='stylesheet' type='text/css' href='../styles.css'>\n</head>\n<body>\n")
     file:write("<div class='container'>")
     file:write(htmlContent)
     file:write("</div>")
