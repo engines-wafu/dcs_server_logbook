@@ -60,9 +60,10 @@ Add a new entry for the pilot. For example:
     rank = "S/Lt",
     service = "RN",
     quals = {"CQ, CV, DAY"},
-},```
+},
+```
 
-### In data/squadrons.lua
+### In `data/squadrons.lua`
 
 Find the squadron (e.g., "892 NAS") and add the pilot's ID to the pilots array:
 
