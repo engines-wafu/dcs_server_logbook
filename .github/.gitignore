@@ -1,0 +1,4 @@
+html/*.html
+!html/about.html
+!html/contact.html
+!html/navbar.html
