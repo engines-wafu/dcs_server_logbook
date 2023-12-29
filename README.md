@@ -33,7 +33,7 @@ git clone https://github.com/engines-wafu/dcs_server_logbook.git
 1. Navigate to the project directory on your server.
 2. Execute the main script:
 
-```
+```lua
 lua main.lua
 ```
 
@@ -44,6 +44,38 @@ lua main.lua
 - Modify `main.lua` to adjust input files or processing steps.
 - Update `merge.lua` for specific data merging requirements.
 - Adapt `pilots.lua` for custom HTML report formats.
+
+## Adding a New Pilot
+
+To add a new pilot to the logbook:
+
+### In `data/pilots.lua`
+
+Add a new entry for the pilot. For example:
+
+```lua
+{
+    id = "b1234f56d78e90g123h456i789j012k3",
+    name = "Bloggs",
+    rank = "S/Lt",
+    service = "RN",
+    quals = {"CQ, CV, DAY"},
+},```
+
+### In data/squadrons.lua
+
+Find the squadron (e.g., "892 NAS") and add the pilot's ID to the pilots array:
+
+```lua
+{
+    name = "892 NAS",
+    -- Other squadron details...
+    pilots = {
+        -- Existing pilots...
+        "b1234f56d78e90g123h456i789j012k3",  -- S/Lt Bloggs
+    },
+},
+```
 
 ## Contributing
 

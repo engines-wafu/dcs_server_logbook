@@ -12,27 +12,30 @@ function mayfly.generateMayflyHtml(squadronsData, MAYFLY_OUTPUT_PATH)
     if navbarHtml then
         htmlContent = htmlContent .. navbarHtml
     end
-    htmlContent = htmlContent .. "<table>\n<tr><th>Tail Number</th><th>Type</th><th>Squadron</th><th>Status</th><th>Maintenance</th><th>Remarks</th></tr>\n"
+
+    htmlContent = htmlContent .. "<div class='container'>\n"
 
     for _, squadron in ipairs(squadronsData) do
-        local squadronName = squadron.name or "Unknown"  -- Default to "Unknown" if the name is not provided
+        htmlContent = htmlContent .. "<h2>" .. (squadron.name or "Unknown Squadron") .. "</h2>\n"
+        htmlContent = htmlContent .. "<table>\n<tr><th style='width: 20%'>Tail Number</th><th style='width: 20%'>Type</th><th style='width: 20%'>Status</th><th style='width: 20%'>Maintenance</th><th style='width: 20%'>Remarks</th></tr>\n"
+
         for _, aircraft in ipairs(squadron.aircraft) do
             local maintenanceHours = randomMaintenanceHours()
-            local statusColor = "orange"  -- Default color
+            local statusColor = "orange"
             if aircraft.status == "Serviceable" then
                 statusColor = "green"
             elseif aircraft.status == "Unserviceable" then
                 statusColor = "red"
             end
 
-            htmlContent = htmlContent .. string.format("<tr><td>%s</td><td>%s</td><td>%s</td><td style='background-color:%s;'>%s</td><td>%d hrs</td><td>%s</td></tr>\n",
-                aircraft.tailNumber, aircraft.type, squadronName, statusColor, aircraft.status, maintenanceHours, aircraft.remarks or "")
+            htmlContent = htmlContent .. string.format("<tr><td>%s</td><td>%s</td><td style='background-color:%s;'>%s</td><td>%d hrs</td><td>%s</td></tr>\n",
+                aircraft.tailNumber, aircraft.type, statusColor, aircraft.status, maintenanceHours, aircraft.remarks or "")
         end
+        htmlContent = htmlContent .. "</table>\n"
     end
 
-    htmlContent = htmlContent .. "</table>\n</body>\n</html>"
+    htmlContent = htmlContent .. "</div>\n</body>\n</html>"
 
-    -- Writing the HTML content to mayfly.html
     local file = io.open(MAYFLY_OUTPUT_PATH, "w")
     if file then
         file:write(htmlContent)
