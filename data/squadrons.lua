@@ -12,7 +12,7 @@ return {
             {tailNumber = "ZA174", maintenance = "", type = "GR9", status = "Serviceable", remarks = "Madog's jet"},
             {tailNumber = "ZA175", maintenance = "", type = "GR9", status = "Serviceable", remarks = ""},
             {tailNumber = "XZ498", maintenance = "", type = "GR9", status = "Serviceable", remarks = "Gand's jet"},
-            {tailNumber = "XA496", maintenance = "", type = "GR9", status = "Serviceable", remarks = ""},
+            {tailNumber = "ZA496", maintenance = "", type = "GR9", status = "Serviceable", remarks = ""},
             {tailNumber = "XZ453", maintenance = "", type = "GR9", status = "Serviceable", remarks = ""},
             {tailNumber = "XZ452", maintenance = "", type = "GR9", status = "Unserviceable", remarks = "Cat 3 repair ongoing"},
         },

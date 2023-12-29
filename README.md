@@ -78,6 +78,39 @@ Find the squadron (e.g., "892 NAS") and add the pilot's ID to the pilots array:
 },
 ```
 
+## Adding a New Aircraft to a Squadron
+
+To add a new aircraft to a squadron in `data/squadrons.lua`:
+
+1. Open the `data/squadrons.lua` file.
+2. Locate the squadron to which you want to add the new aircraft (e.g., "892 NAS").
+3. Add a new entry for the aircraft in the `aircraft` array within the squadron's entry. Use the following format:
+
+   ```lua
+   {
+       tailNumber = "Aircraft Tail Number",
+       maintenance = "Maintenance Information",
+       type = "Aircraft Type",
+       status = "Aircraft Status",
+       remarks = "Additional Remarks"
+   }
+```
+
+For example, to add the Phantom F4 with the tail number XT597:
+
+```lua
+{
+    tailNumber = "XT597",
+    maintenance = "",
+    type = "Phantom F4",
+    status = "Serviceable",
+    remarks = ""
+}
+```
+
+4. Save the data/squadrons.lua file. The new aircraft will now be included in the squadron's information.
+5. Make sure to use actual tail numbers and types relevant to the aircraft you are adding. Historical data can be a useful reference for accuracy.
+
 ## Contributing
 
 We welcome contributions to enhance the DCS Server Logbook:
