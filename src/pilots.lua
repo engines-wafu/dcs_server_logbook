@@ -118,6 +118,10 @@ function pilotsModule.generatePilotHTML(stats, pilotList, pilotID, outputFilePat
 
     -- Write HTML content to the file
     file:write("<html>\n<head>\n<title>Pilot Information</title>\n<meta name='viewport' content='width=device-width, initial-scale=1'>\n<link rel='stylesheet' type='text/css' href='../styles.css'>\n</head>\n<body>\n")
+    local navbarHtml = utils.readHtmlSnippet("../navbar.html")
+    if navbarHtml then
+        file:write(navbarHtml)
+    end
     file:write("<div class='container'>")
     file:write(htmlContent)
     file:write("</div>")

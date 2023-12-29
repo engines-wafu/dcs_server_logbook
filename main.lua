@@ -378,47 +378,47 @@ function parseStatsForPilotHTML(stats, pilotList, pilotID, includeTableTags, sqn
     local lastJoinEpoch = 0
     local noKills = 0
 
-for logKey, logValue in pairs(pilotLog) do
-    if logKey == "times" then
-        for aircraftType, timeValue in pairs(logValue) do
-            -- Summing up total time
-            totalSeconds = totalSeconds + (timeValue["total"] or 0)
+    for logKey, logValue in pairs(pilotLog) do
+        if logKey == "times" then
+            for aircraftType, timeValue in pairs(logValue) do
+                -- Summing up total time
+                totalSeconds = totalSeconds + (timeValue["total"] or 0)
 
-            -- Summing up kills across all types
-            if timeValue["kills"] then
-                for killType, killDetails in pairs(timeValue["kills"]) do
-                    if type(killDetails) == "table" then
-                        for killCategory, killCount in pairs(killDetails) do
-                            if type(killCount) == "number" then
-                                noKills = noKills + killCount
+                -- Summing up kills across all types
+                if timeValue["kills"] then
+                    for killType, killDetails in pairs(timeValue["kills"]) do
+                        if type(killDetails) == "table" then
+                            for killCategory, killCount in pairs(killDetails) do
+                                if type(killCount) == "number" then
+                                    noKills = noKills + killCount
+                                end
+                            end
+                        elseif type(killDetails) == "number" then
+                            noKills = noKills + killDetails
+                        end
+                    end
+                end
+                if sqnType then
+                    -- Here we are trying to find any time logged specifically to the squadron aircraft type.
+                    -- If success, then primarySeconds are added.
+                    local prefix = (sqnType)
+                    --print("P: " .. pilotInfo.name .. "... Looking for type starting with: " .. prefix .. ". Logged type is: " .. aircraftType)
+                    if utils.starts_with(aircraftType, prefix) then
+                        for key, val in pairs(timeValue) do
+                            if key == "total" and val >= 600 then
+                                primarySeconds = primarySeconds + val
                             end
                         end
-                    elseif type(killDetails) == "number" then
-                        noKills = noKills + killDetails
+                        --print("MATCH!  Primary time: " .. utils.secToHours(primarySeconds))
+                    else
+                        --print("No good match")
                     end
                 end
             end
-            if sqnType then
-                -- Here we are trying to find any time logged specifically to the squadron aircraft type.
-                -- If success, then primarySeconds are added.
-                local prefix = (sqnType)
-                --print("P: " .. pilotInfo.name .. "... Looking for type starting with: " .. prefix .. ". Logged type is: " .. aircraftType)
-                if utils.starts_with(aircraftType, prefix) then
-                    for key, val in pairs(timeValue) do
-                        if key == "total" and val >= 600 then
-                            primarySeconds = primarySeconds + val
-                        end
-                    end
-                    --print("MATCH!  Primary time: " .. utils.secToHours(primarySeconds))
-                else
-                    --print("No good match")
-                end
-            end
+        elseif logKey == "lastJoin" then
+            lastJoinEpoch = logValue
         end
-    elseif logKey == "lastJoin" then
-        lastJoinEpoch = logValue
     end
-end
 
     local hours = utils.secToHours(totalSeconds)
     local primary_hours = utils.secToHours(primarySeconds)
@@ -436,8 +436,6 @@ end
 
     -- Combine all columns into the table row
     local tableRow = "<tr><td><a href='" .. PILOT_URL .. "'>" .. pilotInfo.rank .. " " .. pilotInfo.name .. "</a></td><td>" .. primary_hours .. "</td><td>" .. hours .. "</td><td>" .. noKills .. "</td><td style='background-color:" .. backgroundColor .. "'>" .. currency .. " days</td></tr>\n"
-
-
 
     if includeTableTags then
         return tableRow

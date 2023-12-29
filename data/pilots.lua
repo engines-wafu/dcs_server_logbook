@@ -24,6 +24,7 @@ return {
     {id = "880046c63693ceeee0727f5e56209ae4", name = "Scooby", rank = "Flt Lt", service = "RAF"},
     -- SO4
     {id = "d30a8bc09f9e453798bfc601e9f607c6", name = "Madog", rank = "S/Lt", service = "RN", quals = {"CQ, STOVL, Day", "CQ, STOVL, Night"}},
+    {id = "8ee67d60c11aede8fed0bb82b90072ce", name = "Smythe", rank = "S/Lt", service = "RN", quals = {"CQ, STOVL, Day", "CQ, STOVL, Night"}},
     {id = "168ad57dbcf420e400e1175b6b461974", name = "Obic", rank = "S/Lt", service = "RN"},
     {id = "eba02d205566d321799ab513188ddcd7", name = "Mort", rank = "S/Lt", service = "RN"},
     {id = "33088421d26097eef47da9a002488516", name = "Spanner", rank = "S/Lt", service = "RN"},
