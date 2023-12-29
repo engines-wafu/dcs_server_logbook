@@ -86,14 +86,14 @@ To add a new aircraft to a squadron in `data/squadrons.lua`:
 2. Locate the squadron to which you want to add the new aircraft (e.g., "892 NAS").
 3. Add a new entry for the aircraft in the `aircraft` array within the squadron's entry. Use the following format:
 
-   ```lua
-   {
-       tailNumber = "Aircraft Tail Number",
-       maintenance = "Maintenance Information",
-       type = "Aircraft Type",
-       status = "Aircraft Status",
-       remarks = "Additional Remarks"
-   }
+```lua
+{
+    tailNumber = "Aircraft Tail Number",
+    maintenance = "Maintenance Information",
+    type = "Aircraft Type",
+    status = "Aircraft Status",
+    remarks = "Additional Remarks"
+}
 ```
 
 For example, to add the Phantom F4 with the tail number XT597:
