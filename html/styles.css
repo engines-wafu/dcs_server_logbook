@@ -12,6 +12,7 @@ body {
   font-family: Arial, sans-serif; /* Common font similar to the Royal Navy website */
   margin: 0;
   padding: 0;
+  line-height: 1.6; /* Improves readability on small screens */
 }
 
 .container {
@@ -36,11 +37,15 @@ a:hover {
 .navbar, .footer {
   background-color: var(--blue-color);
   color: var(--white-color);
+  text-align: center; /* Centers navbar and footer content on small screens */
 }
 
 .button-primary {
   background-color: var(--gold-color);
   color: var(--blue-color);
+  padding: 10px 20px; /* Larger clickable area for touch screens */
+  border: none; /* Removes default border */
+  border-radius: 5px; /* Adds rounded corners */
 }
 
 .button-primary:hover {
@@ -74,4 +79,66 @@ tr:nth-child(even) {
   background-color: #f0f0f0;
 }
 
-/* Add more selectors and rules as needed */
+/* Responsive design adjustments */
+@media (max-width: 768px) {
+  .container {
+    padding: 10px;
+  }
+
+  .navbar, .footer {
+    padding: 10px; /* Reduces padding on small screens */
+  }
+
+  table, thead, tbody, th, td, tr {
+    display: block;
+  }
+
+  th, td {
+    text-align: right; /* Aligns text to the right for better readability on small screens */
+  }
+
+  td::before {
+    content: attr(data-label); /* Uses data-label attribute to show the column name before each cell value */
+    float: left;
+    font-weight: bold;
+  }
+
+  tr {
+    margin-bottom: 10px;
+  }
+
+  th {
+    display: none; /* Hides table headers on small screens */
+  }
+}
+
+/* Navigation Bar Styling */
+.navbar {
+  background-color: var(--blue-color); /* Use the blue color variable */
+  overflow: hidden; /* Ensures the content is contained within the navigation bar */
+}
+
+.navbar a {
+  float: left; /* Positions links side by side */
+  display: block; /* Each link is treated as a block element */
+  color: var(--white-color); /* Use the white color variable for text */
+  text-align: center; /* Centers the text within the links */
+  padding: 14px 16px; /* Padding inside each link */
+  text-decoration: none; /* Removes the underline from links */
+  font-size: 17px; /* Sets a standard font size for all links */
+}
+
+/* Change the color of links on hover */
+.navbar a:hover {
+  background-color: var(--grey-color); /* Use the grey color variable for the hover state */
+  color: var(--gold-color); /* Change text color on hover */
+}
+
+/* Responsive adjustments for the navbar */
+@media (max-width: 768px) {
+  .navbar a {
+    float: none; /* Stack links vertically on small screens */
+    display: block; /* Ensures that each link takes up the full width */
+  }
+}
+

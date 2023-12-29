@@ -65,4 +65,13 @@ function utils.getPilotInfoByID(pilotList, pilotID)
     return nil  -- Pilot not found
 end
 
+-- Function to read HTML snippet from a file
+function utils.readHtmlSnippet(filename)
+    local file = io.open(filename, "r")  -- Open the file for reading
+    if not file then return nil end       -- If the file doesn't exist, return nil
+    local content = file:read("*a")      -- Read the entire contents of the file
+    file:close()                         -- Close the file
+    return content                       -- Return the contents
+end
+
 return utils

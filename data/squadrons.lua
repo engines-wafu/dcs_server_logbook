@@ -3,8 +3,18 @@ return {
         name = "801 NAS",
         motto = "On Les Aura",
         type = "AV8BNA",
+        pseudoType = "Harrier GR9",
         aircraft = {
-            {tailNumber = "XZ489", type = "GR9", status = "Serviceable"},
+            {tailNumber = "XZ458", maintenance = "", type = "GR9", status = "Serviceable", remarks = "Boss' jet"},
+            {tailNumber = "XZ493", maintenance = "", type = "GR9", status = "Unserviceable", remarks = "Ditched"},
+            {tailNumber = "XZ491", maintenance = "", type = "GR9", status = "Serviceable", remarks = "Pete's jet"},
+            {tailNumber = "XZ495", maintenance = "", type = "GR9", status = "Serviceable", remarks = ""},
+            {tailNumber = "ZA174", maintenance = "", type = "GR9", status = "Serviceable", remarks = "Madog's jet"},
+            {tailNumber = "ZA175", maintenance = "", type = "GR9", status = "Serviceable", remarks = ""},
+            {tailNumber = "XZ498", maintenance = "", type = "GR9", status = "Serviceable", remarks = "Gand's jet"},
+            {tailNumber = "XA496", maintenance = "", type = "GR9", status = "Serviceable", remarks = ""},
+            {tailNumber = "XZ453", maintenance = "", type = "GR9", status = "Serviceable", remarks = ""},
+            {tailNumber = "XZ452", maintenance = "", type = "GR9", status = "Unserviceable", remarks = "Cat 3 repair ongoing"},
         },
         co = "ea2dca05dc204673da916448f77f00f1", -- Engines
         pilots = {
@@ -19,8 +29,10 @@ return {
         name = "892 NAS",
         motto = "Strike Unseen",
         type = "F-14",
+        pseudoType = "Phantom F4",
         aircraft = {
             {tailNumber = "XZ489", type = "GR9", status = "Serviceable"},
+            {tailNumber = "XZ489", maintenance = "", type = "GR9", status = "Serviceable"},
         },
         co = "d924195f7dfe499a192c11f00489df4a", -- Mailman
         pilots = {
@@ -40,6 +52,7 @@ return {
         name = "656 Sqn",
         motto = "Volans et videns",
         type = "AH-64",
+        pseudoType = "Apache AH-64E",
         aircraft = {
             {tailNumber = "ZA123", type = "FGR1", status = "Serviceable"},
         },
@@ -57,6 +70,7 @@ return {
         name = "XI Sqn",
         motto = "Ociores acrioresque aquilis",
         type = "F-16",
+        pseudoType = "Typhoon FGR1",
         aircraft = {
             {tailNumber = "ZA123", type = "FGR1", status = "Serviceable"},
         },
@@ -76,6 +90,7 @@ return {
         name = "617 Sqn",
         motto = "Apres moi le deluge",
         type = "F-15",
+        pseudoType = "Tornado GR4",
         aircraft = {
             {tailNumber = "ZA123", type = "FGR1", status = "Serviceable"},
         },
@@ -93,6 +108,7 @@ return {
         name = "IV Sqn",
         motto = "In futurum videre",
         type = "T-45",
+        pseudoType = "Hawk T2",
         aircraft = {
             {tailNumber = "ZA123", type = "FGR1", status = "Serviceable"},
         },

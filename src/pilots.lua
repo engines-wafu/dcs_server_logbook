@@ -88,7 +88,7 @@ function pilotsModule.generatePilotHTML(stats, pilotList, pilotID, outputFilePat
     htmlContent = htmlContent .. lastJoinContent
     htmlContent = htmlContent .. "<p>Total hours: " .. utils.secToHours(totalSeconds) .. "</p>\n"
     htmlContent = htmlContent .. "<h3>Type Totals</h3>\n"
-    htmlContent = htmlContent .. "<table style='width:40%' border='1'>\n"
+    htmlContent = htmlContent .. "<table style=border='1'>\n"
     htmlContent = htmlContent .. "<tr><th style='width:20%'>Type</th><th style='width:20%'>Hours</th></tr>\n"
     table.sort(typeLog, function(a, b) return a.time > b.time end)
     for i, entry in ipairs(typeLog) do
@@ -100,7 +100,7 @@ function pilotsModule.generatePilotHTML(stats, pilotList, pilotID, outputFilePat
 
     -- Generate HTML content for Kills
     htmlContent = htmlContent .. "<h3>Kills</h3>\n"
-    htmlContent = htmlContent .. "<table style=\'width:40%\' border=\'1\'>\n"
+    htmlContent = htmlContent .. "<table style=border='1'>\n"
     htmlContent = htmlContent .. "<tr><th style=\'width:20%\'>Type</th><th style=\'width:20%\'>Kills</th></tr>\n"
     for killType, killCount in pairs(killLog) do
         htmlContent = htmlContent .. "<tr><td>" .. killType .. "</td><td>" .. killCount .. "</td></tr>\n"
@@ -117,7 +117,7 @@ function pilotsModule.generatePilotHTML(stats, pilotList, pilotID, outputFilePat
     end
 
     -- Write HTML content to the file
-    file:write("<html>\n<head>\n<title>Pilot Information</title>\n<link rel='stylesheet' type='text/css' href='styles.css'>\n</head>\n<body>\n")
+    file:write("<html>\n<head>\n<title>Pilot Information</title>\n<meta name='viewport' content='width=device-width, initial-scale=1'>\n<link rel='stylesheet' type='text/css' href='styles.css'>\n</head>\n<body>\n")
     file:write("<div class='container'>")
     file:write(htmlContent)
     file:write("</div>")

@@ -10,7 +10,8 @@ print("--------------------------------------------------\n")
 local PILOTS_FILE_PATH = "data/pilots.lua"
 local SQUADRONS_FILE_PATH = "data/squadrons.lua"
 local STATS_FILE_PATH = "data/SlmodStats_combined.lua"
-local HTML_OUTPUT_PATH = "html/index.html"
+local INDEX_OUTPUT_PATH = "html/index.html"
+local MAYFLY_OUTPUT_PATH = "html/mayfly.html"
 local THRESHOLD_SECONDS = 600
 
 --------------------------------------------------
@@ -57,6 +58,13 @@ end
 --------------------------------------------------
 
 local utils = require("src.utils")
+
+--------------------------------------------------
+-- Aircraft objects
+--------------------------------------------------
+
+local mayfly = require("src.mayfly")
+local squadrons = require("data.squadrons")
 
 --------------------------------------------------
 -- Pilot objects
@@ -445,8 +453,8 @@ function outputSquadronDataHTML(stats)
 
         htmlContent = htmlContent .. "<h2>Squadron: " .. squadron.name .. "</h2>\n"
         htmlContent = htmlContent .. "<p>Motto: " .. squadron.motto .. "</p>\n"
-        if squadron.type then
-            htmlContent = htmlContent .. "<p>Aircraft Type: " .. squadron.type .. "</p>\n"
+        if squadron.pseudoType then
+            htmlContent = htmlContent .. "<p>Aircraft Type: " .. squadron.pseudoType .. "</p>\n"
         end
         htmlContent = htmlContent .. "<h3>Commanding Officer:</h3>\n"
 
@@ -459,7 +467,7 @@ function outputSquadronDataHTML(stats)
         end
 
         htmlContent = htmlContent .. "<h3>Pilots:</h3>\n"
-        htmlContent = htmlContent .. "<table style='width:60%' border='1'>\n"
+        htmlContent = htmlContent .. "<table style=border='1'>\n"
         htmlContent = htmlContent .. "<tr><th style='width:30%'>Name</th><th style='width:10%'>Type hours</th><th style='width:10%'>Total hours</th><th style='width:10%'>Kills</th><th style='width:10%'>Currency</th></tr>\n"
 
         for _, pilotID in ipairs(squadron.pilots) do
@@ -502,7 +510,11 @@ function generateHTMLFile(stats, pilotList, pilotID, outputFilePath)
     end
 
     -- Write HTML content to the file
-    file:write("<html>\n<head>\n<title>Pilot Logbook</title>\n<link rel='stylesheet' type='text/css' href='styles.css'>\n</head>\n<body>\n")
+    file:write("<html>\n<head>\n<title>Pilot Logbook</title>\n<meta name='viewport' content='width=device-width, initial-scale=1'>\n<link rel='stylesheet' type='text/css' href='styles.css'>\n</head>\n<body>\n")
+    local navbarHtml = utils.readHtmlSnippet("html/navbar.html")
+    if navbarHtml then
+        file:write(navbarHtml)
+    end
     file:write("<div class='container'>")
     file:write(htmlContent)
     file:write("</div>")
@@ -524,4 +536,6 @@ end
 --printPilotInfo(stats, utils.grabPilotNames(stats), "db0d1a3afa403f1e41991e71ebd9f384")
 --pilots.generatePilotHTML(stats, pilotsList, pilotID, HTML_OUTPUT_PATH, THRESHOLD_SECONDS)
 
-generateHTMLFile(stats, pilotsList, pilotID, HTML_OUTPUT_PATH)
+generateHTMLFile(stats, pilotsList, pilotID, INDEX_OUTPUT_PATH)
+
+mayfly.generateMayflyHtml(squadrons, MAYFLY_OUTPUT_PATH)
