@@ -108,7 +108,7 @@ For example, to add the Phantom F4 with the tail number XT597:
 }
 ```
 
-4. Save the data/squadrons.lua file. The new aircraft will now be included in the squadron's information.
+4. Save the `data/squadrons.lua` file. The new aircraft will now be included in the squadron's information.
 5. Make sure to use actual tail numbers and types relevant to the aircraft you are adding. Historical data can be a useful reference for accuracy.
 
 ## Contributing
