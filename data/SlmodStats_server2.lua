@@ -409,6 +409,7 @@ stats =
             }, -- end of ["T-45"]
             ["SpitfireLFMkIXCW"] = 
             {
+                ["inAir"] = 760.44,
                 ["weapons"] = 
                 {
                     ["Browning .303 Mk. II"] = 
@@ -420,7 +421,6 @@ stats =
                         ["numHits"] = 0,
                     }, -- end of ["Browning .303 Mk. II"]
                 }, -- end of ["weapons"]
-                ["total"] = 1110.592,
                 ["actions"] = 
                 {
                     ["losses"] = 
@@ -430,7 +430,7 @@ stats =
                         ["eject"] = 0,
                     }, -- end of ["losses"]
                 }, -- end of ["actions"]
-                ["inAir"] = 760.44,
+                ["total"] = 1110.592,
             }, -- end of ["SpitfireLFMkIXCW"]
             ["SpitfireLFMkIX"] = 
             {
@@ -489,17 +489,6 @@ stats =
             }, -- end of ["SpitfireLFMkIX"]
             ["UH-1H"] = 
             {
-                ["total"] = 22632.461,
-                ["inAir"] = 11516.57,
-                ["actions"] = 
-                {
-                    ["losses"] = 
-                    {
-                        ["pilotDeath"] = 9,
-                        ["crash"] = 7,
-                        ["eject"] = 0,
-                    }, -- end of ["losses"]
-                }, -- end of ["actions"]
                 ["weapons"] = 
                 {
                     ["M134 Minigun"] = 
@@ -525,6 +514,17 @@ stats =
                         ["numHits"] = 0,
                     }, -- end of ["HYDRA-70 MK5"]
                 }, -- end of ["weapons"]
+                ["total"] = 22632.461,
+                ["actions"] = 
+                {
+                    ["losses"] = 
+                    {
+                        ["pilotDeath"] = 9,
+                        ["crash"] = 7,
+                        ["eject"] = 0,
+                    }, -- end of ["losses"]
+                }, -- end of ["actions"]
+                ["inAir"] = 11516.57,
             }, -- end of ["UH-1H"]
             ["A-4E-C"] = 
             {
@@ -805,7 +805,7 @@ stats =
             }, -- end of ["A-4E-C"]
             ["AV8BNA"] = 
             {
-                ["total"] = 185636.94200004,
+                ["total"] = 191682.99200004,
                 ["kills"] = 
                 {
                     ["Ground Units"] = 
@@ -930,7 +930,7 @@ stats =
                         ["hit"] = 1,
                     }, -- end of ["Mk-82 Snakeye"]
                 }, -- end of ["weapons"]
-                ["inAir"] = 118135.815,
+                ["inAir"] = 122580.309,
                 ["actions"] = 
                 {
                     ["landing"] = 
@@ -961,8 +961,14 @@ stats =
             }, -- end of ["UH-1H Dakka"]
             ["UH-1H"] = 
             {
-                ["inAir"] = 4542.107,
-                ["total"] = 5972.823,
+                ["weapons"] = 
+                {
+                    ["numHits"] = 0,
+                    ["kills"] = 0,
+                    ["shot"] = 16,
+                    ["hit"] = 0,
+                }, -- end of ["weapons"]
+                ["inAir"] = 4562.136,
                 ["actions"] = 
                 {
                     ["losses"] = 
@@ -977,18 +983,21 @@ stats =
                         ["austere"] = 1,
                     }, -- end of ["takeoff"]
                 }, -- end of ["actions"]
-                ["weapons"] = 
-                {
-                    ["numHits"] = 0,
-                    ["kills"] = 0,
-                    ["shot"] = 16,
-                    ["hit"] = 0,
-                }, -- end of ["weapons"]
+                ["total"] = 6243.155,
             }, -- end of ["UH-1H"]
             ["Mi-8MT"] = 
             {
+                ["weapons"] = 
+                {
+                    ["S-8KOM HEAT/Frag"] = 
+                    {
+                        ["numHits"] = 0,
+                        ["kills"] = 0,
+                        ["shot"] = 2,
+                        ["hit"] = 0,
+                    }, -- end of ["S-8KOM HEAT/Frag"]
+                }, -- end of ["weapons"]
                 ["inAir"] = 2498.454,
-                ["total"] = 3750.081,
                 ["actions"] = 
                 {
                     ["landing"] = 
@@ -1002,16 +1011,7 @@ stats =
                         ["austere"] = 1,
                     }, -- end of ["takeoff"]
                 }, -- end of ["actions"]
-                ["weapons"] = 
-                {
-                    ["S-8KOM HEAT/Frag"] = 
-                    {
-                        ["numHits"] = 0,
-                        ["kills"] = 0,
-                        ["shot"] = 2,
-                        ["hit"] = 0,
-                    }, -- end of ["S-8KOM HEAT/Frag"]
-                }, -- end of ["weapons"]
+                ["total"] = 3750.081,
             }, -- end of ["Mi-8MT"]
             ["F-14A-135-GR RIO"] = 
             {
@@ -1126,27 +1126,6 @@ stats =
                         ["numHits"] = 3,
                     }, -- end of ["AIM-7F"]
                     ["shot"] = 9,
-                    ["AIM-54C-Mk60"] = 
-                    {
-                        ["numHits"] = 8,
-                        ["kills"] = 5,
-                        ["shot"] = 6,
-                        ["hit"] = 5,
-                    }, -- end of ["AIM-54C-Mk60"]
-                    ["AIM-9L"] = 
-                    {
-                        ["numHits"] = 5,
-                        ["kills"] = 5,
-                        ["shot"] = 11,
-                        ["hit"] = 5,
-                    }, -- end of ["AIM-9L"]
-                    ["Mk-82"] = 
-                    {
-                        ["hit"] = 2,
-                        ["kills"] = 2,
-                        ["shot"] = 8,
-                        ["numHits"] = 5,
-                    }, -- end of ["Mk-82"]
                     ["unknown"] = 
                     {
                         ["numHits"] = 77,
@@ -1154,6 +1133,27 @@ stats =
                         ["shot"] = 0,
                         ["hit"] = 0,
                     }, -- end of ["unknown"]
+                    ["AIM-9L"] = 
+                    {
+                        ["numHits"] = 5,
+                        ["kills"] = 5,
+                        ["shot"] = 11,
+                        ["hit"] = 5,
+                    }, -- end of ["AIM-9L"]
+                    ["AIM-54C-Mk60"] = 
+                    {
+                        ["numHits"] = 8,
+                        ["kills"] = 5,
+                        ["shot"] = 6,
+                        ["hit"] = 5,
+                    }, -- end of ["AIM-54C-Mk60"]
+                    ["Mk-82"] = 
+                    {
+                        ["hit"] = 2,
+                        ["kills"] = 2,
+                        ["shot"] = 8,
+                        ["numHits"] = 5,
+                    }, -- end of ["Mk-82"]
                     ["Mk-82 Snakeye"] = 
                     {
                         ["hit"] = 0,
@@ -1170,7 +1170,7 @@ stats =
             }, -- end of ["UH-1H Copilot"]
         }, -- end of ["times"]
         ["joinDate"] = 1612800236,
-        ["lastJoin"] = 1700947945,
+        ["lastJoin"] = 1703339663,
         ["id"] = 78,
         ["names"] = 
         {
@@ -1567,7 +1567,25 @@ stats =
             }, -- end of ["F-14A-135-GR"]
             ["F-14B"] = 
             {
+                ["inAir"] = 4504.055,
                 ["total"] = 4504.055,
+                ["actions"] = 
+                {
+                    ["losses"] = 
+                    {
+                        ["pilotDeath"] = 0,
+                        ["crash"] = 1,
+                        ["eject"] = 4,
+                        ["pilotError"] = 1,
+                    }, -- end of ["losses"]
+                    ["lostTo"] = 
+                    {
+                        ["Planes"] = 
+                        {
+                            ["Fighters"] = 1,
+                        }, -- end of ["Planes"]
+                    }, -- end of ["lostTo"]
+                }, -- end of ["actions"]
                 ["weapons"] = 
                 {
                     ["AIM-9M"] = 
@@ -1592,24 +1610,6 @@ stats =
                         ["numHits"] = 0,
                     }, -- end of ["M-61A1"]
                 }, -- end of ["weapons"]
-                ["actions"] = 
-                {
-                    ["losses"] = 
-                    {
-                        ["pilotDeath"] = 0,
-                        ["crash"] = 1,
-                        ["eject"] = 4,
-                        ["pilotError"] = 1,
-                    }, -- end of ["losses"]
-                    ["lostTo"] = 
-                    {
-                        ["Planes"] = 
-                        {
-                            ["Fighters"] = 1,
-                        }, -- end of ["Planes"]
-                    }, -- end of ["lostTo"]
-                }, -- end of ["actions"]
-                ["inAir"] = 4504.055,
             }, -- end of ["F-14B"]
             ["UH-1H"] = 
             {
@@ -1750,8 +1750,18 @@ stats =
             }, -- end of ["F-14A-135-GR RIO"]
             ["A-4E-C"] = 
             {
+                ["weapons"] = 
+                {
+                    ["coltMK12"] = 
+                    {
+                        ["kills"] = 0,
+                        ["shot"] = 50,
+                        ["hit"] = 0,
+                        ["gun"] = true,
+                        ["numHits"] = 0,
+                    }, -- end of ["coltMK12"]
+                }, -- end of ["weapons"]
                 ["total"] = 3864.039,
-                ["inAir"] = 1631.653,
                 ["actions"] = 
                 {
                     ["landing"] = 
@@ -1770,17 +1780,7 @@ stats =
                         ["pilotError"] = 1,
                     }, -- end of ["losses"]
                 }, -- end of ["actions"]
-                ["weapons"] = 
-                {
-                    ["coltMK12"] = 
-                    {
-                        ["kills"] = 0,
-                        ["shot"] = 50,
-                        ["hit"] = 0,
-                        ["gun"] = true,
-                        ["numHits"] = 0,
-                    }, -- end of ["coltMK12"]
-                }, -- end of ["weapons"]
+                ["inAir"] = 1631.653,
             }, -- end of ["A-4E-C"]
         }, -- end of ["times"]
         ["joinDate"] = 1615477692,
@@ -1898,7 +1898,17 @@ stats =
         {
             ["AV8BNA"] = 
             {
+                ["total"] = 11436.605,
                 ["inAir"] = 9585.484,
+                ["actions"] = 
+                {
+                    ["losses"] = 
+                    {
+                        ["pilotDeath"] = 1,
+                        ["crash"] = 1,
+                        ["eject"] = 0,
+                    }, -- end of ["losses"]
+                }, -- end of ["actions"]
                 ["weapons"] = 
                 {
                     ["Mk-82 SnakeEye"] = 
@@ -1951,16 +1961,6 @@ stats =
                         ["numHits"] = 0,
                     }, -- end of ["AGM-65E"]
                 }, -- end of ["weapons"]
-                ["actions"] = 
-                {
-                    ["losses"] = 
-                    {
-                        ["pilotDeath"] = 1,
-                        ["crash"] = 1,
-                        ["eject"] = 0,
-                    }, -- end of ["losses"]
-                }, -- end of ["actions"]
-                ["total"] = 11436.605,
             }, -- end of ["AV8BNA"]
         }, -- end of ["times"]
         ["joinDate"] = 1606336836,
@@ -2000,6 +2000,7 @@ stats =
             }, -- end of ["M-2000C"]
             ["A-10C"] = 
             {
+                ["inAir"] = 610.312,
                 ["weapons"] = 
                 {
                     ["GAU-8"] = 
@@ -2011,7 +2012,6 @@ stats =
                         ["numHits"] = 0,
                     }, -- end of ["GAU-8"]
                 }, -- end of ["weapons"]
-                ["total"] = 1150.608,
                 ["actions"] = 
                 {
                     ["losses"] = 
@@ -2021,7 +2021,7 @@ stats =
                         ["eject"] = 0,
                     }, -- end of ["losses"]
                 }, -- end of ["actions"]
-                ["inAir"] = 610.312,
+                ["total"] = 1150.608,
             }, -- end of ["A-10C"]
             ["P-51D"] = 
             {
@@ -2045,7 +2045,17 @@ stats =
             }, -- end of ["F-14B RIO"]
             ["FA-18C_hornet"] = 
             {
+                ["inAir"] = 8833.452,
                 ["total"] = 17355.606,
+                ["actions"] = 
+                {
+                    ["losses"] = 
+                    {
+                        ["pilotDeath"] = 0,
+                        ["crash"] = 0,
+                        ["eject"] = 1,
+                    }, -- end of ["losses"]
+                }, -- end of ["actions"]
                 ["weapons"] = 
                 {
                     ["GBU-12"] = 
@@ -2063,16 +2073,6 @@ stats =
                         ["hit"] = 0,
                     }, -- end of ["Mk-82 SnakeEye"]
                 }, -- end of ["weapons"]
-                ["actions"] = 
-                {
-                    ["losses"] = 
-                    {
-                        ["pilotDeath"] = 0,
-                        ["crash"] = 0,
-                        ["eject"] = 1,
-                    }, -- end of ["losses"]
-                }, -- end of ["actions"]
-                ["inAir"] = 8833.452,
             }, -- end of ["FA-18C_hornet"]
             ["SpitfireLFMkIXCW"] = 
             {
@@ -2143,7 +2143,17 @@ stats =
             }, -- end of ["F-16C_50"]
             ["AV8BNA"] = 
             {
+                ["inAir"] = 20788.431,
                 ["total"] = 30271.766,
+                ["actions"] = 
+                {
+                    ["losses"] = 
+                    {
+                        ["pilotDeath"] = 4,
+                        ["crash"] = 2,
+                        ["eject"] = 1,
+                    }, -- end of ["losses"]
+                }, -- end of ["actions"]
                 ["weapons"] = 
                 {
                     ["AGM-88C"] = 
@@ -2203,16 +2213,6 @@ stats =
                         ["hit"] = 0,
                     }, -- end of ["Mk-82 SnakeEye"]
                 }, -- end of ["weapons"]
-                ["actions"] = 
-                {
-                    ["losses"] = 
-                    {
-                        ["pilotDeath"] = 4,
-                        ["crash"] = 2,
-                        ["eject"] = 1,
-                    }, -- end of ["losses"]
-                }, -- end of ["actions"]
-                ["inAir"] = 20788.431,
             }, -- end of ["AV8BNA"]
             ["Mi-8MT"] = 
             {
@@ -2870,6 +2870,7 @@ stats =
             }, -- end of ["F-16C_50"]
             ["F-5E-3"] = 
             {
+                ["inAir"] = 1720.849,
                 ["weapons"] = 
                 {
                     ["M-39"] = 
@@ -2880,7 +2881,6 @@ stats =
                         ["hit"] = 0,
                     }, -- end of ["M-39"]
                 }, -- end of ["weapons"]
-                ["total"] = 2161.051,
                 ["actions"] = 
                 {
                     ["losses"] = 
@@ -2890,7 +2890,7 @@ stats =
                         ["eject"] = 0,
                     }, -- end of ["losses"]
                 }, -- end of ["actions"]
-                ["inAir"] = 1720.849,
+                ["total"] = 2161.051,
             }, -- end of ["F-5E-3"]
         }, -- end of ["times"]
         ["joinDate"] = 1585253033,
@@ -3011,6 +3011,7 @@ stats =
             }, -- end of ["AV8BNA"]
             ["F-16C_50"] = 
             {
+                ["total"] = 9025.393,
                 ["weapons"] = 
                 {
                     ["AGM-88C"] = 
@@ -3028,7 +3029,6 @@ stats =
                         ["numHits"] = 8,
                     }, -- end of ["Mk-82 SnakeEye"]
                 }, -- end of ["weapons"]
-                ["inAir"] = 7314.032,
                 ["actions"] = 
                 {
                     ["losses"] = 
@@ -3038,7 +3038,7 @@ stats =
                         ["eject"] = 0,
                     }, -- end of ["losses"]
                 }, -- end of ["actions"]
-                ["total"] = 9025.393,
+                ["inAir"] = 7314.032,
             }, -- end of ["F-16C_50"]
             ["UH-1H"] = 
             {
@@ -3313,13 +3313,13 @@ stats =
                         ["shot"] = 2,
                         ["hit"] = 0,
                     }, -- end of ["BDU-33"]
-                    ["GBU-12"] = 
+                    ["AGM-65L"] = 
                     {
-                        ["numHits"] = 3,
+                        ["numHits"] = 6,
                         ["kills"] = 0,
-                        ["shot"] = 6,
-                        ["hit"] = 1,
-                    }, -- end of ["GBU-12"]
+                        ["shot"] = 4,
+                        ["hit"] = 0,
+                    }, -- end of ["AGM-65L"]
                     ["shot"] = 8,
                     ["AGM-65F"] = 
                     {
@@ -3328,13 +3328,13 @@ stats =
                         ["shot"] = 3,
                         ["hit"] = 0,
                     }, -- end of ["AGM-65F"]
-                    ["Mk-82AIR"] = 
+                    ["GBU-12"] = 
                     {
-                        ["hit"] = 0,
+                        ["numHits"] = 3,
                         ["kills"] = 0,
-                        ["shot"] = 4,
-                        ["numHits"] = 1,
-                    }, -- end of ["Mk-82AIR"]
+                        ["shot"] = 6,
+                        ["hit"] = 1,
+                    }, -- end of ["GBU-12"]
                     ["unknown"] = 
                     {
                         ["hit"] = 0,
@@ -3342,13 +3342,13 @@ stats =
                         ["shot"] = 0,
                         ["numHits"] = 78,
                     }, -- end of ["unknown"]
-                    ["AGM-65L"] = 
+                    ["Mk-82AIR"] = 
                     {
-                        ["numHits"] = 6,
+                        ["hit"] = 0,
                         ["kills"] = 0,
                         ["shot"] = 4,
-                        ["hit"] = 0,
-                    }, -- end of ["AGM-65L"]
+                        ["numHits"] = 1,
+                    }, -- end of ["Mk-82AIR"]
                     ["Mk-20 Rockeye"] = 
                     {
                         ["hit"] = 0,
@@ -3374,17 +3374,8 @@ stats =
             }, -- end of ["AV8BNA"]
             ["A-4E-C"] = 
             {
+                ["total"] = 1121.167,
                 ["inAir"] = 690.673,
-                ["weapons"] = 
-                {
-                    ["coltMK12"] = 
-                    {
-                        ["hit"] = 0,
-                        ["kills"] = 0,
-                        ["shot"] = 42,
-                        ["numHits"] = 4,
-                    }, -- end of ["coltMK12"]
-                }, -- end of ["weapons"]
                 ["actions"] = 
                 {
                     ["lostTo"] = 
@@ -3405,7 +3396,16 @@ stats =
                         ["eject"] = 0,
                     }, -- end of ["losses"]
                 }, -- end of ["actions"]
-                ["total"] = 1121.167,
+                ["weapons"] = 
+                {
+                    ["coltMK12"] = 
+                    {
+                        ["hit"] = 0,
+                        ["kills"] = 0,
+                        ["shot"] = 42,
+                        ["numHits"] = 4,
+                    }, -- end of ["coltMK12"]
+                }, -- end of ["weapons"]
             }, -- end of ["A-4E-C"]
         }, -- end of ["times"]
         ["joinDate"] = 1612794517,
@@ -3441,7 +3441,17 @@ stats =
         {
             ["F-16C_50"] = 
             {
+                ["total"] = 13488.12,
                 ["inAir"] = 10486.329,
+                ["actions"] = 
+                {
+                    ["losses"] = 
+                    {
+                        ["pilotDeath"] = 1,
+                        ["crash"] = 2,
+                        ["eject"] = 0,
+                    }, -- end of ["losses"]
+                }, -- end of ["actions"]
                 ["weapons"] = 
                 {
                     ["Mk-82"] = 
@@ -3459,16 +3469,6 @@ stats =
                         ["numHits"] = 0,
                     }, -- end of ["AIM-120C-5"]
                 }, -- end of ["weapons"]
-                ["actions"] = 
-                {
-                    ["losses"] = 
-                    {
-                        ["pilotDeath"] = 1,
-                        ["crash"] = 2,
-                        ["eject"] = 0,
-                    }, -- end of ["losses"]
-                }, -- end of ["actions"]
-                ["total"] = 13488.12,
             }, -- end of ["F-16C_50"]
         }, -- end of ["times"]
         ["joinDate"] = 1631221508,
@@ -4082,13 +4082,13 @@ stats =
                         ["shot"] = 6,
                         ["hit"] = 0,
                     }, -- end of ["Mk-82AIR"]
-                    ["unknown"] = 
+                    ["Mk-83"] = 
                     {
-                        ["hit"] = 0,
+                        ["numHits"] = 0,
                         ["kills"] = 0,
-                        ["shot"] = 0,
-                        ["numHits"] = 2,
-                    }, -- end of ["unknown"]
+                        ["shot"] = 2,
+                        ["hit"] = 0,
+                    }, -- end of ["Mk-83"]
                     ["shot"] = 1,
                     ["AGM-65F"] = 
                     {
@@ -4104,6 +4104,13 @@ stats =
                         ["shot"] = 1,
                         ["numHits"] = 1,
                     }, -- end of ["GBU-12"]
+                    ["unknown"] = 
+                    {
+                        ["hit"] = 0,
+                        ["kills"] = 0,
+                        ["shot"] = 0,
+                        ["numHits"] = 2,
+                    }, -- end of ["unknown"]
                     ["Mk-82"] = 
                     {
                         ["numHits"] = 0,
@@ -4111,13 +4118,6 @@ stats =
                         ["shot"] = 2,
                         ["hit"] = 0,
                     }, -- end of ["Mk-82"]
-                    ["Mk-83"] = 
-                    {
-                        ["numHits"] = 0,
-                        ["kills"] = 0,
-                        ["shot"] = 2,
-                        ["hit"] = 0,
-                    }, -- end of ["Mk-83"]
                     ["Mk-20 Rockeye"] = 
                     {
                         ["hit"] = 0,
@@ -4216,7 +4216,7 @@ stats =
             }, -- end of ["MiG-29S"]
             ["F-14A-135-GR"] = 
             {
-                ["total"] = 91356.616999999,
+                ["total"] = 95320.977999999,
                 ["kills"] = 
                 {
                     ["Planes"] = 
@@ -4226,7 +4226,7 @@ stats =
                         ["Fighters"] = 5,
                     }, -- end of ["Planes"]
                 }, -- end of ["kills"]
-                ["inAir"] = 54605.163,
+                ["inAir"] = 57368.21,
                 ["actions"] = 
                 {
                     ["lostTo"] = 
@@ -4448,7 +4448,7 @@ stats =
             }, -- end of ["T-45"]
         }, -- end of ["times"]
         ["joinDate"] = 1677143521,
-        ["lastJoin"] = 1702417979,
+        ["lastJoin"] = 1703340681,
         ["id"] = 152,
         ["names"] = 
         {
@@ -4686,6 +4686,7 @@ stats =
             }, -- end of ["AJS37"]
             ["P-51D-30-NA"] = 
             {
+                ["inAir"] = 1130.593,
                 ["weapons"] = 
                 {
                     ["Browning .50 M2"] = 
@@ -4696,7 +4697,6 @@ stats =
                         ["numHits"] = 0,
                     }, -- end of ["Browning .50 M2"]
                 }, -- end of ["weapons"]
-                ["total"] = 1570.827,
                 ["actions"] = 
                 {
                     ["losses"] = 
@@ -4706,7 +4706,7 @@ stats =
                         ["eject"] = 0,
                     }, -- end of ["losses"]
                 }, -- end of ["actions"]
-                ["inAir"] = 1130.593,
+                ["total"] = 1570.827,
             }, -- end of ["P-51D-30-NA"]
             ["UH-1H"] = 
             {
@@ -4972,37 +4972,18 @@ stats =
     {
         ["times"] = 
         {
-            ["AV8BNA"] = 
-            {
-                ["total"] = 50.027000000002,
-                ["inAir"] = 0,
-            }, -- end of ["AV8BNA"]
-            ["SA342L"] = 
-            {
-                ["total"] = 2902.81,
-                ["actions"] = 
-                {
-                    ["landing"] = 
-                    {
-                        ["hms_invincible"] = 2,
-                        ["leander-gun-achilles"] = 2,
-                    }, -- end of ["landing"]
-                    ["takeoff"] = 
-                    {
-                        ["austere"] = 4,
-                    }, -- end of ["takeoff"]
-                }, -- end of ["actions"]
-                ["inAir"] = 1281.194,
-            }, -- end of ["SA342L"]
-            ["UH-1H"] = 
-            {
-                ["total"] = 120.037,
-                ["inAir"] = 0,
-            }, -- end of ["UH-1H"]
             ["F-16C_50"] = 
             {
+                ["kills"] = 
+                {
+                    ["Ground Units"] = 
+                    {
+                        ["SAM"] = 7,
+                        ["Unarmored"] = 1,
+                        ["total"] = 8,
+                    }, -- end of ["Ground Units"]
+                }, -- end of ["kills"]
                 ["total"] = 8527.909,
-                ["inAir"] = 5526.811,
                 ["weapons"] = 
                 {
                     ["Mk-82"] = 
@@ -5027,16 +5008,35 @@ stats =
                         ["hit"] = 0,
                     }, -- end of ["CBU-97/CBU-105 SFW"]
                 }, -- end of ["weapons"]
-                ["kills"] = 
-                {
-                    ["Ground Units"] = 
-                    {
-                        ["SAM"] = 7,
-                        ["Unarmored"] = 1,
-                        ["total"] = 8,
-                    }, -- end of ["Ground Units"]
-                }, -- end of ["kills"]
+                ["inAir"] = 5526.811,
             }, -- end of ["F-16C_50"]
+            ["AV8BNA"] = 
+            {
+                ["total"] = 50.027000000002,
+                ["inAir"] = 0,
+            }, -- end of ["AV8BNA"]
+            ["UH-1H"] = 
+            {
+                ["total"] = 120.037,
+                ["inAir"] = 0,
+            }, -- end of ["UH-1H"]
+            ["SA342L"] = 
+            {
+                ["total"] = 2902.81,
+                ["actions"] = 
+                {
+                    ["landing"] = 
+                    {
+                        ["hms_invincible"] = 2,
+                        ["leander-gun-achilles"] = 2,
+                    }, -- end of ["landing"]
+                    ["takeoff"] = 
+                    {
+                        ["austere"] = 4,
+                    }, -- end of ["takeoff"]
+                }, -- end of ["actions"]
+                ["inAir"] = 1281.194,
+            }, -- end of ["SA342L"]
         }, -- end of ["times"]
         ["joinDate"] = 1631824931,
         ["lastJoin"] = 1702667984,
@@ -5196,7 +5196,17 @@ stats =
         {
             ["FA-18C_hornet"] = 
             {
+                ["total"] = 4105.877,
                 ["inAir"] = 2804.338,
+                ["actions"] = 
+                {
+                    ["losses"] = 
+                    {
+                        ["pilotDeath"] = 2,
+                        ["crash"] = 2,
+                        ["eject"] = 0,
+                    }, -- end of ["losses"]
+                }, -- end of ["actions"]
                 ["weapons"] = 
                 {
                     ["AGM-88C"] = 
@@ -5214,16 +5224,6 @@ stats =
                         ["numHits"] = 0,
                     }, -- end of ["F/A-18C Lot 20"]
                 }, -- end of ["weapons"]
-                ["actions"] = 
-                {
-                    ["losses"] = 
-                    {
-                        ["pilotDeath"] = 2,
-                        ["crash"] = 2,
-                        ["eject"] = 0,
-                    }, -- end of ["losses"]
-                }, -- end of ["actions"]
-                ["total"] = 4105.877,
             }, -- end of ["FA-18C_hornet"]
         }, -- end of ["times"]
         ["joinDate"] = 1601752857,
@@ -5257,8 +5257,18 @@ stats =
         {
             ["Mirage-F1CE"] = 
             {
+                ["weapons"] = 
+                {
+                    ["defa_553"] = 
+                    {
+                        ["kills"] = 0,
+                        ["shot"] = 268,
+                        ["hit"] = 0,
+                        ["gun"] = true,
+                        ["numHits"] = 0,
+                    }, -- end of ["defa_553"]
+                }, -- end of ["weapons"]
                 ["total"] = 4434.595,
-                ["inAir"] = 1771.799,
                 ["actions"] = 
                 {
                     ["landing"] = 
@@ -5283,17 +5293,7 @@ stats =
                         }, -- end of ["Planes"]
                     }, -- end of ["lostTo"]
                 }, -- end of ["actions"]
-                ["weapons"] = 
-                {
-                    ["defa_553"] = 
-                    {
-                        ["kills"] = 0,
-                        ["shot"] = 268,
-                        ["hit"] = 0,
-                        ["gun"] = true,
-                        ["numHits"] = 0,
-                    }, -- end of ["defa_553"]
-                }, -- end of ["weapons"]
+                ["inAir"] = 1771.799,
             }, -- end of ["Mirage-F1CE"]
             ["AV8BNA"] = 
             {
@@ -5322,7 +5322,23 @@ stats =
             }, -- end of ["S-300PS 40B6M tr"]
             ["MiG-29S"] = 
             {
+                ["inAir"] = 1240.286,
                 ["total"] = 1240.286,
+                ["actions"] = 
+                {
+                    ["losses"] = 
+                    {
+                        ["eject"] = 1,
+                        ["crash"] = 2,
+                    }, -- end of ["losses"]
+                    ["lostTo"] = 
+                    {
+                        ["Planes"] = 
+                        {
+                            ["Fighters"] = 1,
+                        }, -- end of ["Planes"]
+                    }, -- end of ["lostTo"]
+                }, -- end of ["actions"]
                 ["weapons"] = 
                 {
                     ["R-60M (AA-8 Aphid-B)"] = 
@@ -5340,22 +5356,6 @@ stats =
                         ["hit"] = 0,
                     }, -- end of ["R-27R (AA-10 Alamo A)"]
                 }, -- end of ["weapons"]
-                ["actions"] = 
-                {
-                    ["losses"] = 
-                    {
-                        ["eject"] = 1,
-                        ["crash"] = 2,
-                    }, -- end of ["losses"]
-                    ["lostTo"] = 
-                    {
-                        ["Planes"] = 
-                        {
-                            ["Fighters"] = 1,
-                        }, -- end of ["Planes"]
-                    }, -- end of ["lostTo"]
-                }, -- end of ["actions"]
-                ["inAir"] = 1240.286,
             }, -- end of ["MiG-29S"]
             ["Su-27"] = 
             {
@@ -5406,10 +5406,10 @@ stats =
                     }, -- end of ["Planes"]
                     ["Ground Units"] = 
                     {
-                        ["SAM"] = 2,
-                        ["total"] = 4,
-                        ["Unarmored"] = 1,
                         ["Infantry"] = 1,
+                        ["SAM"] = 2,
+                        ["Unarmored"] = 1,
+                        ["total"] = 4,
                     }, -- end of ["Ground Units"]
                     ["Buildings"] = 
                     {
@@ -5514,27 +5514,6 @@ stats =
                         ["numHits"] = 9,
                     }, -- end of ["AGM-88C"]
                     ["shot"] = 20,
-                    ["Mk-82AIR"] = 
-                    {
-                        ["hit"] = 4,
-                        ["kills"] = 0,
-                        ["shot"] = 16,
-                        ["numHits"] = 16,
-                    }, -- end of ["Mk-82AIR"]
-                    ["GBU-12"] = 
-                    {
-                        ["numHits"] = 0,
-                        ["kills"] = 0,
-                        ["shot"] = 4,
-                        ["hit"] = 0,
-                    }, -- end of ["GBU-12"]
-                    ["unknown"] = 
-                    {
-                        ["hit"] = 0,
-                        ["kills"] = 2,
-                        ["shot"] = 0,
-                        ["numHits"] = 10,
-                    }, -- end of ["unknown"]
                     ["AIM-9L"] = 
                     {
                         ["numHits"] = 8,
@@ -5542,6 +5521,27 @@ stats =
                         ["shot"] = 14,
                         ["hit"] = 5,
                     }, -- end of ["AIM-9L"]
+                    ["Mk-82AIR"] = 
+                    {
+                        ["hit"] = 4,
+                        ["kills"] = 0,
+                        ["shot"] = 16,
+                        ["numHits"] = 16,
+                    }, -- end of ["Mk-82AIR"]
+                    ["unknown"] = 
+                    {
+                        ["hit"] = 0,
+                        ["kills"] = 2,
+                        ["shot"] = 0,
+                        ["numHits"] = 10,
+                    }, -- end of ["unknown"]
+                    ["GBU-12"] = 
+                    {
+                        ["numHits"] = 0,
+                        ["kills"] = 0,
+                        ["shot"] = 4,
+                        ["hit"] = 0,
+                    }, -- end of ["GBU-12"]
                     ["Mk-82 Snakeye"] = 
                     {
                         ["hit"] = 0,
@@ -5877,22 +5877,6 @@ stats =
             }, -- end of ["MiG-21Bis"]
             ["Mirage-F1CE"] = 
             {
-                ["total"] = 1862.162,
-                ["inAir"] = 690.703,
-                ["actions"] = 
-                {
-                    ["losses"] = 
-                    {
-                        ["pilotDeath"] = 0,
-                        ["crash"] = 0,
-                        ["eject"] = 1,
-                        ["pilotError"] = 1,
-                    }, -- end of ["losses"]
-                    ["takeoff"] = 
-                    {
-                        ["airbase"] = 2,
-                    }, -- end of ["takeoff"]
-                }, -- end of ["actions"]
                 ["weapons"] = 
                 {
                     ["SAMP-400 HD"] = 
@@ -5910,6 +5894,22 @@ stats =
                         ["numHits"] = 0,
                     }, -- end of ["defa_553"]
                 }, -- end of ["weapons"]
+                ["total"] = 1862.162,
+                ["actions"] = 
+                {
+                    ["losses"] = 
+                    {
+                        ["pilotDeath"] = 0,
+                        ["crash"] = 0,
+                        ["eject"] = 1,
+                        ["pilotError"] = 1,
+                    }, -- end of ["losses"]
+                    ["takeoff"] = 
+                    {
+                        ["airbase"] = 2,
+                    }, -- end of ["takeoff"]
+                }, -- end of ["actions"]
+                ["inAir"] = 690.703,
             }, -- end of ["Mirage-F1CE"]
             ["Mi-8MT"] = 
             {
@@ -6107,8 +6107,17 @@ stats =
         {
             ["Su-25T"] = 
             {
+                ["weapons"] = 
+                {
+                    ["Kh-58U"] = 
+                    {
+                        ["numHits"] = 0,
+                        ["kills"] = 0,
+                        ["shot"] = 1,
+                        ["hit"] = 0,
+                    }, -- end of ["Kh-58U"]
+                }, -- end of ["weapons"]
                 ["inAir"] = 2568.741,
-                ["total"] = 3229.571,
                 ["actions"] = 
                 {
                     ["lostTo"] = 
@@ -6133,50 +6142,10 @@ stats =
                         ["eject"] = 2,
                     }, -- end of ["losses"]
                 }, -- end of ["actions"]
-                ["weapons"] = 
-                {
-                    ["Kh-58U"] = 
-                    {
-                        ["numHits"] = 0,
-                        ["kills"] = 0,
-                        ["shot"] = 1,
-                        ["hit"] = 0,
-                    }, -- end of ["Kh-58U"]
-                }, -- end of ["weapons"]
+                ["total"] = 3229.571,
             }, -- end of ["Su-25T"]
             ["AV8BNA"] = 
             {
-                ["inAir"] = 27016.768,
-                ["total"] = 41945.78,
-                ["actions"] = 
-                {
-                    ["lostTo"] = 
-                    {
-                        ["Planes"] = 
-                        {
-                            ["Fighters"] = 3,
-                        }, -- end of ["Planes"]
-                    }, -- end of ["lostTo"]
-                    ["takeoff"] = 
-                    {
-                        ["airbase"] = 2,
-                        ["hms_invincible"] = 17,
-                    }, -- end of ["takeoff"]
-                    ["landing"] = 
-                    {
-                        ["hms_invincible"] = 14,
-                        ["landedWhileDamaged"] = 1,
-                    }, -- end of ["landing"]
-                    ["losses"] = 
-                    {
-                        ["pilotDeath"] = 5,
-                        ["crashLanding"] = 2,
-                        ["crash"] = 6,
-                        ["pilotError"] = 3,
-                        ["eject"] = 0,
-                    }, -- end of ["losses"]
-                    ["bolter"] = 1,
-                }, -- end of ["actions"]
                 ["weapons"] = 
                 {
                     ["AIM-9M"] = 
@@ -6196,10 +6165,10 @@ stats =
                     ["Mk-82"] = 
                     {
                         ["kills"] = 0,
-                        ["shot"] = 17,
-                        ["numHits"] = 18,
+                        ["shot"] = 21,
+                        ["numHits"] = 22,
                         ["assist"] = 2,
-                        ["hit"] = 11,
+                        ["hit"] = 15,
                     }, -- end of ["Mk-82"]
                     ["2.75\" FFAR, UnGd Rkts Mk1, HE"] = 
                     {
@@ -6216,6 +6185,37 @@ stats =
                         ["numHits"] = 0,
                     }, -- end of ["Hydra 70 M156 SM"]
                 }, -- end of ["weapons"]
+                ["inAir"] = 36104.533,
+                ["actions"] = 
+                {
+                    ["lostTo"] = 
+                    {
+                        ["Planes"] = 
+                        {
+                            ["Fighters"] = 3,
+                        }, -- end of ["Planes"]
+                    }, -- end of ["lostTo"]
+                    ["takeoff"] = 
+                    {
+                        ["airbase"] = 2,
+                        ["hms_invincible"] = 18,
+                    }, -- end of ["takeoff"]
+                    ["landing"] = 
+                    {
+                        ["hms_invincible"] = 15,
+                        ["landedWhileDamaged"] = 1,
+                    }, -- end of ["landing"]
+                    ["losses"] = 
+                    {
+                        ["pilotDeath"] = 5,
+                        ["crashLanding"] = 2,
+                        ["crash"] = 6,
+                        ["pilotError"] = 3,
+                        ["eject"] = 0,
+                    }, -- end of ["losses"]
+                    ["bolter"] = 1,
+                }, -- end of ["actions"]
+                ["total"] = 53335.665,
             }, -- end of ["AV8BNA"]
             ["A-4E-C"] = 
             {
@@ -6244,7 +6244,7 @@ stats =
         }, -- end of ["times"]
         ["joinDate"] = 1692462068,
         ["id"] = 167,
-        ["lastJoin"] = 1702162439,
+        ["lastJoin"] = 1703802382,
         ["pvp"] = 
         {
             ["AV8BNA"] = 
@@ -6903,7 +6903,25 @@ stats =
             }, -- end of ["AV8BNA"]
             ["F-14B RIO"] = 
             {
+                ["inAir"] = 4484.049,
                 ["total"] = 4484.049,
+                ["actions"] = 
+                {
+                    ["losses"] = 
+                    {
+                        ["pilotDeath"] = 0,
+                        ["crash"] = 1,
+                        ["eject"] = 4,
+                        ["pilotError"] = 1,
+                    }, -- end of ["losses"]
+                    ["lostTo"] = 
+                    {
+                        ["Planes"] = 
+                        {
+                            ["Fighters"] = 1,
+                        }, -- end of ["Planes"]
+                    }, -- end of ["lostTo"]
+                }, -- end of ["actions"]
                 ["weapons"] = 
                 {
                     ["AIM-9M"] = 
@@ -6928,24 +6946,6 @@ stats =
                         ["numHits"] = 0,
                     }, -- end of ["M-61A1"]
                 }, -- end of ["weapons"]
-                ["actions"] = 
-                {
-                    ["losses"] = 
-                    {
-                        ["pilotDeath"] = 0,
-                        ["crash"] = 1,
-                        ["eject"] = 4,
-                        ["pilotError"] = 1,
-                    }, -- end of ["losses"]
-                    ["lostTo"] = 
-                    {
-                        ["Planes"] = 
-                        {
-                            ["Fighters"] = 1,
-                        }, -- end of ["Planes"]
-                    }, -- end of ["lostTo"]
-                }, -- end of ["actions"]
-                ["inAir"] = 4484.049,
             }, -- end of ["F-14B RIO"]
             ["F-14A-135-GR"] = 
             {
@@ -7341,6 +7341,24 @@ stats =
             [2] = "NOBLE 1 | ags",
         }, -- end of ["names"]
     }, -- end of ["8456b92c1d10b237d8f337c00e3914d7"]
+    ["c515900aec81f4de675708369df6db7b"] = 
+    {
+        ["times"] = 
+        {
+            ["UH-1H"] = 
+            {
+                ["total"] = 170.134,
+                ["inAir"] = 0,
+            }, -- end of ["UH-1H"]
+        }, -- end of ["times"]
+        ["joinDate"] = 1703181130,
+        ["lastJoin"] = 1703181307,
+        ["id"] = 179,
+        ["names"] = 
+        {
+            [1] = "DannyR",
+        }, -- end of ["names"]
+    }, -- end of ["c515900aec81f4de675708369df6db7b"]
     ["a6271744fd547e44aeb0a15faaec0c49"] = 
     {
         ["times"] = 
@@ -7534,6 +7552,7 @@ stats =
         {
             ["MiG-21Bis"] = 
             {
+                ["inAir"] = 2391.407,
                 ["weapons"] = 
                 {
                     ["GSH_23"] = 
@@ -7545,7 +7564,6 @@ stats =
                         ["numHits"] = 0,
                     }, -- end of ["GSH_23"]
                 }, -- end of ["weapons"]
-                ["total"] = 7033.648,
                 ["actions"] = 
                 {
                     ["losses"] = 
@@ -7555,7 +7573,7 @@ stats =
                         ["eject"] = 0,
                     }, -- end of ["losses"]
                 }, -- end of ["actions"]
-                ["inAir"] = 2391.407,
+                ["total"] = 7033.648,
             }, -- end of ["MiG-21Bis"]
             ["F-16C_50"] = 
             {
@@ -8080,6 +8098,7 @@ stats =
             }, -- end of ["F-14B"]
             ["AJS37"] = 
             {
+                ["inAir"] = 340.173,
                 ["weapons"] = 
                 {
                     ["AKAN"] = 
@@ -8090,7 +8109,6 @@ stats =
                         ["numHits"] = 0,
                     }, -- end of ["AKAN"]
                 }, -- end of ["weapons"]
-                ["total"] = 550.298,
                 ["actions"] = 
                 {
                     ["losses"] = 
@@ -8100,7 +8118,7 @@ stats =
                         ["eject"] = 1,
                     }, -- end of ["losses"]
                 }, -- end of ["actions"]
-                ["inAir"] = 340.173,
+                ["total"] = 550.298,
             }, -- end of ["AJS37"]
             ["F-16C_50"] = 
             {
@@ -8119,6 +8137,7 @@ stats =
             }, -- end of ["F-16C_50"]
             ["FW-190A8"] = 
             {
+                ["inAir"] = 810.45,
                 ["weapons"] = 
                 {
                     ["MG 131"] = 
@@ -8136,7 +8155,6 @@ stats =
                         ["numHits"] = 0,
                     }, -- end of ["MG 151/20"]
                 }, -- end of ["weapons"]
-                ["total"] = 2080.992,
                 ["actions"] = 
                 {
                     ["losses"] = 
@@ -8146,7 +8164,7 @@ stats =
                         ["eject"] = 0,
                     }, -- end of ["losses"]
                 }, -- end of ["actions"]
-                ["inAir"] = 810.45,
+                ["total"] = 2080.992,
             }, -- end of ["FW-190A8"]
             ["Yak-52"] = 
             {
@@ -8187,8 +8205,24 @@ stats =
         {
             ["Mi-24P"] = 
             {
+                ["weapons"] = 
+                {
+                    ["9M114 Shturm-V (AT-6 Spiral)"] = 
+                    {
+                        ["numHits"] = 0,
+                        ["kills"] = 0,
+                        ["shot"] = 4,
+                        ["hit"] = 0,
+                    }, -- end of ["9M114 Shturm-V (AT-6 Spiral)"]
+                    ["GSh-30-2K"] = 
+                    {
+                        ["numHits"] = 0,
+                        ["kills"] = 0,
+                        ["shot"] = 3,
+                        ["hit"] = 0,
+                    }, -- end of ["GSh-30-2K"]
+                }, -- end of ["weapons"]
                 ["inAir"] = 2378.445,
-                ["total"] = 2949.25,
                 ["actions"] = 
                 {
                     ["lostTo"] = 
@@ -8212,23 +8246,7 @@ stats =
                         ["eject"] = 0,
                     }, -- end of ["losses"]
                 }, -- end of ["actions"]
-                ["weapons"] = 
-                {
-                    ["9M114 Shturm-V (AT-6 Spiral)"] = 
-                    {
-                        ["numHits"] = 0,
-                        ["kills"] = 0,
-                        ["shot"] = 4,
-                        ["hit"] = 0,
-                    }, -- end of ["9M114 Shturm-V (AT-6 Spiral)"]
-                    ["GSh-30-2K"] = 
-                    {
-                        ["numHits"] = 0,
-                        ["kills"] = 0,
-                        ["shot"] = 3,
-                        ["hit"] = 0,
-                    }, -- end of ["GSh-30-2K"]
-                }, -- end of ["weapons"]
+                ["total"] = 2949.25,
             }, -- end of ["Mi-24P"]
         }, -- end of ["times"]
         ["joinDate"] = 1700944850,
@@ -8884,10 +8902,10 @@ stats =
                 {
                     ["Ground Units"] = 
                     {
-                        ["total"] = 19,
-                        ["Infantry"] = 7,
-                        ["Unarmored"] = 10,
                         ["SAM"] = 2,
+                        ["total"] = 19,
+                        ["Unarmored"] = 10,
+                        ["Infantry"] = 7,
                     }, -- end of ["Ground Units"]
                     ["Buildings"] = 
                     {
@@ -10077,6 +10095,17 @@ stats =
                 ["total"] = 246007.75000002,
                 ["kills"] = 
                 {
+                    ["Helicopters"] = 
+                    {
+                        ["total"] = 2,
+                        ["Attack"] = 2,
+                    }, -- end of ["Helicopters"]
+                    ["Planes"] = 
+                    {
+                        ["Fighters"] = 29,
+                        ["Support"] = 5,
+                        ["total"] = 34,
+                    }, -- end of ["Planes"]
                     ["Ground Units"] = 
                     {
                         ["AAA"] = 3,
@@ -10087,22 +10116,11 @@ stats =
                         ["Infantry"] = 14,
                         ["total"] = 46,
                     }, -- end of ["Ground Units"]
-                    ["Planes"] = 
-                    {
-                        ["Fighters"] = 29,
-                        ["Support"] = 5,
-                        ["total"] = 34,
-                    }, -- end of ["Planes"]
                     ["Buildings"] = 
                     {
                         ["Static"] = 2,
                         ["total"] = 2,
                     }, -- end of ["Buildings"]
-                    ["Helicopters"] = 
-                    {
-                        ["total"] = 2,
-                        ["Attack"] = 2,
-                    }, -- end of ["Helicopters"]
                 }, -- end of ["kills"]
                 ["losses"] = 
                 {
@@ -10232,14 +10250,6 @@ stats =
                         ["shot"] = 2,
                         ["hit"] = 0,
                     }, -- end of ["CBU-97/CBU-105 SFW"]
-                    ["GBU-12"] = 
-                    {
-                        ["numHits"] = 19,
-                        ["kills"] = 4,
-                        ["shot"] = 12,
-                        ["hit"] = 2,
-                    }, -- end of ["GBU-12"]
-                    ["shot"] = 29,
                     ["AIM-9L"] = 
                     {
                         ["numHits"] = 163,
@@ -10247,6 +10257,7 @@ stats =
                         ["shot"] = 11,
                         ["hit"] = 6,
                     }, -- end of ["AIM-9L"]
+                    ["shot"] = 29,
                     ["Mk-82AIR"] = 
                     {
                         ["numHits"] = 0,
@@ -10254,6 +10265,13 @@ stats =
                         ["shot"] = 6,
                         ["hit"] = 0,
                     }, -- end of ["Mk-82AIR"]
+                    ["GBU-12"] = 
+                    {
+                        ["numHits"] = 19,
+                        ["kills"] = 4,
+                        ["shot"] = 12,
+                        ["hit"] = 2,
+                    }, -- end of ["GBU-12"]
                     ["unknown"] = 
                     {
                         ["hit"] = 0,
@@ -10329,8 +10347,17 @@ stats =
         {
             ["Su-27"] = 
             {
+                ["weapons"] = 
+                {
+                    ["R-27ER (AA-10 Alamo C)"] = 
+                    {
+                        ["numHits"] = 0,
+                        ["kills"] = 0,
+                        ["shot"] = 1,
+                        ["hit"] = 0,
+                    }, -- end of ["R-27ER (AA-10 Alamo C)"]
+                }, -- end of ["weapons"]
                 ["inAir"] = 1827.662,
-                ["total"] = 3029.339,
                 ["actions"] = 
                 {
                     ["lostTo"] = 
@@ -10356,16 +10383,7 @@ stats =
                     }, -- end of ["losses"]
                     ["bounced"] = 2,
                 }, -- end of ["actions"]
-                ["weapons"] = 
-                {
-                    ["R-27ER (AA-10 Alamo C)"] = 
-                    {
-                        ["numHits"] = 0,
-                        ["kills"] = 0,
-                        ["shot"] = 1,
-                        ["hit"] = 0,
-                    }, -- end of ["R-27ER (AA-10 Alamo C)"]
-                }, -- end of ["weapons"]
+                ["total"] = 3029.339,
             }, -- end of ["Su-27"]
         }, -- end of ["times"]
         ["joinDate"] = 1700944915,
@@ -11118,22 +11136,6 @@ stats =
         {
             ["AV8BNA"] = 
             {
-                ["inAir"] = 3321.386,
-                ["total"] = 5292.135,
-                ["actions"] = 
-                {
-                    ["losses"] = 
-                    {
-                        ["pilotDeath"] = 1,
-                        ["crash"] = 0,
-                        ["eject"] = 0,
-                        ["crashLanding"] = 1,
-                    }, -- end of ["losses"]
-                    ["takeoff"] = 
-                    {
-                        ["hms_invincible"] = 1,
-                    }, -- end of ["takeoff"]
-                }, -- end of ["actions"]
                 ["weapons"] = 
                 {
                     ["2.75\" FFAR, UnGd Rkts M156, Wht Phos"] = 
@@ -11152,6 +11154,22 @@ stats =
                         ["hit"] = 4,
                     }, -- end of ["Mk-82"]
                 }, -- end of ["weapons"]
+                ["inAir"] = 3321.386,
+                ["actions"] = 
+                {
+                    ["losses"] = 
+                    {
+                        ["pilotDeath"] = 1,
+                        ["crash"] = 0,
+                        ["eject"] = 0,
+                        ["crashLanding"] = 1,
+                    }, -- end of ["losses"]
+                    ["takeoff"] = 
+                    {
+                        ["hms_invincible"] = 1,
+                    }, -- end of ["takeoff"]
+                }, -- end of ["actions"]
+                ["total"] = 5292.135,
             }, -- end of ["AV8BNA"]
         }, -- end of ["times"]
         ["joinDate"] = 1697294396,
@@ -11299,7 +11317,7 @@ stats =
         {
             ["MiG-21Bis"] = 
             {
-                ["inAir"] = 2571.008,
+                ["inAir"] = 4052.58,
                 ["actions"] = 
                 {
                     ["losses"] = 
@@ -11315,21 +11333,26 @@ stats =
                         ["airbase"] = 10,
                     }, -- end of ["takeoff"]
                 }, -- end of ["actions"]
-                ["total"] = 4851.99,
+                ["total"] = 7064.284,
             }, -- end of ["MiG-21Bis"]
             ["UH-1H"] = 
             {
                 ["inAir"] = 0,
                 ["total"] = 590.606,
             }, -- end of ["UH-1H"]
+            ["F-5E-3"] = 
+            {
+                ["total"] = 1341.256,
+                ["inAir"] = 380.323,
+            }, -- end of ["F-5E-3"]
         }, -- end of ["times"]
         ["joinDate"] = 1698346060,
-        ["lastJoin"] = 1702917150,
+        ["lastJoin"] = 1703339546,
         ["id"] = 172,
         ["names"] = 
         {
-            [1] = "JSW Neal",
-            [2] = "Player",
+            [1] = "Player",
+            [2] = "JSW Neal",
         }, -- end of ["names"]
     }, -- end of ["3316bca529c797f031d8c54c14a0f5d3"]
     ["915811de9b95ea8f1496085b5a833cb5"] = 
@@ -11343,10 +11366,10 @@ stats =
                 {
                     ["Ground Units"] = 
                     {
-                        ["total"] = 17,
-                        ["Tanks"] = 2,
-                        ["Unarmored"] = 5,
                         ["Infantry"] = 10,
+                        ["total"] = 17,
+                        ["Unarmored"] = 5,
+                        ["Tanks"] = 2,
                     }, -- end of ["Ground Units"]
                 }, -- end of ["kills"]
                 ["weapons"] = 
@@ -11458,6 +11481,7 @@ stats =
             }, -- end of ["AH-64D_BLK_II"]
             ["AV8BNA"] = 
             {
+                ["total"] = 10962.891,
                 ["weapons"] = 
                 {
                     ["Mk-82AIR"] = 
@@ -11468,7 +11492,6 @@ stats =
                         ["hit"] = 3,
                     }, -- end of ["Mk-82AIR"]
                 }, -- end of ["weapons"]
-                ["inAir"] = 4214.864,
                 ["actions"] = 
                 {
                     ["losses"] = 
@@ -11478,7 +11501,7 @@ stats =
                         ["eject"] = 0,
                     }, -- end of ["losses"]
                 }, -- end of ["actions"]
-                ["total"] = 10962.891,
+                ["inAir"] = 4214.864,
             }, -- end of ["AV8BNA"]
         }, -- end of ["times"]
         ["joinDate"] = 1644581570,
@@ -11823,6 +11846,7 @@ stats =
         {
             ["FA-18C_hornet"] = 
             {
+                ["total"] = 8036.087,
                 ["weapons"] = 
                 {
                     ["F/A-18C Lot 20"] = 
@@ -11833,7 +11857,6 @@ stats =
                         ["hit"] = 0,
                     }, -- end of ["F/A-18C Lot 20"]
                 }, -- end of ["weapons"]
-                ["inAir"] = 3194.051,
                 ["actions"] = 
                 {
                     ["losses"] = 
@@ -11843,7 +11866,7 @@ stats =
                         ["eject"] = 0,
                     }, -- end of ["losses"]
                 }, -- end of ["actions"]
-                ["total"] = 8036.087,
+                ["inAir"] = 3194.051,
             }, -- end of ["FA-18C_hornet"]
         }, -- end of ["times"]
         ["joinDate"] = 1601752894,
@@ -12232,7 +12255,18 @@ stats =
             }, -- end of ["AV8BNA"]
             ["MiG-29S"] = 
             {
+                ["inAir"] = 990.225,
                 ["total"] = 990.225,
+                ["actions"] = 
+                {
+                    ["losses"] = 
+                    {
+                        ["pilotDeath"] = 1,
+                        ["crash"] = 0,
+                        ["eject"] = 0,
+                        ["pilotError"] = 1,
+                    }, -- end of ["losses"]
+                }, -- end of ["actions"]
                 ["weapons"] = 
                 {
                     ["R-60M (AA-8 Aphid-B)"] = 
@@ -12250,31 +12284,11 @@ stats =
                         ["hit"] = 0,
                     }, -- end of ["R-27R (AA-10 Alamo A)"]
                 }, -- end of ["weapons"]
-                ["actions"] = 
-                {
-                    ["losses"] = 
-                    {
-                        ["pilotDeath"] = 1,
-                        ["crash"] = 0,
-                        ["eject"] = 0,
-                        ["pilotError"] = 1,
-                    }, -- end of ["losses"]
-                }, -- end of ["actions"]
-                ["inAir"] = 990.225,
             }, -- end of ["MiG-29S"]
             ["F-5E-3"] = 
             {
+                ["inAir"] = 5355.802,
                 ["total"] = 7137.716,
-                ["weapons"] = 
-                {
-                    ["AIM-9P5"] = 
-                    {
-                        ["hit"] = 0,
-                        ["kills"] = 0,
-                        ["shot"] = 3,
-                        ["numHits"] = 0,
-                    }, -- end of ["AIM-9P5"]
-                }, -- end of ["weapons"]
                 ["actions"] = 
                 {
                     ["landing"] = 
@@ -12293,7 +12307,16 @@ stats =
                         ["pilotError"] = 1,
                     }, -- end of ["losses"]
                 }, -- end of ["actions"]
-                ["inAir"] = 5355.802,
+                ["weapons"] = 
+                {
+                    ["AIM-9P5"] = 
+                    {
+                        ["hit"] = 0,
+                        ["kills"] = 0,
+                        ["shot"] = 3,
+                        ["numHits"] = 0,
+                    }, -- end of ["AIM-9P5"]
+                }, -- end of ["weapons"]
             }, -- end of ["F-5E-3"]
             ["F-14B"] = 
             {
@@ -12624,24 +12647,8 @@ stats =
             }, -- end of ["SA342L"]
             ["F-5E-3"] = 
             {
-                ["total"] = 14379.739,
-                ["weapons"] = 
-                {
-                    ["AIM-9P5"] = 
-                    {
-                        ["hit"] = 0,
-                        ["kills"] = 0,
-                        ["shot"] = 2,
-                        ["numHits"] = 0,
-                    }, -- end of ["AIM-9P5"]
-                    ["M-39"] = 
-                    {
-                        ["hit"] = 0,
-                        ["kills"] = 0,
-                        ["shot"] = 26,
-                        ["numHits"] = 0,
-                    }, -- end of ["M-39"]
-                }, -- end of ["weapons"]
+                ["inAir"] = 8686.475,
+                ["total"] = 18414.153,
                 ["actions"] = 
                 {
                     ["landing"] = 
@@ -12660,7 +12667,23 @@ stats =
                         ["crashLanding"] = 1,
                     }, -- end of ["losses"]
                 }, -- end of ["actions"]
-                ["inAir"] = 6093.646,
+                ["weapons"] = 
+                {
+                    ["AIM-9P5"] = 
+                    {
+                        ["hit"] = 0,
+                        ["kills"] = 0,
+                        ["shot"] = 2,
+                        ["numHits"] = 0,
+                    }, -- end of ["AIM-9P5"]
+                    ["M-39"] = 
+                    {
+                        ["hit"] = 0,
+                        ["kills"] = 0,
+                        ["shot"] = 26,
+                        ["numHits"] = 0,
+                    }, -- end of ["M-39"]
+                }, -- end of ["weapons"]
             }, -- end of ["F-5E-3"]
             ["AH-64D_BLK_II Copilot"] = 
             {
@@ -12728,7 +12751,7 @@ stats =
             }, -- end of ["UH-1H"]
         }, -- end of ["times"]
         ["joinDate"] = 1687288838,
-        ["lastJoin"] = 1702330955,
+        ["lastJoin"] = 1703340584,
         ["id"] = 158,
         ["names"] = 
         {
@@ -12871,27 +12894,6 @@ stats =
                         ["shot"] = 14,
                         ["hit"] = 0,
                     }, -- end of ["Mk-81"]
-                    ["GBU-12"] = 
-                    {
-                        ["numHits"] = 9,
-                        ["kills"] = 2,
-                        ["shot"] = 7,
-                        ["hit"] = 1,
-                    }, -- end of ["GBU-12"]
-                    ["GBU-16"] = 
-                    {
-                        ["numHits"] = 4,
-                        ["kills"] = 1,
-                        ["shot"] = 4,
-                        ["hit"] = 1,
-                    }, -- end of ["GBU-16"]
-                    ["Mk-82AIR"] = 
-                    {
-                        ["numHits"] = 1,
-                        ["kills"] = 0,
-                        ["shot"] = 0,
-                        ["hit"] = 0,
-                    }, -- end of ["Mk-82AIR"]
                     ["AGM-65L"] = 
                     {
                         ["hit"] = 0,
@@ -12899,6 +12901,27 @@ stats =
                         ["shot"] = 1,
                         ["numHits"] = 1,
                     }, -- end of ["AGM-65L"]
+                    ["GBU-16"] = 
+                    {
+                        ["numHits"] = 4,
+                        ["kills"] = 1,
+                        ["shot"] = 4,
+                        ["hit"] = 1,
+                    }, -- end of ["GBU-16"]
+                    ["GBU-12"] = 
+                    {
+                        ["numHits"] = 9,
+                        ["kills"] = 2,
+                        ["shot"] = 7,
+                        ["hit"] = 1,
+                    }, -- end of ["GBU-12"]
+                    ["Mk-82AIR"] = 
+                    {
+                        ["numHits"] = 1,
+                        ["kills"] = 0,
+                        ["shot"] = 0,
+                        ["hit"] = 0,
+                    }, -- end of ["Mk-82AIR"]
                     ["kamikaze"] = 
                     {
                         ["hit"] = 0,
@@ -12930,17 +12953,6 @@ stats =
             }, -- end of ["AV8BNA"]
             ["Mi-8MT"] = 
             {
-                ["total"] = 2151.444,
-                ["inAir"] = 1030.75,
-                ["actions"] = 
-                {
-                    ["losses"] = 
-                    {
-                        ["pilotDeath"] = 7,
-                        ["crash"] = 2,
-                        ["eject"] = 0,
-                    }, -- end of ["losses"]
-                }, -- end of ["actions"]
                 ["weapons"] = 
                 {
                     ["KORD-12.7"] = 
@@ -12972,6 +12984,17 @@ stats =
                         ["hit"] = 0,
                     }, -- end of ["UPK-23-250"]
                 }, -- end of ["weapons"]
+                ["total"] = 2151.444,
+                ["actions"] = 
+                {
+                    ["losses"] = 
+                    {
+                        ["pilotDeath"] = 7,
+                        ["crash"] = 2,
+                        ["eject"] = 0,
+                    }, -- end of ["losses"]
+                }, -- end of ["actions"]
+                ["inAir"] = 1030.75,
             }, -- end of ["Mi-8MT"]
             ["T-45"] = 
             {
@@ -13351,15 +13374,8 @@ stats =
         {
             ["SA342M"] = 
             {
+                ["inAir"] = 5922.394,
                 ["total"] = 7042.731,
-                ["kills"] = 
-                {
-                    ["Ground Units"] = 
-                    {
-                        ["Infantry"] = 4,
-                        ["total"] = 4,
-                    }, -- end of ["Ground Units"]
-                }, -- end of ["kills"]
                 ["weapons"] = 
                 {
                     ["HOT3"] = 
@@ -13370,7 +13386,14 @@ stats =
                         ["hit"] = 1,
                     }, -- end of ["HOT3"]
                 }, -- end of ["weapons"]
-                ["inAir"] = 5922.394,
+                ["kills"] = 
+                {
+                    ["Ground Units"] = 
+                    {
+                        ["Infantry"] = 4,
+                        ["total"] = 4,
+                    }, -- end of ["Ground Units"]
+                }, -- end of ["kills"]
             }, -- end of ["SA342M"]
             ["AV8BNA"] = 
             {
@@ -13399,20 +13422,6 @@ stats =
                         ["shot"] = 21,
                         ["hit"] = 0,
                     }, -- end of ["Mk-82 SnakeEye"]
-                    ["GBU-12"] = 
-                    {
-                        ["hit"] = 0,
-                        ["kills"] = 0,
-                        ["shot"] = 4,
-                        ["numHits"] = 0,
-                    }, -- end of ["GBU-12"]
-                    ["Mk-83"] = 
-                    {
-                        ["numHits"] = 0,
-                        ["kills"] = 0,
-                        ["shot"] = 6,
-                        ["hit"] = 0,
-                    }, -- end of ["Mk-83"]
                     ["GAU_12"] = 
                     {
                         ["numHits"] = 180,
@@ -13420,6 +13429,13 @@ stats =
                         ["shot"] = 315,
                         ["hit"] = 0,
                     }, -- end of ["GAU_12"]
+                    ["Mk-83"] = 
+                    {
+                        ["numHits"] = 0,
+                        ["kills"] = 0,
+                        ["shot"] = 6,
+                        ["hit"] = 0,
+                    }, -- end of ["Mk-83"]
                     ["Mk-82AIR"] = 
                     {
                         ["numHits"] = 0,
@@ -13427,6 +13443,13 @@ stats =
                         ["shot"] = 1,
                         ["hit"] = 0,
                     }, -- end of ["Mk-82AIR"]
+                    ["GBU-12"] = 
+                    {
+                        ["hit"] = 0,
+                        ["kills"] = 0,
+                        ["shot"] = 4,
+                        ["numHits"] = 0,
+                    }, -- end of ["GBU-12"]
                     ["Mk-82"] = 
                     {
                         ["numHits"] = 4,
@@ -13799,6 +13822,7 @@ stats =
         {
             ["FA-18C_hornet"] = 
             {
+                ["inAir"] = 13448.898,
                 ["weapons"] = 
                 {
                     ["Mk-82Y"] = 
@@ -13816,7 +13840,6 @@ stats =
                         ["hit"] = 0,
                     }, -- end of ["AIM-120C"]
                 }, -- end of ["weapons"]
-                ["total"] = 20413.246,
                 ["actions"] = 
                 {
                     ["losses"] = 
@@ -13826,7 +13849,7 @@ stats =
                         ["eject"] = 0,
                     }, -- end of ["losses"]
                 }, -- end of ["actions"]
-                ["inAir"] = 13448.898,
+                ["total"] = 20413.246,
             }, -- end of ["FA-18C_hornet"]
         }, -- end of ["times"]
         ["joinDate"] = 1597259632,
@@ -14141,6 +14164,523 @@ stats =
             [2] = "E-TF[216] Barracuda",
         }, -- end of ["names"]
     }, -- end of ["f84dc77af2d76f46322cf0ff7d8eb439"]
+    ["d30a8bc09f9e453798bfc601e9f607c6"] = 
+    {
+        ["names"] = 
+        {
+            [1] = "Memphis3-4 =JSW= Madog",
+            [2] = "=JSW= Madog",
+        }, -- end of ["names"]
+        ["times"] = 
+        {
+            ["AV8BNA"] = 
+            {
+                ["total"] = 9531.02,
+                ["inAir"] = 7228.473,
+                ["weapons"] = 
+                {
+                    ["AIM-9M"] = 
+                    {
+                        ["numHits"] = 2,
+                        ["kills"] = 1,
+                        ["shot"] = 6,
+                        ["hit"] = 1,
+                    }, -- end of ["AIM-9M"]
+                    ["GAU_12"] = 
+                    {
+                        ["kills"] = 1,
+                        ["shot"] = 262,
+                        ["hit"] = 0,
+                        ["gun"] = true,
+                        ["numHits"] = 195,
+                    }, -- end of ["GAU_12"]
+                    ["Mk-82 Snakeye"] = 
+                    {
+                        ["kills"] = 0,
+                        ["shot"] = 4,
+                        ["numHits"] = 2,
+                        ["assist"] = 1,
+                        ["hit"] = 2,
+                    }, -- end of ["Mk-82 Snakeye"]
+                }, -- end of ["weapons"]
+                ["actions"] = 
+                {
+                    ["landing"] = 
+                    {
+                        ["hms_invincible"] = 3,
+                    }, -- end of ["landing"]
+                    ["takeoff"] = 
+                    {
+                        ["hms_invincible"] = 3,
+                    }, -- end of ["takeoff"]
+                    ["losses"] = 
+                    {
+                        ["pilotDeath"] = 2,
+                        ["crash"] = 0,
+                        ["eject"] = 0,
+                        ["pilotError"] = 2,
+                    }, -- end of ["losses"]
+                }, -- end of ["actions"]
+                ["kills"] = 
+                {
+                    ["Planes"] = 
+                    {
+                        ["Fighters"] = 1,
+                        ["total"] = 1,
+                    }, -- end of ["Planes"]
+                    ["Ships"] = 
+                    {
+                        ["Unarmed"] = 1,
+                        ["total"] = 1,
+                    }, -- end of ["Ships"]
+                }, -- end of ["kills"]
+            }, -- end of ["AV8BNA"]
+        }, -- end of ["times"]
+        ["joinDate"] = 1692464388,
+        ["id"] = 169,
+        ["lastJoin"] = 1697982453,
+        ["pvp"] = 
+        {
+            ["AV8BNA"] = 
+            {
+                ["kills"] = 1,
+            }, -- end of ["AV8BNA"]
+        }, -- end of ["pvp"]
+    }, -- end of ["d30a8bc09f9e453798bfc601e9f607c6"]
+    ["cf1df73c0502e8d905ce4ee6f82801dc"] = 
+    {
+        ["times"] = 
+        {
+            ["F-16C_50"] = 
+            {
+                ["total"] = 30.007,
+                ["inAir"] = 0,
+            }, -- end of ["F-16C_50"]
+            ["AV8BNA"] = 
+            {
+                ["inAir"] = 2100.774,
+                ["total"] = 3471.279,
+                ["weapons"] = 
+                {
+                    ["Mk-82AIR"] = 
+                    {
+                        ["numHits"] = 0,
+                        ["kills"] = 0,
+                        ["shot"] = 4,
+                        ["hit"] = 0,
+                    }, -- end of ["Mk-82AIR"]
+                    ["AIM-120C-5"] = 
+                    {
+                        ["numHits"] = 0,
+                        ["kills"] = 0,
+                        ["shot"] = 0,
+                        ["hit"] = 0,
+                    }, -- end of ["AIM-120C-5"]
+                    ["Mk-82"] = 
+                    {
+                        ["numHits"] = 0,
+                        ["kills"] = 0,
+                        ["shot"] = 4,
+                        ["hit"] = 0,
+                    }, -- end of ["Mk-82"]
+                }, -- end of ["weapons"]
+            }, -- end of ["AV8BNA"]
+            ["T-45"] = 
+            {
+                ["total"] = 1380.486,
+                ["inAir"] = 780.275,
+            }, -- end of ["T-45"]
+        }, -- end of ["times"]
+        ["joinDate"] = 1603313559,
+        ["lastJoin"] = 1634394943,
+        ["id"] = 71,
+        ["names"] = 
+        {
+            [1] = "Maddog",
+        }, -- end of ["names"]
+    }, -- end of ["cf1df73c0502e8d905ce4ee6f82801dc"]
+    ["88f7ee5fae7ba4b2857fb0f2de584378"] = 
+    {
+        ["times"] = 
+        {
+            ["FA-18C_hornet"] = 
+            {
+                ["total"] = 3825.741,
+                ["kills"] = 
+                {
+                    ["Ground Units"] = 
+                    {
+                        ["Arty/MLRS"] = 1,
+                        ["SAM"] = 1,
+                        ["EWR"] = 2,
+                        ["total"] = 5,
+                        ["AAA"] = 1,
+                    }, -- end of ["Ground Units"]
+                    ["Buildings"] = 
+                    {
+                        ["Static"] = 1,
+                        ["total"] = 1,
+                    }, -- end of ["Buildings"]
+                }, -- end of ["kills"]
+                ["inAir"] = 1783.207,
+                ["weapons"] = 
+                {
+                    ["GBU-38"] = 
+                    {
+                        ["hit"] = 0,
+                        ["kills"] = 5,
+                        ["shot"] = 4,
+                        ["numHits"] = 5,
+                    }, -- end of ["GBU-38"]
+                    ["M-61"] = 
+                    {
+                        ["kills"] = 0,
+                        ["shot"] = 174,
+                        ["hit"] = 0,
+                        ["gun"] = true,
+                        ["numHits"] = 4,
+                    }, -- end of ["M-61"]
+                    ["AIM-9X"] = 
+                    {
+                        ["hit"] = 0,
+                        ["kills"] = 0,
+                        ["shot"] = 1,
+                        ["numHits"] = 0,
+                    }, -- end of ["AIM-9X"]
+                    ["F/A-18C Lot 20"] = 
+                    {
+                        ["hit"] = 0,
+                        ["kills"] = 1,
+                        ["shot"] = 0,
+                        ["numHits"] = 7,
+                    }, -- end of ["F/A-18C Lot 20"]
+                }, -- end of ["weapons"]
+                ["actions"] = 
+                {
+                    ["losses"] = 
+                    {
+                        ["pilotDeath"] = 0,
+                        ["crash"] = 1,
+                        ["eject"] = 0,
+                    }, -- end of ["losses"]
+                }, -- end of ["actions"]
+                ["pvp"] = 
+                {
+                    ["kills"] = 6,
+                }, -- end of ["pvp"]
+            }, -- end of ["FA-18C_hornet"]
+        }, -- end of ["times"]
+        ["joinDate"] = 1601752934,
+        ["lastJoin"] = 1601756924,
+        ["id"] = 64,
+        ["names"] = 
+        {
+            [1] = "E-TF[103] Super",
+        }, -- end of ["names"]
+    }, -- end of ["88f7ee5fae7ba4b2857fb0f2de584378"]
+    ["02decd2d485c2c35a8e817dc751951d5"] = 
+    {
+        ["times"] = 
+        {
+            ["MiG-21Bis"] = 
+            {
+                ["total"] = 6581.934,
+                ["actions"] = 
+                {
+                    ["losses"] = 
+                    {
+                        ["crash"] = 1,
+                    }, -- end of ["losses"]
+                }, -- end of ["actions"]
+                ["inAir"] = 4791.479,
+            }, -- end of ["MiG-21Bis"]
+            ["AV8BNA"] = 
+            {
+                ["total"] = 291432.87500006,
+                ["kills"] = 
+                {
+                    ["Ground Units"] = 
+                    {
+                        ["SAM"] = 6,
+                        ["Unarmored"] = 4,
+                        ["total"] = 15,
+                        ["Forts"] = 1,
+                        ["Infantry"] = 4,
+                    }, -- end of ["Ground Units"]
+                    ["Planes"] = 
+                    {
+                        ["Fighters"] = 6,
+                        ["total"] = 6,
+                    }, -- end of ["Planes"]
+                }, -- end of ["kills"]
+                ["weapons"] = 
+                {
+                    ["AIM-9M"] = 
+                    {
+                        ["hit"] = 3,
+                        ["kills"] = 6,
+                        ["shot"] = 11,
+                        ["numHits"] = 8,
+                    }, -- end of ["AIM-9M"]
+                    ["Zuni-127"] = 
+                    {
+                        ["numHits"] = 30,
+                        ["kills"] = 0,
+                        ["shot"] = 40,
+                        ["hit"] = 4,
+                    }, -- end of ["Zuni-127"]
+                    ["GBU-16"] = 
+                    {
+                        ["numHits"] = 0,
+                        ["kills"] = 0,
+                        ["shot"] = 2,
+                        ["hit"] = 0,
+                    }, -- end of ["GBU-16"]
+                    ["Mk-82"] = 
+                    {
+                        ["hit"] = 4,
+                        ["kills"] = 1,
+                        ["shot"] = 22,
+                        ["numHits"] = 9,
+                    }, -- end of ["Mk-82"]
+                    ["kamikaze"] = 
+                    {
+                        ["numHits"] = 19,
+                        ["kills"] = 0,
+                        ["shot"] = 0,
+                        ["hit"] = 0,
+                    }, -- end of ["kamikaze"]
+                    ["Mk-20 Rockeye"] = 
+                    {
+                        ["numHits"] = 3,
+                        ["kills"] = 2,
+                        ["shot"] = 8,
+                        ["hit"] = 0,
+                    }, -- end of ["Mk-20 Rockeye"]
+                    ["GBU-38"] = 
+                    {
+                        ["numHits"] = 3,
+                        ["kills"] = 0,
+                        ["shot"] = 2,
+                        ["hit"] = 2,
+                    }, -- end of ["GBU-38"]
+                    ["GBU-54(V)1/B"] = 
+                    {
+                        ["numHits"] = 0,
+                        ["kills"] = 0,
+                        ["shot"] = 2,
+                        ["hit"] = 0,
+                    }, -- end of ["GBU-54(V)1/B"]
+                    ["Mk-81"] = 
+                    {
+                        ["numHits"] = 39,
+                        ["kills"] = 0,
+                        ["shot"] = 56,
+                        ["hit"] = 8,
+                    }, -- end of ["Mk-81"]
+                    ["Mk-83"] = 
+                    {
+                        ["numHits"] = 8,
+                        ["kills"] = 1,
+                        ["shot"] = 20,
+                        ["hit"] = 3,
+                    }, -- end of ["Mk-83"]
+                    ["AGM-154A"] = 
+                    {
+                        ["hit"] = 0,
+                        ["kills"] = 0,
+                        ["shot"] = 0,
+                        ["numHits"] = 1,
+                    }, -- end of ["AGM-154A"]
+                    ["GAU_12"] = 
+                    {
+                        ["hit"] = 0,
+                        ["kills"] = 0,
+                        ["shot"] = 56,
+                        ["numHits"] = 0,
+                    }, -- end of ["GAU_12"]
+                    ["BDU-33"] = 
+                    {
+                        ["numHits"] = 0,
+                        ["kills"] = 0,
+                        ["shot"] = 4,
+                        ["hit"] = 0,
+                    }, -- end of ["BDU-33"]
+                    ["GBU-12"] = 
+                    {
+                        ["hit"] = 1,
+                        ["kills"] = 0,
+                        ["shot"] = 1,
+                        ["numHits"] = 9,
+                    }, -- end of ["GBU-12"]
+                    ["shot"] = 33,
+                    ["AGM-65F"] = 
+                    {
+                        ["hit"] = 1,
+                        ["kills"] = 4,
+                        ["shot"] = 15,
+                        ["numHits"] = 20,
+                    }, -- end of ["AGM-65F"]
+                    ["Mk-82AIR"] = 
+                    {
+                        ["numHits"] = 19,
+                        ["kills"] = 4,
+                        ["shot"] = 38,
+                        ["hit"] = 4,
+                    }, -- end of ["Mk-82AIR"]
+                    ["unknown"] = 
+                    {
+                        ["numHits"] = 61,
+                        ["kills"] = 3,
+                        ["shot"] = 0,
+                        ["hit"] = 0,
+                    }, -- end of ["unknown"]
+                    ["AGM-122"] = 
+                    {
+                        ["hit"] = 0,
+                        ["kills"] = 0,
+                        ["shot"] = 9,
+                        ["numHits"] = 0,
+                    }, -- end of ["AGM-122"]
+                    ["Mk-82 Snakeye"] = 
+                    {
+                        ["numHits"] = 3,
+                        ["kills"] = 0,
+                        ["shot"] = 0,
+                        ["hit"] = 0,
+                    }, -- end of ["Mk-82 Snakeye"]
+                }, -- end of ["weapons"]
+                ["inAir"] = 183740.35900002,
+                ["actions"] = 
+                {
+                    ["landing"] = 
+                    {
+                        ["airbase"] = 1,
+                    }, -- end of ["landing"]
+                    ["takeoff"] = 
+                    {
+                        ["airbase"] = 2,
+                    }, -- end of ["takeoff"]
+                    ["losses"] = 
+                    {
+                        ["pilotDeath"] = 3,
+                        ["crash"] = 3,
+                        ["eject"] = 3,
+                    }, -- end of ["losses"]
+                }, -- end of ["actions"]
+                ["pvp"] = 
+                {
+                    ["kills"] = 3,
+                }, -- end of ["pvp"]
+            }, -- end of ["AV8BNA"]
+            ["A-4E-C"] = 
+            {
+                ["total"] = 10.015,
+                ["inAir"] = 0,
+            }, -- end of ["A-4E-C"]
+            ["Mirage-F1CE"] = 
+            {
+                ["total"] = 4354.553,
+                ["actions"] = 
+                {
+                    ["landing"] = 
+                    {
+                        ["austere"] = 1,
+                    }, -- end of ["landing"]
+                    ["takeoff"] = 
+                    {
+                        ["airbase"] = 4,
+                    }, -- end of ["takeoff"]
+                    ["losses"] = 
+                    {
+                        ["pilotDeath"] = 1,
+                        ["crash"] = 1,
+                        ["eject"] = 0,
+                        ["pilotError"] = 1,
+                    }, -- end of ["losses"]
+                    ["lostTo"] = 
+                    {
+                        ["Planes"] = 
+                        {
+                            ["Fighters"] = 1,
+                        }, -- end of ["Planes"]
+                    }, -- end of ["lostTo"]
+                }, -- end of ["actions"]
+                ["inAir"] = 2632.753,
+            }, -- end of ["Mirage-F1CE"]
+            ["Mi-8MT"] = 
+            {
+                ["total"] = 3804.183,
+                ["actions"] = 
+                {
+                    ["losses"] = 
+                    {
+                        ["pilotDeath"] = 1,
+                        ["crash"] = 1,
+                        ["eject"] = 0,
+                    }, -- end of ["losses"]
+                }, -- end of ["actions"]
+                ["inAir"] = 1601.868,
+            }, -- end of ["Mi-8MT"]
+            ["SA342M"] = 
+            {
+                ["inAir"] = 5912.385,
+                ["total"] = 7192.796,
+                ["weapons"] = 
+                {
+                    ["HOT3"] = 
+                    {
+                        ["numHits"] = 4,
+                        ["kills"] = 4,
+                        ["shot"] = 2,
+                        ["hit"] = 2,
+                    }, -- end of ["HOT3"]
+                }, -- end of ["weapons"]
+                ["kills"] = 
+                {
+                    ["Ground Units"] = 
+                    {
+                        ["AAA"] = 1,
+                        ["total"] = 4,
+                        ["Infantry"] = 2,
+                        ["EWR"] = 1,
+                    }, -- end of ["Ground Units"]
+                }, -- end of ["kills"]
+            }, -- end of ["SA342M"]
+            ["T-45"] = 
+            {
+                ["total"] = 19050.138,
+                ["actions"] = 
+                {
+                    ["losses"] = 
+                    {
+                        ["pilotDeath"] = 1,
+                        ["crash"] = 1,
+                        ["eject"] = 0,
+                    }, -- end of ["losses"]
+                }, -- end of ["actions"]
+                ["inAir"] = 10784.882,
+            }, -- end of ["T-45"]
+        }, -- end of ["times"]
+        ["joinDate"] = 1604095844,
+        ["lastJoin"] = 1658955434,
+        ["id"] = 72,
+        ["names"] = 
+        {
+            [7] = "SABER 1-3 = BUCK",
+            [1] = "Buck",
+            [2] = "Saruman",
+            [4] = "RECOIL 1-1 (BUCK)",
+            [8] = "TSAR 1-3 {BUCK}",
+            [9] = "=BUCK=",
+            [5] = "Le Chiffe 7-1 = BUCK",
+            [10] = "SAXON 1-1 [BUCK]",
+            [3] = "BUCK",
+            [6] = "SAXON 1 - BUCK",
+            [12] = "=JSW= BUCK",
+            [11] = "VIXEN 1-1 [BUCK]",
+        }, -- end of ["names"]
+    }, -- end of ["02decd2d485c2c35a8e817dc751951d5"]
     ["eaeccb1a173bdf46c012a7dd5af89727"] = 
     {
         ["times"] = 
@@ -14306,540 +14846,12 @@ stats =
             [1] = "Shorty",
         }, -- end of ["names"]
     }, -- end of ["eaeccb1a173bdf46c012a7dd5af89727"]
-    ["cf1df73c0502e8d905ce4ee6f82801dc"] = 
-    {
-        ["times"] = 
-        {
-            ["F-16C_50"] = 
-            {
-                ["total"] = 30.007,
-                ["inAir"] = 0,
-            }, -- end of ["F-16C_50"]
-            ["AV8BNA"] = 
-            {
-                ["inAir"] = 2100.774,
-                ["total"] = 3471.279,
-                ["weapons"] = 
-                {
-                    ["Mk-82AIR"] = 
-                    {
-                        ["numHits"] = 0,
-                        ["kills"] = 0,
-                        ["shot"] = 4,
-                        ["hit"] = 0,
-                    }, -- end of ["Mk-82AIR"]
-                    ["AIM-120C-5"] = 
-                    {
-                        ["numHits"] = 0,
-                        ["kills"] = 0,
-                        ["shot"] = 0,
-                        ["hit"] = 0,
-                    }, -- end of ["AIM-120C-5"]
-                    ["Mk-82"] = 
-                    {
-                        ["numHits"] = 0,
-                        ["kills"] = 0,
-                        ["shot"] = 4,
-                        ["hit"] = 0,
-                    }, -- end of ["Mk-82"]
-                }, -- end of ["weapons"]
-            }, -- end of ["AV8BNA"]
-            ["T-45"] = 
-            {
-                ["total"] = 1380.486,
-                ["inAir"] = 780.275,
-            }, -- end of ["T-45"]
-        }, -- end of ["times"]
-        ["joinDate"] = 1603313559,
-        ["lastJoin"] = 1634394943,
-        ["id"] = 71,
-        ["names"] = 
-        {
-            [1] = "Maddog",
-        }, -- end of ["names"]
-    }, -- end of ["cf1df73c0502e8d905ce4ee6f82801dc"]
-    ["88f7ee5fae7ba4b2857fb0f2de584378"] = 
-    {
-        ["times"] = 
-        {
-            ["FA-18C_hornet"] = 
-            {
-                ["total"] = 3825.741,
-                ["kills"] = 
-                {
-                    ["Ground Units"] = 
-                    {
-                        ["Arty/MLRS"] = 1,
-                        ["SAM"] = 1,
-                        ["EWR"] = 2,
-                        ["total"] = 5,
-                        ["AAA"] = 1,
-                    }, -- end of ["Ground Units"]
-                    ["Buildings"] = 
-                    {
-                        ["Static"] = 1,
-                        ["total"] = 1,
-                    }, -- end of ["Buildings"]
-                }, -- end of ["kills"]
-                ["inAir"] = 1783.207,
-                ["weapons"] = 
-                {
-                    ["GBU-38"] = 
-                    {
-                        ["hit"] = 0,
-                        ["kills"] = 5,
-                        ["shot"] = 4,
-                        ["numHits"] = 5,
-                    }, -- end of ["GBU-38"]
-                    ["M-61"] = 
-                    {
-                        ["kills"] = 0,
-                        ["shot"] = 174,
-                        ["hit"] = 0,
-                        ["gun"] = true,
-                        ["numHits"] = 4,
-                    }, -- end of ["M-61"]
-                    ["AIM-9X"] = 
-                    {
-                        ["hit"] = 0,
-                        ["kills"] = 0,
-                        ["shot"] = 1,
-                        ["numHits"] = 0,
-                    }, -- end of ["AIM-9X"]
-                    ["F/A-18C Lot 20"] = 
-                    {
-                        ["hit"] = 0,
-                        ["kills"] = 1,
-                        ["shot"] = 0,
-                        ["numHits"] = 7,
-                    }, -- end of ["F/A-18C Lot 20"]
-                }, -- end of ["weapons"]
-                ["actions"] = 
-                {
-                    ["losses"] = 
-                    {
-                        ["pilotDeath"] = 0,
-                        ["crash"] = 1,
-                        ["eject"] = 0,
-                    }, -- end of ["losses"]
-                }, -- end of ["actions"]
-                ["pvp"] = 
-                {
-                    ["kills"] = 6,
-                }, -- end of ["pvp"]
-            }, -- end of ["FA-18C_hornet"]
-        }, -- end of ["times"]
-        ["joinDate"] = 1601752934,
-        ["lastJoin"] = 1601756924,
-        ["id"] = 64,
-        ["names"] = 
-        {
-            [1] = "E-TF[103] Super",
-        }, -- end of ["names"]
-    }, -- end of ["88f7ee5fae7ba4b2857fb0f2de584378"]
-    ["d30a8bc09f9e453798bfc601e9f607c6"] = 
-    {
-        ["names"] = 
-        {
-            [1] = "Memphis3-4 =JSW= Madog",
-            [2] = "=JSW= Madog",
-        }, -- end of ["names"]
-        ["times"] = 
-        {
-            ["AV8BNA"] = 
-            {
-                ["total"] = 9531.02,
-                ["inAir"] = 7228.473,
-                ["weapons"] = 
-                {
-                    ["AIM-9M"] = 
-                    {
-                        ["numHits"] = 2,
-                        ["kills"] = 1,
-                        ["shot"] = 6,
-                        ["hit"] = 1,
-                    }, -- end of ["AIM-9M"]
-                    ["GAU_12"] = 
-                    {
-                        ["kills"] = 1,
-                        ["shot"] = 262,
-                        ["hit"] = 0,
-                        ["gun"] = true,
-                        ["numHits"] = 195,
-                    }, -- end of ["GAU_12"]
-                    ["Mk-82 Snakeye"] = 
-                    {
-                        ["kills"] = 0,
-                        ["shot"] = 4,
-                        ["numHits"] = 2,
-                        ["assist"] = 1,
-                        ["hit"] = 2,
-                    }, -- end of ["Mk-82 Snakeye"]
-                }, -- end of ["weapons"]
-                ["actions"] = 
-                {
-                    ["landing"] = 
-                    {
-                        ["hms_invincible"] = 3,
-                    }, -- end of ["landing"]
-                    ["takeoff"] = 
-                    {
-                        ["hms_invincible"] = 3,
-                    }, -- end of ["takeoff"]
-                    ["losses"] = 
-                    {
-                        ["pilotDeath"] = 2,
-                        ["crash"] = 0,
-                        ["eject"] = 0,
-                        ["pilotError"] = 2,
-                    }, -- end of ["losses"]
-                }, -- end of ["actions"]
-                ["kills"] = 
-                {
-                    ["Planes"] = 
-                    {
-                        ["Fighters"] = 1,
-                        ["total"] = 1,
-                    }, -- end of ["Planes"]
-                    ["Ships"] = 
-                    {
-                        ["Unarmed"] = 1,
-                        ["total"] = 1,
-                    }, -- end of ["Ships"]
-                }, -- end of ["kills"]
-            }, -- end of ["AV8BNA"]
-        }, -- end of ["times"]
-        ["joinDate"] = 1692464388,
-        ["id"] = 169,
-        ["lastJoin"] = 1697982453,
-        ["pvp"] = 
-        {
-            ["AV8BNA"] = 
-            {
-                ["kills"] = 1,
-            }, -- end of ["AV8BNA"]
-        }, -- end of ["pvp"]
-    }, -- end of ["d30a8bc09f9e453798bfc601e9f607c6"]
-    ["02decd2d485c2c35a8e817dc751951d5"] = 
-    {
-        ["times"] = 
-        {
-            ["MiG-21Bis"] = 
-            {
-                ["total"] = 6581.934,
-                ["actions"] = 
-                {
-                    ["losses"] = 
-                    {
-                        ["crash"] = 1,
-                    }, -- end of ["losses"]
-                }, -- end of ["actions"]
-                ["inAir"] = 4791.479,
-            }, -- end of ["MiG-21Bis"]
-            ["AV8BNA"] = 
-            {
-                ["total"] = 291432.87500006,
-                ["kills"] = 
-                {
-                    ["Ground Units"] = 
-                    {
-                        ["SAM"] = 6,
-                        ["Unarmored"] = 4,
-                        ["total"] = 15,
-                        ["Forts"] = 1,
-                        ["Infantry"] = 4,
-                    }, -- end of ["Ground Units"]
-                    ["Planes"] = 
-                    {
-                        ["Fighters"] = 6,
-                        ["total"] = 6,
-                    }, -- end of ["Planes"]
-                }, -- end of ["kills"]
-                ["weapons"] = 
-                {
-                    ["AIM-9M"] = 
-                    {
-                        ["hit"] = 3,
-                        ["kills"] = 6,
-                        ["shot"] = 11,
-                        ["numHits"] = 8,
-                    }, -- end of ["AIM-9M"]
-                    ["Zuni-127"] = 
-                    {
-                        ["numHits"] = 30,
-                        ["kills"] = 0,
-                        ["shot"] = 40,
-                        ["hit"] = 4,
-                    }, -- end of ["Zuni-127"]
-                    ["GBU-16"] = 
-                    {
-                        ["numHits"] = 0,
-                        ["kills"] = 0,
-                        ["shot"] = 2,
-                        ["hit"] = 0,
-                    }, -- end of ["GBU-16"]
-                    ["Mk-82"] = 
-                    {
-                        ["hit"] = 4,
-                        ["kills"] = 1,
-                        ["shot"] = 22,
-                        ["numHits"] = 9,
-                    }, -- end of ["Mk-82"]
-                    ["kamikaze"] = 
-                    {
-                        ["numHits"] = 19,
-                        ["kills"] = 0,
-                        ["shot"] = 0,
-                        ["hit"] = 0,
-                    }, -- end of ["kamikaze"]
-                    ["Mk-20 Rockeye"] = 
-                    {
-                        ["numHits"] = 3,
-                        ["kills"] = 2,
-                        ["shot"] = 8,
-                        ["hit"] = 0,
-                    }, -- end of ["Mk-20 Rockeye"]
-                    ["GBU-38"] = 
-                    {
-                        ["numHits"] = 3,
-                        ["kills"] = 0,
-                        ["shot"] = 2,
-                        ["hit"] = 2,
-                    }, -- end of ["GBU-38"]
-                    ["GBU-54(V)1/B"] = 
-                    {
-                        ["numHits"] = 0,
-                        ["kills"] = 0,
-                        ["shot"] = 2,
-                        ["hit"] = 0,
-                    }, -- end of ["GBU-54(V)1/B"]
-                    ["Mk-81"] = 
-                    {
-                        ["numHits"] = 39,
-                        ["kills"] = 0,
-                        ["shot"] = 56,
-                        ["hit"] = 8,
-                    }, -- end of ["Mk-81"]
-                    ["Mk-83"] = 
-                    {
-                        ["numHits"] = 8,
-                        ["kills"] = 1,
-                        ["shot"] = 20,
-                        ["hit"] = 3,
-                    }, -- end of ["Mk-83"]
-                    ["AGM-154A"] = 
-                    {
-                        ["hit"] = 0,
-                        ["kills"] = 0,
-                        ["shot"] = 0,
-                        ["numHits"] = 1,
-                    }, -- end of ["AGM-154A"]
-                    ["Mk-82AIR"] = 
-                    {
-                        ["numHits"] = 19,
-                        ["kills"] = 4,
-                        ["shot"] = 38,
-                        ["hit"] = 4,
-                    }, -- end of ["Mk-82AIR"]
-                    ["BDU-33"] = 
-                    {
-                        ["numHits"] = 0,
-                        ["kills"] = 0,
-                        ["shot"] = 4,
-                        ["hit"] = 0,
-                    }, -- end of ["BDU-33"]
-                    ["GAU_12"] = 
-                    {
-                        ["hit"] = 0,
-                        ["kills"] = 0,
-                        ["shot"] = 56,
-                        ["numHits"] = 0,
-                    }, -- end of ["GAU_12"]
-                    ["shot"] = 33,
-                    ["AGM-65F"] = 
-                    {
-                        ["hit"] = 1,
-                        ["kills"] = 4,
-                        ["shot"] = 15,
-                        ["numHits"] = 20,
-                    }, -- end of ["AGM-65F"]
-                    ["GBU-12"] = 
-                    {
-                        ["hit"] = 1,
-                        ["kills"] = 0,
-                        ["shot"] = 1,
-                        ["numHits"] = 9,
-                    }, -- end of ["GBU-12"]
-                    ["unknown"] = 
-                    {
-                        ["numHits"] = 61,
-                        ["kills"] = 3,
-                        ["shot"] = 0,
-                        ["hit"] = 0,
-                    }, -- end of ["unknown"]
-                    ["AGM-122"] = 
-                    {
-                        ["hit"] = 0,
-                        ["kills"] = 0,
-                        ["shot"] = 9,
-                        ["numHits"] = 0,
-                    }, -- end of ["AGM-122"]
-                    ["Mk-82 Snakeye"] = 
-                    {
-                        ["numHits"] = 3,
-                        ["kills"] = 0,
-                        ["shot"] = 0,
-                        ["hit"] = 0,
-                    }, -- end of ["Mk-82 Snakeye"]
-                }, -- end of ["weapons"]
-                ["inAir"] = 183740.35900002,
-                ["actions"] = 
-                {
-                    ["landing"] = 
-                    {
-                        ["airbase"] = 1,
-                    }, -- end of ["landing"]
-                    ["takeoff"] = 
-                    {
-                        ["airbase"] = 2,
-                    }, -- end of ["takeoff"]
-                    ["losses"] = 
-                    {
-                        ["pilotDeath"] = 3,
-                        ["crash"] = 3,
-                        ["eject"] = 3,
-                    }, -- end of ["losses"]
-                }, -- end of ["actions"]
-                ["pvp"] = 
-                {
-                    ["kills"] = 3,
-                }, -- end of ["pvp"]
-            }, -- end of ["AV8BNA"]
-            ["A-4E-C"] = 
-            {
-                ["total"] = 10.015,
-                ["inAir"] = 0,
-            }, -- end of ["A-4E-C"]
-            ["Mirage-F1CE"] = 
-            {
-                ["total"] = 4354.553,
-                ["actions"] = 
-                {
-                    ["landing"] = 
-                    {
-                        ["austere"] = 1,
-                    }, -- end of ["landing"]
-                    ["takeoff"] = 
-                    {
-                        ["airbase"] = 4,
-                    }, -- end of ["takeoff"]
-                    ["losses"] = 
-                    {
-                        ["pilotDeath"] = 1,
-                        ["crash"] = 1,
-                        ["eject"] = 0,
-                        ["pilotError"] = 1,
-                    }, -- end of ["losses"]
-                    ["lostTo"] = 
-                    {
-                        ["Planes"] = 
-                        {
-                            ["Fighters"] = 1,
-                        }, -- end of ["Planes"]
-                    }, -- end of ["lostTo"]
-                }, -- end of ["actions"]
-                ["inAir"] = 2632.753,
-            }, -- end of ["Mirage-F1CE"]
-            ["Mi-8MT"] = 
-            {
-                ["total"] = 3804.183,
-                ["actions"] = 
-                {
-                    ["losses"] = 
-                    {
-                        ["pilotDeath"] = 1,
-                        ["crash"] = 1,
-                        ["eject"] = 0,
-                    }, -- end of ["losses"]
-                }, -- end of ["actions"]
-                ["inAir"] = 1601.868,
-            }, -- end of ["Mi-8MT"]
-            ["SA342M"] = 
-            {
-                ["total"] = 7192.796,
-                ["kills"] = 
-                {
-                    ["Ground Units"] = 
-                    {
-                        ["AAA"] = 1,
-                        ["total"] = 4,
-                        ["Infantry"] = 2,
-                        ["EWR"] = 1,
-                    }, -- end of ["Ground Units"]
-                }, -- end of ["kills"]
-                ["weapons"] = 
-                {
-                    ["HOT3"] = 
-                    {
-                        ["numHits"] = 4,
-                        ["kills"] = 4,
-                        ["shot"] = 2,
-                        ["hit"] = 2,
-                    }, -- end of ["HOT3"]
-                }, -- end of ["weapons"]
-                ["inAir"] = 5912.385,
-            }, -- end of ["SA342M"]
-            ["T-45"] = 
-            {
-                ["total"] = 19050.138,
-                ["actions"] = 
-                {
-                    ["losses"] = 
-                    {
-                        ["pilotDeath"] = 1,
-                        ["crash"] = 1,
-                        ["eject"] = 0,
-                    }, -- end of ["losses"]
-                }, -- end of ["actions"]
-                ["inAir"] = 10784.882,
-            }, -- end of ["T-45"]
-        }, -- end of ["times"]
-        ["joinDate"] = 1604095844,
-        ["lastJoin"] = 1658955434,
-        ["id"] = 72,
-        ["names"] = 
-        {
-            [7] = "SABER 1-3 = BUCK",
-            [1] = "Buck",
-            [2] = "Saruman",
-            [4] = "RECOIL 1-1 (BUCK)",
-            [8] = "TSAR 1-3 {BUCK}",
-            [9] = "=BUCK=",
-            [5] = "Le Chiffe 7-1 = BUCK",
-            [10] = "SAXON 1-1 [BUCK]",
-            [3] = "BUCK",
-            [6] = "SAXON 1 - BUCK",
-            [12] = "=JSW= BUCK",
-            [11] = "VIXEN 1-1 [BUCK]",
-        }, -- end of ["names"]
-    }, -- end of ["02decd2d485c2c35a8e817dc751951d5"]
     ["612838be9550b341db74dfd66d43b7f7"] = 
     {
         ["times"] = 
         {
             ["SA342M"] = 
             {
-                ["total"] = 14007.496,
-                ["inAir"] = 8064.374,
-                ["actions"] = 
-                {
-                    ["losses"] = 
-                    {
-                        ["pilotDeath"] = 1,
-                        ["crash"] = 3,
-                        ["eject"] = 0,
-                    }, -- end of ["losses"]
-                }, -- end of ["actions"]
                 ["weapons"] = 
                 {
                     ["kamikaze"] = 
@@ -14857,6 +14869,17 @@ stats =
                         ["hit"] = 0,
                     }, -- end of ["HOT3"]
                 }, -- end of ["weapons"]
+                ["total"] = 14007.496,
+                ["actions"] = 
+                {
+                    ["losses"] = 
+                    {
+                        ["pilotDeath"] = 1,
+                        ["crash"] = 3,
+                        ["eject"] = 0,
+                    }, -- end of ["losses"]
+                }, -- end of ["actions"]
+                ["inAir"] = 8064.374,
             }, -- end of ["SA342M"]
             ["AV8BNA"] = 
             {
@@ -14993,17 +15016,6 @@ stats =
             }, -- end of ["AV8BNA"]
             ["SA342L"] = 
             {
-                ["inAir"] = 3041.817,
-                ["total"] = 4242.483,
-                ["actions"] = 
-                {
-                    ["losses"] = 
-                    {
-                        ["pilotDeath"] = 8,
-                        ["crash"] = 6,
-                        ["eject"] = 0,
-                    }, -- end of ["losses"]
-                }, -- end of ["actions"]
                 ["weapons"] = 
                 {
                     ["GIAT_M621G"] = 
@@ -15021,6 +15033,17 @@ stats =
                         ["hit"] = 0,
                     }, -- end of ["SNEB68_EAP"]
                 }, -- end of ["weapons"]
+                ["inAir"] = 3041.817,
+                ["actions"] = 
+                {
+                    ["losses"] = 
+                    {
+                        ["pilotDeath"] = 8,
+                        ["crash"] = 6,
+                        ["eject"] = 0,
+                    }, -- end of ["losses"]
+                }, -- end of ["actions"]
+                ["total"] = 4242.483,
             }, -- end of ["SA342L"]
             ["F-16C_50"] = 
             {
@@ -15097,13 +15120,6 @@ stats =
                         ["shot"] = 26,
                         ["hit"] = 0,
                     }, -- end of ["Mk-82 SnakeEye"]
-                    ["Mk-82AIR"] = 
-                    {
-                        ["hit"] = 4,
-                        ["kills"] = 0,
-                        ["shot"] = 6,
-                        ["numHits"] = 5,
-                    }, -- end of ["Mk-82AIR"]
                     ["GBU-12"] = 
                     {
                         ["hit"] = 0,
@@ -15111,6 +15127,13 @@ stats =
                         ["shot"] = 12,
                         ["numHits"] = 7,
                     }, -- end of ["GBU-12"]
+                    ["AIM-9L"] = 
+                    {
+                        ["numHits"] = 0,
+                        ["kills"] = 0,
+                        ["shot"] = 2,
+                        ["hit"] = 0,
+                    }, -- end of ["AIM-9L"]
                     ["GBU-31(V)3/B"] = 
                     {
                         ["numHits"] = 0,
@@ -15125,13 +15148,13 @@ stats =
                         ["shot"] = 2,
                         ["hit"] = 0,
                     }, -- end of ["AIM-120C"]
-                    ["AIM-9L"] = 
+                    ["Mk-82AIR"] = 
                     {
-                        ["numHits"] = 0,
+                        ["hit"] = 4,
                         ["kills"] = 0,
-                        ["shot"] = 2,
-                        ["hit"] = 0,
-                    }, -- end of ["AIM-9L"]
+                        ["shot"] = 6,
+                        ["numHits"] = 5,
+                    }, -- end of ["Mk-82AIR"]
                     ["Mk-82"] = 
                     {
                         ["numHits"] = 28,
@@ -15186,6 +15209,7 @@ stats =
             }, -- end of ["SA342Mistral"]
             ["SpitfireLFMkIX"] = 
             {
+                ["inAir"] = 5303.059,
                 ["weapons"] = 
                 {
                     ["kamikaze"] = 
@@ -15212,7 +15236,6 @@ stats =
                         ["numHits"] = 0,
                     }, -- end of ["Browning .303 Mk. II"]
                 }, -- end of ["weapons"]
-                ["total"] = 6403.76,
                 ["actions"] = 
                 {
                     ["losses"] = 
@@ -15222,7 +15245,7 @@ stats =
                         ["eject"] = 0,
                     }, -- end of ["losses"]
                 }, -- end of ["actions"]
-                ["inAir"] = 5303.059,
+                ["total"] = 6403.76,
             }, -- end of ["SpitfireLFMkIX"]
             ["SA342Minigun"] = 
             {
@@ -15231,6 +15254,7 @@ stats =
             }, -- end of ["SA342Minigun"]
             ["T-45"] = 
             {
+                ["inAir"] = 2893.277,
                 ["weapons"] = 
                 {
                     ["BDU-33"] = 
@@ -15241,7 +15265,6 @@ stats =
                         ["hit"] = 0,
                     }, -- end of ["BDU-33"]
                 }, -- end of ["weapons"]
-                ["total"] = 8389.65,
                 ["actions"] = 
                 {
                     ["losses"] = 
@@ -15251,7 +15274,7 @@ stats =
                         ["eject"] = 0,
                     }, -- end of ["losses"]
                 }, -- end of ["actions"]
-                ["inAir"] = 2893.277,
+                ["total"] = 8389.65,
             }, -- end of ["T-45"]
         }, -- end of ["times"]
         ["joinDate"] = 1587138832,
@@ -15280,13 +15303,13 @@ stats =
                 }, -- end of ["kills"]
                 ["weapons"] = 
                 {
-                    ["Mk-83"] = 
+                    ["AGM-65G"] = 
                     {
-                        ["numHits"] = 0,
+                        ["numHits"] = 4,
                         ["kills"] = 0,
-                        ["shot"] = 8,
+                        ["shot"] = 2,
                         ["hit"] = 0,
-                    }, -- end of ["Mk-83"]
+                    }, -- end of ["AGM-65G"]
                     ["GAU_12"] = 
                     {
                         ["kills"] = 0,
@@ -15295,20 +15318,6 @@ stats =
                         ["gun"] = true,
                         ["numHits"] = 43,
                     }, -- end of ["GAU_12"]
-                    ["AGM-65G"] = 
-                    {
-                        ["numHits"] = 4,
-                        ["kills"] = 0,
-                        ["shot"] = 2,
-                        ["hit"] = 0,
-                    }, -- end of ["AGM-65G"]
-                    ["GBU-12"] = 
-                    {
-                        ["hit"] = 0,
-                        ["kills"] = 0,
-                        ["shot"] = 8,
-                        ["numHits"] = 2,
-                    }, -- end of ["GBU-12"]
                     ["Mk-82"] = 
                     {
                         ["hit"] = 0,
@@ -15316,6 +15325,20 @@ stats =
                         ["shot"] = 11,
                         ["numHits"] = 0,
                     }, -- end of ["Mk-82"]
+                    ["GBU-12"] = 
+                    {
+                        ["hit"] = 0,
+                        ["kills"] = 0,
+                        ["shot"] = 8,
+                        ["numHits"] = 2,
+                    }, -- end of ["GBU-12"]
+                    ["Mk-83"] = 
+                    {
+                        ["numHits"] = 0,
+                        ["kills"] = 0,
+                        ["shot"] = 8,
+                        ["hit"] = 0,
+                    }, -- end of ["Mk-83"]
                     ["kamikaze"] = 
                     {
                         ["numHits"] = 0,
@@ -15797,6 +15820,7 @@ stats =
             }, -- end of ["SA342Minigun"]
             ["F-14B"] = 
             {
+                ["total"] = 144765.023,
                 ["weapons"] = 
                 {
                     ["AIM_54C_Mk47"] = 
@@ -15857,7 +15881,6 @@ stats =
                         ["hit"] = 0,
                     }, -- end of ["Mk-82 SnakeEye"]
                 }, -- end of ["weapons"]
-                ["inAir"] = 95480.631000001,
                 ["actions"] = 
                 {
                     ["losses"] = 
@@ -15867,7 +15890,7 @@ stats =
                         ["eject"] = 0,
                     }, -- end of ["losses"]
                 }, -- end of ["actions"]
-                ["total"] = 144765.023,
+                ["inAir"] = 95480.631000001,
             }, -- end of ["F-14B"]
         }, -- end of ["times"]
         ["joinDate"] = 1585427519,
@@ -16108,6 +16131,7 @@ stats =
         {
             ["FA-18C_hornet"] = 
             {
+                ["inAir"] = 1590.627,
                 ["weapons"] = 
                 {
                     ["AGM-88C"] = 
@@ -16118,7 +16142,6 @@ stats =
                         ["hit"] = 0,
                     }, -- end of ["AGM-88C"]
                 }, -- end of ["weapons"]
-                ["total"] = 5541.959,
                 ["actions"] = 
                 {
                     ["losses"] = 
@@ -16128,7 +16151,7 @@ stats =
                         ["eject"] = 0,
                     }, -- end of ["losses"]
                 }, -- end of ["actions"]
-                ["inAir"] = 1590.627,
+                ["total"] = 5541.959,
             }, -- end of ["FA-18C_hornet"]
         }, -- end of ["times"]
         ["joinDate"] = 1615058131,
@@ -16565,13 +16588,13 @@ stats =
                         ["shot"] = 66,
                         ["hit"] = 8,
                     }, -- end of ["Mk-82"]
-                    ["AGM-65L"] = 
+                    ["AIM-9L"] = 
                     {
-                        ["hit"] = 0,
-                        ["kills"] = 0,
-                        ["shot"] = 0,
-                        ["numHits"] = 1,
-                    }, -- end of ["AGM-65L"]
+                        ["hit"] = 4,
+                        ["kills"] = 4,
+                        ["shot"] = 6,
+                        ["numHits"] = 5,
+                    }, -- end of ["AIM-9L"]
                     ["F-16CM bl.50"] = 
                     {
                         ["numHits"] = 0,
@@ -16600,13 +16623,13 @@ stats =
                         ["shot"] = 12,
                         ["hit"] = 0,
                     }, -- end of ["AGM-88C"]
-                    ["AIM-9L"] = 
+                    ["Mk-82AIR"] = 
                     {
-                        ["hit"] = 4,
-                        ["kills"] = 4,
-                        ["shot"] = 6,
-                        ["numHits"] = 5,
-                    }, -- end of ["AIM-9L"]
+                        ["hit"] = 7,
+                        ["kills"] = 1,
+                        ["shot"] = 30,
+                        ["numHits"] = 14,
+                    }, -- end of ["Mk-82AIR"]
                     ["AGM-65D"] = 
                     {
                         ["numHits"] = 31,
@@ -16657,13 +16680,13 @@ stats =
                         ["shot"] = 0,
                         ["numHits"] = 1,
                     }, -- end of ["AGM-65F"]
-                    ["Mk-82AIR"] = 
+                    ["AGM-65L"] = 
                     {
-                        ["hit"] = 7,
-                        ["kills"] = 1,
-                        ["shot"] = 30,
-                        ["numHits"] = 14,
-                    }, -- end of ["Mk-82AIR"]
+                        ["hit"] = 0,
+                        ["kills"] = 0,
+                        ["shot"] = 0,
+                        ["numHits"] = 1,
+                    }, -- end of ["AGM-65L"]
                     ["unknown"] = 
                     {
                         ["hit"] = 0,
@@ -16730,6 +16753,7 @@ stats =
         {
             ["MiG-29G"] = 
             {
+                ["inAir"] = 480.297,
                 ["weapons"] = 
                 {
                     ["GSh-30-1"] = 
@@ -16740,7 +16764,6 @@ stats =
                         ["numHits"] = 0,
                     }, -- end of ["GSh-30-1"]
                 }, -- end of ["weapons"]
-                ["total"] = 1200.597,
                 ["actions"] = 
                 {
                     ["losses"] = 
@@ -16750,7 +16773,7 @@ stats =
                         ["eject"] = 0,
                     }, -- end of ["losses"]
                 }, -- end of ["actions"]
-                ["inAir"] = 480.297,
+                ["total"] = 1200.597,
             }, -- end of ["MiG-29G"]
             ["Ka-50"] = 
             {
@@ -16768,6 +16791,7 @@ stats =
             }, -- end of ["Ka-50"]
             ["SpitfireLFMkIX"] = 
             {
+                ["inAir"] = 860.489,
                 ["weapons"] = 
                 {
                     ["Hispano Mk. II"] = 
@@ -16787,7 +16811,6 @@ stats =
                         ["numHits"] = 0,
                     }, -- end of ["Browning .303 Mk. II"]
                 }, -- end of ["weapons"]
-                ["total"] = 1460.771,
                 ["actions"] = 
                 {
                     ["losses"] = 
@@ -16797,7 +16820,7 @@ stats =
                         ["eject"] = 0,
                     }, -- end of ["losses"]
                 }, -- end of ["actions"]
-                ["inAir"] = 860.489,
+                ["total"] = 1460.771,
             }, -- end of ["SpitfireLFMkIX"]
             ["F-15C"] = 
             {
@@ -17020,15 +17043,6 @@ stats =
         {
             ["AV8BNA"] = 
             {
-                ["inAir"] = 15955.398,
-                ["total"] = 38113.869,
-                ["actions"] = 
-                {
-                    ["losses"] = 
-                    {
-                        ["crash"] = 4,
-                    }, -- end of ["losses"]
-                }, -- end of ["actions"]
                 ["weapons"] = 
                 {
                     ["Mk-82 SnakeEye"] = 
@@ -17060,6 +17074,15 @@ stats =
                         ["numHits"] = 1,
                     }, -- end of ["AGM-62 Walleye II"]
                 }, -- end of ["weapons"]
+                ["inAir"] = 15955.398,
+                ["actions"] = 
+                {
+                    ["losses"] = 
+                    {
+                        ["crash"] = 4,
+                    }, -- end of ["losses"]
+                }, -- end of ["actions"]
+                ["total"] = 38113.869,
             }, -- end of ["AV8BNA"]
         }, -- end of ["times"]
         ["joinDate"] = 1586625535,
@@ -17204,6 +17227,7 @@ stats =
             }, -- end of ["FA-18C_hornet"]
             ["F-16C_50"] = 
             {
+                ["inAir"] = 950.563,
                 ["weapons"] = 
                 {
                     ["Mk-82"] = 
@@ -17214,7 +17238,6 @@ stats =
                         ["hit"] = 0,
                     }, -- end of ["Mk-82"]
                 }, -- end of ["weapons"]
-                ["total"] = 2081.235,
                 ["actions"] = 
                 {
                     ["losses"] = 
@@ -17224,7 +17247,7 @@ stats =
                         ["eject"] = 0,
                     }, -- end of ["losses"]
                 }, -- end of ["actions"]
-                ["inAir"] = 950.563,
+                ["total"] = 2081.235,
             }, -- end of ["F-16C_50"]
         }, -- end of ["times"]
         ["joinDate"] = 1587069171,
@@ -17268,13 +17291,13 @@ stats =
                 }, -- end of ["actions"]
                 ["weapons"] = 
                 {
-                    ["Mk-82"] = 
+                    ["unknown"] = 
                     {
-                        ["numHits"] = 1,
-                        ["kills"] = 0,
-                        ["shot"] = 4,
                         ["hit"] = 0,
-                    }, -- end of ["Mk-82"]
+                        ["kills"] = 1,
+                        ["shot"] = 0,
+                        ["numHits"] = 5,
+                    }, -- end of ["unknown"]
                     ["shot"] = 5,
                     ["AIM-9X"] = 
                     {
@@ -17283,13 +17306,6 @@ stats =
                         ["shot"] = 2,
                         ["numHits"] = 2,
                     }, -- end of ["AIM-9X"]
-                    ["unknown"] = 
-                    {
-                        ["hit"] = 0,
-                        ["kills"] = 1,
-                        ["shot"] = 0,
-                        ["numHits"] = 5,
-                    }, -- end of ["unknown"]
                     ["AIM-120C-5"] = 
                     {
                         ["hit"] = 0,
@@ -17297,6 +17313,13 @@ stats =
                         ["shot"] = 4,
                         ["numHits"] = 1,
                     }, -- end of ["AIM-120C-5"]
+                    ["Mk-82"] = 
+                    {
+                        ["numHits"] = 1,
+                        ["kills"] = 0,
+                        ["shot"] = 4,
+                        ["hit"] = 0,
+                    }, -- end of ["Mk-82"]
                     ["AGM-154A"] = 
                     {
                         ["hit"] = 0,
@@ -17383,17 +17406,6 @@ stats =
             }, -- end of ["P-51D"]
             ["UH-1H"] = 
             {
-                ["total"] = 8765.64,
-                ["inAir"] = 5823.627,
-                ["actions"] = 
-                {
-                    ["losses"] = 
-                    {
-                        ["pilotDeath"] = 5,
-                        ["crash"] = 4,
-                        ["eject"] = 0,
-                    }, -- end of ["losses"]
-                }, -- end of ["actions"]
                 ["weapons"] = 
                 {
                     ["HYDRA-70 M151"] = 
@@ -17411,6 +17423,17 @@ stats =
                         ["hit"] = 0,
                     }, -- end of ["M134 Minigun"]
                 }, -- end of ["weapons"]
+                ["total"] = 8765.64,
+                ["actions"] = 
+                {
+                    ["losses"] = 
+                    {
+                        ["pilotDeath"] = 5,
+                        ["crash"] = 4,
+                        ["eject"] = 0,
+                    }, -- end of ["losses"]
+                }, -- end of ["actions"]
+                ["inAir"] = 5823.627,
             }, -- end of ["UH-1H"]
             ["SA342M"] = 
             {
@@ -17429,17 +17452,6 @@ stats =
             }, -- end of ["SA342M"]
             ["AV8BNA"] = 
             {
-                ["total"] = 3461.257,
-                ["inAir"] = 2430.942,
-                ["actions"] = 
-                {
-                    ["losses"] = 
-                    {
-                        ["pilotDeath"] = 3,
-                        ["crash"] = 3,
-                        ["eject"] = 0,
-                    }, -- end of ["losses"]
-                }, -- end of ["actions"]
                 ["weapons"] = 
                 {
                     ["FFAR Mk1 HE"] = 
@@ -17464,6 +17476,17 @@ stats =
                         ["numHits"] = 0,
                     }, -- end of ["AGM-65E"]
                 }, -- end of ["weapons"]
+                ["total"] = 3461.257,
+                ["actions"] = 
+                {
+                    ["losses"] = 
+                    {
+                        ["pilotDeath"] = 3,
+                        ["crash"] = 3,
+                        ["eject"] = 0,
+                    }, -- end of ["losses"]
+                }, -- end of ["actions"]
+                ["inAir"] = 2430.942,
             }, -- end of ["AV8BNA"]
             ["FA-18C_hornet"] = 
             {
@@ -17553,10 +17576,10 @@ stats =
                 {
                     ["Ground Units"] = 
                     {
-                        ["total"] = 11,
-                        ["SAM"] = 5,
-                        ["Unarmored"] = 1,
                         ["Tanks"] = 5,
+                        ["total"] = 11,
+                        ["Unarmored"] = 1,
+                        ["SAM"] = 5,
                     }, -- end of ["Ground Units"]
                     ["Planes"] = 
                     {
@@ -17707,7 +17730,17 @@ stats =
             }, -- end of ["FW-190A8"]
             ["SA342L"] = 
             {
+                ["inAir"] = 780.30799999999,
                 ["total"] = 1100.392,
+                ["actions"] = 
+                {
+                    ["losses"] = 
+                    {
+                        ["pilotDeath"] = 1,
+                        ["crash"] = 1,
+                        ["eject"] = 0,
+                    }, -- end of ["losses"]
+                }, -- end of ["actions"]
                 ["weapons"] = 
                 {
                     ["SNEB68_EAP"] = 
@@ -17733,16 +17766,6 @@ stats =
                         ["hit"] = 0,
                     }, -- end of ["kamikaze"]
                 }, -- end of ["weapons"]
-                ["actions"] = 
-                {
-                    ["losses"] = 
-                    {
-                        ["pilotDeath"] = 1,
-                        ["crash"] = 1,
-                        ["eject"] = 0,
-                    }, -- end of ["losses"]
-                }, -- end of ["actions"]
-                ["inAir"] = 780.30799999999,
             }, -- end of ["SA342L"]
         }, -- end of ["times"]
         ["joinDate"] = 1589917357,
@@ -17813,8 +17836,17 @@ stats =
         {
             ["Mirage-F1CE"] = 
             {
+                ["weapons"] = 
+                {
+                    ["defa_553"] = 
+                    {
+                        ["hit"] = 0,
+                        ["kills"] = 0,
+                        ["shot"] = 106,
+                        ["numHits"] = 0,
+                    }, -- end of ["defa_553"]
+                }, -- end of ["weapons"]
                 ["total"] = 4854.97,
-                ["inAir"] = 2122.159,
                 ["actions"] = 
                 {
                     ["landing"] = 
@@ -17828,16 +17860,7 @@ stats =
                         ["airbase"] = 4,
                     }, -- end of ["takeoff"]
                 }, -- end of ["actions"]
-                ["weapons"] = 
-                {
-                    ["defa_553"] = 
-                    {
-                        ["hit"] = 0,
-                        ["kills"] = 0,
-                        ["shot"] = 106,
-                        ["numHits"] = 0,
-                    }, -- end of ["defa_553"]
-                }, -- end of ["weapons"]
+                ["inAir"] = 2122.159,
             }, -- end of ["Mirage-F1CE"]
             ["F-16C_50"] = 
             {
@@ -17974,17 +17997,8 @@ stats =
             }, -- end of ["T-45"]
             ["A-4E-C"] = 
             {
+                ["inAir"] = 740.713,
                 ["total"] = 1321.308,
-                ["weapons"] = 
-                {
-                    ["coltMK12"] = 
-                    {
-                        ["hit"] = 0,
-                        ["kills"] = 0,
-                        ["shot"] = 22,
-                        ["numHits"] = 0,
-                    }, -- end of ["coltMK12"]
-                }, -- end of ["weapons"]
                 ["actions"] = 
                 {
                     ["losses"] = 
@@ -17999,7 +18013,16 @@ stats =
                         ["airbase"] = 4,
                     }, -- end of ["takeoff"]
                 }, -- end of ["actions"]
-                ["inAir"] = 740.713,
+                ["weapons"] = 
+                {
+                    ["coltMK12"] = 
+                    {
+                        ["hit"] = 0,
+                        ["kills"] = 0,
+                        ["shot"] = 22,
+                        ["numHits"] = 0,
+                    }, -- end of ["coltMK12"]
+                }, -- end of ["weapons"]
             }, -- end of ["A-4E-C"]
         }, -- end of ["times"]
         ["joinDate"] = 1642874957,
@@ -18309,8 +18332,17 @@ stats =
         {
             ["Su-25T"] = 
             {
+                ["weapons"] = 
+                {
+                    ["Kh-58U"] = 
+                    {
+                        ["numHits"] = 0,
+                        ["kills"] = 0,
+                        ["shot"] = 1,
+                        ["hit"] = 0,
+                    }, -- end of ["Kh-58U"]
+                }, -- end of ["weapons"]
                 ["inAir"] = 2079.849,
-                ["total"] = 2860.886,
                 ["actions"] = 
                 {
                     ["lostTo"] = 
@@ -18336,16 +18368,7 @@ stats =
                         ["pilotError"] = 2,
                     }, -- end of ["losses"]
                 }, -- end of ["actions"]
-                ["weapons"] = 
-                {
-                    ["Kh-58U"] = 
-                    {
-                        ["numHits"] = 0,
-                        ["kills"] = 0,
-                        ["shot"] = 1,
-                        ["hit"] = 0,
-                    }, -- end of ["Kh-58U"]
-                }, -- end of ["weapons"]
+                ["total"] = 2860.886,
             }, -- end of ["Su-25T"]
         }, -- end of ["times"]
         ["joinDate"] = 1700944821,
@@ -18457,4322 +18480,3 @@ stats =
     }, -- end of ["249a6b4dac329e1e2749d2310e69b2d7"]
 } -- end of stats
 
-stats["3316bca529c797f031d8c54c14a0f5d3"]["lastJoin"] = 1703013976
-stats["3316bca529c797f031d8c54c14a0f5d3"]["names"] = { [1] = "Player", [2] = "JSW Neal", }
-stats["3316bca529c797f031d8c54c14a0f5d3"]["lastJoin"] = 1703104446
-stats["3316bca529c797f031d8c54c14a0f5d3"]["times"]["F-5E-3"] = { ["total"] = 0, ["inAir"] = 0, }
-stats["3316bca529c797f031d8c54c14a0f5d3"]["times"]["F-5E-3"]["total"] = 10.004
-stats["3316bca529c797f031d8c54c14a0f5d3"]["times"]["F-5E-3"]["total"] = 20.019
-stats["3316bca529c797f031d8c54c14a0f5d3"]["times"]["F-5E-3"]["total"] = 30.019
-stats["3316bca529c797f031d8c54c14a0f5d3"]["times"]["F-5E-3"]["total"] = 40.034
-stats["3316bca529c797f031d8c54c14a0f5d3"]["times"]["F-5E-3"]["total"] = 50.049
-stats["3316bca529c797f031d8c54c14a0f5d3"]["times"]["F-5E-3"]["total"] = 60.064
-stats["3316bca529c797f031d8c54c14a0f5d3"]["times"]["F-5E-3"]["total"] = 70.071
-stats["3316bca529c797f031d8c54c14a0f5d3"]["times"]["F-5E-3"]["total"] = 80.078
-stats["3316bca529c797f031d8c54c14a0f5d3"]["times"]["F-5E-3"]["total"] = 90.093
-stats["3316bca529c797f031d8c54c14a0f5d3"]["times"]["F-5E-3"]["total"] = 100.108
-stats["3316bca529c797f031d8c54c14a0f5d3"]["times"]["F-5E-3"]["total"] = 110.116
-stats["3316bca529c797f031d8c54c14a0f5d3"]["times"]["F-5E-3"]["total"] = 120.116
-stats["3316bca529c797f031d8c54c14a0f5d3"]["times"]["F-5E-3"]["total"] = 130.116
-stats["3316bca529c797f031d8c54c14a0f5d3"]["times"]["F-5E-3"]["total"] = 140.136
-stats["3316bca529c797f031d8c54c14a0f5d3"]["times"]["F-5E-3"]["total"] = 150.151
-stats["3316bca529c797f031d8c54c14a0f5d3"]["times"]["F-5E-3"]["total"] = 160.166
-stats["3316bca529c797f031d8c54c14a0f5d3"]["times"]["F-5E-3"]["total"] = 170.181
-stats["3316bca529c797f031d8c54c14a0f5d3"]["times"]["F-5E-3"]["total"] = 180.196
-stats["3316bca529c797f031d8c54c14a0f5d3"]["times"]["F-5E-3"]["total"] = 190.204
-stats["3316bca529c797f031d8c54c14a0f5d3"]["times"]["F-5E-3"]["total"] = 200.21
-stats["3316bca529c797f031d8c54c14a0f5d3"]["times"]["F-5E-3"]["total"] = 210.225
-stats["3316bca529c797f031d8c54c14a0f5d3"]["times"]["F-5E-3"]["total"] = 220.24
-stats["3316bca529c797f031d8c54c14a0f5d3"]["times"]["F-5E-3"]["total"] = 230.255
-stats["3316bca529c797f031d8c54c14a0f5d3"]["times"]["F-5E-3"]["total"] = 240.27
-stats["3316bca529c797f031d8c54c14a0f5d3"]["times"]["F-5E-3"]["total"] = 250.28
-stats["3316bca529c797f031d8c54c14a0f5d3"]["times"]["F-5E-3"]["total"] = 260.284
-stats["3316bca529c797f031d8c54c14a0f5d3"]["times"]["F-5E-3"]["total"] = 270.299
-stats["3316bca529c797f031d8c54c14a0f5d3"]["times"]["F-5E-3"]["total"] = 280.314
-stats["3316bca529c797f031d8c54c14a0f5d3"]["times"]["F-5E-3"]["total"] = 290.324
-stats["3316bca529c797f031d8c54c14a0f5d3"]["times"]["F-5E-3"]["total"] = 300.328
-stats["3316bca529c797f031d8c54c14a0f5d3"]["times"]["F-5E-3"]["total"] = 310.328
-stats["3316bca529c797f031d8c54c14a0f5d3"]["times"]["F-5E-3"]["total"] = 320.343
-stats["3316bca529c797f031d8c54c14a0f5d3"]["times"]["F-5E-3"]["total"] = 330.358
-stats["3316bca529c797f031d8c54c14a0f5d3"]["times"]["F-5E-3"]["total"] = 340.374
-stats["3316bca529c797f031d8c54c14a0f5d3"]["times"]["F-5E-3"]["total"] = 350.387
-stats["3316bca529c797f031d8c54c14a0f5d3"]["times"]["F-5E-3"]["total"] = 360.387
-stats["3316bca529c797f031d8c54c14a0f5d3"]["times"]["F-5E-3"]["total"] = 370.394
-stats["3316bca529c797f031d8c54c14a0f5d3"]["times"]["F-5E-3"]["total"] = 380.401
-stats["3316bca529c797f031d8c54c14a0f5d3"]["times"]["F-5E-3"]["total"] = 390.401
-stats["3316bca529c797f031d8c54c14a0f5d3"]["times"]["F-5E-3"]["total"] = 400.411
-stats["3316bca529c797f031d8c54c14a0f5d3"]["times"]["F-5E-3"]["total"] = 410.415
-stats["3316bca529c797f031d8c54c14a0f5d3"]["times"]["F-5E-3"]["total"] = 420.43
-stats["3316bca529c797f031d8c54c14a0f5d3"]["times"]["F-5E-3"]["total"] = 430.439
-stats["3316bca529c797f031d8c54c14a0f5d3"]["times"]["F-5E-3"]["total"] = 440.44
-stats["3316bca529c797f031d8c54c14a0f5d3"]["times"]["F-5E-3"]["total"] = 450.447
-stats["3316bca529c797f031d8c54c14a0f5d3"]["times"]["F-5E-3"]["total"] = 460.455
-stats["3316bca529c797f031d8c54c14a0f5d3"]["times"]["F-5E-3"]["total"] = 470.457
-stats["3316bca529c797f031d8c54c14a0f5d3"]["times"]["F-5E-3"]["total"] = 480.46
-stats["3316bca529c797f031d8c54c14a0f5d3"]["times"]["F-5E-3"]["total"] = 490.468
-stats["3316bca529c797f031d8c54c14a0f5d3"]["times"]["F-5E-3"]["total"] = 500.487
-stats["3316bca529c797f031d8c54c14a0f5d3"]["times"]["F-5E-3"]["total"] = 510.501
-stats["3316bca529c797f031d8c54c14a0f5d3"]["times"]["F-5E-3"]["total"] = 520.516
-stats["3316bca529c797f031d8c54c14a0f5d3"]["times"]["F-5E-3"]["total"] = 530.531
-stats["3316bca529c797f031d8c54c14a0f5d3"]["times"]["F-5E-3"]["total"] = 540.531
-stats["3316bca529c797f031d8c54c14a0f5d3"]["times"]["F-5E-3"]["total"] = 550.539
-stats["3316bca529c797f031d8c54c14a0f5d3"]["times"]["F-5E-3"]["total"] = 560.545
-stats["3316bca529c797f031d8c54c14a0f5d3"]["times"]["F-5E-3"]["total"] = 570.553
-stats["3316bca529c797f031d8c54c14a0f5d3"]["times"]["F-5E-3"]["total"] = 580.575
-stats["3316bca529c797f031d8c54c14a0f5d3"]["times"]["F-5E-3"]["total"] = 590.583
-stats["3316bca529c797f031d8c54c14a0f5d3"]["times"]["F-5E-3"]["total"] = 600.605
-stats["3316bca529c797f031d8c54c14a0f5d3"]["times"]["F-5E-3"]["total"] = 610.615
-stats["3316bca529c797f031d8c54c14a0f5d3"]["times"]["F-5E-3"]["total"] = 620.619
-stats["3316bca529c797f031d8c54c14a0f5d3"]["times"]["F-5E-3"]["total"] = 630.634
-stats["3316bca529c797f031d8c54c14a0f5d3"]["times"]["F-5E-3"]["total"] = 640.643
-stats["3316bca529c797f031d8c54c14a0f5d3"]["times"]["F-5E-3"]["total"] = 650.648
-stats["3316bca529c797f031d8c54c14a0f5d3"]["times"]["F-5E-3"]["total"] = 660.648
-stats["3316bca529c797f031d8c54c14a0f5d3"]["times"]["F-5E-3"]["total"] = 670.648
-stats["3316bca529c797f031d8c54c14a0f5d3"]["times"]["F-5E-3"]["total"] = 680.662
-stats["3316bca529c797f031d8c54c14a0f5d3"]["times"]["F-5E-3"]["total"] = 690.677
-stats["3316bca529c797f031d8c54c14a0f5d3"]["times"]["F-5E-3"]["total"] = 700.692
-stats["3316bca529c797f031d8c54c14a0f5d3"]["times"]["F-5E-3"]["total"] = 710.707
-stats["3316bca529c797f031d8c54c14a0f5d3"]["times"]["F-5E-3"]["total"] = 720.722
-stats["3316bca529c797f031d8c54c14a0f5d3"]["times"]["F-5E-3"]["total"] = 730.736
-stats["3316bca529c797f031d8c54c14a0f5d3"]["times"]["F-5E-3"]["total"] = 740.736
-stats["3316bca529c797f031d8c54c14a0f5d3"]["times"]["F-5E-3"]["total"] = 750.744
-stats["3316bca529c797f031d8c54c14a0f5d3"]["times"]["F-5E-3"]["total"] = 760.766
-stats["3316bca529c797f031d8c54c14a0f5d3"]["times"]["F-5E-3"]["total"] = 770.781
-stats["3316bca529c797f031d8c54c14a0f5d3"]["times"]["F-5E-3"]["total"] = 780.79
-stats["3316bca529c797f031d8c54c14a0f5d3"]["times"]["F-5E-3"]["total"] = 790.795
-stats["3316bca529c797f031d8c54c14a0f5d3"]["times"]["F-5E-3"]["total"] = 800.804
-stats["3316bca529c797f031d8c54c14a0f5d3"]["times"]["F-5E-3"]["total"] = 810.804
-stats["3316bca529c797f031d8c54c14a0f5d3"]["times"]["F-5E-3"]["total"] = 820.824
-stats["3316bca529c797f031d8c54c14a0f5d3"]["times"]["F-5E-3"]["total"] = 830.833
-stats["3316bca529c797f031d8c54c14a0f5d3"]["times"]["F-5E-3"]["total"] = 840.838
-stats["3316bca529c797f031d8c54c14a0f5d3"]["times"]["F-5E-3"]["total"] = 850.838
-stats["3316bca529c797f031d8c54c14a0f5d3"]["times"]["F-5E-3"]["total"] = 860.853
-stats["3316bca529c797f031d8c54c14a0f5d3"]["times"]["F-5E-3"]["total"] = 870.863
-stats["3316bca529c797f031d8c54c14a0f5d3"]["times"]["F-5E-3"]["total"] = 880.867
-stats["3316bca529c797f031d8c54c14a0f5d3"]["times"]["F-5E-3"]["total"] = 890.875
-stats["3316bca529c797f031d8c54c14a0f5d3"]["times"]["F-5E-3"]["total"] = 900.877
-stats["3316bca529c797f031d8c54c14a0f5d3"]["times"]["F-5E-3"]["total"] = 910.88
-stats["3316bca529c797f031d8c54c14a0f5d3"]["times"]["F-5E-3"]["total"] = 920.895
-stats["3316bca529c797f031d8c54c14a0f5d3"]["times"]["F-5E-3"]["total"] = 930.91
-stats["3316bca529c797f031d8c54c14a0f5d3"]["times"]["F-5E-3"]["total"] = 940.91
-stats["3316bca529c797f031d8c54c14a0f5d3"]["times"]["F-5E-3"]["total"] = 950.925
-stats["3316bca529c797f031d8c54c14a0f5d3"]["times"]["F-5E-3"]["total"] = 960.933
-stats["3316bca529c797f031d8c54c14a0f5d3"]["times"]["F-5E-3"]["inAir"] = 10
-stats["3316bca529c797f031d8c54c14a0f5d3"]["times"]["F-5E-3"]["total"] = 970.933
-stats["3316bca529c797f031d8c54c14a0f5d3"]["times"]["F-5E-3"]["inAir"] = 20.005
-stats["3316bca529c797f031d8c54c14a0f5d3"]["times"]["F-5E-3"]["total"] = 980.938
-stats["3316bca529c797f031d8c54c14a0f5d3"]["times"]["F-5E-3"]["inAir"] = 30.02
-stats["3316bca529c797f031d8c54c14a0f5d3"]["times"]["F-5E-3"]["total"] = 990.953
-stats["3316bca529c797f031d8c54c14a0f5d3"]["times"]["F-5E-3"]["inAir"] = 40.035
-stats["3316bca529c797f031d8c54c14a0f5d3"]["times"]["F-5E-3"]["total"] = 1000.968
-stats["3316bca529c797f031d8c54c14a0f5d3"]["times"]["F-5E-3"]["inAir"] = 50.044
-stats["3316bca529c797f031d8c54c14a0f5d3"]["times"]["F-5E-3"]["total"] = 1010.977
-stats["3316bca529c797f031d8c54c14a0f5d3"]["times"]["F-5E-3"]["inAir"] = 60.049
-stats["3316bca529c797f031d8c54c14a0f5d3"]["times"]["F-5E-3"]["total"] = 1020.982
-stats["3316bca529c797f031d8c54c14a0f5d3"]["times"]["F-5E-3"]["inAir"] = 70.064
-stats["3316bca529c797f031d8c54c14a0f5d3"]["times"]["F-5E-3"]["total"] = 1030.997
-stats["3316bca529c797f031d8c54c14a0f5d3"]["times"]["F-5E-3"]["inAir"] = 80.079
-stats["3316bca529c797f031d8c54c14a0f5d3"]["times"]["F-5E-3"]["total"] = 1041.012
-stats["3316bca529c797f031d8c54c14a0f5d3"]["times"]["F-5E-3"]["inAir"] = 90.079
-stats["3316bca529c797f031d8c54c14a0f5d3"]["times"]["F-5E-3"]["total"] = 1051.012
-stats["3316bca529c797f031d8c54c14a0f5d3"]["times"]["F-5E-3"]["inAir"] = 100.093
-stats["3316bca529c797f031d8c54c14a0f5d3"]["times"]["F-5E-3"]["total"] = 1061.026
-stats["3316bca529c797f031d8c54c14a0f5d3"]["times"]["F-5E-3"]["inAir"] = 110.108
-stats["3316bca529c797f031d8c54c14a0f5d3"]["times"]["F-5E-3"]["total"] = 1071.041
-stats["3316bca529c797f031d8c54c14a0f5d3"]["times"]["F-5E-3"]["inAir"] = 120.123
-stats["3316bca529c797f031d8c54c14a0f5d3"]["times"]["F-5E-3"]["total"] = 1081.056
-stats["3316bca529c797f031d8c54c14a0f5d3"]["times"]["F-5E-3"]["inAir"] = 130.123
-stats["3316bca529c797f031d8c54c14a0f5d3"]["times"]["F-5E-3"]["total"] = 1091.056
-stats["3316bca529c797f031d8c54c14a0f5d3"]["times"]["F-5E-3"]["inAir"] = 140.124
-stats["3316bca529c797f031d8c54c14a0f5d3"]["times"]["F-5E-3"]["total"] = 1101.057
-stats["3316bca529c797f031d8c54c14a0f5d3"]["times"]["F-5E-3"]["inAir"] = 150.131
-stats["3316bca529c797f031d8c54c14a0f5d3"]["times"]["F-5E-3"]["total"] = 1111.064
-stats["3316bca529c797f031d8c54c14a0f5d3"]["times"]["F-5E-3"]["inAir"] = 160.136
-stats["3316bca529c797f031d8c54c14a0f5d3"]["times"]["F-5E-3"]["total"] = 1121.069
-stats["3316bca529c797f031d8c54c14a0f5d3"]["times"]["F-5E-3"]["inAir"] = 170.136
-stats["3316bca529c797f031d8c54c14a0f5d3"]["times"]["F-5E-3"]["total"] = 1131.069
-stats["3316bca529c797f031d8c54c14a0f5d3"]["times"]["F-5E-3"]["inAir"] = 180.144
-stats["3316bca529c797f031d8c54c14a0f5d3"]["times"]["F-5E-3"]["total"] = 1141.077
-stats["3316bca529c797f031d8c54c14a0f5d3"]["times"]["F-5E-3"]["inAir"] = 190.165
-stats["3316bca529c797f031d8c54c14a0f5d3"]["times"]["F-5E-3"]["total"] = 1151.098
-stats["3316bca529c797f031d8c54c14a0f5d3"]["times"]["F-5E-3"]["inAir"] = 200.18
-stats["3316bca529c797f031d8c54c14a0f5d3"]["times"]["F-5E-3"]["total"] = 1161.113
-stats["3316bca529c797f031d8c54c14a0f5d3"]["times"]["F-5E-3"]["inAir"] = 210.18
-stats["3316bca529c797f031d8c54c14a0f5d3"]["times"]["F-5E-3"]["total"] = 1171.113
-stats["3316bca529c797f031d8c54c14a0f5d3"]["times"]["F-5E-3"]["inAir"] = 220.195
-stats["3316bca529c797f031d8c54c14a0f5d3"]["times"]["F-5E-3"]["total"] = 1181.128
-stats["3316bca529c797f031d8c54c14a0f5d3"]["times"]["F-5E-3"]["inAir"] = 230.203
-stats["3316bca529c797f031d8c54c14a0f5d3"]["times"]["F-5E-3"]["total"] = 1191.136
-stats["3316bca529c797f031d8c54c14a0f5d3"]["times"]["F-5E-3"]["inAir"] = 240.203
-stats["3316bca529c797f031d8c54c14a0f5d3"]["times"]["F-5E-3"]["total"] = 1201.136
-stats["3316bca529c797f031d8c54c14a0f5d3"]["times"]["F-5E-3"]["inAir"] = 250.208
-stats["3316bca529c797f031d8c54c14a0f5d3"]["times"]["F-5E-3"]["total"] = 1211.141
-stats["3316bca529c797f031d8c54c14a0f5d3"]["times"]["F-5E-3"]["inAir"] = 260.208
-stats["3316bca529c797f031d8c54c14a0f5d3"]["times"]["F-5E-3"]["total"] = 1221.141
-stats["3316bca529c797f031d8c54c14a0f5d3"]["times"]["F-5E-3"]["inAir"] = 270.223
-stats["3316bca529c797f031d8c54c14a0f5d3"]["times"]["F-5E-3"]["total"] = 1231.156
-stats["3316bca529c797f031d8c54c14a0f5d3"]["times"]["F-5E-3"]["inAir"] = 280.237
-stats["3316bca529c797f031d8c54c14a0f5d3"]["times"]["F-5E-3"]["total"] = 1241.17
-stats["3316bca529c797f031d8c54c14a0f5d3"]["times"]["F-5E-3"]["inAir"] = 290.237
-stats["3316bca529c797f031d8c54c14a0f5d3"]["times"]["F-5E-3"]["total"] = 1251.17
-stats["3316bca529c797f031d8c54c14a0f5d3"]["times"]["F-5E-3"]["inAir"] = 300.245
-stats["3316bca529c797f031d8c54c14a0f5d3"]["times"]["F-5E-3"]["total"] = 1261.178
-stats["3316bca529c797f031d8c54c14a0f5d3"]["times"]["F-5E-3"]["inAir"] = 310.251
-stats["3316bca529c797f031d8c54c14a0f5d3"]["times"]["F-5E-3"]["total"] = 1271.184
-stats["3316bca529c797f031d8c54c14a0f5d3"]["times"]["F-5E-3"]["inAir"] = 320.266
-stats["3316bca529c797f031d8c54c14a0f5d3"]["times"]["F-5E-3"]["total"] = 1281.199
-stats["3316bca529c797f031d8c54c14a0f5d3"]["times"]["F-5E-3"]["inAir"] = 330.275
-stats["3316bca529c797f031d8c54c14a0f5d3"]["times"]["F-5E-3"]["total"] = 1291.208
-stats["3316bca529c797f031d8c54c14a0f5d3"]["times"]["F-5E-3"]["inAir"] = 340.296
-stats["3316bca529c797f031d8c54c14a0f5d3"]["times"]["F-5E-3"]["total"] = 1301.229
-stats["3316bca529c797f031d8c54c14a0f5d3"]["times"]["F-5E-3"]["inAir"] = 350.304
-stats["3316bca529c797f031d8c54c14a0f5d3"]["times"]["F-5E-3"]["total"] = 1311.237
-stats["3316bca529c797f031d8c54c14a0f5d3"]["times"]["F-5E-3"]["inAir"] = 360.31
-stats["3316bca529c797f031d8c54c14a0f5d3"]["times"]["F-5E-3"]["total"] = 1321.243
-stats["3316bca529c797f031d8c54c14a0f5d3"]["times"]["F-5E-3"]["inAir"] = 370.318
-stats["3316bca529c797f031d8c54c14a0f5d3"]["times"]["F-5E-3"]["total"] = 1331.251
-stats["3316bca529c797f031d8c54c14a0f5d3"]["times"]["F-5E-3"]["inAir"] = 380.323
-stats["3316bca529c797f031d8c54c14a0f5d3"]["times"]["F-5E-3"]["total"] = 1341.256
-stats["3316bca529c797f031d8c54c14a0f5d3"]["lastJoin"] = 1703105796
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["lastJoin"] = 1703170823
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 185646.94900004
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 185656.95100004
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 185666.95900004
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 185676.96500004
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 185686.97500004
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 185696.97900004
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 185706.97900004
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 185716.98500004
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 185726.99200004
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 185737.00800004
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 185747.01800004
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 185757.03800004
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 185767.04700004
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["lastJoin"] = 1703170962
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 185777.05200004
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 185787.05900004
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 41955.787
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 185797.07100004
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 41965.799
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 185807.08200004
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 41975.81
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 185817.08500004
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 41985.813
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["lastJoin"] = 1703171010
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 185827.08500004
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 185837.09200004
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 185847.09200004
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 185857.09800004
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 185867.10600004
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 185877.11200004
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 185887.12100004
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 185897.12600004
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 185907.14100004
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 185917.15600004
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 185927.15600004
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 185937.17000004
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["lastJoin"] = 1703171134
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 185947.17000004
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 185957.18500004
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 41995.828
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 185967.20500004
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 42005.848
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 185977.21400004
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 42015.857
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 185987.23400004
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 42025.877
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 185997.23400004
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 42035.877
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 186007.24900004
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 42045.892
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 186017.26400004
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 42055.907
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 186027.27200004
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 42065.915
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 186037.27800004
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 42075.921
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 186047.27800004
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 42085.921
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 186057.28600004
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 42095.929
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 186067.28600004
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 42105.929
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 186077.29100004
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 42115.934
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 186087.29900004
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 42125.942
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 186097.30500004
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 42135.948
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 186107.32000004
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 42145.963
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 186117.33500004
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 42155.978
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 186127.34400004
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 42165.987
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 186137.36500004
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 42176.008
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 186147.38000004
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 42186.023
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 186157.39500004
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 42196.038
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 186167.40400004
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 42206.047
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 186177.40900004
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 42216.052
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 186187.42400004
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 42226.067
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["inAir"] = 118145.823
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 186197.43200004
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 42236.075
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["inAir"] = 118155.829
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 186207.43800004
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 42246.081
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["inAir"] = 118165.838
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 186217.44700004
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 42256.09
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["inAir"] = 118175.843
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 186227.45200004
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 42266.095
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["inAir"] = 118185.843
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 186237.45200004
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 27026.768
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 42276.095
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["inAir"] = 118195.85
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 186247.45900004
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 27036.775
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 42286.102
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["inAir"] = 118205.857
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 186257.46600004
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 27046.782
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 42296.109
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["inAir"] = 118215.872
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 186267.48100004
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 27056.797
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 42306.124
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["inAir"] = 118225.887
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 186277.49600004
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 27066.812
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 42316.139
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["inAir"] = 118235.895
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 186287.50400004
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 27076.82
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 42326.147
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["inAir"] = 118245.901
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 186297.51000004
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 27086.826
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 42336.153
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["inAir"] = 118255.912
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 186307.52100004
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 27096.837
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 42346.164
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["inAir"] = 118265.916
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 186317.52500004
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 27106.841
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 42356.168
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["inAir"] = 118275.931
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 186327.54000004
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 27116.856
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 42366.183
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["inAir"] = 118285.945
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 186337.55400004
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 27126.87
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 42376.197
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["inAir"] = 118295.945
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 186347.55400004
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 27136.87
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 42386.197
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["inAir"] = 118305.952
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 186357.56100004
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 27146.877
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 42396.204
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["inAir"] = 118315.952
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 186367.56100004
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 27156.877
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 42406.204
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["inAir"] = 118325.958
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 186377.56700004
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 27166.883
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 42416.21
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["inAir"] = 118335.973
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 186387.58200004
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 27176.898
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 42426.225
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["inAir"] = 118345.988
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 186397.59700004
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 27186.913
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 42436.24
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["inAir"] = 118355.998
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 186407.60700004
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 27196.923
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 42446.25
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["inAir"] = 118366.018
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 186417.62700004
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 27206.943
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 42456.27
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["inAir"] = 118376.033
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 186427.64200004
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 27216.958
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 42466.285
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["inAir"] = 118386.048
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 186437.65700004
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 27226.973
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 42476.3
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["inAir"] = 118396.063
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 186447.67200004
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 27236.988
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 42486.315
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["inAir"] = 118406.078
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 186457.68700004
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 27247.003
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 42496.33
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["inAir"] = 118416.093
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 186467.70200004
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 27257.018
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 42506.345
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["inAir"] = 118426.108
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 186477.71700004
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 27267.033
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 42516.36
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["inAir"] = 118436.123
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 186487.73200004
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 27277.048
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 42526.375
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["inAir"] = 118446.131
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 186497.74000004
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 27287.056
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 42536.383
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["inAir"] = 118456.131
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 186507.74000004
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 27297.056
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 42546.383
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["inAir"] = 118466.152
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 186517.76100004
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 27307.077
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 42556.404
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["inAir"] = 118476.163
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 186527.77200004
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 27317.088
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 42566.415
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["inAir"] = 118486.182
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 186537.79100004
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 27327.107
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 42576.434
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["inAir"] = 118496.19
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 186547.79900004
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 27337.115
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 42586.442
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["inAir"] = 118506.196
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 186557.80500004
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 27347.121
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 42596.448
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["inAir"] = 118516.211
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 186567.82000004
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 27357.136
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 42606.463
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["inAir"] = 118526.226
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 186577.83500004
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 27367.151
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 42616.478
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["inAir"] = 118536.241
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 186587.85000004
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 27377.166
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 42626.493
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["inAir"] = 118546.245
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 186597.85400004
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 27387.17
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 42636.497
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["inAir"] = 118556.254
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 186607.86300004
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 27397.179
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 42646.506
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["inAir"] = 118566.254
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 186617.86300004
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 27407.179
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 42656.506
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["inAir"] = 118576.254
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 186627.86300004
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 27417.179
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 42666.506
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["inAir"] = 118586.262
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 186637.87100004
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 27427.187
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 42676.514
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["inAir"] = 118596.268
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 186647.87700004
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 27437.193
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 42686.52
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["inAir"] = 118606.283
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 186657.89200004
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 27447.208
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 42696.535
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["inAir"] = 118616.298
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 186667.90700004
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 27457.223
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 42706.55
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["inAir"] = 118626.309
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 186677.91800004
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 27467.234
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 42716.561
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["inAir"] = 118636.312
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 186687.92100004
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 27477.237
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 42726.564
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["inAir"] = 118646.315
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 186697.92400004
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 27487.24
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 42736.567
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["inAir"] = 118656.326
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 186707.93500004
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 27497.251
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 42746.578
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["inAir"] = 118666.341
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 186717.95000004
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 27507.266
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 42756.593
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["inAir"] = 118676.349
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 186727.95800004
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 27517.274
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 42766.601
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["inAir"] = 118686.356
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 186737.96500004
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 27527.281
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 42776.608
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["inAir"] = 118696.366
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 186747.97500004
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 27537.291
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 42786.618
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["inAir"] = 118706.37
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 186757.97900004
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 27547.295
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 42796.622
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["inAir"] = 118716.385
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 186767.99400004
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 27557.31
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 42806.637
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["inAir"] = 118726.389
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 186777.99800004
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 27567.314
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 42816.641
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["inAir"] = 118736.393
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 186788.00200004
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 27577.318
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 42826.645
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["inAir"] = 118746.395
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 186798.00400004
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 27587.32
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 42836.647
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["inAir"] = 118756.413
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 186808.02200004
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 27597.338
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 42846.665
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["inAir"] = 118766.428
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 186818.03700004
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 27607.353
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 42856.68
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["inAir"] = 118776.443
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 186828.05200004
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 27617.368
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 42866.695
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["inAir"] = 118786.458
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 186838.06700004
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 27627.383
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 42876.71
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["inAir"] = 118796.473
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 186848.08200004
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 27637.398
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 42886.725
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["inAir"] = 118806.488
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 186858.09700004
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 27647.413
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 42896.74
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["inAir"] = 118816.503
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 186868.11200004
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 27657.428
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 42906.755
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["inAir"] = 118826.518
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 186878.12700004
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 27667.443
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 42916.77
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["inAir"] = 118836.533
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 186888.14200004
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 27677.458
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 42926.785
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["inAir"] = 118846.541
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 186898.15000004
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 27687.466
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 42936.793
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["inAir"] = 118856.547
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 186908.15600004
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 27697.472
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 42946.799
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["inAir"] = 118866.547
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 186918.15600004
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 27707.472
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 42956.799
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["inAir"] = 118876.561
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 186928.17000004
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 27717.486
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 42966.813
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["inAir"] = 118886.576
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 186938.18500004
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 27727.501
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 42976.828
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["inAir"] = 118896.576
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 186948.18500004
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 27737.501
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 42986.828
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["inAir"] = 118906.59
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 186958.19900004
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 27747.515
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 42996.842
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["inAir"] = 118916.59
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 186968.19900004
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 27757.515
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 43006.842
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["inAir"] = 118926.597
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 186978.20600004
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 27767.522
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 43016.849
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["inAir"] = 118936.604
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 186988.21300004
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 27777.529
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 43026.856
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["inAir"] = 118946.604
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 186998.21300004
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 27787.529
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 43036.856
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["inAir"] = 118956.612
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 187008.22100004
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 27797.537
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 43046.864
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["inAir"] = 118966.614
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 187018.22300004
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 27807.539
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 43056.866
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["inAir"] = 118976.633
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 187028.24200004
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 27817.558
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 43066.885
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["inAir"] = 118986.644
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 187038.25300004
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 27827.569
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 43076.896
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["inAir"] = 118996.647
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 187048.25600004
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 27837.572
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 43086.899
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["inAir"] = 119006.662
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 187058.27100004
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 27847.587
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 43096.914
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["inAir"] = 119016.669
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 187068.27800004
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 27857.594
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 43106.921
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["inAir"] = 119026.669
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 187078.27800004
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 27867.594
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 43116.921
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["inAir"] = 119036.669
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 187088.27800004
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 27877.594
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 43126.921
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["inAir"] = 119046.69
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 187098.29900004
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 27887.615
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 43136.942
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["inAir"] = 119056.69
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 187108.29900004
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 27897.615
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 43146.942
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["inAir"] = 119066.705
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 187118.31400004
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 27907.63
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 43156.957
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["inAir"] = 119076.713
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 187128.32200004
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 27917.638
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 43166.965
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["inAir"] = 119086.719
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 187138.32800004
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 27927.644
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 43176.971
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["inAir"] = 119096.727
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 187148.33600004
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 27937.652
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 43186.979
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["inAir"] = 119106.727
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 187158.33600004
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 27947.652
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 43196.979
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["inAir"] = 119116.733
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 187168.34200004
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 27957.658
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 43206.985
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["inAir"] = 119126.747
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 187178.35600004
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 27967.672
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 43216.999
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["inAir"] = 119136.747
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 187188.35600004
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 27977.672
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 43226.999
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["inAir"] = 119146.762
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 187198.37100004
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 27987.687
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 43237.014
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["inAir"] = 119156.77
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 187208.37900004
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 27997.695
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 43247.022
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["inAir"] = 119166.776
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 187218.38500004
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 28007.701
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 43257.028
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["inAir"] = 119176.791
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 187228.40000004
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 28017.716
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 43267.043
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["inAir"] = 119186.8
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 187238.40900004
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 28027.725
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 43277.052
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["inAir"] = 119196.821
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 187248.43000004
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 28037.746
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 43287.073
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["inAir"] = 119206.836
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 187258.44500004
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 28047.761
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 43297.088
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["inAir"] = 119216.844
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 187268.45300004
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 28057.769
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 43307.096
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["inAir"] = 119226.85
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 187278.45900004
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 28067.775
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 43317.102
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["inAir"] = 119236.865
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 187288.47400004
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 28077.79
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 43327.117
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["inAir"] = 119246.876
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 187298.48500004
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 28087.801
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 43337.128
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["inAir"] = 119256.879
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 187308.48800004
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 28097.804
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 43347.131
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["inAir"] = 119266.894
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 187318.50300004
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 28107.819
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 43357.146
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["inAir"] = 119276.894
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 187328.50300004
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 28117.819
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 43367.146
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["inAir"] = 119286.902
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 187338.51100004
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 28127.827
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 43377.154
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["inAir"] = 119296.904
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 187348.51300004
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 28137.829
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 43387.156
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["inAir"] = 119306.907
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 187358.51600004
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 28147.832
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 43397.159
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["inAir"] = 119316.922
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 187368.53100004
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 28157.847
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 43407.174
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["inAir"] = 119326.931
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 187378.54000004
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 28167.856
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 43417.183
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["inAir"] = 119336.936
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 187388.54500004
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 28177.861
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 43427.188
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["inAir"] = 119346.944
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 187398.55300004
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 28187.869
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 43437.196
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["inAir"] = 119356.945
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 187408.55400004
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 28197.87
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 43447.197
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["inAir"] = 119366.95
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 187418.55900004
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 28207.875
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 43457.202
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["inAir"] = 119376.958
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 187428.56700004
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 28217.883
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 43467.21
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["inAir"] = 119386.964
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 187438.57300004
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 28227.889
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 43477.216
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["inAir"] = 119396.979
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 187448.58800004
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 28237.904
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 43487.231
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["inAir"] = 119406.994
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 187458.60300004
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 28247.919
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 43497.246
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["inAir"] = 119417.009
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 187468.61800004
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 28257.934
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 43507.261
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["inAir"] = 119427.024
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 187478.63300004
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 28267.949
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 43517.276
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["inAir"] = 119437.039
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 187488.64800004
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 28277.964
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 43527.291
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["inAir"] = 119447.047
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 187498.65600004
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 28287.972
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 43537.299
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["inAir"] = 119457.053
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 187508.66200004
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 28297.978
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 43547.305
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["inAir"] = 119467.068
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 187518.67700004
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 28307.993
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 43557.32
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["inAir"] = 119477.083
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 187528.69200004
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 28318.008
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 43567.335
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["inAir"] = 119487.098
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 187538.70700004
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 28328.023
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 43577.35
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["inAir"] = 119497.107
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 187548.71600004
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 28338.032
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 43587.359
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["inAir"] = 119507.107
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 187558.71600004
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 28348.032
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 43597.359
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["inAir"] = 119517.127
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 187568.73600004
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 28358.052
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 43607.379
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["inAir"] = 119527.142
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 187578.75100004
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 28368.067
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 43617.394
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["inAir"] = 119537.157
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 187588.76600004
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 28378.082
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 43627.409
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["inAir"] = 119547.165
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 187598.77400004
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 28388.09
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 43637.417
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["inAir"] = 119557.171
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 187608.78000004
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 28398.096
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 43647.423
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["inAir"] = 119567.186
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 187618.79500004
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 28408.111
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 43657.438
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["inAir"] = 119577.194
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 187628.80300004
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 28418.119
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 43667.446
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["inAir"] = 119587.196
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 187638.80500004
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 28428.121
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 43677.448
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["inAir"] = 119597.215
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 187648.82400004
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 28438.14
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 43687.467
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["inAir"] = 119607.23
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 187658.83900004
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 28448.155
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 43697.482
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["inAir"] = 119617.245
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 187668.85400004
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 28458.17
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 43707.497
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["inAir"] = 119627.245
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 187678.85400004
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 28468.17
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 43717.497
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["inAir"] = 119637.259
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 187688.86800004
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 28478.184
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 43727.511
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["inAir"] = 119647.274
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 187698.88300004
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 28488.199
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 43737.526
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["inAir"] = 119657.277
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 187708.88600004
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 28498.202
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 43747.529
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["inAir"] = 119667.289
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 187718.89800004
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 28508.214
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 43757.541
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["inAir"] = 119677.298
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 187728.90700004
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 28518.223
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 43767.55
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["inAir"] = 119687.3
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 187738.90900004
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 28528.225
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 43777.552
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["inAir"] = 119697.302
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 187748.91100004
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 28538.227
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 43787.554
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["inAir"] = 119707.317
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 187758.92600004
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 28548.242
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 43797.569
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["inAir"] = 119717.317
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 187768.92600004
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 28558.242
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 43807.569
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["inAir"] = 119727.327
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 187778.93600004
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 28568.252
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 43817.579
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["inAir"] = 119737.327
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 187788.93600004
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 28578.252
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 43827.579
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["inAir"] = 119747.33
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 187798.93900004
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 28588.255
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 43837.582
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["inAir"] = 119757.33
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 187808.93900004
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 28598.255
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 43847.582
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["inAir"] = 119767.339
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 187818.94800004
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 28608.264
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 43857.591
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["inAir"] = 119777.35
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 187828.95900004
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 28618.275
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 43867.602
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["inAir"] = 119787.359
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 187838.96800004
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 28628.284
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 43877.611
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["inAir"] = 119797.368
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 187848.97700004
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 28638.293
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 43887.62
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["inAir"] = 119807.373
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 187858.98200004
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 28648.298
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 43897.625
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["inAir"] = 119817.375
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 187868.98400004
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 28658.3
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 43907.627
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["inAir"] = 119827.387
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 187878.99600004
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 28668.312
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 43917.639
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["inAir"] = 119837.402
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 187889.01100004
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 28678.327
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 43927.654
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["inAir"] = 119847.41
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 187899.01900004
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 28688.335
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 43937.662
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["inAir"] = 119857.411
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 187909.02000004
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 28698.336
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 43947.663
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["inAir"] = 119867.416
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 187919.02500004
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 28708.341
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 43957.668
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["inAir"] = 119877.431
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 187929.04000004
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 28718.356
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 43967.683
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["inAir"] = 119887.446
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 187939.05500004
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 28728.371
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 43977.698
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["inAir"] = 119897.454
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 187949.06300004
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 28738.379
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 43987.706
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["inAir"] = 119907.46
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 187959.06900004
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 28748.385
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 43997.712
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["inAir"] = 119917.468
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 187969.07700004
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 28758.393
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 44007.72
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["inAir"] = 119927.474
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 187979.08300004
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 28768.399
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 44017.726
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["inAir"] = 119937.489
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 187989.09800004
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 28778.414
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 44027.741
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["inAir"] = 119947.504
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 187999.11300004
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 28788.429
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 44037.756
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["inAir"] = 119957.512
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 188009.12100004
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 28798.437
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 44047.764
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["inAir"] = 119967.534
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 188019.14300004
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 28808.459
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 44057.786
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["inAir"] = 119977.549
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 188029.15800004
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 28818.474
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 44067.801
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["inAir"] = 119987.563
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 188039.17200004
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 28828.488
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 44077.815
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["inAir"] = 119997.563
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 188049.17200004
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 28838.488
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 44087.815
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["inAir"] = 120007.578
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 188059.18700004
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 28848.503
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 44097.83
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["inAir"] = 120017.587
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 188069.19600004
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 28858.512
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 44107.839
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["inAir"] = 120027.608
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 188079.21700004
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 28868.533
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 44117.86
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["inAir"] = 120037.616
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 188089.22500004
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 28878.541
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 44127.868
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["inAir"] = 120047.622
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 188099.23100004
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 28888.547
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 44137.874
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["inAir"] = 120057.637
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 188109.24600004
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 28898.562
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 44147.889
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["inAir"] = 120067.652
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 188119.26100004
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 28908.577
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 44157.904
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["inAir"] = 120077.667
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 188129.27600004
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 28918.592
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 44167.919
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["inAir"] = 120087.682
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 188139.29100004
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 28928.607
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 44177.934
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 188149.30600004
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 44187.949
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 188159.32100004
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 44197.964
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 188169.33600004
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 44207.979
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 188179.34400004
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 44217.987
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 188189.35000004
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 44227.993
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 188199.36500004
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 44238.008
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 188209.37400004
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 44248.017
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 188219.37900004
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 44258.022
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 188229.39400004
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 44268.037
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 188239.40900004
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 44278.052
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 188249.42400004
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 44288.067
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 188259.43900004
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 44298.082
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 188269.45400004
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 44308.097
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 188279.46200004
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 44318.105
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 188289.46800004
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 44328.111
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 188299.47600004
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 44338.119
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 188309.49500004
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 44348.138
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 188319.50200004
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 44358.145
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 188329.50200004
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 44368.145
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 188339.50800004
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 44378.151
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 188349.52300004
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 44388.166
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 188359.53800004
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 44398.181
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 188369.55300004
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 44408.196
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 188379.56800004
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 44418.211
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 188389.58300004
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 44428.226
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 188399.59800004
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 44438.241
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 188409.61300004
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 44448.256
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 188419.61700004
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 44458.26
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 188429.62000004
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 44468.263
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 188439.62600004
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 44478.269
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 188449.63000004
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 44488.273
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 188459.64100004
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 44498.284
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 188469.64100004
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 44508.284
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 188479.65600004
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 44518.299
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 188489.67000004
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 44528.313
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 188499.67000004
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 44538.313
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 188509.67800004
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 44548.321
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 188519.69900004
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 44558.342
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 188529.69900004
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 44568.342
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 188539.71400004
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 44578.357
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 188549.72100004
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 44588.364
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 188559.72900004
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 44598.372
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 188569.74300004
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 44608.386
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 188579.75800004
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 44618.401
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 188589.76700004
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 44628.41
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 188599.77200004
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 44638.415
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 188609.78700004
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 44648.43
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 188619.78700004
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 44658.43
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 188629.80200004
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 44668.445
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 188639.81600004
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 44678.459
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 188649.83100004
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 44688.474
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 188659.84600004
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 44698.489
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 188669.85400004
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 44708.497
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 188679.86000004
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 44718.503
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 188689.86000004
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 44728.503
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 188699.87500004
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 44738.518
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["inAir"] = 120097.69
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 188709.88300004
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 28938.615
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 44748.526
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["inAir"] = 120107.712
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 188719.90500004
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 28948.637
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 44758.548
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["inAir"] = 120117.72
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 188729.91300004
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 28958.645
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 44768.556
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["inAir"] = 120127.741
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 188739.93400004
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 28968.666
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 44778.577
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["inAir"] = 120137.741
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 188749.93400004
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 28978.666
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 44788.577
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["inAir"] = 120147.754
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 188759.94700004
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 28988.679
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 44798.59
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["inAir"] = 120157.759
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 188769.95200004
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 28998.684
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 44808.595
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["inAir"] = 120167.77
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 188779.96300004
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 29008.695
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 44818.606
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["inAir"] = 120177.779
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 188789.97200004
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 29018.704
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 44828.615
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["inAir"] = 120187.785
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 188799.97800004
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 29028.71
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 44838.621
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["inAir"] = 120197.799
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 188809.99200004
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 29038.724
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 44848.635
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["inAir"] = 120207.809
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 188820.00200004
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 29048.734
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 44858.645
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["inAir"] = 120217.829
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 188830.02200004
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 29058.754
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 44868.665
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["inAir"] = 120227.837
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 188840.03000004
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 29068.762
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 44878.673
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["inAir"] = 120237.843
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 188850.03600004
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 29078.768
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 44888.679
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["inAir"] = 120247.843
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 188860.03600004
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 29088.768
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 44898.679
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["inAir"] = 120257.858
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 188870.05100004
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 29098.783
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 44908.694
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["inAir"] = 120267.873
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 188880.06600004
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 29108.798
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 44918.709
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["inAir"] = 120277.888
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 188890.08100004
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 29118.813
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 44928.724
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["inAir"] = 120287.895
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 188900.08800004
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 29128.82
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 44938.731
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["inAir"] = 120297.902
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 188910.09500004
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 29138.827
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 44948.738
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["inAir"] = 120307.917
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 188920.11000004
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 29148.842
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 44958.753
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["inAir"] = 120317.931
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 188930.12400004
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 29158.856
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 44968.767
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["inAir"] = 120327.946
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 188940.13900004
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 29168.871
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 44978.782
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["inAir"] = 120337.962
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 188950.15500004
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 29178.887
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 44988.798
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["inAir"] = 120347.97
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 188960.16300004
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 29188.895
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 44998.806
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["inAir"] = 120357.976
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 188970.16900004
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 29198.901
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 45008.812
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["inAir"] = 120367.991
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 188980.18400004
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 29208.916
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 45018.827
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["inAir"] = 120378.006
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 188990.19900004
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 29218.931
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 45028.842
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["inAir"] = 120388.021
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 189000.21400004
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 29228.946
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 45038.857
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["inAir"] = 120398.035
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 189010.22800004
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 29238.96
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 45048.871
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["inAir"] = 120408.035
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 189020.22800004
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 29248.96
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 45058.871
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["inAir"] = 120418.046
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 189030.23900004
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 29258.971
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 45068.882
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["inAir"] = 120428.049
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 189040.24200004
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 29268.974
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 45078.885
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["inAir"] = 120438.064
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 189050.25700004
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 29278.989
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 45088.9
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["inAir"] = 120448.079
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 189060.27200004
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 29289.004
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 45098.915
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["inAir"] = 120458.087
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 189070.28000004
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 29299.012
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 45108.923
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["inAir"] = 120468.109
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 189080.30200004
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 29309.034
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 45118.945
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["inAir"] = 120478.124
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 189090.31700004
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 29319.049
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 45128.96
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["inAir"] = 120488.139
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 189100.33200004
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 29329.064
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 45138.975
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["inAir"] = 120498.146
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 189110.33900004
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 29339.071
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 45148.982
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["inAir"] = 120508.153
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 189120.34600004
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 29349.078
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 45158.989
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["inAir"] = 120518.168
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 189130.36100004
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 29359.093
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 45169.004
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["inAir"] = 120528.183
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 189140.37600004
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 29369.108
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 45179.019
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["inAir"] = 120538.198
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 189150.39100004
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 29379.123
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 45189.034
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["inAir"] = 120548.207
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 189160.40000004
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 29389.132
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 45199.043
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["inAir"] = 120558.212
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 189170.40500004
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 29399.137
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 45209.048
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["inAir"] = 120568.227
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 189180.42000004
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 29409.152
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 45219.063
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["inAir"] = 120578.242
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 189190.43500004
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 29419.167
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 45229.078
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["inAir"] = 120588.257
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 189200.45000004
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 29429.182
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 45239.093
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["inAir"] = 120598.272
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 189210.46500004
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 29439.197
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 45249.108
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["inAir"] = 120608.279
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 189220.47200004
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 29449.204
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 45259.115
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["inAir"] = 120618.286
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 189230.47900004
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 29459.211
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 45269.122
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["inAir"] = 120628.301
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 189240.49400004
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 29469.226
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 45279.137
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["inAir"] = 120638.309
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 189250.50200004
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 29479.234
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 45289.145
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["inAir"] = 120648.309
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 189260.50200004
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 29489.234
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 45299.145
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["inAir"] = 120658.315
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 189270.50800004
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 29499.24
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 45309.151
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["inAir"] = 120668.329
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 189280.52200004
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 29509.254
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 45319.165
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["inAir"] = 120678.329
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 189290.52200004
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 29519.254
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 45329.165
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["inAir"] = 120688.344
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 189300.53700004
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 29529.269
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 45339.18
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["inAir"] = 120698.359
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 189310.55200004
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 29539.284
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 45349.195
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["inAir"] = 120708.374
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 189320.56700004
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 29549.299
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 45359.21
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["inAir"] = 120718.389
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 189330.58200004
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 29559.314
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 45369.225
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["inAir"] = 120728.404
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 189340.59700004
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 29569.329
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 45379.24
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["inAir"] = 120738.418
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 189350.61100004
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 29579.343
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 45389.254
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["inAir"] = 120748.418
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 189360.61100004
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 29589.343
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 45399.254
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["inAir"] = 120758.433
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 189370.62600004
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 29599.358
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 45409.269
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["inAir"] = 120768.442
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 189380.63500004
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 29609.367
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 45419.278
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["inAir"] = 120778.447
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 189390.64000004
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 29619.372
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 45429.283
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["inAir"] = 120788.455
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 189400.64800004
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 29629.38
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 45439.291
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["inAir"] = 120798.461
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 189410.65400004
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 29639.386
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 45449.297
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["inAir"] = 120808.461
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 189420.65400004
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 29649.386
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 45459.297
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["inAir"] = 120818.475
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 189430.66800004
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 29659.4
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 45469.311
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["inAir"] = 120828.475
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 189440.66800004
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 29669.4
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 45479.311
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["inAir"] = 120838.49
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 189450.68300004
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 29679.415
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 45489.326
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["lastJoin"] = 1703174642
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 29689.43
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 45499.341
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 29699.445
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 45509.356
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 29709.46
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 45519.371
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 29719.475
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 45529.386
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 29729.49
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 45539.401
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 29739.505
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 45549.416
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 29749.519
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 45559.43
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 29759.519
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 45569.43
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 29769.534
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 45579.445
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 29779.549
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 45589.46
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 29789.563
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 45599.474
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 29799.563
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 45609.474
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 29809.578
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 45619.489
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 29819.593
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 45629.504
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 29829.608
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 45639.519
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 29839.623
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 45649.534
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 29849.632
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 45659.543
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 29859.637
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 45669.548
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 29869.637
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 45679.548
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 29879.644
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 45689.555
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 29889.645
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 45699.556
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 29899.646
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 45709.557
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 29909.651
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 45719.562
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 29919.653
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 45729.564
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 29929.661
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 45739.572
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 29939.669
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 45749.58
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 29949.676
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 45759.587
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 29959.676
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 45769.587
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 29969.677
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 45779.588
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 29979.696
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 45789.607
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 29989.711
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 45799.622
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 29999.726
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 45809.637
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 30009.726
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 45819.637
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 30019.74
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 45829.651
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 30029.74
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 45839.651
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 30039.741
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 45849.652
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 30049.741
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 45859.652
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 30059.743
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 45869.654
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 30069.745
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 45879.656
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 30079.747
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 45889.658
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 30089.752
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 45899.663
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 30099.752
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 45909.663
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 30109.767
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 45919.678
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 30119.774
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 45929.685
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 30129.78
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 45939.691
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 30139.851
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 45949.762
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 30149.857
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 45959.768
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 30159.875
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 45969.786
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 30169.89
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 45979.801
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 30179.904
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 45989.815
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 30189.904
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 45999.815
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 30199.912
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 46009.823
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 30209.916
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 46019.827
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 30219.923
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 46029.834
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 30229.929
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 46039.84
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 30239.932
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 46049.843
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 30249.932
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 46059.843
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 30259.933
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 46069.844
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 30269.935
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 46079.846
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 30279.946
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 46089.857
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 30289.947
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 46099.858
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 30299.952
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 46109.863
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 30309.958
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 46119.869
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 30319.96
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 46129.871
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 30329.968
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 46139.879
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 30339.975
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 46149.886
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 30349.976
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 46159.887
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 30359.981
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 46169.892
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 30369.988
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 46179.899
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 30379.989
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 46189.9
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 30390.004
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 46199.915
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 30400.018
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 46209.929
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 30410.022
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 46219.933
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 30420.022
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 46229.933
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 30430.024
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 46239.935
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 30440.034
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 46249.945
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 30450.04
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 46259.951
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 30460.045
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 46269.956
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 30470.045
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 46279.956
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 30480.048
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 46289.959
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 30490.051
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 46299.962
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 30500.061
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 46309.972
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 30510.061
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 46319.972
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 30520.061
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 46329.972
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 30530.067
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 46339.978
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 30540.072
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 46349.983
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 30550.078
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 46359.989
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 30560.088
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 46369.999
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 30570.096
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 46380.007
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 30580.097
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 46390.008
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 30590.11
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 46400.021
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 30600.123
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 46410.034
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 46420.049
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 46430.05
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 46440.054
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 46450.058
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["lastJoin"] = 1703175607
-stats["c515900aec81f4de675708369df6db7b"] = { }
-stats["c515900aec81f4de675708369df6db7b"]["names"] = { [1] = "DannyR", }
-stats["c515900aec81f4de675708369df6db7b"]["id"] = 179
-stats["c515900aec81f4de675708369df6db7b"]["joinDate"] = 1703181130
-stats["c515900aec81f4de675708369df6db7b"]["times"] = { }
-stats["c515900aec81f4de675708369df6db7b"]["lastJoin"] = 0
-stats["c515900aec81f4de675708369df6db7b"]["lastJoin"] = 1703181130
-stats["c515900aec81f4de675708369df6db7b"]["times"]["UH-1H"] = { ["total"] = 0, ["inAir"] = 0, }
-stats["c515900aec81f4de675708369df6db7b"]["times"]["UH-1H"]["total"] = 10.005
-stats["c515900aec81f4de675708369df6db7b"]["times"]["UH-1H"]["total"] = 20.016
-stats["c515900aec81f4de675708369df6db7b"]["times"]["UH-1H"]["total"] = 30.018999999999
-stats["c515900aec81f4de675708369df6db7b"]["times"]["UH-1H"]["total"] = 40.027
-stats["c515900aec81f4de675708369df6db7b"]["times"]["UH-1H"]["total"] = 50.027999999999
-stats["c515900aec81f4de675708369df6db7b"]["times"]["UH-1H"]["total"] = 60.031999999999
-stats["c515900aec81f4de675708369df6db7b"]["times"]["UH-1H"]["total"] = 70.048
-stats["c515900aec81f4de675708369df6db7b"]["times"]["UH-1H"]["total"] = 80.056
-stats["c515900aec81f4de675708369df6db7b"]["times"]["UH-1H"]["total"] = 90.061
-stats["c515900aec81f4de675708369df6db7b"]["times"]["UH-1H"]["total"] = 100.076
-stats["c515900aec81f4de675708369df6db7b"]["times"]["UH-1H"]["total"] = 110.076
-stats["c515900aec81f4de675708369df6db7b"]["times"]["UH-1H"]["total"] = 120.084
-stats["c515900aec81f4de675708369df6db7b"]["times"]["UH-1H"]["total"] = 130.09
-stats["c515900aec81f4de675708369df6db7b"]["times"]["UH-1H"]["total"] = 140.105
-stats["c515900aec81f4de675708369df6db7b"]["times"]["UH-1H"]["total"] = 150.105
-stats["c515900aec81f4de675708369df6db7b"]["times"]["UH-1H"]["total"] = 160.119
-stats["c515900aec81f4de675708369df6db7b"]["times"]["UH-1H"]["total"] = 170.134
-stats["c515900aec81f4de675708369df6db7b"]["lastJoin"] = 1703181307
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["lastJoin"] = 1703336309
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["UH-1H"]["total"] = 5982.838
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["UH-1H"]["total"] = 5992.852
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["UH-1H"]["total"] = 6002.852
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["UH-1H"]["total"] = 6012.867
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["UH-1H"]["total"] = 6022.882
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["UH-1H"]["total"] = 6032.897
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["UH-1H"]["total"] = 6042.912
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["UH-1H"]["total"] = 6052.927
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["UH-1H"]["total"] = 6062.941
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["UH-1H"]["total"] = 6072.941
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["UH-1H"]["total"] = 6082.956
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["UH-1H"]["total"] = 6092.968
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["UH-1H"]["total"] = 6102.973
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["UH-1H"]["total"] = 6112.986
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["UH-1H"]["total"] = 6122.994
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["UH-1H"]["total"] = 6133.007
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["UH-1H"]["total"] = 6143.022
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["UH-1H"]["total"] = 6153.037
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["UH-1H"]["total"] = 6163.052
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["UH-1H"]["total"] = 6173.066
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["UH-1H"]["total"] = 6183.066
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["UH-1H"]["total"] = 6193.081
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["lastJoin"] = 1703336532
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["UH-1H"]["total"] = 6203.096
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["UH-1H"]["total"] = 6213.111
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["UH-1H"]["total"] = 6223.126
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["total"] = 14389.754
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["UH-1H"]["inAir"] = 4552.115
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["UH-1H"]["total"] = 6233.134
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["total"] = 14399.762
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["UH-1H"]["inAir"] = 4562.136
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["UH-1H"]["total"] = 6243.155
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["total"] = 14409.783
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["lastJoin"] = 1703336586
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["total"] = 14419.783
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["total"] = 14429.798
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["total"] = 14439.813
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["total"] = 14449.828
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["total"] = 14459.842
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["total"] = 14469.857
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["total"] = 14479.857
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["total"] = 14489.872
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["total"] = 14499.881
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["total"] = 14509.881
-stats["880046c63693ceeee0727f5e56209ae4"]["lastJoin"] = 1703336680
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["total"] = 14519.885
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["total"] = 14529.886
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["total"] = 14539.895
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["total"] = 14549.904
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["total"] = 91366.625999999
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["total"] = 14559.924
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["total"] = 91376.645999999
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["total"] = 14569.933
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["total"] = 91386.654999999
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["lastJoin"] = 1703336744
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["total"] = 14579.954
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["total"] = 91396.675999999
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["total"] = 14589.969
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["total"] = 91406.690999999
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["total"] = 14599.978
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["total"] = 91416.699999999
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["total"] = 14609.983
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["total"] = 91426.704999999
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["total"] = 14619.998
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["total"] = 91436.719999999
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["total"] = 14630.013
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["total"] = 91446.734999999
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["total"] = 14640.028
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["total"] = 91456.749999999
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["total"] = 14650.043
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["total"] = 91466.764999999
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["total"] = 14660.058
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["total"] = 91476.779999999
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["total"] = 14670.073
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["total"] = 91486.794999999
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["total"] = 14680.088
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["total"] = 91496.809999999
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["total"] = 14690.103
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["total"] = 91506.824999999
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["lastJoin"] = 1703336861
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["total"] = 14700.118
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["total"] = 91516.839999999
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["total"] = 14710.133
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["total"] = 91526.854999999
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["total"] = 14720.147
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["total"] = 91536.868999999
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["total"] = 14730.147
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["total"] = 91546.868999999
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["total"] = 14740.162
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["total"] = 91556.883999999
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["total"] = 14750.162
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["total"] = 91566.883999999
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["total"] = 14760.176
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["total"] = 91576.897999999
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["total"] = 14770.191
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["total"] = 91586.912999999
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["total"] = 14780.206
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["total"] = 91596.927999999
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["total"] = 14790.221
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["total"] = 91606.942999999
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["total"] = 14800.236
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["total"] = 91616.957999999
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["total"] = 14810.251
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["total"] = 91626.972999999
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["total"] = 14820.266
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["total"] = 91636.987999999
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["total"] = 14830.283
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["total"] = 91647.004999999
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["lastJoin"] = 1703336999
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["total"] = 14840.296
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["total"] = 91657.017999999
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["total"] = 14850.311
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["total"] = 91667.032999999
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["total"] = 14860.325
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["total"] = 91677.046999999
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["total"] = 14870.325
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["total"] = 91687.046999999
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["total"] = 14880.34
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["total"] = 91697.061999999
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["total"] = 14890.355
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["total"] = 91707.076999999
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["total"] = 14900.37
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["total"] = 91717.091999999
-stats["3316bca529c797f031d8c54c14a0f5d3"]["lastJoin"] = 1703337072
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["total"] = 14910.384
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["total"] = 91727.105999999
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["total"] = 14920.384
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["total"] = 91737.105999999
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["total"] = 14930.399
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["total"] = 91747.120999999
-stats["3316bca529c797f031d8c54c14a0f5d3"]["times"]["MiG-21Bis"]["total"] = 4862.005
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["total"] = 14940.414
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["total"] = 91757.135999999
-stats["3316bca529c797f031d8c54c14a0f5d3"]["times"]["MiG-21Bis"]["total"] = 4872.02
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["total"] = 14950.429
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["total"] = 91767.150999999
-stats["3316bca529c797f031d8c54c14a0f5d3"]["times"]["MiG-21Bis"]["total"] = 4882.035
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["total"] = 14960.444
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["total"] = 91777.165999999
-stats["3316bca529c797f031d8c54c14a0f5d3"]["times"]["MiG-21Bis"]["total"] = 4892.05
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["total"] = 14970.452
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["total"] = 91787.173999999
-stats["3316bca529c797f031d8c54c14a0f5d3"]["times"]["MiG-21Bis"]["total"] = 4902.058
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["lastJoin"] = 1703337140
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["total"] = 14980.458
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["total"] = 91797.179999999
-stats["3316bca529c797f031d8c54c14a0f5d3"]["times"]["MiG-21Bis"]["total"] = 4912.064
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["total"] = 14990.473
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["total"] = 91807.194999999
-stats["3316bca529c797f031d8c54c14a0f5d3"]["times"]["MiG-21Bis"]["total"] = 4922.079
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["total"] = 15000.481
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["total"] = 91817.202999999
-stats["3316bca529c797f031d8c54c14a0f5d3"]["times"]["MiG-21Bis"]["total"] = 4932.087
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["total"] = 15010.487
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["total"] = 91827.208999999
-stats["3316bca529c797f031d8c54c14a0f5d3"]["times"]["MiG-21Bis"]["total"] = 4942.093
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["lastJoin"] = 1703337182
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["total"] = 15020.502
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["total"] = 91837.223999999
-stats["3316bca529c797f031d8c54c14a0f5d3"]["times"]["MiG-21Bis"]["total"] = 4952.108
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["total"] = 15030.517
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["total"] = 91847.238999999
-stats["3316bca529c797f031d8c54c14a0f5d3"]["times"]["MiG-21Bis"]["total"] = 4962.123
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["total"] = 15040.532
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["total"] = 91857.253999999
-stats["3316bca529c797f031d8c54c14a0f5d3"]["times"]["MiG-21Bis"]["total"] = 4972.138
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["total"] = 15050.547
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["total"] = 91867.268999999
-stats["3316bca529c797f031d8c54c14a0f5d3"]["times"]["MiG-21Bis"]["total"] = 4982.153
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["total"] = 15060.562
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["total"] = 91877.283999999
-stats["3316bca529c797f031d8c54c14a0f5d3"]["times"]["MiG-21Bis"]["total"] = 4992.168
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["total"] = 15070.577
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["total"] = 91887.298999999
-stats["3316bca529c797f031d8c54c14a0f5d3"]["times"]["MiG-21Bis"]["total"] = 5002.183
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["total"] = 15080.592
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["total"] = 91897.313999999
-stats["3316bca529c797f031d8c54c14a0f5d3"]["times"]["MiG-21Bis"]["total"] = 5012.198
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["total"] = 15090.607
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["total"] = 91907.328999999
-stats["3316bca529c797f031d8c54c14a0f5d3"]["times"]["MiG-21Bis"]["total"] = 5022.213
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["total"] = 15100.621
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["total"] = 91917.342999999
-stats["3316bca529c797f031d8c54c14a0f5d3"]["times"]["MiG-21Bis"]["total"] = 5032.227
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["total"] = 15110.621
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["total"] = 91927.342999999
-stats["3316bca529c797f031d8c54c14a0f5d3"]["times"]["MiG-21Bis"]["total"] = 5042.227
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["total"] = 15120.636
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["total"] = 91937.357999999
-stats["3316bca529c797f031d8c54c14a0f5d3"]["times"]["MiG-21Bis"]["total"] = 5052.242
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["lastJoin"] = 1703337294
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["total"] = 15130.651
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["total"] = 91947.372999999
-stats["3316bca529c797f031d8c54c14a0f5d3"]["times"]["MiG-21Bis"]["total"] = 5062.257
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 189460.69800004
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["total"] = 15140.666
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["total"] = 91957.387999999
-stats["3316bca529c797f031d8c54c14a0f5d3"]["times"]["MiG-21Bis"]["total"] = 5072.272
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 189470.71300004
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["total"] = 15150.681
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["total"] = 91967.402999999
-stats["3316bca529c797f031d8c54c14a0f5d3"]["times"]["MiG-21Bis"]["total"] = 5082.287
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 189480.72800004
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["total"] = 15160.696
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["total"] = 91977.417999999
-stats["3316bca529c797f031d8c54c14a0f5d3"]["times"]["MiG-21Bis"]["total"] = 5092.302
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 189490.74200004
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["total"] = 15170.71
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["total"] = 91987.431999999
-stats["3316bca529c797f031d8c54c14a0f5d3"]["times"]["MiG-21Bis"]["total"] = 5102.316
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 189500.74200004
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["total"] = 15180.71
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["total"] = 91997.431999999
-stats["3316bca529c797f031d8c54c14a0f5d3"]["times"]["MiG-21Bis"]["total"] = 5112.316
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 189510.75700004
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["total"] = 15190.725
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["total"] = 92007.446999999
-stats["3316bca529c797f031d8c54c14a0f5d3"]["times"]["MiG-21Bis"]["total"] = 5122.331
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 189520.77200004
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["total"] = 15200.74
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["total"] = 92017.461999999
-stats["3316bca529c797f031d8c54c14a0f5d3"]["times"]["MiG-21Bis"]["total"] = 5132.346
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 189530.78700004
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["total"] = 15210.755
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["total"] = 92027.476999999
-stats["3316bca529c797f031d8c54c14a0f5d3"]["times"]["MiG-21Bis"]["total"] = 5142.361
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 189540.80200004
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["total"] = 15220.77
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["total"] = 92037.491999999
-stats["3316bca529c797f031d8c54c14a0f5d3"]["times"]["MiG-21Bis"]["total"] = 5152.376
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 189550.81600004
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["total"] = 15230.784
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["total"] = 92047.505999999
-stats["3316bca529c797f031d8c54c14a0f5d3"]["times"]["MiG-21Bis"]["total"] = 5162.39
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 189560.81600004
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["total"] = 15240.784
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["total"] = 92057.505999999
-stats["3316bca529c797f031d8c54c14a0f5d3"]["times"]["MiG-21Bis"]["total"] = 5172.39
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 189570.82300004
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["total"] = 15250.791
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["total"] = 92067.512999999
-stats["3316bca529c797f031d8c54c14a0f5d3"]["times"]["MiG-21Bis"]["total"] = 5182.397
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 189580.83000004
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["total"] = 15260.798
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["total"] = 92077.519999999
-stats["3316bca529c797f031d8c54c14a0f5d3"]["times"]["MiG-21Bis"]["total"] = 5192.404
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 189590.84500004
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["total"] = 15270.813
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["total"] = 92087.534999999
-stats["3316bca529c797f031d8c54c14a0f5d3"]["times"]["MiG-21Bis"]["total"] = 5202.419
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 189600.85300004
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["total"] = 15280.821
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["total"] = 92097.542999999
-stats["3316bca529c797f031d8c54c14a0f5d3"]["times"]["MiG-21Bis"]["total"] = 5212.427
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 189610.85900004
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["total"] = 15290.827
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["total"] = 92107.548999999
-stats["3316bca529c797f031d8c54c14a0f5d3"]["times"]["MiG-21Bis"]["total"] = 5222.433
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 189620.85900004
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["total"] = 15300.827
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["total"] = 92117.548999999
-stats["3316bca529c797f031d8c54c14a0f5d3"]["times"]["MiG-21Bis"]["total"] = 5232.433
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 189630.87300004
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["total"] = 15310.841
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["total"] = 92127.562999999
-stats["3316bca529c797f031d8c54c14a0f5d3"]["times"]["MiG-21Bis"]["total"] = 5242.447
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 189640.87300004
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["total"] = 15320.841
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["total"] = 92137.562999999
-stats["3316bca529c797f031d8c54c14a0f5d3"]["times"]["MiG-21Bis"]["total"] = 5252.447
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 189650.88000004
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["total"] = 15330.848
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["total"] = 92147.569999999
-stats["3316bca529c797f031d8c54c14a0f5d3"]["times"]["MiG-21Bis"]["total"] = 5262.454
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 189660.88700004
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["total"] = 15340.855
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["total"] = 92157.576999999
-stats["3316bca529c797f031d8c54c14a0f5d3"]["times"]["MiG-21Bis"]["total"] = 5272.461
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 189670.89700004
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["total"] = 15350.865
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["total"] = 92167.586999999
-stats["3316bca529c797f031d8c54c14a0f5d3"]["times"]["MiG-21Bis"]["total"] = 5282.471
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 189680.89700004
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["total"] = 15360.865
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["total"] = 92177.586999999
-stats["3316bca529c797f031d8c54c14a0f5d3"]["times"]["MiG-21Bis"]["total"] = 5292.471
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 189690.90100004
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["total"] = 15370.869
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["total"] = 92187.590999999
-stats["3316bca529c797f031d8c54c14a0f5d3"]["times"]["MiG-21Bis"]["total"] = 5302.475
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 189700.91300004
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["total"] = 15380.881
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["total"] = 92197.602999999
-stats["3316bca529c797f031d8c54c14a0f5d3"]["times"]["MiG-21Bis"]["total"] = 5312.487
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 189710.91500004
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["total"] = 15390.883
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["total"] = 92207.604999999
-stats["3316bca529c797f031d8c54c14a0f5d3"]["times"]["MiG-21Bis"]["total"] = 5322.489
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 189720.91500004
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["total"] = 15400.883
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["total"] = 92217.604999999
-stats["3316bca529c797f031d8c54c14a0f5d3"]["times"]["MiG-21Bis"]["total"] = 5332.489
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 189730.91700004
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["total"] = 15410.885
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["total"] = 92227.606999999
-stats["3316bca529c797f031d8c54c14a0f5d3"]["times"]["MiG-21Bis"]["total"] = 5342.491
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 189740.92100004
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["total"] = 15420.889
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["total"] = 92237.610999999
-stats["3316bca529c797f031d8c54c14a0f5d3"]["times"]["MiG-21Bis"]["total"] = 5352.495
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["inAir"] = 120848.497
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 189750.92800004
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["total"] = 15430.896
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["total"] = 92247.617999999
-stats["3316bca529c797f031d8c54c14a0f5d3"]["times"]["MiG-21Bis"]["total"] = 5362.502
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["inAir"] = 120858.512
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 189760.94300004
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["total"] = 15440.911
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["total"] = 92257.632999999
-stats["3316bca529c797f031d8c54c14a0f5d3"]["times"]["MiG-21Bis"]["total"] = 5372.517
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["inAir"] = 120868.527
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 189770.95800004
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["total"] = 15450.926
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["total"] = 92267.647999999
-stats["3316bca529c797f031d8c54c14a0f5d3"]["times"]["MiG-21Bis"]["total"] = 5382.532
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["inAir"] = 120878.542
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 189780.97300004
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["total"] = 15460.941
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["total"] = 92277.662999999
-stats["3316bca529c797f031d8c54c14a0f5d3"]["times"]["MiG-21Bis"]["total"] = 5392.547
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["inAir"] = 120888.543
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 189790.97400004
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["total"] = 15470.942
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["total"] = 92287.663999999
-stats["3316bca529c797f031d8c54c14a0f5d3"]["times"]["MiG-21Bis"]["total"] = 5402.548
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["inAir"] = 120898.55
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 189800.98100004
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["total"] = 15480.949
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["total"] = 92297.670999999
-stats["3316bca529c797f031d8c54c14a0f5d3"]["times"]["MiG-21Bis"]["total"] = 5412.555
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["inAir"] = 120908.553
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 189810.98400004
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["total"] = 15490.952
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["total"] = 92307.673999999
-stats["3316bca529c797f031d8c54c14a0f5d3"]["times"]["MiG-21Bis"]["total"] = 5422.558
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["inAir"] = 120918.563
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 189820.99400004
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["total"] = 15500.962
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["total"] = 92317.683999999
-stats["3316bca529c797f031d8c54c14a0f5d3"]["times"]["MiG-21Bis"]["total"] = 5432.568
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["inAir"] = 120928.569
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 189831.00000004
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["total"] = 15510.968
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["total"] = 92327.689999999
-stats["3316bca529c797f031d8c54c14a0f5d3"]["times"]["MiG-21Bis"]["total"] = 5442.574
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["inAir"] = 120938.589
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 189841.02000004
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["total"] = 15520.988
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["total"] = 92337.709999999
-stats["3316bca529c797f031d8c54c14a0f5d3"]["times"]["MiG-21Bis"]["total"] = 5452.594
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["inAir"] = 120948.589
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 189851.02000004
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["total"] = 15530.988
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["total"] = 92347.709999999
-stats["3316bca529c797f031d8c54c14a0f5d3"]["times"]["MiG-21Bis"]["total"] = 5462.594
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["inAir"] = 120958.591
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 189861.02200004
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["total"] = 15540.99
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["total"] = 92357.711999999
-stats["3316bca529c797f031d8c54c14a0f5d3"]["times"]["MiG-21Bis"]["total"] = 5472.596
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["inAir"] = 120968.602
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 189871.03300004
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["total"] = 15551.001
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["total"] = 92367.722999999
-stats["3316bca529c797f031d8c54c14a0f5d3"]["times"]["MiG-21Bis"]["total"] = 5482.607
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["inAir"] = 120978.616
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 189881.04700004
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["total"] = 15561.015
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["total"] = 92377.736999999
-stats["3316bca529c797f031d8c54c14a0f5d3"]["times"]["MiG-21Bis"]["total"] = 5492.621
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["inAir"] = 120988.624
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 189891.05500004
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["total"] = 15571.023
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["total"] = 92387.744999999
-stats["3316bca529c797f031d8c54c14a0f5d3"]["times"]["MiG-21Bis"]["total"] = 5502.629
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["inAir"] = 120998.629
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 189901.06000004
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["total"] = 15581.028
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["total"] = 92397.749999999
-stats["3316bca529c797f031d8c54c14a0f5d3"]["times"]["MiG-21Bis"]["total"] = 5512.634
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["inAir"] = 121008.634
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 189911.06500004
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["total"] = 15591.033
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["total"] = 92407.754999999
-stats["3316bca529c797f031d8c54c14a0f5d3"]["times"]["MiG-21Bis"]["total"] = 5522.639
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["inAir"] = 121018.647
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 189921.07800004
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["total"] = 15601.046
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["total"] = 92417.767999999
-stats["3316bca529c797f031d8c54c14a0f5d3"]["times"]["MiG-21Bis"]["total"] = 5532.652
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["inAir"] = 121028.658
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 189931.08900004
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["total"] = 15611.057
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["total"] = 92427.778999999
-stats["3316bca529c797f031d8c54c14a0f5d3"]["times"]["MiG-21Bis"]["total"] = 5542.663
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["inAir"] = 121038.662
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 189941.09300004
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["inAir"] = 6103.65
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["total"] = 15621.061
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["total"] = 92437.782999999
-stats["3316bca529c797f031d8c54c14a0f5d3"]["times"]["MiG-21Bis"]["total"] = 5552.667
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["inAir"] = 121048.67
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 189951.10100004
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["inAir"] = 6113.658
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["total"] = 15631.069
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["inAir"] = 54615.171
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["total"] = 92447.790999999
-stats["3316bca529c797f031d8c54c14a0f5d3"]["times"]["MiG-21Bis"]["inAir"] = 2581.016
-stats["3316bca529c797f031d8c54c14a0f5d3"]["times"]["MiG-21Bis"]["total"] = 5562.675
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["inAir"] = 121058.674
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 189961.10500004
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["inAir"] = 6123.662
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["total"] = 15641.073
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["inAir"] = 54625.175
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["total"] = 92457.794999999
-stats["3316bca529c797f031d8c54c14a0f5d3"]["times"]["MiG-21Bis"]["inAir"] = 2591.02
-stats["3316bca529c797f031d8c54c14a0f5d3"]["times"]["MiG-21Bis"]["total"] = 5572.679
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["inAir"] = 121068.674
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 189971.10500004
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["inAir"] = 6133.662
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["total"] = 15651.073
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["inAir"] = 54635.175
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["total"] = 92467.794999999
-stats["3316bca529c797f031d8c54c14a0f5d3"]["times"]["MiG-21Bis"]["inAir"] = 2601.02
-stats["3316bca529c797f031d8c54c14a0f5d3"]["times"]["MiG-21Bis"]["total"] = 5582.679
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["inAir"] = 121078.675
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 189981.10600004
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["inAir"] = 6143.663
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["total"] = 15661.074
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["inAir"] = 54645.176
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["total"] = 92477.795999999
-stats["3316bca529c797f031d8c54c14a0f5d3"]["times"]["MiG-21Bis"]["inAir"] = 2611.021
-stats["3316bca529c797f031d8c54c14a0f5d3"]["times"]["MiG-21Bis"]["total"] = 5592.68
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["inAir"] = 121088.675
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 189991.10600004
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["inAir"] = 6153.663
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["total"] = 15671.074
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["inAir"] = 54655.176
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["total"] = 92487.795999999
-stats["3316bca529c797f031d8c54c14a0f5d3"]["times"]["MiG-21Bis"]["inAir"] = 2621.021
-stats["3316bca529c797f031d8c54c14a0f5d3"]["times"]["MiG-21Bis"]["total"] = 5602.68
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["inAir"] = 121098.683
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 190001.11400004
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["inAir"] = 6163.671
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["total"] = 15681.082
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["inAir"] = 54665.184
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["total"] = 92497.803999999
-stats["3316bca529c797f031d8c54c14a0f5d3"]["times"]["MiG-21Bis"]["inAir"] = 2631.029
-stats["3316bca529c797f031d8c54c14a0f5d3"]["times"]["MiG-21Bis"]["total"] = 5612.688
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["inAir"] = 121108.689
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 190011.12000004
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["inAir"] = 6173.677
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["total"] = 15691.088
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["inAir"] = 54675.19
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["total"] = 92507.809999999
-stats["3316bca529c797f031d8c54c14a0f5d3"]["times"]["MiG-21Bis"]["inAir"] = 2641.035
-stats["3316bca529c797f031d8c54c14a0f5d3"]["times"]["MiG-21Bis"]["total"] = 5622.694
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["inAir"] = 121118.697
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 190021.12800004
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["inAir"] = 6183.685
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["total"] = 15701.096
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["inAir"] = 54685.198
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["total"] = 92517.817999999
-stats["3316bca529c797f031d8c54c14a0f5d3"]["times"]["MiG-21Bis"]["inAir"] = 2651.043
-stats["3316bca529c797f031d8c54c14a0f5d3"]["times"]["MiG-21Bis"]["total"] = 5632.702
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["inAir"] = 121128.697
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 190031.12800004
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["inAir"] = 6193.685
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["total"] = 15711.096
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["inAir"] = 54695.198
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["total"] = 92527.817999999
-stats["3316bca529c797f031d8c54c14a0f5d3"]["times"]["MiG-21Bis"]["inAir"] = 2661.043
-stats["3316bca529c797f031d8c54c14a0f5d3"]["times"]["MiG-21Bis"]["total"] = 5642.702
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["inAir"] = 121138.712
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 190041.14300004
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["inAir"] = 6203.7
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["total"] = 15721.111
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["inAir"] = 54705.213
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["total"] = 92537.832999999
-stats["3316bca529c797f031d8c54c14a0f5d3"]["times"]["MiG-21Bis"]["inAir"] = 2671.058
-stats["3316bca529c797f031d8c54c14a0f5d3"]["times"]["MiG-21Bis"]["total"] = 5652.717
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["inAir"] = 121148.726
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 190051.15700004
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["inAir"] = 6213.714
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["total"] = 15731.125
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["inAir"] = 54715.227
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["total"] = 92547.846999999
-stats["3316bca529c797f031d8c54c14a0f5d3"]["times"]["MiG-21Bis"]["inAir"] = 2681.072
-stats["3316bca529c797f031d8c54c14a0f5d3"]["times"]["MiG-21Bis"]["total"] = 5662.731
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["inAir"] = 121158.726
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 190061.15700004
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["inAir"] = 6223.714
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["total"] = 15741.125
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["inAir"] = 54725.227
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["total"] = 92557.846999999
-stats["3316bca529c797f031d8c54c14a0f5d3"]["times"]["MiG-21Bis"]["inAir"] = 2691.072
-stats["3316bca529c797f031d8c54c14a0f5d3"]["times"]["MiG-21Bis"]["total"] = 5672.731
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["inAir"] = 121168.741
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 190071.17200004
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["inAir"] = 6233.729
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["total"] = 15751.14
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["inAir"] = 54735.242
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["total"] = 92567.861999999
-stats["3316bca529c797f031d8c54c14a0f5d3"]["times"]["MiG-21Bis"]["inAir"] = 2701.087
-stats["3316bca529c797f031d8c54c14a0f5d3"]["times"]["MiG-21Bis"]["total"] = 5682.746
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["inAir"] = 121178.756
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 190081.18700004
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["inAir"] = 6243.744
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["total"] = 15761.155
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["inAir"] = 54745.257
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["total"] = 92577.876999999
-stats["3316bca529c797f031d8c54c14a0f5d3"]["times"]["MiG-21Bis"]["inAir"] = 2711.102
-stats["3316bca529c797f031d8c54c14a0f5d3"]["times"]["MiG-21Bis"]["total"] = 5692.761
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["inAir"] = 121188.771
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 190091.20200004
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["inAir"] = 6253.759
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["total"] = 15771.17
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["inAir"] = 54755.272
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["total"] = 92587.891999999
-stats["3316bca529c797f031d8c54c14a0f5d3"]["times"]["MiG-21Bis"]["inAir"] = 2721.117
-stats["3316bca529c797f031d8c54c14a0f5d3"]["times"]["MiG-21Bis"]["total"] = 5702.776
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["inAir"] = 121198.785
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 190101.21600004
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["inAir"] = 6263.773
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["total"] = 15781.184
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["inAir"] = 54765.286
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["total"] = 92597.905999999
-stats["3316bca529c797f031d8c54c14a0f5d3"]["times"]["MiG-21Bis"]["inAir"] = 2731.131
-stats["3316bca529c797f031d8c54c14a0f5d3"]["times"]["MiG-21Bis"]["total"] = 5712.79
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["inAir"] = 121208.785
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 190111.21600004
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["inAir"] = 6273.773
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["total"] = 15791.184
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["inAir"] = 54775.286
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["total"] = 92607.905999999
-stats["3316bca529c797f031d8c54c14a0f5d3"]["times"]["MiG-21Bis"]["inAir"] = 2741.131
-stats["3316bca529c797f031d8c54c14a0f5d3"]["times"]["MiG-21Bis"]["total"] = 5722.79
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["inAir"] = 121218.785
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 190121.21600004
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["inAir"] = 6283.773
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["total"] = 15801.184
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["inAir"] = 54785.286
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["total"] = 92617.905999999
-stats["3316bca529c797f031d8c54c14a0f5d3"]["times"]["MiG-21Bis"]["inAir"] = 2751.131
-stats["3316bca529c797f031d8c54c14a0f5d3"]["times"]["MiG-21Bis"]["total"] = 5732.79
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["inAir"] = 121228.799
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 190131.23000004
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["inAir"] = 6293.787
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["total"] = 15811.198
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["inAir"] = 54795.3
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["total"] = 92627.919999999
-stats["3316bca529c797f031d8c54c14a0f5d3"]["times"]["MiG-21Bis"]["inAir"] = 2761.145
-stats["3316bca529c797f031d8c54c14a0f5d3"]["times"]["MiG-21Bis"]["total"] = 5742.804
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["inAir"] = 121238.814
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 190141.24500004
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["inAir"] = 6303.802
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["total"] = 15821.213
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["inAir"] = 54805.315
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["total"] = 92637.934999999
-stats["3316bca529c797f031d8c54c14a0f5d3"]["times"]["MiG-21Bis"]["inAir"] = 2771.16
-stats["3316bca529c797f031d8c54c14a0f5d3"]["times"]["MiG-21Bis"]["total"] = 5752.819
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["inAir"] = 121248.829
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 190151.26000004
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["inAir"] = 6313.817
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["total"] = 15831.228
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["inAir"] = 54815.33
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["total"] = 92647.949999999
-stats["3316bca529c797f031d8c54c14a0f5d3"]["times"]["MiG-21Bis"]["inAir"] = 2781.175
-stats["3316bca529c797f031d8c54c14a0f5d3"]["times"]["MiG-21Bis"]["total"] = 5762.834
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["inAir"] = 121258.829
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 190161.26000004
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["inAir"] = 6323.817
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["total"] = 15841.228
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["inAir"] = 54825.33
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["total"] = 92657.949999999
-stats["3316bca529c797f031d8c54c14a0f5d3"]["times"]["MiG-21Bis"]["inAir"] = 2791.175
-stats["3316bca529c797f031d8c54c14a0f5d3"]["times"]["MiG-21Bis"]["total"] = 5772.834
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["inAir"] = 121268.843
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 190171.27400004
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["inAir"] = 6333.831
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["total"] = 15851.242
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["inAir"] = 54835.344
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["total"] = 92667.963999999
-stats["3316bca529c797f031d8c54c14a0f5d3"]["times"]["MiG-21Bis"]["inAir"] = 2801.189
-stats["3316bca529c797f031d8c54c14a0f5d3"]["times"]["MiG-21Bis"]["total"] = 5782.848
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["inAir"] = 121278.858
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 190181.28900004
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["inAir"] = 6343.846
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["total"] = 15861.257
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["inAir"] = 54845.359
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["total"] = 92677.978999999
-stats["3316bca529c797f031d8c54c14a0f5d3"]["times"]["MiG-21Bis"]["inAir"] = 2811.204
-stats["3316bca529c797f031d8c54c14a0f5d3"]["times"]["MiG-21Bis"]["total"] = 5792.863
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["inAir"] = 121288.858
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 190191.28900004
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["inAir"] = 6353.846
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["total"] = 15871.257
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["inAir"] = 54855.359
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["total"] = 92687.978999999
-stats["3316bca529c797f031d8c54c14a0f5d3"]["times"]["MiG-21Bis"]["inAir"] = 2821.204
-stats["3316bca529c797f031d8c54c14a0f5d3"]["times"]["MiG-21Bis"]["total"] = 5802.863
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["inAir"] = 121298.872
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 190201.30300004
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["inAir"] = 6363.86
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["total"] = 15881.271
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["inAir"] = 54865.373
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["total"] = 92697.992999999
-stats["3316bca529c797f031d8c54c14a0f5d3"]["times"]["MiG-21Bis"]["inAir"] = 2831.218
-stats["3316bca529c797f031d8c54c14a0f5d3"]["times"]["MiG-21Bis"]["total"] = 5812.877
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["inAir"] = 121308.872
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 190211.30300004
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["inAir"] = 6373.86
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["total"] = 15891.271
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["inAir"] = 54875.373
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["total"] = 92707.992999999
-stats["3316bca529c797f031d8c54c14a0f5d3"]["times"]["MiG-21Bis"]["inAir"] = 2841.218
-stats["3316bca529c797f031d8c54c14a0f5d3"]["times"]["MiG-21Bis"]["total"] = 5822.877
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["inAir"] = 121318.887
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 190221.31800004
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["inAir"] = 6383.875
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["total"] = 15901.286
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["inAir"] = 54885.388
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["total"] = 92718.007999999
-stats["3316bca529c797f031d8c54c14a0f5d3"]["times"]["MiG-21Bis"]["inAir"] = 2851.233
-stats["3316bca529c797f031d8c54c14a0f5d3"]["times"]["MiG-21Bis"]["total"] = 5832.892
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["inAir"] = 121328.902
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 190231.33300004
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["inAir"] = 6393.89
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["total"] = 15911.301
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["inAir"] = 54895.403
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["total"] = 92728.022999999
-stats["3316bca529c797f031d8c54c14a0f5d3"]["times"]["MiG-21Bis"]["inAir"] = 2861.248
-stats["3316bca529c797f031d8c54c14a0f5d3"]["times"]["MiG-21Bis"]["total"] = 5842.907
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["inAir"] = 121338.917
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 190241.34800004
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["inAir"] = 6403.905
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["total"] = 15921.316
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["inAir"] = 54905.418
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["total"] = 92738.037999999
-stats["3316bca529c797f031d8c54c14a0f5d3"]["times"]["MiG-21Bis"]["inAir"] = 2871.263
-stats["3316bca529c797f031d8c54c14a0f5d3"]["times"]["MiG-21Bis"]["total"] = 5852.922
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["inAir"] = 121348.931
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 190251.36200004
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["inAir"] = 6413.919
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["total"] = 15931.33
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["inAir"] = 54915.432
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["total"] = 92748.051999999
-stats["3316bca529c797f031d8c54c14a0f5d3"]["times"]["MiG-21Bis"]["inAir"] = 2881.277
-stats["3316bca529c797f031d8c54c14a0f5d3"]["times"]["MiG-21Bis"]["total"] = 5862.936
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["inAir"] = 121358.931
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 190261.36200004
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["inAir"] = 6423.919
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["total"] = 15941.33
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["inAir"] = 54925.432
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["total"] = 92758.051999999
-stats["3316bca529c797f031d8c54c14a0f5d3"]["times"]["MiG-21Bis"]["inAir"] = 2891.277
-stats["3316bca529c797f031d8c54c14a0f5d3"]["times"]["MiG-21Bis"]["total"] = 5872.936
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["inAir"] = 121368.946
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 190271.37700004
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["inAir"] = 6433.934
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["total"] = 15951.345
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["inAir"] = 54935.447
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["total"] = 92768.066999999
-stats["3316bca529c797f031d8c54c14a0f5d3"]["times"]["MiG-21Bis"]["inAir"] = 2901.292
-stats["3316bca529c797f031d8c54c14a0f5d3"]["times"]["MiG-21Bis"]["total"] = 5882.951
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["inAir"] = 121378.961
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 190281.39200004
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["inAir"] = 6443.949
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["total"] = 15961.36
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["inAir"] = 54945.462
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["total"] = 92778.081999999
-stats["3316bca529c797f031d8c54c14a0f5d3"]["times"]["MiG-21Bis"]["inAir"] = 2911.307
-stats["3316bca529c797f031d8c54c14a0f5d3"]["times"]["MiG-21Bis"]["total"] = 5892.966
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["inAir"] = 121388.976
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 190291.40700004
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["inAir"] = 6453.964
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["total"] = 15971.375
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["inAir"] = 54955.477
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["total"] = 92788.096999999
-stats["3316bca529c797f031d8c54c14a0f5d3"]["times"]["MiG-21Bis"]["inAir"] = 2921.322
-stats["3316bca529c797f031d8c54c14a0f5d3"]["times"]["MiG-21Bis"]["total"] = 5902.981
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["inAir"] = 121398.991
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 190301.42200004
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["inAir"] = 6463.979
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["total"] = 15981.39
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["inAir"] = 54965.492
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["total"] = 92798.111999999
-stats["3316bca529c797f031d8c54c14a0f5d3"]["times"]["MiG-21Bis"]["inAir"] = 2931.337
-stats["3316bca529c797f031d8c54c14a0f5d3"]["times"]["MiG-21Bis"]["total"] = 5912.996
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["inAir"] = 121409.006
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 190311.43700004
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["inAir"] = 6473.994
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["total"] = 15991.405
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["inAir"] = 54975.507
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["total"] = 92808.126999999
-stats["3316bca529c797f031d8c54c14a0f5d3"]["times"]["MiG-21Bis"]["inAir"] = 2941.352
-stats["3316bca529c797f031d8c54c14a0f5d3"]["times"]["MiG-21Bis"]["total"] = 5923.011
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["inAir"] = 121419.02
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 190321.45100004
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["inAir"] = 6484.008
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["total"] = 16001.419
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["inAir"] = 54985.521
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["total"] = 92818.140999999
-stats["3316bca529c797f031d8c54c14a0f5d3"]["times"]["MiG-21Bis"]["inAir"] = 2951.366
-stats["3316bca529c797f031d8c54c14a0f5d3"]["times"]["MiG-21Bis"]["total"] = 5933.025
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["inAir"] = 121429.02
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 190331.45100004
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["inAir"] = 6494.008
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["total"] = 16011.419
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["inAir"] = 54995.521
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["total"] = 92828.140999999
-stats["3316bca529c797f031d8c54c14a0f5d3"]["times"]["MiG-21Bis"]["inAir"] = 2961.366
-stats["3316bca529c797f031d8c54c14a0f5d3"]["times"]["MiG-21Bis"]["total"] = 5943.025
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["inAir"] = 121439.035
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 190341.46600004
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["inAir"] = 6504.023
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["total"] = 16021.434
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["inAir"] = 55005.536
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["total"] = 92838.155999999
-stats["3316bca529c797f031d8c54c14a0f5d3"]["times"]["MiG-21Bis"]["inAir"] = 2971.381
-stats["3316bca529c797f031d8c54c14a0f5d3"]["times"]["MiG-21Bis"]["total"] = 5953.04
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["inAir"] = 121449.05
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 190351.48100004
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["inAir"] = 6514.038
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["total"] = 16031.449
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["inAir"] = 55015.551
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["total"] = 92848.170999999
-stats["3316bca529c797f031d8c54c14a0f5d3"]["times"]["MiG-21Bis"]["inAir"] = 2981.396
-stats["3316bca529c797f031d8c54c14a0f5d3"]["times"]["MiG-21Bis"]["total"] = 5963.055
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["inAir"] = 121459.058
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 190361.48900004
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["inAir"] = 6524.046
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["total"] = 16041.457
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["inAir"] = 55025.559
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["total"] = 92858.178999999
-stats["3316bca529c797f031d8c54c14a0f5d3"]["times"]["MiG-21Bis"]["inAir"] = 2991.404
-stats["3316bca529c797f031d8c54c14a0f5d3"]["times"]["MiG-21Bis"]["total"] = 5973.063
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["inAir"] = 121469.064
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 190371.49500004
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["inAir"] = 6534.052
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["total"] = 16051.463
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["inAir"] = 55035.565
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["total"] = 92868.184999999
-stats["3316bca529c797f031d8c54c14a0f5d3"]["times"]["MiG-21Bis"]["inAir"] = 3001.41
-stats["3316bca529c797f031d8c54c14a0f5d3"]["times"]["MiG-21Bis"]["total"] = 5983.069
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["inAir"] = 121479.079
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 190381.51000004
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["inAir"] = 6544.067
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["total"] = 16061.478
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["inAir"] = 55045.58
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["total"] = 92878.199999999
-stats["3316bca529c797f031d8c54c14a0f5d3"]["times"]["MiG-21Bis"]["inAir"] = 3011.425
-stats["3316bca529c797f031d8c54c14a0f5d3"]["times"]["MiG-21Bis"]["total"] = 5993.084
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["inAir"] = 121489.094
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 190391.52500004
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["inAir"] = 6554.082
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["total"] = 16071.493
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["inAir"] = 55055.595
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["total"] = 92888.214999999
-stats["3316bca529c797f031d8c54c14a0f5d3"]["times"]["MiG-21Bis"]["inAir"] = 3021.44
-stats["3316bca529c797f031d8c54c14a0f5d3"]["times"]["MiG-21Bis"]["total"] = 6003.099
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["inAir"] = 121499.109
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 190401.54000004
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["inAir"] = 6564.097
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["total"] = 16081.508
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["inAir"] = 55065.61
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["total"] = 92898.229999999
-stats["3316bca529c797f031d8c54c14a0f5d3"]["times"]["MiG-21Bis"]["inAir"] = 3031.455
-stats["3316bca529c797f031d8c54c14a0f5d3"]["times"]["MiG-21Bis"]["total"] = 6013.114
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["inAir"] = 121509.124
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 190411.55500004
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["inAir"] = 6574.112
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["total"] = 16091.523
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["inAir"] = 55075.625
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["total"] = 92908.244999999
-stats["3316bca529c797f031d8c54c14a0f5d3"]["times"]["MiG-21Bis"]["inAir"] = 3041.47
-stats["3316bca529c797f031d8c54c14a0f5d3"]["times"]["MiG-21Bis"]["total"] = 6023.129
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["inAir"] = 121519.124
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 190421.55500004
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["inAir"] = 6584.112
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["total"] = 16101.523
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["inAir"] = 55085.625
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["total"] = 92918.244999999
-stats["3316bca529c797f031d8c54c14a0f5d3"]["times"]["MiG-21Bis"]["inAir"] = 3051.47
-stats["3316bca529c797f031d8c54c14a0f5d3"]["times"]["MiG-21Bis"]["total"] = 6033.129
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["inAir"] = 121529.138
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 190431.56900004
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["inAir"] = 6594.126
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["total"] = 16111.537
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["inAir"] = 55095.639
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["total"] = 92928.258999999
-stats["3316bca529c797f031d8c54c14a0f5d3"]["times"]["MiG-21Bis"]["inAir"] = 3061.484
-stats["3316bca529c797f031d8c54c14a0f5d3"]["times"]["MiG-21Bis"]["total"] = 6043.143
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["inAir"] = 121539.144
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 190441.57500004
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["inAir"] = 6604.132
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["total"] = 16121.543
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["inAir"] = 55105.645
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["total"] = 92938.264999999
-stats["3316bca529c797f031d8c54c14a0f5d3"]["times"]["MiG-21Bis"]["inAir"] = 3071.49
-stats["3316bca529c797f031d8c54c14a0f5d3"]["times"]["MiG-21Bis"]["total"] = 6053.149
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["inAir"] = 121549.144
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 190451.57500004
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["inAir"] = 6614.132
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["total"] = 16131.543
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["inAir"] = 55115.645
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["total"] = 92948.264999999
-stats["3316bca529c797f031d8c54c14a0f5d3"]["times"]["MiG-21Bis"]["inAir"] = 3081.49
-stats["3316bca529c797f031d8c54c14a0f5d3"]["times"]["MiG-21Bis"]["total"] = 6063.149
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["inAir"] = 121559.159
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 190461.59000004
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["inAir"] = 6624.147
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["total"] = 16141.558
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["inAir"] = 55125.66
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["total"] = 92958.279999999
-stats["3316bca529c797f031d8c54c14a0f5d3"]["times"]["MiG-21Bis"]["inAir"] = 3091.505
-stats["3316bca529c797f031d8c54c14a0f5d3"]["times"]["MiG-21Bis"]["total"] = 6073.164
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["inAir"] = 121569.174
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 190471.60500004
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["inAir"] = 6634.162
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["total"] = 16151.573
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["inAir"] = 55135.675
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["total"] = 92968.294999999
-stats["3316bca529c797f031d8c54c14a0f5d3"]["times"]["MiG-21Bis"]["inAir"] = 3101.52
-stats["3316bca529c797f031d8c54c14a0f5d3"]["times"]["MiG-21Bis"]["total"] = 6083.179
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["inAir"] = 121579.178
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 190481.60900004
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["inAir"] = 6644.166
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["total"] = 16161.577
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["inAir"] = 55145.679
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["total"] = 92978.298999999
-stats["3316bca529c797f031d8c54c14a0f5d3"]["times"]["MiG-21Bis"]["inAir"] = 3111.524
-stats["3316bca529c797f031d8c54c14a0f5d3"]["times"]["MiG-21Bis"]["total"] = 6093.183
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["inAir"] = 121589.188
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 190491.61900004
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["inAir"] = 6654.176
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["total"] = 16171.587
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["inAir"] = 55155.689
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["total"] = 92988.308999999
-stats["3316bca529c797f031d8c54c14a0f5d3"]["times"]["MiG-21Bis"]["inAir"] = 3121.534
-stats["3316bca529c797f031d8c54c14a0f5d3"]["times"]["MiG-21Bis"]["total"] = 6103.193
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["inAir"] = 121599.188
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 190501.61900004
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["inAir"] = 6664.176
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["total"] = 16181.587
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["inAir"] = 55165.689
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["total"] = 92998.308999999
-stats["3316bca529c797f031d8c54c14a0f5d3"]["times"]["MiG-21Bis"]["inAir"] = 3131.534
-stats["3316bca529c797f031d8c54c14a0f5d3"]["times"]["MiG-21Bis"]["total"] = 6113.193
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["inAir"] = 121609.202
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 190511.63300004
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["inAir"] = 6674.19
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["total"] = 16191.601
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["inAir"] = 55175.703
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["total"] = 93008.322999999
-stats["3316bca529c797f031d8c54c14a0f5d3"]["times"]["MiG-21Bis"]["inAir"] = 3141.548
-stats["3316bca529c797f031d8c54c14a0f5d3"]["times"]["MiG-21Bis"]["total"] = 6123.207
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["inAir"] = 121619.202
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 190521.63300004
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["inAir"] = 6684.19
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["total"] = 16201.601
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["inAir"] = 55185.703
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["total"] = 93018.322999999
-stats["3316bca529c797f031d8c54c14a0f5d3"]["times"]["MiG-21Bis"]["inAir"] = 3151.548
-stats["3316bca529c797f031d8c54c14a0f5d3"]["times"]["MiG-21Bis"]["total"] = 6133.207
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["inAir"] = 121629.21
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 190531.64100004
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["inAir"] = 6694.198
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["total"] = 16211.609
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["inAir"] = 55195.711
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["total"] = 93028.330999999
-stats["3316bca529c797f031d8c54c14a0f5d3"]["times"]["MiG-21Bis"]["inAir"] = 3161.556
-stats["3316bca529c797f031d8c54c14a0f5d3"]["times"]["MiG-21Bis"]["total"] = 6143.215
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["inAir"] = 121639.216
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 190541.64700004
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["inAir"] = 6704.204
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["total"] = 16221.615
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["inAir"] = 55205.717
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["total"] = 93038.336999999
-stats["3316bca529c797f031d8c54c14a0f5d3"]["times"]["MiG-21Bis"]["inAir"] = 3171.562
-stats["3316bca529c797f031d8c54c14a0f5d3"]["times"]["MiG-21Bis"]["total"] = 6153.221
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["inAir"] = 121649.216
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 190551.64700004
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["inAir"] = 6714.204
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["total"] = 16231.615
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["inAir"] = 55215.717
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["total"] = 93048.336999999
-stats["3316bca529c797f031d8c54c14a0f5d3"]["times"]["MiG-21Bis"]["inAir"] = 3181.562
-stats["3316bca529c797f031d8c54c14a0f5d3"]["times"]["MiG-21Bis"]["total"] = 6163.221
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["inAir"] = 121659.23
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 190561.66100004
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["inAir"] = 6724.218
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["total"] = 16241.629
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["inAir"] = 55225.731
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["total"] = 93058.350999999
-stats["3316bca529c797f031d8c54c14a0f5d3"]["times"]["MiG-21Bis"]["inAir"] = 3191.576
-stats["3316bca529c797f031d8c54c14a0f5d3"]["times"]["MiG-21Bis"]["total"] = 6173.235
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["inAir"] = 121669.245
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 190571.67600004
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["inAir"] = 6734.233
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["total"] = 16251.644
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["inAir"] = 55235.746
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["total"] = 93068.365999999
-stats["3316bca529c797f031d8c54c14a0f5d3"]["times"]["MiG-21Bis"]["inAir"] = 3201.591
-stats["3316bca529c797f031d8c54c14a0f5d3"]["times"]["MiG-21Bis"]["total"] = 6183.25
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["inAir"] = 121679.26
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 190581.69100004
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["inAir"] = 6744.248
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["total"] = 16261.659
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["inAir"] = 55245.761
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["total"] = 93078.380999999
-stats["3316bca529c797f031d8c54c14a0f5d3"]["times"]["MiG-21Bis"]["inAir"] = 3211.606
-stats["3316bca529c797f031d8c54c14a0f5d3"]["times"]["MiG-21Bis"]["total"] = 6193.265
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["inAir"] = 121689.275
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 190591.70600004
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["inAir"] = 6754.263
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["total"] = 16271.674
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["inAir"] = 55255.776
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["total"] = 93088.395999999
-stats["3316bca529c797f031d8c54c14a0f5d3"]["times"]["MiG-21Bis"]["inAir"] = 3221.621
-stats["3316bca529c797f031d8c54c14a0f5d3"]["times"]["MiG-21Bis"]["total"] = 6203.28
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["inAir"] = 121699.29
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 190601.72100004
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["inAir"] = 6764.278
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["total"] = 16281.689
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["inAir"] = 55265.791
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["total"] = 93098.410999999
-stats["3316bca529c797f031d8c54c14a0f5d3"]["times"]["MiG-21Bis"]["inAir"] = 3231.636
-stats["3316bca529c797f031d8c54c14a0f5d3"]["times"]["MiG-21Bis"]["total"] = 6213.295
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["inAir"] = 121709.305
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 190611.73600004
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["inAir"] = 6774.293
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["total"] = 16291.704
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["inAir"] = 55275.806
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["total"] = 93108.425999999
-stats["3316bca529c797f031d8c54c14a0f5d3"]["times"]["MiG-21Bis"]["inAir"] = 3241.651
-stats["3316bca529c797f031d8c54c14a0f5d3"]["times"]["MiG-21Bis"]["total"] = 6223.31
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["inAir"] = 121719.32
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 190621.75100004
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["inAir"] = 6784.308
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["total"] = 16301.719
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["inAir"] = 55285.821
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["total"] = 93118.440999999
-stats["3316bca529c797f031d8c54c14a0f5d3"]["times"]["MiG-21Bis"]["inAir"] = 3251.666
-stats["3316bca529c797f031d8c54c14a0f5d3"]["times"]["MiG-21Bis"]["total"] = 6233.325
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["inAir"] = 121729.335
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 190631.76600004
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["inAir"] = 6794.323
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["total"] = 16311.734
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["inAir"] = 55295.836
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["total"] = 93128.455999999
-stats["3316bca529c797f031d8c54c14a0f5d3"]["times"]["MiG-21Bis"]["inAir"] = 3261.681
-stats["3316bca529c797f031d8c54c14a0f5d3"]["times"]["MiG-21Bis"]["total"] = 6243.34
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["inAir"] = 121739.35
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 190641.78100004
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["inAir"] = 6804.338
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["total"] = 16321.749
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["inAir"] = 55305.851
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["total"] = 93138.470999999
-stats["3316bca529c797f031d8c54c14a0f5d3"]["times"]["MiG-21Bis"]["inAir"] = 3271.696
-stats["3316bca529c797f031d8c54c14a0f5d3"]["times"]["MiG-21Bis"]["total"] = 6253.355
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["inAir"] = 121749.364
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 190651.79500004
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["inAir"] = 6814.352
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["total"] = 16331.763
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["inAir"] = 55315.865
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["total"] = 93148.484999999
-stats["3316bca529c797f031d8c54c14a0f5d3"]["times"]["MiG-21Bis"]["inAir"] = 3281.71
-stats["3316bca529c797f031d8c54c14a0f5d3"]["times"]["MiG-21Bis"]["total"] = 6263.369
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["inAir"] = 121759.364
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 190661.79500004
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["inAir"] = 6824.352
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["total"] = 16341.763
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["inAir"] = 55325.865
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["total"] = 93158.484999999
-stats["3316bca529c797f031d8c54c14a0f5d3"]["times"]["MiG-21Bis"]["inAir"] = 3291.71
-stats["3316bca529c797f031d8c54c14a0f5d3"]["times"]["MiG-21Bis"]["total"] = 6273.369
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["inAir"] = 121769.379
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 190671.81000004
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["inAir"] = 6834.367
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["total"] = 16351.778
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["inAir"] = 55335.88
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["total"] = 93168.499999999
-stats["3316bca529c797f031d8c54c14a0f5d3"]["times"]["MiG-21Bis"]["inAir"] = 3301.725
-stats["3316bca529c797f031d8c54c14a0f5d3"]["times"]["MiG-21Bis"]["total"] = 6283.384
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["inAir"] = 121779.394
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 190681.82500004
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["inAir"] = 6844.382
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["total"] = 16361.793
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["inAir"] = 55345.895
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["total"] = 93178.514999999
-stats["3316bca529c797f031d8c54c14a0f5d3"]["times"]["MiG-21Bis"]["inAir"] = 3311.74
-stats["3316bca529c797f031d8c54c14a0f5d3"]["times"]["MiG-21Bis"]["total"] = 6293.399
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["inAir"] = 121789.409
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 190691.84000004
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["inAir"] = 6854.397
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["total"] = 16371.808
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["inAir"] = 55355.91
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["total"] = 93188.529999999
-stats["3316bca529c797f031d8c54c14a0f5d3"]["times"]["MiG-21Bis"]["inAir"] = 3321.755
-stats["3316bca529c797f031d8c54c14a0f5d3"]["times"]["MiG-21Bis"]["total"] = 6303.414
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["inAir"] = 121799.424
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 190701.85500004
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["inAir"] = 6864.412
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["total"] = 16381.823
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["inAir"] = 55365.925
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["total"] = 93198.544999999
-stats["3316bca529c797f031d8c54c14a0f5d3"]["times"]["MiG-21Bis"]["inAir"] = 3331.77
-stats["3316bca529c797f031d8c54c14a0f5d3"]["times"]["MiG-21Bis"]["total"] = 6313.429
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["inAir"] = 121809.438
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 190711.86900004
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["inAir"] = 6874.426
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["total"] = 16391.837
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["inAir"] = 55375.939
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["total"] = 93208.558999999
-stats["3316bca529c797f031d8c54c14a0f5d3"]["times"]["MiG-21Bis"]["inAir"] = 3341.784
-stats["3316bca529c797f031d8c54c14a0f5d3"]["times"]["MiG-21Bis"]["total"] = 6323.443
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["inAir"] = 121819.438
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 190721.86900004
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["inAir"] = 6884.426
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["total"] = 16401.837
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["inAir"] = 55385.939
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["total"] = 93218.558999999
-stats["3316bca529c797f031d8c54c14a0f5d3"]["times"]["MiG-21Bis"]["inAir"] = 3351.784
-stats["3316bca529c797f031d8c54c14a0f5d3"]["times"]["MiG-21Bis"]["total"] = 6333.443
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["inAir"] = 121829.453
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 190731.88400004
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["inAir"] = 6894.441
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["total"] = 16411.852
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["inAir"] = 55395.954
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["total"] = 93228.573999999
-stats["3316bca529c797f031d8c54c14a0f5d3"]["times"]["MiG-21Bis"]["inAir"] = 3361.799
-stats["3316bca529c797f031d8c54c14a0f5d3"]["times"]["MiG-21Bis"]["total"] = 6343.458
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["inAir"] = 121839.468
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 190741.89900004
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["inAir"] = 6904.456
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["total"] = 16421.867
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["inAir"] = 55405.969
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["total"] = 93238.588999999
-stats["3316bca529c797f031d8c54c14a0f5d3"]["times"]["MiG-21Bis"]["inAir"] = 3371.814
-stats["3316bca529c797f031d8c54c14a0f5d3"]["times"]["MiG-21Bis"]["total"] = 6353.473
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["inAir"] = 121849.483
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 190751.91400004
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["inAir"] = 6914.471
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["total"] = 16431.882
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["inAir"] = 55415.984
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["total"] = 93248.603999999
-stats["3316bca529c797f031d8c54c14a0f5d3"]["times"]["MiG-21Bis"]["inAir"] = 3381.829
-stats["3316bca529c797f031d8c54c14a0f5d3"]["times"]["MiG-21Bis"]["total"] = 6363.488
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["inAir"] = 121859.491
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 190761.92200004
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["inAir"] = 6924.479
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["total"] = 16441.89
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["inAir"] = 55425.992
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["total"] = 93258.611999999
-stats["3316bca529c797f031d8c54c14a0f5d3"]["times"]["MiG-21Bis"]["inAir"] = 3391.837
-stats["3316bca529c797f031d8c54c14a0f5d3"]["times"]["MiG-21Bis"]["total"] = 6373.496
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["inAir"] = 121869.497
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 190771.92800004
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["inAir"] = 6934.485
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["total"] = 16451.896
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["inAir"] = 55435.998
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["total"] = 93268.617999999
-stats["3316bca529c797f031d8c54c14a0f5d3"]["times"]["MiG-21Bis"]["inAir"] = 3401.843
-stats["3316bca529c797f031d8c54c14a0f5d3"]["times"]["MiG-21Bis"]["total"] = 6383.502
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["inAir"] = 121879.512
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 190781.94300004
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["inAir"] = 6944.5
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["total"] = 16461.911
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["inAir"] = 55446.013
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["total"] = 93278.632999999
-stats["3316bca529c797f031d8c54c14a0f5d3"]["times"]["MiG-21Bis"]["inAir"] = 3411.858
-stats["3316bca529c797f031d8c54c14a0f5d3"]["times"]["MiG-21Bis"]["total"] = 6393.517
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["inAir"] = 121889.513
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 190791.94400004
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["inAir"] = 6954.501
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["total"] = 16471.912
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["inAir"] = 55456.014
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["total"] = 93288.633999999
-stats["3316bca529c797f031d8c54c14a0f5d3"]["times"]["MiG-21Bis"]["inAir"] = 3421.859
-stats["3316bca529c797f031d8c54c14a0f5d3"]["times"]["MiG-21Bis"]["total"] = 6403.518
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["inAir"] = 121899.526
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 190801.95700004
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["inAir"] = 6964.514
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["total"] = 16481.925
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["inAir"] = 55466.027
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["total"] = 93298.646999999
-stats["3316bca529c797f031d8c54c14a0f5d3"]["times"]["MiG-21Bis"]["inAir"] = 3431.872
-stats["3316bca529c797f031d8c54c14a0f5d3"]["times"]["MiG-21Bis"]["total"] = 6413.531
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["inAir"] = 121909.535
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 190811.96600004
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["inAir"] = 6974.523
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["total"] = 16491.934
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["inAir"] = 55476.036
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["total"] = 93308.655999999
-stats["3316bca529c797f031d8c54c14a0f5d3"]["times"]["MiG-21Bis"]["inAir"] = 3441.881
-stats["3316bca529c797f031d8c54c14a0f5d3"]["times"]["MiG-21Bis"]["total"] = 6423.54
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["inAir"] = 121919.556
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 190821.98700004
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["inAir"] = 6984.544
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["total"] = 16501.955
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["inAir"] = 55486.057
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["total"] = 93318.676999999
-stats["3316bca529c797f031d8c54c14a0f5d3"]["times"]["MiG-21Bis"]["inAir"] = 3451.902
-stats["3316bca529c797f031d8c54c14a0f5d3"]["times"]["MiG-21Bis"]["total"] = 6433.561
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["inAir"] = 121929.571
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 190832.00200004
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["inAir"] = 6994.559
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["total"] = 16511.97
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["inAir"] = 55496.072
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["total"] = 93328.691999999
-stats["3316bca529c797f031d8c54c14a0f5d3"]["times"]["MiG-21Bis"]["inAir"] = 3461.917
-stats["3316bca529c797f031d8c54c14a0f5d3"]["times"]["MiG-21Bis"]["total"] = 6443.576
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["inAir"] = 121939.579
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 190842.01000004
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["inAir"] = 7004.567
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["total"] = 16521.978
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["inAir"] = 55506.08
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["total"] = 93338.699999999
-stats["3316bca529c797f031d8c54c14a0f5d3"]["times"]["MiG-21Bis"]["inAir"] = 3471.925
-stats["3316bca529c797f031d8c54c14a0f5d3"]["times"]["MiG-21Bis"]["total"] = 6453.584
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["inAir"] = 121949.585
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 190852.01600004
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["inAir"] = 7014.573
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["total"] = 16531.984
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["inAir"] = 55516.086
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["total"] = 93348.705999999
-stats["3316bca529c797f031d8c54c14a0f5d3"]["times"]["MiG-21Bis"]["inAir"] = 3481.931
-stats["3316bca529c797f031d8c54c14a0f5d3"]["times"]["MiG-21Bis"]["total"] = 6463.59
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["inAir"] = 121959.601
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 190862.03200004
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["inAir"] = 7024.589
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["total"] = 16542
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["inAir"] = 55526.102
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["total"] = 93358.721999999
-stats["3316bca529c797f031d8c54c14a0f5d3"]["times"]["MiG-21Bis"]["inAir"] = 3491.947
-stats["3316bca529c797f031d8c54c14a0f5d3"]["times"]["MiG-21Bis"]["total"] = 6473.606
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["inAir"] = 121969.609
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 190872.04000004
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["inAir"] = 7034.597
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["total"] = 16552.008
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["inAir"] = 55536.11
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["total"] = 93368.729999999
-stats["3316bca529c797f031d8c54c14a0f5d3"]["times"]["MiG-21Bis"]["inAir"] = 3501.955
-stats["3316bca529c797f031d8c54c14a0f5d3"]["times"]["MiG-21Bis"]["total"] = 6483.614
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["inAir"] = 121979.614
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 190882.04500004
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["inAir"] = 7044.602
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["total"] = 16562.013
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["inAir"] = 55546.115
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["total"] = 93378.734999999
-stats["3316bca529c797f031d8c54c14a0f5d3"]["times"]["MiG-21Bis"]["inAir"] = 3511.96
-stats["3316bca529c797f031d8c54c14a0f5d3"]["times"]["MiG-21Bis"]["total"] = 6493.619
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["inAir"] = 121989.614
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 190892.04500004
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["inAir"] = 7054.602
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["total"] = 16572.013
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["inAir"] = 55556.115
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["total"] = 93388.734999999
-stats["3316bca529c797f031d8c54c14a0f5d3"]["times"]["MiG-21Bis"]["inAir"] = 3521.96
-stats["3316bca529c797f031d8c54c14a0f5d3"]["times"]["MiG-21Bis"]["total"] = 6503.619
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["inAir"] = 121999.629
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 190902.06000004
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["inAir"] = 7064.617
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["total"] = 16582.028
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["inAir"] = 55566.13
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["total"] = 93398.749999999
-stats["3316bca529c797f031d8c54c14a0f5d3"]["times"]["MiG-21Bis"]["inAir"] = 3531.975
-stats["3316bca529c797f031d8c54c14a0f5d3"]["times"]["MiG-21Bis"]["total"] = 6513.634
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["inAir"] = 122009.644
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 190912.07500004
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["inAir"] = 7074.632
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["total"] = 16592.043
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["inAir"] = 55576.145
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["total"] = 93408.764999999
-stats["3316bca529c797f031d8c54c14a0f5d3"]["times"]["MiG-21Bis"]["inAir"] = 3541.99
-stats["3316bca529c797f031d8c54c14a0f5d3"]["times"]["MiG-21Bis"]["total"] = 6523.649
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["inAir"] = 122019.659
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 190922.09000004
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["inAir"] = 7084.647
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["total"] = 16602.058
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["inAir"] = 55586.16
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["total"] = 93418.779999999
-stats["3316bca529c797f031d8c54c14a0f5d3"]["times"]["MiG-21Bis"]["inAir"] = 3552.005
-stats["3316bca529c797f031d8c54c14a0f5d3"]["times"]["MiG-21Bis"]["total"] = 6533.664
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["inAir"] = 122029.673
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 190932.10400004
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["inAir"] = 7094.661
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["total"] = 16612.072
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["inAir"] = 55596.174
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["total"] = 93428.793999999
-stats["3316bca529c797f031d8c54c14a0f5d3"]["times"]["MiG-21Bis"]["inAir"] = 3562.019
-stats["3316bca529c797f031d8c54c14a0f5d3"]["times"]["MiG-21Bis"]["total"] = 6543.678
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["inAir"] = 122039.673
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 190942.10400004
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["inAir"] = 7104.661
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["total"] = 16622.072
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["inAir"] = 55606.174
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["total"] = 93438.793999999
-stats["3316bca529c797f031d8c54c14a0f5d3"]["times"]["MiG-21Bis"]["inAir"] = 3572.019
-stats["3316bca529c797f031d8c54c14a0f5d3"]["times"]["MiG-21Bis"]["total"] = 6553.678
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["inAir"] = 122049.688
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 190952.11900004
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["inAir"] = 7114.676
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["total"] = 16632.087
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["inAir"] = 55616.189
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["total"] = 93448.808999999
-stats["3316bca529c797f031d8c54c14a0f5d3"]["times"]["MiG-21Bis"]["inAir"] = 3582.034
-stats["3316bca529c797f031d8c54c14a0f5d3"]["times"]["MiG-21Bis"]["total"] = 6563.693
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["inAir"] = 122059.703
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 190962.13400004
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["inAir"] = 7124.691
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["total"] = 16642.102
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["inAir"] = 55626.204
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["total"] = 93458.823999999
-stats["3316bca529c797f031d8c54c14a0f5d3"]["times"]["MiG-21Bis"]["inAir"] = 3592.049
-stats["3316bca529c797f031d8c54c14a0f5d3"]["times"]["MiG-21Bis"]["total"] = 6573.708
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["inAir"] = 122069.718
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 190972.14900004
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["inAir"] = 7134.706
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["total"] = 16652.117
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["inAir"] = 55636.219
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["total"] = 93468.838999999
-stats["3316bca529c797f031d8c54c14a0f5d3"]["times"]["MiG-21Bis"]["inAir"] = 3602.064
-stats["3316bca529c797f031d8c54c14a0f5d3"]["times"]["MiG-21Bis"]["total"] = 6583.723
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["inAir"] = 122079.732
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 190982.16300004
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["inAir"] = 7144.72
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["total"] = 16662.131
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["inAir"] = 55646.233
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["total"] = 93478.852999999
-stats["3316bca529c797f031d8c54c14a0f5d3"]["times"]["MiG-21Bis"]["inAir"] = 3612.078
-stats["3316bca529c797f031d8c54c14a0f5d3"]["times"]["MiG-21Bis"]["total"] = 6593.737
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["inAir"] = 122089.732
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 190992.16300004
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["inAir"] = 7154.72
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["total"] = 16672.131
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["inAir"] = 55656.233
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["total"] = 93488.852999999
-stats["3316bca529c797f031d8c54c14a0f5d3"]["times"]["MiG-21Bis"]["inAir"] = 3622.078
-stats["3316bca529c797f031d8c54c14a0f5d3"]["times"]["MiG-21Bis"]["total"] = 6603.737
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["inAir"] = 122099.747
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 191002.17800004
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["inAir"] = 7164.735
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["total"] = 16682.146
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["inAir"] = 55666.248
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["total"] = 93498.867999999
-stats["3316bca529c797f031d8c54c14a0f5d3"]["times"]["MiG-21Bis"]["inAir"] = 3632.093
-stats["3316bca529c797f031d8c54c14a0f5d3"]["times"]["MiG-21Bis"]["total"] = 6613.752
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["inAir"] = 122109.762
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 191012.19300004
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["inAir"] = 7174.75
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["total"] = 16692.161
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["inAir"] = 55676.263
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["total"] = 93508.882999999
-stats["3316bca529c797f031d8c54c14a0f5d3"]["times"]["MiG-21Bis"]["inAir"] = 3642.108
-stats["3316bca529c797f031d8c54c14a0f5d3"]["times"]["MiG-21Bis"]["total"] = 6623.767
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["inAir"] = 122119.777
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 191022.20800004
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["inAir"] = 7184.765
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["total"] = 16702.176
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["inAir"] = 55686.278
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["total"] = 93518.897999999
-stats["3316bca529c797f031d8c54c14a0f5d3"]["times"]["MiG-21Bis"]["inAir"] = 3652.123
-stats["3316bca529c797f031d8c54c14a0f5d3"]["times"]["MiG-21Bis"]["total"] = 6633.782
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["inAir"] = 122129.792
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 191032.22300004
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["inAir"] = 7194.78
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["total"] = 16712.191
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["inAir"] = 55696.293
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["total"] = 93528.912999999
-stats["3316bca529c797f031d8c54c14a0f5d3"]["times"]["MiG-21Bis"]["inAir"] = 3662.138
-stats["3316bca529c797f031d8c54c14a0f5d3"]["times"]["MiG-21Bis"]["total"] = 6643.797
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["inAir"] = 122139.8
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 191042.23100004
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["inAir"] = 7204.788
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["total"] = 16722.199
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["inAir"] = 55706.301
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["total"] = 93538.920999999
-stats["3316bca529c797f031d8c54c14a0f5d3"]["times"]["MiG-21Bis"]["inAir"] = 3672.146
-stats["3316bca529c797f031d8c54c14a0f5d3"]["times"]["MiG-21Bis"]["total"] = 6653.805
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["inAir"] = 122149.806
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 191052.23700004
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["inAir"] = 7214.794
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["total"] = 16732.205
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["inAir"] = 55716.307
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["total"] = 93548.926999999
-stats["3316bca529c797f031d8c54c14a0f5d3"]["times"]["MiG-21Bis"]["inAir"] = 3682.152
-stats["3316bca529c797f031d8c54c14a0f5d3"]["times"]["MiG-21Bis"]["total"] = 6663.811
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["inAir"] = 122159.821
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 191062.25200004
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["inAir"] = 7224.809
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["total"] = 16742.22
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["inAir"] = 55726.322
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["total"] = 93558.941999999
-stats["3316bca529c797f031d8c54c14a0f5d3"]["times"]["MiG-21Bis"]["inAir"] = 3692.167
-stats["3316bca529c797f031d8c54c14a0f5d3"]["times"]["MiG-21Bis"]["total"] = 6673.826
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["inAir"] = 122169.836
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 191072.26700004
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["inAir"] = 7234.824
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["total"] = 16752.235
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["inAir"] = 55736.337
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["total"] = 93568.956999999
-stats["3316bca529c797f031d8c54c14a0f5d3"]["times"]["MiG-21Bis"]["inAir"] = 3702.182
-stats["3316bca529c797f031d8c54c14a0f5d3"]["times"]["MiG-21Bis"]["total"] = 6683.841
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["inAir"] = 122179.851
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 191082.28200004
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["inAir"] = 7244.839
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["total"] = 16762.25
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["inAir"] = 55746.352
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["total"] = 93578.971999999
-stats["3316bca529c797f031d8c54c14a0f5d3"]["times"]["MiG-21Bis"]["inAir"] = 3712.197
-stats["3316bca529c797f031d8c54c14a0f5d3"]["times"]["MiG-21Bis"]["total"] = 6693.856
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["inAir"] = 122189.866
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 191092.29700004
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["inAir"] = 7254.854
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["total"] = 16772.265
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["inAir"] = 55756.367
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["total"] = 93588.986999999
-stats["3316bca529c797f031d8c54c14a0f5d3"]["times"]["MiG-21Bis"]["inAir"] = 3722.212
-stats["3316bca529c797f031d8c54c14a0f5d3"]["times"]["MiG-21Bis"]["total"] = 6703.871
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["inAir"] = 122199.881
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 191102.31200004
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["inAir"] = 7264.869
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["total"] = 16782.28
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["inAir"] = 55766.382
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["total"] = 93599.001999999
-stats["3316bca529c797f031d8c54c14a0f5d3"]["times"]["MiG-21Bis"]["inAir"] = 3732.227
-stats["3316bca529c797f031d8c54c14a0f5d3"]["times"]["MiG-21Bis"]["total"] = 6713.886
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["inAir"] = 122209.896
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 191112.32700004
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["inAir"] = 7274.884
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["total"] = 16792.295
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["inAir"] = 55776.397
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["total"] = 93609.016999999
-stats["3316bca529c797f031d8c54c14a0f5d3"]["times"]["MiG-21Bis"]["inAir"] = 3742.242
-stats["3316bca529c797f031d8c54c14a0f5d3"]["times"]["MiG-21Bis"]["total"] = 6723.901
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["inAir"] = 122219.91
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 191122.34100004
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["inAir"] = 7284.898
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["total"] = 16802.309
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["inAir"] = 55786.411
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["total"] = 93619.030999999
-stats["3316bca529c797f031d8c54c14a0f5d3"]["times"]["MiG-21Bis"]["inAir"] = 3752.256
-stats["3316bca529c797f031d8c54c14a0f5d3"]["times"]["MiG-21Bis"]["total"] = 6733.915
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["inAir"] = 122229.91
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 191132.34100004
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["inAir"] = 7294.898
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["total"] = 16812.309
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["inAir"] = 55796.411
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["total"] = 93629.030999999
-stats["3316bca529c797f031d8c54c14a0f5d3"]["times"]["MiG-21Bis"]["inAir"] = 3762.256
-stats["3316bca529c797f031d8c54c14a0f5d3"]["times"]["MiG-21Bis"]["total"] = 6743.915
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["inAir"] = 122239.919
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 191142.35000004
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["inAir"] = 7304.907
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["total"] = 16822.318
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["inAir"] = 55806.42
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["total"] = 93639.039999999
-stats["3316bca529c797f031d8c54c14a0f5d3"]["times"]["MiG-21Bis"]["inAir"] = 3772.265
-stats["3316bca529c797f031d8c54c14a0f5d3"]["times"]["MiG-21Bis"]["total"] = 6753.924
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["inAir"] = 122249.924
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 191152.35500004
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["inAir"] = 7314.912
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["total"] = 16832.323
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["inAir"] = 55816.425
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["total"] = 93649.044999999
-stats["3316bca529c797f031d8c54c14a0f5d3"]["times"]["MiG-21Bis"]["inAir"] = 3782.27
-stats["3316bca529c797f031d8c54c14a0f5d3"]["times"]["MiG-21Bis"]["total"] = 6763.929
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["inAir"] = 122259.932
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 191162.36300004
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["inAir"] = 7324.92
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["total"] = 16842.331
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["inAir"] = 55826.433
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["total"] = 93659.052999999
-stats["3316bca529c797f031d8c54c14a0f5d3"]["times"]["MiG-21Bis"]["inAir"] = 3792.278
-stats["3316bca529c797f031d8c54c14a0f5d3"]["times"]["MiG-21Bis"]["total"] = 6773.937
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["inAir"] = 122269.932
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 191172.36300004
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["inAir"] = 7334.92
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["total"] = 16852.331
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["inAir"] = 55836.433
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["total"] = 93669.052999999
-stats["3316bca529c797f031d8c54c14a0f5d3"]["times"]["MiG-21Bis"]["inAir"] = 3802.278
-stats["3316bca529c797f031d8c54c14a0f5d3"]["times"]["MiG-21Bis"]["total"] = 6783.937
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["inAir"] = 122279.938
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 191182.36900004
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["inAir"] = 7344.926
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["total"] = 16862.337
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["inAir"] = 55846.439
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["total"] = 93679.058999999
-stats["3316bca529c797f031d8c54c14a0f5d3"]["times"]["MiG-21Bis"]["inAir"] = 3812.284
-stats["3316bca529c797f031d8c54c14a0f5d3"]["times"]["MiG-21Bis"]["total"] = 6793.943
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["inAir"] = 122289.953
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 191192.38400004
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["inAir"] = 7354.941
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["total"] = 16872.352
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["inAir"] = 55856.454
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["total"] = 93689.073999999
-stats["3316bca529c797f031d8c54c14a0f5d3"]["times"]["MiG-21Bis"]["inAir"] = 3822.299
-stats["3316bca529c797f031d8c54c14a0f5d3"]["times"]["MiG-21Bis"]["total"] = 6803.958
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["inAir"] = 122299.967
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 191202.39800004
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["inAir"] = 7364.955
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["total"] = 16882.366
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["inAir"] = 55866.468
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["total"] = 93699.087999999
-stats["3316bca529c797f031d8c54c14a0f5d3"]["times"]["MiG-21Bis"]["inAir"] = 3832.313
-stats["3316bca529c797f031d8c54c14a0f5d3"]["times"]["MiG-21Bis"]["total"] = 6813.972
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["inAir"] = 122309.967
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 191212.39800004
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["inAir"] = 7374.955
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["total"] = 16892.366
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["inAir"] = 55876.468
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["total"] = 93709.087999999
-stats["3316bca529c797f031d8c54c14a0f5d3"]["times"]["MiG-21Bis"]["inAir"] = 3842.313
-stats["3316bca529c797f031d8c54c14a0f5d3"]["times"]["MiG-21Bis"]["total"] = 6823.972
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["inAir"] = 122319.982
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 191222.41300004
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["inAir"] = 7384.97
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["total"] = 16902.381
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["inAir"] = 55886.483
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["total"] = 93719.102999999
-stats["3316bca529c797f031d8c54c14a0f5d3"]["times"]["MiG-21Bis"]["inAir"] = 3852.328
-stats["3316bca529c797f031d8c54c14a0f5d3"]["times"]["MiG-21Bis"]["total"] = 6833.987
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["inAir"] = 122329.997
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 191232.42800004
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["inAir"] = 7394.985
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["total"] = 16912.396
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["inAir"] = 55896.498
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["total"] = 93729.117999999
-stats["3316bca529c797f031d8c54c14a0f5d3"]["times"]["MiG-21Bis"]["inAir"] = 3862.343
-stats["3316bca529c797f031d8c54c14a0f5d3"]["times"]["MiG-21Bis"]["total"] = 6844.002
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["inAir"] = 122340.012
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 191242.44300004
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["inAir"] = 7405
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["total"] = 16922.411
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["inAir"] = 55906.513
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["total"] = 93739.132999999
-stats["3316bca529c797f031d8c54c14a0f5d3"]["times"]["MiG-21Bis"]["inAir"] = 3872.358
-stats["3316bca529c797f031d8c54c14a0f5d3"]["times"]["MiG-21Bis"]["total"] = 6854.017
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["inAir"] = 122350.019
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 191252.45000004
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["inAir"] = 7415.007
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["total"] = 16932.418
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["inAir"] = 55916.52
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["total"] = 93749.139999999
-stats["3316bca529c797f031d8c54c14a0f5d3"]["times"]["MiG-21Bis"]["inAir"] = 3882.365
-stats["3316bca529c797f031d8c54c14a0f5d3"]["times"]["MiG-21Bis"]["total"] = 6864.024
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["inAir"] = 122360.026
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 191262.45700004
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["inAir"] = 7425.014
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["total"] = 16942.425
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["inAir"] = 55926.527
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["total"] = 93759.146999999
-stats["3316bca529c797f031d8c54c14a0f5d3"]["times"]["MiG-21Bis"]["inAir"] = 3892.372
-stats["3316bca529c797f031d8c54c14a0f5d3"]["times"]["MiG-21Bis"]["total"] = 6874.031
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["inAir"] = 122370.041
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 191272.47200004
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["inAir"] = 7435.029
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["total"] = 16952.44
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["inAir"] = 55936.542
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["total"] = 93769.161999999
-stats["3316bca529c797f031d8c54c14a0f5d3"]["times"]["MiG-21Bis"]["inAir"] = 3902.387
-stats["3316bca529c797f031d8c54c14a0f5d3"]["times"]["MiG-21Bis"]["total"] = 6884.046
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["inAir"] = 122380.056
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 191282.48700004
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["inAir"] = 7445.044
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["total"] = 16962.455
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["inAir"] = 55946.557
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["total"] = 93779.176999999
-stats["3316bca529c797f031d8c54c14a0f5d3"]["times"]["MiG-21Bis"]["inAir"] = 3912.402
-stats["3316bca529c797f031d8c54c14a0f5d3"]["times"]["MiG-21Bis"]["total"] = 6894.061
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["inAir"] = 122390.071
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 191292.50200004
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["inAir"] = 7455.059
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["total"] = 16972.47
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["inAir"] = 55956.572
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["total"] = 93789.191999999
-stats["3316bca529c797f031d8c54c14a0f5d3"]["times"]["MiG-21Bis"]["inAir"] = 3922.417
-stats["3316bca529c797f031d8c54c14a0f5d3"]["times"]["MiG-21Bis"]["total"] = 6904.076
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["inAir"] = 122400.086
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 191302.51700004
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["inAir"] = 7465.074
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["total"] = 16982.485
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["inAir"] = 55966.587
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["total"] = 93799.206999999
-stats["3316bca529c797f031d8c54c14a0f5d3"]["times"]["MiG-21Bis"]["inAir"] = 3932.432
-stats["3316bca529c797f031d8c54c14a0f5d3"]["times"]["MiG-21Bis"]["total"] = 6914.091
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["inAir"] = 122410.101
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 191312.53200004
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["inAir"] = 7475.089
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["total"] = 16992.5
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["inAir"] = 55976.602
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["total"] = 93809.221999999
-stats["3316bca529c797f031d8c54c14a0f5d3"]["times"]["MiG-21Bis"]["inAir"] = 3942.447
-stats["3316bca529c797f031d8c54c14a0f5d3"]["times"]["MiG-21Bis"]["total"] = 6924.106
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["inAir"] = 7485.104
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["total"] = 17002.515
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["inAir"] = 55986.617
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["total"] = 93819.236999999
-stats["3316bca529c797f031d8c54c14a0f5d3"]["times"]["MiG-21Bis"]["inAir"] = 3952.462
-stats["3316bca529c797f031d8c54c14a0f5d3"]["times"]["MiG-21Bis"]["total"] = 6934.121
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["inAir"] = 7495.119
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["total"] = 17012.53
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["inAir"] = 55996.632
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["total"] = 93829.251999999
-stats["3316bca529c797f031d8c54c14a0f5d3"]["times"]["MiG-21Bis"]["inAir"] = 3962.477
-stats["3316bca529c797f031d8c54c14a0f5d3"]["times"]["MiG-21Bis"]["total"] = 6944.136
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["inAir"] = 7505.133
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["total"] = 17022.544
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["inAir"] = 56006.646
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["total"] = 93839.265999999
-stats["3316bca529c797f031d8c54c14a0f5d3"]["times"]["MiG-21Bis"]["inAir"] = 3972.491
-stats["3316bca529c797f031d8c54c14a0f5d3"]["times"]["MiG-21Bis"]["total"] = 6954.15
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["inAir"] = 7515.133
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["total"] = 17032.544
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["inAir"] = 56016.646
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["total"] = 93849.265999999
-stats["3316bca529c797f031d8c54c14a0f5d3"]["times"]["MiG-21Bis"]["inAir"] = 3982.491
-stats["3316bca529c797f031d8c54c14a0f5d3"]["times"]["MiG-21Bis"]["total"] = 6964.15
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["inAir"] = 7525.148
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["total"] = 17042.559
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["inAir"] = 56026.661
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["total"] = 93859.280999999
-stats["3316bca529c797f031d8c54c14a0f5d3"]["times"]["MiG-21Bis"]["inAir"] = 3992.506
-stats["3316bca529c797f031d8c54c14a0f5d3"]["times"]["MiG-21Bis"]["total"] = 6974.165
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["inAir"] = 7535.163
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["total"] = 17052.574
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["inAir"] = 56036.676
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["total"] = 93869.295999999
-stats["3316bca529c797f031d8c54c14a0f5d3"]["times"]["MiG-21Bis"]["inAir"] = 4002.521
-stats["3316bca529c797f031d8c54c14a0f5d3"]["times"]["MiG-21Bis"]["total"] = 6984.18
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["inAir"] = 7545.178
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["total"] = 17062.589
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["inAir"] = 56046.691
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["total"] = 93879.310999999
-stats["3316bca529c797f031d8c54c14a0f5d3"]["times"]["MiG-21Bis"]["inAir"] = 4012.536
-stats["3316bca529c797f031d8c54c14a0f5d3"]["times"]["MiG-21Bis"]["total"] = 6994.195
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["inAir"] = 7555.192
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["total"] = 17072.603
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["inAir"] = 56056.705
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["total"] = 93889.324999999
-stats["3316bca529c797f031d8c54c14a0f5d3"]["times"]["MiG-21Bis"]["inAir"] = 4022.55
-stats["3316bca529c797f031d8c54c14a0f5d3"]["times"]["MiG-21Bis"]["total"] = 7004.209
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["inAir"] = 7565.192
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["total"] = 17082.603
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["inAir"] = 56066.705
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["total"] = 93899.324999999
-stats["3316bca529c797f031d8c54c14a0f5d3"]["times"]["MiG-21Bis"]["inAir"] = 4032.55
-stats["3316bca529c797f031d8c54c14a0f5d3"]["times"]["MiG-21Bis"]["total"] = 7014.209
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["inAir"] = 7575.207
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["total"] = 17092.618
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["inAir"] = 56076.72
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["total"] = 93909.339999999
-stats["3316bca529c797f031d8c54c14a0f5d3"]["times"]["MiG-21Bis"]["inAir"] = 4042.565
-stats["3316bca529c797f031d8c54c14a0f5d3"]["times"]["MiG-21Bis"]["total"] = 7024.224
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["inAir"] = 7585.222
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["total"] = 17102.633
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["inAir"] = 56086.735
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["total"] = 93919.354999999
-stats["3316bca529c797f031d8c54c14a0f5d3"]["times"]["MiG-21Bis"]["inAir"] = 4052.58
-stats["3316bca529c797f031d8c54c14a0f5d3"]["times"]["MiG-21Bis"]["total"] = 7034.239
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["lastJoin"] = 1703339281
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["inAir"] = 7595.237
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["total"] = 17112.648
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["inAir"] = 56096.75
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["total"] = 93929.369999999
-stats["3316bca529c797f031d8c54c14a0f5d3"]["times"]["MiG-21Bis"]["total"] = 7044.254
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["inAir"] = 7605.252
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["total"] = 17122.663
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["inAir"] = 56106.765
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["total"] = 93939.384999999
-stats["3316bca529c797f031d8c54c14a0f5d3"]["times"]["MiG-21Bis"]["total"] = 7054.269
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["lastJoin"] = 1703339293
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 191322.54700004
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["inAir"] = 7615.267
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["total"] = 17132.678
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["inAir"] = 56116.78
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["total"] = 93949.399999999
-stats["3316bca529c797f031d8c54c14a0f5d3"]["times"]["MiG-21Bis"]["total"] = 7064.284
-stats["3316bca529c797f031d8c54c14a0f5d3"]["lastJoin"] = 1703339302
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 191332.56100004
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["inAir"] = 7625.281
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["total"] = 17142.692
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["inAir"] = 56126.794
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["total"] = 93959.413999999
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 191342.56100004
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["inAir"] = 7635.281
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["total"] = 17152.692
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["inAir"] = 56136.794
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["total"] = 93969.413999999
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 191352.57600004
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["inAir"] = 7645.296
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["total"] = 17162.707
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["inAir"] = 56146.809
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["total"] = 93979.428999999
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 191362.59100004
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["inAir"] = 7655.311
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["total"] = 17172.722
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["inAir"] = 56156.824
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["total"] = 93989.443999999
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 191372.60600004
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["inAir"] = 7665.326
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["total"] = 17182.737
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["inAir"] = 56166.839
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["total"] = 93999.458999999
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 191382.62000004
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["inAir"] = 7675.34
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["total"] = 17192.751
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["inAir"] = 56176.853
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["total"] = 94009.472999999
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 191392.62000004
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["inAir"] = 7685.34
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["total"] = 17202.751
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["inAir"] = 56186.853
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["total"] = 94019.472999999
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 191402.63500004
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["inAir"] = 7695.355
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["total"] = 17212.766
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["inAir"] = 56196.868
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["total"] = 94029.487999999
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 191412.65000004
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["inAir"] = 7705.37
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["total"] = 17222.781
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["inAir"] = 56206.883
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["total"] = 94039.502999999
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 191422.66500004
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["inAir"] = 7715.385
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["total"] = 17232.796
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["inAir"] = 56216.898
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["total"] = 94049.517999999
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 191432.68000004
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["inAir"] = 7725.4
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["total"] = 17242.811
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["inAir"] = 56226.913
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["total"] = 94059.532999999
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 191442.69500004
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["inAir"] = 7735.415
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["total"] = 17252.826
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["inAir"] = 56236.928
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["total"] = 94069.547999999
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 191452.71000004
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["inAir"] = 7745.43
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["total"] = 17262.841
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["inAir"] = 56246.943
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["total"] = 94079.562999999
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 191462.72400004
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["inAir"] = 7755.444
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["total"] = 17272.855
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["inAir"] = 56256.957
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["total"] = 94089.576999999
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 191472.72400004
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["inAir"] = 7765.444
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["total"] = 17282.855
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["inAir"] = 56266.957
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["total"] = 94099.576999999
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 191482.73300004
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["inAir"] = 7775.453
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["total"] = 17292.864
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["inAir"] = 56276.966
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["total"] = 94109.585999999
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 191492.75400004
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["inAir"] = 7785.474
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["total"] = 17302.885
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["inAir"] = 56286.987
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["total"] = 94119.606999999
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 191502.76900004
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["inAir"] = 7795.489
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["total"] = 17312.9
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["inAir"] = 56297.002
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["total"] = 94129.621999999
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 191512.78400004
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["inAir"] = 7805.504
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["total"] = 17322.915
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["inAir"] = 56307.017
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["total"] = 94139.636999999
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["inAir"] = 122420.109
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 191522.79200004
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["inAir"] = 7815.512
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["total"] = 17332.923
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["inAir"] = 56317.025
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["total"] = 94149.644999999
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["inAir"] = 122430.115
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 191532.79800004
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["inAir"] = 7825.518
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["total"] = 17342.929
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["inAir"] = 56327.031
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["total"] = 94159.650999999
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["inAir"] = 122440.13
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 191542.81300004
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["inAir"] = 7835.533
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["total"] = 17352.944
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["inAir"] = 56337.046
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["total"] = 94169.665999999
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["inAir"] = 122450.145
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 191552.82800004
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["inAir"] = 7845.548
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["total"] = 17362.959
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["inAir"] = 56347.061
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["total"] = 94179.680999999
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["inAir"] = 122460.16
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 191562.84300004
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["inAir"] = 7855.563
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["total"] = 17372.974
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["inAir"] = 56357.076
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["total"] = 94189.695999999
-stats["3316bca529c797f031d8c54c14a0f5d3"]["lastJoin"] = 1703339546
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["inAir"] = 122470.175
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 191572.85800004
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["inAir"] = 7865.578
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["total"] = 17382.989
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["inAir"] = 56367.091
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["total"] = 94199.710999999
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["inAir"] = 122480.189
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 191582.87200004
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["inAir"] = 7875.592
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["total"] = 17393.003
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["inAir"] = 56377.105
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["total"] = 94209.724999999
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["inAir"] = 122490.189
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 191592.87200004
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["inAir"] = 7885.592
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["total"] = 17403.003
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["inAir"] = 56387.105
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["total"] = 94219.724999999
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["inAir"] = 122500.204
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 191602.88700004
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["inAir"] = 7895.607
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["total"] = 17413.018
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["inAir"] = 56397.12
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["total"] = 94229.739999999
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["inAir"] = 122510.219
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 191612.90200004
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["inAir"] = 7905.622
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["total"] = 17423.033
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["inAir"] = 56407.135
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["total"] = 94239.754999999
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["inAir"] = 122520.234
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 191622.91700004
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["inAir"] = 7915.637
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["total"] = 17433.048
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["inAir"] = 56417.15
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["total"] = 94249.769999999
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["inAir"] = 122530.249
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 191632.93200004
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["inAir"] = 7925.652
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["total"] = 17443.063
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["inAir"] = 56427.165
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["total"] = 94259.784999999
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["inAir"] = 122540.264
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 191642.94700004
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["inAir"] = 7935.667
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["total"] = 17453.078
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["inAir"] = 56437.18
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["total"] = 94269.799999999
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["inAir"] = 122550.278
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 191652.96100004
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["inAir"] = 7945.681
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["total"] = 17463.092
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["inAir"] = 56447.194
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["total"] = 94279.813999999
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["inAir"] = 122560.278
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 191662.96100004
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["inAir"] = 7955.681
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["total"] = 17473.092
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["inAir"] = 56457.194
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["total"] = 94289.813999999
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["inAir"] = 122570.293
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 191672.97600004
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["inAir"] = 7965.696
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["total"] = 17483.107
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["inAir"] = 56467.209
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["total"] = 94299.828999999
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["inAir"] = 122580.309
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["times"]["AV8BNA"]["total"] = 191682.99200004
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["inAir"] = 7975.712
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["total"] = 17493.123
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["inAir"] = 56477.225
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["total"] = 94309.844999999
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["lastJoin"] = 1703339663
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["inAir"] = 7985.726
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["total"] = 17503.137
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["inAir"] = 56487.239
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["total"] = 94319.858999999
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["inAir"] = 7995.741
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["total"] = 17513.152
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["inAir"] = 56497.254
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["total"] = 94329.873999999
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["inAir"] = 8005.755
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["total"] = 17523.166
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["inAir"] = 56507.268
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["total"] = 94339.887999999
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["inAir"] = 8015.755
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["total"] = 17533.166
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["inAir"] = 56517.268
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["total"] = 94349.887999999
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["inAir"] = 8025.755
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["total"] = 17543.166
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["inAir"] = 56527.268
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["total"] = 94359.887999999
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["inAir"] = 8035.769
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["total"] = 17553.18
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["inAir"] = 56537.282
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["total"] = 94369.901999999
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["inAir"] = 8045.769
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["total"] = 17563.18
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["inAir"] = 56547.282
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["total"] = 94379.901999999
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["inAir"] = 8055.784
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["total"] = 17573.195
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["inAir"] = 56557.297
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["total"] = 94389.916999999
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["inAir"] = 8065.798
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["total"] = 17583.209
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["inAir"] = 56567.311
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["total"] = 94399.930999999
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["inAir"] = 8075.798
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["total"] = 17593.209
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["inAir"] = 56577.311
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["total"] = 94409.930999999
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["inAir"] = 8085.813
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["total"] = 17603.224
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["inAir"] = 56587.326
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["total"] = 94419.945999999
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["inAir"] = 8095.827
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["total"] = 17613.238
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["inAir"] = 56597.34
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["total"] = 94429.959999999
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["inAir"] = 8105.827
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["total"] = 17623.238
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["inAir"] = 56607.34
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["total"] = 94439.959999999
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["inAir"] = 8115.842
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["total"] = 17633.253
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["inAir"] = 56617.355
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["total"] = 94449.974999999
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["inAir"] = 8125.85
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["total"] = 17643.261
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["inAir"] = 56627.363
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["total"] = 94459.982999999
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["inAir"] = 8135.856
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["total"] = 17653.267
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["inAir"] = 56637.369
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["total"] = 94469.988999999
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["inAir"] = 8145.871
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["total"] = 17663.282
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["inAir"] = 56647.384
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["total"] = 94480.003999999
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["inAir"] = 8155.879
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["total"] = 17673.29
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["inAir"] = 56657.392
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["total"] = 94490.011999999
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["inAir"] = 8165.885
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["total"] = 17683.296
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["inAir"] = 56667.398
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["total"] = 94500.017999999
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["inAir"] = 8175.885
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["total"] = 17693.296
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["inAir"] = 56677.398
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["total"] = 94510.017999999
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["inAir"] = 8185.9
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["total"] = 17703.311
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["inAir"] = 56687.413
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["total"] = 94520.032999999
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["inAir"] = 8195.915
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["total"] = 17713.326
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["inAir"] = 56697.428
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["total"] = 94530.047999999
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["inAir"] = 8205.929
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["total"] = 17723.34
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["inAir"] = 56707.442
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["total"] = 94540.061999999
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["inAir"] = 8215.929
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["total"] = 17733.34
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["inAir"] = 56717.442
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["total"] = 94550.061999999
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["inAir"] = 8225.944
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["total"] = 17743.355
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["inAir"] = 56727.457
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["total"] = 94560.076999999
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["inAir"] = 8235.959
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["total"] = 17753.37
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["inAir"] = 56737.472
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["total"] = 94570.091999999
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["inAir"] = 8245.974
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["total"] = 17763.385
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["inAir"] = 56747.487
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["total"] = 94580.106999999
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["inAir"] = 8255.989
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["total"] = 17773.4
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["inAir"] = 56757.502
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["total"] = 94590.121999999
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["inAir"] = 8266.003
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["total"] = 17783.414
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["inAir"] = 56767.516
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["total"] = 94600.135999999
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["inAir"] = 8276.003
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["total"] = 17793.414
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["inAir"] = 56777.516
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["total"] = 94610.135999999
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["inAir"] = 8286.018
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["total"] = 17803.429
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["inAir"] = 56787.531
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["total"] = 94620.150999999
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["inAir"] = 8296.033
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["total"] = 17813.444
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["inAir"] = 56797.546
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["total"] = 94630.165999999
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["inAir"] = 8306.048
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["total"] = 17823.459
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["inAir"] = 56807.561
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["total"] = 94640.180999999
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["inAir"] = 8316.063
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["total"] = 17833.474
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["inAir"] = 56817.576
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["total"] = 94650.195999999
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["inAir"] = 8326.077
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["total"] = 17843.488
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["inAir"] = 56827.59
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["total"] = 94660.209999999
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["inAir"] = 8336.077
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["total"] = 17853.488
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["inAir"] = 56837.59
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["total"] = 94670.209999999
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["inAir"] = 8346.077
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["total"] = 17863.488
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["inAir"] = 56847.59
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["total"] = 94680.209999999
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["inAir"] = 8356.091
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["total"] = 17873.502
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["inAir"] = 56857.604
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["total"] = 94690.223999999
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["inAir"] = 8366.106
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["total"] = 17883.517
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["inAir"] = 56867.619
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["total"] = 94700.238999999
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["inAir"] = 8376.121
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["total"] = 17893.532
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["inAir"] = 56877.634
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["total"] = 94710.253999999
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["inAir"] = 8386.136
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["total"] = 17903.547
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["inAir"] = 56887.649
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["total"] = 94720.268999999
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["inAir"] = 8396.151
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["total"] = 17913.562
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["inAir"] = 56897.664
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["total"] = 94730.283999999
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["inAir"] = 8406.166
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["total"] = 17923.577
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["inAir"] = 56907.679
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["total"] = 94740.298999999
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["inAir"] = 8416.181
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["total"] = 17933.592
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["inAir"] = 56917.694
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["total"] = 94750.313999999
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["inAir"] = 8426.196
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["total"] = 17943.607
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["inAir"] = 56927.709
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["total"] = 94760.328999999
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["inAir"] = 8436.21
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["total"] = 17953.621
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["inAir"] = 56937.723
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["total"] = 94770.342999999
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["inAir"] = 8446.21
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["total"] = 17963.621
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["inAir"] = 56947.723
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["total"] = 94780.342999999
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["inAir"] = 8456.225
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["total"] = 17973.636
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["inAir"] = 56957.738
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["total"] = 94790.357999999
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["inAir"] = 8466.24
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["total"] = 17983.651
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["inAir"] = 56967.753
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["total"] = 94800.372999999
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["inAir"] = 8476.255
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["total"] = 17993.666
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["inAir"] = 56977.768
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["total"] = 94810.387999999
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["inAir"] = 8486.27
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["total"] = 18003.681
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["inAir"] = 56987.783
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["total"] = 94820.402999999
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["inAir"] = 8496.285
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["total"] = 18013.696
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["inAir"] = 56997.798
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["total"] = 94830.417999999
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["inAir"] = 8506.299
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["total"] = 18023.71
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["inAir"] = 57007.812
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["total"] = 94840.431999999
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["inAir"] = 8516.299
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["total"] = 18033.71
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["inAir"] = 57017.812
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["total"] = 94850.431999999
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["inAir"] = 8526.314
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["total"] = 18043.725
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["inAir"] = 57027.827
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["total"] = 94860.446999999
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["inAir"] = 8536.329
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["total"] = 18053.74
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["inAir"] = 57037.842
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["total"] = 94870.461999999
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["inAir"] = 8546.344
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["total"] = 18063.755
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["inAir"] = 57047.857
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["total"] = 94880.476999999
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["inAir"] = 8556.359
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["total"] = 18073.77
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["inAir"] = 57057.872
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["total"] = 94890.491999999
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["inAir"] = 8566.359
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["total"] = 18083.77
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["inAir"] = 57067.872
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["total"] = 94900.491999999
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["inAir"] = 8576.373
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["total"] = 18093.784
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["inAir"] = 57077.886
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["total"] = 94910.505999999
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["inAir"] = 8586.388
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["total"] = 18103.799
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["inAir"] = 57087.901
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["total"] = 94920.520999999
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["inAir"] = 8596.403
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["total"] = 18113.814
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["inAir"] = 57097.916
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["total"] = 94930.535999999
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["inAir"] = 8606.418
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["total"] = 18123.829
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["inAir"] = 57107.931
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["total"] = 94940.550999999
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["inAir"] = 8616.432
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["total"] = 18133.843
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["inAir"] = 57117.945
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["total"] = 94950.564999999
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["inAir"] = 8626.432
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["total"] = 18143.843
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["inAir"] = 57127.945
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["total"] = 94960.564999999
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["inAir"] = 8636.432
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["total"] = 18153.843
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["inAir"] = 57137.945
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["total"] = 94970.564999999
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["inAir"] = 8646.446
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["total"] = 18163.857
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["inAir"] = 57147.959
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["total"] = 94980.578999999
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["inAir"] = 8656.461
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["total"] = 18173.872
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["inAir"] = 57157.974
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["total"] = 94990.593999999
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["inAir"] = 8666.461
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["total"] = 18183.872
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["inAir"] = 57167.974
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["total"] = 95000.593999999
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["inAir"] = 8676.475
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["total"] = 18193.886
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["inAir"] = 57177.988
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["total"] = 95010.607999999
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["inAir"] = 8686.475
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["total"] = 18203.886
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["inAir"] = 57187.988
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["total"] = 95020.607999999
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["total"] = 18213.901
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["inAir"] = 57198.003
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["total"] = 95030.622999999
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["total"] = 18223.916
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["inAir"] = 57208.018
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["total"] = 95040.637999999
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["total"] = 18233.93
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["inAir"] = 57218.032
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["total"] = 95050.651999999
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["total"] = 18243.945
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["inAir"] = 57228.047
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["total"] = 95060.666999999
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["total"] = 18253.945
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["inAir"] = 57238.047
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["total"] = 95070.666999999
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["total"] = 18263.96
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["inAir"] = 57248.062
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["total"] = 95080.681999999
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["total"] = 18273.975
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["inAir"] = 57258.077
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["total"] = 95090.696999999
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["total"] = 18283.99
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["inAir"] = 57268.092
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["total"] = 95100.711999999
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["total"] = 18294.004
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["inAir"] = 57278.106
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["total"] = 95110.725999999
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["total"] = 18304.004
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["inAir"] = 57288.106
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["total"] = 95120.725999999
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["total"] = 18314.019
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["inAir"] = 57298.121
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["total"] = 95130.740999999
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["total"] = 18324.034
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["inAir"] = 57308.136
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["total"] = 95140.755999999
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["total"] = 18334.049
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["inAir"] = 57318.151
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["total"] = 95150.770999999
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["total"] = 18344.064
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["inAir"] = 57328.166
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["total"] = 95160.785999999
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["total"] = 18354.079
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["inAir"] = 57338.181
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["total"] = 95170.800999999
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["total"] = 18364.093
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["inAir"] = 57348.195
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["total"] = 95180.814999999
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["total"] = 18374.093
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["inAir"] = 57358.195
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["total"] = 95190.814999999
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["total"] = 18384.108
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["inAir"] = 57368.21
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["total"] = 95200.829999999
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["total"] = 18394.123
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["total"] = 95210.844999999
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["total"] = 18404.138
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["total"] = 95220.859999999
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["times"]["F-5E-3"]["total"] = 18414.153
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["total"] = 95230.874999999
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["lastJoin"] = 1703340584
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["total"] = 95240.888999999
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["total"] = 95250.888999999
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["total"] = 95260.903999999
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["total"] = 95270.918999999
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["total"] = 95280.933999999
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["total"] = 95290.948999999
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["total"] = 95300.962999999
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["total"] = 95310.962999999
-stats["880046c63693ceeee0727f5e56209ae4"]["times"]["F-14A-135-GR"]["total"] = 95320.977999999
-stats["880046c63693ceeee0727f5e56209ae4"]["lastJoin"] = 1703340681
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["lastJoin"] = 1703459490
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 46460.073
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 46470.088
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 46480.103
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["lastJoin"] = 1703459559
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 46490.108
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 46500.122
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 46510.136
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 46520.136
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 46530.136
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 46540.15
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 46550.165
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 46560.18
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 46570.18
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 46580.195
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 46590.209
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 46600.224
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 46610.227
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 46620.232
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 46630.273
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 46640.274
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 46650.286
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 46660.301
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 46670.304
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 46680.319
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 46690.334
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 46700.348
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 46710.348
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 46720.363
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 46730.378
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 46740.393
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 46750.408
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 46760.422
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 46770.422
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 46780.437
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 46790.452
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 46800.467
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 46810.482
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 46820.489
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 46830.496
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 46840.511
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 46850.52
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 30610.128
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 46860.525
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 30620.143
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 46870.54
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 30630.151
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 46880.548
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 30640.165
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 46890.562
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 30650.174
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 46900.571
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 30660.18
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 46910.577
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 30670.181
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 46920.578
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 30680.192
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 46930.589
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 30690.207
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 46940.604
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 30700.221
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 46950.618
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 30710.223
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 46960.62
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 30720.23
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 46970.627
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 30730.23
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 46980.627
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 30740.23
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 46990.627
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 30750.238
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 47000.635
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 30760.24
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 47010.637
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 30770.244
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 47020.641
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 30780.245
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 47030.642
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 30790.25
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 47040.647
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 30800.257
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 47050.654
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 30810.263
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 47060.66
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 30820.263
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 47070.66
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 30830.278
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 47080.675
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 30840.293
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 47090.69
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 30850.308
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 47100.705
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 30860.322
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 47110.719
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 30870.322
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 47120.719
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 30880.337
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 47130.734
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 30890.352
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 47140.749
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 30900.367
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 47150.764
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 30910.382
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 47160.779
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 30920.397
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 47170.794
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 30930.412
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 47180.809
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 30940.426
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 47190.823
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 30950.426
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 47200.823
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 30960.441
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 47210.838
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 30970.441
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 47220.838
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 30980.455
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 47230.852
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 30990.467
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 47240.864
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 31000.482
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 47250.879
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 31010.497
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 47260.894
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 31020.512
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 47270.909
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 31030.527
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 47280.924
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 31040.535
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 47290.932
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 31050.538
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 47300.935
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 31060.54
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 47310.937
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 31070.545
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 47320.942
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 31080.553
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 47330.95
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 31090.556
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 47340.953
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 31100.562
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 47350.959
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 31110.569
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 47360.966
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 31120.584
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 47370.981
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 31130.598
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 47380.995
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 31140.598
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 47390.995
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 31150.613
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 47401.01
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 31160.628
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 47411.025
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 31170.631
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 47421.028
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 31180.634
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 47431.031
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 31190.634
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 47441.031
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 31200.636
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 47451.033
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 31210.642
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 47461.039
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 31220.65
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 47471.047
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 31230.653
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 47481.05
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 31240.666
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 47491.063
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 31250.681
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 47501.078
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 31260.686
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 47511.083
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 31270.701
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 47521.098
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 31280.716
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 47531.113
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 31290.731
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 47541.128
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 31300.746
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 47551.143
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 31310.76
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 47561.157
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 31320.76
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 47571.157
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 31330.775
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 47581.172
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 31340.79
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 47591.187
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 31350.805
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 47601.202
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 31360.805
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 47611.202
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 31370.814
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 47621.211
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 31380.834
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 47631.231
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 31390.849
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 47641.246
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 31400.857
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 47651.254
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 31410.863
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 47661.26
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 31420.878
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 47671.275
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 31430.893
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 47681.29
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 31440.898
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 47691.295
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 31450.913
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 47701.31
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 31460.928
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 47711.325
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 31470.943
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 47721.34
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 31480.948
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 47731.345
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 31490.959
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 47741.356
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 31500.966
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 47751.363
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 31510.977
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 47761.374
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 31521.131
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 47771.528
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 31531.138
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 47781.535
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 31541.149
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 47791.546
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 31551.158
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 47801.555
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 31561.168
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 47811.565
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 31571.175
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 47821.572
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 31581.175
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 47831.572
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 31591.176
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 47841.573
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 31601.178
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 47851.575
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 31611.185
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 47861.582
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 31621.19
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 47871.587
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 31631.202
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 47881.599
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 31641.207
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 47891.604
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 31651.207
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 47901.604
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 31661.207
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 47911.604
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 31671.216
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 47921.613
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 31681.228
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 47931.625
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 47941.631
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 47951.633
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 47961.636
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 47971.641
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 47981.651
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 47991.666
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 48001.674
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 48011.68
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 48021.69
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 48031.694
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 48041.694
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 48051.709
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 48061.724
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 48071.731
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 48081.738
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 48091.741
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 48101.741
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 48111.756
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 48121.77
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 48131.77
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 31691.243
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 48141.785
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 31701.258
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 48151.8
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 31711.273
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 48161.815
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 31721.288
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 48171.83
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 31731.289
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 48181.831
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 31741.292
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 48191.834
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 31751.297
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 48201.839
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 31761.302
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 48211.844
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 31771.303
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 48221.845
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 31781.31
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 48231.852
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 31791.316
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 48241.858
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 31801.317
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 48251.859
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 31811.321
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 48261.863
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 31821.323
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 48271.865
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 31831.334
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 48281.876
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 31841.337
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 48291.879
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 31851.337
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 48301.879
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 31861.352
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 48311.894
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 31871.352
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 48321.894
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 31881.366
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 48331.908
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 31891.373
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 48341.915
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 31901.374
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 48351.916
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 31911.382
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 48361.924
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 31921.39
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 48371.932
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 31931.39
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 48381.932
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 31941.401
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 48391.943
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 31951.414
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 48401.956
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 31961.491
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 48412.033
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 31971.499
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 48422.041
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 31981.504
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 48432.046
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 31991.509
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 48442.051
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 32001.516
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 48452.058
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 32011.529
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 48462.071
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 32021.537
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 48472.079
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 32031.538
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 48482.08
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 32041.542
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 48492.084
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 32051.548
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 48502.09
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 32061.561
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 48512.103
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 32071.576
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 48522.118
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 32081.584
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 48532.126
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 32091.593
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 48542.135
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 32101.593
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 48552.135
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 32111.597
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 48562.139
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 32121.608
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 48572.15
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 32131.623
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 48582.165
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 32141.631
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 48592.173
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 32151.638
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 48602.18
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 32161.652
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 48612.194
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 32171.66
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 48622.202
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 32181.667
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 48632.209
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 32191.667
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 48642.209
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 32201.675
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 48652.217
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 32211.68
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 48662.222
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 32221.754
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 48672.296
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 32231.756
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 48682.298
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 32241.907
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 48692.449
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 32251.907
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 48702.449
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 32261.912
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 48712.454
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 32271.927
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 48722.469
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 32281.933
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 48732.475
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 32291.935
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 48742.477
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 32301.95
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 48752.492
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 32311.952
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 48762.494
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 32321.953
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 48772.495
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 32331.953
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 48782.495
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 32341.959
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 48792.501
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 32351.962
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 48802.504
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 32361.966
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 48812.508
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 32371.982
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 48822.524
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 32381.997
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 48832.539
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 32392.001
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 48842.543
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 32402.007
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 48852.549
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 32412.012
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 48862.554
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 32422.029
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 48872.571
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 32432.029
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 48882.571
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 32442.03
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 48892.572
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 32452.035
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 48902.577
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 32462.037
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 48912.579
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 32472.043
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 48922.585
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 32482.048
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 48932.59
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 32492.053
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 48942.595
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 32502.059
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 48952.601
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 32512.065
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 48962.607
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 32522.067
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 48972.609
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 32532.07
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 48982.612
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 32542.085
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 48992.627
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 32552.09
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 49002.632
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 32562.092
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 49012.634
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 32572.106
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 49022.648
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 32582.11
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 49032.652
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 32592.111
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 49042.653
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 32602.125
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 49052.667
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 32612.13
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 49062.672
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 32622.133
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 49072.675
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 32632.137
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 49082.679
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 32642.141
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 49092.683
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 32652.146
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 49102.688
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 32662.149
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 49112.691
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 32672.151
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 49122.693
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 32682.155
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 49132.697
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 32692.17
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 49142.712
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 32702.175
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 49152.717
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 32712.178
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 49162.72
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 32722.178
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 49172.72
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 32732.192
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 49182.734
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 32742.195
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 49192.737
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 32752.209
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 49202.751
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 32762.216
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 49212.758
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 32772.222
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 49222.764
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 32782.222
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 49232.764
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["inAir"] = 32792.237
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 49242.779
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 49252.785
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 49262.793
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["times"]["AV8BNA"]["total"] = 49272.795
-stats["d4dfacf7d87e9a24c1f705bb886ab0dd"]["lastJoin"] = 1703462355
