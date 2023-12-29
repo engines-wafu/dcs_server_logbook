@@ -45,7 +45,6 @@ return {
 	{id = "7a42b9d3472eea06d42ba54ed7f4c4a9", name = "Flynn", rank = "Plt Off", service = "RAF"},	
 	{id = "2d4687a1e8563df17d6e7ba5abb0aeeb", name = "Jethro", rank = "Plt Off", service = "RAF"},
 	{id = "abcd66987f65616ec5f5cfecb18f7c16", name = "MajorBloodnok", rank = "Plt Off", service = "RAF"},
-	{id = "63620908d21196f4a0fc3d1229e8f80a", name = "NightGarter", rank = "Plt Off", service = "RAF"},
 	{id = "f94e59d80a9b9da02ff078db283f6b75", name = "Yuri", rank = "Plt Off", service = "RAF"},
     -- SO5
     {id = "803abf3c05cfa1b2eb7eaf194303b0ef", name = "Action Hero", rank = "2Lt", service = "AAC"},

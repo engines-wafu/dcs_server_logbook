@@ -91,7 +91,7 @@ return {
 			"dacaba8cb4b14d78ed84e897ed653eb3", -- Varry
 			"a7eed3e754fa61f3546530559dc87e18", -- Venom
 			"30f30ebc24983a7a35d59d2ee6034513", -- Yank
-			"269afd7b2f4120a1580230699c6741d3", -- Monkey"			
+			"269afd7b2f4120a1580230699c6741d3", -- Monkey		
         }
     },
     {
@@ -116,7 +116,6 @@ return {
 			"7a42b9d3472eea06d42ba54ed7f4c4a9", -- Flynn
 			"2d4687a1e8563df17d6e7ba5abb0aeeb", -- Jethro
 			"abcd66987f65616ec5f5cfecb18f7c16", -- MajorBloodnok
-			"63620908d21196f4a0fc3d1229e8f80a", -- NightGarter
 			"f94e59d80a9b9da02ff078db283f6b75", -- Yuri
         }
     },    
@@ -164,7 +163,7 @@ return {
             "366f6f18abaafd5dc38ca634655f462f", -- Puddles
             "a450226ca342ba4235e5734f73989e9e", -- Jxckmc
             "7248624f73137d934947745d6379c93a", -- Spectre
-			"269afd7b2f4120a1580230699c6741d3", -- Monkey"
+			"269afd7b2f4120a1580230699c6741d3", -- Monkey
 			"2d65ee9349e5cd50088b83a75a26c53d", -- Ripper66
 			"0ed16e2fab622be7be70038750d3f3bf", -- Fisher
 			"34c71ada8848ff2a30d8f2631cdaf664", -- Houseman
