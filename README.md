@@ -120,6 +120,21 @@ We welcome contributions to enhance the DCS Server Logbook:
 3. Commit and push your changes.
 4. Submit a pull request to the main repository.
 
+### `db_parsing` Branch
+
+The goal here is to parse data directly to a SQLite DB for easy interaction with a future discord integration.
+
+Goals:
+
+1. Design the database scheme
+2. Setup the database management system (SQLite)
+3. Migrate lua data to database from flat files
+4. Develop CRUD (create, read, update, and delete) functions
+
+### `discord_bot` Branch
+
+This branch will develop the discord integration to implement the `db_parsing` features.
+
 ## License
 
 This project is licensed under the GNU General Public License (GPL). For more information, please refer to the [LICENSE](LICENSE) file in the repository.
