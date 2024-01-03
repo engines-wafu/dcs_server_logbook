@@ -65,6 +65,7 @@ return {
         co = "88dae793ecd2d2ed030fbd6bca2297f7", -- Gimbal
         pilots = {
             "88dae793ecd2d2ed030fbd6bca2297f7", -- Gimbal
+			"813759da956084866e9e72540e544b68", -- Razor
 			"e473f6817732c53fd33b3b5b923bb3b8", -- Dangerman			
 			"02decd2d485c2c35a8e817dc751951d5", -- Buck
 			"339df0e69cc97e60f2befbcfbdcfcee2", -- Bogus	
