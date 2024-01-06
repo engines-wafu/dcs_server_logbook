@@ -1,0 +1,88 @@
+2024-01-06 12:45:33,737 - INFO - Running merge.lua script
+2024-01-06 12:45:33,745 - ERROR - No data returned from Lua script
+2024-01-06 12:45:35,996 - INFO - Running merge.lua script
+2024-01-06 12:45:36,004 - ERROR - No data returned from Lua script
+2024-01-06 12:50:16,719 - INFO - Running merge.lua script
+2024-01-06 12:50:16,732 - ERROR - Error running Lua script: lua: src/lua/merge.lua:3: module 'dkjson' not found:
+	no field package.preload['dkjson']
+	no file '.\dkjson.lua'
+	no file 'C:\Program Files (x86)\Lua\5.1\lua\dkjson.lua'
+	no file 'C:\Program Files (x86)\Lua\5.1\lua\dkjson\init.lua'
+	no file 'C:\Program Files (x86)\Lua\5.1\dkjson.lua'
+	no file 'C:\Program Files (x86)\Lua\5.1\dkjson\init.lua'
+	no file 'C:\Program Files (x86)\Lua\5.1\lua\dkjson.luac'
+	no file '.\dkjson.dll'
+	no file 'C:\Program Files (x86)\Lua\5.1\dkjson.dll'
+	no file 'C:\Program Files (x86)\Lua\5.1\loadall.dll'
+	no file 'C:\Program Files (x86)\Lua\5.1\clibs\dkjson.dll'
+	no file 'C:\Program Files (x86)\Lua\5.1\clibs\loadall.dll'
+	no file '.\dkjson51.dll'
+	no file 'C:\Program Files (x86)\Lua\5.1\dkjson51.dll'
+	no file 'C:\Program Files (x86)\Lua\5.1\clibs\dkjson51.dll'
+stack traceback:
+	[C]: in function 'require'
+	src/lua/merge.lua:3: in main chunk
+	[C]: ?
+
+2024-01-06 12:50:16,734 - ERROR - No data returned from Lua script
+2024-01-06 12:51:06,597 - INFO - Running merge.lua script
+2024-01-06 12:51:06,605 - ERROR - Error running Lua script: lua: src/lua/merge.lua:3: module 'dkjson' not found:
+	no field package.preload['dkjson']
+	no file '.\dkjson.lua'
+	no file 'C:\Program Files (x86)\Lua\5.1\lua\dkjson.lua'
+	no file 'C:\Program Files (x86)\Lua\5.1\lua\dkjson\init.lua'
+	no file 'C:\Program Files (x86)\Lua\5.1\dkjson.lua'
+	no file 'C:\Program Files (x86)\Lua\5.1\dkjson\init.lua'
+	no file 'C:\Program Files (x86)\Lua\5.1\lua\dkjson.luac'
+	no file '.\dkjson.dll'
+	no file 'C:\Program Files (x86)\Lua\5.1\dkjson.dll'
+	no file 'C:\Program Files (x86)\Lua\5.1\loadall.dll'
+	no file 'C:\Program Files (x86)\Lua\5.1\clibs\dkjson.dll'
+	no file 'C:\Program Files (x86)\Lua\5.1\clibs\loadall.dll'
+	no file '.\dkjson51.dll'
+	no file 'C:\Program Files (x86)\Lua\5.1\dkjson51.dll'
+	no file 'C:\Program Files (x86)\Lua\5.1\clibs\dkjson51.dll'
+stack traceback:
+	[C]: in function 'require'
+	src/lua/merge.lua:3: in main chunk
+	[C]: ?
+
+2024-01-06 12:51:06,606 - ERROR - No data returned from Lua script
+2024-01-06 12:52:10,220 - INFO - Running merge.lua script
+2024-01-06 12:52:10,228 - ERROR - No data returned from Lua script
+2024-01-06 12:55:34,835 - INFO - Running merge.lua script
+2024-01-06 12:55:34,849 - ERROR - Error running Lua script: lua: src/lua/merge.lua:24: Error loading file: cannot open data/SlmodStats_server1.lua: No such file or directory
+stack traceback:
+	[C]: in function 'error'
+	src/lua/merge.lua:24: in function <src/lua/merge.lua:6>
+	(tail call): ?
+	src/lua/merge.lua:94: in main chunk
+	[C]: ?
+
+2024-01-06 12:55:34,849 - ERROR - No data returned from Lua script
+2024-01-06 12:56:03,414 - INFO - Running merge.lua script
+2024-01-06 12:56:03,459 - INFO - Processing combined data
+2024-01-06 12:56:06,702 - INFO - Running merge.lua script
+2024-01-06 12:56:06,741 - INFO - Processing combined data
+2024-01-06 12:58:21,446 - INFO - Running merge.lua script
+2024-01-06 12:58:21,490 - ERROR - Error running Lua script: lua: src/lua/merge.lua:82: bad argument #1 to 'open' (string expected, got nil)
+stack traceback:
+	[C]: in function 'open'
+	src/lua/merge.lua:82: in function 'writeStatsToJSON'
+	src/lua/merge.lua:109: in main chunk
+	[C]: ?
+
+2024-01-06 12:58:21,490 - ERROR - No data returned from Lua script
+2024-01-06 12:59:01,642 - INFO - Running merge.lua script
+2024-01-06 12:59:01,689 - INFO - Processing combined data
+2024-01-06 12:59:01,689 - ERROR - Error parsing JSON data: Expecting value: line 1 column 1 (char 0)
+2024-01-06 12:59:17,004 - INFO - Running merge.lua script
+2024-01-06 12:59:17,045 - INFO - Processing combined data
+2024-01-06 12:59:17,045 - ERROR - Error parsing JSON data: Expecting value: line 1 column 1 (char 0)
+2024-01-06 13:02:42,300 - INFO - Running merge.lua script
+2024-01-06 13:02:42,340 - INFO - Processing combined data
+2024-01-06 13:02:44,950 - INFO - Running merge.lua script
+2024-01-06 13:02:44,989 - INFO - Processing combined data
+2024-01-06 13:06:48,803 - INFO - Running merge.lua script
+2024-01-06 13:06:48,843 - INFO - Processing combined data
+2024-01-06 13:06:48,843 - ERROR - Error parsing JSON data: Expecting value: line 1 column 1 (char 0)
