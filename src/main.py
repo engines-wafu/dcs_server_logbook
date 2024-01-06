@@ -28,6 +28,21 @@ def process_combined_data(combined_data_json):
     except json.JSONDecodeError as e:
         logging.error(f"Error parsing JSON data: {e}")
 
+def process_combined_data(combined_data_json):
+    if not combined_data_json:
+        print("No data received from the Lua script.")
+        return
+
+    try:
+        combined_data = json.loads(combined_data_json)
+        # Process combined data...
+        # Placeholder for processing logic
+    except json.JSONDecodeError as e:
+        print("Error parsing JSON data:", e)
+        print("Received data:", combined_data_json)
+
+# In main function, call process_combined_data after running Lua script
+
 def main():
     lua_script_path = 'src/lua/merge.lua'
     stats_files = [
@@ -44,6 +59,9 @@ def main():
         process_combined_data(combined_data_json)
     else:
         logging.error("No data returned from Lua script")
+    
+    combined_data_json = 'data/stats/combined_data.json'
+    process_combined_data(combined_data_json)
 
 if __name__ == "__main__":
     main()
