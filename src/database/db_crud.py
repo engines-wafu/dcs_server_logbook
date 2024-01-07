@@ -6,6 +6,27 @@ log_filename = f"data/logs/database.log"
 logging.basicConfig(filename=log_filename, level=logging.DEBUG, 
                     format='%(asctime)s - %(levelname)s - %(message)s')
 
+def get_squadron_ids(db_path):
+    """
+    Retrieves a list of all squadron IDs from the database.
+
+    :param db_path: Path to the SQLite database file.
+    :return: A list of squadron IDs.
+    """
+    conn = sqlite3.connect(db_path)
+    cursor = conn.cursor()
+
+    try:
+        cursor.execute("SELECT squadron_id FROM Squadrons")
+        squadrons = cursor.fetchall()
+        # Extracting squadron_id from each tuple in the list
+        return [squadron[0] for squadron in squadrons]
+    except Exception as e:
+        print(f"An error occurred: {e}")
+        return []
+    finally:
+        conn.close()
+
 def add_squadron(db_path, squadron_id, squadron_motto, squadron_service, squadron_commission_date, squadron_commanding_officer, squadron_aircraft_type, squadron_pseudo_type):
     """
     Adds a new squadron to the database.

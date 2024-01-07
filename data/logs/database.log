@@ -251,3 +251,173 @@
 2024-01-06 21:57:04,618 - INFO - Processing combined data
 2024-01-06 21:57:04,633 - INFO - Created index.html output
 2024-01-06 21:57:04,633 - INFO - Generating pilot pages
+2024-01-06 22:00:18,162 - INFO - Running merge.lua script
+2024-01-06 22:00:18,162 - INFO - Processing combined data
+2024-01-06 22:00:18,171 - INFO - Created index.html output
+2024-01-06 22:00:18,171 - INFO - Generating pilot pages
+2024-01-06 22:31:24,474 - WARNING - PyNaCl is not installed, voice will NOT be supported
+2024-01-06 22:31:24,474 - DEBUG - Using proactor: IocpProactor
+2024-01-06 22:31:24,475 - WARNING - Privileged message content intent is missing, commands may not work as expected.
+2024-01-06 22:31:24,475 - INFO - logging in using static token
+2024-01-06 22:31:25,240 - INFO - Shard ID None has connected to Gateway (Session ID: 72db5f6359112813a5b05f1d32cda786).
+2024-01-06 22:34:41,958 - WARNING - PyNaCl is not installed, voice will NOT be supported
+2024-01-06 22:34:41,958 - DEBUG - Using proactor: IocpProactor
+2024-01-06 22:34:41,958 - WARNING - Privileged message content intent is missing, commands may not work as expected.
+2024-01-06 22:34:41,958 - INFO - logging in using static token
+2024-01-06 22:34:42,785 - INFO - Shard ID None has connected to Gateway (Session ID: 9a2987495e1671340b758b3027972e2c).
+2024-01-06 22:35:12,723 - WARNING - PyNaCl is not installed, voice will NOT be supported
+2024-01-06 22:35:12,723 - DEBUG - Using proactor: IocpProactor
+2024-01-06 22:35:12,723 - WARNING - Privileged message content intent is missing, commands may not work as expected.
+2024-01-06 22:35:12,723 - INFO - logging in using static token
+2024-01-06 22:35:13,554 - INFO - Shard ID None has connected to Gateway (Session ID: 202676dec277ff44d971739d14b895b9).
+2024-01-06 22:37:06,656 - WARNING - PyNaCl is not installed, voice will NOT be supported
+2024-01-06 22:37:06,657 - DEBUG - Using proactor: IocpProactor
+2024-01-06 22:37:06,657 - WARNING - Privileged message content intent is missing, commands may not work as expected.
+2024-01-06 22:37:06,658 - INFO - logging in using static token
+2024-01-06 22:37:07,520 - INFO - Shard ID None has connected to Gateway (Session ID: 7cbe37d76e7974e450320991059b941c).
+2024-01-06 22:39:11,488 - WARNING - PyNaCl is not installed, voice will NOT be supported
+2024-01-06 22:39:11,488 - DEBUG - Using proactor: IocpProactor
+2024-01-06 22:39:11,489 - INFO - logging in using static token
+2024-01-06 22:39:12,259 - INFO - Shard ID None has connected to Gateway (Session ID: 828727e8ade225a885bc5fdb0b2ea2e5).
+2024-01-06 22:39:22,575 - INFO - Assigning pilot: mailman
+2024-01-06 22:39:22,575 - ERROR - Ignoring exception in command assign_pilot
+Traceback (most recent call last):
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\discord\ext\commands\core.py", line 235, in wrapped
+    ret = await coro(*args, **kwargs)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\src\bot.py", line 16, in assign_pilot
+    pilot_id = find_pilot_id_by_name(pilot_name)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: find_pilot_id_by_name() missing 1 required positional argument: 'pilot_name'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\discord\ext\commands\bot.py", line 1350, in invoke
+    await ctx.command.invoke(ctx)
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\discord\ext\commands\core.py", line 1029, in invoke
+    await injected(*ctx.args, **ctx.kwargs)  # type: ignore
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\discord\ext\commands\core.py", line 244, in wrapped
+    raise CommandInvokeError(exc) from exc
+discord.ext.commands.errors.CommandInvokeError: Command raised an exception: TypeError: find_pilot_id_by_name() missing 1 required positional argument: 'pilot_name'
+2024-01-06 22:40:48,146 - INFO - Assigning pilot: Mailman
+2024-01-06 22:40:48,146 - ERROR - Ignoring exception in command assign_pilot
+Traceback (most recent call last):
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\discord\ext\commands\core.py", line 235, in wrapped
+    ret = await coro(*args, **kwargs)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\src\bot.py", line 16, in assign_pilot
+    pilot_id = find_pilot_id_by_name(pilot_name)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: find_pilot_id_by_name() missing 1 required positional argument: 'pilot_name'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\discord\ext\commands\bot.py", line 1350, in invoke
+    await ctx.command.invoke(ctx)
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\discord\ext\commands\core.py", line 1029, in invoke
+    await injected(*ctx.args, **ctx.kwargs)  # type: ignore
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\discord\ext\commands\core.py", line 244, in wrapped
+    raise CommandInvokeError(exc) from exc
+discord.ext.commands.errors.CommandInvokeError: Command raised an exception: TypeError: find_pilot_id_by_name() missing 1 required positional argument: 'pilot_name'
+2024-01-06 22:40:59,165 - INFO - Assigning pilot: Engines
+2024-01-06 22:40:59,165 - ERROR - Ignoring exception in command assign_pilot
+Traceback (most recent call last):
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\discord\ext\commands\core.py", line 235, in wrapped
+    ret = await coro(*args, **kwargs)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\src\bot.py", line 16, in assign_pilot
+    pilot_id = find_pilot_id_by_name(pilot_name)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: find_pilot_id_by_name() missing 1 required positional argument: 'pilot_name'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\discord\ext\commands\bot.py", line 1350, in invoke
+    await ctx.command.invoke(ctx)
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\discord\ext\commands\core.py", line 1029, in invoke
+    await injected(*ctx.args, **ctx.kwargs)  # type: ignore
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\discord\ext\commands\core.py", line 244, in wrapped
+    raise CommandInvokeError(exc) from exc
+discord.ext.commands.errors.CommandInvokeError: Command raised an exception: TypeError: find_pilot_id_by_name() missing 1 required positional argument: 'pilot_name'
+2024-01-06 22:41:45,367 - WARNING - PyNaCl is not installed, voice will NOT be supported
+2024-01-06 22:41:45,367 - DEBUG - Using proactor: IocpProactor
+2024-01-06 22:41:45,375 - INFO - logging in using static token
+2024-01-06 22:41:46,255 - INFO - Shard ID None has connected to Gateway (Session ID: 35a9c4dd9b5801fb203c4a5249944c4c).
+2024-01-06 22:41:50,975 - INFO - Assigning pilot: Mailman
+2024-01-06 22:41:50,975 - ERROR - Ignoring exception in command assign_pilot
+Traceback (most recent call last):
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\discord\ext\commands\core.py", line 235, in wrapped
+    ret = await coro(*args, **kwargs)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\src\bot.py", line 16, in assign_pilot
+    pilot_id = find_pilot_id_by_name(pilot_name)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: find_pilot_id_by_name() missing 1 required positional argument: 'pilot_name'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\discord\ext\commands\bot.py", line 1350, in invoke
+    await ctx.command.invoke(ctx)
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\discord\ext\commands\core.py", line 1029, in invoke
+    await injected(*ctx.args, **ctx.kwargs)  # type: ignore
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\discord\ext\commands\core.py", line 244, in wrapped
+    raise CommandInvokeError(exc) from exc
+discord.ext.commands.errors.CommandInvokeError: Command raised an exception: TypeError: find_pilot_id_by_name() missing 1 required positional argument: 'pilot_name'
+2024-01-06 22:43:29,243 - WARNING - PyNaCl is not installed, voice will NOT be supported
+2024-01-06 22:43:29,244 - DEBUG - Using proactor: IocpProactor
+2024-01-06 22:43:29,244 - INFO - logging in using static token
+2024-01-06 22:43:30,024 - INFO - Shard ID None has connected to Gateway (Session ID: c529f1c3ce5137d0292d7a9572f86ef8).
+2024-01-06 22:43:36,916 - INFO - Assigning pilot: Mailman
+2024-01-06 22:43:36,919 - ERROR - Ignoring exception in command assign_pilot
+Traceback (most recent call last):
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\discord\ext\commands\core.py", line 235, in wrapped
+    ret = await coro(*args, **kwargs)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\src\bot.py", line 23, in assign_pilot
+    squadrons = get_squadron_ids()
+                ^^^^^^^^^^^^^^^^^^
+TypeError: get_squadron_ids() missing 1 required positional argument: 'db_path'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\discord\ext\commands\bot.py", line 1350, in invoke
+    await ctx.command.invoke(ctx)
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\discord\ext\commands\core.py", line 1029, in invoke
+    await injected(*ctx.args, **ctx.kwargs)  # type: ignore
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\discord\ext\commands\core.py", line 244, in wrapped
+    raise CommandInvokeError(exc) from exc
+discord.ext.commands.errors.CommandInvokeError: Command raised an exception: TypeError: get_squadron_ids() missing 1 required positional argument: 'db_path'
+2024-01-06 22:45:00,965 - WARNING - PyNaCl is not installed, voice will NOT be supported
+2024-01-06 22:45:00,965 - DEBUG - Using proactor: IocpProactor
+2024-01-06 22:45:00,965 - INFO - logging in using static token
+2024-01-06 22:45:01,857 - INFO - Shard ID None has connected to Gateway (Session ID: 5a41aefc1abde50579e7a6125c81bdea).
+2024-01-06 22:45:05,693 - INFO - Assigning pilot: Mailman
+2024-01-06 22:45:18,622 - ERROR - Error in assign_pilot: assign_pilot_to_squadron() missing 1 required positional argument: 'squadron_id'
+2024-01-06 22:46:46,567 - WARNING - PyNaCl is not installed, voice will NOT be supported
+2024-01-06 22:46:46,567 - DEBUG - Using proactor: IocpProactor
+2024-01-06 22:46:46,567 - INFO - logging in using static token
+2024-01-06 22:46:48,009 - INFO - Shard ID None has connected to Gateway (Session ID: 39b59d79e33fd57f71ef17527519bb0e).
+2024-01-06 22:46:52,386 - INFO - Assigning pilot: Mailman
+2024-01-06 22:46:55,649 - INFO - Pilot Mailman assigned to 892 NAS
+2024-01-06 22:46:55,863 - INFO - Pilot Mailman assigned to squadrons: ['892 NAS']
+2024-01-06 22:48:02,505 - WARNING - PyNaCl is not installed, voice will NOT be supported
+2024-01-06 22:48:02,505 - DEBUG - Using proactor: IocpProactor
+2024-01-06 22:48:02,505 - INFO - logging in using static token
+2024-01-06 22:48:03,356 - INFO - Shard ID None has connected to Gateway (Session ID: 2d90af1bd7eff0024916a76d40524458).
+2024-01-06 22:48:16,326 - INFO - Assigning pilot: razor
+2024-01-06 22:48:23,224 - INFO - Pilot Razor assigned to 617 Sqn
+2024-01-06 22:48:23,436 - INFO - Pilot razor assigned to squadrons: ['617 Sqn']
+2024-01-06 22:49:14,831 - INFO - Running merge.lua script
+2024-01-06 22:49:14,831 - INFO - Processing combined data
+2024-01-06 22:49:14,847 - INFO - Created index.html output
+2024-01-06 22:49:14,847 - INFO - Generating pilot pages

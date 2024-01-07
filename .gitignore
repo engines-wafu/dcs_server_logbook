@@ -1,0 +1,3 @@
+src/discord_bot/config.py
+data/base/*
+data/db/*
