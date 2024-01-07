@@ -421,3 +421,299 @@ discord.ext.commands.errors.CommandInvokeError: Command raised an exception: Typ
 2024-01-06 22:49:14,831 - INFO - Processing combined data
 2024-01-06 22:49:14,847 - INFO - Created index.html output
 2024-01-06 22:49:14,847 - INFO - Generating pilot pages
+2024-01-07 09:34:33,741 - ERROR - Error running Lua script: lua54: src/lua/merge.lua:3: module 'dkjson' not found:
+	no field package.preload['dkjson']
+	no file 'C:\lua\lua\dkjson.lua'
+	no file 'C:\lua\lua\dkjson\init.lua'
+	no file 'C:\lua\dkjson.lua'
+	no file 'C:\lua\dkjson\init.lua'
+	no file 'C:\lua\..\share\lua\5.4\dkjson.lua'
+	no file 'C:\lua\..\share\lua\5.4\dkjson\init.lua'
+	no file '.\dkjson.lua'
+	no file '.\dkjson\init.lua'
+	no file 'C:\lua\dkjson.dll'
+	no file 'C:\lua\..\lib\lua\5.4\dkjson.dll'
+	no file 'C:\lua\loadall.dll'
+	no file '.\dkjson.dll'
+	no file 'C:\lua\dkjson54.dll'
+	no file '.\dkjson54.dll'
+stack traceback:
+	[C]: in function 'require'
+	src/lua/merge.lua:3: in main chunk
+	[C]: in ?
+
+2024-01-07 09:37:00,977 - ERROR - Error running Lua script: lua54: src/lua/merge.lua:3: module 'dkjson' not found:
+	no field package.preload['dkjson']
+	no file 'C:\lua\lua\dkjson.lua'
+	no file 'C:\lua\lua\dkjson\init.lua'
+	no file 'C:\lua\dkjson.lua'
+	no file 'C:\lua\dkjson\init.lua'
+	no file 'C:\lua\..\share\lua\5.4\dkjson.lua'
+	no file 'C:\lua\..\share\lua\5.4\dkjson\init.lua'
+	no file '.\dkjson.lua'
+	no file '.\dkjson\init.lua'
+	no file 'C:\lua\dkjson.dll'
+	no file 'C:\lua\..\lib\lua\5.4\dkjson.dll'
+	no file 'C:\lua\loadall.dll'
+	no file '.\dkjson.dll'
+	no file 'C:\lua\dkjson54.dll'
+	no file '.\dkjson54.dll'
+stack traceback:
+	[C]: in function 'require'
+	src/lua/merge.lua:3: in main chunk
+	[C]: in ?
+
+2024-01-07 09:39:31,602 - ERROR - Error running Lua script: lua54: src/lua/merge.lua:3: module 'dkjson' not found:
+	no field package.preload['dkjson']
+	no file 'C:\lua\lua\dkjson.lua'
+	no file 'C:\lua\lua\dkjson\init.lua'
+	no file 'C:\lua\dkjson.lua'
+	no file 'C:\lua\dkjson\init.lua'
+	no file 'C:\lua\..\share\lua\5.4\dkjson.lua'
+	no file 'C:\lua\..\share\lua\5.4\dkjson\init.lua'
+	no file '.\dkjson.lua'
+	no file '.\dkjson\init.lua'
+	no file 'C:\lua\dkjson.dll'
+	no file 'C:\lua\..\lib\lua\5.4\dkjson.dll'
+	no file 'C:\lua\loadall.dll'
+	no file '.\dkjson.dll'
+	no file 'C:\lua\dkjson54.dll'
+	no file '.\dkjson54.dll'
+stack traceback:
+	[C]: in function 'require'
+	src/lua/merge.lua:3: in main chunk
+	[C]: in ?
+
+2024-01-07 09:42:09,401 - INFO - Running merge.lua script
+2024-01-07 09:42:09,401 - INFO - Processing combined data
+2024-01-07 09:42:09,424 - INFO - Created index.html output
+2024-01-07 09:42:09,425 - INFO - Generating pilot pages
+2024-01-07 09:45:36,964 - WARNING - PyNaCl is not installed, voice will NOT be supported
+2024-01-07 09:45:36,965 - DEBUG - Using proactor: IocpProactor
+2024-01-07 09:45:36,966 - INFO - logging in using static token
+2024-01-07 09:45:37,905 - INFO - Shard ID None has connected to Gateway (Session ID: a98b2b67364abb179259500c02419a4f).
+2024-01-07 09:45:50,407 - ERROR - Ignoring exception in command None
+discord.ext.commands.errors.CommandNotFound: Command "add_pilot" is not found
+2024-01-07 09:46:01,979 - INFO - Assigning pilot: peteg
+2024-01-07 09:46:02,293 - WARNING - Pilot not found: peteg
+2024-01-07 09:46:13,488 - INFO - Assigning pilot: pg
+2024-01-07 09:46:20,173 - WARNING - Pilot not found: pg
+2024-01-07 09:46:27,137 - INFO - Assigning pilot: pete
+2024-01-07 09:46:32,383 - INFO - Pilot pete assigned to squadrons: ['801 nas']
+2024-01-07 09:46:53,407 - INFO - Assigning pilot: ganduwulf
+2024-01-07 09:46:56,610 - INFO - Pilot ganduwulf assigned to squadrons: ['801']
+2024-01-07 09:47:09,740 - INFO - Running merge.lua script
+2024-01-07 09:47:09,740 - INFO - Processing combined data
+2024-01-07 09:47:09,754 - INFO - Created index.html output
+2024-01-07 09:47:09,754 - INFO - Generating pilot pages
+2024-01-07 09:52:41,228 - WARNING - PyNaCl is not installed, voice will NOT be supported
+2024-01-07 09:52:41,229 - DEBUG - Using proactor: IocpProactor
+2024-01-07 09:52:41,230 - INFO - logging in using static token
+2024-01-07 09:52:42,047 - INFO - Shard ID None has connected to Gateway (Session ID: cd12c1ead2ed069263466a553c3e3fc4).
+2024-01-07 09:52:57,528 - ERROR - Ignoring exception in command assign_pilot
+Traceback (most recent call last):
+  File "C:\Users\GavinE\OneDrive - Sentient Vision Systems\Repos\dcs_server_logbook\env\Lib\site-packages\discord\ext\commands\core.py", line 235, in wrapped
+    ret = await coro(*args, **kwargs)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\GavinE\OneDrive - Sentient Vision Systems\Repos\dcs_server_logbook\src\bot.py", line 18, in assign_pilot
+    pilot_id = find_pilot_id_by_name(pilot_name)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: find_pilot_id_by_name() missing 1 required positional argument: 'pilot_name'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\GavinE\OneDrive - Sentient Vision Systems\Repos\dcs_server_logbook\env\Lib\site-packages\discord\ext\commands\bot.py", line 1350, in invoke
+    await ctx.command.invoke(ctx)
+  File "C:\Users\GavinE\OneDrive - Sentient Vision Systems\Repos\dcs_server_logbook\env\Lib\site-packages\discord\ext\commands\core.py", line 1029, in invoke
+    await injected(*ctx.args, **ctx.kwargs)  # type: ignore
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\GavinE\OneDrive - Sentient Vision Systems\Repos\dcs_server_logbook\env\Lib\site-packages\discord\ext\commands\core.py", line 244, in wrapped
+    raise CommandInvokeError(exc) from exc
+discord.ext.commands.errors.CommandInvokeError: Command raised an exception: TypeError: find_pilot_id_by_name() missing 1 required positional argument: 'pilot_name'
+2024-01-07 09:57:43,359 - WARNING - PyNaCl is not installed, voice will NOT be supported
+2024-01-07 09:57:43,360 - DEBUG - Using proactor: IocpProactor
+2024-01-07 09:57:43,361 - INFO - logging in using static token
+2024-01-07 09:57:44,134 - INFO - Shard ID None has connected to Gateway (Session ID: 1662775c4085d5fe06f334e4b7961f0d).
+2024-01-07 09:58:02,316 - INFO - Pilot Pete G assigned to 801 NAS
+2024-01-07 09:58:12,022 - INFO - Running merge.lua script
+2024-01-07 09:58:12,022 - INFO - Processing combined data
+2024-01-07 09:58:12,042 - INFO - Created index.html output
+2024-01-07 09:58:12,043 - INFO - Generating pilot pages
+2024-01-07 10:00:52,522 - WARNING - PyNaCl is not installed, voice will NOT be supported
+2024-01-07 10:00:52,522 - DEBUG - Using proactor: IocpProactor
+2024-01-07 10:00:52,523 - INFO - logging in using static token
+2024-01-07 10:00:55,491 - INFO - Shard ID None has connected to Gateway (Session ID: 0db604e57a9fd2771dd9cb2963efd33b).
+2024-01-07 10:01:29,048 - INFO - Pilot Ganduwulf assigned to 801 NAS
+2024-01-07 10:01:29,265 - INFO - Pilot Slippy assigned to 801 NAS
+2024-01-07 10:01:29,636 - INFO - Pilot Duke assigned to 801 NAS
+2024-01-07 10:01:29,875 - INFO - Pilot Madog assigned to 801 NAS
+2024-01-07 10:01:30,140 - INFO - Pilot Smythes assigned to 801 NAS
+2024-01-07 10:01:55,881 - INFO - Running merge.lua script
+2024-01-07 10:01:55,881 - INFO - Processing combined data
+2024-01-07 10:01:55,898 - INFO - Created index.html output
+2024-01-07 10:01:55,898 - INFO - Generating pilot pages
+2024-01-07 10:07:16,685 - INFO - Running merge.lua script
+2024-01-07 10:07:16,685 - INFO - Processing combined data
+2024-01-07 10:07:16,711 - INFO - Created index.html output
+2024-01-07 10:07:16,711 - INFO - Generating pilot pages
+2024-01-07 10:09:47,309 - INFO - Pilot Razor assigned to 892 NAS
+2024-01-07 10:09:47,581 - INFO - Pilot Slippy assigned to 892 NAS
+2024-01-07 10:09:47,833 - INFO - Pilot Sideburns assigned to 892 NAS
+2024-01-07 10:09:48,051 - INFO - Pilot Swift One assigned to 892 NAS
+2024-01-07 10:09:48,313 - INFO - Pilot Scooby assigned to 892 NAS
+2024-01-07 10:09:48,592 - INFO - Pilot Bogus assigned to 892 NAS
+2024-01-07 10:09:53,520 - INFO - Pilot Spanner assigned to 892 NAS
+2024-01-07 10:09:53,723 - INFO - Pilot Mort assigned to 892 NAS
+2024-01-07 10:09:53,973 - INFO - Pilot Obic assigned to 892 NAS
+2024-01-07 10:09:54,693 - INFO - Pilot Direful Tiger assigned to 892 NAS
+2024-01-07 10:09:55,622 - INFO - Pilot Funky assigned to 892 NAS
+2024-01-07 10:09:55,916 - INFO - Pilot Steph assigned to 892 NAS
+2024-01-07 10:10:08,695 - INFO - Running merge.lua script
+2024-01-07 10:10:08,695 - INFO - Processing combined data
+2024-01-07 10:10:08,716 - INFO - Created index.html output
+2024-01-07 10:10:08,716 - INFO - Generating pilot pages
+2024-01-07 10:10:51,303 - INFO - Pilot Shakespeade assigned to 892 NAS
+2024-01-07 10:10:57,826 - INFO - Running merge.lua script
+2024-01-07 10:10:57,826 - INFO - Processing combined data
+2024-01-07 10:10:57,851 - INFO - Created index.html output
+2024-01-07 10:10:57,851 - INFO - Generating pilot pages
+2024-01-07 10:12:09,862 - ERROR - Ignoring exception in command None
+discord.ext.commands.errors.CommandNotFound: Command "assin_pilot" is not found
+2024-01-07 10:12:26,628 - INFO - Pilot Gimbal assigned to 656 Sqn
+2024-01-07 10:12:26,891 - INFO - Pilot Razor assigned to 656 Sqn
+2024-01-07 10:12:27,188 - INFO - Pilot Dangerman assigned to 656 Sqn
+2024-01-07 10:12:27,542 - INFO - Pilot Buck assigned to 656 Sqn
+2024-01-07 10:12:27,761 - INFO - Pilot Bogus assigned to 656 Sqn
+2024-01-07 10:12:27,996 - INFO - Pilot Wee Neal assigned to 656 Sqn
+2024-01-07 10:12:32,853 - INFO - Pilot Torchy assigned to 656 Sqn
+2024-01-07 10:12:33,113 - INFO - Pilot Swift One assigned to 656 Sqn
+2024-01-07 10:12:33,332 - INFO - Pilot Scooby assigned to 656 Sqn
+2024-01-07 10:12:39,352 - INFO - Running merge.lua script
+2024-01-07 10:12:39,352 - INFO - Processing combined data
+2024-01-07 10:12:39,381 - INFO - Created index.html output
+2024-01-07 10:12:39,381 - INFO - Generating pilot pages
+2024-01-07 10:13:57,830 - INFO - Pilot Swift One assigned to 656 Sqn
+2024-01-07 10:13:58,059 - INFO - Pilot Scooby assigned to 656 Sqn
+2024-01-07 10:13:58,348 - INFO - Pilot Falcon assigned to 656 Sqn
+2024-01-07 10:13:58,544 - INFO - Pilot Jester assigned to 656 Sqn
+2024-01-07 10:13:58,851 - INFO - Pilot Skuba assigned to 656 Sqn
+2024-01-07 10:13:59,038 - INFO - Pilot DJ assigned to 656 Sqn
+2024-01-07 10:14:04,092 - INFO - Pilot Carto assigned to 656 Sqn
+2024-01-07 10:14:04,579 - INFO - Pilot Action Hero assigned to 656 Sqn
+2024-01-07 10:14:04,797 - INFO - Pilot Casper assigned to 656 Sqn
+2024-01-07 10:14:05,030 - INFO - Pilot Cowan assigned to 656 Sqn
+2024-01-07 10:14:05,259 - INFO - Pilot DannyR assigned to 656 Sqn
+2024-01-07 10:14:06,182 - INFO - Running merge.lua script
+2024-01-07 10:14:06,182 - INFO - Processing combined data
+2024-01-07 10:14:12,295 - INFO - Running merge.lua script
+2024-01-07 10:14:12,295 - INFO - Processing combined data
+2024-01-07 10:14:35,591 - INFO - Running merge.lua script
+2024-01-07 10:14:35,592 - INFO - Processing combined data
+2024-01-07 10:16:49,884 - INFO - Running merge.lua script
+2024-01-07 10:16:49,884 - INFO - Processing combined data
+2024-01-07 10:16:49,917 - INFO - Created index.html output
+2024-01-07 10:16:49,917 - INFO - Generating pilot pages
+2024-01-07 10:18:17,897 - INFO - Running merge.lua script
+2024-01-07 10:18:17,897 - INFO - Processing combined data
+2024-01-07 10:18:17,930 - INFO - Created index.html output
+2024-01-07 10:18:17,930 - INFO - Generating pilot pages
+2024-01-07 10:19:33,819 - INFO - Pilot Action Hero assigned to 656 Sqn
+2024-01-07 10:19:41,693 - INFO - Running merge.lua script
+2024-01-07 10:19:41,693 - INFO - Processing combined data
+2024-01-07 10:19:41,729 - INFO - Created index.html output
+2024-01-07 10:19:41,730 - INFO - Generating pilot pages
+2024-01-07 10:20:39,964 - INFO - Pilot Casper assigned to 656 Sqn
+2024-01-07 10:20:40,176 - INFO - Pilot Cowan assigned to 656 Sqn
+2024-01-07 10:20:40,549 - INFO - Pilot DannyR assigned to 656 Sqn
+2024-01-07 10:20:50,435 - INFO - Running merge.lua script
+2024-01-07 10:20:50,435 - INFO - Processing combined data
+2024-01-07 10:20:50,467 - INFO - Created index.html output
+2024-01-07 10:20:50,467 - INFO - Generating pilot pages
+2024-01-07 10:25:26,142 - INFO - Running merge.lua script
+2024-01-07 10:25:26,142 - INFO - Processing combined data
+2024-01-07 10:25:26,178 - INFO - Created index.html output
+2024-01-07 10:25:26,178 - INFO - Generating pilot pages
+2024-01-07 10:26:36,774 - INFO - Pilot Fisher assigned to 656 Sqn
+2024-01-07 10:26:37,066 - INFO - Pilot Houseman assigned to 656 Sqn
+2024-01-07 10:26:42,899 - INFO - Pilot Lenny assigned to 656 Sqn
+2024-01-07 10:26:43,135 - INFO - Pilot MiMiKiwi assigned to 656 Sqn
+2024-01-07 10:26:43,326 - INFO - Pilot Phoenix assigned to 656 Sqn
+2024-01-07 10:26:43,531 - INFO - Pilot Podo assigned to 656 Sqn
+2024-01-07 10:28:28,527 - WARNING - PyNaCl is not installed, voice will NOT be supported
+2024-01-07 10:28:28,528 - DEBUG - Using proactor: IocpProactor
+2024-01-07 10:28:28,529 - INFO - logging in using static token
+2024-01-07 10:28:29,358 - INFO - Shard ID None has connected to Gateway (Session ID: 9fbe9b257572ef32c4b6a08a1b9c2d43).
+2024-01-07 10:28:58,651 - INFO - Pilot Solex assigned to 656 Sqn
+2024-01-07 10:28:58,902 - INFO - Pilot Varry assigned to 656 Sqn
+2024-01-07 10:28:59,101 - INFO - Pilot Venom assigned to 656 Sqn
+2024-01-07 10:28:59,299 - INFO - Pilot Yank assigned to 656 Sqn
+2024-01-07 10:28:59,584 - INFO - Pilot Monkey assigned to 656 Sqn
+2024-01-07 10:29:15,251 - INFO - Running merge.lua script
+2024-01-07 10:29:15,251 - INFO - Processing combined data
+2024-01-07 10:33:23,750 - INFO - Running merge.lua script
+2024-01-07 10:33:23,750 - INFO - Processing combined data
+2024-01-07 10:33:23,789 - INFO - Created index.html output
+2024-01-07 10:33:23,789 - INFO - Generating pilot pages
+2024-01-07 10:35:15,640 - INFO - Pilot RJF assigned to XI Sqn
+2024-01-07 10:35:16,099 - INFO - Pilot Ajax assigned to XI Sqn
+2024-01-07 10:35:16,392 - INFO - Pilot Cactus assigned to XI Sqn
+2024-01-07 10:35:16,641 - INFO - Pilot Poacher assigned to XI Sqn
+2024-01-07 10:35:16,957 - INFO - Pilot Scooby assigned to XI Sqn
+2024-01-07 10:35:17,364 - INFO - Pilot Jez assigned to XI Sqn
+2024-01-07 10:35:21,975 - INFO - Pilot Blythee assigned to XI Sqn
+2024-01-07 10:35:22,203 - INFO - Pilot Hawk assigned to XI Sqn
+2024-01-07 10:35:22,460 - INFO - Pilot Falcon assigned to XI Sqn
+2024-01-07 10:35:22,714 - INFO - Pilot Flynn assigned to XI Sqn
+2024-01-07 10:35:22,917 - INFO - Pilot Jethro assigned to XI Sqn
+2024-01-07 10:35:27,243 - INFO - Pilot MajorBloodnok assigned to XI Sqn
+2024-01-07 10:35:27,421 - INFO - Pilot Yuri assigned to XI Sqn
+2024-01-07 10:36:34,516 - INFO - Pilot Dangerman assigned to 617 Sqn
+2024-01-07 10:36:34,771 - INFO - Pilot Razor assigned to 617 Sqn
+2024-01-07 10:36:35,091 - INFO - Pilot Mailman assigned to 617 Sqn
+2024-01-07 10:36:35,332 - INFO - Pilot Gimbal assigned to 617 Sqn
+2024-01-07 10:36:35,568 - INFO - Pilot Bogus assigned to 617 Sqn
+2024-01-07 10:36:35,887 - INFO - Pilot Wee Neal assigned to 617 Sqn
+2024-01-07 10:36:40,829 - INFO - Pilot Swift One assigned to 617 Sqn
+2024-01-07 10:36:41,246 - INFO - Pilot Christian assigned to 617 Sqn
+2024-01-07 10:36:41,451 - INFO - Pilot Jester assigned to 617 Sqn
+2024-01-07 10:36:41,685 - INFO - Pilot Liminal assigned to 617 Sqn
+2024-01-07 10:36:41,904 - INFO - Pilot Monkey assigned to 617 Sqn
+2024-01-07 10:36:42,098 - INFO - Pilot Funky assigned to 617 Sqn
+2024-01-07 10:36:47,068 - INFO - Pilot Steph assigned to 617 Sqn
+2024-01-07 10:37:48,995 - INFO - Pilot Cactus assigned to IV Sqn
+2024-01-07 10:37:49,261 - INFO - Pilot Poacher assigned to IV Sqn
+2024-01-07 10:37:49,543 - INFO - Pilot RJF assigned to IV Sqn
+2024-01-07 10:37:49,860 - INFO - Pilot Flynn assigned to IV Sqn
+2024-01-07 10:37:50,313 - INFO - Pilot Buck assigned to IV Sqn
+2024-01-07 10:37:50,511 - INFO - Pilot Gimbal assigned to IV Sqn
+2024-01-07 10:37:55,273 - INFO - Pilot Puddles assigned to IV Sqn
+2024-01-07 10:37:55,522 - INFO - Pilot Jxckmc assigned to IV Sqn
+2024-01-07 10:37:55,830 - INFO - Pilot Spectre assigned to IV Sqn
+2024-01-07 10:37:56,193 - INFO - Pilot Monkey assigned to IV Sqn
+2024-01-07 10:37:56,392 - INFO - Pilot Ripper66 assigned to IV Sqn
+2024-01-07 10:37:56,769 - INFO - Pilot Fisher assigned to IV Sqn
+2024-01-07 10:38:01,486 - INFO - Pilot Houseman assigned to IV Sqn
+2024-01-07 10:38:01,729 - INFO - Pilot Wee Neal assigned to IV Sqn
+2024-01-07 10:38:01,955 - INFO - Pilot Christian assigned to IV Sqn
+2024-01-07 10:38:02,152 - INFO - Pilot Jez assigned to IV Sqn
+2024-01-07 10:38:02,440 - INFO - Pilot Hawk assigned to IV Sqn
+2024-01-07 10:44:35,066 - INFO - Running merge.lua script
+2024-01-07 10:44:35,066 - INFO - Processing combined data
+2024-01-07 10:44:35,116 - INFO - Created index.html output
+2024-01-07 10:44:35,116 - INFO - Generating pilot pages
+2024-01-07 10:49:27,674 - INFO - Pilot Duke assigned to 801 NAS
+2024-01-07 10:49:37,145 - INFO - Running merge.lua script
+2024-01-07 10:49:37,146 - INFO - Processing combined data
+2024-01-07 10:49:37,194 - INFO - Created index.html output
+2024-01-07 10:49:37,195 - INFO - Generating pilot pages
+2024-01-07 10:53:05,121 - WARNING - PyNaCl is not installed, voice will NOT be supported
+2024-01-07 10:53:05,121 - DEBUG - Using proactor: IocpProactor
+2024-01-07 10:53:05,122 - INFO - logging in using static token
+2024-01-07 10:53:06,157 - INFO - Shard ID None has connected to Gateway (Session ID: 43647261e7bca1360f14fcef5856e767).
+2024-01-07 10:53:16,887 - INFO - Pilot Slippy assigned to 801 NAS
+2024-01-07 10:53:17,161 - INFO - Created index.html output
+2024-01-07 10:59:42,380 - INFO - Running merge.lua script
+2024-01-07 10:59:42,380 - INFO - Processing combined data
+2024-01-07 10:59:42,435 - INFO - Created index.html output
+2024-01-07 10:59:42,435 - INFO - Generating pilot pages

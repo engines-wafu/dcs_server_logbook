@@ -10,8 +10,12 @@ log_filename = f"data/logs/mayfly.log"
 logging.basicConfig(filename=log_filename, level=logging.DEBUG, 
                     format='%(asctime)s - %(levelname)s - %(message)s')
 
+json_path = 'data/stats/combinedStats.json'
+db_path = 'data/db/mayfly.db'
+output_path = 'web/index.html'
+
 def run_lua_script(script_path, stats_files):
-    command = ['lua', script_path] + stats_files
+    command = ['lua54', script_path] + stats_files
     result = subprocess.run(command, capture_output=True, text=True)
     if result.returncode != 0:
         logging.error(f"Error running Lua script: {result.stderr}")
@@ -52,9 +56,19 @@ def main():
         'data/stats/SlmodStats_server2.lua',
         # Add more files as needed
     ]
-    json_path = 'data/stats/combinedStats.json'
     json_file_path = run_lua_script(lua_script_path, stats_files)
-    combined_stats = load_combined_stats(json_file_path)
+
+    print(f"JSON file path: {json_file_path}")  # Debugging line
+    if json_file_path is None:
+        print("Error: JSON file path not set.")
+        return
+
+    if json_file_path:
+        combined_stats = load_combined_stats(json_file_path)
+    else:
+        print("No JSON file to load.")
+        return
+
     output_dir = 'web/pilot'
 
     logging.info("Running merge.lua script")
@@ -66,9 +80,6 @@ def main():
 
     combined_data_json = 'data/stats/combinedStats.json'
     process_combined_data(combined_data_json)
-
-    db_path = 'data/db/mayfly.db'
-    output_path = 'web/index.html'
 
     generate_index_html(db_path, output_path, json_path)
     logging.info("Created index.html output")

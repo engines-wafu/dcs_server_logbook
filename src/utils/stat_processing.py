@@ -20,27 +20,31 @@ def generate_squadron_pilot_rows(db_path, squadron_id, squadron_aircraft_type, c
     for (pilot_id,) in pilot_ids:
         pilot_name = get_pilot_full_name(db_path, pilot_id)
         if not pilot_name:
-            continue  # Skip if the pilot name is not found
+            continue
 
         pilot_stats = combined_stats.get(pilot_id, {})
 
-        # Calculate type hours for aircraft types starting with the squadron_aircraft_type
-        type_hours = sum(seconds_to_hours(aircraft_stats.get('total', 0))
-                         for aircraft_type, aircraft_stats in pilot_stats.get('times', {}).items()
-                         if aircraft_type.startswith(squadron_aircraft_type))
+        times_data = pilot_stats.get('times', {})
+        if not isinstance(times_data, dict):
+            type_hours = 0
+            total_hours = 0
+            total_kills = 0
+        else:
+            type_hours = sum(seconds_to_hours(aircraft_stats.get('total', 0))
+                             for aircraft_type, aircraft_stats in times_data.items()
+                             if isinstance(aircraft_stats, dict) and aircraft_type.startswith(squadron_aircraft_type))
 
-        # Calculate total hours across all aircraft types
-        total_hours = sum(seconds_to_hours(aircraft_stats.get('total', 0))
-                          for aircraft_type, aircraft_stats in pilot_stats.get('times', {}).items())
+            total_hours = sum(seconds_to_hours(aircraft_stats.get('total', 0))
+                              for aircraft_type, aircraft_stats in times_data.items()
+                              if isinstance(aircraft_stats, dict))
 
-        # Calculate total kills across all types
-        total_kills = sum(aircraft_stats.get('kills', {}).get('total', 0)
-                          for aircraft_type, aircraft_stats in pilot_stats.get('times', {}).items())
+            total_kills = sum(
+                sum(category.get('total', 0) for category in aircraft_stats.get('kills', {}).values())
+                for aircraft_type, aircraft_stats in times_data.items()
+                if isinstance(aircraft_stats, dict)
+            )
 
-        # Calculate currency from last join time
         currency = days_from_epoch(pilot_stats.get('lastJoin', 0))
-
-        # Determine the background color based on currency
         bg_color = 'grey' if currency > 120 else 'red' if currency > 30 else 'orange' if currency > 15 else ''
 
         rows_html += f"""
@@ -67,17 +71,14 @@ def generate_pilot_info_page(db_path, combined_stats, output_dir):
         pilot_stats = combined_stats.get(pilot_id, {})
 
         if not isinstance(pilot_stats.get('times'), dict):
-            # int(f"Invalid 'times' data for pilot ID: {pilot_id}")
             continue
 
         total_hours = 0
         type_hours_list = []
-        kills_list = []
+        aggregated_kills = {}
 
         for aircraft_type, aircraft_stats in pilot_stats.get('times', {}).items():
-
             if not isinstance(aircraft_stats, dict):
-                # print(f"Skipping invalid format for aircraft type '{aircraft_type}' for pilot ID: {pilot_id}")
                 continue
 
             hours = seconds_to_hours(aircraft_stats.get('total', 0))
@@ -85,22 +86,23 @@ def generate_pilot_info_page(db_path, combined_stats, output_dir):
                 total_hours += hours
                 type_hours_list.append((aircraft_type, hours))
 
-                kills = sum(category.get('total', 0) for category in aircraft_stats.get('kills', {}).values())
-                if kills > 0:
-                    kills_list.append((aircraft_type, kills))
+            for category, kills in aircraft_stats.get('kills', {}).items():
+                if isinstance(kills, dict):
+                    total_kills = kills.get('total', 0)
+                    aggregated_kills[category] = aggregated_kills.get(category, 0) + total_kills
 
         type_hours_list.sort(key=lambda x: x[1], reverse=True)
-        kills_list.sort(key=lambda x: x[1], reverse=True)
 
-        # Constructing HTML tables
+        # Constructing HTML tables for type hours
         type_totals_html = "<table style='border:1'><tr><th style='width:20%'>Type</th><th style='width:20%'>Hours</th></tr>"
         for aircraft_type, hours in type_hours_list:
             type_totals_html += f"<tr><td>{aircraft_type}</td><td>{hours:.1f}</td></tr>"
         type_totals_html += "</table>"
 
-        kills_html = "<table style='border:1'><tr><th style='width:20%'>Type</th><th style='width:20%'>Kills</th></tr>"
-        for aircraft_type, kills in kills_list:
-            kills_html += f"<tr><td>{aircraft_type}</td><td>{kills}</td></tr>"
+        # Constructing HTML table for aggregated kills
+        kills_html = "<table style='border:1'><tr><th style='width:20%'>Category</th><th style='width:20%'>Kills</th></tr>"
+        for category, kills in aggregated_kills.items():
+            kills_html += f"<tr><td>{category}</td><td>{kills}</td></tr>"
         kills_html += "</table>"
 
         last_join = pilot_stats.get('lastJoin', 0)

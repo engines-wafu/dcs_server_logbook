@@ -139,7 +139,7 @@ def get_pilot_full_name(db_path, pilot_id):
     if result:
         # Concatenate the pilot's rank, name, and service
         pilot_rank, pilot_name, pilot_service = result
-        return f"{pilot_rank} {pilot_name} {pilot_service}"
+        return f"{pilot_rank} {pilot_name}"
     else:
         return None
 
