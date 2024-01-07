@@ -27,6 +27,54 @@ def get_squadron_ids(db_path):
     finally:
         conn.close()
 
+def add_award_to_database(db_path, award_name, award_description):
+    """
+    Inserts a new award into the Awards table.
+
+    :param db_path: Path to the SQLite database file.
+    :param award_name: Name of the award.
+    :param award_description: Description of the award.
+    """
+    conn = sqlite3.connect(db_path)
+    cursor = conn.cursor()
+
+    try:
+        cursor.execute("INSERT INTO Awards (award_name, award_description) VALUES (?, ?)", (award_name, award_description))
+        conn.commit()
+    except sqlite3.IntegrityError as e:
+        raise Exception(f"Award already exists: {e}")
+    except Exception as e:
+        raise Exception(f"An error occurred: {e}")
+    finally:
+        conn.close()
+
+def add_qualification_to_database(db_path, qualification_name, qualification_description, qualification_duration_days):
+    """
+    Inserts a new qualification into the Qualifications table.
+
+    :param db_path: Path to the SQLite database file.
+    :param qualification_name: Name of the qualification.
+    :param qualification_description: Description of the qualification.
+    :param qualification_duration_days: Duration of the qualification in days (optional, can be None).
+    """
+    conn = sqlite3.connect(db_path)
+    cursor = conn.cursor()
+
+    # Convert duration from days to seconds (1 day = 86400 seconds)
+    qualification_duration_seconds = qualification_duration_days * 86400 if qualification_duration_days is not None else None
+
+    try:
+        cursor.execute("INSERT INTO Qualifications (qualification_name, qualification_description, qualification_duration) VALUES (?, ?, ?)", 
+                       (qualification_name, qualification_description, qualification_duration_seconds))
+        conn.commit()
+    except sqlite3.IntegrityError as e:
+        raise Exception(f"Qualification already exists: {e}")
+    except Exception as e:
+        raise Exception(f"An error occurred: {e}")
+    finally:
+        conn.close()
+
+
 def add_squadron(db_path, squadron_id, squadron_motto, squadron_service, squadron_commission_date, squadron_commanding_officer, squadron_aircraft_type, squadron_pseudo_type):
     """
     Adds a new squadron to the database.
@@ -165,6 +213,28 @@ def get_pilot_name(db_path, pilot_id):
         return pilot_name
     else:
         return None
+
+def assign_co_to_squadron(db_path, pilot_id, squadron_id):
+    """
+    Assigns a pilot to be the commanding officer of a squadron.
+
+    :param db_path: Path to the SQLite database file.
+    :param pilot_id: Unique identifier of the pilot.
+    :param squadron_id: Unique identifier of the squadron.
+    """
+    conn = sqlite3.connect(db_path)
+    cursor = conn.cursor()
+
+    try:
+        cursor.execute("UPDATE Squadrons SET squadron_commanding_officer = ? WHERE squadron_id = ?", (pilot_id, squadron_id))
+        conn.commit()
+        logging.info(f"Pilot {pilot_id} assigned as CO of Squadron {squadron_id}")
+    except Exception as e:
+        print(f"An error occurred: {e}")
+    finally:
+        conn.close()
+
+    logging.info("Pilot " + get_pilot_name(db_path, pilot_id) + " assigned to command of " + str(squadron_id))
 
 def assign_pilot_to_squadron(db_path, pilot_id, squadron_id):
     """

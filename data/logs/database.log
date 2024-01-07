@@ -1558,3 +1558,114 @@ stack traceback:
 2024-01-07 12:56:57,531 - INFO - Processing combined data
 2024-01-07 12:56:57,570 - INFO - Created index.html output
 2024-01-07 12:56:57,570 - INFO - Generating pilot pages
+2024-01-07 13:02:29,389 - INFO - Running merge.lua script
+2024-01-07 13:02:30,699 - INFO - Processing combined data
+2024-01-07 13:02:31,436 - INFO - Created index.html output
+2024-01-07 13:02:31,437 - INFO - Generating pilot pages
+2024-01-07 13:09:18,059 - WARNING - PyNaCl is not installed, voice will NOT be supported
+2024-01-07 13:09:18,063 - DEBUG - Using proactor: IocpProactor
+2024-01-07 13:09:18,065 - INFO - logging in using static token
+2024-01-07 13:09:19,216 - INFO - Shard ID None has connected to Gateway (Session ID: f07f2994268a75ce431692c07d3b51fb).
+2024-01-07 13:09:38,179 - ERROR - Ignoring exception in command assign_co
+Traceback (most recent call last):
+  File "C:\Users\GavinE\OneDrive - Sentient Vision Systems\Repos\dcs_server_logbook\env\Lib\site-packages\discord\ext\commands\bot.py", line 1350, in invoke
+    await ctx.command.invoke(ctx)
+  File "C:\Users\GavinE\OneDrive - Sentient Vision Systems\Repos\dcs_server_logbook\env\Lib\site-packages\discord\ext\commands\core.py", line 1021, in invoke
+    await self.prepare(ctx)
+  File "C:\Users\GavinE\OneDrive - Sentient Vision Systems\Repos\dcs_server_logbook\env\Lib\site-packages\discord\ext\commands\core.py", line 938, in prepare
+    await self._parse_arguments(ctx)
+  File "C:\Users\GavinE\OneDrive - Sentient Vision Systems\Repos\dcs_server_logbook\env\Lib\site-packages\discord\ext\commands\core.py", line 853, in _parse_arguments
+    kwargs[name] = await self.transform(ctx, param, attachments)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\GavinE\OneDrive - Sentient Vision Systems\Repos\dcs_server_logbook\env\Lib\site-packages\discord\ext\commands\core.py", line 697, in transform
+    raise MissingRequiredArgument(param)
+discord.ext.commands.errors.MissingRequiredArgument: pilot_name is a required argument that is missing.
+2024-01-07 13:11:31,770 - WARNING - PyNaCl is not installed, voice will NOT be supported
+2024-01-07 13:11:31,771 - DEBUG - Using proactor: IocpProactor
+2024-01-07 13:11:31,772 - INFO - logging in using static token
+2024-01-07 13:11:33,082 - INFO - Shard ID None has connected to Gateway (Session ID: c1347983e236d6ba10fa0bd172f1fa3d).
+2024-01-07 13:11:48,686 - ERROR - Ignoring exception in command assign_co
+Traceback (most recent call last):
+  File "C:\Users\GavinE\OneDrive - Sentient Vision Systems\Repos\dcs_server_logbook\env\Lib\site-packages\discord\ext\commands\core.py", line 235, in wrapped
+    ret = await coro(*args, **kwargs)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\GavinE\OneDrive - Sentient Vision Systems\Repos\dcs_server_logbook\src\bot.py", line 24, in assign_co
+    await ctx.send(f"No pilot found with the name: {name}")
+                                                    ^^^^
+NameError: name 'name' is not defined
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\GavinE\OneDrive - Sentient Vision Systems\Repos\dcs_server_logbook\env\Lib\site-packages\discord\ext\commands\bot.py", line 1350, in invoke
+    await ctx.command.invoke(ctx)
+  File "C:\Users\GavinE\OneDrive - Sentient Vision Systems\Repos\dcs_server_logbook\env\Lib\site-packages\discord\ext\commands\core.py", line 1029, in invoke
+    await injected(*ctx.args, **ctx.kwargs)  # type: ignore
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\GavinE\OneDrive - Sentient Vision Systems\Repos\dcs_server_logbook\env\Lib\site-packages\discord\ext\commands\core.py", line 244, in wrapped
+    raise CommandInvokeError(exc) from exc
+discord.ext.commands.errors.CommandInvokeError: Command raised an exception: NameError: name 'name' is not defined
+2024-01-07 13:12:13,322 - WARNING - PyNaCl is not installed, voice will NOT be supported
+2024-01-07 13:12:13,323 - DEBUG - Using proactor: IocpProactor
+2024-01-07 13:12:13,324 - INFO - logging in using static token
+2024-01-07 13:12:14,554 - INFO - Shard ID None has connected to Gateway (Session ID: 88cb5e5d7d92f7032051257df72b9912).
+2024-01-07 13:15:27,183 - WARNING - PyNaCl is not installed, voice will NOT be supported
+2024-01-07 13:15:27,184 - DEBUG - Using proactor: IocpProactor
+2024-01-07 13:15:27,185 - INFO - logging in using static token
+2024-01-07 13:15:28,498 - INFO - Shard ID None has connected to Gateway (Session ID: fffb0c9efadc3e7d3e00179dac0f95e2).
+2024-01-07 13:16:30,531 - WARNING - PyNaCl is not installed, voice will NOT be supported
+2024-01-07 13:16:30,532 - DEBUG - Using proactor: IocpProactor
+2024-01-07 13:16:30,532 - INFO - logging in using static token
+2024-01-07 13:16:31,559 - INFO - Shard ID None has connected to Gateway (Session ID: 2fb4b567f6380752a49c1a35ab91b4a2).
+2024-01-07 13:18:19,680 - WARNING - PyNaCl is not installed, voice will NOT be supported
+2024-01-07 13:18:19,681 - DEBUG - Using proactor: IocpProactor
+2024-01-07 13:18:19,683 - INFO - logging in using static token
+2024-01-07 13:18:20,786 - INFO - Shard ID None has connected to Gateway (Session ID: 865d5b342033eb6c2e8fc70093101bf2).
+2024-01-07 13:22:22,272 - WARNING - PyNaCl is not installed, voice will NOT be supported
+2024-01-07 13:22:22,274 - DEBUG - Using proactor: IocpProactor
+2024-01-07 13:22:22,275 - INFO - logging in using static token
+2024-01-07 13:22:23,209 - INFO - Shard ID None has connected to Gateway (Session ID: c5dd5fb0e551bcde61df8743063a10ac).
+2024-01-07 13:29:09,432 - WARNING - PyNaCl is not installed, voice will NOT be supported
+2024-01-07 13:29:09,433 - DEBUG - Using proactor: IocpProactor
+2024-01-07 13:29:09,434 - INFO - logging in using static token
+2024-01-07 13:29:12,009 - INFO - Shard ID None has connected to Gateway (Session ID: 978184dd79156f7976ac6db75bd06793).
+2024-01-07 13:29:43,318 - INFO - Pilot Mailman assigned to command of XI Sqn
+2024-01-07 13:30:15,227 - WARNING - PyNaCl is not installed, voice will NOT be supported
+2024-01-07 13:30:15,228 - DEBUG - Using proactor: IocpProactor
+2024-01-07 13:30:15,229 - INFO - logging in using static token
+2024-01-07 13:30:16,231 - INFO - Shard ID None has connected to Gateway (Session ID: 40fd37206db2b86ad63a62f723b04c03).
+2024-01-07 13:30:22,698 - INFO - Pilot Mailman assigned to command of XI Sqn
+2024-01-07 13:30:48,810 - WARNING - PyNaCl is not installed, voice will NOT be supported
+2024-01-07 13:30:48,811 - DEBUG - Using proactor: IocpProactor
+2024-01-07 13:30:48,812 - INFO - logging in using static token
+2024-01-07 13:30:49,859 - INFO - Shard ID None has connected to Gateway (Session ID: 4869a25c4c7a1a88e73bdb38cd5cbd25).
+2024-01-07 13:37:08,508 - WARNING - PyNaCl is not installed, voice will NOT be supported
+2024-01-07 13:37:08,509 - DEBUG - Using proactor: IocpProactor
+2024-01-07 13:37:08,511 - INFO - logging in using static token
+2024-01-07 13:37:09,396 - INFO - Shard ID None has connected to Gateway (Session ID: 8f74d5a71e9eeccc38673a059d4adb68).
+2024-01-07 13:37:22,096 - INFO - Pilot d924195f7dfe499a192c11f00489df4a assigned as CO of Squadron 892 NAS
+2024-01-07 13:37:22,099 - INFO - Pilot Mailman assigned to command of 892 NAS
+2024-01-07 13:37:45,237 - INFO - Pilot 88dae793ecd2d2ed030fbd6bca2297f7 assigned as CO of Squadron 656 Sqn
+2024-01-07 13:37:45,240 - INFO - Pilot Gimbal assigned to command of 656 Sqn
+2024-01-07 13:37:59,913 - INFO - Pilot e473f6817732c53fd33b3b5b923bb3b8 assigned as CO of Squadron 617 Sqn
+2024-01-07 13:37:59,916 - INFO - Pilot Dangerman assigned to command of 617 Sqn
+2024-01-07 13:39:35,614 - INFO - Pilot c153e49b73efbf650cd11ac76f3831df assigned as CO of Squadron XI Sqn
+2024-01-07 13:39:35,618 - INFO - Pilot RJF assigned to command of XI Sqn
+2024-01-07 13:39:46,509 - INFO - Pilot 6b7faedbf5e4500cda9efe482cf5d764 assigned as CO of Squadron IV Sqn
+2024-01-07 13:39:46,513 - INFO - Pilot Cactus assigned to command of IV Sqn
+2024-01-07 13:50:15,133 - WARNING - PyNaCl is not installed, voice will NOT be supported
+2024-01-07 13:50:15,134 - DEBUG - Using proactor: IocpProactor
+2024-01-07 13:50:15,135 - INFO - logging in using static token
+2024-01-07 13:50:16,104 - INFO - Shard ID None has connected to Gateway (Session ID: 4494d9603ba91550a74f4ebb0766acd1).
+2024-01-07 13:50:25,328 - INFO - Running merge.lua script
+2024-01-07 13:50:25,625 - INFO - Processing combined data
+2024-01-07 13:50:25,818 - INFO - Created index.html output
+2024-01-07 13:50:25,818 - INFO - Generating pilot pages
+2024-01-07 14:10:21,516 - WARNING - PyNaCl is not installed, voice will NOT be supported
+2024-01-07 14:10:21,517 - DEBUG - Using proactor: IocpProactor
+2024-01-07 14:10:21,518 - INFO - logging in using static token
+2024-01-07 14:10:22,682 - INFO - Shard ID None has connected to Gateway (Session ID: 3f44d219936c491327e8370022194f76).
+2024-01-07 14:25:00,739 - WARNING - PyNaCl is not installed, voice will NOT be supported
+2024-01-07 14:25:00,740 - DEBUG - Using proactor: IocpProactor
+2024-01-07 14:25:00,741 - INFO - logging in using static token
+2024-01-07 14:25:01,841 - INFO - Shard ID None has connected to Gateway (Session ID: 9cb65424a0bfbba506c265c32ebe1b06).
