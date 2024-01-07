@@ -74,20 +74,19 @@ function mergeStats(table1, table2)
     end
 end
 
--- New function to write stats to JSON format
 function writeStatsToJSON(stats, outputFileName)
     local json_data = json.encode(stats, { indent = true })
-    
-    -- Open the output file in write mode
+
     local file, err = io.open(outputFileName, "w")
     if not file then
         error("Failed to open file for writing: " .. err)
     end
 
-    -- Write the JSON data to the file
     file:write(json_data)
     file:close()
-    print("Combined stats JSON file written to " .. outputFileName)
+
+    -- Print the file path instead of a message
+    print(outputFileName)
 end
 
 -- Main script to merge multiple files
@@ -108,7 +107,6 @@ end
 -- Write the combined stats to a JSON file
 local outputFileName = "data/stats/combinedStats.json"
 writeStatsToJSON(combinedStats, outputFileName)
-
 
 return {
     parseLuaFile = parseLuaFile,

@@ -15,3 +15,4 @@ To initialize the virtual environment using the following command:
 Download the lua binaries from [https://luabinaries.sourceforge.net/download.html](this website).
 Install the lua binaries into a suitable directory, e.g. `c:\lua` and add that directory to your `PATH` variable.
 Ensure that the lua library `dkjson.lua` is located with the correct lua version.
+

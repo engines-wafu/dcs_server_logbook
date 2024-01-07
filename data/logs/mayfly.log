@@ -86,3 +86,115 @@ stack traceback:
 2024-01-06 13:06:48,803 - INFO - Running merge.lua script
 2024-01-06 13:06:48,843 - INFO - Processing combined data
 2024-01-06 13:06:48,843 - ERROR - Error parsing JSON data: Expecting value: line 1 column 1 (char 0)
+2024-01-06 13:17:32,367 - INFO - Running merge.lua script
+2024-01-06 13:17:32,395 - INFO - Processing combined data
+2024-01-06 13:17:32,395 - ERROR - Error reading file: [Errno 2] No such file or directory: 'Combined stats JSON file written to data/stats/combinedStats.json\n'
+2024-01-06 13:17:32,395 - ERROR - Error reading file: [Errno 2] No such file or directory: 'data/stats/combined_data.json'
+2024-01-06 13:20:15,302 - INFO - Running merge.lua script
+2024-01-06 13:20:15,345 - INFO - Processing combined data
+2024-01-06 13:20:15,345 - ERROR - Error reading file: [Errno 2] No such file or directory: 'Combined stats JSON file written to data/stats/combinedStats.json\n'
+2024-01-06 13:43:56,317 - INFO - Running merge.lua script
+2024-01-06 13:43:56,362 - INFO - Processing combined data
+2024-01-06 13:43:56,362 - ERROR - Error reading file: [Errno 2] No such file or directory: 'Combined stats JSON file written to data/stats/combinedStats.json\n'
+2024-01-06 13:53:31,522 - INFO - Running merge.lua script
+2024-01-06 13:53:31,566 - INFO - Processing combined data
+2024-01-06 13:53:31,566 - ERROR - Error reading file: [Errno 2] No such file or directory: 'Combined stats JSON file written to data/stats/combinedStats.json\n'
+2024-01-06 13:54:19,099 - INFO - Running merge.lua script
+2024-01-06 13:54:19,141 - INFO - Processing combined data
+2024-01-06 13:54:19,141 - ERROR - Error reading file: [Errno 2] No such file or directory: 'Combined stats JSON file written to data/stats/combinedStats.json\n'
+2024-01-06 13:59:00,795 - INFO - Running merge.lua script
+2024-01-06 13:59:00,838 - INFO - Processing combined data
+2024-01-06 13:59:00,838 - ERROR - Error reading file: [Errno 2] No such file or directory: 'Combined stats JSON file written to data/stats/combinedStats.json\n'
+2024-01-06 14:00:09,994 - INFO - Running merge.lua script
+2024-01-06 14:00:10,035 - INFO - Processing combined data
+2024-01-06 14:00:10,035 - ERROR - Error reading file: [Errno 2] No such file or directory: 'Combined stats JSON file written to data/stats/combinedStats.json\n'
+2024-01-06 14:00:44,921 - INFO - Running merge.lua script
+2024-01-06 14:00:44,962 - INFO - Processing combined data
+2024-01-06 14:00:44,962 - ERROR - Error reading file: [Errno 2] No such file or directory: 'Combined stats JSON file written to data/stats/combinedStats.json\n'
+2024-01-06 14:02:56,394 - INFO - Running merge.lua script
+2024-01-06 14:02:56,433 - INFO - Processing combined data
+2024-01-06 14:02:56,433 - ERROR - Error reading file: [Errno 2] No such file or directory: 'Combined stats JSON file written to data/stats/combinedStats.json\n'
+2024-01-06 14:03:47,553 - INFO - Running merge.lua script
+2024-01-06 14:03:47,595 - INFO - Processing combined data
+2024-01-06 14:03:47,595 - ERROR - Error reading file: [Errno 2] No such file or directory: 'Combined stats JSON file written to data/stats/combinedStats.json\n'
+2024-01-06 14:04:09,789 - INFO - Running merge.lua script
+2024-01-06 14:04:09,833 - INFO - Processing combined data
+2024-01-06 14:04:09,833 - ERROR - Error reading file: [Errno 2] No such file or directory: 'Combined stats JSON file written to data/stats/combinedStats.json\n'
+2024-01-06 14:04:22,133 - INFO - Running merge.lua script
+2024-01-06 14:04:22,175 - INFO - Processing combined data
+2024-01-06 14:04:22,175 - ERROR - Error reading file: [Errno 2] No such file or directory: 'Combined stats JSON file written to data/stats/combinedStats.json\n'
+2024-01-06 14:06:35,312 - INFO - Running merge.lua script
+2024-01-06 14:06:35,345 - INFO - Processing combined data
+2024-01-06 14:06:35,345 - ERROR - Error reading file: [Errno 2] No such file or directory: 'Combined stats JSON file written to data/stats/combinedStats.json\n'
+2024-01-06 14:06:37,835 - INFO - Running merge.lua script
+2024-01-06 14:06:37,864 - INFO - Processing combined data
+2024-01-06 14:06:37,864 - ERROR - Error reading file: [Errno 2] No such file or directory: 'Combined stats JSON file written to data/stats/combinedStats.json\n'
+2024-01-06 14:07:47,666 - INFO - Running merge.lua script
+2024-01-06 14:07:47,706 - INFO - Processing combined data
+2024-01-06 14:07:47,707 - ERROR - Error reading file: [Errno 2] No such file or directory: 'Combined stats JSON file written to data/stats/combinedStats.json\n'
+2024-01-06 14:09:11,372 - INFO - Running merge.lua script
+2024-01-06 14:09:11,414 - INFO - Processing combined data
+2024-01-06 14:09:11,414 - ERROR - Error reading file: [Errno 2] No such file or directory: 'Combined stats JSON file written to data/stats/combinedStats.json\n'
+2024-01-06 14:09:30,578 - INFO - Running merge.lua script
+2024-01-06 14:09:30,620 - INFO - Processing combined data
+2024-01-06 14:09:30,620 - ERROR - Error reading file: [Errno 2] No such file or directory: 'Combined stats JSON file written to data/stats/combinedStats.json\n'
+2024-01-06 14:15:17,378 - INFO - Running merge.lua script
+2024-01-06 14:15:17,419 - INFO - Processing combined data
+2024-01-06 14:15:17,419 - ERROR - Error reading file: [Errno 2] No such file or directory: 'Combined stats JSON file written to data/stats/combinedStats.json\n'
+2024-01-06 14:17:33,279 - INFO - Running merge.lua script
+2024-01-06 14:17:33,321 - INFO - Processing combined data
+2024-01-06 14:17:33,321 - ERROR - Error reading file: [Errno 2] No such file or directory: 'Combined stats JSON file written to data/stats/combinedStats.json\n'
+2024-01-06 14:18:08,293 - INFO - Running merge.lua script
+2024-01-06 14:18:08,334 - INFO - Processing combined data
+2024-01-06 14:18:08,334 - ERROR - Error reading file: [Errno 2] No such file or directory: 'Combined stats JSON file written to data/stats/combinedStats.json\n'
+2024-01-06 14:19:29,114 - INFO - Running merge.lua script
+2024-01-06 14:19:29,155 - INFO - Processing combined data
+2024-01-06 14:19:29,155 - ERROR - Error reading file: [Errno 2] No such file or directory: 'Combined stats JSON file written to data/stats/combinedStats.json\n'
+2024-01-06 14:19:59,731 - INFO - Running merge.lua script
+2024-01-06 14:19:59,773 - INFO - Processing combined data
+2024-01-06 14:19:59,773 - ERROR - Error reading file: [Errno 2] No such file or directory: 'Combined stats JSON file written to data/stats/combinedStats.json\n'
+2024-01-06 14:20:27,049 - INFO - Running merge.lua script
+2024-01-06 14:20:27,089 - INFO - Processing combined data
+2024-01-06 14:20:27,089 - ERROR - Error reading file: [Errno 2] No such file or directory: 'Combined stats JSON file written to data/stats/combinedStats.json\n'
+2024-01-06 15:25:43,637 - INFO - Running merge.lua script
+2024-01-06 15:25:43,684 - ERROR - No data returned from Lua script
+2024-01-06 15:25:58,796 - INFO - Running merge.lua script
+2024-01-06 15:25:58,836 - INFO - Processing combined data
+2024-01-06 15:25:58,836 - ERROR - Error reading file: [Errno 2] No such file or directory: 'Combined stats JSON file written to data/stats/combinedStats.json\n'
+2024-01-06 15:26:30,890 - INFO - Running merge.lua script
+2024-01-06 15:26:30,935 - ERROR - No data returned from Lua script
+2024-01-06 15:28:33,579 - INFO - Running merge.lua script
+2024-01-06 15:28:33,625 - ERROR - Error running Lua script: lua: src/lua/merge.lua:91: attempt to concatenate global 'outputFile' (a nil value)
+stack traceback:
+	src/lua/merge.lua:91: in function 'writeStatsToJSON'
+	src/lua/merge.lua:111: in main chunk
+	[C]: ?
+
+2024-01-06 15:28:33,625 - ERROR - No data returned from Lua script
+2024-01-06 15:28:51,833 - INFO - Running merge.lua script
+2024-01-06 15:28:51,874 - INFO - Processing combined data
+2024-01-06 15:28:51,874 - ERROR - Error reading file: [Errno 2] No such file or directory: 'Writing stats to data/stats/combinedStats.json complete\n'
+2024-01-06 15:29:09,362 - INFO - Running merge.lua script
+2024-01-06 15:29:09,408 - ERROR - No data returned from Lua script
+2024-01-06 15:29:45,752 - INFO - Running merge.lua script
+2024-01-06 15:29:45,793 - ERROR - No data returned from Lua script
+2024-01-06 15:33:24,572 - INFO - Running merge.lua script
+2024-01-06 15:33:24,619 - INFO - Processing combined data
+2024-01-06 15:33:24,619 - ERROR - Error reading file: [Errno 22] Invalid argument: 'data/stats/combinedStats.json\n'
+2024-01-06 15:35:22,983 - INFO - Running merge.lua script
+2024-01-06 15:35:23,025 - INFO - Processing combined data
+2024-01-06 15:35:38,842 - INFO - Running merge.lua script
+2024-01-06 15:35:38,884 - INFO - Processing combined data
+2024-01-06 15:40:33,012 - INFO - Running merge.lua script
+2024-01-06 15:40:33,054 - INFO - Processing combined data
+2024-01-06 15:51:42,463 - INFO - Running merge.lua script
+2024-01-06 15:51:42,507 - INFO - Processing combined data
+2024-01-06 15:51:42,514 - INFO - Created html output.
+2024-01-06 16:05:17,178 - INFO - Running merge.lua script
+2024-01-06 16:05:17,219 - INFO - Processing combined data
+2024-01-06 16:07:54,106 - INFO - Running merge.lua script
+2024-01-06 16:07:54,145 - INFO - Processing combined data
+2024-01-06 16:07:54,145 - INFO - Created html output
+2024-01-06 16:09:13,973 - INFO - Running merge.lua script
+2024-01-06 16:09:14,005 - INFO - Processing combined data
+2024-01-06 16:09:14,021 - INFO - Created html output

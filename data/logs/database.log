@@ -1,0 +1,253 @@
+2024-01-06 13:12:22,948 - INFO - Database and tables created successfully.
+2024-01-06 15:20:25,627 - INFO - Squadron added
+2024-01-06 15:20:25,634 - INFO - Squadron deleted
+2024-01-06 15:21:46,962 - INFO - Squadron added: 802 NAS
+2024-01-06 15:21:46,969 - INFO - Squadron deleted: 802 NAS
+2024-01-06 15:22:04,234 - INFO - Squadron edited: 802 NAS
+2024-01-06 15:22:04,241 - INFO - Squadron added: 802 NAS
+2024-01-06 15:22:04,248 - INFO - Squadron deleted: 802 NAS
+2024-01-06 15:25:31,017 - INFO - Squadron edited: 802 NAS
+2024-01-06 15:25:31,025 - INFO - Squadron added: 802 NAS
+2024-01-06 15:25:31,032 - INFO - Squadron deleted: 802 NAS
+2024-01-06 16:10:19,243 - INFO - Running merge.lua script
+2024-01-06 16:10:19,285 - INFO - Processing combined data
+2024-01-06 16:10:19,290 - INFO - Created html output
+2024-01-06 16:10:50,034 - INFO - Running merge.lua script
+2024-01-06 16:10:50,067 - INFO - Processing combined data
+2024-01-06 16:10:50,067 - INFO - Created html output
+2024-01-06 16:11:10,042 - INFO - Running merge.lua script
+2024-01-06 16:11:10,082 - INFO - Processing combined data
+2024-01-06 16:11:10,082 - INFO - Created html output
+2024-01-06 16:13:36,247 - INFO - Running merge.lua script
+2024-01-06 16:13:36,290 - INFO - Processing combined data
+2024-01-06 16:13:36,290 - ERROR - Invalid or empty 'squadrons' data provided.
+2024-01-06 16:13:36,290 - INFO - Created html output
+2024-01-06 16:14:14,847 - INFO - Running merge.lua script
+2024-01-06 16:14:14,889 - INFO - Processing combined data
+2024-01-06 16:14:14,894 - ERROR - Invalid or empty 'squadrons' data provided.
+2024-01-06 16:14:14,894 - INFO - Created html output
+2024-01-06 16:15:45,348 - INFO - Running merge.lua script
+2024-01-06 16:15:45,388 - INFO - Processing combined data
+2024-01-06 16:15:45,394 - ERROR - Invalid or empty 'squadrons' data provided.
+2024-01-06 16:15:45,394 - INFO - Created html output
+2024-01-06 16:15:50,906 - INFO - Running merge.lua script
+2024-01-06 16:15:50,932 - INFO - Processing combined data
+2024-01-06 16:15:50,947 - ERROR - Invalid or empty 'squadrons' data provided.
+2024-01-06 16:15:50,947 - INFO - Created html output
+2024-01-06 16:16:18,657 - INFO - Running merge.lua script
+2024-01-06 16:16:18,686 - INFO - Processing combined data
+2024-01-06 16:16:18,701 - ERROR - Invalid or empty 'squadrons' data provided.
+2024-01-06 16:16:18,701 - INFO - Created html output
+2024-01-06 16:17:17,114 - INFO - Running merge.lua script
+2024-01-06 16:17:17,156 - INFO - Processing combined data
+2024-01-06 16:17:17,161 - ERROR - Invalid or empty 'squadrons' data provided.
+2024-01-06 16:17:17,161 - INFO - Created html output
+2024-01-06 16:17:31,951 - INFO - Running merge.lua script
+2024-01-06 16:17:31,991 - INFO - Processing combined data
+2024-01-06 16:17:31,997 - ERROR - Invalid or empty 'squadrons' data provided.
+2024-01-06 16:17:31,997 - INFO - Created html output
+2024-01-06 16:17:38,688 - INFO - Running merge.lua script
+2024-01-06 16:17:38,720 - INFO - Processing combined data
+2024-01-06 16:17:38,735 - ERROR - Invalid or empty 'squadrons' data provided.
+2024-01-06 16:17:38,735 - INFO - Created html output
+2024-01-06 16:18:21,118 - INFO - Running merge.lua script
+2024-01-06 16:18:21,158 - INFO - Processing combined data
+2024-01-06 16:18:21,158 - ERROR - Invalid or empty 'squadrons' data provided
+2024-01-06 16:18:21,158 - INFO - Created html output
+2024-01-06 16:18:36,864 - INFO - Running merge.lua script
+2024-01-06 16:18:36,906 - INFO - Processing combined data
+2024-01-06 16:18:36,910 - ERROR - Invalid or empty 'squadrons' data provided
+2024-01-06 16:18:36,911 - INFO - Created html output
+2024-01-06 16:24:34,725 - INFO - Running merge.lua script
+2024-01-06 16:24:34,767 - INFO - Processing combined data
+2024-01-06 16:24:34,774 - INFO - Created html output
+2024-01-06 16:27:44,979 - INFO - Running merge.lua script
+2024-01-06 16:27:45,022 - INFO - Processing combined data
+2024-01-06 16:27:45,029 - INFO - Created html output
+2024-01-06 16:28:23,255 - INFO - Running merge.lua script
+2024-01-06 16:28:23,296 - INFO - Processing combined data
+2024-01-06 16:28:23,296 - INFO - Created html output
+2024-01-06 16:28:29,556 - INFO - Running merge.lua script
+2024-01-06 16:28:29,592 - INFO - Processing combined data
+2024-01-06 16:28:29,592 - INFO - Created html output
+2024-01-06 16:28:51,224 - INFO - Running merge.lua script
+2024-01-06 16:28:51,264 - INFO - Processing combined data
+2024-01-06 16:28:51,272 - INFO - Created html output
+2024-01-06 16:30:31,991 - INFO - Running merge.lua script
+2024-01-06 16:30:32,033 - INFO - Processing combined data
+2024-01-06 16:30:32,040 - INFO - Created html output
+2024-01-06 16:31:07,453 - INFO - Running merge.lua script
+2024-01-06 16:31:07,493 - INFO - Processing combined data
+2024-01-06 16:31:07,501 - INFO - Created html output
+2024-01-06 16:32:15,476 - INFO - Running merge.lua script
+2024-01-06 16:32:15,519 - INFO - Processing combined data
+2024-01-06 16:32:15,526 - INFO - Created html output
+2024-01-06 16:32:49,776 - INFO - Squadron edited: 801 NAS
+2024-01-06 16:32:51,685 - INFO - Squadron edited: 801 NAS
+2024-01-06 16:32:51,686 - INFO - Running merge.lua script
+2024-01-06 16:32:51,726 - INFO - Processing combined data
+2024-01-06 16:32:51,734 - INFO - Created html output
+2024-01-06 16:33:59,691 - INFO - Squadron edited: 801 NAS
+2024-01-06 16:33:59,691 - INFO - Running merge.lua script
+2024-01-06 16:33:59,733 - INFO - Processing combined data
+2024-01-06 16:33:59,740 - INFO - Created html output
+2024-01-06 16:34:11,248 - INFO - Squadron edited: 801 NAS
+2024-01-06 16:34:11,249 - INFO - Running merge.lua script
+2024-01-06 16:34:11,289 - INFO - Processing combined data
+2024-01-06 16:34:11,296 - INFO - Created html output
+2024-01-06 16:43:35,806 - INFO - Pilot Engines to 801 NAS
+2024-01-06 16:45:23,019 - INFO - Pilot Engines moved to 892 NAS
+2024-01-06 16:45:37,501 - INFO - Pilot Engines moved to 801 NAS
+2024-01-06 16:46:45,137 - INFO - Pilot Engines removed from all squadrons
+2024-01-06 16:47:00,346 - INFO - Pilot Engines assigned to 801 NAS
+2024-01-06 20:22:05,864 - INFO - Running merge.lua script
+2024-01-06 20:22:05,948 - INFO - Processing combined data
+2024-01-06 20:24:01,156 - INFO - Running merge.lua script
+2024-01-06 20:24:01,156 - INFO - Processing combined data
+2024-01-06 20:27:01,106 - INFO - Running merge.lua script
+2024-01-06 20:27:01,106 - INFO - Processing combined data
+2024-01-06 20:27:45,648 - INFO - Running merge.lua script
+2024-01-06 20:27:45,648 - INFO - Processing combined data
+2024-01-06 20:27:45,663 - INFO - Created html output
+2024-01-06 20:31:30,410 - INFO - Running merge.lua script
+2024-01-06 20:31:30,410 - INFO - Processing combined data
+2024-01-06 20:31:49,453 - INFO - Running merge.lua script
+2024-01-06 20:31:49,453 - INFO - Processing combined data
+2024-01-06 20:31:49,469 - INFO - Created html output
+2024-01-06 20:32:30,526 - INFO - Running merge.lua script
+2024-01-06 20:32:30,526 - INFO - Processing combined data
+2024-01-06 20:32:30,537 - INFO - Created html output
+2024-01-06 20:32:56,552 - INFO - Running merge.lua script
+2024-01-06 20:32:56,552 - INFO - Processing combined data
+2024-01-06 20:32:56,552 - INFO - Created html output
+2024-01-06 20:34:17,895 - INFO - Running merge.lua script
+2024-01-06 20:34:17,895 - INFO - Processing combined data
+2024-01-06 20:34:17,911 - INFO - Created html output
+2024-01-06 20:35:00,595 - INFO - Running merge.lua script
+2024-01-06 20:35:00,595 - INFO - Processing combined data
+2024-01-06 20:35:00,620 - INFO - Created html output
+2024-01-06 20:38:58,536 - INFO - Running merge.lua script
+2024-01-06 20:38:58,536 - INFO - Processing combined data
+2024-01-06 20:39:35,555 - INFO - Running merge.lua script
+2024-01-06 20:39:35,555 - INFO - Processing combined data
+2024-01-06 20:39:35,566 - INFO - Created html output
+2024-01-06 20:39:52,359 - INFO - Running merge.lua script
+2024-01-06 20:39:52,359 - INFO - Processing combined data
+2024-01-06 20:39:52,359 - INFO - Created html output
+2024-01-06 20:45:08,935 - INFO - Running merge.lua script
+2024-01-06 20:45:08,935 - INFO - Processing combined data
+2024-01-06 20:45:08,935 - INFO - Created html output
+2024-01-06 20:46:26,488 - INFO - Running merge.lua script
+2024-01-06 20:46:26,488 - INFO - Processing combined data
+2024-01-06 20:46:26,499 - INFO - Created html output
+2024-01-06 20:47:09,073 - INFO - Running merge.lua script
+2024-01-06 20:47:09,073 - INFO - Processing combined data
+2024-01-06 20:47:09,087 - INFO - Created html output
+2024-01-06 20:50:31,066 - INFO - Running merge.lua script
+2024-01-06 20:50:31,066 - INFO - Processing combined data
+2024-01-06 20:50:31,082 - INFO - Created html output
+2024-01-06 20:50:52,316 - INFO - Running merge.lua script
+2024-01-06 20:50:52,316 - INFO - Processing combined data
+2024-01-06 20:50:52,325 - INFO - Created html output
+2024-01-06 20:54:11,907 - INFO - Running merge.lua script
+2024-01-06 20:54:11,907 - INFO - Processing combined data
+2024-01-06 20:54:11,917 - INFO - Created html output
+2024-01-06 20:56:09,657 - INFO - Running merge.lua script
+2024-01-06 20:56:09,657 - INFO - Processing combined data
+2024-01-06 20:56:09,657 - INFO - Created html output
+2024-01-06 21:07:02,074 - INFO - Running merge.lua script
+2024-01-06 21:07:02,074 - INFO - Processing combined data
+2024-01-06 21:07:02,082 - INFO - Created index.html output
+2024-01-06 21:07:02,083 - INFO - Generating pilot pages
+2024-01-06 21:08:08,995 - INFO - Running merge.lua script
+2024-01-06 21:08:08,995 - INFO - Processing combined data
+2024-01-06 21:08:09,003 - INFO - Created index.html output
+2024-01-06 21:08:09,003 - INFO - Generating pilot pages
+2024-01-06 21:08:27,153 - INFO - Running merge.lua script
+2024-01-06 21:08:27,153 - INFO - Processing combined data
+2024-01-06 21:08:27,153 - INFO - Created index.html output
+2024-01-06 21:08:27,153 - INFO - Generating pilot pages
+2024-01-06 21:09:48,594 - INFO - Running merge.lua script
+2024-01-06 21:09:48,595 - INFO - Processing combined data
+2024-01-06 21:09:48,603 - INFO - Created index.html output
+2024-01-06 21:09:48,603 - INFO - Generating pilot pages
+2024-01-06 21:10:41,685 - INFO - Running merge.lua script
+2024-01-06 21:10:41,685 - INFO - Processing combined data
+2024-01-06 21:10:41,685 - INFO - Created index.html output
+2024-01-06 21:10:41,685 - INFO - Generating pilot pages
+2024-01-06 21:12:55,393 - INFO - Running merge.lua script
+2024-01-06 21:12:55,393 - INFO - Processing combined data
+2024-01-06 21:12:55,408 - INFO - Created index.html output
+2024-01-06 21:12:55,408 - INFO - Generating pilot pages
+2024-01-06 21:13:09,862 - INFO - Running merge.lua script
+2024-01-06 21:13:09,862 - INFO - Processing combined data
+2024-01-06 21:13:09,877 - INFO - Created index.html output
+2024-01-06 21:13:09,877 - INFO - Generating pilot pages
+2024-01-06 21:18:02,953 - INFO - Running merge.lua script
+2024-01-06 21:18:02,953 - INFO - Processing combined data
+2024-01-06 21:18:02,953 - INFO - Created index.html output
+2024-01-06 21:18:02,953 - INFO - Generating pilot pages
+2024-01-06 21:20:27,379 - INFO - Running merge.lua script
+2024-01-06 21:20:27,379 - INFO - Processing combined data
+2024-01-06 21:20:27,380 - INFO - Created index.html output
+2024-01-06 21:20:27,380 - INFO - Generating pilot pages
+2024-01-06 21:20:55,828 - INFO - Running merge.lua script
+2024-01-06 21:20:55,828 - INFO - Processing combined data
+2024-01-06 21:20:55,837 - INFO - Created index.html output
+2024-01-06 21:20:55,837 - INFO - Generating pilot pages
+2024-01-06 21:22:41,176 - INFO - Running merge.lua script
+2024-01-06 21:22:41,176 - INFO - Processing combined data
+2024-01-06 21:22:41,191 - INFO - Created index.html output
+2024-01-06 21:22:41,191 - INFO - Generating pilot pages
+2024-01-06 21:22:51,034 - INFO - Running merge.lua script
+2024-01-06 21:22:51,034 - INFO - Processing combined data
+2024-01-06 21:22:51,034 - INFO - Created index.html output
+2024-01-06 21:22:51,034 - INFO - Generating pilot pages
+2024-01-06 21:25:12,284 - INFO - Running merge.lua script
+2024-01-06 21:25:12,284 - INFO - Processing combined data
+2024-01-06 21:25:12,293 - INFO - Created index.html output
+2024-01-06 21:25:12,293 - INFO - Generating pilot pages
+2024-01-06 21:26:49,826 - INFO - Running merge.lua script
+2024-01-06 21:26:49,826 - INFO - Processing combined data
+2024-01-06 21:26:49,826 - INFO - Created index.html output
+2024-01-06 21:26:49,826 - INFO - Generating pilot pages
+2024-01-06 21:30:25,977 - INFO - Running merge.lua script
+2024-01-06 21:30:25,977 - INFO - Processing combined data
+2024-01-06 21:30:25,992 - INFO - Created index.html output
+2024-01-06 21:30:25,992 - INFO - Generating pilot pages
+2024-01-06 21:35:57,723 - INFO - Running merge.lua script
+2024-01-06 21:35:57,723 - INFO - Processing combined data
+2024-01-06 21:35:57,739 - INFO - Created index.html output
+2024-01-06 21:35:57,739 - INFO - Generating pilot pages
+2024-01-06 21:39:44,416 - INFO - Running merge.lua script
+2024-01-06 21:39:44,416 - INFO - Processing combined data
+2024-01-06 21:39:44,431 - INFO - Created index.html output
+2024-01-06 21:39:44,431 - INFO - Generating pilot pages
+2024-01-06 21:42:21,512 - INFO - Running merge.lua script
+2024-01-06 21:42:21,512 - INFO - Processing combined data
+2024-01-06 21:42:21,521 - INFO - Created index.html output
+2024-01-06 21:42:21,521 - INFO - Generating pilot pages
+2024-01-06 21:45:09,658 - INFO - Running merge.lua script
+2024-01-06 21:45:09,658 - INFO - Processing combined data
+2024-01-06 21:45:09,667 - INFO - Created index.html output
+2024-01-06 21:45:09,667 - INFO - Generating pilot pages
+2024-01-06 21:45:15,475 - INFO - Running merge.lua script
+2024-01-06 21:45:15,475 - INFO - Processing combined data
+2024-01-06 21:45:15,484 - INFO - Created index.html output
+2024-01-06 21:45:15,484 - INFO - Generating pilot pages
+2024-01-06 21:48:33,332 - INFO - Running merge.lua script
+2024-01-06 21:48:33,332 - INFO - Processing combined data
+2024-01-06 21:48:33,341 - INFO - Created index.html output
+2024-01-06 21:48:33,341 - INFO - Generating pilot pages
+2024-01-06 21:51:27,626 - INFO - Running merge.lua script
+2024-01-06 21:51:27,626 - INFO - Processing combined data
+2024-01-06 21:51:27,634 - INFO - Created index.html output
+2024-01-06 21:51:27,634 - INFO - Generating pilot pages
+2024-01-06 21:52:27,272 - INFO - Running merge.lua script
+2024-01-06 21:52:27,272 - INFO - Processing combined data
+2024-01-06 21:52:27,288 - INFO - Created index.html output
+2024-01-06 21:52:27,288 - INFO - Generating pilot pages
+2024-01-06 21:57:04,618 - INFO - Running merge.lua script
+2024-01-06 21:57:04,618 - INFO - Processing combined data
+2024-01-06 21:57:04,633 - INFO - Created index.html output
+2024-01-06 21:57:04,633 - INFO - Generating pilot pages
