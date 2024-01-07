@@ -84,6 +84,7 @@ def generate_index_html(db_path, output_path, json_file_path):
                     <tr><th style='width:30%'>Name</th><th style='width:10%'>Type hours</th><th style='width:10%'>Total hours</th><th style='width:10%'>Kills</th><th style='width:10%'>Currency</th></tr>
                     {pilot_rows_html}
                 </table>
+                <hr>
             </section>
         """
 

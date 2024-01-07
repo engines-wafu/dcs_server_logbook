@@ -4,7 +4,7 @@ import logging
 from discord.ext import commands
 from html_generator.html_generator import generate_index_html
 from database.db_crud import find_pilot_id_by_name, assign_pilot_to_squadron, get_squadron_ids, get_pilot_name
-from discord_bot.config import TOKEN
+from config import TOKEN
 
 # Configure logging
 log_filename = f"data/logs/bot.log"
@@ -67,7 +67,6 @@ async def assign_pilot(ctx, *, pilot_names):  # Use '*' to capture all text afte
     except Exception as e:
         await ctx.send(f"An error occurred: {e}")
     
-    generate_index_html(db_path, output_path, json_path)
     logging.info("Created index.html output")
 
 bot.run(TOKEN)

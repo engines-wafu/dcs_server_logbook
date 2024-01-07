@@ -9,40 +9,51 @@ def load_combined_stats(json_file_path):
     with open(json_file_path, 'r') as file:
         return json.load(file)
 
-def generate_squadron_pilot_rows(db_path, squadron_id, squadron_aircraft_type, combined_stats):
-    conn = sqlite3.connect(db_path)
+def generate_squadron_pilot_rows(DB_PATH, squadron_id, squadron_aircraft_type, combined_stats):
+    conn = sqlite3.connect(DB_PATH)
     cursor = conn.cursor()
 
     cursor.execute("SELECT pilot_id FROM Squadron_Pilots WHERE squadron_id = ?", (squadron_id,))
     pilot_ids = cursor.fetchall()
 
-    rows_html = ""
+    pilot_hours = []
     for (pilot_id,) in pilot_ids:
-        pilot_name = get_pilot_full_name(db_path, pilot_id)
+        pilot_stats = combined_stats.get(pilot_id, {})
+
+        # Check if 'times' is a dictionary and calculate total_hours
+        times_data = pilot_stats.get('times', {})
+        if isinstance(times_data, dict):
+            total_hours = sum(seconds_to_hours(aircraft_stats.get('total', 0))
+                              for aircraft_type, aircraft_stats in times_data.items()
+                              if isinstance(aircraft_stats, dict))
+        else:
+            total_hours = 0
+        pilot_hours.append((pilot_id, total_hours))
+
+    pilot_hours.sort(key=lambda x: x[1], reverse=True)
+
+    rows_html = ""
+    for pilot_id, total_hours in pilot_hours:
+        pilot_name = get_pilot_full_name(DB_PATH, pilot_id)
         if not pilot_name:
             continue
 
         pilot_stats = combined_stats.get(pilot_id, {})
-
         times_data = pilot_stats.get('times', {})
-        if not isinstance(times_data, dict):
-            type_hours = 0
-            total_hours = 0
-            total_kills = 0
-        else:
+
+        if isinstance(times_data, dict):
             type_hours = sum(seconds_to_hours(aircraft_stats.get('total', 0))
                              for aircraft_type, aircraft_stats in times_data.items()
                              if isinstance(aircraft_stats, dict) and aircraft_type.startswith(squadron_aircraft_type))
-
-            total_hours = sum(seconds_to_hours(aircraft_stats.get('total', 0))
-                              for aircraft_type, aircraft_stats in times_data.items()
-                              if isinstance(aircraft_stats, dict))
 
             total_kills = sum(
                 sum(category.get('total', 0) for category in aircraft_stats.get('kills', {}).values())
                 for aircraft_type, aircraft_stats in times_data.items()
                 if isinstance(aircraft_stats, dict)
             )
+        else:
+            type_hours = 0
+            total_kills = 0
 
         currency = days_from_epoch(pilot_stats.get('lastJoin', 0))
         bg_color = 'grey' if currency > 120 else 'red' if currency > 30 else 'orange' if currency > 15 else ''
@@ -60,8 +71,8 @@ def generate_squadron_pilot_rows(db_path, squadron_id, squadron_aircraft_type, c
     conn.close()
     return rows_html
 
-def generate_pilot_info_page(db_path, combined_stats, output_dir):
-    conn = sqlite3.connect(db_path)
+def generate_pilot_info_page(DB_PATH, combined_stats, output_dir):
+    conn = sqlite3.connect(DB_PATH)
     cursor = conn.cursor()
 
     cursor.execute("SELECT pilot_id, pilot_name, pilot_service, pilot_rank FROM Pilots")

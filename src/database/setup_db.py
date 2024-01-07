@@ -53,11 +53,11 @@ create_tables_commands = [
         PRIMARY KEY (aircraft_id, squadron_id)
     );''',
     '''CREATE TABLE IF NOT EXISTS Squadron_Pilots (
-        squadron_id TEXT,
-        pilot_id TEXT,
-        FOREIGN KEY (squadron_id) REFERENCES Squadrons (squadron_id),
-        FOREIGN KEY (pilot_id) REFERENCES Pilots (pilot_id),
-        PRIMARY KEY (pilot_id, squadron_id)
+    squadron_id TEXT,
+    pilot_id TEXT,
+    FOREIGN KEY (squadron_id) REFERENCES Squadrons (squadron_id),
+    FOREIGN KEY (pilot_id) REFERENCES Pilots (pilot_id),
+    PRIMARY KEY (pilot_id, squadron_id)
     );''',
     '''CREATE TABLE IF NOT EXISTS Pilot_Qualifications (
         pilot_id TEXT,

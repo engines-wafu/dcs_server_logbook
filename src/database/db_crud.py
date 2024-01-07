@@ -168,28 +168,24 @@ def get_pilot_name(db_path, pilot_id):
 
 def assign_pilot_to_squadron(db_path, pilot_id, squadron_id):
     """
-    Assigns a pilot to a squadron or updates the assignment if the pilot is already assigned.
+    Assigns a pilot to a squadron.
 
     :param db_path: Path to the SQLite database file.
-    :param pilot_id: ID of the pilot.
-    :param squadron_id: ID of the squadron to assign the pilot to.
+    :param pilot_id: Unique identifier of the pilot.
+    :param squadron_id: Unique identifier of the squadron.
     """
     conn = sqlite3.connect(db_path)
     cursor = conn.cursor()
 
-    # Check if the pilot is already assigned to a squadron
-    cursor.execute("SELECT squadron_id FROM Squadron_Pilots WHERE pilot_id = ?", (pilot_id,))
-    existing_assignment = cursor.fetchone()
-
-    if existing_assignment:
-        # Pilot is already assigned, so update the existing assignment
-        cursor.execute("UPDATE Squadron_Pilots SET squadron_id = ? WHERE pilot_id = ?", (squadron_id, pilot_id))
-    else:
-        # Pilot is not assigned to any squadron, so insert a new assignment
+    try:
         cursor.execute("INSERT INTO Squadron_Pilots (squadron_id, pilot_id) VALUES (?, ?)", (squadron_id, pilot_id))
-
-    conn.commit()
-    conn.close()
+        conn.commit()
+    except sqlite3.IntegrityError:
+        print(f"Pilot {pilot_id} is already assigned to Squadron {squadron_id}.")
+    except Exception as e:
+        print(f"An error occurred: {e}")
+    finally:
+        conn.close()
 
     logging.info("Pilot " + get_pilot_name(db_path, pilot_id) + " assigned to " + str(squadron_id))
 

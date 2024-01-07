@@ -717,3 +717,844 @@ discord.ext.commands.errors.CommandNotFound: Command "assin_pilot" is not found
 2024-01-07 10:59:42,380 - INFO - Processing combined data
 2024-01-07 10:59:42,435 - INFO - Created index.html output
 2024-01-07 10:59:42,435 - INFO - Generating pilot pages
+2024-01-07 11:32:26,493 - ERROR - Error running Lua script: lua54: src/lua/merge.lua:3: module 'dkjson' not found:
+	no field package.preload['dkjson']
+	no file 'C:\lua\lua\dkjson.lua'
+	no file 'C:\lua\lua\dkjson\init.lua'
+	no file 'C:\lua\dkjson.lua'
+	no file 'C:\lua\dkjson\init.lua'
+	no file 'C:\lua\..\share\lua\5.4\dkjson.lua'
+	no file 'C:\lua\..\share\lua\5.4\dkjson\init.lua'
+	no file '.\dkjson.lua'
+	no file '.\dkjson\init.lua'
+	no file 'C:\Program Files (x86)\Lua\5.1\lua\dkjson.luac'
+	no file 'C:\lua\dkjson.dll'
+	no file 'C:\lua\..\lib\lua\5.4\dkjson.dll'
+	no file 'C:\lua\loadall.dll'
+	no file '.\dkjson.dll'
+	no file 'C:\lua\dkjson54.dll'
+	no file '.\dkjson54.dll'
+stack traceback:
+	[C]: in function 'require'
+	src/lua/merge.lua:3: in main chunk
+	[C]: in ?
+
+2024-01-07 11:33:07,754 - ERROR - Error running Lua script: lua54: src/lua/merge.lua:3: module 'dkjson' not found:
+	no field package.preload['dkjson']
+	no file 'C:\lua\lua\dkjson.lua'
+	no file 'C:\lua\lua\dkjson\init.lua'
+	no file 'C:\lua\dkjson.lua'
+	no file 'C:\lua\dkjson\init.lua'
+	no file 'C:\lua\..\share\lua\5.4\dkjson.lua'
+	no file 'C:\lua\..\share\lua\5.4\dkjson\init.lua'
+	no file '.\dkjson.lua'
+	no file '.\dkjson\init.lua'
+	no file 'C:\Program Files (x86)\Lua\5.1\lua\dkjson.luac'
+	no file 'C:\lua\dkjson.dll'
+	no file 'C:\lua\..\lib\lua\5.4\dkjson.dll'
+	no file 'C:\lua\loadall.dll'
+	no file '.\dkjson.dll'
+	no file 'C:\lua\dkjson54.dll'
+	no file '.\dkjson54.dll'
+stack traceback:
+	[C]: in function 'require'
+	src/lua/merge.lua:3: in main chunk
+	[C]: in ?
+
+2024-01-07 11:34:14,120 - ERROR - Error running Lua script: lua54: src/lua/merge.lua:3: module 'dkjson' not found:
+	no field package.preload['dkjson']
+	no file 'C:\lua\lua\dkjson.lua'
+	no file 'C:\lua\lua\dkjson\init.lua'
+	no file 'C:\lua\dkjson.lua'
+	no file 'C:\lua\dkjson\init.lua'
+	no file 'C:\lua\..\share\lua\5.4\dkjson.lua'
+	no file 'C:\lua\..\share\lua\5.4\dkjson\init.lua'
+	no file '.\dkjson.lua'
+	no file '.\dkjson\init.lua'
+	no file 'C:\Program Files (x86)\Lua\5.1\lua\dkjson.luac'
+	no file 'C:\lua\dkjson.dll'
+	no file 'C:\lua\..\lib\lua\5.4\dkjson.dll'
+	no file 'C:\lua\loadall.dll'
+	no file '.\dkjson.dll'
+	no file 'C:\lua\dkjson54.dll'
+	no file '.\dkjson54.dll'
+stack traceback:
+	[C]: in function 'require'
+	src/lua/merge.lua:3: in main chunk
+	[C]: in ?
+
+2024-01-07 11:35:50,716 - ERROR - Error running Lua script: lua54: src/lua/merge.lua:3: module 'dkjson' not found:
+	no field package.preload['dkjson']
+	no file 'C:\lua\lua\dkjson.lua'
+	no file 'C:\lua\lua\dkjson\init.lua'
+	no file 'C:\lua\dkjson.lua'
+	no file 'C:\lua\dkjson\init.lua'
+	no file 'C:\lua\..\share\lua\5.4\dkjson.lua'
+	no file 'C:\lua\..\share\lua\5.4\dkjson\init.lua'
+	no file '.\dkjson.lua'
+	no file '.\dkjson\init.lua'
+	no file 'C:\Program Files (x86)\Lua\5.1\lua\dkjson.luac'
+	no file 'C:\lua\dkjson.dll'
+	no file 'C:\lua\..\lib\lua\5.4\dkjson.dll'
+	no file 'C:\lua\loadall.dll'
+	no file '.\dkjson.dll'
+	no file 'C:\lua\dkjson54.dll'
+	no file '.\dkjson54.dll'
+stack traceback:
+	[C]: in function 'require'
+	src/lua/merge.lua:3: in main chunk
+	[C]: in ?
+
+2024-01-07 11:41:46,000 - ERROR - Error running Lua script: lua54: src/lua/merge.lua:3: module 'dkjson' not found:
+	no field package.preload['dkjson']
+	no file 'C:\lua\lua\dkjson.lua'
+	no file 'C:\lua\lua\dkjson\init.lua'
+	no file 'C:\lua\dkjson.lua'
+	no file 'C:\lua\dkjson\init.lua'
+	no file 'C:\lua\..\share\lua\5.4\dkjson.lua'
+	no file 'C:\lua\..\share\lua\5.4\dkjson\init.lua'
+	no file '.\dkjson.lua'
+	no file '.\dkjson\init.lua'
+	no file 'C:\Program Files (x86)\Lua\5.1\lua\dkjson.luac'
+	no file 'C:\lua\dkjson.dll'
+	no file 'C:\lua\..\lib\lua\5.4\dkjson.dll'
+	no file 'C:\lua\loadall.dll'
+	no file '.\dkjson.dll'
+	no file 'C:\lua\dkjson54.dll'
+	no file '.\dkjson54.dll'
+stack traceback:
+	[C]: in function 'require'
+	src/lua/merge.lua:3: in main chunk
+	[C]: in ?
+
+2024-01-07 11:44:34,378 - ERROR - Error running Lua script: lua54: src/lua/merge.lua:3: module 'dkjson' not found:
+	no field package.preload['dkjson']
+	no file 'C:\lua\lua\dkjson.lua'
+	no file 'C:\lua\lua\dkjson\init.lua'
+	no file 'C:\lua\dkjson.lua'
+	no file 'C:\lua\dkjson\init.lua'
+	no file 'C:\lua\..\share\lua\5.4\dkjson.lua'
+	no file 'C:\lua\..\share\lua\5.4\dkjson\init.lua'
+	no file '.\dkjson.lua'
+	no file '.\dkjson\init.lua'
+	no file 'C:\Program Files (x86)\Lua\5.1\lua\dkjson.luac'
+	no file 'C:\lua\dkjson.dll'
+	no file 'C:\lua\..\lib\lua\5.4\dkjson.dll'
+	no file 'C:\lua\loadall.dll'
+	no file '.\dkjson.dll'
+	no file 'C:\lua\dkjson54.dll'
+	no file '.\dkjson54.dll'
+stack traceback:
+	[C]: in function 'require'
+	src/lua/merge.lua:3: in main chunk
+	[C]: in ?
+
+2024-01-07 11:45:05,405 - ERROR - Error running Lua script: lua54: src/lua/merge.lua:3: module 'dkjson' not found:
+	no field package.preload['dkjson']
+	no file 'C:\lua\lua\dkjson.lua'
+	no file 'C:\lua\lua\dkjson\init.lua'
+	no file 'C:\lua\dkjson.lua'
+	no file 'C:\lua\dkjson\init.lua'
+	no file 'C:\lua\..\share\lua\5.4\dkjson.lua'
+	no file 'C:\lua\..\share\lua\5.4\dkjson\init.lua'
+	no file '.\dkjson.lua'
+	no file '.\dkjson\init.lua'
+	no file 'C:\Program Files (x86)\Lua\5.1\lua\dkjson.luac'
+	no file 'C:\lua\dkjson.dll'
+	no file 'C:\lua\..\lib\lua\5.4\dkjson.dll'
+	no file 'C:\lua\loadall.dll'
+	no file '.\dkjson.dll'
+	no file 'C:\lua\dkjson54.dll'
+	no file '.\dkjson54.dll'
+stack traceback:
+	[C]: in function 'require'
+	src/lua/merge.lua:3: in main chunk
+	[C]: in ?
+
+2024-01-07 11:46:37,424 - ERROR - Error running Lua script: lua54: src/lua/merge.lua:3: module 'dkjson' not found:
+	no field package.preload['dkjson']
+	no file 'C:\lua\lua\dkjson.lua'
+	no file 'C:\lua\lua\dkjson\init.lua'
+	no file 'C:\lua\dkjson.lua'
+	no file 'C:\lua\dkjson\init.lua'
+	no file 'C:\lua\..\share\lua\5.4\dkjson.lua'
+	no file 'C:\lua\..\share\lua\5.4\dkjson\init.lua'
+	no file '.\dkjson.lua'
+	no file '.\dkjson\init.lua'
+	no file 'C:\Program Files (x86)\Lua\5.1\lua\dkjson.luac'
+	no file 'C:\lua\dkjson.dll'
+	no file 'C:\lua\..\lib\lua\5.4\dkjson.dll'
+	no file 'C:\lua\loadall.dll'
+	no file '.\dkjson.dll'
+	no file 'C:\lua\dkjson54.dll'
+	no file '.\dkjson54.dll'
+stack traceback:
+	[C]: in function 'require'
+	src/lua/merge.lua:3: in main chunk
+	[C]: in ?
+
+2024-01-07 11:50:51,607 - INFO - Running merge.lua script
+2024-01-07 11:50:51,607 - ERROR - Error running Lua script: lua54: src/lua/merge.lua:3: module 'dkjson' not found:
+	no field package.preload['dkjson']
+	no file 'C:\lua\lua\dkjson.lua'
+	no file 'C:\lua\lua\dkjson\init.lua'
+	no file 'C:\lua\dkjson.lua'
+	no file 'C:\lua\dkjson\init.lua'
+	no file 'C:\lua\..\share\lua\5.4\dkjson.lua'
+	no file 'C:\lua\..\share\lua\5.4\dkjson\init.lua'
+	no file '.\dkjson.lua'
+	no file '.\dkjson\init.lua'
+	no file 'C:\Program Files (x86)\Lua\5.1\lua\dkjson.luac'
+	no file 'C:\lua\dkjson.dll'
+	no file 'C:\lua\..\lib\lua\5.4\dkjson.dll'
+	no file 'C:\lua\loadall.dll'
+	no file '.\dkjson.dll'
+	no file 'C:\lua\dkjson54.dll'
+	no file '.\dkjson54.dll'
+stack traceback:
+	[C]: in function 'require'
+	src/lua/merge.lua:3: in main chunk
+	[C]: in ?
+
+2024-01-07 11:51:01,340 - INFO - Running merge.lua script
+2024-01-07 11:51:01,347 - ERROR - Error running Lua script: lua54: src/lua/merge.lua:3: module 'dkjson' not found:
+	no field package.preload['dkjson']
+	no file 'C:\lua\lua\dkjson.lua'
+	no file 'C:\lua\lua\dkjson\init.lua'
+	no file 'C:\lua\dkjson.lua'
+	no file 'C:\lua\dkjson\init.lua'
+	no file 'C:\lua\..\share\lua\5.4\dkjson.lua'
+	no file 'C:\lua\..\share\lua\5.4\dkjson\init.lua'
+	no file '.\dkjson.lua'
+	no file '.\dkjson\init.lua'
+	no file 'C:\Program Files (x86)\Lua\5.1\lua\dkjson.luac'
+	no file 'C:\lua\dkjson.dll'
+	no file 'C:\lua\..\lib\lua\5.4\dkjson.dll'
+	no file 'C:\lua\loadall.dll'
+	no file '.\dkjson.dll'
+	no file 'C:\lua\dkjson54.dll'
+	no file '.\dkjson54.dll'
+stack traceback:
+	[C]: in function 'require'
+	src/lua/merge.lua:3: in main chunk
+	[C]: in ?
+
+2024-01-07 11:51:01,347 - INFO - Processing combined data
+2024-01-07 11:51:01,349 - INFO - Running merge.lua script
+2024-01-07 11:52:12,026 - INFO - Running merge.lua script
+2024-01-07 11:52:12,033 - ERROR - Error running Lua script: lua54: src/lua/merge.lua:3: module 'dkjson' not found:
+	no field package.preload['dkjson']
+	no file 'C:\lua\lua\dkjson.lua'
+	no file 'C:\lua\lua\dkjson\init.lua'
+	no file 'C:\lua\dkjson.lua'
+	no file 'C:\lua\dkjson\init.lua'
+	no file 'C:\lua\..\share\lua\5.4\dkjson.lua'
+	no file 'C:\lua\..\share\lua\5.4\dkjson\init.lua'
+	no file '.\dkjson.lua'
+	no file '.\dkjson\init.lua'
+	no file 'C:\Program Files (x86)\Lua\5.1\lua\dkjson.luac'
+	no file 'C:\lua\dkjson.dll'
+	no file 'C:\lua\..\lib\lua\5.4\dkjson.dll'
+	no file 'C:\lua\loadall.dll'
+	no file '.\dkjson.dll'
+	no file 'C:\lua\dkjson54.dll'
+	no file '.\dkjson54.dll'
+stack traceback:
+	[C]: in function 'require'
+	src/lua/merge.lua:3: in main chunk
+	[C]: in ?
+
+2024-01-07 11:52:12,033 - INFO - Processing combined data
+2024-01-07 11:52:12,060 - INFO - Created index.html output
+2024-01-07 11:52:12,060 - INFO - Generating pilot pages
+2024-01-07 12:15:41,633 - INFO - Running merge.lua script
+2024-01-07 12:15:41,649 - ERROR - Error running Lua script: lua54: src/lua/merge.lua:3: module 'dkjson' not found:
+	no field package.preload['dkjson']
+	no file 'C:\lua\lua\dkjson.lua'
+	no file 'C:\lua\lua\dkjson\init.lua'
+	no file 'C:\lua\dkjson.lua'
+	no file 'C:\lua\dkjson\init.lua'
+	no file 'C:\lua\..\share\lua\5.4\dkjson.lua'
+	no file 'C:\lua\..\share\lua\5.4\dkjson\init.lua'
+	no file '.\dkjson.lua'
+	no file '.\dkjson\init.lua'
+	no file 'C:\Program Files (x86)\Lua\5.1\lua\dkjson.luac'
+	no file 'C:\lua\dkjson.dll'
+	no file 'C:\lua\..\lib\lua\5.4\dkjson.dll'
+	no file 'C:\lua\loadall.dll'
+	no file '.\dkjson.dll'
+	no file 'C:\lua\dkjson54.dll'
+	no file '.\dkjson54.dll'
+stack traceback:
+	[C]: in function 'require'
+	src/lua/merge.lua:3: in main chunk
+	[C]: in ?
+
+2024-01-07 12:15:41,649 - INFO - Processing combined data
+2024-01-07 12:15:57,053 - INFO - Running merge.lua script
+2024-01-07 12:15:57,059 - ERROR - Error running Lua script: lua54: src/lua/merge.lua:3: module 'dkjson' not found:
+	no field package.preload['dkjson']
+	no file 'C:\lua\lua\dkjson.lua'
+	no file 'C:\lua\lua\dkjson\init.lua'
+	no file 'C:\lua\dkjson.lua'
+	no file 'C:\lua\dkjson\init.lua'
+	no file 'C:\lua\..\share\lua\5.4\dkjson.lua'
+	no file 'C:\lua\..\share\lua\5.4\dkjson\init.lua'
+	no file '.\dkjson.lua'
+	no file '.\dkjson\init.lua'
+	no file 'C:\Program Files (x86)\Lua\5.1\lua\dkjson.luac'
+	no file 'C:\lua\dkjson.dll'
+	no file 'C:\lua\..\lib\lua\5.4\dkjson.dll'
+	no file 'C:\lua\loadall.dll'
+	no file '.\dkjson.dll'
+	no file 'C:\lua\dkjson54.dll'
+	no file '.\dkjson54.dll'
+stack traceback:
+	[C]: in function 'require'
+	src/lua/merge.lua:3: in main chunk
+	[C]: in ?
+
+2024-01-07 12:15:57,059 - INFO - Processing combined data
+2024-01-07 12:16:03,921 - INFO - Running merge.lua script
+2024-01-07 12:16:03,925 - ERROR - Error running Lua script: lua54: src/lua/merge.lua:3: module 'dkjson' not found:
+	no field package.preload['dkjson']
+	no file 'C:\lua\lua\dkjson.lua'
+	no file 'C:\lua\lua\dkjson\init.lua'
+	no file 'C:\lua\dkjson.lua'
+	no file 'C:\lua\dkjson\init.lua'
+	no file 'C:\lua\..\share\lua\5.4\dkjson.lua'
+	no file 'C:\lua\..\share\lua\5.4\dkjson\init.lua'
+	no file '.\dkjson.lua'
+	no file '.\dkjson\init.lua'
+	no file 'C:\Program Files (x86)\Lua\5.1\lua\dkjson.luac'
+	no file 'C:\lua\dkjson.dll'
+	no file 'C:\lua\..\lib\lua\5.4\dkjson.dll'
+	no file 'C:\lua\loadall.dll'
+	no file '.\dkjson.dll'
+	no file 'C:\lua\dkjson54.dll'
+	no file '.\dkjson54.dll'
+stack traceback:
+	[C]: in function 'require'
+	src/lua/merge.lua:3: in main chunk
+	[C]: in ?
+
+2024-01-07 12:16:03,925 - INFO - Processing combined data
+2024-01-07 12:16:03,956 - INFO - Created index.html output
+2024-01-07 12:16:03,956 - INFO - Generating pilot pages
+2024-01-07 12:17:02,049 - INFO - Running merge.lua script
+2024-01-07 12:17:02,055 - ERROR - Error running Lua script: lua54: src/lua/merge.lua:3: module 'dkjson' not found:
+	no field package.preload['dkjson']
+	no file 'C:\lua\lua\dkjson.lua'
+	no file 'C:\lua\lua\dkjson\init.lua'
+	no file 'C:\lua\dkjson.lua'
+	no file 'C:\lua\dkjson\init.lua'
+	no file 'C:\lua\..\share\lua\5.4\dkjson.lua'
+	no file 'C:\lua\..\share\lua\5.4\dkjson\init.lua'
+	no file '.\dkjson.lua'
+	no file '.\dkjson\init.lua'
+	no file 'C:\Program Files (x86)\Lua\5.1\lua\dkjson.luac'
+	no file 'C:\lua\dkjson.dll'
+	no file 'C:\lua\..\lib\lua\5.4\dkjson.dll'
+	no file 'C:\lua\loadall.dll'
+	no file '.\dkjson.dll'
+	no file 'C:\lua\dkjson54.dll'
+	no file '.\dkjson54.dll'
+stack traceback:
+	[C]: in function 'require'
+	src/lua/merge.lua:3: in main chunk
+	[C]: in ?
+
+2024-01-07 12:17:02,056 - INFO - Processing combined data
+2024-01-07 12:18:30,829 - INFO - Running merge.lua script
+2024-01-07 12:18:30,836 - ERROR - Error running Lua script: lua54: src/lua/merge.lua:3: module 'dkjson' not found:
+	no field package.preload['dkjson']
+	no file 'C:\lua\lua\dkjson.lua'
+	no file 'C:\lua\lua\dkjson\init.lua'
+	no file 'C:\lua\dkjson.lua'
+	no file 'C:\lua\dkjson\init.lua'
+	no file 'C:\lua\..\share\lua\5.4\dkjson.lua'
+	no file 'C:\lua\..\share\lua\5.4\dkjson\init.lua'
+	no file '.\dkjson.lua'
+	no file '.\dkjson\init.lua'
+	no file 'C:\Program Files (x86)\Lua\5.1\lua\dkjson.luac'
+	no file 'C:\lua\dkjson.dll'
+	no file 'C:\lua\..\lib\lua\5.4\dkjson.dll'
+	no file 'C:\lua\loadall.dll'
+	no file '.\dkjson.dll'
+	no file 'C:\lua\dkjson54.dll'
+	no file '.\dkjson54.dll'
+stack traceback:
+	[C]: in function 'require'
+	src/lua/merge.lua:3: in main chunk
+	[C]: in ?
+
+2024-01-07 12:18:30,836 - INFO - Processing combined data
+2024-01-07 12:18:30,861 - INFO - Created index.html output
+2024-01-07 12:18:30,861 - INFO - Generating pilot pages
+2024-01-07 12:20:58,181 - INFO - Running merge.lua script
+2024-01-07 12:20:58,184 - ERROR - Error running Lua script: lua54: src/lua/merge.lua:3: module 'dkjson' not found:
+	no field package.preload['dkjson']
+	no file 'C:\lua\lua\dkjson.lua'
+	no file 'C:\lua\lua\dkjson\init.lua'
+	no file 'C:\lua\dkjson.lua'
+	no file 'C:\lua\dkjson\init.lua'
+	no file 'C:\lua\..\share\lua\5.4\dkjson.lua'
+	no file 'C:\lua\..\share\lua\5.4\dkjson\init.lua'
+	no file '.\dkjson.lua'
+	no file '.\dkjson\init.lua'
+	no file 'C:\Program Files (x86)\Lua\5.1\lua\dkjson.luac'
+	no file 'C:\lua\dkjson.dll'
+	no file 'C:\lua\..\lib\lua\5.4\dkjson.dll'
+	no file 'C:\lua\loadall.dll'
+	no file '.\dkjson.dll'
+	no file 'C:\lua\dkjson54.dll'
+	no file '.\dkjson54.dll'
+stack traceback:
+	[C]: in function 'require'
+	src/lua/merge.lua:3: in main chunk
+	[C]: in ?
+
+2024-01-07 12:20:58,184 - INFO - Processing combined data
+2024-01-07 12:21:03,458 - INFO - Running merge.lua script
+2024-01-07 12:21:03,463 - ERROR - Error running Lua script: lua54: src/lua/merge.lua:3: module 'dkjson' not found:
+	no field package.preload['dkjson']
+	no file 'C:\lua\lua\dkjson.lua'
+	no file 'C:\lua\lua\dkjson\init.lua'
+	no file 'C:\lua\dkjson.lua'
+	no file 'C:\lua\dkjson\init.lua'
+	no file 'C:\lua\..\share\lua\5.4\dkjson.lua'
+	no file 'C:\lua\..\share\lua\5.4\dkjson\init.lua'
+	no file '.\dkjson.lua'
+	no file '.\dkjson\init.lua'
+	no file 'C:\Program Files (x86)\Lua\5.1\lua\dkjson.luac'
+	no file 'C:\lua\dkjson.dll'
+	no file 'C:\lua\..\lib\lua\5.4\dkjson.dll'
+	no file 'C:\lua\loadall.dll'
+	no file '.\dkjson.dll'
+	no file 'C:\lua\dkjson54.dll'
+	no file '.\dkjson54.dll'
+stack traceback:
+	[C]: in function 'require'
+	src/lua/merge.lua:3: in main chunk
+	[C]: in ?
+
+2024-01-07 12:21:03,463 - INFO - Processing combined data
+2024-01-07 12:21:08,394 - INFO - Running merge.lua script
+2024-01-07 12:21:08,400 - ERROR - Error running Lua script: lua54: src/lua/merge.lua:3: module 'dkjson' not found:
+	no field package.preload['dkjson']
+	no file 'C:\lua\lua\dkjson.lua'
+	no file 'C:\lua\lua\dkjson\init.lua'
+	no file 'C:\lua\dkjson.lua'
+	no file 'C:\lua\dkjson\init.lua'
+	no file 'C:\lua\..\share\lua\5.4\dkjson.lua'
+	no file 'C:\lua\..\share\lua\5.4\dkjson\init.lua'
+	no file '.\dkjson.lua'
+	no file '.\dkjson\init.lua'
+	no file 'C:\Program Files (x86)\Lua\5.1\lua\dkjson.luac'
+	no file 'C:\lua\dkjson.dll'
+	no file 'C:\lua\..\lib\lua\5.4\dkjson.dll'
+	no file 'C:\lua\loadall.dll'
+	no file '.\dkjson.dll'
+	no file 'C:\lua\dkjson54.dll'
+	no file '.\dkjson54.dll'
+stack traceback:
+	[C]: in function 'require'
+	src/lua/merge.lua:3: in main chunk
+	[C]: in ?
+
+2024-01-07 12:21:08,401 - INFO - Processing combined data
+2024-01-07 12:21:08,429 - INFO - Created index.html output
+2024-01-07 12:21:08,429 - INFO - Generating pilot pages
+2024-01-07 12:21:37,810 - INFO - Running merge.lua script
+2024-01-07 12:21:37,817 - ERROR - Error running Lua script: lua54: src/lua/merge.lua:3: module 'dkjson' not found:
+	no field package.preload['dkjson']
+	no file 'C:\lua\lua\dkjson.lua'
+	no file 'C:\lua\lua\dkjson\init.lua'
+	no file 'C:\lua\dkjson.lua'
+	no file 'C:\lua\dkjson\init.lua'
+	no file 'C:\lua\..\share\lua\5.4\dkjson.lua'
+	no file 'C:\lua\..\share\lua\5.4\dkjson\init.lua'
+	no file '.\dkjson.lua'
+	no file '.\dkjson\init.lua'
+	no file 'C:\Program Files (x86)\Lua\5.1\lua\dkjson.luac'
+	no file 'C:\lua\dkjson.dll'
+	no file 'C:\lua\..\lib\lua\5.4\dkjson.dll'
+	no file 'C:\lua\loadall.dll'
+	no file '.\dkjson.dll'
+	no file 'C:\lua\dkjson54.dll'
+	no file '.\dkjson54.dll'
+stack traceback:
+	[C]: in function 'require'
+	src/lua/merge.lua:3: in main chunk
+	[C]: in ?
+
+2024-01-07 12:21:37,817 - INFO - Processing combined data
+2024-01-07 12:21:37,842 - INFO - Created index.html output
+2024-01-07 12:21:37,842 - INFO - Generating pilot pages
+2024-01-07 12:25:20,109 - WARNING - PyNaCl is not installed, voice will NOT be supported
+2024-01-07 12:25:20,109 - DEBUG - Using proactor: IocpProactor
+2024-01-07 12:25:20,110 - INFO - logging in using static token
+2024-01-07 12:25:20,996 - INFO - Shard ID None has connected to Gateway (Session ID: ca7341280bad2c069bf83dbd74eb44fb).
+2024-01-07 12:25:50,902 - INFO - Pilot Mailman assigned to 892 NAS
+2024-01-07 12:25:51,206 - INFO - Created index.html output
+2024-01-07 12:31:45,957 - WARNING - PyNaCl is not installed, voice will NOT be supported
+2024-01-07 12:31:45,958 - DEBUG - Using proactor: IocpProactor
+2024-01-07 12:31:45,959 - INFO - logging in using static token
+2024-01-07 12:31:46,766 - INFO - Shard ID None has connected to Gateway (Session ID: 074db9f50972dd4e6866876963d7fb4c).
+2024-01-07 12:32:19,280 - INFO - Pilot Mailman assigned to 617 Sqn
+2024-01-07 12:32:19,643 - INFO - Created index.html output
+2024-01-07 12:34:32,666 - INFO - Pilot Razor assigned to 892 NAS
+2024-01-07 12:34:32,986 - INFO - Pilot Slippy assigned to 892 NAS
+2024-01-07 12:34:33,206 - INFO - Pilot Swift One assigned to 892 NAS
+2024-01-07 12:34:33,496 - INFO - Pilot Scooby assigned to 892 NAS
+2024-01-07 12:34:33,734 - INFO - Pilot Bogus assigned to 892 NAS
+2024-01-07 12:34:34,022 - INFO - Pilot Funky assigned to 892 NAS
+2024-01-07 12:34:38,980 - INFO - Pilot Steph assigned to 892 NAS
+2024-01-07 12:34:39,199 - INFO - Created index.html output
+2024-01-07 12:38:40,846 - INFO - Pilot Gimbal assigned to 656 Sqn
+2024-01-07 12:38:41,100 - INFO - Pilot Razor assigned to 656 Sqn
+2024-01-07 12:38:41,354 - INFO - Pilot Dangerman assigned to 656 Sqn
+2024-01-07 12:38:41,560 - INFO - Pilot Buck assigned to 656 Sqn
+2024-01-07 12:38:41,749 - INFO - Pilot Bogus assigned to 656 Sqn
+2024-01-07 12:38:46,115 - INFO - Pilot Wee Neal assigned to 656 Sqn
+2024-01-07 12:38:46,294 - INFO - Pilot Torchy assigned to 656 Sqn
+2024-01-07 12:38:46,510 - INFO - Pilot Scooby assigned to 656 Sqn
+2024-01-07 12:38:46,721 - INFO - Pilot Falcon assigned to 656 Sqn
+2024-01-07 12:38:46,933 - INFO - Pilot Jester assigned to 656 Sqn
+2024-01-07 12:38:51,308 - INFO - Pilot Action Hero assigned to 656 Sqn
+2024-01-07 12:38:51,515 - INFO - Pilot Casper assigned to 656 Sqn
+2024-01-07 12:38:51,805 - INFO - Pilot Cowan assigned to 656 Sqn
+2024-01-07 12:38:52,084 - INFO - Pilot Fisher assigned to 656 Sqn
+2024-01-07 12:38:52,308 - INFO - Pilot Houseman assigned to 656 Sqn
+2024-01-07 12:38:52,591 - INFO - Pilot Lenny assigned to 656 Sqn
+2024-01-07 12:38:57,530 - INFO - Pilot MiMiKiwi assigned to 656 Sqn
+2024-01-07 12:38:57,761 - INFO - Pilot Podo assigned to 656 Sqn
+2024-01-07 12:38:58,125 - INFO - Pilot Solex assigned to 656 Sqn
+2024-01-07 12:38:58,346 - INFO - Pilot Varry assigned to 656 Sqn
+2024-01-07 12:38:58,665 - INFO - Pilot Venom assigned to 656 Sqn
+2024-01-07 12:38:58,906 - INFO - Pilot Yank assigned to 656 Sqn
+2024-01-07 12:39:03,744 - INFO - Pilot Monkey assigned to 656 Sqn
+2024-01-07 12:39:03,960 - INFO - Created index.html output
+2024-01-07 12:42:02,299 - INFO - Running merge.lua script
+2024-01-07 12:42:02,307 - ERROR - Error running Lua script: lua54: src/lua/merge.lua:3: module 'dkjson' not found:
+	no field package.preload['dkjson']
+	no file 'C:\lua\lua\dkjson.lua'
+	no file 'C:\lua\lua\dkjson\init.lua'
+	no file 'C:\lua\dkjson.lua'
+	no file 'C:\lua\dkjson\init.lua'
+	no file 'C:\lua\..\share\lua\5.4\dkjson.lua'
+	no file 'C:\lua\..\share\lua\5.4\dkjson\init.lua'
+	no file '.\dkjson.lua'
+	no file '.\dkjson\init.lua'
+	no file 'C:\Program Files (x86)\Lua\5.1\lua\dkjson.luac'
+	no file 'C:\lua\dkjson.dll'
+	no file 'C:\lua\..\lib\lua\5.4\dkjson.dll'
+	no file 'C:\lua\loadall.dll'
+	no file '.\dkjson.dll'
+	no file 'C:\lua\dkjson54.dll'
+	no file '.\dkjson54.dll'
+stack traceback:
+	[C]: in function 'require'
+	src/lua/merge.lua:3: in main chunk
+	[C]: in ?
+
+2024-01-07 12:42:02,307 - INFO - Processing combined data
+2024-01-07 12:42:24,996 - INFO - Running merge.lua script
+2024-01-07 12:42:25,003 - ERROR - Error running Lua script: lua54: src/lua/merge.lua:3: module 'dkjson' not found:
+	no field package.preload['dkjson']
+	no file 'C:\lua\lua\dkjson.lua'
+	no file 'C:\lua\lua\dkjson\init.lua'
+	no file 'C:\lua\dkjson.lua'
+	no file 'C:\lua\dkjson\init.lua'
+	no file 'C:\lua\..\share\lua\5.4\dkjson.lua'
+	no file 'C:\lua\..\share\lua\5.4\dkjson\init.lua'
+	no file '.\dkjson.lua'
+	no file '.\dkjson\init.lua'
+	no file 'C:\Program Files (x86)\Lua\5.1\lua\dkjson.luac'
+	no file 'C:\lua\dkjson.dll'
+	no file 'C:\lua\..\lib\lua\5.4\dkjson.dll'
+	no file 'C:\lua\loadall.dll'
+	no file '.\dkjson.dll'
+	no file 'C:\lua\dkjson54.dll'
+	no file '.\dkjson54.dll'
+stack traceback:
+	[C]: in function 'require'
+	src/lua/merge.lua:3: in main chunk
+	[C]: in ?
+
+2024-01-07 12:42:25,003 - INFO - Processing combined data
+2024-01-07 12:42:25,034 - INFO - Created index.html output
+2024-01-07 12:42:25,034 - INFO - Generating pilot pages
+2024-01-07 12:43:02,444 - INFO - Running merge.lua script
+2024-01-07 12:43:02,451 - ERROR - Error running Lua script: lua54: src/lua/merge.lua:3: module 'dkjson' not found:
+	no field package.preload['dkjson']
+	no file 'C:\lua\lua\dkjson.lua'
+	no file 'C:\lua\lua\dkjson\init.lua'
+	no file 'C:\lua\dkjson.lua'
+	no file 'C:\lua\dkjson\init.lua'
+	no file 'C:\lua\..\share\lua\5.4\dkjson.lua'
+	no file 'C:\lua\..\share\lua\5.4\dkjson\init.lua'
+	no file '.\dkjson.lua'
+	no file '.\dkjson\init.lua'
+	no file 'C:\Program Files (x86)\Lua\5.1\lua\dkjson.luac'
+	no file 'C:\lua\dkjson.dll'
+	no file 'C:\lua\..\lib\lua\5.4\dkjson.dll'
+	no file 'C:\lua\loadall.dll'
+	no file '.\dkjson.dll'
+	no file 'C:\lua\dkjson54.dll'
+	no file '.\dkjson54.dll'
+stack traceback:
+	[C]: in function 'require'
+	src/lua/merge.lua:3: in main chunk
+	[C]: in ?
+
+2024-01-07 12:43:02,451 - INFO - Processing combined data
+2024-01-07 12:44:53,716 - INFO - Running merge.lua script
+2024-01-07 12:44:53,720 - ERROR - Error running Lua script: lua54: src/lua/merge.lua:3: module 'dkjson' not found:
+	no field package.preload['dkjson']
+	no file 'C:\lua\lua\dkjson.lua'
+	no file 'C:\lua\lua\dkjson\init.lua'
+	no file 'C:\lua\dkjson.lua'
+	no file 'C:\lua\dkjson\init.lua'
+	no file 'C:\lua\..\share\lua\5.4\dkjson.lua'
+	no file 'C:\lua\..\share\lua\5.4\dkjson\init.lua'
+	no file '.\dkjson.lua'
+	no file '.\dkjson\init.lua'
+	no file 'C:\Program Files (x86)\Lua\5.1\lua\dkjson.luac'
+	no file 'C:\lua\dkjson.dll'
+	no file 'C:\lua\..\lib\lua\5.4\dkjson.dll'
+	no file 'C:\lua\loadall.dll'
+	no file '.\dkjson.dll'
+	no file 'C:\lua\dkjson54.dll'
+	no file '.\dkjson54.dll'
+stack traceback:
+	[C]: in function 'require'
+	src/lua/merge.lua:3: in main chunk
+	[C]: in ?
+
+2024-01-07 12:44:53,720 - INFO - Processing combined data
+2024-01-07 12:46:27,876 - INFO - Running merge.lua script
+2024-01-07 12:46:27,884 - ERROR - Error running Lua script: lua54: src/lua/merge.lua:3: module 'dkjson' not found:
+	no field package.preload['dkjson']
+	no file 'C:\lua\lua\dkjson.lua'
+	no file 'C:\lua\lua\dkjson\init.lua'
+	no file 'C:\lua\dkjson.lua'
+	no file 'C:\lua\dkjson\init.lua'
+	no file 'C:\lua\..\share\lua\5.4\dkjson.lua'
+	no file 'C:\lua\..\share\lua\5.4\dkjson\init.lua'
+	no file '.\dkjson.lua'
+	no file '.\dkjson\init.lua'
+	no file 'C:\Program Files (x86)\Lua\5.1\lua\dkjson.luac'
+	no file 'C:\lua\dkjson.dll'
+	no file 'C:\lua\..\lib\lua\5.4\dkjson.dll'
+	no file 'C:\lua\loadall.dll'
+	no file '.\dkjson.dll'
+	no file 'C:\lua\dkjson54.dll'
+	no file '.\dkjson54.dll'
+stack traceback:
+	[C]: in function 'require'
+	src/lua/merge.lua:3: in main chunk
+	[C]: in ?
+
+2024-01-07 12:46:27,884 - INFO - Processing combined data
+2024-01-07 12:46:27,914 - INFO - Created index.html output
+2024-01-07 12:46:27,914 - INFO - Generating pilot pages
+2024-01-07 12:47:46,628 - INFO - Pilot Lenny assigned to 656 Sqn
+2024-01-07 12:47:46,870 - INFO - Created index.html output
+2024-01-07 12:48:03,046 - INFO - Running merge.lua script
+2024-01-07 12:48:03,061 - ERROR - Error running Lua script: lua54: src/lua/merge.lua:3: module 'dkjson' not found:
+	no field package.preload['dkjson']
+	no file 'C:\lua\lua\dkjson.lua'
+	no file 'C:\lua\lua\dkjson\init.lua'
+	no file 'C:\lua\dkjson.lua'
+	no file 'C:\lua\dkjson\init.lua'
+	no file 'C:\lua\..\share\lua\5.4\dkjson.lua'
+	no file 'C:\lua\..\share\lua\5.4\dkjson\init.lua'
+	no file '.\dkjson.lua'
+	no file '.\dkjson\init.lua'
+	no file 'C:\Program Files (x86)\Lua\5.1\lua\dkjson.luac'
+	no file 'C:\lua\dkjson.dll'
+	no file 'C:\lua\..\lib\lua\5.4\dkjson.dll'
+	no file 'C:\lua\loadall.dll'
+	no file '.\dkjson.dll'
+	no file 'C:\lua\dkjson54.dll'
+	no file '.\dkjson54.dll'
+stack traceback:
+	[C]: in function 'require'
+	src/lua/merge.lua:3: in main chunk
+	[C]: in ?
+
+2024-01-07 12:48:03,061 - INFO - Processing combined data
+2024-01-07 12:48:03,093 - INFO - Created index.html output
+2024-01-07 12:48:03,093 - INFO - Generating pilot pages
+2024-01-07 12:50:14,814 - INFO - Pilot Swift One assigned to 656 Sqn
+2024-01-07 12:50:15,187 - INFO - Created index.html output
+2024-01-07 12:50:22,086 - INFO - Running merge.lua script
+2024-01-07 12:50:22,086 - ERROR - Error running Lua script: lua54: src/lua/merge.lua:3: module 'dkjson' not found:
+	no field package.preload['dkjson']
+	no file 'C:\lua\lua\dkjson.lua'
+	no file 'C:\lua\lua\dkjson\init.lua'
+	no file 'C:\lua\dkjson.lua'
+	no file 'C:\lua\dkjson\init.lua'
+	no file 'C:\lua\..\share\lua\5.4\dkjson.lua'
+	no file 'C:\lua\..\share\lua\5.4\dkjson\init.lua'
+	no file '.\dkjson.lua'
+	no file '.\dkjson\init.lua'
+	no file 'C:\Program Files (x86)\Lua\5.1\lua\dkjson.luac'
+	no file 'C:\lua\dkjson.dll'
+	no file 'C:\lua\..\lib\lua\5.4\dkjson.dll'
+	no file 'C:\lua\loadall.dll'
+	no file '.\dkjson.dll'
+	no file 'C:\lua\dkjson54.dll'
+	no file '.\dkjson54.dll'
+stack traceback:
+	[C]: in function 'require'
+	src/lua/merge.lua:3: in main chunk
+	[C]: in ?
+
+2024-01-07 12:50:22,086 - INFO - Processing combined data
+2024-01-07 12:50:22,118 - INFO - Created index.html output
+2024-01-07 12:50:22,118 - INFO - Generating pilot pages
+2024-01-07 12:51:39,539 - INFO - Pilot RJF assigned to XI Sqn
+2024-01-07 12:51:40,893 - INFO - Pilot Cactus assigned to XI Sqn
+2024-01-07 12:51:41,082 - INFO - Pilot Poacher assigned to XI Sqn
+2024-01-07 12:51:41,286 - INFO - Pilot Jez assigned to XI Sqn
+2024-01-07 12:51:41,544 - INFO - Pilot Hawk assigned to XI Sqn
+2024-01-07 12:51:41,803 - INFO - Pilot Flynn assigned to XI Sqn
+2024-01-07 12:51:46,157 - INFO - Created index.html output
+2024-01-07 12:51:51,342 - INFO - Running merge.lua script
+2024-01-07 12:51:51,349 - ERROR - Error running Lua script: lua54: src/lua/merge.lua:3: module 'dkjson' not found:
+	no field package.preload['dkjson']
+	no file 'C:\lua\lua\dkjson.lua'
+	no file 'C:\lua\lua\dkjson\init.lua'
+	no file 'C:\lua\dkjson.lua'
+	no file 'C:\lua\dkjson\init.lua'
+	no file 'C:\lua\..\share\lua\5.4\dkjson.lua'
+	no file 'C:\lua\..\share\lua\5.4\dkjson\init.lua'
+	no file '.\dkjson.lua'
+	no file '.\dkjson\init.lua'
+	no file 'C:\Program Files (x86)\Lua\5.1\lua\dkjson.luac'
+	no file 'C:\lua\dkjson.dll'
+	no file 'C:\lua\..\lib\lua\5.4\dkjson.dll'
+	no file 'C:\lua\loadall.dll'
+	no file '.\dkjson.dll'
+	no file 'C:\lua\dkjson54.dll'
+	no file '.\dkjson54.dll'
+stack traceback:
+	[C]: in function 'require'
+	src/lua/merge.lua:3: in main chunk
+	[C]: in ?
+
+2024-01-07 12:51:51,349 - INFO - Processing combined data
+2024-01-07 12:51:51,387 - INFO - Created index.html output
+2024-01-07 12:51:51,387 - INFO - Generating pilot pages
+2024-01-07 12:53:13,802 - INFO - Pilot Gimbal assigned to 617 Sqn
+2024-01-07 12:53:14,068 - INFO - Pilot Wee Neal assigned to 617 Sqn
+2024-01-07 12:53:14,286 - INFO - Pilot Christian assigned to 617 Sqn
+2024-01-07 12:53:14,768 - INFO - Pilot Liminal assigned to 617 Sqn
+2024-01-07 12:53:15,044 - INFO - Pilot Monkey assigned to 617 Sqn
+2024-01-07 12:53:15,285 - INFO - Created index.html output
+2024-01-07 12:53:22,548 - INFO - Running merge.lua script
+2024-01-07 12:53:22,554 - ERROR - Error running Lua script: lua54: src/lua/merge.lua:3: module 'dkjson' not found:
+	no field package.preload['dkjson']
+	no file 'C:\lua\lua\dkjson.lua'
+	no file 'C:\lua\lua\dkjson\init.lua'
+	no file 'C:\lua\dkjson.lua'
+	no file 'C:\lua\dkjson\init.lua'
+	no file 'C:\lua\..\share\lua\5.4\dkjson.lua'
+	no file 'C:\lua\..\share\lua\5.4\dkjson\init.lua'
+	no file '.\dkjson.lua'
+	no file '.\dkjson\init.lua'
+	no file 'C:\Program Files (x86)\Lua\5.1\lua\dkjson.luac'
+	no file 'C:\lua\dkjson.dll'
+	no file 'C:\lua\..\lib\lua\5.4\dkjson.dll'
+	no file 'C:\lua\loadall.dll'
+	no file '.\dkjson.dll'
+	no file 'C:\lua\dkjson54.dll'
+	no file '.\dkjson54.dll'
+stack traceback:
+	[C]: in function 'require'
+	src/lua/merge.lua:3: in main chunk
+	[C]: in ?
+
+2024-01-07 12:53:22,554 - INFO - Processing combined data
+2024-01-07 12:53:22,593 - INFO - Created index.html output
+2024-01-07 12:53:22,593 - INFO - Generating pilot pages
+2024-01-07 12:55:48,336 - INFO - Running merge.lua script
+2024-01-07 12:55:48,372 - ERROR - Error running Lua script: lua54: src/lua/merge.lua:3: module 'dkjson' not found:
+	no field package.preload['dkjson']
+	no file 'C:\lua\lua\dkjson.lua'
+	no file 'C:\lua\lua\dkjson\init.lua'
+	no file 'C:\lua\dkjson.lua'
+	no file 'C:\lua\dkjson\init.lua'
+	no file 'C:\lua\..\share\lua\5.4\dkjson.lua'
+	no file 'C:\lua\..\share\lua\5.4\dkjson\init.lua'
+	no file '.\dkjson.lua'
+	no file '.\dkjson\init.lua'
+	no file 'C:\Program Files (x86)\Lua\5.1\lua\dkjson.luac'
+	no file 'C:\lua\dkjson.dll'
+	no file 'C:\lua\..\lib\lua\5.4\dkjson.dll'
+	no file 'C:\lua\loadall.dll'
+	no file '.\dkjson.dll'
+	no file 'C:\lua\dkjson54.dll'
+	no file '.\dkjson54.dll'
+stack traceback:
+	[C]: in function 'require'
+	src/lua/merge.lua:3: in main chunk
+	[C]: in ?
+
+2024-01-07 12:55:48,372 - INFO - Processing combined data
+2024-01-07 12:55:48,417 - INFO - Created index.html output
+2024-01-07 12:55:48,417 - INFO - Generating pilot pages
+2024-01-07 12:56:28,900 - INFO - Running merge.lua script
+2024-01-07 12:56:28,901 - ERROR - Error running Lua script: lua54: src/lua/merge.lua:3: module 'dkjson' not found:
+	no field package.preload['dkjson']
+	no file 'C:\lua\lua\dkjson.lua'
+	no file 'C:\lua\lua\dkjson\init.lua'
+	no file 'C:\lua\dkjson.lua'
+	no file 'C:\lua\dkjson\init.lua'
+	no file 'C:\lua\..\share\lua\5.4\dkjson.lua'
+	no file 'C:\lua\..\share\lua\5.4\dkjson\init.lua'
+	no file '.\dkjson.lua'
+	no file '.\dkjson\init.lua'
+	no file 'C:\Program Files (x86)\Lua\5.1\lua\dkjson.luac'
+	no file 'C:\lua\dkjson.dll'
+	no file 'C:\lua\..\lib\lua\5.4\dkjson.dll'
+	no file 'C:\lua\loadall.dll'
+	no file '.\dkjson.dll'
+	no file 'C:\lua\dkjson54.dll'
+	no file '.\dkjson54.dll'
+stack traceback:
+	[C]: in function 'require'
+	src/lua/merge.lua:3: in main chunk
+	[C]: in ?
+
+2024-01-07 12:56:28,901 - INFO - Processing combined data
+2024-01-07 12:56:28,942 - INFO - Created index.html output
+2024-01-07 12:56:28,942 - INFO - Generating pilot pages
+2024-01-07 12:56:57,524 - INFO - Running merge.lua script
+2024-01-07 12:56:57,531 - ERROR - Error running Lua script: lua54: src/lua/merge.lua:3: module 'dkjson' not found:
+	no field package.preload['dkjson']
+	no file 'C:\lua\lua\dkjson.lua'
+	no file 'C:\lua\lua\dkjson\init.lua'
+	no file 'C:\lua\dkjson.lua'
+	no file 'C:\lua\dkjson\init.lua'
+	no file 'C:\lua\..\share\lua\5.4\dkjson.lua'
+	no file 'C:\lua\..\share\lua\5.4\dkjson\init.lua'
+	no file '.\dkjson.lua'
+	no file '.\dkjson\init.lua'
+	no file 'C:\Program Files (x86)\Lua\5.1\lua\dkjson.luac'
+	no file 'C:\lua\dkjson.dll'
+	no file 'C:\lua\..\lib\lua\5.4\dkjson.dll'
+	no file 'C:\lua\loadall.dll'
+	no file '.\dkjson.dll'
+	no file 'C:\lua\dkjson54.dll'
+	no file '.\dkjson54.dll'
+stack traceback:
+	[C]: in function 'require'
+	src/lua/merge.lua:3: in main chunk
+	[C]: in ?
+
+2024-01-07 12:56:57,531 - INFO - Processing combined data
+2024-01-07 12:56:57,570 - INFO - Created index.html output
+2024-01-07 12:56:57,570 - INFO - Generating pilot pages
