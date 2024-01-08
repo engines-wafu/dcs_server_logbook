@@ -1,4 +1,5 @@
 import sqlite3
+import time
 import logging
 
 # Configure logging
@@ -61,11 +62,11 @@ def add_qualification_to_database(db_path, qualification_name, qualification_des
     cursor = conn.cursor()
 
     # Convert duration from days to seconds (1 day = 86400 seconds)
-    qualification_duration_seconds = qualification_duration_days * 86400 if qualification_duration_days is not None else None
+    duration_in_seconds = qualification_duration_days * 86400  # Convert days to seconds
 
     try:
         cursor.execute("INSERT INTO Qualifications (qualification_name, qualification_description, qualification_duration) VALUES (?, ?, ?)", 
-                       (qualification_name, qualification_description, qualification_duration_seconds))
+                       (qualification_name, qualification_description, duration_in_seconds))
         conn.commit()
     except sqlite3.IntegrityError as e:
         raise Exception(f"Qualification already exists: {e}")
@@ -74,6 +75,125 @@ def add_qualification_to_database(db_path, qualification_name, qualification_des
     finally:
         conn.close()
 
+def get_awards(db_path):
+    conn = sqlite3.connect(db_path)
+    cursor = conn.cursor()
+    try:
+        cursor.execute("SELECT award_id, award_name FROM Awards")
+        awards = cursor.fetchall()
+    except Exception as e:
+        print(f"An error occurred: {e}")
+        awards = []
+    finally:
+        conn.close()
+    return awards
+
+def get_qualifications(db_path):
+    """
+    Retrieves all qualifications from the database.
+
+    :param db_path: Path to the SQLite database file.
+    :return: A list of tuples containing qualification details.
+    """
+    conn = sqlite3.connect(db_path)
+    cursor = conn.cursor()
+
+    try:
+        cursor.execute("SELECT qualification_id, qualification_name, qualification_duration FROM Qualifications")
+        qualifications = cursor.fetchall()
+    except Exception as e:
+        print(f"An error occurred: {e}")
+        qualifications = []
+    finally:
+        conn.close()
+
+    return qualifications
+
+def assign_award_to_pilot(db_path, pilot_id, award_id):
+    conn = sqlite3.connect(db_path)
+    cursor = conn.cursor()
+    try:
+        cursor.execute("INSERT INTO Pilot_Awards (pilot_id, award_id, date_issued) VALUES (?, ?, ?)", 
+                       (pilot_id, award_id, int(time.time())))
+        conn.commit()
+    except sqlite3.IntegrityError:
+        print(f"Award already assigned to this pilot.")
+    except Exception as e:
+        print(f"An error occurred: {e}")
+    finally:
+        conn.close()
+
+def assign_qualification_to_pilot(db_path, pilot_id, qualification_id, date_issued, date_expires):
+    """
+    Assigns a qualification to a pilot and updates the database.
+
+    :param db_path: Path to the SQLite database file.
+    :param pilot_id: Unique identifier of the pilot.
+    :param qualification_id: Unique identifier of the qualification.
+    :param date_issued: The date the qualification was issued (epoch time).
+    :param date_expires: The date the qualification expires (epoch time).
+    """
+    conn = sqlite3.connect(db_path)
+    cursor = conn.cursor()
+
+    try:
+        cursor.execute("INSERT INTO Pilot_Qualifications (pilot_id, qualification_id, date_issued, date_expires) VALUES (?, ?, ?, ?)", 
+                       (pilot_id, qualification_id, date_issued, date_expires))
+        conn.commit()
+    except sqlite3.IntegrityError as e:
+        print(f"Qualification already assigned to this pilot: {e}")
+    except Exception as e:
+        print(f"An error occurred: {e}")
+    finally:
+        conn.close()
+
+def get_pilot_awards(db_path, pilot_id):
+    conn = sqlite3.connect(db_path)
+    cursor = conn.cursor()
+    try:
+        cursor.execute("SELECT a.award_id, a.award_name FROM Awards a INNER JOIN Pilot_Awards pa ON a.award_id = pa.award_id WHERE pa.pilot_id = ?", (pilot_id,))
+        awards = cursor.fetchall()
+    except Exception as e:
+        print(f"An error occurred: {e}")
+        awards = []
+    finally:
+        conn.close()
+    return awards
+
+def get_pilot_qualifications(db_path, pilot_id):
+    conn = sqlite3.connect(db_path)
+    cursor = conn.cursor()
+    try:
+        cursor.execute("SELECT q.qualification_id, q.qualification_name FROM Qualifications q INNER JOIN Pilot_Qualifications pq ON q.qualification_id = pq.qualification_id WHERE pq.pilot_id = ?", (pilot_id,))
+        qualifications = cursor.fetchall()
+    except Exception as e:
+        print(f"An error occurred: {e}")
+        qualifications = []
+    finally:
+        conn.close()
+    return qualifications
+
+def remove_award_from_pilot(db_path, pilot_id, award_id):
+    conn = sqlite3.connect(db_path)
+    cursor = conn.cursor()
+    try:
+        cursor.execute("DELETE FROM Pilot_Awards WHERE pilot_id = ? AND award_id = ?", (pilot_id, award_id))
+        conn.commit()
+    except Exception as e:
+        print(f"An error occurred: {e}")
+    finally:
+        conn.close()
+
+def remove_qualification_from_pilot(db_path, pilot_id, qualification_id):
+    conn = sqlite3.connect(db_path)
+    cursor = conn.cursor()
+    try:
+        cursor.execute("DELETE FROM Pilot_Qualifications WHERE pilot_id = ? AND qualification_id = ?", (pilot_id, qualification_id))
+        conn.commit()
+    except Exception as e:
+        print(f"An error occurred: {e}")
+    finally:
+        conn.close()
 
 def add_squadron(db_path, squadron_id, squadron_motto, squadron_service, squadron_commission_date, squadron_commanding_officer, squadron_aircraft_type, squadron_pseudo_type):
     """

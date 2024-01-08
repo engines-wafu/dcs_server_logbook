@@ -1,13 +1,43 @@
-import os
-import json
-import sqlite3
-import datetime
+import os, json, sqlite3, datetime
 from utils.time_management import seconds_to_hours, days_from_epoch
 from database.db_crud import get_pilot_full_name
 
 def load_combined_stats(json_file_path):
     with open(json_file_path, 'r') as file:
         return json.load(file)
+
+def ribbon_image_exists(award_name):
+    image_path = f"web/img/ribbons/{award_name}.png"
+    return os.path.exists(image_path)
+
+def format_epoch_to_date(epoch_time):
+    if epoch_time:
+        return datetime.datetime.fromtimestamp(epoch_time).strftime('%d %b %y')
+    return 'N/A'
+
+def get_pilot_awards_with_details(db_path, pilot_id):
+    conn = sqlite3.connect(db_path)
+    cursor = conn.cursor()
+    cursor.execute("""
+        SELECT a.award_id, a.award_name, a.award_description, pa.date_issued
+        FROM Awards a
+        INNER JOIN Pilot_Awards pa ON a.award_id = pa.award_id
+        WHERE pa.pilot_id = ?""", (pilot_id,))
+    awards = [(award_id, award_name, award_description, format_epoch_to_date(date_issued), ribbon_image_exists(award_name)) for award_id, award_name, award_description, date_issued in cursor.fetchall()]
+    conn.close()
+    return awards
+
+def get_pilot_qualifications_with_details(db_path, pilot_id):
+    conn = sqlite3.connect(db_path)
+    cursor = conn.cursor()
+    cursor.execute("""
+        SELECT q.qualification_id, q.qualification_name, q.qualification_description, pq.date_issued, pq.date_expires
+        FROM Qualifications q
+        INNER JOIN Pilot_Qualifications pq ON q.qualification_id = pq.qualification_id
+        WHERE pq.pilot_id = ?""", (pilot_id,))
+    qualifications = [(qualification_id, qualification_name, qualification_description, format_epoch_to_date(date_issued), format_epoch_to_date(date_expires)) for qualification_id, qualification_name, qualification_description, date_issued, date_expires in cursor.fetchall()]
+    conn.close()
+    return qualifications
 
 def generate_squadron_pilot_rows(DB_PATH, squadron_id, squadron_aircraft_type, combined_stats):
     conn = sqlite3.connect(DB_PATH)
@@ -80,6 +110,21 @@ def generate_pilot_info_page(DB_PATH, combined_stats, output_dir):
 
     for pilot_id, pilot_name, pilot_service, pilot_rank in pilots:
         pilot_stats = combined_stats.get(pilot_id, {})
+        awards = get_pilot_awards_with_details(DB_PATH, pilot_id)
+        qualifications = get_pilot_qualifications_with_details(DB_PATH, pilot_id)
+        
+        # For Awards
+        awards_html = "<table style='border:1'><tr><th style='width:10%'>ID</th><th style='width:50%'>Name</th><th style='width:20%'>Issued</th><th style='width:20%'>Ribbon</th></tr>"
+        for award_id, award_name, award_description, date_issued, ribbon_exists in awards:
+            ribbon_html = f"<img src='../img/ribbons/{award_name}.png' alt='{award_name}' style='width:50%; height:auto;'>" if ribbon_exists else "No ribbon"
+            awards_html += f"<tr title='{award_description}'><td style='width:10%'>{award_id}</td><td style='width:50%'>{award_name}</td><td style='width:20%'>{date_issued}</td><td style='width:40%; text-align:left;'>{ribbon_html}</td></tr>"
+        awards_html += "</table>"
+
+        # For Qualifications
+        qualifications_html = "<table style='border:1'><tr><th style='width:10%'>ID</th><th style='width:50%'>Name</th><th style='width:20%'>Issued</th><th style='width:20%'>Expires</th></tr>"
+        for qualification_id, qualification_name, qualification_description, date_issued, date_expires in qualifications:
+            qualifications_html += f"<tr title='{qualification_description}'><td style='width:10%'>{qualification_id}</td><td style='width:50%'>{qualification_name}</td><td style='width:20%'>{date_issued}</td><td style='width:20%'>{date_expires}</td></tr>"
+        qualifications_html += "</table>"
 
         if not isinstance(pilot_stats.get('times'), dict):
             continue
@@ -134,13 +179,10 @@ def generate_pilot_info_page(DB_PATH, combined_stats, output_dir):
                     <p>Pilot Service: {pilot_service}</p>
                     <p>Pilot Rank: {pilot_rank}</p>
                     <p>Pilot Name: {pilot_name}</p>
-                    <h2>Qualifications</h2>
-                    <ul>
-                        <li>Qualification 1</li>
-                        <li>Qualification 2</li>
-                    </ul>
                     <h2>Awards</h2>
-                    <p>No awards.</p>
+                    {awards_html if awards else '<p>No awards.</p>'}
+                    <h2>Qualifications</h2>
+                    {qualifications_html if qualifications else '<p>No qualifications.</p>'}
                     <h2>Logbook</h2>
                     <h3>Totals</h3>
                     <p>Last Joined: {last_join_date}</p>

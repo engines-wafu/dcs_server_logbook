@@ -1,7 +1,6 @@
-import discord
-import asyncio
-import logging
+import discord, asyncio, logging, time
 from main import main
+from utils.ribbon import ribbonGenerator
 from discord.ext import commands
 from html_generator.html_generator import generate_index_html
 from database.db_crud import *
@@ -16,12 +15,16 @@ output_path = 'web/index.html'
 json_path = 'data/stats/combinedStats.json'
 bot = commands.Bot(command_prefix='!', intents=discord.Intents.all())
 
+def generate_single_ribbon(input_string, output_path):
+    pattern_gen = ribbonGenerator(input_string, image_size=(190, 64))
+    pattern_gen.save_pattern_as_png(output_path)
+
 async def get_response(ctx):
     def check(m):
         return m.author == ctx.author and m.channel == ctx.channel
 
     try:
-        response = await bot.wait_for('message', check=check, timeout=60.0)
+        response = await bot.wait_for('message', check=check, timeout=90.0)
         return response.content
     except asyncio.TimeoutError:
         await ctx.send("You did not respond in time.")
@@ -51,6 +54,10 @@ async def create_award(ctx):
         await ctx.send(f"Award '{award_name}' created successfully.")
     except Exception as e:
         await ctx.send(f"Failed to create award: {e}")
+    
+    # Make the ribbon
+    # generate_single_ribbon(award_name, 'web/img/ribbons/' + award_name + '.png')
+    
 
 @bot.command(name='create_qualification')
 async def create_qualification(ctx):
@@ -73,6 +80,149 @@ async def create_qualification(ctx):
         await ctx.send(f"Qualification '{qualification_name}' created successfully.")
     except Exception as e:
         await ctx.send(f"Failed to create qualification: {e}")
+
+@bot.command(name='give_award')
+async def give_award(ctx):
+    # Retrieve available awards
+    awards = get_awards(DB_PATH)
+    if not awards:
+        await ctx.send(embed=discord.Embed(description="No awards available.", color=0xff0000))
+        return
+
+    # Create an embed for awards
+    embed = discord.Embed(title="Available Awards", description="Select an award by its ID.", color=0x00ff00)
+    awards_dict = {str(aid): aname for aid, aname in awards}
+    for aid, aname in awards_dict.items():
+        embed.add_field(name=aid, value=aname, inline=False)
+
+    # Send award list and ask for pilot name(s)
+    award_msg = await ctx.send(embed=embed)
+    await ctx.send("Enter pilot name(s) (comma-separated):")
+    pilot_names_response = await get_response(ctx)
+    if not pilot_names_response:
+        return
+
+    pilot_ids = [find_pilot_id_by_name(DB_PATH, name.strip()) for name in pilot_names_response.split(",") if name.strip()]
+
+    # Prompt for award selection
+    await ctx.send("Enter the award ID(s) from the list above (comma-separated):")
+    award_ids_response = await get_response(ctx)
+    if not award_ids_response:
+        return
+
+    award_ids = award_ids_response.split(",")
+
+    # Assign award to pilots
+    for pilot_id in pilot_ids:
+        for award_id in award_ids:
+            if award_id.strip() in awards_dict:
+                assign_award_to_pilot(DB_PATH, pilot_id, int(award_id.strip()))
+
+    await ctx.send(embed=discord.Embed(description="Award(s) assigned to selected pilot(s).", color=0x00ff00))
+
+@bot.command(name='give_qualification')
+async def give_qualification(ctx):
+    # Retrieve available qualifications
+    qualifications = get_qualifications(DB_PATH)
+    if not qualifications:
+        await ctx.send(embed=discord.Embed(description="No qualifications available.", color=0xff0000))
+        return
+
+    # Create an embed for qualifications
+    embed = discord.Embed(title="Available Qualifications", description="Select a qualification by its ID.", color=0x00ff00)
+    for qid, qname, _ in qualifications:
+        embed.add_field(name=qid, value=qname, inline=False)
+
+    # Send qualification list and ask for pilot name(s)
+    qualification_msg = await ctx.send(embed=embed)
+    await ctx.send("Enter pilot name(s) (comma-separated):")
+    pilot_names = await get_response(ctx)
+    if not pilot_names:
+        return
+
+    pilot_ids = [find_pilot_id_by_name(DB_PATH, name.strip()) for name in pilot_names.split(",")]
+
+    # Prompt for qualification selection
+    await ctx.send("Enter the qualification ID from the list above:")
+    qualification_id = await get_response(ctx)
+    if not qualification_id:
+        return
+
+    # Get the qualification duration
+    duration = next((duration for qid, _, duration in qualifications if str(qid) == qualification_id), 0)
+
+    # Calculate date_issued and date_expires
+    date_issued = int(time.time())
+    date_expires = date_issued + duration if duration else None
+
+    # Assign qualification to pilots
+    for pilot_id in pilot_ids:
+        assign_qualification_to_pilot(DB_PATH, pilot_id, qualification_id, date_issued, date_expires)
+
+    await ctx.send(embed=discord.Embed(description="Qualification assigned to selected pilots.", color=0x00ff00))
+
+@bot.command(name='clear_award')
+async def clear_award(ctx, *, pilot_name):
+    pilot_id = find_pilot_id_by_name(DB_PATH, pilot_name)
+    if not pilot_id:
+        await ctx.send(f"No pilot found with the name: {pilot_name}")
+        return
+
+    pilot_awards = get_pilot_awards(DB_PATH, pilot_id)  # Define this function to retrieve pilot's awards
+    if not pilot_awards:
+        await ctx.send(f"No awards found for pilot: {pilot_name}")
+        return
+
+    # Create an embed for pilot's awards
+    embed = discord.Embed(title=f"Awards for {pilot_name}", description="Select award IDs to remove (comma-separated).", color=0x00ff00)
+    for award_id, award_name in pilot_awards:
+        embed.add_field(name=award_id, value=award_name, inline=False)
+
+    await ctx.send(embed=embed)
+
+    # Get user response
+    response = await get_response(ctx)
+    if not response:
+        return
+
+    # Process response and remove selected awards
+    selected_awards = [aid.strip() for aid in response.split(',')]
+    for aid in selected_awards:
+        remove_award_from_pilot(DB_PATH, pilot_id, aid)
+
+    await ctx.send(f"Awards removed from pilot {pilot_name}'s record.")
+
+@bot.command(name='clear_qualification')
+async def clear_qualification(ctx, *, pilot_name):
+    pilot_id = find_pilot_id_by_name(DB_PATH, pilot_name)
+    if not pilot_id:
+        await ctx.send(f"No pilot found with the name: {pilot_name}")
+        return
+
+    pilot_qualifications = get_pilot_qualifications(DB_PATH, pilot_id)  # Define this function to retrieve pilot's qualifications
+    if not pilot_qualifications:
+        await ctx.send(f"No qualifications found for pilot: {pilot_name}")
+        return
+
+    # Create an embed for pilot's qualifications
+    embed = discord.Embed(title=f"Qualifications for {pilot_name}", description="Select qualification IDs to remove (comma-separated).", color=0x00ff00)
+    for qual_id, qual_name in pilot_qualifications:
+        embed.add_field(name=qual_id, value=qual_name, inline=False)
+
+    await ctx.send(embed=embed)
+
+    # Get user response
+    response = await get_response(ctx)
+    if not response:
+        return
+
+    # Process response and remove selected qualifications
+    selected_qualifications = [qid.strip() for qid in response.split(',')]
+    for qid in selected_qualifications:
+        remove_qualification_from_pilot(DB_PATH, pilot_id, qid)
+
+    await ctx.send(f"Qualifications removed from pilot {pilot_name}'s record.")
+
 
 @bot.command(name='assign_co')
 async def assign_co(ctx, *, pilot_name):

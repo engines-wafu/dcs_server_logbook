@@ -1669,3 +1669,276 @@ discord.ext.commands.errors.CommandInvokeError: Command raised an exception: Nam
 2024-01-07 14:25:00,740 - DEBUG - Using proactor: IocpProactor
 2024-01-07 14:25:00,741 - INFO - logging in using static token
 2024-01-07 14:25:01,841 - INFO - Shard ID None has connected to Gateway (Session ID: 9cb65424a0bfbba506c265c32ebe1b06).
+2024-01-07 14:34:37,121 - INFO - Shard ID None session has been invalidated.
+2024-01-07 14:43:51,546 - WARNING - PyNaCl is not installed, voice will NOT be supported
+2024-01-07 14:43:51,548 - DEBUG - Using proactor: IocpProactor
+2024-01-07 14:43:51,549 - INFO - logging in using static token
+2024-01-07 14:43:52,552 - INFO - Shard ID None has connected to Gateway (Session ID: b272c5cbb520514328253c8258cbcb5e).
+2024-01-07 14:53:50,433 - WARNING - PyNaCl is not installed, voice will NOT be supported
+2024-01-07 14:53:50,434 - DEBUG - Using proactor: IocpProactor
+2024-01-07 14:53:50,436 - INFO - logging in using static token
+2024-01-07 14:53:51,760 - INFO - Shard ID None has connected to Gateway (Session ID: 3aab0f10ebca35b958a60b2de4f96f62).
+2024-01-07 14:54:14,594 - ERROR - Ignoring exception in command None
+discord.ext.commands.errors.CommandNotFound: Command "give_qualification" is not found
+2024-01-07 14:54:24,985 - ERROR - Ignoring exception in command None
+discord.ext.commands.errors.CommandNotFound: Command "give_qualification" is not found
+2024-01-07 14:54:52,927 - WARNING - PyNaCl is not installed, voice will NOT be supported
+2024-01-07 14:54:52,928 - DEBUG - Using proactor: IocpProactor
+2024-01-07 14:54:52,929 - INFO - logging in using static token
+2024-01-07 14:54:53,813 - INFO - Shard ID None has connected to Gateway (Session ID: fd40c32b924b12535cb6b68212baec8c).
+2024-01-07 15:02:28,954 - WARNING - PyNaCl is not installed, voice will NOT be supported
+2024-01-07 15:02:28,955 - DEBUG - Using proactor: IocpProactor
+2024-01-07 15:02:28,956 - INFO - logging in using static token
+2024-01-07 15:02:29,805 - INFO - Shard ID None has connected to Gateway (Session ID: b5a28b4773e364c756fc9b3e0d9d875a).
+2024-01-07 15:07:08,790 - WARNING - PyNaCl is not installed, voice will NOT be supported
+2024-01-07 15:07:08,792 - DEBUG - Using proactor: IocpProactor
+2024-01-07 15:07:08,793 - INFO - logging in using static token
+2024-01-07 15:07:10,004 - INFO - Shard ID None has connected to Gateway (Session ID: d4b448af9707731b335cc02dfa1a1719).
+2024-01-07 15:18:52,233 - WARNING - PyNaCl is not installed, voice will NOT be supported
+2024-01-07 15:18:52,234 - DEBUG - Using proactor: IocpProactor
+2024-01-07 15:18:52,235 - INFO - logging in using static token
+2024-01-07 15:18:53,244 - INFO - Shard ID None has connected to Gateway (Session ID: c84db40074eb7c500416d8a546627d2b).
+2024-01-07 15:19:17,646 - WARNING - PyNaCl is not installed, voice will NOT be supported
+2024-01-07 15:19:17,647 - DEBUG - Using proactor: IocpProactor
+2024-01-07 15:19:17,648 - INFO - logging in using static token
+2024-01-07 15:19:18,453 - INFO - Shard ID None has connected to Gateway (Session ID: 6780be34652c378329f89906922f0524).
+2024-01-07 15:21:37,037 - ERROR - Ignoring exception in command None
+discord.ext.commands.errors.CommandNotFound: Command "give_award" is not found
+2024-01-07 15:27:17,923 - WARNING - PyNaCl is not installed, voice will NOT be supported
+2024-01-07 15:27:17,924 - DEBUG - Using proactor: IocpProactor
+2024-01-07 15:27:17,925 - INFO - logging in using static token
+2024-01-07 15:27:18,882 - INFO - Shard ID None has connected to Gateway (Session ID: a73cd9e4473dab79204a91cef9528209).
+2024-01-07 15:30:27,935 - WARNING - PyNaCl is not installed, voice will NOT be supported
+2024-01-07 15:30:27,936 - DEBUG - Using proactor: IocpProactor
+2024-01-07 15:30:27,937 - INFO - logging in using static token
+2024-01-07 15:30:28,864 - INFO - Shard ID None has connected to Gateway (Session ID: c297a72b998476304a252d1139d24987).
+2024-01-07 15:40:45,833 - WARNING - PyNaCl is not installed, voice will NOT be supported
+2024-01-07 15:40:45,834 - DEBUG - Using proactor: IocpProactor
+2024-01-07 15:40:45,834 - INFO - logging in using static token
+2024-01-07 15:40:46,935 - INFO - Shard ID None has connected to Gateway (Session ID: 5e1bd6bbfe02022b652910b97ae84e3e).
+2024-01-07 15:40:57,488 - ERROR - Ignoring exception in command clear_award
+Traceback (most recent call last):
+  File "C:\Users\GavinE\OneDrive - Sentient Vision Systems\Repos\dcs_server_logbook\env\Lib\site-packages\discord\ext\commands\bot.py", line 1350, in invoke
+    await ctx.command.invoke(ctx)
+  File "C:\Users\GavinE\OneDrive - Sentient Vision Systems\Repos\dcs_server_logbook\env\Lib\site-packages\discord\ext\commands\core.py", line 1021, in invoke
+    await self.prepare(ctx)
+  File "C:\Users\GavinE\OneDrive - Sentient Vision Systems\Repos\dcs_server_logbook\env\Lib\site-packages\discord\ext\commands\core.py", line 938, in prepare
+    await self._parse_arguments(ctx)
+  File "C:\Users\GavinE\OneDrive - Sentient Vision Systems\Repos\dcs_server_logbook\env\Lib\site-packages\discord\ext\commands\core.py", line 853, in _parse_arguments
+    kwargs[name] = await self.transform(ctx, param, attachments)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\GavinE\OneDrive - Sentient Vision Systems\Repos\dcs_server_logbook\env\Lib\site-packages\discord\ext\commands\core.py", line 697, in transform
+    raise MissingRequiredArgument(param)
+discord.ext.commands.errors.MissingRequiredArgument: pilot_name is a required argument that is missing.
+2024-01-07 16:19:45,639 - INFO - Running merge.lua script
+2024-01-07 16:19:45,832 - INFO - Processing combined data
+2024-01-07 16:19:45,939 - INFO - Created index.html output
+2024-01-07 16:19:45,939 - INFO - Generating pilot pages
+2024-01-07 16:29:45,869 - INFO - Running merge.lua script
+2024-01-07 16:29:46,028 - INFO - Processing combined data
+2024-01-07 16:29:46,112 - INFO - Created index.html output
+2024-01-07 16:29:46,112 - INFO - Generating pilot pages
+2024-01-07 17:53:14,979 - INFO - Shard ID None has successfully RESUMED session 5e1bd6bbfe02022b652910b97ae84e3e.
+2024-01-07 18:29:46,716 - INFO - Running merge.lua script
+2024-01-07 18:29:46,867 - INFO - Processing combined data
+2024-01-07 18:29:46,953 - INFO - Created index.html output
+2024-01-07 18:29:46,954 - INFO - Generating pilot pages
+2024-01-07 18:35:28,332 - INFO - Running merge.lua script
+2024-01-07 18:35:28,533 - INFO - Processing combined data
+2024-01-07 18:35:28,609 - INFO - Created index.html output
+2024-01-07 18:35:28,609 - INFO - Generating pilot pages
+2024-01-07 18:36:01,856 - INFO - Running merge.lua script
+2024-01-07 18:36:01,923 - INFO - Processing combined data
+2024-01-07 18:36:02,011 - INFO - Created index.html output
+2024-01-07 18:36:02,011 - INFO - Generating pilot pages
+2024-01-07 18:42:21,258 - INFO - Running merge.lua script
+2024-01-07 18:42:21,443 - INFO - Processing combined data
+2024-01-07 18:42:21,524 - INFO - Created index.html output
+2024-01-07 18:42:21,524 - INFO - Generating pilot pages
+2024-01-07 18:43:48,641 - INFO - Running merge.lua script
+2024-01-07 18:43:48,699 - INFO - Processing combined data
+2024-01-07 18:43:48,777 - INFO - Created index.html output
+2024-01-07 18:43:48,777 - INFO - Generating pilot pages
+2024-01-07 18:44:35,972 - INFO - Running merge.lua script
+2024-01-07 18:44:36,034 - INFO - Processing combined data
+2024-01-07 18:44:36,102 - INFO - Created index.html output
+2024-01-07 18:44:36,102 - INFO - Generating pilot pages
+2024-01-07 18:46:48,734 - INFO - Running merge.lua script
+2024-01-07 18:46:48,802 - INFO - Processing combined data
+2024-01-07 18:46:48,894 - INFO - Created index.html output
+2024-01-07 18:46:48,894 - INFO - Generating pilot pages
+2024-01-07 18:47:17,366 - INFO - Running merge.lua script
+2024-01-07 18:47:17,433 - INFO - Processing combined data
+2024-01-07 18:47:17,518 - INFO - Created index.html output
+2024-01-07 18:47:17,518 - INFO - Generating pilot pages
+2024-01-07 18:49:51,570 - INFO - Running merge.lua script
+2024-01-07 18:49:51,636 - INFO - Processing combined data
+2024-01-07 18:49:51,730 - INFO - Created index.html output
+2024-01-07 18:49:51,730 - INFO - Generating pilot pages
+2024-01-07 18:52:09,708 - WARNING - PyNaCl is not installed, voice will NOT be supported
+2024-01-07 18:52:09,709 - DEBUG - Using proactor: IocpProactor
+2024-01-07 18:52:09,710 - INFO - logging in using static token
+2024-01-07 18:52:10,684 - INFO - Shard ID None has connected to Gateway (Session ID: 73118d799b503b3143e9e05bd6c029b0).
+2024-01-07 18:52:23,123 - ERROR - Ignoring exception in command give_award
+Traceback (most recent call last):
+  File "C:\Users\GavinE\OneDrive - Sentient Vision Systems\Repos\dcs_server_logbook\env\Lib\site-packages\discord\ext\commands\bot.py", line 1350, in invoke
+    await ctx.command.invoke(ctx)
+  File "C:\Users\GavinE\OneDrive - Sentient Vision Systems\Repos\dcs_server_logbook\env\Lib\site-packages\discord\ext\commands\core.py", line 1021, in invoke
+    await self.prepare(ctx)
+  File "C:\Users\GavinE\OneDrive - Sentient Vision Systems\Repos\dcs_server_logbook\env\Lib\site-packages\discord\ext\commands\core.py", line 938, in prepare
+    await self._parse_arguments(ctx)
+  File "C:\Users\GavinE\OneDrive - Sentient Vision Systems\Repos\dcs_server_logbook\env\Lib\site-packages\discord\ext\commands\core.py", line 853, in _parse_arguments
+    kwargs[name] = await self.transform(ctx, param, attachments)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\GavinE\OneDrive - Sentient Vision Systems\Repos\dcs_server_logbook\env\Lib\site-packages\discord\ext\commands\core.py", line 697, in transform
+    raise MissingRequiredArgument(param)
+discord.ext.commands.errors.MissingRequiredArgument: pilot_name is a required argument that is missing.
+2024-01-07 18:54:32,975 - WARNING - PyNaCl is not installed, voice will NOT be supported
+2024-01-07 18:54:32,977 - DEBUG - Using proactor: IocpProactor
+2024-01-07 18:54:32,979 - INFO - logging in using static token
+2024-01-07 18:54:34,008 - INFO - Shard ID None has connected to Gateway (Session ID: 93f939c501d9e5f1462a6507059dea7b).
+2024-01-07 18:54:37,778 - ERROR - Ignoring exception in command give_award
+Traceback (most recent call last):
+  File "C:\Users\GavinE\OneDrive - Sentient Vision Systems\Repos\dcs_server_logbook\env\Lib\site-packages\discord\ext\commands\bot.py", line 1350, in invoke
+    await ctx.command.invoke(ctx)
+  File "C:\Users\GavinE\OneDrive - Sentient Vision Systems\Repos\dcs_server_logbook\env\Lib\site-packages\discord\ext\commands\core.py", line 1021, in invoke
+    await self.prepare(ctx)
+  File "C:\Users\GavinE\OneDrive - Sentient Vision Systems\Repos\dcs_server_logbook\env\Lib\site-packages\discord\ext\commands\core.py", line 938, in prepare
+    await self._parse_arguments(ctx)
+  File "C:\Users\GavinE\OneDrive - Sentient Vision Systems\Repos\dcs_server_logbook\env\Lib\site-packages\discord\ext\commands\core.py", line 853, in _parse_arguments
+    kwargs[name] = await self.transform(ctx, param, attachments)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\GavinE\OneDrive - Sentient Vision Systems\Repos\dcs_server_logbook\env\Lib\site-packages\discord\ext\commands\core.py", line 697, in transform
+    raise MissingRequiredArgument(param)
+discord.ext.commands.errors.MissingRequiredArgument: pilot_name is a required argument that is missing.
+2024-01-07 18:54:58,819 - WARNING - PyNaCl is not installed, voice will NOT be supported
+2024-01-07 18:54:58,820 - DEBUG - Using proactor: IocpProactor
+2024-01-07 18:54:58,821 - INFO - logging in using static token
+2024-01-07 18:54:59,764 - INFO - Shard ID None has connected to Gateway (Session ID: 432662aa865b603b84cf4ca120afd243).
+2024-01-07 18:55:05,057 - ERROR - Ignoring exception in command give_award
+Traceback (most recent call last):
+  File "C:\Users\GavinE\OneDrive - Sentient Vision Systems\Repos\dcs_server_logbook\env\Lib\site-packages\discord\ext\commands\bot.py", line 1350, in invoke
+    await ctx.command.invoke(ctx)
+  File "C:\Users\GavinE\OneDrive - Sentient Vision Systems\Repos\dcs_server_logbook\env\Lib\site-packages\discord\ext\commands\core.py", line 1021, in invoke
+    await self.prepare(ctx)
+  File "C:\Users\GavinE\OneDrive - Sentient Vision Systems\Repos\dcs_server_logbook\env\Lib\site-packages\discord\ext\commands\core.py", line 938, in prepare
+    await self._parse_arguments(ctx)
+  File "C:\Users\GavinE\OneDrive - Sentient Vision Systems\Repos\dcs_server_logbook\env\Lib\site-packages\discord\ext\commands\core.py", line 853, in _parse_arguments
+    kwargs[name] = await self.transform(ctx, param, attachments)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\GavinE\OneDrive - Sentient Vision Systems\Repos\dcs_server_logbook\env\Lib\site-packages\discord\ext\commands\core.py", line 697, in transform
+    raise MissingRequiredArgument(param)
+discord.ext.commands.errors.MissingRequiredArgument: pilot_name is a required argument that is missing.
+2024-01-07 18:55:15,485 - WARNING - PyNaCl is not installed, voice will NOT be supported
+2024-01-07 18:55:15,486 - DEBUG - Using proactor: IocpProactor
+2024-01-07 18:55:15,487 - INFO - logging in using static token
+2024-01-07 18:55:16,586 - INFO - Shard ID None has connected to Gateway (Session ID: 915a5301e996d9a57f4e761502afeba5).
+2024-01-07 18:56:00,220 - INFO - Running merge.lua script
+2024-01-07 18:56:00,420 - INFO - Processing combined data
+2024-01-07 18:56:00,509 - INFO - Created index.html output
+2024-01-07 18:56:00,509 - INFO - Generating pilot pages
+2024-01-07 18:57:16,414 - INFO - Running merge.lua script
+2024-01-07 18:57:16,485 - INFO - Processing combined data
+2024-01-07 18:57:16,578 - INFO - Created index.html output
+2024-01-07 18:57:16,579 - INFO - Generating pilot pages
+2024-01-07 18:57:42,587 - WARNING - PyNaCl is not installed, voice will NOT be supported
+2024-01-07 18:57:42,588 - DEBUG - Using proactor: IocpProactor
+2024-01-07 18:57:42,590 - INFO - logging in using static token
+2024-01-07 18:57:43,511 - INFO - Shard ID None has connected to Gateway (Session ID: fccb5c00c1b9dac37539b2cebb91c4d0).
+2024-01-07 18:57:49,211 - ERROR - Ignoring exception in command give_award
+Traceback (most recent call last):
+  File "C:\Users\GavinE\OneDrive - Sentient Vision Systems\Repos\dcs_server_logbook\env\Lib\site-packages\discord\ext\commands\core.py", line 235, in wrapped
+    ret = await coro(*args, **kwargs)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\GavinE\OneDrive - Sentient Vision Systems\Repos\dcs_server_logbook\src\bot.py", line 88, in give_award
+    for aid, aname in awards.items():
+                      ^^^^^^^^^^^^
+AttributeError: 'list' object has no attribute 'items'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\GavinE\OneDrive - Sentient Vision Systems\Repos\dcs_server_logbook\env\Lib\site-packages\discord\ext\commands\bot.py", line 1350, in invoke
+    await ctx.command.invoke(ctx)
+  File "C:\Users\GavinE\OneDrive - Sentient Vision Systems\Repos\dcs_server_logbook\env\Lib\site-packages\discord\ext\commands\core.py", line 1029, in invoke
+    await injected(*ctx.args, **ctx.kwargs)  # type: ignore
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\GavinE\OneDrive - Sentient Vision Systems\Repos\dcs_server_logbook\env\Lib\site-packages\discord\ext\commands\core.py", line 244, in wrapped
+    raise CommandInvokeError(exc) from exc
+discord.ext.commands.errors.CommandInvokeError: Command raised an exception: AttributeError: 'list' object has no attribute 'items'
+2024-01-07 19:03:21,581 - WARNING - PyNaCl is not installed, voice will NOT be supported
+2024-01-07 19:03:21,583 - DEBUG - Using proactor: IocpProactor
+2024-01-07 19:03:21,584 - INFO - logging in using static token
+2024-01-07 19:03:22,434 - INFO - Shard ID None has connected to Gateway (Session ID: f78ac846aa16676b42704b1dcef4f0a1).
+2024-01-07 19:03:54,900 - INFO - Running merge.lua script
+2024-01-07 19:03:54,960 - INFO - Processing combined data
+2024-01-07 19:03:55,038 - INFO - Created index.html output
+2024-01-07 19:03:55,038 - INFO - Generating pilot pages
+2024-01-07 19:12:14,748 - INFO - Running merge.lua script
+2024-01-07 19:12:14,932 - INFO - Processing combined data
+2024-01-07 19:12:15,011 - INFO - Created index.html output
+2024-01-07 19:12:15,011 - INFO - Generating pilot pages
+2024-01-07 19:13:44,497 - INFO - Running merge.lua script
+2024-01-07 19:13:44,570 - INFO - Processing combined data
+2024-01-07 19:13:44,644 - INFO - Created index.html output
+2024-01-07 19:13:44,645 - INFO - Generating pilot pages
+2024-01-07 19:19:08,835 - WARNING - PyNaCl is not installed, voice will NOT be supported
+2024-01-07 19:19:08,836 - DEBUG - Using proactor: IocpProactor
+2024-01-07 19:19:08,837 - INFO - logging in using static token
+2024-01-07 19:19:09,917 - INFO - Shard ID None has connected to Gateway (Session ID: 369b753e8c1e9f0dfb50bda8b465ab85).
+2024-01-07 19:19:38,193 - INFO - Running merge.lua script
+2024-01-07 19:19:38,250 - INFO - Processing combined data
+2024-01-07 19:19:38,326 - INFO - Created index.html output
+2024-01-07 19:19:38,326 - INFO - Generating pilot pages
+2024-01-07 19:20:40,624 - INFO - Running merge.lua script
+2024-01-07 19:20:40,685 - INFO - Processing combined data
+2024-01-07 19:20:40,773 - INFO - Created index.html output
+2024-01-07 19:20:40,773 - INFO - Generating pilot pages
+2024-01-07 19:27:19,510 - DEBUG - matplotlib data path: C:\Users\GavinE\OneDrive - Sentient Vision Systems\Repos\dcs_server_logbook\env\Lib\site-packages\matplotlib\mpl-data
+2024-01-07 19:27:19,521 - DEBUG - CONFIGDIR=C:\Users\GavinE\.matplotlib
+2024-01-07 19:27:19,523 - DEBUG - interactive is False
+2024-01-07 19:27:19,523 - DEBUG - platform is win32
+2024-01-07 19:27:19,564 - WARNING - PyNaCl is not installed, voice will NOT be supported
+2024-01-07 19:27:19,565 - DEBUG - Using proactor: IocpProactor
+2024-01-07 19:27:19,566 - INFO - logging in using static token
+2024-01-07 19:27:20,378 - INFO - Shard ID None has connected to Gateway (Session ID: 6daeb32cd566d8c44bd9418e5d3fc050).
+2024-01-07 19:34:21,964 - DEBUG - matplotlib data path: C:\Users\GavinE\OneDrive - Sentient Vision Systems\Repos\dcs_server_logbook\env\Lib\site-packages\matplotlib\mpl-data
+2024-01-07 19:34:21,970 - DEBUG - CONFIGDIR=C:\Users\GavinE\.matplotlib
+2024-01-07 19:34:21,971 - DEBUG - interactive is False
+2024-01-07 19:34:21,971 - DEBUG - platform is win32
+2024-01-07 19:34:22,015 - WARNING - PyNaCl is not installed, voice will NOT be supported
+2024-01-07 19:34:22,016 - DEBUG - Using proactor: IocpProactor
+2024-01-07 19:34:22,017 - INFO - logging in using static token
+2024-01-07 19:34:22,911 - INFO - Shard ID None has connected to Gateway (Session ID: 341674bcd2ace9a8ad23778536f6024f).
+2024-01-07 19:41:11,142 - DEBUG - matplotlib data path: C:\Users\GavinE\OneDrive - Sentient Vision Systems\Repos\dcs_server_logbook\env\Lib\site-packages\matplotlib\mpl-data
+2024-01-07 19:41:11,155 - DEBUG - CONFIGDIR=C:\Users\GavinE\.matplotlib
+2024-01-07 19:41:11,156 - DEBUG - interactive is False
+2024-01-07 19:41:11,156 - DEBUG - platform is win32
+2024-01-07 19:41:11,199 - WARNING - PyNaCl is not installed, voice will NOT be supported
+2024-01-07 19:41:11,200 - DEBUG - Using proactor: IocpProactor
+2024-01-07 19:41:11,200 - INFO - logging in using static token
+2024-01-07 19:41:12,301 - INFO - Shard ID None has connected to Gateway (Session ID: e5d480d28290e8ebee965a5fe1100fa6).
+2024-01-07 19:43:50,439 - DEBUG - matplotlib data path: C:\Users\GavinE\OneDrive - Sentient Vision Systems\Repos\dcs_server_logbook\env\Lib\site-packages\matplotlib\mpl-data
+2024-01-07 19:43:50,445 - DEBUG - CONFIGDIR=C:\Users\GavinE\.matplotlib
+2024-01-07 19:43:50,446 - DEBUG - interactive is False
+2024-01-07 19:43:50,446 - DEBUG - platform is win32
+2024-01-07 19:43:50,489 - WARNING - PyNaCl is not installed, voice will NOT be supported
+2024-01-07 19:43:50,490 - DEBUG - Using proactor: IocpProactor
+2024-01-07 19:43:50,491 - INFO - logging in using static token
+2024-01-07 19:43:51,396 - INFO - Shard ID None has connected to Gateway (Session ID: 665d9716b0a6353832dc75cc4f0d1a6d).
+2024-01-07 19:44:38,323 - DEBUG - matplotlib data path: C:\Users\GavinE\OneDrive - Sentient Vision Systems\Repos\dcs_server_logbook\env\Lib\site-packages\matplotlib\mpl-data
+2024-01-07 19:44:38,329 - DEBUG - CONFIGDIR=C:\Users\GavinE\.matplotlib
+2024-01-07 19:44:38,331 - DEBUG - interactive is False
+2024-01-07 19:44:38,331 - DEBUG - platform is win32
+2024-01-07 19:44:38,381 - WARNING - PyNaCl is not installed, voice will NOT be supported
+2024-01-07 19:44:38,382 - DEBUG - Using proactor: IocpProactor
+2024-01-07 19:44:38,383 - INFO - logging in using static token
+2024-01-07 19:44:39,305 - INFO - Shard ID None has connected to Gateway (Session ID: a5fb99880939ac23c2b4d2e849257ae2).
+2024-01-07 19:46:52,511 - INFO - Running merge.lua script
+2024-01-07 19:46:52,727 - INFO - Processing combined data
+2024-01-07 19:46:52,823 - INFO - Created index.html output
+2024-01-07 19:46:52,823 - INFO - Generating pilot pages
+2024-01-07 19:51:10,278 - INFO - Running merge.lua script
+2024-01-07 19:51:10,351 - INFO - Processing combined data
+2024-01-07 19:51:10,452 - INFO - Created index.html output
+2024-01-07 19:51:10,452 - INFO - Generating pilot pages

@@ -4,6 +4,32 @@ import logging
 from database.db_crud import get_pilot_full_name
 from utils.stat_processing import load_combined_stats, generate_squadron_pilot_rows
 
+def get_pilot_awards_with_details(db_path, pilot_id):
+    """Fetches awards with details for a specific pilot."""
+    conn = sqlite3.connect(db_path)
+    cursor = conn.cursor()
+    cursor.execute("""
+        SELECT a.award_id, a.award_name, a.award_description, pa.date_issued
+        FROM Awards a
+        INNER JOIN Pilot_Awards pa ON a.award_id = pa.award_id
+        WHERE pa.pilot_id = ?""", (pilot_id,))
+    awards = cursor.fetchall()
+    conn.close()
+    return awards
+
+def get_pilot_qualifications_with_details(db_path, pilot_id):
+    """Fetches qualifications with details for a specific pilot."""
+    conn = sqlite3.connect(db_path)
+    cursor = conn.cursor()
+    cursor.execute("""
+        SELECT q.qualification_id, q.qualification_name, q.qualification_description, pq.date_issued, pq.date_expires
+        FROM Qualifications q
+        INNER JOIN Pilot_Qualifications pq ON q.qualification_id = pq.qualification_id
+        WHERE pq.pilot_id = ?""", (pilot_id,))
+    qualifications = cursor.fetchall()
+    conn.close()
+    return qualifications
+
 def fetch_squadron_pilots(db_path):
     """
     Fetches squadrons and their pilots from the database.
