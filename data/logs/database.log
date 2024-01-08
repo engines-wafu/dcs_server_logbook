@@ -1942,3 +1942,350 @@ discord.ext.commands.errors.CommandInvokeError: Command raised an exception: Att
 2024-01-07 19:51:10,351 - INFO - Processing combined data
 2024-01-07 19:51:10,452 - INFO - Created index.html output
 2024-01-07 19:51:10,452 - INFO - Generating pilot pages
+2024-01-07 20:04:03,917 - ERROR - Ignoring exception in command clear_award
+Traceback (most recent call last):
+  File "C:\Users\GavinE\OneDrive - Sentient Vision Systems\Repos\dcs_server_logbook\env\Lib\site-packages\discord\ext\commands\bot.py", line 1350, in invoke
+    await ctx.command.invoke(ctx)
+  File "C:\Users\GavinE\OneDrive - Sentient Vision Systems\Repos\dcs_server_logbook\env\Lib\site-packages\discord\ext\commands\core.py", line 1021, in invoke
+    await self.prepare(ctx)
+  File "C:\Users\GavinE\OneDrive - Sentient Vision Systems\Repos\dcs_server_logbook\env\Lib\site-packages\discord\ext\commands\core.py", line 938, in prepare
+    await self._parse_arguments(ctx)
+  File "C:\Users\GavinE\OneDrive - Sentient Vision Systems\Repos\dcs_server_logbook\env\Lib\site-packages\discord\ext\commands\core.py", line 853, in _parse_arguments
+    kwargs[name] = await self.transform(ctx, param, attachments)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\GavinE\OneDrive - Sentient Vision Systems\Repos\dcs_server_logbook\env\Lib\site-packages\discord\ext\commands\core.py", line 697, in transform
+    raise MissingRequiredArgument(param)
+discord.ext.commands.errors.MissingRequiredArgument: pilot_name is a required argument that is missing.
+2024-01-07 20:04:45,364 - INFO - Running merge.lua script
+2024-01-07 20:04:45,578 - INFO - Processing combined data
+2024-01-07 20:04:45,687 - INFO - Created index.html output
+2024-01-07 20:04:45,687 - INFO - Generating pilot pages
+2024-01-07 20:06:13,365 - INFO - Running merge.lua script
+2024-01-07 20:06:13,438 - INFO - Processing combined data
+2024-01-07 20:06:13,547 - INFO - Created index.html output
+2024-01-07 20:06:13,547 - INFO - Generating pilot pages
+2024-01-07 20:17:29,811 - INFO - Running merge.lua script
+2024-01-07 20:17:30,002 - INFO - Processing combined data
+2024-01-07 20:18:01,968 - INFO - Running merge.lua script
+2024-01-07 20:18:02,035 - INFO - Processing combined data
+2024-01-07 20:18:02,136 - INFO - Created html output
+2024-01-07 20:18:02,136 - INFO - Generating pilot pages
+2024-01-07 20:19:04,662 - INFO - Running merge.lua script
+2024-01-07 20:19:04,721 - INFO - Processing combined data
+2024-01-07 20:19:04,811 - INFO - Created html output
+2024-01-07 20:19:04,811 - INFO - Generating pilot pages
+2024-01-07 20:23:12,783 - INFO - Running merge.lua script
+2024-01-07 20:23:12,955 - INFO - Processing combined data
+2024-01-07 20:23:13,041 - INFO - Created html output
+2024-01-07 20:23:13,041 - INFO - Generating pilot pages
+2024-01-07 20:24:34,520 - INFO - Running merge.lua script
+2024-01-07 20:24:34,573 - INFO - Processing combined data
+2024-01-07 20:24:34,649 - INFO - Created html output
+2024-01-07 20:24:34,649 - INFO - Generating pilot pages
+2024-01-07 20:25:11,522 - INFO - Running merge.lua script
+2024-01-07 20:25:11,578 - INFO - Processing combined data
+2024-01-07 20:25:11,661 - INFO - Created html output
+2024-01-07 20:25:11,662 - INFO - Generating pilot pages
+2024-01-07 20:26:06,290 - INFO - Running merge.lua script
+2024-01-07 20:26:06,340 - INFO - Processing combined data
+2024-01-07 20:26:06,408 - INFO - Created html output
+2024-01-07 20:26:06,408 - INFO - Generating pilot pages
+2024-01-07 20:26:54,378 - INFO - Running merge.lua script
+2024-01-07 20:26:54,427 - INFO - Processing combined data
+2024-01-07 20:26:54,497 - INFO - Created html output
+2024-01-07 20:26:54,497 - INFO - Generating pilot pages
+2024-01-07 20:36:18,186 - DEBUG - matplotlib data path: C:\Users\GavinE\OneDrive - Sentient Vision Systems\Repos\dcs_server_logbook\env\Lib\site-packages\matplotlib\mpl-data
+2024-01-07 20:36:18,207 - DEBUG - CONFIGDIR=C:\Users\GavinE\.matplotlib
+2024-01-07 20:36:18,208 - DEBUG - interactive is False
+2024-01-07 20:36:18,208 - DEBUG - platform is win32
+2024-01-07 20:36:18,259 - WARNING - PyNaCl is not installed, voice will NOT be supported
+2024-01-07 20:36:18,261 - DEBUG - Using proactor: IocpProactor
+2024-01-07 20:36:18,262 - INFO - logging in using static token
+2024-01-07 20:36:19,414 - INFO - Shard ID None has connected to Gateway (Session ID: 2027ed5bcdee48f6538bc93e7c96da83).
+2024-01-07 20:38:40,624 - DEBUG - matplotlib data path: C:\Users\GavinE\OneDrive - Sentient Vision Systems\Repos\dcs_server_logbook\env\Lib\site-packages\matplotlib\mpl-data
+2024-01-07 20:38:40,629 - DEBUG - CONFIGDIR=C:\Users\GavinE\.matplotlib
+2024-01-07 20:38:40,631 - DEBUG - interactive is False
+2024-01-07 20:38:40,631 - DEBUG - platform is win32
+2024-01-07 20:38:40,677 - WARNING - PyNaCl is not installed, voice will NOT be supported
+2024-01-07 20:38:40,678 - DEBUG - Using proactor: IocpProactor
+2024-01-07 20:38:40,679 - INFO - logging in using static token
+2024-01-07 20:38:41,637 - INFO - Shard ID None has connected to Gateway (Session ID: e61701e0608e6f435b81c1d7d7ca5818).
+2024-01-07 20:40:03,535 - DEBUG - matplotlib data path: C:\Users\GavinE\OneDrive - Sentient Vision Systems\Repos\dcs_server_logbook\env\Lib\site-packages\matplotlib\mpl-data
+2024-01-07 20:40:03,543 - DEBUG - CONFIGDIR=C:\Users\GavinE\.matplotlib
+2024-01-07 20:40:03,545 - DEBUG - interactive is False
+2024-01-07 20:40:03,545 - DEBUG - platform is win32
+2024-01-07 20:40:03,624 - WARNING - PyNaCl is not installed, voice will NOT be supported
+2024-01-07 20:40:03,626 - DEBUG - Using proactor: IocpProactor
+2024-01-07 20:40:03,628 - INFO - logging in using static token
+2024-01-07 20:40:04,676 - INFO - Shard ID None has connected to Gateway (Session ID: 6ab3feec16548da8f8cd558e424ae289).
+2024-01-07 20:40:45,706 - INFO - Running merge.lua script
+2024-01-07 20:40:45,772 - INFO - Processing combined data
+2024-01-07 20:40:45,872 - INFO - Created html output
+2024-01-07 20:40:45,872 - INFO - Generating pilot pages
+2024-01-07 20:42:03,075 - INFO - Running merge.lua script
+2024-01-07 20:42:03,139 - INFO - Processing combined data
+2024-01-07 20:42:03,234 - INFO - Created html output
+2024-01-07 20:42:03,234 - INFO - Generating pilot pages
+2024-01-07 20:44:13,182 - INFO - Running merge.lua script
+2024-01-07 20:44:13,249 - INFO - Processing combined data
+2024-01-07 20:44:13,344 - INFO - Created html output
+2024-01-07 20:44:13,344 - INFO - Generating pilot pages
+2024-01-07 20:47:00,545 - INFO - Running merge.lua script
+2024-01-07 20:47:00,613 - INFO - Processing combined data
+2024-01-07 20:47:00,726 - INFO - Created html output
+2024-01-07 20:47:00,726 - INFO - Generating pilot pages
+2024-01-07 20:49:04,382 - INFO - Running merge.lua script
+2024-01-07 20:49:04,468 - INFO - Processing combined data
+2024-01-07 20:49:04,591 - INFO - Created html output
+2024-01-07 20:49:04,591 - INFO - Generating pilot pages
+2024-01-07 21:15:58,817 - DEBUG - matplotlib data path: C:\Users\GavinE\OneDrive - Sentient Vision Systems\Repos\dcs_server_logbook\env\Lib\site-packages\matplotlib\mpl-data
+2024-01-07 21:15:58,829 - DEBUG - CONFIGDIR=C:\Users\GavinE\.matplotlib
+2024-01-07 21:15:58,830 - DEBUG - interactive is False
+2024-01-07 21:15:58,830 - DEBUG - platform is win32
+2024-01-07 21:15:58,872 - WARNING - PyNaCl is not installed, voice will NOT be supported
+2024-01-07 21:15:58,873 - DEBUG - Using proactor: IocpProactor
+2024-01-07 21:15:58,874 - INFO - logging in using static token
+2024-01-07 21:15:59,788 - INFO - Shard ID None has connected to Gateway (Session ID: 4d04bd43c6be24b73a945d285ae4279f).
+2024-01-07 21:16:17,010 - ERROR - Ignoring exception in command pilot_info
+Traceback (most recent call last):
+  File "C:\Users\GavinE\OneDrive - Sentient Vision Systems\Repos\dcs_server_logbook\env\Lib\site-packages\discord\ext\commands\bot.py", line 1350, in invoke
+    await ctx.command.invoke(ctx)
+  File "C:\Users\GavinE\OneDrive - Sentient Vision Systems\Repos\dcs_server_logbook\env\Lib\site-packages\discord\ext\commands\core.py", line 1021, in invoke
+    await self.prepare(ctx)
+  File "C:\Users\GavinE\OneDrive - Sentient Vision Systems\Repos\dcs_server_logbook\env\Lib\site-packages\discord\ext\commands\core.py", line 938, in prepare
+    await self._parse_arguments(ctx)
+  File "C:\Users\GavinE\OneDrive - Sentient Vision Systems\Repos\dcs_server_logbook\env\Lib\site-packages\discord\ext\commands\core.py", line 853, in _parse_arguments
+    kwargs[name] = await self.transform(ctx, param, attachments)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\GavinE\OneDrive - Sentient Vision Systems\Repos\dcs_server_logbook\env\Lib\site-packages\discord\ext\commands\core.py", line 697, in transform
+    raise MissingRequiredArgument(param)
+discord.ext.commands.errors.MissingRequiredArgument: pilot_name is a required argument that is missing.
+2024-01-07 21:16:31,223 - ERROR - Ignoring exception in command pilot_info
+Traceback (most recent call last):
+  File "C:\Users\GavinE\OneDrive - Sentient Vision Systems\Repos\dcs_server_logbook\env\Lib\site-packages\discord\ext\commands\core.py", line 235, in wrapped
+    ret = await coro(*args, **kwargs)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\GavinE\OneDrive - Sentient Vision Systems\Repos\dcs_server_logbook\src\bot.py", line 43, in pilot_info
+    pilot_details = get_pilot_details(DB_PATH, pilot_id)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: get_pilot_details() missing 1 required positional argument: 'combined_stats'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\GavinE\OneDrive - Sentient Vision Systems\Repos\dcs_server_logbook\env\Lib\site-packages\discord\ext\commands\bot.py", line 1350, in invoke
+    await ctx.command.invoke(ctx)
+  File "C:\Users\GavinE\OneDrive - Sentient Vision Systems\Repos\dcs_server_logbook\env\Lib\site-packages\discord\ext\commands\core.py", line 1029, in invoke
+    await injected(*ctx.args, **ctx.kwargs)  # type: ignore
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\GavinE\OneDrive - Sentient Vision Systems\Repos\dcs_server_logbook\env\Lib\site-packages\discord\ext\commands\core.py", line 244, in wrapped
+    raise CommandInvokeError(exc) from exc
+discord.ext.commands.errors.CommandInvokeError: Command raised an exception: TypeError: get_pilot_details() missing 1 required positional argument: 'combined_stats'
+2024-01-07 21:20:33,143 - DEBUG - matplotlib data path: C:\Users\GavinE\OneDrive - Sentient Vision Systems\Repos\dcs_server_logbook\env\Lib\site-packages\matplotlib\mpl-data
+2024-01-07 21:20:33,147 - DEBUG - CONFIGDIR=C:\Users\GavinE\.matplotlib
+2024-01-07 21:20:33,148 - DEBUG - interactive is False
+2024-01-07 21:20:33,148 - DEBUG - platform is win32
+2024-01-07 21:20:33,183 - WARNING - PyNaCl is not installed, voice will NOT be supported
+2024-01-07 21:20:33,184 - DEBUG - Using proactor: IocpProactor
+2024-01-07 21:20:33,185 - INFO - logging in using static token
+2024-01-07 21:20:34,084 - INFO - Shard ID None has connected to Gateway (Session ID: eef12d06459e6c8a75b64f7272132fc8).
+2024-01-07 21:20:40,652 - ERROR - Ignoring exception in command pilot_info
+Traceback (most recent call last):
+  File "C:\Users\GavinE\OneDrive - Sentient Vision Systems\Repos\dcs_server_logbook\env\Lib\site-packages\discord\ext\commands\core.py", line 235, in wrapped
+    ret = await coro(*args, **kwargs)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\GavinE\OneDrive - Sentient Vision Systems\Repos\dcs_server_logbook\src\bot.py", line 43, in pilot_info
+    combined_stats = load_combined_stats(JSON_PATH)  # Modify this to suit how you load or access combined stats
+                     ^^^^^^^^^^^^^^^^^^^
+NameError: name 'load_combined_stats' is not defined
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\GavinE\OneDrive - Sentient Vision Systems\Repos\dcs_server_logbook\env\Lib\site-packages\discord\ext\commands\bot.py", line 1350, in invoke
+    await ctx.command.invoke(ctx)
+  File "C:\Users\GavinE\OneDrive - Sentient Vision Systems\Repos\dcs_server_logbook\env\Lib\site-packages\discord\ext\commands\core.py", line 1029, in invoke
+    await injected(*ctx.args, **ctx.kwargs)  # type: ignore
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\GavinE\OneDrive - Sentient Vision Systems\Repos\dcs_server_logbook\env\Lib\site-packages\discord\ext\commands\core.py", line 244, in wrapped
+    raise CommandInvokeError(exc) from exc
+discord.ext.commands.errors.CommandInvokeError: Command raised an exception: NameError: name 'load_combined_stats' is not defined
+2024-01-07 21:26:21,259 - DEBUG - matplotlib data path: C:\Users\GavinE\OneDrive - Sentient Vision Systems\Repos\dcs_server_logbook\env\Lib\site-packages\matplotlib\mpl-data
+2024-01-07 21:26:21,271 - DEBUG - CONFIGDIR=C:\Users\GavinE\.matplotlib
+2024-01-07 21:26:21,272 - DEBUG - interactive is False
+2024-01-07 21:26:21,273 - DEBUG - platform is win32
+2024-01-07 21:26:21,324 - WARNING - PyNaCl is not installed, voice will NOT be supported
+2024-01-07 21:26:21,325 - DEBUG - Using proactor: IocpProactor
+2024-01-07 21:26:21,326 - INFO - logging in using static token
+2024-01-07 21:26:22,323 - INFO - Shard ID None has connected to Gateway (Session ID: c336367d7403eb6ad442d38164ad01dd).
+2024-01-07 21:26:27,759 - ERROR - Ignoring exception in command pilot_info
+Traceback (most recent call last):
+  File "C:\Users\GavinE\OneDrive - Sentient Vision Systems\Repos\dcs_server_logbook\env\Lib\site-packages\discord\ext\commands\bot.py", line 1350, in invoke
+    await ctx.command.invoke(ctx)
+  File "C:\Users\GavinE\OneDrive - Sentient Vision Systems\Repos\dcs_server_logbook\env\Lib\site-packages\discord\ext\commands\core.py", line 1021, in invoke
+    await self.prepare(ctx)
+  File "C:\Users\GavinE\OneDrive - Sentient Vision Systems\Repos\dcs_server_logbook\env\Lib\site-packages\discord\ext\commands\core.py", line 938, in prepare
+    await self._parse_arguments(ctx)
+  File "C:\Users\GavinE\OneDrive - Sentient Vision Systems\Repos\dcs_server_logbook\env\Lib\site-packages\discord\ext\commands\core.py", line 853, in _parse_arguments
+    kwargs[name] = await self.transform(ctx, param, attachments)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\GavinE\OneDrive - Sentient Vision Systems\Repos\dcs_server_logbook\env\Lib\site-packages\discord\ext\commands\core.py", line 697, in transform
+    raise MissingRequiredArgument(param)
+discord.ext.commands.errors.MissingRequiredArgument: pilot_name is a required argument that is missing.
+2024-01-07 21:34:24,177 - DEBUG - matplotlib data path: C:\Users\GavinE\OneDrive - Sentient Vision Systems\Repos\dcs_server_logbook\env\Lib\site-packages\matplotlib\mpl-data
+2024-01-07 21:34:24,181 - DEBUG - CONFIGDIR=C:\Users\GavinE\.matplotlib
+2024-01-07 21:34:24,183 - DEBUG - interactive is False
+2024-01-07 21:34:24,183 - DEBUG - platform is win32
+2024-01-07 21:34:24,219 - WARNING - PyNaCl is not installed, voice will NOT be supported
+2024-01-07 21:34:24,220 - DEBUG - Using proactor: IocpProactor
+2024-01-07 21:34:24,221 - INFO - logging in using static token
+2024-01-07 21:34:25,058 - INFO - Shard ID None has connected to Gateway (Session ID: 6794c11377eb5fabadd49462bc78583d).
+2024-01-07 21:34:34,179 - ERROR - Ignoring exception in command pilot_info
+Traceback (most recent call last):
+  File "C:\Users\GavinE\OneDrive - Sentient Vision Systems\Repos\dcs_server_logbook\env\Lib\site-packages\discord\ext\commands\core.py", line 235, in wrapped
+    ret = await coro(*args, **kwargs)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\GavinE\OneDrive - Sentient Vision Systems\Repos\dcs_server_logbook\src\bot.py", line 73, in pilot_info
+    if os.path.exists(ribbon_path):
+       ^^
+NameError: name 'os' is not defined. Did you forget to import 'os'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\GavinE\OneDrive - Sentient Vision Systems\Repos\dcs_server_logbook\env\Lib\site-packages\discord\ext\commands\bot.py", line 1350, in invoke
+    await ctx.command.invoke(ctx)
+  File "C:\Users\GavinE\OneDrive - Sentient Vision Systems\Repos\dcs_server_logbook\env\Lib\site-packages\discord\ext\commands\core.py", line 1029, in invoke
+    await injected(*ctx.args, **ctx.kwargs)  # type: ignore
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\GavinE\OneDrive - Sentient Vision Systems\Repos\dcs_server_logbook\env\Lib\site-packages\discord\ext\commands\core.py", line 244, in wrapped
+    raise CommandInvokeError(exc) from exc
+discord.ext.commands.errors.CommandInvokeError: Command raised an exception: NameError: name 'os' is not defined
+2024-01-07 21:34:47,061 - DEBUG - matplotlib data path: C:\Users\GavinE\OneDrive - Sentient Vision Systems\Repos\dcs_server_logbook\env\Lib\site-packages\matplotlib\mpl-data
+2024-01-07 21:34:47,067 - DEBUG - CONFIGDIR=C:\Users\GavinE\.matplotlib
+2024-01-07 21:34:47,068 - DEBUG - interactive is False
+2024-01-07 21:34:47,069 - DEBUG - platform is win32
+2024-01-07 21:34:47,108 - WARNING - PyNaCl is not installed, voice will NOT be supported
+2024-01-07 21:34:47,110 - DEBUG - Using proactor: IocpProactor
+2024-01-07 21:34:47,110 - INFO - logging in using static token
+2024-01-07 21:34:48,051 - INFO - Shard ID None has connected to Gateway (Session ID: 561a0fda9686cbea3302a1a4211ae859).
+2024-01-07 21:35:35,108 - DEBUG - matplotlib data path: C:\Users\GavinE\OneDrive - Sentient Vision Systems\Repos\dcs_server_logbook\env\Lib\site-packages\matplotlib\mpl-data
+2024-01-07 21:35:35,113 - DEBUG - CONFIGDIR=C:\Users\GavinE\.matplotlib
+2024-01-07 21:35:35,115 - DEBUG - interactive is False
+2024-01-07 21:35:35,115 - DEBUG - platform is win32
+2024-01-07 21:35:35,152 - WARNING - PyNaCl is not installed, voice will NOT be supported
+2024-01-07 21:35:35,154 - DEBUG - Using proactor: IocpProactor
+2024-01-07 21:35:35,154 - INFO - logging in using static token
+2024-01-07 21:35:36,125 - INFO - Shard ID None has connected to Gateway (Session ID: 5b439284da790a12c38d992abbc3833b).
+2024-01-07 21:37:57,811 - DEBUG - matplotlib data path: C:\Users\GavinE\OneDrive - Sentient Vision Systems\Repos\dcs_server_logbook\env\Lib\site-packages\matplotlib\mpl-data
+2024-01-07 21:37:57,819 - DEBUG - CONFIGDIR=C:\Users\GavinE\.matplotlib
+2024-01-07 21:37:57,821 - DEBUG - interactive is False
+2024-01-07 21:37:57,821 - DEBUG - platform is win32
+2024-01-07 21:37:57,872 - WARNING - PyNaCl is not installed, voice will NOT be supported
+2024-01-07 21:37:57,873 - DEBUG - Using proactor: IocpProactor
+2024-01-07 21:37:57,873 - INFO - logging in using static token
+2024-01-07 21:37:58,712 - INFO - Shard ID None has connected to Gateway (Session ID: f9123b515c67c24afd6468460227b199).
+2024-01-07 21:40:24,956 - INFO - Running merge.lua script
+2024-01-07 21:40:25,113 - INFO - Processing combined data
+2024-01-07 21:40:25,183 - INFO - Created html output
+2024-01-07 21:40:25,183 - INFO - Generating pilot pages
+2024-01-07 21:44:39,983 - INFO - Running merge.lua script
+2024-01-07 21:44:40,037 - INFO - Processing combined data
+2024-01-07 21:44:40,122 - INFO - Created html output
+2024-01-07 21:44:40,122 - INFO - Generating pilot pages
+2024-01-07 21:49:13,619 - INFO - Running merge.lua script
+2024-01-07 21:49:13,666 - INFO - Processing combined data
+2024-01-07 21:49:13,732 - INFO - Created html output
+2024-01-07 21:49:13,732 - INFO - Generating pilot pages
+2024-01-07 21:50:32,009 - INFO - Running merge.lua script
+2024-01-07 21:50:32,060 - INFO - Processing combined data
+2024-01-07 21:50:32,133 - INFO - Created html output
+2024-01-07 21:50:32,133 - INFO - Generating pilot pages
+2024-01-07 21:56:34,849 - INFO - Running merge.lua script
+2024-01-07 21:56:35,013 - INFO - Processing combined data
+2024-01-07 21:56:35,084 - INFO - Created html output
+2024-01-07 21:56:35,085 - INFO - Generating pilot pages
+2024-01-07 21:57:55,949 - INFO - Running merge.lua script
+2024-01-07 21:57:56,006 - INFO - Processing combined data
+2024-01-07 21:57:56,070 - INFO - Created html output
+2024-01-07 21:57:56,071 - INFO - Generating pilot pages
+2024-01-07 21:59:02,234 - INFO - Running merge.lua script
+2024-01-07 21:59:02,291 - INFO - Processing combined data
+2024-01-07 21:59:02,374 - INFO - Created html output
+2024-01-07 21:59:02,374 - INFO - Generating pilot pages
+2024-01-07 21:59:48,226 - INFO - Running merge.lua script
+2024-01-07 21:59:48,284 - INFO - Processing combined data
+2024-01-07 21:59:48,365 - INFO - Created html output
+2024-01-07 21:59:48,366 - INFO - Generating pilot pages
+2024-01-07 22:00:17,825 - INFO - Running merge.lua script
+2024-01-07 22:00:17,877 - INFO - Processing combined data
+2024-01-07 22:00:17,951 - INFO - Created html output
+2024-01-07 22:00:17,951 - INFO - Generating pilot pages
+2024-01-07 22:00:24,556 - INFO - Running merge.lua script
+2024-01-07 22:00:24,609 - INFO - Processing combined data
+2024-01-07 22:00:24,677 - INFO - Created html output
+2024-01-07 22:00:24,678 - INFO - Generating pilot pages
+2024-01-07 22:00:37,814 - INFO - Running merge.lua script
+2024-01-07 22:00:37,872 - INFO - Processing combined data
+2024-01-07 22:00:37,955 - INFO - Created html output
+2024-01-07 22:00:37,955 - INFO - Generating pilot pages
+2024-01-07 22:00:58,383 - INFO - Running merge.lua script
+2024-01-07 22:00:58,433 - INFO - Processing combined data
+2024-01-07 22:00:58,507 - INFO - Created html output
+2024-01-07 22:00:58,507 - INFO - Generating pilot pages
+2024-01-07 22:02:51,279 - INFO - Running merge.lua script
+2024-01-07 22:02:51,336 - INFO - Processing combined data
+2024-01-07 22:02:51,419 - INFO - Created html output
+2024-01-07 22:02:51,419 - INFO - Generating pilot pages
+2024-01-07 22:04:09,942 - INFO - Running merge.lua script
+2024-01-07 22:04:09,993 - INFO - Processing combined data
+2024-01-07 22:04:10,058 - INFO - Created html output
+2024-01-07 22:04:10,058 - INFO - Generating pilot pages
+2024-01-07 22:04:33,822 - INFO - Running merge.lua script
+2024-01-07 22:04:33,877 - INFO - Processing combined data
+2024-01-07 22:04:33,956 - INFO - Created html output
+2024-01-07 22:04:33,957 - INFO - Generating pilot pages
+2024-01-07 22:04:49,244 - INFO - Running merge.lua script
+2024-01-07 22:04:49,294 - INFO - Processing combined data
+2024-01-07 22:04:49,362 - INFO - Created html output
+2024-01-07 22:04:49,362 - INFO - Generating pilot pages
+2024-01-07 22:05:01,505 - INFO - Running merge.lua script
+2024-01-07 22:05:01,552 - INFO - Processing combined data
+2024-01-07 22:05:01,620 - INFO - Created html output
+2024-01-07 22:05:01,620 - INFO - Generating pilot pages
+2024-01-07 22:05:52,845 - INFO - Running merge.lua script
+2024-01-07 22:05:52,893 - INFO - Processing combined data
+2024-01-07 22:05:52,960 - INFO - Created html output
+2024-01-07 22:05:52,961 - INFO - Generating pilot pages
+2024-01-07 22:06:17,373 - INFO - Running merge.lua script
+2024-01-07 22:06:17,429 - INFO - Processing combined data
+2024-01-07 22:06:17,507 - INFO - Created html output
+2024-01-07 22:06:17,507 - INFO - Generating pilot pages
+2024-01-07 22:06:53,722 - INFO - Running merge.lua script
+2024-01-07 22:06:53,771 - INFO - Processing combined data
+2024-01-07 22:06:53,842 - INFO - Created html output
+2024-01-07 22:06:53,842 - INFO - Generating pilot pages
+2024-01-07 22:07:17,335 - INFO - Running merge.lua script
+2024-01-07 22:07:17,385 - INFO - Processing combined data
+2024-01-07 22:07:17,452 - INFO - Created html output
+2024-01-07 22:07:17,452 - INFO - Generating pilot pages
+2024-01-07 22:08:26,673 - INFO - Running merge.lua script
+2024-01-07 22:08:26,725 - INFO - Processing combined data
+2024-01-07 22:08:26,795 - INFO - Created html output
+2024-01-07 22:08:26,795 - INFO - Generating pilot pages
+2024-01-07 22:10:06,676 - INFO - Running merge.lua script
+2024-01-07 22:10:06,846 - INFO - Processing combined data
+2024-01-07 22:10:06,921 - INFO - Created html output
+2024-01-07 22:10:06,921 - INFO - Generating pilot pages
+2024-01-07 22:10:54,219 - INFO - Running merge.lua script
+2024-01-07 22:10:54,272 - INFO - Processing combined data
+2024-01-07 22:10:54,342 - INFO - Created html output
+2024-01-07 22:10:54,342 - INFO - Generating pilot pages
+2024-01-07 22:13:15,664 - INFO - Running merge.lua script
+2024-01-07 22:13:15,724 - INFO - Processing combined data
+2024-01-07 22:13:15,805 - INFO - Created html output
+2024-01-07 22:13:15,805 - INFO - Generating pilot pages
+2024-01-07 22:16:41,998 - INFO - Running merge.lua script
+2024-01-07 22:16:42,048 - INFO - Processing combined data
+2024-01-07 22:16:42,120 - INFO - Created html output
+2024-01-07 22:16:42,120 - INFO - Generating pilot pages

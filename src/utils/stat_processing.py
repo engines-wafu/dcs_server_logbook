@@ -1,4 +1,5 @@
-import os, json, sqlite3, datetime
+import os, json, sqlite3
+from datetime import datetime
 from utils.time_management import seconds_to_hours, days_from_epoch
 from database.db_crud import get_pilot_full_name
 
@@ -12,8 +13,43 @@ def ribbon_image_exists(award_name):
 
 def format_epoch_to_date(epoch_time):
     if epoch_time:
-        return datetime.datetime.fromtimestamp(epoch_time).strftime('%d %b %y')
+        return datetime.fromtimestamp(epoch_time).strftime('%d %b %y')
     return 'N/A'
+
+def get_pilot_details(db_path, pilot_id, combined_stats):
+    """
+    Fetches the details of a pilot, including service, rank, total hours, and last joined date.
+
+    :param db_path: Path to the SQLite database file.
+    :param pilot_id: Unique identifier of the pilot.
+    :param combined_stats: Dictionary containing the combined stats of all pilots.
+    :return: A dictionary containing the pilot's details.
+    """
+    conn = sqlite3.connect(db_path)
+    cursor = conn.cursor()
+
+    # Fetch basic pilot details
+    cursor.execute("SELECT pilot_service, pilot_rank FROM Pilots WHERE pilot_id = ?", (pilot_id,))
+    result = cursor.fetchone()
+    conn.close()
+
+    if not result:
+        return None
+
+    pilot_service, pilot_rank = result
+
+    # Calculate total hours and last join date from combined_stats
+    pilot_stats = combined_stats.get(pilot_id, {})
+    total_hours = sum(seconds_to_hours(aircraft_stats.get('total', 0)) for aircraft_type, aircraft_stats in pilot_stats.get('times', {}).items())
+    last_join = pilot_stats.get('lastJoin', 0)
+    last_join_date = datetime.datetime.fromtimestamp(last_join).strftime('%Y-%m-%d')
+
+    return {
+        'service': pilot_service,
+        'rank': pilot_rank,
+        'total_hours': total_hours,
+        'last_join': last_join_date
+    }
 
 def get_pilot_awards_with_details(db_path, pilot_id):
     conn = sqlite3.connect(db_path)
@@ -120,10 +156,26 @@ def generate_pilot_info_page(DB_PATH, combined_stats, output_dir):
             awards_html += f"<tr title='{award_description}'><td style='width:10%'>{award_id}</td><td style='width:50%'>{award_name}</td><td style='width:20%'>{date_issued}</td><td style='width:40%; text-align:left;'>{ribbon_html}</td></tr>"
         awards_html += "</table>"
 
-        # For Qualifications
+        # HTML table start
+        today = datetime.now().date()
+
         qualifications_html = "<table style='border:1'><tr><th style='width:10%'>ID</th><th style='width:50%'>Name</th><th style='width:20%'>Issued</th><th style='width:20%'>Expires</th></tr>"
+
         for qualification_id, qualification_name, qualification_description, date_issued, date_expires in qualifications:
-            qualifications_html += f"<tr title='{qualification_description}'><td style='width:10%'>{qualification_id}</td><td style='width:50%'>{qualification_name}</td><td style='width:20%'>{date_issued}</td><td style='width:20%'>{date_expires}</td></tr>"
+            # Parse the date_expires to a date object
+            date_expires_obj = datetime.strptime(date_expires, "%d %b %y").date()
+
+            # Determine the color based on expiration date
+            if date_expires_obj < today:
+                color = "red"
+            elif (date_expires_obj - today).days <= 7:
+                color = "orange"
+            else:
+                color = ""  # Default color
+
+            # Append row to HTML with color styling
+            qualifications_html += f"<tr title='{qualification_description}'><td style='width:10%'>{qualification_id}</td><td style='width:50%'>{qualification_name}</td><td style='width:20%'>{date_issued}</td><td style='width:20%; background-color:{color}'>{date_expires}</td></tr>"
+
         qualifications_html += "</table>"
 
         if not isinstance(pilot_stats.get('times'), dict):
@@ -162,7 +214,7 @@ def generate_pilot_info_page(DB_PATH, combined_stats, output_dir):
         kills_html += "</table>"
 
         last_join = pilot_stats.get('lastJoin', 0)
-        last_join_date = datetime.datetime.fromtimestamp(last_join).strftime('%Y%m%d')
+        last_join_date = datetime.fromtimestamp(last_join).strftime('%Y%m%d')
 
         pilot_html = f"""
             <html>

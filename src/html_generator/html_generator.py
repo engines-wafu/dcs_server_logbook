@@ -1,34 +1,23 @@
 # src/html_generator/html_generator.py
-import sqlite3
-import logging
+import sqlite3, logging, os
 from database.db_crud import get_pilot_full_name
 from utils.stat_processing import load_combined_stats, generate_squadron_pilot_rows
 
-def get_pilot_awards_with_details(db_path, pilot_id):
-    """Fetches awards with details for a specific pilot."""
+def get_all_qualifications(db_path):
     conn = sqlite3.connect(db_path)
     cursor = conn.cursor()
-    cursor.execute("""
-        SELECT a.award_id, a.award_name, a.award_description, pa.date_issued
-        FROM Awards a
-        INNER JOIN Pilot_Awards pa ON a.award_id = pa.award_id
-        WHERE pa.pilot_id = ?""", (pilot_id,))
-    awards = cursor.fetchall()
-    conn.close()
-    return awards
-
-def get_pilot_qualifications_with_details(db_path, pilot_id):
-    """Fetches qualifications with details for a specific pilot."""
-    conn = sqlite3.connect(db_path)
-    cursor = conn.cursor()
-    cursor.execute("""
-        SELECT q.qualification_id, q.qualification_name, q.qualification_description, pq.date_issued, pq.date_expires
-        FROM Qualifications q
-        INNER JOIN Pilot_Qualifications pq ON q.qualification_id = pq.qualification_id
-        WHERE pq.pilot_id = ?""", (pilot_id,))
+    cursor.execute("SELECT qualification_id, qualification_name, qualification_description, qualification_duration FROM Qualifications")
     qualifications = cursor.fetchall()
     conn.close()
     return qualifications
+
+def get_all_awards(db_path):
+    conn = sqlite3.connect(db_path)
+    cursor = conn.cursor()
+    cursor.execute("SELECT award_id, award_name, award_description FROM Awards")
+    awards = cursor.fetchall()
+    conn.close()
+    return awards
 
 def fetch_squadron_pilots(db_path):
     """
@@ -138,3 +127,52 @@ def generate_index_html(db_path, output_path, json_file_path):
     # Write the HTML content to a file
     with open(output_path, "w") as file:
         file.write(final_html)
+
+def generate_awards_qualifications_page(db_path, output_path):
+    qualifications = get_all_qualifications(db_path)
+    awards = get_all_awards(db_path)
+
+    # Read the navbar HTML content
+    navbar_path = 'web/navbar.html'
+    with open(navbar_path, 'r') as file:
+        navbar_html = file.read()
+
+    html_content = f"""
+    <html>
+    <head>
+        <title>Awards and Qualifications</title>
+        <link rel="stylesheet" type="text/css" href="styles.css">
+    </head>
+    <body>
+        {navbar_html}
+        <div class="container">
+        <h1>Awards and Qualifications</h1>
+        
+        <h2>Qualifications</h2>
+        <table>
+            <tr><th>ID</th><th>Name</th><th>Description</th><th>Duration (days)</th></tr>
+    """
+    for qid, qname, qdesc, qduration in qualifications:
+        html_content += f"<tr><td>{qid}</td><td>{qname}</td><td>{qdesc}</td><td>{qduration//86400}</td></tr>"
+
+    html_content += '''
+        </table>
+        
+        <h2>Awards</h2>
+        <table>
+            <tr><th>ID</th><th>Name</th><th>Description</th><th>Ribbon</th></tr>
+    '''
+    for aid, aname, adesc in awards:
+        ribbon_path = f"img/ribbons/{aname}.png"
+        ribbon_img = f"<img src='{ribbon_path}' style='height:20px;'>" if os.path.exists('web/' + ribbon_path) else "No ribbon"
+        html_content += f"<tr><td>{aid}</td><td>{aname}</td><td>{adesc}</td><td>{ribbon_img}</td></tr>"
+
+    html_content += '''
+        </table>
+        </div>
+    </body>
+    </html>
+    '''
+
+    with open(output_path, "w") as file:
+        file.write(html_content)

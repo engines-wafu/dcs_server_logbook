@@ -61,7 +61,7 @@ class ribbonGenerator:
         Image.fromarray(pattern_image.astype('uint8'), 'RGB').save(file_path)
 
 # Example usage
-input_string = 'TOMCAT_TYPE_CONVERSION'
+input_string = 'OP_THRESHER_1'
 pattern_generator = ribbonGenerator(input_string)
 file_path = 'web/img/ribbons/' + input_string + '.png'
 pattern_generator.save_pattern_as_png(file_path)

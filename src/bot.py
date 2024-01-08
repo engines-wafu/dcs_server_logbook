@@ -2,9 +2,10 @@ import discord, asyncio, logging, time
 from main import main
 from utils.ribbon import ribbonGenerator
 from discord.ext import commands
-from html_generator.html_generator import generate_index_html
+from html_generator.html_generator import generate_index_html, load_combined_stats
+from utils.stat_processing import get_pilot_qualifications_with_details, get_pilot_awards_with_details, get_pilot_details
 from database.db_crud import *
-from config import TOKEN, DB_PATH
+from config import TOKEN, DB_PATH, JSON_PATH
 
 # Configure logging
 log_filename = f"data/logs/bot.log"
@@ -16,7 +17,7 @@ json_path = 'data/stats/combinedStats.json'
 bot = commands.Bot(command_prefix='!', intents=discord.Intents.all())
 
 def generate_single_ribbon(input_string, output_path):
-    pattern_gen = ribbonGenerator(input_string, image_size=(190, 64))
+    pattern_gen = ribbonGenerator(input_string, image_size=(64, 190))
     pattern_gen.save_pattern_as_png(output_path)
 
 async def get_response(ctx):
@@ -29,6 +30,49 @@ async def get_response(ctx):
     except asyncio.TimeoutError:
         await ctx.send("You did not respond in time.")
         return None
+
+@bot.command(name='pilot_info')
+async def pilot_info(ctx, *, pilot_name):
+    pilot_id = find_pilot_id_by_name(DB_PATH, pilot_name)
+
+    if not pilot_id:
+        await ctx.send(f"No pilot found with the name: {pilot_name}")
+        return
+
+    # Load combined stats from the JSON file
+    combined_stats = load_combined_stats(JSON_PATH)  # Ensure that JSON_PATH is correctly defined and accessible
+
+    pilot_details = get_pilot_details(DB_PATH, pilot_id, combined_stats)
+    if not pilot_details:
+        await ctx.send(f"No details found for pilot: {pilot_name}")
+        return
+
+    # Construct the embedded message with pilot details
+    embed = discord.Embed(title=f"Pilot Information: {pilot_name}", color=0x00ff00)
+    embed.add_field(name="Service", value=pilot_details['service'], inline=True)
+    embed.add_field(name="Rank", value=pilot_details['rank'], inline=True)
+    embed.add_field(name="Total Hours", value=str(pilot_details['total_hours']), inline=True)
+    embed.add_field(name="Last Joined", value=pilot_details['last_join'], inline=True)
+
+    # Add qualifications and awards to the embed
+    qualifications = get_pilot_qualifications_with_details(DB_PATH, pilot_id)
+    awards = get_pilot_awards_with_details(DB_PATH, pilot_id)
+    
+    # Add qualifications to embed
+    if qualifications:
+        qualifications_text = "\n".join(f"{q[1]} (Issued: {q[3]}, Expires: {q[4]})" for q in qualifications)
+        embed.add_field(name="Qualifications", value=qualifications_text, inline=False)
+    else:
+        embed.add_field(name="Qualifications", value="None", inline=False)
+
+    # Add awards to embed
+    if awards:
+        awards_text = "\n".join(f"{a[1]} (Issued: {a[3]})" for a in awards)
+        embed.add_field(name="Awards", value=awards_text, inline=False)
+    else:
+        embed.add_field(name="Awards", value="None", inline=False)
+
+    await ctx.send(embed=embed)
 
 @bot.command(name='update_logbook')
 async def update_logbook(ctx):
@@ -56,9 +100,8 @@ async def create_award(ctx):
         await ctx.send(f"Failed to create award: {e}")
     
     # Make the ribbon
-    # generate_single_ribbon(award_name, 'web/img/ribbons/' + award_name + '.png')
+    generate_single_ribbon(award_name, 'web/img/ribbons/' + award_name + '.png')
     
-
 @bot.command(name='create_qualification')
 async def create_qualification(ctx):
     # Ask for qualification details

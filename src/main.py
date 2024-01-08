@@ -3,7 +3,7 @@ import os
 import subprocess
 import json
 from datetime import datetime
-from html_generator.html_generator import fetch_squadron_pilots, generate_index_html
+from html_generator.html_generator import fetch_squadron_pilots, generate_index_html, generate_awards_qualifications_page
 from utils.stat_processing import load_combined_stats, generate_pilot_info_page
 from config import DB_PATH, JSON_PATH, STATS_FILES
 
@@ -62,9 +62,11 @@ def main():
         logging.error("combinedStats.json not found or merge.lua script failed")
 
     output_dir = 'web/pilot'
+    awards_path = 'web/awards.html'
 
     generate_index_html(DB_PATH, output_path, JSON_PATH)
-    logging.info("Created index.html output")
+    generate_awards_qualifications_page(DB_PATH, awards_path)
+    logging.info("Created html output")
 
     logging.info("Generating pilot pages")
     for pilot_id in combined_stats.keys():
