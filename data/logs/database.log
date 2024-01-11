@@ -2289,3 +2289,234 @@ discord.ext.commands.errors.CommandInvokeError: Command raised an exception: Nam
 2024-01-07 22:16:42,048 - INFO - Processing combined data
 2024-01-07 22:16:42,120 - INFO - Created html output
 2024-01-07 22:16:42,120 - INFO - Generating pilot pages
+2024-01-08 18:47:48,507 - INFO - Running merge.lua script
+2024-01-08 18:47:48,507 - ERROR - Error running Lua script: lua54: src/lua/merge.lua:3: module 'dkjson' not found:
+	no field package.preload['dkjson']
+	no file 'C:\lua\lua\dkjson.lua'
+	no file 'C:\lua\lua\dkjson\init.lua'
+	no file 'C:\lua\dkjson.lua'
+	no file 'C:\lua\dkjson\init.lua'
+	no file 'C:\lua\..\share\lua\5.4\dkjson.lua'
+	no file 'C:\lua\..\share\lua\5.4\dkjson\init.lua'
+	no file '.\dkjson.lua'
+	no file '.\dkjson\init.lua'
+	no file 'C:\Program Files (x86)\Lua\5.1\lua\dkjson.luac'
+	no file 'C:\lua\dkjson.dll'
+	no file 'C:\lua\..\lib\lua\5.4\dkjson.dll'
+	no file 'C:\lua\loadall.dll'
+	no file '.\dkjson.dll'
+	no file 'C:\lua\dkjson54.dll'
+	no file '.\dkjson54.dll'
+stack traceback:
+	[C]: in function 'require'
+	src/lua/merge.lua:3: in main chunk
+	[C]: in ?
+
+2024-01-08 18:47:48,507 - INFO - Processing combined data
+2024-01-08 18:47:48,570 - INFO - Created html output
+2024-01-08 18:47:48,570 - INFO - Generating pilot pages
+2024-01-08 18:51:43,072 - INFO - Running merge.lua script
+2024-01-08 18:51:43,079 - ERROR - Error running Lua script: lua54: src/lua/merge.lua:3: module 'dkjson' not found:
+	no field package.preload['dkjson']
+	no file 'C:\lua\lua\dkjson.lua'
+	no file 'C:\lua\lua\dkjson\init.lua'
+	no file 'C:\lua\dkjson.lua'
+	no file 'C:\lua\dkjson\init.lua'
+	no file 'C:\lua\..\share\lua\5.4\dkjson.lua'
+	no file 'C:\lua\..\share\lua\5.4\dkjson\init.lua'
+	no file '.\dkjson.lua'
+	no file '.\dkjson\init.lua'
+	no file 'C:\Program Files (x86)\Lua\5.1\lua\dkjson.luac'
+	no file 'C:\lua\dkjson.dll'
+	no file 'C:\lua\..\lib\lua\5.4\dkjson.dll'
+	no file 'C:\lua\loadall.dll'
+	no file '.\dkjson.dll'
+	no file 'C:\lua\dkjson54.dll'
+	no file '.\dkjson54.dll'
+stack traceback:
+	[C]: in function 'require'
+	src/lua/merge.lua:3: in main chunk
+	[C]: in ?
+
+2024-01-08 18:51:43,079 - INFO - Processing combined data
+2024-01-08 18:51:43,119 - INFO - Created html output
+2024-01-08 18:51:43,119 - INFO - Generating pilot pages
+2024-01-08 18:52:21,909 - INFO - Running merge.lua script
+2024-01-08 18:52:21,918 - ERROR - Error running Lua script: lua54: src/lua/merge.lua:3: module 'dkjson' not found:
+	no field package.preload['dkjson']
+	no file 'C:\lua\lua\dkjson.lua'
+	no file 'C:\lua\lua\dkjson\init.lua'
+	no file 'C:\lua\dkjson.lua'
+	no file 'C:\lua\dkjson\init.lua'
+	no file 'C:\lua\..\share\lua\5.4\dkjson.lua'
+	no file 'C:\lua\..\share\lua\5.4\dkjson\init.lua'
+	no file '.\dkjson.lua'
+	no file '.\dkjson\init.lua'
+	no file 'C:\Program Files (x86)\Lua\5.1\lua\dkjson.luac'
+	no file 'C:\lua\dkjson.dll'
+	no file 'C:\lua\..\lib\lua\5.4\dkjson.dll'
+	no file 'C:\lua\loadall.dll'
+	no file '.\dkjson.dll'
+	no file 'C:\lua\dkjson54.dll'
+	no file '.\dkjson54.dll'
+stack traceback:
+	[C]: in function 'require'
+	src/lua/merge.lua:3: in main chunk
+	[C]: in ?
+
+2024-01-08 18:52:21,918 - INFO - Processing combined data
+2024-01-08 18:52:21,951 - INFO - Created html output
+2024-01-08 18:52:21,951 - INFO - Generating pilot pages
+2024-01-08 20:27:44,000 - DEBUG - matplotlib data path: C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\matplotlib\mpl-data
+2024-01-08 20:27:44,004 - DEBUG - CONFIGDIR=C:\Users\Gavin\.matplotlib
+2024-01-08 20:27:44,005 - DEBUG - interactive is False
+2024-01-08 20:27:44,005 - DEBUG - platform is win32
+2024-01-08 20:27:44,195 - WARNING - PyNaCl is not installed, voice will NOT be supported
+2024-01-08 20:27:44,196 - DEBUG - Using proactor: IocpProactor
+2024-01-08 20:27:44,197 - INFO - logging in using static token
+2024-01-08 20:29:29,140 - DEBUG - matplotlib data path: C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\matplotlib\mpl-data
+2024-01-08 20:29:29,143 - DEBUG - CONFIGDIR=C:\Users\Gavin\.matplotlib
+2024-01-08 20:29:29,144 - DEBUG - interactive is False
+2024-01-08 20:29:29,144 - DEBUG - platform is win32
+2024-01-08 20:29:29,190 - WARNING - PyNaCl is not installed, voice will NOT be supported
+2024-01-08 20:29:29,191 - DEBUG - Using proactor: IocpProactor
+2024-01-08 20:29:29,191 - INFO - logging in using static token
+2024-01-08 20:29:30,339 - INFO - Shard ID None has connected to Gateway (Session ID: f71eda0becc0fecd432db78dcfee5385).
+2024-01-08 20:34:44,958 - INFO - Running merge.lua script
+2024-01-08 20:34:44,958 - ERROR - Error running Lua script: lua54: src/lua/merge.lua:3: module 'dkjson' not found:
+	no field package.preload['dkjson']
+	no file 'C:\lua\lua\dkjson.lua'
+	no file 'C:\lua\lua\dkjson\init.lua'
+	no file 'C:\lua\dkjson.lua'
+	no file 'C:\lua\dkjson\init.lua'
+	no file 'C:\lua\..\share\lua\5.4\dkjson.lua'
+	no file 'C:\lua\..\share\lua\5.4\dkjson\init.lua'
+	no file '.\dkjson.lua'
+	no file '.\dkjson\init.lua'
+	no file 'C:\Program Files (x86)\Lua\5.1\lua\dkjson.luac'
+	no file 'C:\lua\dkjson.dll'
+	no file 'C:\lua\..\lib\lua\5.4\dkjson.dll'
+	no file 'C:\lua\loadall.dll'
+	no file '.\dkjson.dll'
+	no file 'C:\lua\dkjson54.dll'
+	no file '.\dkjson54.dll'
+stack traceback:
+	[C]: in function 'require'
+	src/lua/merge.lua:3: in main chunk
+	[C]: in ?
+
+2024-01-08 20:34:44,958 - INFO - Processing combined data
+2024-01-08 20:34:45,005 - INFO - Created html output
+2024-01-08 20:34:45,005 - INFO - Generating pilot pages
+2024-01-08 20:37:43,973 - INFO - Running merge.lua script
+2024-01-08 20:37:43,981 - ERROR - Error running Lua script: lua54: src/lua/merge.lua:3: module 'dkjson' not found:
+	no field package.preload['dkjson']
+	no file 'C:\lua\lua\dkjson.lua'
+	no file 'C:\lua\lua\dkjson\init.lua'
+	no file 'C:\lua\dkjson.lua'
+	no file 'C:\lua\dkjson\init.lua'
+	no file 'C:\lua\..\share\lua\5.4\dkjson.lua'
+	no file 'C:\lua\..\share\lua\5.4\dkjson\init.lua'
+	no file '.\dkjson.lua'
+	no file '.\dkjson\init.lua'
+	no file 'C:\Program Files (x86)\Lua\5.1\lua\dkjson.luac'
+	no file 'C:\lua\dkjson.dll'
+	no file 'C:\lua\..\lib\lua\5.4\dkjson.dll'
+	no file 'C:\lua\loadall.dll'
+	no file '.\dkjson.dll'
+	no file 'C:\lua\dkjson54.dll'
+	no file '.\dkjson54.dll'
+stack traceback:
+	[C]: in function 'require'
+	src/lua/merge.lua:3: in main chunk
+	[C]: in ?
+
+2024-01-08 20:37:43,981 - INFO - Processing combined data
+2024-01-08 20:37:44,022 - INFO - Created html output
+2024-01-08 20:37:44,022 - INFO - Generating pilot pages
+2024-01-08 20:42:55,139 - DEBUG - matplotlib data path: C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\matplotlib\mpl-data
+2024-01-08 20:42:55,142 - DEBUG - CONFIGDIR=C:\Users\Gavin\.matplotlib
+2024-01-08 20:42:55,143 - DEBUG - interactive is False
+2024-01-08 20:42:55,143 - DEBUG - platform is win32
+2024-01-08 20:42:55,193 - WARNING - PyNaCl is not installed, voice will NOT be supported
+2024-01-08 20:42:55,194 - DEBUG - Using proactor: IocpProactor
+2024-01-08 20:42:55,195 - INFO - logging in using static token
+2024-01-08 20:42:56,747 - INFO - Shard ID None has connected to Gateway (Session ID: 6ac3720318707458a24d224890fe13ce).
+2024-01-08 20:45:37,794 - INFO - Running merge.lua script
+2024-01-08 20:45:37,801 - ERROR - Error running Lua script: lua54: src/lua/merge.lua:3: module 'dkjson' not found:
+	no field package.preload['dkjson']
+	no file 'C:\lua\lua\dkjson.lua'
+	no file 'C:\lua\lua\dkjson\init.lua'
+	no file 'C:\lua\dkjson.lua'
+	no file 'C:\lua\dkjson\init.lua'
+	no file 'C:\lua\..\share\lua\5.4\dkjson.lua'
+	no file 'C:\lua\..\share\lua\5.4\dkjson\init.lua'
+	no file '.\dkjson.lua'
+	no file '.\dkjson\init.lua'
+	no file 'C:\Program Files (x86)\Lua\5.1\lua\dkjson.luac'
+	no file 'C:\lua\dkjson.dll'
+	no file 'C:\lua\..\lib\lua\5.4\dkjson.dll'
+	no file 'C:\lua\loadall.dll'
+	no file '.\dkjson.dll'
+	no file 'C:\lua\dkjson54.dll'
+	no file '.\dkjson54.dll'
+stack traceback:
+	[C]: in function 'require'
+	src/lua/merge.lua:3: in main chunk
+	[C]: in ?
+
+2024-01-08 20:45:37,801 - INFO - Processing combined data
+2024-01-08 20:45:37,843 - INFO - Created html output
+2024-01-08 20:45:37,843 - INFO - Generating pilot pages
+2024-01-09 08:38:34,139 - INFO - Running merge.lua script
+2024-01-09 08:38:34,190 - ERROR - Error running Lua script: lua54: src/lua/merge.lua:3: module 'dkjson' not found:
+	no field package.preload['dkjson']
+	no file 'C:\lua\lua\dkjson.lua'
+	no file 'C:\lua\lua\dkjson\init.lua'
+	no file 'C:\lua\dkjson.lua'
+	no file 'C:\lua\dkjson\init.lua'
+	no file 'C:\lua\..\share\lua\5.4\dkjson.lua'
+	no file 'C:\lua\..\share\lua\5.4\dkjson\init.lua'
+	no file '.\dkjson.lua'
+	no file '.\dkjson\init.lua'
+	no file 'C:\Program Files (x86)\Lua\5.1\lua\dkjson.luac'
+	no file 'C:\lua\dkjson.dll'
+	no file 'C:\lua\..\lib\lua\5.4\dkjson.dll'
+	no file 'C:\lua\loadall.dll'
+	no file '.\dkjson.dll'
+	no file 'C:\lua\dkjson54.dll'
+	no file '.\dkjson54.dll'
+stack traceback:
+	[C]: in function 'require'
+	src/lua/merge.lua:3: in main chunk
+	[C]: in ?
+
+2024-01-09 08:38:34,190 - INFO - Processing combined data
+2024-01-09 08:38:34,234 - INFO - Created html output
+2024-01-09 08:38:34,234 - INFO - Generating pilot pages
+2024-01-09 08:44:30,967 - INFO - Running merge.lua script
+2024-01-09 08:44:30,974 - ERROR - Error running Lua script: lua54: src/lua/merge.lua:3: module 'dkjson' not found:
+	no field package.preload['dkjson']
+	no file 'C:\lua\lua\dkjson.lua'
+	no file 'C:\lua\lua\dkjson\init.lua'
+	no file 'C:\lua\dkjson.lua'
+	no file 'C:\lua\dkjson\init.lua'
+	no file 'C:\lua\..\share\lua\5.4\dkjson.lua'
+	no file 'C:\lua\..\share\lua\5.4\dkjson\init.lua'
+	no file '.\dkjson.lua'
+	no file '.\dkjson\init.lua'
+	no file 'C:\Program Files (x86)\Lua\5.1\lua\dkjson.luac'
+	no file 'C:\lua\dkjson.dll'
+	no file 'C:\lua\..\lib\lua\5.4\dkjson.dll'
+	no file 'C:\lua\loadall.dll'
+	no file '.\dkjson.dll'
+	no file 'C:\lua\dkjson54.dll'
+	no file '.\dkjson54.dll'
+stack traceback:
+	[C]: in function 'require'
+	src/lua/merge.lua:3: in main chunk
+	[C]: in ?
+
+2024-01-09 08:44:30,974 - INFO - Processing combined data
+2024-01-09 08:44:31,015 - INFO - Created html output
+2024-01-09 08:44:31,015 - INFO - Generating pilot pages

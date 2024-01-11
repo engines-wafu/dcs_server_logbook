@@ -15,10 +15,29 @@ logging.basicConfig(filename=log_filename, level=logging.DEBUG,
 output_path = 'web/index.html'
 json_path = 'data/stats/combinedStats.json'
 bot = commands.Bot(command_prefix='!', intents=discord.Intents.all())
+predefined_colors = [
+  "#DAA520", 
+  "#C0C0C0", 
+  "#CD7F32", 
+  "#B9CCED", 
+  "#800000", 
+  "#008000", 
+  "#000080", 
+  "#FFD700", 
+  "#A52A2A", 
+  "#FFA500", 
+  "#4682B4", 
+  "#6B8E23"
+]
 
-def generate_single_ribbon(input_string, output_path):
-    pattern_gen = ribbonGenerator(input_string, image_size=(64, 190))
-    pattern_gen.save_pattern_as_png(output_path)
+def generate_single_ribbon(award_name, file_path, min_block_width_percent=10, max_block_width_percent=30):
+    pattern_generator = ribbonGenerator(
+        award_name,
+        color_array=predefined_colors,
+        min_block_width_percent=min_block_width_percent,
+        max_block_width_percent=max_block_width_percent
+    )
+    pattern_generator.save_pattern_as_png(file_path)
 
 async def get_response(ctx):
     def check(m):
@@ -100,7 +119,13 @@ async def create_award(ctx):
         await ctx.send(f"Failed to create award: {e}")
     
     # Make the ribbon
-    generate_single_ribbon(award_name, 'web/img/ribbons/' + award_name + '.png')
+    try:
+        ribbon_path = 'web/img/ribbons/' + award_name.replace(" ", "_") + '.png'
+        # Here you can also pass different min and max width percentages if needed
+        generate_single_ribbon(award_name, ribbon_path)
+        await ctx.send(f"Ribbon for '{award_name}' created successfully.")
+    except Exception as e:
+        await ctx.send(f"Failed to create ribbon: {e}")
     
 @bot.command(name='create_qualification')
 async def create_qualification(ctx):
