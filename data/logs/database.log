@@ -2520,3 +2520,1177 @@ stack traceback:
 2024-01-09 08:44:30,974 - INFO - Processing combined data
 2024-01-09 08:44:31,015 - INFO - Created html output
 2024-01-09 08:44:31,015 - INFO - Generating pilot pages
+2024-01-10 20:03:03,690 - INFO - Running merge.lua script
+2024-01-10 20:03:03,740 - ERROR - Error running Lua script: lua54: src/lua/merge.lua:3: module 'dkjson' not found:
+	no field package.preload['dkjson']
+	no file 'C:\lua\lua\dkjson.lua'
+	no file 'C:\lua\lua\dkjson\init.lua'
+	no file 'C:\lua\dkjson.lua'
+	no file 'C:\lua\dkjson\init.lua'
+	no file 'C:\lua\..\share\lua\5.4\dkjson.lua'
+	no file 'C:\lua\..\share\lua\5.4\dkjson\init.lua'
+	no file '.\dkjson.lua'
+	no file '.\dkjson\init.lua'
+	no file 'C:\Program Files (x86)\Lua\5.1\lua\dkjson.luac'
+	no file 'C:\lua\dkjson.dll'
+	no file 'C:\lua\..\lib\lua\5.4\dkjson.dll'
+	no file 'C:\lua\loadall.dll'
+	no file '.\dkjson.dll'
+	no file 'C:\lua\dkjson54.dll'
+	no file '.\dkjson54.dll'
+stack traceback:
+	[C]: in function 'require'
+	src/lua/merge.lua:3: in main chunk
+	[C]: in ?
+
+2024-01-10 20:03:03,740 - INFO - Processing combined data
+2024-01-10 20:03:03,785 - INFO - Created html output
+2024-01-10 20:03:03,785 - INFO - Generating pilot pages
+2024-01-10 21:01:42,711 - DEBUG - matplotlib data path: C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\matplotlib\mpl-data
+2024-01-10 21:01:42,719 - DEBUG - CONFIGDIR=C:\Users\Gavin\.matplotlib
+2024-01-10 21:01:42,720 - DEBUG - interactive is False
+2024-01-10 21:01:42,720 - DEBUG - platform is win32
+2024-01-10 21:01:42,785 - WARNING - PyNaCl is not installed, voice will NOT be supported
+2024-01-10 21:01:42,785 - DEBUG - Using proactor: IocpProactor
+2024-01-10 21:01:42,786 - INFO - logging in using static token
+2024-01-10 21:01:43,772 - INFO - Shard ID None has connected to Gateway (Session ID: 6aaa10f63151938f075f59fc2a653383).
+2024-01-10 21:03:45,462 - DEBUG - matplotlib data path: C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\matplotlib\mpl-data
+2024-01-10 21:03:45,465 - DEBUG - CONFIGDIR=C:\Users\Gavin\.matplotlib
+2024-01-10 21:03:45,466 - DEBUG - interactive is False
+2024-01-10 21:03:45,466 - DEBUG - platform is win32
+2024-01-10 21:03:45,518 - WARNING - PyNaCl is not installed, voice will NOT be supported
+2024-01-10 21:03:45,519 - DEBUG - Using proactor: IocpProactor
+2024-01-10 21:03:45,519 - INFO - logging in using static token
+2024-01-10 21:03:46,287 - INFO - Shard ID None has connected to Gateway (Session ID: c751ec73da5ddbe72dba2279fa4cd239).
+2024-01-10 21:10:34,068 - INFO - Running merge.lua script
+2024-01-10 21:10:34,075 - ERROR - Error running Lua script: lua54: src/lua/merge.lua:3: module 'dkjson' not found:
+	no field package.preload['dkjson']
+	no file 'C:\lua\lua\dkjson.lua'
+	no file 'C:\lua\lua\dkjson\init.lua'
+	no file 'C:\lua\dkjson.lua'
+	no file 'C:\lua\dkjson\init.lua'
+	no file 'C:\lua\..\share\lua\5.4\dkjson.lua'
+	no file 'C:\lua\..\share\lua\5.4\dkjson\init.lua'
+	no file '.\dkjson.lua'
+	no file '.\dkjson\init.lua'
+	no file 'C:\Program Files (x86)\Lua\5.1\lua\dkjson.luac'
+	no file 'C:\lua\dkjson.dll'
+	no file 'C:\lua\..\lib\lua\5.4\dkjson.dll'
+	no file 'C:\lua\loadall.dll'
+	no file '.\dkjson.dll'
+	no file 'C:\lua\dkjson54.dll'
+	no file '.\dkjson54.dll'
+stack traceback:
+	[C]: in function 'require'
+	src/lua/merge.lua:3: in main chunk
+	[C]: in ?
+
+2024-01-10 21:10:34,075 - INFO - Processing combined data
+2024-01-10 21:10:34,117 - INFO - Created html output
+2024-01-10 21:10:34,117 - INFO - Generating pilot pages
+2024-01-10 21:40:44,132 - INFO - Running merge.lua script
+2024-01-10 21:40:44,139 - ERROR - Error running Lua script: lua54: src/lua/merge.lua:3: module 'dkjson' not found:
+	no field package.preload['dkjson']
+	no file 'C:\lua\lua\dkjson.lua'
+	no file 'C:\lua\lua\dkjson\init.lua'
+	no file 'C:\lua\dkjson.lua'
+	no file 'C:\lua\dkjson\init.lua'
+	no file 'C:\lua\..\share\lua\5.4\dkjson.lua'
+	no file 'C:\lua\..\share\lua\5.4\dkjson\init.lua'
+	no file '.\dkjson.lua'
+	no file '.\dkjson\init.lua'
+	no file 'C:\Program Files (x86)\Lua\5.1\lua\dkjson.luac'
+	no file 'C:\lua\dkjson.dll'
+	no file 'C:\lua\..\lib\lua\5.4\dkjson.dll'
+	no file 'C:\lua\loadall.dll'
+	no file '.\dkjson.dll'
+	no file 'C:\lua\dkjson54.dll'
+	no file '.\dkjson54.dll'
+stack traceback:
+	[C]: in function 'require'
+	src/lua/merge.lua:3: in main chunk
+	[C]: in ?
+
+2024-01-10 21:40:44,139 - INFO - Processing combined data
+2024-01-10 21:40:44,181 - INFO - Created html output
+2024-01-10 21:40:44,182 - INFO - Generating pilot pages
+2024-01-10 21:53:23,987 - INFO - Running merge.lua script
+2024-01-10 21:53:23,993 - ERROR - Error running Lua script: lua54: src/lua/merge.lua:3: module 'dkjson' not found:
+	no field package.preload['dkjson']
+	no file 'C:\lua\lua\dkjson.lua'
+	no file 'C:\lua\lua\dkjson\init.lua'
+	no file 'C:\lua\dkjson.lua'
+	no file 'C:\lua\dkjson\init.lua'
+	no file 'C:\lua\..\share\lua\5.4\dkjson.lua'
+	no file 'C:\lua\..\share\lua\5.4\dkjson\init.lua'
+	no file '.\dkjson.lua'
+	no file '.\dkjson\init.lua'
+	no file 'C:\Program Files (x86)\Lua\5.1\lua\dkjson.luac'
+	no file 'C:\lua\dkjson.dll'
+	no file 'C:\lua\..\lib\lua\5.4\dkjson.dll'
+	no file 'C:\lua\loadall.dll'
+	no file '.\dkjson.dll'
+	no file 'C:\lua\dkjson54.dll'
+	no file '.\dkjson54.dll'
+stack traceback:
+	[C]: in function 'require'
+	src/lua/merge.lua:3: in main chunk
+	[C]: in ?
+
+2024-01-10 21:53:23,994 - INFO - Processing combined data
+2024-01-10 21:53:24,034 - INFO - Created html output
+2024-01-10 21:53:24,034 - INFO - Generating pilot pages
+2024-01-10 21:55:57,302 - INFO - Running merge.lua script
+2024-01-10 21:55:57,308 - ERROR - Error running Lua script: lua54: src/lua/merge.lua:3: module 'dkjson' not found:
+	no field package.preload['dkjson']
+	no file 'C:\lua\lua\dkjson.lua'
+	no file 'C:\lua\lua\dkjson\init.lua'
+	no file 'C:\lua\dkjson.lua'
+	no file 'C:\lua\dkjson\init.lua'
+	no file 'C:\lua\..\share\lua\5.4\dkjson.lua'
+	no file 'C:\lua\..\share\lua\5.4\dkjson\init.lua'
+	no file '.\dkjson.lua'
+	no file '.\dkjson\init.lua'
+	no file 'C:\Program Files (x86)\Lua\5.1\lua\dkjson.luac'
+	no file 'C:\lua\dkjson.dll'
+	no file 'C:\lua\..\lib\lua\5.4\dkjson.dll'
+	no file 'C:\lua\loadall.dll'
+	no file '.\dkjson.dll'
+	no file 'C:\lua\dkjson54.dll'
+	no file '.\dkjson54.dll'
+stack traceback:
+	[C]: in function 'require'
+	src/lua/merge.lua:3: in main chunk
+	[C]: in ?
+
+2024-01-10 21:55:57,308 - INFO - Processing combined data
+2024-01-10 21:55:57,350 - INFO - Created html output
+2024-01-10 21:55:57,350 - INFO - Generating pilot pages
+2024-01-11 18:45:56,948 - INFO - Running merge.lua script
+2024-01-11 18:45:56,997 - ERROR - Error running Lua script: lua54: src/lua/merge.lua:3: module 'dkjson' not found:
+	no field package.preload['dkjson']
+	no file 'C:\lua\lua\dkjson.lua'
+	no file 'C:\lua\lua\dkjson\init.lua'
+	no file 'C:\lua\dkjson.lua'
+	no file 'C:\lua\dkjson\init.lua'
+	no file 'C:\lua\..\share\lua\5.4\dkjson.lua'
+	no file 'C:\lua\..\share\lua\5.4\dkjson\init.lua'
+	no file '.\dkjson.lua'
+	no file '.\dkjson\init.lua'
+	no file 'C:\Program Files (x86)\Lua\5.1\lua\dkjson.luac'
+	no file 'C:\lua\dkjson.dll'
+	no file 'C:\lua\..\lib\lua\5.4\dkjson.dll'
+	no file 'C:\lua\loadall.dll'
+	no file '.\dkjson.dll'
+	no file 'C:\lua\dkjson54.dll'
+	no file '.\dkjson54.dll'
+stack traceback:
+	[C]: in function 'require'
+	src/lua/merge.lua:3: in main chunk
+	[C]: in ?
+
+2024-01-11 18:45:56,998 - INFO - Processing combined data
+2024-01-11 18:47:17,736 - INFO - Running merge.lua script
+2024-01-11 18:47:17,743 - ERROR - Error running Lua script: lua54: src/lua/merge.lua:3: module 'dkjson' not found:
+	no field package.preload['dkjson']
+	no file 'C:\lua\lua\dkjson.lua'
+	no file 'C:\lua\lua\dkjson\init.lua'
+	no file 'C:\lua\dkjson.lua'
+	no file 'C:\lua\dkjson\init.lua'
+	no file 'C:\lua\..\share\lua\5.4\dkjson.lua'
+	no file 'C:\lua\..\share\lua\5.4\dkjson\init.lua'
+	no file '.\dkjson.lua'
+	no file '.\dkjson\init.lua'
+	no file 'C:\Program Files (x86)\Lua\5.1\lua\dkjson.luac'
+	no file 'C:\lua\dkjson.dll'
+	no file 'C:\lua\..\lib\lua\5.4\dkjson.dll'
+	no file 'C:\lua\loadall.dll'
+	no file '.\dkjson.dll'
+	no file 'C:\lua\dkjson54.dll'
+	no file '.\dkjson54.dll'
+stack traceback:
+	[C]: in function 'require'
+	src/lua/merge.lua:3: in main chunk
+	[C]: in ?
+
+2024-01-11 18:47:17,743 - INFO - Processing combined data
+2024-01-11 18:47:17,787 - INFO - Created html output
+2024-01-11 18:47:17,787 - INFO - Generating pilot pages
+2024-01-11 18:49:16,395 - INFO - Running merge.lua script
+2024-01-11 18:49:16,402 - ERROR - Error running Lua script: lua54: src/lua/merge.lua:3: module 'dkjson' not found:
+	no field package.preload['dkjson']
+	no file 'C:\lua\lua\dkjson.lua'
+	no file 'C:\lua\lua\dkjson\init.lua'
+	no file 'C:\lua\dkjson.lua'
+	no file 'C:\lua\dkjson\init.lua'
+	no file 'C:\lua\..\share\lua\5.4\dkjson.lua'
+	no file 'C:\lua\..\share\lua\5.4\dkjson\init.lua'
+	no file '.\dkjson.lua'
+	no file '.\dkjson\init.lua'
+	no file 'C:\Program Files (x86)\Lua\5.1\lua\dkjson.luac'
+	no file 'C:\lua\dkjson.dll'
+	no file 'C:\lua\..\lib\lua\5.4\dkjson.dll'
+	no file 'C:\lua\loadall.dll'
+	no file '.\dkjson.dll'
+	no file 'C:\lua\dkjson54.dll'
+	no file '.\dkjson54.dll'
+stack traceback:
+	[C]: in function 'require'
+	src/lua/merge.lua:3: in main chunk
+	[C]: in ?
+
+2024-01-11 18:49:16,402 - INFO - Processing combined data
+2024-01-11 18:49:32,333 - INFO - Running merge.lua script
+2024-01-11 18:49:32,339 - ERROR - Error running Lua script: lua54: src/lua/merge.lua:3: module 'dkjson' not found:
+	no field package.preload['dkjson']
+	no file 'C:\lua\lua\dkjson.lua'
+	no file 'C:\lua\lua\dkjson\init.lua'
+	no file 'C:\lua\dkjson.lua'
+	no file 'C:\lua\dkjson\init.lua'
+	no file 'C:\lua\..\share\lua\5.4\dkjson.lua'
+	no file 'C:\lua\..\share\lua\5.4\dkjson\init.lua'
+	no file '.\dkjson.lua'
+	no file '.\dkjson\init.lua'
+	no file 'C:\Program Files (x86)\Lua\5.1\lua\dkjson.luac'
+	no file 'C:\lua\dkjson.dll'
+	no file 'C:\lua\..\lib\lua\5.4\dkjson.dll'
+	no file 'C:\lua\loadall.dll'
+	no file '.\dkjson.dll'
+	no file 'C:\lua\dkjson54.dll'
+	no file '.\dkjson54.dll'
+stack traceback:
+	[C]: in function 'require'
+	src/lua/merge.lua:3: in main chunk
+	[C]: in ?
+
+2024-01-11 18:49:32,339 - INFO - Processing combined data
+2024-01-11 18:50:13,836 - INFO - Running merge.lua script
+2024-01-11 18:50:13,843 - ERROR - Error running Lua script: lua54: src/lua/merge.lua:3: module 'dkjson' not found:
+	no field package.preload['dkjson']
+	no file 'C:\lua\lua\dkjson.lua'
+	no file 'C:\lua\lua\dkjson\init.lua'
+	no file 'C:\lua\dkjson.lua'
+	no file 'C:\lua\dkjson\init.lua'
+	no file 'C:\lua\..\share\lua\5.4\dkjson.lua'
+	no file 'C:\lua\..\share\lua\5.4\dkjson\init.lua'
+	no file '.\dkjson.lua'
+	no file '.\dkjson\init.lua'
+	no file 'C:\Program Files (x86)\Lua\5.1\lua\dkjson.luac'
+	no file 'C:\lua\dkjson.dll'
+	no file 'C:\lua\..\lib\lua\5.4\dkjson.dll'
+	no file 'C:\lua\loadall.dll'
+	no file '.\dkjson.dll'
+	no file 'C:\lua\dkjson54.dll'
+	no file '.\dkjson54.dll'
+stack traceback:
+	[C]: in function 'require'
+	src/lua/merge.lua:3: in main chunk
+	[C]: in ?
+
+2024-01-11 18:50:13,843 - INFO - Processing combined data
+2024-01-11 18:50:13,886 - INFO - Created html output
+2024-01-11 18:50:13,886 - INFO - Generating pilot pages
+2024-01-11 18:51:10,075 - INFO - Running merge.lua script
+2024-01-11 18:51:10,082 - ERROR - Error running Lua script: lua54: src/lua/merge.lua:3: module 'dkjson' not found:
+	no field package.preload['dkjson']
+	no file 'C:\lua\lua\dkjson.lua'
+	no file 'C:\lua\lua\dkjson\init.lua'
+	no file 'C:\lua\dkjson.lua'
+	no file 'C:\lua\dkjson\init.lua'
+	no file 'C:\lua\..\share\lua\5.4\dkjson.lua'
+	no file 'C:\lua\..\share\lua\5.4\dkjson\init.lua'
+	no file '.\dkjson.lua'
+	no file '.\dkjson\init.lua'
+	no file 'C:\Program Files (x86)\Lua\5.1\lua\dkjson.luac'
+	no file 'C:\lua\dkjson.dll'
+	no file 'C:\lua\..\lib\lua\5.4\dkjson.dll'
+	no file 'C:\lua\loadall.dll'
+	no file '.\dkjson.dll'
+	no file 'C:\lua\dkjson54.dll'
+	no file '.\dkjson54.dll'
+stack traceback:
+	[C]: in function 'require'
+	src/lua/merge.lua:3: in main chunk
+	[C]: in ?
+
+2024-01-11 18:51:10,082 - INFO - Processing combined data
+2024-01-11 18:51:10,125 - INFO - Created html output
+2024-01-11 18:51:10,125 - INFO - Generating pilot pages
+2024-01-11 19:44:32,853 - INFO - Running merge.lua script
+2024-01-11 19:44:32,861 - ERROR - Error running Lua script: lua54: src/lua/merge.lua:3: module 'dkjson' not found:
+	no field package.preload['dkjson']
+	no file 'C:\lua\lua\dkjson.lua'
+	no file 'C:\lua\lua\dkjson\init.lua'
+	no file 'C:\lua\dkjson.lua'
+	no file 'C:\lua\dkjson\init.lua'
+	no file 'C:\lua\..\share\lua\5.4\dkjson.lua'
+	no file 'C:\lua\..\share\lua\5.4\dkjson\init.lua'
+	no file '.\dkjson.lua'
+	no file '.\dkjson\init.lua'
+	no file 'C:\Program Files (x86)\Lua\5.1\lua\dkjson.luac'
+	no file 'C:\lua\dkjson.dll'
+	no file 'C:\lua\..\lib\lua\5.4\dkjson.dll'
+	no file 'C:\lua\loadall.dll'
+	no file '.\dkjson.dll'
+	no file 'C:\lua\dkjson54.dll'
+	no file '.\dkjson54.dll'
+stack traceback:
+	[C]: in function 'require'
+	src/lua/merge.lua:3: in main chunk
+	[C]: in ?
+
+2024-01-11 19:44:32,861 - INFO - Processing combined data
+2024-01-11 19:44:32,905 - INFO - Created html output
+2024-01-11 19:44:32,905 - INFO - Generating pilot pages
+2024-01-11 19:47:43,827 - INFO - Running merge.lua script
+2024-01-11 19:47:43,834 - ERROR - Error running Lua script: lua54: src/lua/merge.lua:3: module 'dkjson' not found:
+	no field package.preload['dkjson']
+	no file 'C:\lua\lua\dkjson.lua'
+	no file 'C:\lua\lua\dkjson\init.lua'
+	no file 'C:\lua\dkjson.lua'
+	no file 'C:\lua\dkjson\init.lua'
+	no file 'C:\lua\..\share\lua\5.4\dkjson.lua'
+	no file 'C:\lua\..\share\lua\5.4\dkjson\init.lua'
+	no file '.\dkjson.lua'
+	no file '.\dkjson\init.lua'
+	no file 'C:\Program Files (x86)\Lua\5.1\lua\dkjson.luac'
+	no file 'C:\lua\dkjson.dll'
+	no file 'C:\lua\..\lib\lua\5.4\dkjson.dll'
+	no file 'C:\lua\loadall.dll'
+	no file '.\dkjson.dll'
+	no file 'C:\lua\dkjson54.dll'
+	no file '.\dkjson54.dll'
+stack traceback:
+	[C]: in function 'require'
+	src/lua/merge.lua:3: in main chunk
+	[C]: in ?
+
+2024-01-11 19:47:43,834 - INFO - Processing combined data
+2024-01-11 19:47:43,878 - INFO - Created html output
+2024-01-11 19:47:43,878 - INFO - Generating pilot pages
+2024-01-11 19:49:05,301 - INFO - Running merge.lua script
+2024-01-11 19:49:05,314 - ERROR - Error running Lua script: lua54: src/lua/merge.lua:3: module 'dkjson' not found:
+	no field package.preload['dkjson']
+	no file 'C:\lua\lua\dkjson.lua'
+	no file 'C:\lua\lua\dkjson\init.lua'
+	no file 'C:\lua\dkjson.lua'
+	no file 'C:\lua\dkjson\init.lua'
+	no file 'C:\lua\..\share\lua\5.4\dkjson.lua'
+	no file 'C:\lua\..\share\lua\5.4\dkjson\init.lua'
+	no file '.\dkjson.lua'
+	no file '.\dkjson\init.lua'
+	no file 'C:\Program Files (x86)\Lua\5.1\lua\dkjson.luac'
+	no file 'C:\lua\dkjson.dll'
+	no file 'C:\lua\..\lib\lua\5.4\dkjson.dll'
+	no file 'C:\lua\loadall.dll'
+	no file '.\dkjson.dll'
+	no file 'C:\lua\dkjson54.dll'
+	no file '.\dkjson54.dll'
+stack traceback:
+	[C]: in function 'require'
+	src/lua/merge.lua:3: in main chunk
+	[C]: in ?
+
+2024-01-11 19:49:05,314 - INFO - Processing combined data
+2024-01-11 19:49:05,357 - INFO - Created html output
+2024-01-11 19:49:05,357 - INFO - Generating pilot pages
+2024-01-11 19:49:51,334 - INFO - Running merge.lua script
+2024-01-11 19:49:51,340 - ERROR - Error running Lua script: lua54: src/lua/merge.lua:3: module 'dkjson' not found:
+	no field package.preload['dkjson']
+	no file 'C:\lua\lua\dkjson.lua'
+	no file 'C:\lua\lua\dkjson\init.lua'
+	no file 'C:\lua\dkjson.lua'
+	no file 'C:\lua\dkjson\init.lua'
+	no file 'C:\lua\..\share\lua\5.4\dkjson.lua'
+	no file 'C:\lua\..\share\lua\5.4\dkjson\init.lua'
+	no file '.\dkjson.lua'
+	no file '.\dkjson\init.lua'
+	no file 'C:\Program Files (x86)\Lua\5.1\lua\dkjson.luac'
+	no file 'C:\lua\dkjson.dll'
+	no file 'C:\lua\..\lib\lua\5.4\dkjson.dll'
+	no file 'C:\lua\loadall.dll'
+	no file '.\dkjson.dll'
+	no file 'C:\lua\dkjson54.dll'
+	no file '.\dkjson54.dll'
+stack traceback:
+	[C]: in function 'require'
+	src/lua/merge.lua:3: in main chunk
+	[C]: in ?
+
+2024-01-11 19:49:51,340 - INFO - Processing combined data
+2024-01-11 19:49:51,384 - INFO - Created html output
+2024-01-11 19:49:51,384 - INFO - Generating pilot pages
+2024-01-11 20:41:50,766 - INFO - Running merge.lua script
+2024-01-11 20:41:50,766 - ERROR - Error running Lua script: lua54: src/lua/merge.lua:3: module 'dkjson' not found:
+	no field package.preload['dkjson']
+	no file 'C:\lua\lua\dkjson.lua'
+	no file 'C:\lua\lua\dkjson\init.lua'
+	no file 'C:\lua\dkjson.lua'
+	no file 'C:\lua\dkjson\init.lua'
+	no file 'C:\lua\..\share\lua\5.4\dkjson.lua'
+	no file 'C:\lua\..\share\lua\5.4\dkjson\init.lua'
+	no file '.\dkjson.lua'
+	no file '.\dkjson\init.lua'
+	no file 'C:\Program Files (x86)\Lua\5.1\lua\dkjson.luac'
+	no file 'C:\lua\dkjson.dll'
+	no file 'C:\lua\..\lib\lua\5.4\dkjson.dll'
+	no file 'C:\lua\loadall.dll'
+	no file '.\dkjson.dll'
+	no file 'C:\lua\dkjson54.dll'
+	no file '.\dkjson54.dll'
+stack traceback:
+	[C]: in function 'require'
+	src/lua/merge.lua:3: in main chunk
+	[C]: in ?
+
+2024-01-11 20:41:50,766 - INFO - Processing combined data
+2024-01-11 20:41:50,813 - INFO - Created html output
+2024-01-11 20:41:50,813 - INFO - Generating pilot pages
+2024-01-11 20:48:33,743 - INFO - Running merge.lua script
+2024-01-11 20:48:33,751 - ERROR - Error running Lua script: lua54: src/lua/merge.lua:3: module 'dkjson' not found:
+	no field package.preload['dkjson']
+	no file 'C:\lua\lua\dkjson.lua'
+	no file 'C:\lua\lua\dkjson\init.lua'
+	no file 'C:\lua\dkjson.lua'
+	no file 'C:\lua\dkjson\init.lua'
+	no file 'C:\lua\..\share\lua\5.4\dkjson.lua'
+	no file 'C:\lua\..\share\lua\5.4\dkjson\init.lua'
+	no file '.\dkjson.lua'
+	no file '.\dkjson\init.lua'
+	no file 'C:\Program Files (x86)\Lua\5.1\lua\dkjson.luac'
+	no file 'C:\lua\dkjson.dll'
+	no file 'C:\lua\..\lib\lua\5.4\dkjson.dll'
+	no file 'C:\lua\loadall.dll'
+	no file '.\dkjson.dll'
+	no file 'C:\lua\dkjson54.dll'
+	no file '.\dkjson54.dll'
+stack traceback:
+	[C]: in function 'require'
+	src/lua/merge.lua:3: in main chunk
+	[C]: in ?
+
+2024-01-11 20:48:33,751 - INFO - Processing combined data
+2024-01-11 20:48:33,794 - INFO - Created html output
+2024-01-11 20:48:33,794 - INFO - Generating pilot pages
+2024-01-11 20:49:43,073 - INFO - Running merge.lua script
+2024-01-11 20:49:43,079 - ERROR - Error running Lua script: lua54: src/lua/merge.lua:3: module 'dkjson' not found:
+	no field package.preload['dkjson']
+	no file 'C:\lua\lua\dkjson.lua'
+	no file 'C:\lua\lua\dkjson\init.lua'
+	no file 'C:\lua\dkjson.lua'
+	no file 'C:\lua\dkjson\init.lua'
+	no file 'C:\lua\..\share\lua\5.4\dkjson.lua'
+	no file 'C:\lua\..\share\lua\5.4\dkjson\init.lua'
+	no file '.\dkjson.lua'
+	no file '.\dkjson\init.lua'
+	no file 'C:\Program Files (x86)\Lua\5.1\lua\dkjson.luac'
+	no file 'C:\lua\dkjson.dll'
+	no file 'C:\lua\..\lib\lua\5.4\dkjson.dll'
+	no file 'C:\lua\loadall.dll'
+	no file '.\dkjson.dll'
+	no file 'C:\lua\dkjson54.dll'
+	no file '.\dkjson54.dll'
+stack traceback:
+	[C]: in function 'require'
+	src/lua/merge.lua:3: in main chunk
+	[C]: in ?
+
+2024-01-11 20:49:43,079 - INFO - Processing combined data
+2024-01-11 20:49:43,123 - INFO - Created html output
+2024-01-11 20:49:43,123 - INFO - Generating pilot pages
+2024-01-11 20:51:28,193 - INFO - Running merge.lua script
+2024-01-11 20:51:28,193 - ERROR - Error running Lua script: lua54: src/lua/merge.lua:3: module 'dkjson' not found:
+	no field package.preload['dkjson']
+	no file 'C:\lua\lua\dkjson.lua'
+	no file 'C:\lua\lua\dkjson\init.lua'
+	no file 'C:\lua\dkjson.lua'
+	no file 'C:\lua\dkjson\init.lua'
+	no file 'C:\lua\..\share\lua\5.4\dkjson.lua'
+	no file 'C:\lua\..\share\lua\5.4\dkjson\init.lua'
+	no file '.\dkjson.lua'
+	no file '.\dkjson\init.lua'
+	no file 'C:\Program Files (x86)\Lua\5.1\lua\dkjson.luac'
+	no file 'C:\lua\dkjson.dll'
+	no file 'C:\lua\..\lib\lua\5.4\dkjson.dll'
+	no file 'C:\lua\loadall.dll'
+	no file '.\dkjson.dll'
+	no file 'C:\lua\dkjson54.dll'
+	no file '.\dkjson54.dll'
+stack traceback:
+	[C]: in function 'require'
+	src/lua/merge.lua:3: in main chunk
+	[C]: in ?
+
+2024-01-11 20:51:28,193 - INFO - Processing combined data
+2024-01-11 20:51:28,241 - INFO - Created html output
+2024-01-11 20:51:28,241 - INFO - Generating pilot pages
+2024-01-11 21:05:41,681 - INFO - Running merge.lua script
+2024-01-11 21:05:41,696 - ERROR - Error running Lua script: lua54: src/lua/merge.lua:3: module 'dkjson' not found:
+	no field package.preload['dkjson']
+	no file 'C:\lua\lua\dkjson.lua'
+	no file 'C:\lua\lua\dkjson\init.lua'
+	no file 'C:\lua\dkjson.lua'
+	no file 'C:\lua\dkjson\init.lua'
+	no file 'C:\lua\..\share\lua\5.4\dkjson.lua'
+	no file 'C:\lua\..\share\lua\5.4\dkjson\init.lua'
+	no file '.\dkjson.lua'
+	no file '.\dkjson\init.lua'
+	no file 'C:\Program Files (x86)\Lua\5.1\lua\dkjson.luac'
+	no file 'C:\lua\dkjson.dll'
+	no file 'C:\lua\..\lib\lua\5.4\dkjson.dll'
+	no file 'C:\lua\loadall.dll'
+	no file '.\dkjson.dll'
+	no file 'C:\lua\dkjson54.dll'
+	no file '.\dkjson54.dll'
+stack traceback:
+	[C]: in function 'require'
+	src/lua/merge.lua:3: in main chunk
+	[C]: in ?
+
+2024-01-11 21:05:41,696 - INFO - Processing combined data
+2024-01-11 21:05:41,729 - INFO - Created html output
+2024-01-11 21:05:41,729 - INFO - Generating pilot pages
+2024-01-11 21:06:03,828 - DEBUG - matplotlib data path: C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\matplotlib\mpl-data
+2024-01-11 21:06:03,836 - DEBUG - CONFIGDIR=C:\Users\Gavin\.matplotlib
+2024-01-11 21:06:03,837 - DEBUG - interactive is False
+2024-01-11 21:06:03,837 - DEBUG - platform is win32
+2024-01-11 21:06:03,906 - WARNING - PyNaCl is not installed, voice will NOT be supported
+2024-01-11 21:06:03,907 - DEBUG - Using proactor: IocpProactor
+2024-01-11 21:06:03,909 - INFO - logging in using static token
+2024-01-11 21:06:04,741 - INFO - Shard ID None has connected to Gateway (Session ID: 6a19d363c93d565bf607a7d25b60ed34).
+2024-01-11 21:06:11,909 - ERROR - Ignoring exception in command None
+discord.ext.commands.errors.CommandNotFound: Command "assign" is not found
+2024-01-11 21:06:18,271 - ERROR - Ignoring exception in command assign_aircraft
+Traceback (most recent call last):
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\discord\ext\commands\core.py", line 235, in wrapped
+    ret = await coro(*args, **kwargs)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\src\bot.py", line 391, in assign_aircraft
+    aircraft_types = fetch_aircraft_types()  # Function to fetch aircraft types from the database
+                     ^^^^^^^^^^^^^^^^^^^^
+NameError: name 'fetch_aircraft_types' is not defined
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\discord\ext\commands\bot.py", line 1350, in invoke
+    await ctx.command.invoke(ctx)
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\discord\ext\commands\core.py", line 1029, in invoke
+    await injected(*ctx.args, **ctx.kwargs)  # type: ignore
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\discord\ext\commands\core.py", line 244, in wrapped
+    raise CommandInvokeError(exc) from exc
+discord.ext.commands.errors.CommandInvokeError: Command raised an exception: NameError: name 'fetch_aircraft_types' is not defined
+2024-01-11 21:07:38,715 - DEBUG - matplotlib data path: C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\matplotlib\mpl-data
+2024-01-11 21:07:38,718 - DEBUG - CONFIGDIR=C:\Users\Gavin\.matplotlib
+2024-01-11 21:07:38,719 - DEBUG - interactive is False
+2024-01-11 21:07:38,719 - DEBUG - platform is win32
+2024-01-11 21:07:38,775 - WARNING - PyNaCl is not installed, voice will NOT be supported
+2024-01-11 21:07:38,775 - DEBUG - Using proactor: IocpProactor
+2024-01-11 21:07:38,776 - INFO - logging in using static token
+2024-01-11 21:07:40,893 - INFO - Shard ID None has connected to Gateway (Session ID: d3d23aec173edd8fe149886b0c60cdaa).
+2024-01-11 21:07:48,312 - ERROR - Ignoring exception in command assign_aircraft
+Traceback (most recent call last):
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\discord\ext\commands\core.py", line 235, in wrapped
+    ret = await coro(*args, **kwargs)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\src\bot.py", line 391, in assign_aircraft
+    aircraft_types = fetch_aircraft_types()  # Function to fetch aircraft types from the database
+                     ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\src\database\db_crud.py", line 59, in fetch_aircraft_types
+    cursor.execute("SELECT DISTINCT aircraft_type FROM Aircraft")
+sqlite3.OperationalError: no such table: Aircraft
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\discord\ext\commands\bot.py", line 1350, in invoke
+    await ctx.command.invoke(ctx)
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\discord\ext\commands\core.py", line 1029, in invoke
+    await injected(*ctx.args, **ctx.kwargs)  # type: ignore
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\discord\ext\commands\core.py", line 244, in wrapped
+    raise CommandInvokeError(exc) from exc
+discord.ext.commands.errors.CommandInvokeError: Command raised an exception: OperationalError: no such table: Aircraft
+2024-01-11 21:08:11,362 - DEBUG - matplotlib data path: C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\matplotlib\mpl-data
+2024-01-11 21:08:11,366 - DEBUG - CONFIGDIR=C:\Users\Gavin\.matplotlib
+2024-01-11 21:08:11,366 - DEBUG - interactive is False
+2024-01-11 21:08:11,366 - DEBUG - platform is win32
+2024-01-11 21:08:11,425 - WARNING - PyNaCl is not installed, voice will NOT be supported
+2024-01-11 21:08:11,426 - DEBUG - Using proactor: IocpProactor
+2024-01-11 21:08:11,426 - INFO - logging in using static token
+2024-01-11 21:08:12,453 - INFO - Shard ID None has connected to Gateway (Session ID: 8b867be7638aa3176b9a0cb732576e35).
+2024-01-11 21:08:17,219 - ERROR - Ignoring exception in command assign_aircraft
+Traceback (most recent call last):
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\discord\ext\commands\core.py", line 235, in wrapped
+    ret = await coro(*args, **kwargs)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\src\bot.py", line 391, in assign_aircraft
+    aircraft_types = fetch_aircraft_types()  # Function to fetch aircraft types from the database
+                     ^^^^^^^^^^^^^^^^^^^^^^
+TypeError: fetch_aircraft_types() missing 1 required positional argument: 'db_path'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\discord\ext\commands\bot.py", line 1350, in invoke
+    await ctx.command.invoke(ctx)
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\discord\ext\commands\core.py", line 1029, in invoke
+    await injected(*ctx.args, **ctx.kwargs)  # type: ignore
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\discord\ext\commands\core.py", line 244, in wrapped
+    raise CommandInvokeError(exc) from exc
+discord.ext.commands.errors.CommandInvokeError: Command raised an exception: TypeError: fetch_aircraft_types() missing 1 required positional argument: 'db_path'
+2024-01-11 21:09:04,019 - DEBUG - matplotlib data path: C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\matplotlib\mpl-data
+2024-01-11 21:09:04,022 - DEBUG - CONFIGDIR=C:\Users\Gavin\.matplotlib
+2024-01-11 21:09:04,023 - DEBUG - interactive is False
+2024-01-11 21:09:04,023 - DEBUG - platform is win32
+2024-01-11 21:09:04,080 - WARNING - PyNaCl is not installed, voice will NOT be supported
+2024-01-11 21:09:04,081 - DEBUG - Using proactor: IocpProactor
+2024-01-11 21:09:04,082 - INFO - logging in using static token
+2024-01-11 21:09:05,409 - INFO - Shard ID None has connected to Gateway (Session ID: ed67b75bd0ebd892ad186e5bc0bf70a4).
+2024-01-11 21:11:07,290 - DEBUG - matplotlib data path: C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\matplotlib\mpl-data
+2024-01-11 21:11:07,294 - DEBUG - CONFIGDIR=C:\Users\Gavin\.matplotlib
+2024-01-11 21:11:07,295 - DEBUG - interactive is False
+2024-01-11 21:11:07,295 - DEBUG - platform is win32
+2024-01-11 21:11:07,355 - WARNING - PyNaCl is not installed, voice will NOT be supported
+2024-01-11 21:11:07,355 - DEBUG - Using proactor: IocpProactor
+2024-01-11 21:11:07,356 - INFO - logging in using static token
+2024-01-11 21:11:08,904 - INFO - Shard ID None has connected to Gateway (Session ID: baebc138e1c7d2682f452e67812cefbe).
+2024-01-11 21:11:21,076 - ERROR - Ignoring exception in command assign_aircraft
+Traceback (most recent call last):
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\discord\ext\commands\core.py", line 235, in wrapped
+    ret = await coro(*args, **kwargs)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\src\bot.py", line 415, in assign_aircraft
+    aircraft_ids = fetch_aircraft_ids_by_type(selected_type)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^
+NameError: name 'fetch_aircraft_ids_by_type' is not defined. Did you mean: 'fetch_aircraft_types'?
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\discord\ext\commands\bot.py", line 1350, in invoke
+    await ctx.command.invoke(ctx)
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\discord\ext\commands\core.py", line 1029, in invoke
+    await injected(*ctx.args, **ctx.kwargs)  # type: ignore
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\discord\ext\commands\core.py", line 244, in wrapped
+    raise CommandInvokeError(exc) from exc
+discord.ext.commands.errors.CommandInvokeError: Command raised an exception: NameError: name 'fetch_aircraft_ids_by_type' is not defined
+2024-01-11 21:11:44,220 - DEBUG - matplotlib data path: C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\matplotlib\mpl-data
+2024-01-11 21:11:44,223 - DEBUG - CONFIGDIR=C:\Users\Gavin\.matplotlib
+2024-01-11 21:11:44,225 - DEBUG - interactive is False
+2024-01-11 21:11:44,225 - DEBUG - platform is win32
+2024-01-11 21:11:44,283 - WARNING - PyNaCl is not installed, voice will NOT be supported
+2024-01-11 21:11:44,284 - DEBUG - Using proactor: IocpProactor
+2024-01-11 21:11:44,285 - INFO - logging in using static token
+2024-01-11 21:11:45,563 - INFO - Shard ID None has connected to Gateway (Session ID: 4fdb96225644e8e4549155566037b065).
+2024-01-11 21:11:53,500 - ERROR - Ignoring exception in command assign_aircraft
+Traceback (most recent call last):
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\discord\ext\commands\core.py", line 235, in wrapped
+    ret = await coro(*args, **kwargs)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\src\bot.py", line 415, in assign_aircraft
+    aircraft_ids = fetch_aircraft_ids_by_type(selected_type)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^
+NameError: name 'fetch_aircraft_ids_by_type' is not defined. Did you mean: 'fetch_aircraft_types'?
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\discord\ext\commands\bot.py", line 1350, in invoke
+    await ctx.command.invoke(ctx)
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\discord\ext\commands\core.py", line 1029, in invoke
+    await injected(*ctx.args, **ctx.kwargs)  # type: ignore
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\discord\ext\commands\core.py", line 244, in wrapped
+    raise CommandInvokeError(exc) from exc
+discord.ext.commands.errors.CommandInvokeError: Command raised an exception: NameError: name 'fetch_aircraft_ids_by_type' is not defined
+2024-01-11 21:13:19,950 - DEBUG - matplotlib data path: C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\matplotlib\mpl-data
+2024-01-11 21:13:19,953 - DEBUG - CONFIGDIR=C:\Users\Gavin\.matplotlib
+2024-01-11 21:13:19,954 - DEBUG - interactive is False
+2024-01-11 21:13:19,954 - DEBUG - platform is win32
+2024-01-11 21:13:20,013 - WARNING - PyNaCl is not installed, voice will NOT be supported
+2024-01-11 21:13:20,014 - DEBUG - Using proactor: IocpProactor
+2024-01-11 21:13:20,015 - INFO - logging in using static token
+2024-01-11 21:13:20,925 - INFO - Shard ID None has connected to Gateway (Session ID: f8500858a3c1c955a92e8b8293355a73).
+2024-01-11 21:13:26,557 - ERROR - Ignoring exception in command assign_aircraft
+Traceback (most recent call last):
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\discord\ext\commands\core.py", line 235, in wrapped
+    ret = await coro(*args, **kwargs)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\src\bot.py", line 415, in assign_aircraft
+    aircraft_ids = fetch_aircraft_ids_by_type(selected_type)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: fetch_aircraft_ids_by_type() missing 1 required positional argument: 'aircraft_pseudo'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\discord\ext\commands\bot.py", line 1350, in invoke
+    await ctx.command.invoke(ctx)
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\discord\ext\commands\core.py", line 1029, in invoke
+    await injected(*ctx.args, **ctx.kwargs)  # type: ignore
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\discord\ext\commands\core.py", line 244, in wrapped
+    raise CommandInvokeError(exc) from exc
+discord.ext.commands.errors.CommandInvokeError: Command raised an exception: TypeError: fetch_aircraft_ids_by_type() missing 1 required positional argument: 'aircraft_pseudo'
+2024-01-11 21:14:53,824 - DEBUG - matplotlib data path: C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\matplotlib\mpl-data
+2024-01-11 21:14:53,828 - DEBUG - CONFIGDIR=C:\Users\Gavin\.matplotlib
+2024-01-11 21:14:53,829 - DEBUG - interactive is False
+2024-01-11 21:14:53,829 - DEBUG - platform is win32
+2024-01-11 21:14:53,883 - WARNING - PyNaCl is not installed, voice will NOT be supported
+2024-01-11 21:14:53,884 - DEBUG - Using proactor: IocpProactor
+2024-01-11 21:14:53,884 - INFO - logging in using static token
+2024-01-11 21:14:54,801 - INFO - Shard ID None has connected to Gateway (Session ID: 1124a5f5c393be7d8673897b2098c724).
+2024-01-11 21:15:33,538 - ERROR - Ignoring exception in command assign_aircraft
+Traceback (most recent call last):
+  File "C:\Program Files\Python312\Lib\asyncio\tasks.py", line 520, in wait_for
+    return await fut
+           ^^^^^^^^^
+asyncio.exceptions.CancelledError
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\discord\ext\commands\core.py", line 235, in wrapped
+    ret = await coro(*args, **kwargs)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\src\bot.py", line 419, in assign_aircraft
+    aircraft_response = await bot.wait_for('message', check=check, timeout=30.0)
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python312\Lib\asyncio\tasks.py", line 519, in wait_for
+    async with timeouts.timeout(timeout):
+  File "C:\Program Files\Python312\Lib\asyncio\timeouts.py", line 115, in __aexit__
+    raise TimeoutError from exc_val
+TimeoutError
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\discord\ext\commands\bot.py", line 1350, in invoke
+    await ctx.command.invoke(ctx)
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\discord\ext\commands\core.py", line 1029, in invoke
+    await injected(*ctx.args, **ctx.kwargs)  # type: ignore
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\discord\ext\commands\core.py", line 244, in wrapped
+    raise CommandInvokeError(exc) from exc
+discord.ext.commands.errors.CommandInvokeError: Command raised an exception: TimeoutError: 
+2024-01-11 21:17:12,099 - DEBUG - matplotlib data path: C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\matplotlib\mpl-data
+2024-01-11 21:17:12,102 - DEBUG - CONFIGDIR=C:\Users\Gavin\.matplotlib
+2024-01-11 21:17:12,103 - DEBUG - interactive is False
+2024-01-11 21:17:12,103 - DEBUG - platform is win32
+2024-01-11 21:17:12,163 - WARNING - PyNaCl is not installed, voice will NOT be supported
+2024-01-11 21:17:12,164 - DEBUG - Using proactor: IocpProactor
+2024-01-11 21:17:12,165 - INFO - logging in using static token
+2024-01-11 21:17:13,040 - INFO - Shard ID None has connected to Gateway (Session ID: 3b8db28f830bc33031df40d586ddd3b5).
+2024-01-11 21:17:48,910 - ERROR - Ignoring exception in command assign_aircraft
+Traceback (most recent call last):
+  File "C:\Program Files\Python312\Lib\asyncio\tasks.py", line 520, in wait_for
+    return await fut
+           ^^^^^^^^^
+asyncio.exceptions.CancelledError
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\discord\ext\commands\core.py", line 235, in wrapped
+    ret = await coro(*args, **kwargs)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\src\bot.py", line 422, in assign_aircraft
+    aircraft_response = await bot.wait_for('message', check=check, timeout=30.0)
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python312\Lib\asyncio\tasks.py", line 519, in wait_for
+    async with timeouts.timeout(timeout):
+  File "C:\Program Files\Python312\Lib\asyncio\timeouts.py", line 115, in __aexit__
+    raise TimeoutError from exc_val
+TimeoutError
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\discord\ext\commands\bot.py", line 1350, in invoke
+    await ctx.command.invoke(ctx)
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\discord\ext\commands\core.py", line 1029, in invoke
+    await injected(*ctx.args, **ctx.kwargs)  # type: ignore
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\discord\ext\commands\core.py", line 244, in wrapped
+    raise CommandInvokeError(exc) from exc
+discord.ext.commands.errors.CommandInvokeError: Command raised an exception: TimeoutError: 
+2024-01-11 21:18:47,328 - DEBUG - matplotlib data path: C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\matplotlib\mpl-data
+2024-01-11 21:18:47,331 - DEBUG - CONFIGDIR=C:\Users\Gavin\.matplotlib
+2024-01-11 21:18:47,332 - DEBUG - interactive is False
+2024-01-11 21:18:47,332 - DEBUG - platform is win32
+2024-01-11 21:18:47,387 - WARNING - PyNaCl is not installed, voice will NOT be supported
+2024-01-11 21:18:47,388 - DEBUG - Using proactor: IocpProactor
+2024-01-11 21:18:47,388 - INFO - logging in using static token
+2024-01-11 21:18:48,358 - INFO - Shard ID None has connected to Gateway (Session ID: 6498d0579deb7a0fb846e65520024d96).
+2024-01-11 21:21:32,372 - DEBUG - matplotlib data path: C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\matplotlib\mpl-data
+2024-01-11 21:21:32,375 - DEBUG - CONFIGDIR=C:\Users\Gavin\.matplotlib
+2024-01-11 21:21:32,376 - DEBUG - interactive is False
+2024-01-11 21:21:32,376 - DEBUG - platform is win32
+2024-01-11 21:21:32,432 - WARNING - PyNaCl is not installed, voice will NOT be supported
+2024-01-11 21:21:32,433 - DEBUG - Using proactor: IocpProactor
+2024-01-11 21:21:32,433 - INFO - logging in using static token
+2024-01-11 21:21:33,224 - INFO - Shard ID None has connected to Gateway (Session ID: 623a083c783d7ed980ae42d0c8f26189).
+2024-01-11 21:23:02,494 - DEBUG - matplotlib data path: C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\matplotlib\mpl-data
+2024-01-11 21:23:02,501 - DEBUG - CONFIGDIR=C:\Users\Gavin\.matplotlib
+2024-01-11 21:23:02,502 - DEBUG - interactive is False
+2024-01-11 21:23:02,502 - DEBUG - platform is win32
+2024-01-11 21:23:02,568 - WARNING - PyNaCl is not installed, voice will NOT be supported
+2024-01-11 21:23:02,569 - DEBUG - Using proactor: IocpProactor
+2024-01-11 21:23:02,569 - INFO - logging in using static token
+2024-01-11 21:23:03,467 - INFO - Shard ID None has connected to Gateway (Session ID: 5b2b227aed23f8e0d6a3a3e63fdf1dfe).
+2024-01-11 21:23:29,776 - DEBUG - matplotlib data path: C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\matplotlib\mpl-data
+2024-01-11 21:23:29,780 - DEBUG - CONFIGDIR=C:\Users\Gavin\.matplotlib
+2024-01-11 21:23:29,781 - DEBUG - interactive is False
+2024-01-11 21:23:29,781 - DEBUG - platform is win32
+2024-01-11 21:23:29,840 - WARNING - PyNaCl is not installed, voice will NOT be supported
+2024-01-11 21:23:29,841 - DEBUG - Using proactor: IocpProactor
+2024-01-11 21:23:29,842 - INFO - logging in using static token
+2024-01-11 21:23:30,785 - INFO - Shard ID None has connected to Gateway (Session ID: 696d49d4b6f74269fd54d391768639ce).
+2024-01-11 21:25:20,147 - DEBUG - matplotlib data path: C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\matplotlib\mpl-data
+2024-01-11 21:25:20,150 - DEBUG - CONFIGDIR=C:\Users\Gavin\.matplotlib
+2024-01-11 21:25:20,151 - DEBUG - interactive is False
+2024-01-11 21:25:20,151 - DEBUG - platform is win32
+2024-01-11 21:25:20,207 - WARNING - PyNaCl is not installed, voice will NOT be supported
+2024-01-11 21:25:20,208 - DEBUG - Using proactor: IocpProactor
+2024-01-11 21:25:20,209 - INFO - logging in using static token
+2024-01-11 21:25:21,276 - INFO - Shard ID None has connected to Gateway (Session ID: 87b0e9f16232c9b8cea0ff58acdd7665).
+2024-01-11 21:28:03,838 - DEBUG - matplotlib data path: C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\matplotlib\mpl-data
+2024-01-11 21:28:03,841 - DEBUG - CONFIGDIR=C:\Users\Gavin\.matplotlib
+2024-01-11 21:28:03,842 - DEBUG - interactive is False
+2024-01-11 21:28:03,842 - DEBUG - platform is win32
+2024-01-11 21:28:03,900 - WARNING - PyNaCl is not installed, voice will NOT be supported
+2024-01-11 21:28:03,900 - DEBUG - Using proactor: IocpProactor
+2024-01-11 21:28:03,901 - INFO - logging in using static token
+2024-01-11 21:28:04,732 - INFO - Shard ID None has connected to Gateway (Session ID: 9d22c71f4c1b3336afd08b25088a2dfe).
+2024-01-11 21:28:10,623 - ERROR - Ignoring exception in command assign_aircraft
+Traceback (most recent call last):
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\discord\ext\commands\core.py", line 235, in wrapped
+    ret = await coro(*args, **kwargs)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\src\bot.py", line 429, in assign_aircraft
+    squadrons = fetch_squadrons_for_type(selected_type)
+                ^^^^^^^^^^^^^^^^^^^^^^^^
+NameError: name 'fetch_squadrons_for_type' is not defined
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\discord\ext\commands\bot.py", line 1350, in invoke
+    await ctx.command.invoke(ctx)
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\discord\ext\commands\core.py", line 1029, in invoke
+    await injected(*ctx.args, **ctx.kwargs)  # type: ignore
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\discord\ext\commands\core.py", line 244, in wrapped
+    raise CommandInvokeError(exc) from exc
+discord.ext.commands.errors.CommandInvokeError: Command raised an exception: NameError: name 'fetch_squadrons_for_type' is not defined
+2024-01-11 21:28:47,406 - DEBUG - matplotlib data path: C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\matplotlib\mpl-data
+2024-01-11 21:28:47,409 - DEBUG - CONFIGDIR=C:\Users\Gavin\.matplotlib
+2024-01-11 21:28:47,410 - DEBUG - interactive is False
+2024-01-11 21:28:47,410 - DEBUG - platform is win32
+2024-01-11 21:28:47,466 - WARNING - PyNaCl is not installed, voice will NOT be supported
+2024-01-11 21:28:47,467 - DEBUG - Using proactor: IocpProactor
+2024-01-11 21:28:47,468 - INFO - logging in using static token
+2024-01-11 21:28:48,240 - INFO - Shard ID None has connected to Gateway (Session ID: 6af652e8dfb3ada3fb93f398ba9a9cfc).
+2024-01-11 21:28:54,123 - ERROR - Ignoring exception in command assign_aircraft
+Traceback (most recent call last):
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\discord\ext\commands\core.py", line 235, in wrapped
+    ret = await coro(*args, **kwargs)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\src\bot.py", line 429, in assign_aircraft
+    squadrons = fetch_squadrons_for_type(selected_type)
+                ^^^^^^^^^^^^^^^^^^^^^^^^
+NameError: name 'fetch_squadrons_for_type' is not defined
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\discord\ext\commands\bot.py", line 1350, in invoke
+    await ctx.command.invoke(ctx)
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\discord\ext\commands\core.py", line 1029, in invoke
+    await injected(*ctx.args, **ctx.kwargs)  # type: ignore
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\discord\ext\commands\core.py", line 244, in wrapped
+    raise CommandInvokeError(exc) from exc
+discord.ext.commands.errors.CommandInvokeError: Command raised an exception: NameError: name 'fetch_squadrons_for_type' is not defined
+2024-01-11 21:30:27,827 - DEBUG - matplotlib data path: C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\matplotlib\mpl-data
+2024-01-11 21:30:27,830 - DEBUG - CONFIGDIR=C:\Users\Gavin\.matplotlib
+2024-01-11 21:30:27,831 - DEBUG - interactive is False
+2024-01-11 21:30:27,831 - DEBUG - platform is win32
+2024-01-11 21:30:27,890 - WARNING - PyNaCl is not installed, voice will NOT be supported
+2024-01-11 21:30:27,890 - DEBUG - Using proactor: IocpProactor
+2024-01-11 21:30:27,891 - INFO - logging in using static token
+2024-01-11 21:30:28,695 - INFO - Shard ID None has connected to Gateway (Session ID: 682e6bd16539d44d49dc41030b17d117).
+2024-01-11 21:30:35,011 - ERROR - Ignoring exception in command assign_aircraft
+Traceback (most recent call last):
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\discord\ext\commands\core.py", line 235, in wrapped
+    ret = await coro(*args, **kwargs)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\src\bot.py", line 432, in assign_aircraft
+    squadrons = fetch_squadrons_for_type(selected_type)
+                ^^^^^^^^^^^^^^^^^^^^^^^^
+NameError: name 'fetch_squadrons_for_type' is not defined
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\discord\ext\commands\bot.py", line 1350, in invoke
+    await ctx.command.invoke(ctx)
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\discord\ext\commands\core.py", line 1029, in invoke
+    await injected(*ctx.args, **ctx.kwargs)  # type: ignore
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\discord\ext\commands\core.py", line 244, in wrapped
+    raise CommandInvokeError(exc) from exc
+discord.ext.commands.errors.CommandInvokeError: Command raised an exception: NameError: name 'fetch_squadrons_for_type' is not defined
+2024-01-11 21:31:02,602 - DEBUG - matplotlib data path: C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\matplotlib\mpl-data
+2024-01-11 21:31:02,605 - DEBUG - CONFIGDIR=C:\Users\Gavin\.matplotlib
+2024-01-11 21:31:02,606 - DEBUG - interactive is False
+2024-01-11 21:31:02,606 - DEBUG - platform is win32
+2024-01-11 21:31:02,662 - WARNING - PyNaCl is not installed, voice will NOT be supported
+2024-01-11 21:31:02,663 - DEBUG - Using proactor: IocpProactor
+2024-01-11 21:31:02,664 - INFO - logging in using static token
+2024-01-11 21:31:03,579 - INFO - Shard ID None has connected to Gateway (Session ID: 9484e242097049683c066bcc08316bd4).
+2024-01-11 21:31:11,877 - ERROR - Ignoring exception in command assign_aircraft
+Traceback (most recent call last):
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\discord\ext\commands\core.py", line 235, in wrapped
+    ret = await coro(*args, **kwargs)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\src\bot.py", line 432, in assign_aircraft
+    squadrons = fetch_squadrons_for_type(selected_type)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: fetch_squadrons_for_type() missing 1 required positional argument: 'aircraft_type'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\discord\ext\commands\bot.py", line 1350, in invoke
+    await ctx.command.invoke(ctx)
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\discord\ext\commands\core.py", line 1029, in invoke
+    await injected(*ctx.args, **ctx.kwargs)  # type: ignore
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\discord\ext\commands\core.py", line 244, in wrapped
+    raise CommandInvokeError(exc) from exc
+discord.ext.commands.errors.CommandInvokeError: Command raised an exception: TypeError: fetch_squadrons_for_type() missing 1 required positional argument: 'aircraft_type'
+2024-01-11 21:32:30,734 - DEBUG - matplotlib data path: C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\matplotlib\mpl-data
+2024-01-11 21:32:30,737 - DEBUG - CONFIGDIR=C:\Users\Gavin\.matplotlib
+2024-01-11 21:32:30,738 - DEBUG - interactive is False
+2024-01-11 21:32:30,738 - DEBUG - platform is win32
+2024-01-11 21:32:30,799 - WARNING - PyNaCl is not installed, voice will NOT be supported
+2024-01-11 21:32:30,799 - DEBUG - Using proactor: IocpProactor
+2024-01-11 21:32:30,800 - INFO - logging in using static token
+2024-01-11 21:32:31,646 - INFO - Shard ID None has connected to Gateway (Session ID: 0e64cbaafe340d057384800af8a61094).
+2024-01-11 21:32:47,857 - ERROR - Ignoring exception in command assign_aircraft
+Traceback (most recent call last):
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\discord\ext\commands\core.py", line 235, in wrapped
+    ret = await coro(*args, **kwargs)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\src\bot.py", line 444, in assign_aircraft
+    assign_aircraft_to_squadron(selected_squadron, selected_aircraft)
+                                                   ^^^^^^^^^^^^^^^^^
+NameError: name 'selected_aircraft' is not defined
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\discord\ext\commands\bot.py", line 1350, in invoke
+    await ctx.command.invoke(ctx)
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\discord\ext\commands\core.py", line 1029, in invoke
+    await injected(*ctx.args, **ctx.kwargs)  # type: ignore
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\discord\ext\commands\core.py", line 244, in wrapped
+    raise CommandInvokeError(exc) from exc
+discord.ext.commands.errors.CommandInvokeError: Command raised an exception: NameError: name 'selected_aircraft' is not defined
+2024-01-11 21:34:51,757 - DEBUG - matplotlib data path: C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\matplotlib\mpl-data
+2024-01-11 21:34:51,760 - DEBUG - CONFIGDIR=C:\Users\Gavin\.matplotlib
+2024-01-11 21:34:51,761 - DEBUG - interactive is False
+2024-01-11 21:34:51,761 - DEBUG - platform is win32
+2024-01-11 21:34:51,821 - WARNING - PyNaCl is not installed, voice will NOT be supported
+2024-01-11 21:34:51,822 - DEBUG - Using proactor: IocpProactor
+2024-01-11 21:34:51,822 - INFO - logging in using static token
+2024-01-11 21:34:52,837 - INFO - Shard ID None has connected to Gateway (Session ID: c5b928b47a6440aa927be1c4a785b0f3).
+2024-01-11 21:35:01,365 - ERROR - Ignoring exception in command assign_aircraft
+Traceback (most recent call last):
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\discord\ext\commands\core.py", line 235, in wrapped
+    ret = await coro(*args, **kwargs)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\src\bot.py", line 468, in assign_aircraft
+    assign_aircraft_to_squadron(selected_squadron, selected_aircraft)
+                                                   ^^^^^^^^^^^^^^^^^
+NameError: name 'selected_aircraft' is not defined
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\discord\ext\commands\bot.py", line 1350, in invoke
+    await ctx.command.invoke(ctx)
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\discord\ext\commands\core.py", line 1029, in invoke
+    await injected(*ctx.args, **ctx.kwargs)  # type: ignore
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\discord\ext\commands\core.py", line 244, in wrapped
+    raise CommandInvokeError(exc) from exc
+discord.ext.commands.errors.CommandInvokeError: Command raised an exception: NameError: name 'selected_aircraft' is not defined
+2024-01-11 21:35:32,571 - ERROR - Ignoring exception in command assign_aircraft
+Traceback (most recent call last):
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\discord\ext\commands\core.py", line 235, in wrapped
+    ret = await coro(*args, **kwargs)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\src\bot.py", line 465, in assign_aircraft
+    send_aircraft_to_maintenance(selected_aircraft)
+                                 ^^^^^^^^^^^^^^^^^
+NameError: name 'selected_aircraft' is not defined
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\discord\ext\commands\bot.py", line 1350, in invoke
+    await ctx.command.invoke(ctx)
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\discord\ext\commands\core.py", line 1029, in invoke
+    await injected(*ctx.args, **ctx.kwargs)  # type: ignore
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\discord\ext\commands\core.py", line 244, in wrapped
+    raise CommandInvokeError(exc) from exc
+discord.ext.commands.errors.CommandInvokeError: Command raised an exception: NameError: name 'selected_aircraft' is not defined
+2024-01-11 21:37:27,851 - DEBUG - matplotlib data path: C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\matplotlib\mpl-data
+2024-01-11 21:37:27,855 - DEBUG - CONFIGDIR=C:\Users\Gavin\.matplotlib
+2024-01-11 21:37:27,855 - DEBUG - interactive is False
+2024-01-11 21:37:27,856 - DEBUG - platform is win32
+2024-01-11 21:37:27,912 - WARNING - PyNaCl is not installed, voice will NOT be supported
+2024-01-11 21:37:27,913 - DEBUG - Using proactor: IocpProactor
+2024-01-11 21:37:27,913 - INFO - logging in using static token
+2024-01-11 21:37:28,694 - INFO - Shard ID None has connected to Gateway (Session ID: 734e7fbc14754a74e94bad5a106acbf0).
+2024-01-11 21:38:04,335 - DEBUG - matplotlib data path: C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\matplotlib\mpl-data
+2024-01-11 21:38:04,338 - DEBUG - CONFIGDIR=C:\Users\Gavin\.matplotlib
+2024-01-11 21:38:04,338 - DEBUG - interactive is False
+2024-01-11 21:38:04,339 - DEBUG - platform is win32
+2024-01-11 21:38:04,395 - WARNING - PyNaCl is not installed, voice will NOT be supported
+2024-01-11 21:38:04,396 - DEBUG - Using proactor: IocpProactor
+2024-01-11 21:38:04,397 - INFO - logging in using static token
+2024-01-11 21:38:05,279 - INFO - Shard ID None has connected to Gateway (Session ID: 647b6fed394e9ddfc9f0fc7672a86a27).
+2024-01-11 21:38:22,303 - ERROR - Ignoring exception in command assign_aircraft
+Traceback (most recent call last):
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\discord\ext\commands\core.py", line 235, in wrapped
+    ret = await coro(*args, **kwargs)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\src\bot.py", line 482, in assign_aircraft
+    assign_aircraft_to_squadron(selected_squadron, selected_aircraft)
+                                                   ^^^^^^^^^^^^^^^^^
+NameError: name 'selected_aircraft' is not defined. Did you mean: 'selected_aircraft_ids'?
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\discord\ext\commands\bot.py", line 1350, in invoke
+    await ctx.command.invoke(ctx)
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\discord\ext\commands\core.py", line 1029, in invoke
+    await injected(*ctx.args, **ctx.kwargs)  # type: ignore
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\discord\ext\commands\core.py", line 244, in wrapped
+    raise CommandInvokeError(exc) from exc
+discord.ext.commands.errors.CommandInvokeError: Command raised an exception: NameError: name 'selected_aircraft' is not defined
+2024-01-11 21:43:55,911 - DEBUG - matplotlib data path: C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\matplotlib\mpl-data
+2024-01-11 21:43:55,915 - DEBUG - CONFIGDIR=C:\Users\Gavin\.matplotlib
+2024-01-11 21:43:55,915 - DEBUG - interactive is False
+2024-01-11 21:43:55,916 - DEBUG - platform is win32
+2024-01-11 21:43:55,974 - WARNING - PyNaCl is not installed, voice will NOT be supported
+2024-01-11 21:43:55,974 - DEBUG - Using proactor: IocpProactor
+2024-01-11 21:43:55,975 - INFO - logging in using static token
+2024-01-11 21:43:56,918 - INFO - Shard ID None has connected to Gateway (Session ID: 2b5aedaf803df75811964747132541fa).
+2024-01-11 21:44:20,216 - ERROR - Ignoring exception in command assign_aircraft
+Traceback (most recent call last):
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\discord\ext\commands\core.py", line 235, in wrapped
+    ret = await coro(*args, **kwargs)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\src\bot.py", line 482, in assign_aircraft
+    assign_aircraft_to_squadron(selected_squadron, selected_aircraft_ids)
+TypeError: assign_aircraft_to_squadron() missing 1 required positional argument: 'aircraft_ids'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\discord\ext\commands\bot.py", line 1350, in invoke
+    await ctx.command.invoke(ctx)
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\discord\ext\commands\core.py", line 1029, in invoke
+    await injected(*ctx.args, **ctx.kwargs)  # type: ignore
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\discord\ext\commands\core.py", line 244, in wrapped
+    raise CommandInvokeError(exc) from exc
+discord.ext.commands.errors.CommandInvokeError: Command raised an exception: TypeError: assign_aircraft_to_squadron() missing 1 required positional argument: 'aircraft_ids'
+2024-01-11 21:47:49,168 - DEBUG - matplotlib data path: C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\matplotlib\mpl-data
+2024-01-11 21:47:49,171 - DEBUG - CONFIGDIR=C:\Users\Gavin\.matplotlib
+2024-01-11 21:47:49,172 - DEBUG - interactive is False
+2024-01-11 21:47:49,172 - DEBUG - platform is win32
+2024-01-11 21:47:49,230 - WARNING - PyNaCl is not installed, voice will NOT be supported
+2024-01-11 21:47:49,231 - DEBUG - Using proactor: IocpProactor
+2024-01-11 21:47:49,231 - INFO - logging in using static token
+2024-01-11 21:47:50,157 - INFO - Shard ID None has connected to Gateway (Session ID: 382fea1e607cbddeabbff15adeecb0b5).
+2024-01-11 21:48:12,660 - ERROR - Ignoring exception in command assign_aircraft
+Traceback (most recent call last):
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\discord\ext\commands\core.py", line 235, in wrapped
+    ret = await coro(*args, **kwargs)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\src\bot.py", line 458, in assign_aircraft
+    assign_aircraft_to_squadron(selected_squadron, selected_aircraft_ids)
+TypeError: assign_aircraft_to_squadron() missing 1 required positional argument: 'aircraft_ids'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\discord\ext\commands\bot.py", line 1350, in invoke
+    await ctx.command.invoke(ctx)
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\discord\ext\commands\core.py", line 1029, in invoke
+    await injected(*ctx.args, **ctx.kwargs)  # type: ignore
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\discord\ext\commands\core.py", line 244, in wrapped
+    raise CommandInvokeError(exc) from exc
+discord.ext.commands.errors.CommandInvokeError: Command raised an exception: TypeError: assign_aircraft_to_squadron() missing 1 required positional argument: 'aircraft_ids'
+2024-01-11 21:49:07,606 - ERROR - Ignoring exception in command assign_aircraft
+Traceback (most recent call last):
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\discord\ext\commands\core.py", line 235, in wrapped
+    ret = await coro(*args, **kwargs)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\src\bot.py", line 448, in assign_aircraft
+    send_aircraft_to_maintenance(selected_aircraft_ids)
+TypeError: send_aircraft_to_maintenance() missing 1 required positional argument: 'aircraft_ids'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\discord\ext\commands\bot.py", line 1350, in invoke
+    await ctx.command.invoke(ctx)
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\discord\ext\commands\core.py", line 1029, in invoke
+    await injected(*ctx.args, **ctx.kwargs)  # type: ignore
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\discord\ext\commands\core.py", line 244, in wrapped
+    raise CommandInvokeError(exc) from exc
+discord.ext.commands.errors.CommandInvokeError: Command raised an exception: TypeError: send_aircraft_to_maintenance() missing 1 required positional argument: 'aircraft_ids'
+2024-01-11 21:53:01,670 - DEBUG - matplotlib data path: C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\matplotlib\mpl-data
+2024-01-11 21:53:01,673 - DEBUG - CONFIGDIR=C:\Users\Gavin\.matplotlib
+2024-01-11 21:53:01,674 - DEBUG - interactive is False
+2024-01-11 21:53:01,674 - DEBUG - platform is win32
+2024-01-11 21:53:01,731 - WARNING - PyNaCl is not installed, voice will NOT be supported
+2024-01-11 21:53:01,732 - DEBUG - Using proactor: IocpProactor
+2024-01-11 21:53:01,732 - INFO - logging in using static token
+2024-01-11 21:53:02,518 - INFO - Shard ID None has connected to Gateway (Session ID: 1ca825be4f44e4772d1e102cfa43c5c8).
+2024-01-11 21:53:18,494 - ERROR - Ignoring exception in command assign_aircraft
+Traceback (most recent call last):
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\discord\ext\commands\core.py", line 235, in wrapped
+    ret = await coro(*args, **kwargs)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\src\bot.py", line 457, in assign_aircraft
+    assign_aircraft_to_squadron(selected_squadron, selected_aircraft_ids)
+TypeError: assign_aircraft_to_squadron() missing 1 required positional argument: 'aircraft_ids'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\discord\ext\commands\bot.py", line 1350, in invoke
+    await ctx.command.invoke(ctx)
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\discord\ext\commands\core.py", line 1029, in invoke
+    await injected(*ctx.args, **ctx.kwargs)  # type: ignore
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\discord\ext\commands\core.py", line 244, in wrapped
+    raise CommandInvokeError(exc) from exc
+discord.ext.commands.errors.CommandInvokeError: Command raised an exception: TypeError: assign_aircraft_to_squadron() missing 1 required positional argument: 'aircraft_ids'

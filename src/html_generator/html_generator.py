@@ -1,6 +1,6 @@
 # src/html_generator/html_generator.py
 import sqlite3, logging, os
-from database.db_crud import get_pilot_full_name
+from database.db_crud import *
 from utils.stat_processing import load_combined_stats, generate_squadron_pilot_rows
 
 def get_all_qualifications(db_path):
@@ -176,3 +176,31 @@ def generate_awards_qualifications_page(db_path, output_path):
 
     with open(output_path, "w") as file:
         file.write(html_content)
+
+def generate_mayfly_html(db_path, output_path):
+    assigned_aircraft, unassigned_aircraft = fetch_aircraft_by_squadron(db_path)
+
+    with open(output_path, 'w') as file:
+        file.write('<html><head><title>Mayfly Aircraft Listing</title></head><body>')
+        file.write('<h1>Mayfly Aircraft Listing</h1>')
+
+        # Process and write tables for assigned aircraft
+        squadrons = {}
+        for aircraft_id, aircraft_type, squadron_id in assigned_aircraft:
+            squadrons.setdefault(squadron_id, []).append((aircraft_id, aircraft_type))
+        for squadron_id, aircraft in squadrons.items():
+            file.write(f'<h2>Squadron {squadron_id}</h2>')
+            file.write('<table border="1"><tr><th>Aircraft ID</th><th>Type</th></tr>')
+            for aircraft_id, aircraft_type in aircraft:
+                file.write(f'<tr><td>{aircraft_id}</td><td>{aircraft_type}</td></tr>')
+            file.write('</table>')
+
+        # Process and write table for unassigned aircraft (Depth Maintenance)
+        if unassigned_aircraft:
+            file.write('<h2>Depth Maintenance</h2>')
+            file.write('<table border="1"><tr><th>Aircraft ID</th><th>Type</th></tr>')
+            for aircraft_id, aircraft_type in unassigned_aircraft:
+                file.write(f'<tr><td>{aircraft_id}</td><td>{aircraft_type}</td></tr>')
+            file.write('</table>')
+
+        file.write('</body></html>')

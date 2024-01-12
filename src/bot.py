@@ -384,5 +384,82 @@ async def assign_pilot(ctx, *, pilot_names):  # Use '*' to capture all text afte
         await ctx.send("You did not respond in time.")
     except Exception as e:
         await ctx.send(f"An error occurred: {e}")
-    
+
+@bot.command(name='assign_aircraft')
+async def assign_aircraft(ctx):
+    # Fetch and display aircraft types
+    aircraft_types = fetch_aircraft_types(DB_PATH)
+    embed = discord.Embed(title="Aircraft Types", description="Select an aircraft type by number:", color=0x00ff00)
+    for i, aircraft_type in enumerate(aircraft_types, start=1):
+        embed.add_field(name=f"{i}.", value=aircraft_type, inline=False)
+    await ctx.send(embed=embed)
+
+    # Get user response for aircraft type
+    type_response = await get_response(ctx)
+    if type_response is None:
+        return
+
+    try:
+        selected_type_index = int(type_response) - 1
+        selected_type = aircraft_types[selected_type_index]
+    except (ValueError, IndexError):
+        await ctx.send("Invalid selection. Please respond with a valid number.")
+        return
+
+    await ctx.send(f"You selected: {selected_type}")
+
+    # List aircraft IDs for selected type
+    aircraft_ids = fetch_aircraft_ids_by_type(DB_PATH, selected_type)
+    if not aircraft_ids:
+        await ctx.send(f"No aircraft found for type {selected_type}.")
+        return
+
+    aircraft_embed = discord.Embed(title=f"Aircraft IDs for {selected_type}", description="Select aircraft ID(s) by typing them separated by commas:", color=0x00ff00)
+    aircraft_embed.add_field(name="Available Aircraft", value="\n".join(aircraft_ids), inline=False)
+    await ctx.send(embed=aircraft_embed)
+
+    # Get user response for aircraft IDs
+    aircraft_response = await get_response(ctx)
+    if aircraft_response is None:
+        return
+
+    selected_aircraft_ids = [aid.strip() for aid in aircraft_response.split(',')]
+    if any(aid not in aircraft_ids for aid in selected_aircraft_ids):
+        await ctx.send("Invalid aircraft IDs. Please select valid IDs.")
+        return
+
+    # List squadrons for selected aircraft type
+    squadrons = fetch_squadrons_for_type(DB_PATH, selected_type)
+    if not squadrons:
+        await ctx.send(f"No squadrons found for aircraft type {selected_type}.")
+        return
+
+    squadron_embed = discord.Embed(title="Squadrons", description="Select a squadron by number or type 'maintenance' to send to maintenance:", color=0x00ff00)
+    for i, squadron in enumerate(squadrons, start=1):
+        squadron_embed.add_field(name=f"{i}.", value=squadron, inline=False)
+    await ctx.send(embed=squadron_embed)
+
+    # Get user response for squadron selection
+    squadron_response = await get_response(ctx)
+    if squadron_response is None:  # User did not respond
+        return
+
+    if squadron_response.lower() == 'maintenance':
+        send_aircraft_to_maintenance(DB_PATH, selected_aircraft_ids)
+        await ctx.send(f"Aircraft {', '.join(selected_aircraft_ids)} sent to maintenance.")
+    else:
+        try:
+            selected_squadron_index = int(squadron_response) - 1
+            if selected_squadron_index < 0 or selected_squadron_index >= len(squadrons):
+                raise IndexError
+            selected_squadron_id = squadrons[selected_squadron_index]  # Get the actual squadron_id
+        except (ValueError, IndexError):
+            await ctx.send("Invalid selection. Please respond with a valid number.")
+            return
+
+        assign_aircraft_to_squadron(DB_PATH, selected_squadron_id, selected_aircraft_ids)
+        await ctx.send(f"Aircraft {', '.join(selected_aircraft_ids)} assigned to squadron {selected_squadron_id}.")
+
+
+
 bot.run(TOKEN)

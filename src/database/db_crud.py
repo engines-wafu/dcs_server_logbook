@@ -28,6 +28,85 @@ def get_squadron_ids(db_path):
     finally:
         conn.close()
 
+def fetch_aircraft_by_squadron(db_path):
+    conn = sqlite3.connect(db_path)
+    cursor = conn.cursor()
+
+    # Fetch aircraft assigned to squadrons
+    cursor.execute("""
+        SELECT a.aircraft_id, a.aircraft_type, s.squadron_id 
+        FROM Aircraft a
+        LEFT JOIN Squadron_Aircraft sa ON a.aircraft_id = sa.aircraft_id
+        LEFT JOIN Squadrons s ON sa.squadron_id = s.squadron_id
+    """)
+    assigned_aircraft = cursor.fetchall()
+
+    # Fetch aircraft not assigned to any squadron (Depth Maintenance)
+    cursor.execute("""
+        SELECT aircraft_id, aircraft_type 
+        FROM Aircraft 
+        WHERE aircraft_id NOT IN (SELECT aircraft_id FROM Squadron_Aircraft)
+    """)
+    unassigned_aircraft = cursor.fetchall()
+
+    conn.close()
+    return assigned_aircraft, unassigned_aircraft
+
+def fetch_aircraft_types(db_path):
+    conn = sqlite3.connect(db_path)
+    cursor = conn.cursor()
+    
+    cursor.execute("SELECT DISTINCT aircraft_pseudo FROM Aircraft")
+    types = cursor.fetchall()
+    conn.close()
+    
+    return [t[0] for t in types]  # Returning a list of aircraft types
+
+def fetch_aircraft_ids_by_type(db_path, aircraft_pseudo):
+    conn = sqlite3.connect(db_path)
+    cursor = conn.cursor()
+    
+    cursor.execute("SELECT aircraft_id FROM Aircraft WHERE aircraft_pseudo = ?", (aircraft_pseudo,))
+    aircraft_ids = cursor.fetchall()
+    conn.close()
+    
+    return [a[0] for a in aircraft_ids]  # Returning a list of aircraft IDs
+
+def fetch_squadrons_for_type(db_path, aircraft_type):
+    conn = sqlite3.connect(db_path)
+    cursor = conn.cursor()
+    
+    cursor.execute("SELECT squadron_id FROM Squadrons WHERE squadron_pseudo_type = ?", (aircraft_type,))
+    squadrons = cursor.fetchall()
+    conn.close()
+    
+    return [s[0] for s in squadrons]  # Returning a list of squadron IDs
+
+def assign_aircraft_to_squadron(db_path, squadron_id, aircraft_ids):
+    """Assigns a list of aircraft to a squadron."""
+    conn = sqlite3.connect(db_path)
+    cursor = conn.cursor()
+    
+    for aircraft_id in aircraft_ids:
+        try:
+            cursor.execute("INSERT INTO Squadron_Aircraft (squadron_id, aircraft_id) VALUES (?, ?)", (squadron_id, aircraft_id))
+        except sqlite3.IntegrityError as e:
+            print(f"Error assigning aircraft {aircraft_id} to squadron {squadron_id}: {e}")
+
+    conn.commit()
+    conn.close()
+
+def send_aircraft_to_maintenance(db_path, aircraft_ids):
+    """Removes a list of aircraft from the Squadron_Aircraft table, sending them to maintenance."""
+    conn = sqlite3.connect(db_path)
+    cursor = conn.cursor()
+    
+    for aircraft_id in aircraft_ids:
+        cursor.execute("DELETE FROM Squadron_Aircraft WHERE aircraft_id = ?", (aircraft_id,))
+
+    conn.commit()
+    conn.close()
+
 def add_award_to_database(db_path, award_name, award_description):
     """
     Inserts a new award into the Awards table.

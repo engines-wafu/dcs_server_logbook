@@ -137,118 +137,102 @@ def generate_squadron_pilot_rows(DB_PATH, squadron_id, squadron_aircraft_type, c
     conn.close()
     return rows_html
 
-def generate_pilot_info_page(DB_PATH, combined_stats, output_dir):
+def generate_pilot_info_page(DB_PATH, pilot_id, pilot_specific_stats, output_dir):
     conn = sqlite3.connect(DB_PATH)
     cursor = conn.cursor()
 
-    cursor.execute("SELECT pilot_id, pilot_name, pilot_service, pilot_rank FROM Pilots")
-    pilots = cursor.fetchall()
+    # Fetch details for the specific pilot
+    cursor.execute("SELECT pilot_id, pilot_name, pilot_service, pilot_rank FROM Pilots WHERE pilot_id = ?", (pilot_id,))
+    pilot = cursor.fetchone()
+    if not pilot:
+        # print(f"No data found for pilot ID {pilot_id}")
+        return
+    pilot_id, pilot_name, pilot_service, pilot_rank = pilot
 
-    for pilot_id, pilot_name, pilot_service, pilot_rank in pilots:
-        pilot_stats = combined_stats.get(pilot_id, {})
-        awards = get_pilot_awards_with_details(DB_PATH, pilot_id)
-        qualifications = get_pilot_qualifications_with_details(DB_PATH, pilot_id)
-        
-        # For Awards
-        awards_html = "<table style='border:1'><tr><th style='width:10%'>ID</th><th style='width:50%'>Name</th><th style='width:20%'>Issued</th><th style='width:20%'>Ribbon</th></tr>"
-        for award_id, award_name, award_description, date_issued, ribbon_exists in awards:
-            ribbon_html = f"<img src='../img/ribbons/{award_name}.png' alt='{award_name}' style='width:50%; height:auto;'>" if ribbon_exists else "No ribbon"
-            awards_html += f"<tr title='{award_description}'><td style='width:10%'>{award_id}</td><td style='width:50%'>{award_name}</td><td style='width:20%'>{date_issued}</td><td style='width:40%; text-align:left;'>{ribbon_html}</td></tr>"
-        awards_html += "</table>"
+    awards = get_pilot_awards_with_details(DB_PATH, pilot_id)
+    qualifications = get_pilot_qualifications_with_details(DB_PATH, pilot_id)
 
-        # HTML table start
-        today = datetime.now().date()
+    # Process awards
+    awards_html = "<table style='border:1'><tr><th style='width:10%'>ID</th><th style='width:50%'>Name</th><th style='width:20%'>Issued</th><th style='width:20%'>Ribbon</th></tr>"
+    for award_id, award_name, award_description, date_issued, ribbon_exists in awards:
+        ribbon_html = f"<img src='../img/ribbons/{award_name}.png' alt='{award_name}' style='width:50%; height:auto;'>" if ribbon_exists else "No ribbon"
+        awards_html += f"<tr title='{award_description}'><td>{award_id}</td><td>{award_name}</td><td>{date_issued}</td><td style='text-align:left;'>{ribbon_html}</td></tr>"
+    awards_html += "</table>"
 
-        qualifications_html = "<table style='border:1'><tr><th style='width:10%'>ID</th><th style='width:50%'>Name</th><th style='width:20%'>Issued</th><th style='width:20%'>Expires</th></tr>"
+    # Process qualifications
+    today = datetime.now().date()
+    qualifications_html = "<table style='border:1'><tr><th>ID</th><th>Name</th><th>Issued</th><th>Expires</th></tr>"
+    for qualification_id, qualification_name, qualification_description, date_issued, date_expires in qualifications:
+        date_expires_obj = datetime.strptime(date_expires, "%d %b %y").date()
+        color = "red" if date_expires_obj < today else "orange" if (date_expires_obj - today).days <= 7 else ""
+        qualifications_html += f"<tr title='{qualification_description}'><td>{qualification_id}</td><td>{qualification_name}</td><td>{date_issued}</td><td style='background-color:{color}'>{date_expires}</td></tr>"
+    qualifications_html += "</table>"
 
-        for qualification_id, qualification_name, qualification_description, date_issued, date_expires in qualifications:
-            # Parse the date_expires to a date object
-            date_expires_obj = datetime.strptime(date_expires, "%d %b %y").date()
+    # Process pilot stats
+    pilot_stats = pilot_specific_stats
+    if not isinstance(pilot_stats.get('times'), dict):
+        return  # Skip if no 'times' data
 
-            # Determine the color based on expiration date
-            if date_expires_obj < today:
-                color = "red"
-            elif (date_expires_obj - today).days <= 7:
-                color = "orange"
-            else:
-                color = ""  # Default color
+    total_hours = sum(seconds_to_hours(aircraft_stats.get('total', 0)) for aircraft_type, aircraft_stats in pilot_stats.get('times', {}).items() if isinstance(aircraft_stats, dict))
 
-            # Append row to HTML with color styling
-            qualifications_html += f"<tr title='{qualification_description}'><td style='width:10%'>{qualification_id}</td><td style='width:50%'>{qualification_name}</td><td style='width:20%'>{date_issued}</td><td style='width:20%; background-color:{color}'>{date_expires}</td></tr>"
+    type_hours_list = [(aircraft_type, seconds_to_hours(aircraft_stats.get('total', 0))) for aircraft_type, aircraft_stats in pilot_stats.get('times', {}).items() if isinstance(aircraft_stats, dict) and seconds_to_hours(aircraft_stats.get('total', 0)) >= 0.1]
+    type_hours_list.sort(key=lambda x: x[1], reverse=True)
 
-        qualifications_html += "</table>"
+    type_totals_html = "<table style='border:1'><tr><th>Type</th><th>Hours</th></tr>"
+    for aircraft_type, hours in type_hours_list:
+        type_totals_html += f"<tr><td>{aircraft_type}</td><td>{hours:.1f}</td></tr>"
+    type_totals_html += "</table>"
 
-        if not isinstance(pilot_stats.get('times'), dict):
-            continue
-
-        total_hours = 0
-        type_hours_list = []
-        aggregated_kills = {}
-
-        for aircraft_type, aircraft_stats in pilot_stats.get('times', {}).items():
-            if not isinstance(aircraft_stats, dict):
-                continue
-
-            hours = seconds_to_hours(aircraft_stats.get('total', 0))
-            if hours >= 0.1:
-                total_hours += hours
-                type_hours_list.append((aircraft_type, hours))
-
+    aggregated_kills = {}
+    for aircraft_type, aircraft_stats in pilot_stats.get('times', {}).items():
+        if isinstance(aircraft_stats, dict):
             for category, kills in aircraft_stats.get('kills', {}).items():
                 if isinstance(kills, dict):
                     total_kills = kills.get('total', 0)
                     aggregated_kills[category] = aggregated_kills.get(category, 0) + total_kills
 
-        type_hours_list.sort(key=lambda x: x[1], reverse=True)
+    kills_html = "<table style='border:1'><tr><th>Category</th><th>Kills</th></tr>"
+    for category, kills in aggregated_kills.items():
+        kills_html += f"<tr><td>{category}</td><td>{kills}</td></tr>"
+    kills_html += "</table>"
 
-        # Constructing HTML tables for type hours
-        type_totals_html = "<table style='border:1'><tr><th style='width:20%'>Type</th><th style='width:20%'>Hours</th></tr>"
-        for aircraft_type, hours in type_hours_list:
-            type_totals_html += f"<tr><td>{aircraft_type}</td><td>{hours:.1f}</td></tr>"
-        type_totals_html += "</table>"
+    last_join = pilot_stats.get('lastJoin', 0)
+    last_join_date = datetime.fromtimestamp(last_join).strftime('%Y-%m-%d')
 
-        # Constructing HTML table for aggregated kills
-        kills_html = "<table style='border:1'><tr><th style='width:20%'>Category</th><th style='width:20%'>Kills</th></tr>"
-        for category, kills in aggregated_kills.items():
-            kills_html += f"<tr><td>{category}</td><td>{kills}</td></tr>"
-        kills_html += "</table>"
+    # Construct HTML content
+    pilot_html = f"""
+        <html>
+        <head>
+            <title>Pilot Information: {pilot_name}</title>
+            <meta name='viewport' content='width=device-width, initial-scale=1'>
+            <link rel='stylesheet' type='text/css' href='../styles.css'>
+        </head>
+        <body>
+            <div class='container'>
+                <h1>Pilot Information File: {pilot_name}</h1>
+                <h2>Basic Information</h2>
+                <p>Pilot ID: {pilot_id[:6]}</p>
+                <p>Pilot Service: {pilot_service}</p>
+                <p>Pilot Rank: {pilot_rank}</p>
+                <h2>Awards</h2>
+                {awards_html if awards else '<p>No awards.</p>'}
+                <h2>Qualifications</h2>
+                {qualifications_html if qualifications else '<p>No qualifications.</p>'}
+                <h2>Logbook</h2>
+                <h3>Totals</h3>
+                <p>Last Joined: {last_join_date}</p>
+                <p>Total hours: {total_hours:.1f}</p>
+                <h3>Type Totals</h3>
+                {type_totals_html}
+                <h3>Kills</h3>
+                {kills_html}
+            </div>
+        </body>
+        </html>
+    """
 
-        last_join = pilot_stats.get('lastJoin', 0)
-        last_join_date = datetime.fromtimestamp(last_join).strftime('%Y%m%d')
-
-        pilot_html = f"""
-            <html>
-            <head>
-                <title>Pilot Information</title>
-                <meta name='viewport' content='width=device-width, initial-scale=1'>
-                <link rel='stylesheet' type='text/css' href='../styles.css'>
-            </head>
-            <body>
-                <div class='container'>
-                    <h1>Pilot Information File</h1>
-                    <h2>Basic Information</h2>
-                    <p>Pilot ID: {pilot_id[:6]}</p>
-                    <p>Pilot Service: {pilot_service}</p>
-                    <p>Pilot Rank: {pilot_rank}</p>
-                    <p>Pilot Name: {pilot_name}</p>
-                    <h2>Awards</h2>
-                    {awards_html if awards else '<p>No awards.</p>'}
-                    <h2>Qualifications</h2>
-                    {qualifications_html if qualifications else '<p>No qualifications.</p>'}
-                    <h2>Logbook</h2>
-                    <h3>Totals</h3>
-                    <p>Last Joined: {last_join_date}</p>
-                    <p>Total hours: {total_hours:.1f}</p>
-                    <h3>Type Totals</h3>
-                    {type_totals_html}
-                    <h3>Kills</h3>
-                    {kills_html}
-                </div>
-            </body>
-            </html>
-        """
-
-        with open(os.path.join(output_dir, f"{pilot_id[:6]}.html"), "w") as file:
-            file.write(pilot_html)
+    output_file_path = os.path.normpath(os.path.join(output_dir, f"{pilot_id[:6]}.html"))
+    with open(output_file_path, "w") as file:
+        file.write(pilot_html)
 
     conn.close()
