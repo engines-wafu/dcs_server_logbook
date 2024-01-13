@@ -3,15 +3,14 @@ import os
 import subprocess
 import json
 from datetime import datetime
-from html_generator.html_generator import fetch_squadron_pilots, generate_index_html, generate_awards_qualifications_page, generate_flight_plans_page, generate_flight_plans_page
+from html_generator.html_generator import *
 from utils.stat_processing import load_combined_stats, generate_pilot_info_page
 from config import DB_PATH, JSON_PATH, STATS_FILES
 
 # Configure logging
-log_filename = f"data/logs/mayfly.log"
+log_filename = "data/logs/mayfly.log"
 logging.basicConfig(filename=log_filename, level=logging.DEBUG, 
                     format='%(asctime)s - %(levelname)s - %(message)s')
-
 
 def run_lua_script(script_path):
     command = ['lua54', script_path]
@@ -58,6 +57,7 @@ def main():
         logging.error("combinedStats.json not found or merge.lua script failed")
 
     generate_index_html(DB_PATH, 'web/index.html', JSON_PATH)
+    generate_mayfly_html(DB_PATH, 'web/mayfly.html')
     generate_awards_qualifications_page(DB_PATH, 'web/awards.html')
 
     generate_flight_plans_page(DB_PATH, 'web/flights.html')

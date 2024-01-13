@@ -1,5 +1,5 @@
 # src/html_generator/html_generator.py
-import sqlite3, logging, os
+import sqlite3, os
 from database.db_crud import *
 from utils.stat_processing import load_combined_stats, generate_squadron_pilot_rows
 
@@ -225,3 +225,67 @@ def generate_flight_plans_page(db_path, output_path):
         file.write(html_content)
 
     print("Flight plans page generated successfully.")
+
+def generate_mayfly_html(db_path, output_file_path):
+    # Fetch data from the database
+    squadrons = get_squadron_ids(db_path)
+    assigned_aircraft, unassigned_aircraft = fetch_aircraft_by_squadron(db_path)
+    logging.info("Example assigned aircraft data: " + str(assigned_aircraft[0]))
+    logging.info("Example unassigned aircraft data: " + str(unassigned_aircraft[0]))
+
+    # Read the navbar HTML content
+    navbar_path = 'web/navbar.html'
+    with open(navbar_path, 'r') as file:
+        navbar_html = file.read()
+
+    # Start HTML document
+    html_content = f"""
+    <!DOCTYPE html>
+    <html>
+    <head>
+        <title>Project Mayfly - Aircraft Management</title>
+        <meta name='viewport' content='width=device-width, initial-scale=1'>
+        <link rel='stylesheet' type='text/css' href='styles.css'>
+    </head>
+    <body>
+        {navbar_html}
+        <div class='container'>
+    """
+
+    # Generate squadron sections
+    for squadron_id in squadrons:
+        html_content += f"<div class='squadron-section'>\n<h2>{squadron_id}</h2>\n"
+        squadron_pseudo_type = fetch_squadron_pseudo_type(db_path, squadron_id)
+        html_content += f"<p>Aircraft type: {squadron_pseudo_type}</p>\n"
+        html_content += "<h3>Aircraft</h3>\n"
+        html_content += "<table>\n<tr><th>Aircraft ID</th><th>Aircraft Type</th><th>State</th><th>ETBOL</th><th>Remarks</th></tr>\n"  # Table headers
+
+        # Generate table rows for aircraft
+        for aircraft in assigned_aircraft:
+            if aircraft[2] == squadron_id:  # Check if aircraft is assigned to the current squadron
+                state_color = "" if aircraft[3] == 'S' else "red" if aircraft[3] == 'US' else "none"
+
+                # Convert ETBOL from epoch to formatted date
+                etbol_formatted = datetime.datetime.fromtimestamp(aircraft[4]).strftime('%d %b %y') if aircraft[4] else 'N/A'
+
+                html_content += f"<tr><td>{aircraft[0]}</td><td>{aircraft[1]}</td><td style='background-color:{state_color};'>{aircraft[3]}</td><td>{etbol_formatted}</td><td>{aircraft[5]}</td></tr>\n"
+        html_content += "</table>\n</div>\n"
+
+    # Depth Maintenance section
+    html_content += "<div class='maintenance-section'>\n<h2>Depth Maintenance</h2>\n<h3>Aircraft</h3>\n"
+    html_content += "<table>\n<tr><th>Aircraft ID</th><th>Aircraft Type</th><th>State</th><th>ETBOL</th><th>Remarks</th></tr>\n"  # Table headers
+    for aircraft in unassigned_aircraft:
+        state_color = "" if aircraft[2] == 'S' else "red" if aircraft[2] == 'US' else "none"
+
+        # Convert ETBOL from epoch to formatted date
+        etbol_formatted = datetime.datetime.fromtimestamp(aircraft[3]).strftime('%d %b %y') if aircraft[3] else 'N/A'
+
+        html_content += f"<tr><td>{aircraft[0]}</td><td>{aircraft[1]}</td><td style='background-color:{state_color};'>{aircraft[2]}</td><td>{etbol_formatted}</td><td>{aircraft[4]}</td></tr>\n"
+    html_content += "</table>\n</div>\n"
+
+    # Close HTML document
+    html_content += "</div>\n</body>\n</html>"
+
+    # Write to file
+    with open(output_file_path, "w") as file:
+        file.write(html_content)

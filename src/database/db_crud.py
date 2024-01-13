@@ -1,16 +1,8 @@
-import sqlite3, time, logging, tracemalloc
-
-# Configure logging
-
-tracemalloc.start()
-
-log_filename = f"data/logs/database.log"
-logging.basicConfig(filename=log_filename, level=logging.DEBUG, 
-                    format='%(asctime)s - %(levelname)s - %(message)s')
+import sqlite3, time, logging
 
 def get_squadron_ids(db_path):
     """
-    Retrieves a list of all squadron IDs from the database.
+    Retrieves a list of all squadron IDs from the database, ordered by commission date.
 
     :param db_path: Path to the SQLite database file.
     :return: A list of squadron IDs.
@@ -19,7 +11,8 @@ def get_squadron_ids(db_path):
     cursor = conn.cursor()
 
     try:
-        cursor.execute("SELECT squadron_id FROM Squadrons")
+        # Update the query to order by squadron_commission_date
+        cursor.execute("SELECT squadron_id FROM Squadrons ORDER BY squadron_commission_date ASC")
         squadrons = cursor.fetchall()
         # Extracting squadron_id from each tuple in the list
         return [squadron[0] for squadron in squadrons]
@@ -33,18 +26,18 @@ def fetch_aircraft_by_squadron(db_path):
     conn = sqlite3.connect(db_path)
     cursor = conn.cursor()
 
-    # Fetch aircraft assigned to squadrons
+    # Fetch aircraft assigned to squadrons with additional columns
     cursor.execute("""
-        SELECT a.aircraft_id, a.aircraft_type, s.squadron_id 
+        SELECT a.aircraft_id, a.aircraft_pseudo, s.squadron_id, a.aircraft_state, a.aircraft_etbol, a.aircraft_remarks
         FROM Aircraft a
         LEFT JOIN Squadron_Aircraft sa ON a.aircraft_id = sa.aircraft_id
         LEFT JOIN Squadrons s ON sa.squadron_id = s.squadron_id
     """)
     assigned_aircraft = cursor.fetchall()
 
-    # Fetch aircraft not assigned to any squadron (Depth Maintenance)
+    # Fetch aircraft not assigned to any squadron (Depth Maintenance) with additional columns
     cursor.execute("""
-        SELECT aircraft_id, aircraft_type 
+        SELECT aircraft_id, aircraft_pseudo, aircraft_state, aircraft_etbol, aircraft_remarks 
         FROM Aircraft 
         WHERE aircraft_id NOT IN (SELECT aircraft_id FROM Squadron_Aircraft)
     """)
@@ -52,6 +45,14 @@ def fetch_aircraft_by_squadron(db_path):
 
     conn.close()
     return assigned_aircraft, unassigned_aircraft
+
+def fetch_squadron_pseudo_type(db_path, squadron_id):
+    conn = sqlite3.connect(db_path)
+    cursor = conn.cursor()
+    cursor.execute("SELECT squadron_pseudo_type FROM Squadrons WHERE squadron_id = ?", (squadron_id,))
+    result = cursor.fetchone()
+    conn.close()
+    return result[0] if result else "Unknown"
 
 def fetch_aircraft_types(db_path):
     conn = sqlite3.connect(db_path)
