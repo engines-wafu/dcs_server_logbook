@@ -160,10 +160,10 @@ def generate_pilot_info_page(DB_PATH, pilot_id, pilot_specific_stats, output_dir
     awards_html += "</table>"
 
     # Process qualifications
-    today = datetime.now().date()
+    today = datetime.datetime.now().date()
     qualifications_html = "<table style='border:1'><tr><th>ID</th><th>Name</th><th>Issued</th><th>Expires</th></tr>"
     for qualification_id, qualification_name, qualification_description, date_issued, date_expires in qualifications:
-        date_expires_obj = datetime.strptime(date_expires, "%d %b %y").date()
+        date_expires_obj = datetime.datetime.strptime(date_expires, "%d %b %y").date()
         color = "red" if date_expires_obj < today else "orange" if (date_expires_obj - today).days <= 7 else ""
         qualifications_html += f"<tr title='{qualification_description}'><td>{qualification_id}</td><td>{qualification_name}</td><td>{date_issued}</td><td style='background-color:{color}'>{date_expires}</td></tr>"
     qualifications_html += "</table>"
@@ -197,7 +197,7 @@ def generate_pilot_info_page(DB_PATH, pilot_id, pilot_specific_stats, output_dir
     kills_html += "</table>"
 
     last_join = pilot_stats.get('lastJoin', 0)
-    last_join_date = datetime.fromtimestamp(last_join).strftime('%Y-%m-%d')
+    last_join_date = datetime.datetime.fromtimestamp(last_join).strftime('%Y-%m-%d')
 
     # Construct HTML content
     pilot_html = f"""
