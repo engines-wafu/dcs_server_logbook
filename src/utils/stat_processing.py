@@ -1,5 +1,5 @@
 import os, json, sqlite3
-from datetime import datetime
+import datetime
 from utils.time_management import seconds_to_hours, days_from_epoch
 from database.db_crud import get_pilot_full_name
 
@@ -13,7 +13,7 @@ def ribbon_image_exists(award_name):
 
 def format_epoch_to_date(epoch_time):
     if epoch_time:
-        return datetime.fromtimestamp(epoch_time).strftime('%d %b %y')
+        return datetime.datetime.fromtimestamp(epoch_time).strftime('%d %b %y')
     return 'N/A'
 
 def get_pilot_details(db_path, pilot_id, combined_stats):

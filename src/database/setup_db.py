@@ -45,6 +45,21 @@ create_tables_commands = [
         aircraft_etbol INTEGER,
         aircraft_remarks TEXT
     );''',
+    '''CREATE TABLE IF NOT EXISTS IcaoIfrFlightPlan (
+        id INTEGER PRIMARY KEY,
+        aircraft_type TEXT,
+        aircraft_callsign TEXT,
+        flight_rules TEXT,
+        type_of_flight TEXT,
+        departure_aerodrome TEXT,
+        departure_time TEXT,
+        route TEXT,
+        destination_aerodrome TEXT,
+        total_estimated_elapsed_time TEXT,
+        alternate_aerodrome TEXT,
+        fuel_on_board TEXT,
+        other_information TEXT
+    );''',
     '''CREATE TABLE IF NOT EXISTS Squadron_Aircraft (
         squadron_id TEXT,
         aircraft_id TEXT,
@@ -53,11 +68,11 @@ create_tables_commands = [
         PRIMARY KEY (aircraft_id, squadron_id)
     );''',
     '''CREATE TABLE IF NOT EXISTS Squadron_Pilots (
-    squadron_id TEXT,
-    pilot_id TEXT,
-    FOREIGN KEY (squadron_id) REFERENCES Squadrons (squadron_id),
-    FOREIGN KEY (pilot_id) REFERENCES Pilots (pilot_id),
-    PRIMARY KEY (pilot_id, squadron_id)
+        squadron_id TEXT,
+        pilot_id TEXT,
+        FOREIGN KEY (squadron_id) REFERENCES Squadrons (squadron_id),
+        FOREIGN KEY (pilot_id) REFERENCES Pilots (pilot_id),
+        PRIMARY KEY (pilot_id, squadron_id)
     );''',
     '''CREATE TABLE IF NOT EXISTS Pilot_Qualifications (
         pilot_id TEXT,

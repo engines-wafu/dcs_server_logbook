@@ -141,6 +141,7 @@ def generate_awards_qualifications_page(db_path, output_path):
     <html>
     <head>
         <title>Awards and Qualifications</title>
+        <meta name='viewport' content='width=device-width, initial-scale=1'>
         <link rel="stylesheet" type="text/css" href="styles.css">
     </head>
     <body>
@@ -177,30 +178,50 @@ def generate_awards_qualifications_page(db_path, output_path):
     with open(output_path, "w") as file:
         file.write(html_content)
 
-def generate_mayfly_html(db_path, output_path):
-    assigned_aircraft, unassigned_aircraft = fetch_aircraft_by_squadron(db_path)
+def generate_flight_plans_page(db_path, output_path):
+    conn = sqlite3.connect(db_path)
+    cursor = conn.cursor()
 
-    with open(output_path, 'w') as file:
-        file.write('<html><head><title>Mayfly Aircraft Listing</title></head><body>')
-        file.write('<h1>Mayfly Aircraft Listing</h1>')
+    # Fetch flight plan data
+    cursor.execute("SELECT * FROM Flight_Plans ORDER BY id DESC")
+    flight_plans = cursor.fetchall()
+    conn.close()
 
-        # Process and write tables for assigned aircraft
-        squadrons = {}
-        for aircraft_id, aircraft_type, squadron_id in assigned_aircraft:
-            squadrons.setdefault(squadron_id, []).append((aircraft_id, aircraft_type))
-        for squadron_id, aircraft in squadrons.items():
-            file.write(f'<h2>Squadron {squadron_id}</h2>')
-            file.write('<table border="1"><tr><th>Aircraft ID</th><th>Type</th></tr>')
-            for aircraft_id, aircraft_type in aircraft:
-                file.write(f'<tr><td>{aircraft_id}</td><td>{aircraft_type}</td></tr>')
-            file.write('</table>')
+    # Read the navbar HTML content
+    navbar_path = 'web/navbar.html'
+    with open(navbar_path, 'r') as file:
+        navbar_html = file.read()
 
-        # Process and write table for unassigned aircraft (Depth Maintenance)
-        if unassigned_aircraft:
-            file.write('<h2>Depth Maintenance</h2>')
-            file.write('<table border="1"><tr><th>Aircraft ID</th><th>Type</th></tr>')
-            for aircraft_id, aircraft_type in unassigned_aircraft:
-                file.write(f'<tr><td>{aircraft_id}</td><td>{aircraft_type}</td></tr>')
-            file.write('</table>')
+    # HTML structure
+    html_content = f"""
+    <html>
+    <head>
+        <title>Flight Plans</title>
+        <meta name='viewport' content='width=device-width, initial-scale=1'>
+        <link rel="stylesheet" type="text/css" href="styles.css">
+    </head>
+    <body>
+        {navbar_html}
+        <div class="container">
+        <h1>Flight Plans</h1>
+        <table>
+            <tr><th>Type</th><th>C/S</th><th>Flt Rules</th><th>Mission</th><th>Dep</th><th>Dep Time</th><th style='width:15%'>Rte</th><th>Dest</th><th style='width:10%'>Tot EET</th><th>Div</th><th>Fuel</th><th style='width:20%'>Rmks</th></tr>
+    """
 
-        file.write('</body></html>')
+    # Populate table rows
+    for plan in flight_plans:
+        html_content += "<tr>" + "".join([f"<td>{item}</td>" for item in plan[1:]]) + "</tr>"  # Skip the ID column
+
+    html_content += '''
+        </table>
+        </div>
+    </body>
+    </html>
+    '''
+
+    # Write HTML content to file
+    output_file_path = output_path
+    with open(output_file_path, 'w') as file:
+        file.write(html_content)
+
+    print("Flight plans page generated successfully.")

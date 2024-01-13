@@ -3,7 +3,7 @@ import os
 import subprocess
 import json
 from datetime import datetime
-from html_generator.html_generator import fetch_squadron_pilots, generate_index_html, generate_awards_qualifications_page, generate_mayfly_html
+from html_generator.html_generator import fetch_squadron_pilots, generate_index_html, generate_awards_qualifications_page, generate_flight_plans_page, generate_flight_plans_page
 from utils.stat_processing import load_combined_stats, generate_pilot_info_page
 from config import DB_PATH, JSON_PATH, STATS_FILES
 
@@ -57,24 +57,19 @@ def main():
     else:
         logging.error("combinedStats.json not found or merge.lua script failed")
 
-    output_dir = 'web/pilot'
-    awards_path = 'web/awards.html'
-    output_path = 'web/index.html'
+    generate_index_html(DB_PATH, 'web/index.html', JSON_PATH)
+    generate_awards_qualifications_page(DB_PATH, 'web/awards.html')
 
-    generate_index_html(DB_PATH, output_path, JSON_PATH)
-    generate_awards_qualifications_page(DB_PATH, awards_path)
-
-    output_path = 'web/mayfly.html'
-    generate_mayfly_html(DB_PATH, output_path)
+    generate_flight_plans_page(DB_PATH, 'web/flights.html')
     logging.info("Created html output")
 
     logging.info("Generating pilot pages")
+    output_dir = 'web/pilot'
+
     for pilot_id in combined_stats.keys():
         pilot_specific_stats = combined_stats.get(pilot_id)
         if pilot_specific_stats:
             generate_pilot_info_page(DB_PATH, pilot_id, pilot_specific_stats, output_dir)
-
-
 
 if __name__ == "__main__":
     main()

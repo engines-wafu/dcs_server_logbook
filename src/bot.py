@@ -1,8 +1,8 @@
 import discord, asyncio, logging, time
 from main import main
-from utils.ribbon import ribbonGenerator
+from utils.ribbon import ribbonGenerator, create_award_quilt
 from discord.ext import commands
-from html_generator.html_generator import generate_index_html, load_combined_stats
+from html_generator.html_generator import generate_index_html, load_combined_stats, generate_flight_plans_page
 from utils.stat_processing import get_pilot_qualifications_with_details, get_pilot_awards_with_details, get_pilot_details
 from database.db_crud import *
 from config import TOKEN, DB_PATH, JSON_PATH
@@ -66,6 +66,13 @@ async def pilot_info(ctx, *, pilot_name):
         await ctx.send(f"No details found for pilot: {pilot_name}")
         return
 
+    # Generate ribbon quilt image
+    create_award_quilt(DB_PATH, pilot_id)  # This will create the image at 'web/img/fruit_salad/[pilot_id].png'
+
+    # Prepare the image file to be sent
+    image_path = f'web/img/fruit_salad/{pilot_id}.png'
+    image_file = discord.File(image_path, filename='fruit_salad.png')
+
     # Construct the embedded message with pilot details
     embed = discord.Embed(title=f"Pilot Information: {pilot_name}", color=0x00ff00)
     embed.add_field(name="Service", value=pilot_details['service'], inline=True)
@@ -91,7 +98,11 @@ async def pilot_info(ctx, *, pilot_name):
     else:
         embed.add_field(name="Awards", value="None", inline=False)
 
-    await ctx.send(embed=embed)
+    # Attach the image to the embed
+    embed.set_image(url="attachment://fruit_salad.png")
+
+    # Send the embed with the image
+    await ctx.send(file=image_file, embed=embed)
 
 @bot.command(name='update_logbook')
 async def update_logbook(ctx):
@@ -291,7 +302,6 @@ async def clear_qualification(ctx, *, pilot_name):
 
     await ctx.send(f"Qualifications removed from pilot {pilot_name}'s record.")
 
-
 @bot.command(name='assign_co')
 async def assign_co(ctx, *, pilot_name):
     pilot_id = find_pilot_id_by_name(DB_PATH, pilot_name)
@@ -460,6 +470,120 @@ async def assign_aircraft(ctx):
         assign_aircraft_to_squadron(DB_PATH, selected_squadron_id, selected_aircraft_ids)
         await ctx.send(f"Aircraft {', '.join(selected_aircraft_ids)} assigned to squadron {selected_squadron_id}.")
 
+@bot.command(name='file_flight_plan')
+async def file_flight_plan(ctx):
+    # Helper function to prompt for input, convert to uppercase, and return response in DMs
+    async def prompt_and_get_response_dm(prompt):
+        dm_channel = await ctx.author.create_dm()
+        await dm_channel.send(prompt)
+        response = await get_response_dm(ctx, dm_channel)
+        return response.upper() if response else None
 
+    # Function to wait for user's response in DMs
+    async def get_response_dm(ctx, dm_channel):
+        def check(m):
+            return m.author == ctx.author and m.channel == dm_channel
+
+        try:
+            response = await bot.wait_for('message', check=check, timeout=90.0)
+            return response.content
+        except asyncio.TimeoutError:
+            await dm_channel.send("You did not respond in time.")
+            return None
+
+    # Inform user that the interaction will continue in DMs
+    await ctx.send(f"{ctx.author.mention}, please check your DMs to file the flight plan.")
+
+    # Collecting all necessary inputs from the user
+    aircraft_type = await prompt_and_get_response_dm("Please enter the aircraft type (e.g., FGR1 X2):")
+    if not aircraft_type:
+        return
+
+    aircraft_callsign = await prompt_and_get_response_dm("Please enter the aircraft callsign (e.g., CHAOS):")
+    if not aircraft_callsign:
+        return
+
+    flight_rules = await prompt_and_get_response_dm("Please enter the flight rules (e.g., IFR, VFR):")
+    if not flight_rules:
+        return
+
+    type_of_flight = await prompt_and_get_response_dm("Please enter the type of flight (e.g., TRAINING, CAP, NAVEX):")
+    if not type_of_flight:
+        return
+
+    departure_aerodrome = await prompt_and_get_response_dm("Please enter the departure aerodrome (e.g., UGTB):")
+    if not departure_aerodrome:
+        return
+
+    departure_time = await prompt_and_get_response_dm("Please enter the departure time: (e.g., 130200ZJAN24)")
+    if not departure_time:
+        return
+
+    route = await prompt_and_get_response_dm("Please enter the route: (e.g., DANGR via B-143)")
+    if not route:
+        return
+
+    destination_aerodrome = await prompt_and_get_response_dm("Please enter the destination aerodrome: (e.g., UGSB)")
+    if not destination_aerodrome:
+        return
+
+    total_estimated_elapsed_time = await prompt_and_get_response_dm("Please enter the total estimated elapsed time: (e.g., 90 min)")
+    if not total_estimated_elapsed_time:
+        return
+
+    alternate_aerodrome = await prompt_and_get_response_dm("Please enter an alternate aerodrome (if any):")
+
+    fuel_on_board = await prompt_and_get_response_dm("Please enter the fuel on board: (e.g., 11000 LBS)")
+    if not fuel_on_board:
+        return
+
+    other_information = await prompt_and_get_response_dm("Please enter any other information or remarks (e.g., Ordinance onboard or request use of MOAs):")
+
+    # Insert data into the database (assuming function exists in db_crud.py)
+    insert_success = insert_flight_plan(DB_PATH, aircraft_type, aircraft_callsign, flight_rules, type_of_flight, departure_aerodrome, departure_time, route, destination_aerodrome, total_estimated_elapsed_time, alternate_aerodrome, fuel_on_board, other_information)
+
+    if insert_success:
+        # Generate the updated flights.html page
+        generate_flight_plans_page(DB_PATH, 'web/flights.html')  # Adjust the path as needed
+
+        # Send an embedded confirmation message
+        embed = discord.Embed(title="JSW Flight Filing System", color=0xd62828)
+        embed.add_field(name="Type", value=aircraft_type, inline=True)
+        embed.add_field(name="Callsign", value=aircraft_callsign, inline=True)
+        embed.add_field(name="Flight Rules", value=flight_rules, inline=True)
+    
+        embed.add_field(name="Departure Aerodrome and Time", value=f"{departure_aerodrome} {departure_time}", inline=True)
+        embed.add_field(name="Route", value=route, inline=False)
+
+        embed.add_field(name="Destination Aerodrome", value=destination_aerodrome, inline=True)
+        embed.add_field(name="Total Estimated Elapsed Time", value=total_estimated_elapsed_time, inline=True)
+
+        embed.add_field(name="Alternate Aerodrome", value=alternate_aerodrome or "N/A", inline=True)
+        embed.add_field(name="Fuel Onboard", value=fuel_on_board, inline=True)
+
+        embed.add_field(name="Remarks", value=other_information or "None", inline=False)
+        embed.set_footer(text="Flight Plan Filed Successfully")
+    
+        # Specify the target channel by name
+        target_channel_name = 'controllers'
+        target_channel = None
+        for channel in ctx.guild.channels:
+            if channel.name == target_channel_name:
+                target_channel = channel
+                break
+
+        # Specify the role you want to mention (by ID)
+        role_id = 1195557831223545888 # Replace with the actual role ID
+        role_to_mention = ctx.guild.get_role(role_id)
+
+        # Send the message to the specified channel and mention the role
+        if target_channel and role_to_mention:
+            await target_channel.send(content=f"{role_to_mention.mention}", embed=embed)
+        else:
+            await ctx.send("Target channel or role not found.")
+            # ... [code to send the embed message] ...
+    else:
+        # Handle the failure to insert a new flight plan
+        await ctx.send("Failed to file the flight plan.")
 
 bot.run(TOKEN)

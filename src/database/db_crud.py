@@ -512,6 +512,41 @@ def find_pilot_id_by_name(db_path, pilot_name):
 
     return result[0] if result else None
 
+def insert_flight_plan(db_path, aircraft_type, aircraft_callsign, flight_rules, type_of_flight, departure_aerodrome, departure_time, route, destination_aerodrome, total_estimated_elapsed_time, alternate_aerodrome, fuel_on_board, other_information):
+    """
+    Inserts a new flight plan into the Flight_Plans table.
+
+    :param db_path: Path to the SQLite database file.
+    :param aircraft_type: Type of the aircraft.
+    :param aircraft_callsign: Callsign of the aircraft.
+    :param flight_rules: Flight rules (e.g., IFR, VFR).
+    :param type_of_flight: Type of the flight (e.g., commercial, private).
+    :param departure_aerodrome: Aerodrome of departure.
+    :param departure_time: Estimated time of departure.
+    :param route: Planned route.
+    :param destination_aerodrome: Destination aerodrome.
+    :param total_estimated_elapsed_time: Total estimated elapsed time for the flight.
+    :param alternate_aerodrome: Alternate aerodrome in case of changes.
+    :param fuel_on_board: Amount of fuel on board.
+    :param other_information: Any other relevant information.
+    """
+    conn = sqlite3.connect(db_path)
+    cursor = conn.cursor()
+
+    try:
+        cursor.execute("""
+            INSERT INTO Flight_Plans (aircraft_type, aircraft_callsign, flight_rules, type_of_flight, departure_aerodrome, departure_time, route, destination_aerodrome, total_estimated_elapsed_time, alternate_aerodrome, fuel_on_board, other_information)
+            VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+        """, (aircraft_type, aircraft_callsign, flight_rules, type_of_flight, departure_aerodrome, departure_time, route, destination_aerodrome, total_estimated_elapsed_time, alternate_aerodrome, fuel_on_board, other_information))
+
+        conn.commit()
+    except Exception as e:
+        print(f"An error occurred: {e}")
+    finally:
+        conn.close()
+
+    return True
+
 # Tests for db interactions
 
 db_path = 'data/db/mayfly.db'

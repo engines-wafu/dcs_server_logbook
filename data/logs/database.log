@@ -3694,3 +3694,1333 @@ Traceback (most recent call last):
   File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\discord\ext\commands\core.py", line 244, in wrapped
     raise CommandInvokeError(exc) from exc
 discord.ext.commands.errors.CommandInvokeError: Command raised an exception: TypeError: assign_aircraft_to_squadron() missing 1 required positional argument: 'aircraft_ids'
+2024-01-11 21:56:20,094 - DEBUG - matplotlib data path: C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\matplotlib\mpl-data
+2024-01-11 21:56:20,097 - DEBUG - CONFIGDIR=C:\Users\Gavin\.matplotlib
+2024-01-11 21:56:20,098 - DEBUG - interactive is False
+2024-01-11 21:56:20,098 - DEBUG - platform is win32
+2024-01-11 21:56:20,156 - WARNING - PyNaCl is not installed, voice will NOT be supported
+2024-01-11 21:56:20,157 - DEBUG - Using proactor: IocpProactor
+2024-01-11 21:56:20,157 - INFO - logging in using static token
+2024-01-11 21:56:21,016 - INFO - Shard ID None has connected to Gateway (Session ID: 8c026d8eca2f576ebccf0c8a0f6808be).
+2024-01-11 22:04:21,406 - DEBUG - matplotlib data path: C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\matplotlib\mpl-data
+2024-01-11 22:04:21,409 - DEBUG - CONFIGDIR=C:\Users\Gavin\.matplotlib
+2024-01-11 22:04:21,409 - DEBUG - interactive is False
+2024-01-11 22:04:21,409 - DEBUG - platform is win32
+2024-01-11 22:04:21,465 - WARNING - PyNaCl is not installed, voice will NOT be supported
+2024-01-11 22:04:21,465 - DEBUG - Using proactor: IocpProactor
+2024-01-11 22:04:21,466 - INFO - logging in using static token
+2024-01-11 22:04:25,889 - DEBUG - matplotlib data path: C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\matplotlib\mpl-data
+2024-01-11 22:04:25,892 - DEBUG - CONFIGDIR=C:\Users\Gavin\.matplotlib
+2024-01-11 22:04:25,893 - DEBUG - interactive is False
+2024-01-11 22:04:25,893 - DEBUG - platform is win32
+2024-01-11 22:04:25,948 - WARNING - PyNaCl is not installed, voice will NOT be supported
+2024-01-11 22:04:25,949 - DEBUG - Using proactor: IocpProactor
+2024-01-11 22:04:25,950 - INFO - logging in using static token
+2024-01-11 22:04:42,018 - INFO - Running merge.lua script
+2024-01-11 22:04:42,052 - ERROR - Error running Lua script: lua54: src/lua/merge.lua:3: module 'dkjson' not found:
+	no field package.preload['dkjson']
+	no file 'C:\lua\lua\dkjson.lua'
+	no file 'C:\lua\lua\dkjson\init.lua'
+	no file 'C:\lua\dkjson.lua'
+	no file 'C:\lua\dkjson\init.lua'
+	no file 'C:\lua\..\share\lua\5.4\dkjson.lua'
+	no file 'C:\lua\..\share\lua\5.4\dkjson\init.lua'
+	no file '.\dkjson.lua'
+	no file '.\dkjson\init.lua'
+	no file 'C:\Program Files (x86)\Lua\5.1\lua\dkjson.luac'
+	no file 'C:\lua\dkjson.dll'
+	no file 'C:\lua\..\lib\lua\5.4\dkjson.dll'
+	no file 'C:\lua\loadall.dll'
+	no file '.\dkjson.dll'
+	no file 'C:\lua\dkjson54.dll'
+	no file '.\dkjson54.dll'
+stack traceback:
+	[C]: in function 'require'
+	src/lua/merge.lua:3: in main chunk
+	[C]: in ?
+
+2024-01-11 22:04:42,052 - INFO - Processing combined data
+2024-01-11 22:04:42,110 - INFO - Created html output
+2024-01-11 22:04:42,110 - INFO - Generating pilot pages
+2024-01-12 17:17:39,779 - DEBUG - matplotlib data path: C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\matplotlib\mpl-data
+2024-01-12 17:17:39,787 - DEBUG - CONFIGDIR=C:\Users\Gavin\.matplotlib
+2024-01-12 17:17:39,788 - DEBUG - interactive is False
+2024-01-12 17:17:39,788 - DEBUG - platform is win32
+2024-01-12 17:17:39,857 - WARNING - PyNaCl is not installed, voice will NOT be supported
+2024-01-12 17:17:39,857 - DEBUG - Using proactor: IocpProactor
+2024-01-12 17:17:39,858 - INFO - logging in using static token
+2024-01-12 17:18:09,862 - DEBUG - matplotlib data path: C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\matplotlib\mpl-data
+2024-01-12 17:18:09,865 - DEBUG - CONFIGDIR=C:\Users\Gavin\.matplotlib
+2024-01-12 17:18:09,866 - DEBUG - interactive is False
+2024-01-12 17:18:09,866 - DEBUG - platform is win32
+2024-01-12 17:18:09,922 - WARNING - PyNaCl is not installed, voice will NOT be supported
+2024-01-12 17:18:09,923 - DEBUG - Using proactor: IocpProactor
+2024-01-12 17:18:09,924 - INFO - logging in using static token
+2024-01-12 17:18:10,805 - INFO - Shard ID None has connected to Gateway (Session ID: 926727f39fab2e81c457131a07b6b215).
+2024-01-12 17:48:56,599 - DEBUG - matplotlib data path: C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\matplotlib\mpl-data
+2024-01-12 17:48:56,607 - DEBUG - CONFIGDIR=C:\Users\Gavin\.matplotlib
+2024-01-12 17:48:56,608 - DEBUG - interactive is False
+2024-01-12 17:48:56,608 - DEBUG - platform is win32
+2024-01-12 17:48:56,673 - WARNING - PyNaCl is not installed, voice will NOT be supported
+2024-01-12 17:48:56,673 - DEBUG - Using proactor: IocpProactor
+2024-01-12 17:48:56,673 - INFO - logging in using static token
+2024-01-12 17:48:57,559 - INFO - Shard ID None has connected to Gateway (Session ID: 846cd214afc18e959c330f8da6c4ebe0).
+2024-01-12 17:54:42,682 - DEBUG - matplotlib data path: C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\matplotlib\mpl-data
+2024-01-12 17:54:42,685 - DEBUG - CONFIGDIR=C:\Users\Gavin\.matplotlib
+2024-01-12 17:54:42,686 - DEBUG - interactive is False
+2024-01-12 17:54:42,686 - DEBUG - platform is win32
+2024-01-12 17:54:42,745 - WARNING - PyNaCl is not installed, voice will NOT be supported
+2024-01-12 17:54:42,746 - DEBUG - Using proactor: IocpProactor
+2024-01-12 17:54:42,747 - INFO - logging in using static token
+2024-01-12 17:54:43,744 - INFO - Shard ID None has connected to Gateway (Session ID: f91e6844e265913fbd94fc4d8f712e72).
+2024-01-12 17:57:06,694 - DEBUG - matplotlib data path: C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\matplotlib\mpl-data
+2024-01-12 17:57:06,697 - DEBUG - CONFIGDIR=C:\Users\Gavin\.matplotlib
+2024-01-12 17:57:06,698 - DEBUG - interactive is False
+2024-01-12 17:57:06,698 - DEBUG - platform is win32
+2024-01-12 17:57:06,754 - WARNING - PyNaCl is not installed, voice will NOT be supported
+2024-01-12 17:57:06,755 - DEBUG - Using proactor: IocpProactor
+2024-01-12 17:57:06,756 - INFO - logging in using static token
+2024-01-12 17:57:07,642 - INFO - Shard ID None has connected to Gateway (Session ID: 5bb8a8107a1a7485c0efcfb8bc1adc0f).
+2024-01-12 17:58:45,524 - DEBUG - matplotlib data path: C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\matplotlib\mpl-data
+2024-01-12 17:58:45,527 - DEBUG - CONFIGDIR=C:\Users\Gavin\.matplotlib
+2024-01-12 17:58:45,528 - DEBUG - interactive is False
+2024-01-12 17:58:45,528 - DEBUG - platform is win32
+2024-01-12 17:58:45,584 - WARNING - PyNaCl is not installed, voice will NOT be supported
+2024-01-12 17:58:45,584 - DEBUG - Using proactor: IocpProactor
+2024-01-12 17:58:45,585 - INFO - logging in using static token
+2024-01-12 17:58:46,510 - INFO - Shard ID None has connected to Gateway (Session ID: d9b8d5acc04806f0029a00e729fad463).
+2024-01-12 18:00:28,112 - DEBUG - matplotlib data path: C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\matplotlib\mpl-data
+2024-01-12 18:00:28,115 - DEBUG - CONFIGDIR=C:\Users\Gavin\.matplotlib
+2024-01-12 18:00:28,116 - DEBUG - interactive is False
+2024-01-12 18:00:28,116 - DEBUG - platform is win32
+2024-01-12 18:00:28,172 - WARNING - PyNaCl is not installed, voice will NOT be supported
+2024-01-12 18:00:28,173 - DEBUG - Using proactor: IocpProactor
+2024-01-12 18:00:28,174 - INFO - logging in using static token
+2024-01-12 18:00:29,070 - INFO - Shard ID None has connected to Gateway (Session ID: a170de95a63c8e8a35264da65d3edc6a).
+2024-01-12 18:04:49,207 - DEBUG - matplotlib data path: C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\matplotlib\mpl-data
+2024-01-12 18:04:49,210 - DEBUG - CONFIGDIR=C:\Users\Gavin\.matplotlib
+2024-01-12 18:04:49,211 - DEBUG - interactive is False
+2024-01-12 18:04:49,211 - DEBUG - platform is win32
+2024-01-12 18:04:49,267 - WARNING - PyNaCl is not installed, voice will NOT be supported
+2024-01-12 18:04:49,268 - DEBUG - Using proactor: IocpProactor
+2024-01-12 18:04:49,268 - INFO - logging in using static token
+2024-01-12 18:04:50,227 - INFO - Shard ID None has connected to Gateway (Session ID: 62e75deda1f65bce4d5f2e30ac45a7d0).
+2024-01-12 18:07:57,756 - DEBUG - matplotlib data path: C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\matplotlib\mpl-data
+2024-01-12 18:07:57,759 - DEBUG - CONFIGDIR=C:\Users\Gavin\.matplotlib
+2024-01-12 18:07:57,760 - DEBUG - interactive is False
+2024-01-12 18:07:57,760 - DEBUG - platform is win32
+2024-01-12 18:07:57,816 - WARNING - PyNaCl is not installed, voice will NOT be supported
+2024-01-12 18:07:57,817 - DEBUG - Using proactor: IocpProactor
+2024-01-12 18:07:57,818 - INFO - logging in using static token
+2024-01-12 18:07:58,728 - INFO - Shard ID None has connected to Gateway (Session ID: c751ff7b8f051c506fa05bb46c8b4141).
+2024-01-12 18:08:03,565 - ERROR - Ignoring exception in command file_flight_plan
+Traceback (most recent call last):
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\discord\ext\commands\core.py", line 235, in wrapped
+    ret = await coro(*args, **kwargs)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\src\bot.py", line 488, in file_flight_plan
+    aircraft_type = await prompt_and_get_response("Please enter the aircraft type (e.g., FGR1 X2):")
+                          ^^^^^^^^^^^^^^^^^^^^^^^
+NameError: name 'prompt_and_get_response' is not defined. Did you mean: 'prompt_and_get_response_dm'?
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\discord\ext\commands\bot.py", line 1350, in invoke
+    await ctx.command.invoke(ctx)
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\discord\ext\commands\core.py", line 1029, in invoke
+    await injected(*ctx.args, **ctx.kwargs)  # type: ignore
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\discord\ext\commands\core.py", line 244, in wrapped
+    raise CommandInvokeError(exc) from exc
+discord.ext.commands.errors.CommandInvokeError: Command raised an exception: NameError: name 'prompt_and_get_response' is not defined
+2024-01-12 18:09:57,519 - DEBUG - matplotlib data path: C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\matplotlib\mpl-data
+2024-01-12 18:09:57,522 - DEBUG - CONFIGDIR=C:\Users\Gavin\.matplotlib
+2024-01-12 18:09:57,523 - DEBUG - interactive is False
+2024-01-12 18:09:57,523 - DEBUG - platform is win32
+2024-01-12 18:09:57,580 - WARNING - PyNaCl is not installed, voice will NOT be supported
+2024-01-12 18:09:57,581 - DEBUG - Using proactor: IocpProactor
+2024-01-12 18:09:57,582 - INFO - logging in using static token
+2024-01-12 18:09:58,480 - INFO - Shard ID None has connected to Gateway (Session ID: 678afb7cac6272ad18317bdaecfd9b5e).
+2024-01-12 18:22:24,733 - INFO - Running merge.lua script
+2024-01-12 18:22:24,771 - ERROR - Error running Lua script: lua54: src/lua/merge.lua:3: module 'dkjson' not found:
+	no field package.preload['dkjson']
+	no file 'C:\lua\lua\dkjson.lua'
+	no file 'C:\lua\lua\dkjson\init.lua'
+	no file 'C:\lua\dkjson.lua'
+	no file 'C:\lua\dkjson\init.lua'
+	no file 'C:\lua\..\share\lua\5.4\dkjson.lua'
+	no file 'C:\lua\..\share\lua\5.4\dkjson\init.lua'
+	no file '.\dkjson.lua'
+	no file '.\dkjson\init.lua'
+	no file 'C:\Program Files (x86)\Lua\5.1\lua\dkjson.luac'
+	no file 'C:\lua\dkjson.dll'
+	no file 'C:\lua\..\lib\lua\5.4\dkjson.dll'
+	no file 'C:\lua\loadall.dll'
+	no file '.\dkjson.dll'
+	no file 'C:\lua\dkjson54.dll'
+	no file '.\dkjson54.dll'
+stack traceback:
+	[C]: in function 'require'
+	src/lua/merge.lua:3: in main chunk
+	[C]: in ?
+
+2024-01-12 18:22:24,771 - INFO - Processing combined data
+2024-01-12 18:23:39,746 - INFO - Running merge.lua script
+2024-01-12 18:23:39,752 - ERROR - Error running Lua script: lua54: src/lua/merge.lua:3: module 'dkjson' not found:
+	no field package.preload['dkjson']
+	no file 'C:\lua\lua\dkjson.lua'
+	no file 'C:\lua\lua\dkjson\init.lua'
+	no file 'C:\lua\dkjson.lua'
+	no file 'C:\lua\dkjson\init.lua'
+	no file 'C:\lua\..\share\lua\5.4\dkjson.lua'
+	no file 'C:\lua\..\share\lua\5.4\dkjson\init.lua'
+	no file '.\dkjson.lua'
+	no file '.\dkjson\init.lua'
+	no file 'C:\Program Files (x86)\Lua\5.1\lua\dkjson.luac'
+	no file 'C:\lua\dkjson.dll'
+	no file 'C:\lua\..\lib\lua\5.4\dkjson.dll'
+	no file 'C:\lua\loadall.dll'
+	no file '.\dkjson.dll'
+	no file 'C:\lua\dkjson54.dll'
+	no file '.\dkjson54.dll'
+stack traceback:
+	[C]: in function 'require'
+	src/lua/merge.lua:3: in main chunk
+	[C]: in ?
+
+2024-01-12 18:23:39,753 - INFO - Processing combined data
+2024-01-12 18:24:00,279 - INFO - Running merge.lua script
+2024-01-12 18:24:00,286 - ERROR - Error running Lua script: lua54: src/lua/merge.lua:3: module 'dkjson' not found:
+	no field package.preload['dkjson']
+	no file 'C:\lua\lua\dkjson.lua'
+	no file 'C:\lua\lua\dkjson\init.lua'
+	no file 'C:\lua\dkjson.lua'
+	no file 'C:\lua\dkjson\init.lua'
+	no file 'C:\lua\..\share\lua\5.4\dkjson.lua'
+	no file 'C:\lua\..\share\lua\5.4\dkjson\init.lua'
+	no file '.\dkjson.lua'
+	no file '.\dkjson\init.lua'
+	no file 'C:\Program Files (x86)\Lua\5.1\lua\dkjson.luac'
+	no file 'C:\lua\dkjson.dll'
+	no file 'C:\lua\..\lib\lua\5.4\dkjson.dll'
+	no file 'C:\lua\loadall.dll'
+	no file '.\dkjson.dll'
+	no file 'C:\lua\dkjson54.dll'
+	no file '.\dkjson54.dll'
+stack traceback:
+	[C]: in function 'require'
+	src/lua/merge.lua:3: in main chunk
+	[C]: in ?
+
+2024-01-12 18:24:00,286 - INFO - Processing combined data
+2024-01-12 18:24:00,329 - INFO - Created html output
+2024-01-12 18:24:00,329 - INFO - Generating pilot pages
+2024-01-12 18:25:05,127 - INFO - Running merge.lua script
+2024-01-12 18:25:05,134 - ERROR - Error running Lua script: lua54: src/lua/merge.lua:3: module 'dkjson' not found:
+	no field package.preload['dkjson']
+	no file 'C:\lua\lua\dkjson.lua'
+	no file 'C:\lua\lua\dkjson\init.lua'
+	no file 'C:\lua\dkjson.lua'
+	no file 'C:\lua\dkjson\init.lua'
+	no file 'C:\lua\..\share\lua\5.4\dkjson.lua'
+	no file 'C:\lua\..\share\lua\5.4\dkjson\init.lua'
+	no file '.\dkjson.lua'
+	no file '.\dkjson\init.lua'
+	no file 'C:\Program Files (x86)\Lua\5.1\lua\dkjson.luac'
+	no file 'C:\lua\dkjson.dll'
+	no file 'C:\lua\..\lib\lua\5.4\dkjson.dll'
+	no file 'C:\lua\loadall.dll'
+	no file '.\dkjson.dll'
+	no file 'C:\lua\dkjson54.dll'
+	no file '.\dkjson54.dll'
+stack traceback:
+	[C]: in function 'require'
+	src/lua/merge.lua:3: in main chunk
+	[C]: in ?
+
+2024-01-12 18:25:05,134 - INFO - Processing combined data
+2024-01-12 18:25:05,177 - INFO - Created html output
+2024-01-12 18:25:05,177 - INFO - Generating pilot pages
+2024-01-12 18:27:36,172 - INFO - Running merge.lua script
+2024-01-12 18:27:36,178 - ERROR - Error running Lua script: lua54: src/lua/merge.lua:3: module 'dkjson' not found:
+	no field package.preload['dkjson']
+	no file 'C:\lua\lua\dkjson.lua'
+	no file 'C:\lua\lua\dkjson\init.lua'
+	no file 'C:\lua\dkjson.lua'
+	no file 'C:\lua\dkjson\init.lua'
+	no file 'C:\lua\..\share\lua\5.4\dkjson.lua'
+	no file 'C:\lua\..\share\lua\5.4\dkjson\init.lua'
+	no file '.\dkjson.lua'
+	no file '.\dkjson\init.lua'
+	no file 'C:\Program Files (x86)\Lua\5.1\lua\dkjson.luac'
+	no file 'C:\lua\dkjson.dll'
+	no file 'C:\lua\..\lib\lua\5.4\dkjson.dll'
+	no file 'C:\lua\loadall.dll'
+	no file '.\dkjson.dll'
+	no file 'C:\lua\dkjson54.dll'
+	no file '.\dkjson54.dll'
+stack traceback:
+	[C]: in function 'require'
+	src/lua/merge.lua:3: in main chunk
+	[C]: in ?
+
+2024-01-12 18:27:36,178 - INFO - Processing combined data
+2024-01-12 18:28:23,553 - INFO - Running merge.lua script
+2024-01-12 18:28:23,555 - ERROR - Error running Lua script: lua54: src/lua/merge.lua:3: module 'dkjson' not found:
+	no field package.preload['dkjson']
+	no file 'C:\lua\lua\dkjson.lua'
+	no file 'C:\lua\lua\dkjson\init.lua'
+	no file 'C:\lua\dkjson.lua'
+	no file 'C:\lua\dkjson\init.lua'
+	no file 'C:\lua\..\share\lua\5.4\dkjson.lua'
+	no file 'C:\lua\..\share\lua\5.4\dkjson\init.lua'
+	no file '.\dkjson.lua'
+	no file '.\dkjson\init.lua'
+	no file 'C:\Program Files (x86)\Lua\5.1\lua\dkjson.luac'
+	no file 'C:\lua\dkjson.dll'
+	no file 'C:\lua\..\lib\lua\5.4\dkjson.dll'
+	no file 'C:\lua\loadall.dll'
+	no file '.\dkjson.dll'
+	no file 'C:\lua\dkjson54.dll'
+	no file '.\dkjson54.dll'
+stack traceback:
+	[C]: in function 'require'
+	src/lua/merge.lua:3: in main chunk
+	[C]: in ?
+
+2024-01-12 18:28:23,555 - INFO - Processing combined data
+2024-01-12 18:28:23,596 - INFO - Created html output
+2024-01-12 18:28:23,596 - INFO - Generating pilot pages
+2024-01-12 18:30:23,781 - INFO - Running merge.lua script
+2024-01-12 18:30:23,788 - ERROR - Error running Lua script: lua54: src/lua/merge.lua:3: module 'dkjson' not found:
+	no field package.preload['dkjson']
+	no file 'C:\lua\lua\dkjson.lua'
+	no file 'C:\lua\lua\dkjson\init.lua'
+	no file 'C:\lua\dkjson.lua'
+	no file 'C:\lua\dkjson\init.lua'
+	no file 'C:\lua\..\share\lua\5.4\dkjson.lua'
+	no file 'C:\lua\..\share\lua\5.4\dkjson\init.lua'
+	no file '.\dkjson.lua'
+	no file '.\dkjson\init.lua'
+	no file 'C:\Program Files (x86)\Lua\5.1\lua\dkjson.luac'
+	no file 'C:\lua\dkjson.dll'
+	no file 'C:\lua\..\lib\lua\5.4\dkjson.dll'
+	no file 'C:\lua\loadall.dll'
+	no file '.\dkjson.dll'
+	no file 'C:\lua\dkjson54.dll'
+	no file '.\dkjson54.dll'
+stack traceback:
+	[C]: in function 'require'
+	src/lua/merge.lua:3: in main chunk
+	[C]: in ?
+
+2024-01-12 18:30:23,788 - INFO - Processing combined data
+2024-01-12 18:30:23,830 - INFO - Created html output
+2024-01-12 18:30:23,830 - INFO - Generating pilot pages
+2024-01-12 18:31:30,669 - INFO - Running merge.lua script
+2024-01-12 18:31:30,676 - ERROR - Error running Lua script: lua54: src/lua/merge.lua:3: module 'dkjson' not found:
+	no field package.preload['dkjson']
+	no file 'C:\lua\lua\dkjson.lua'
+	no file 'C:\lua\lua\dkjson\init.lua'
+	no file 'C:\lua\dkjson.lua'
+	no file 'C:\lua\dkjson\init.lua'
+	no file 'C:\lua\..\share\lua\5.4\dkjson.lua'
+	no file 'C:\lua\..\share\lua\5.4\dkjson\init.lua'
+	no file '.\dkjson.lua'
+	no file '.\dkjson\init.lua'
+	no file 'C:\Program Files (x86)\Lua\5.1\lua\dkjson.luac'
+	no file 'C:\lua\dkjson.dll'
+	no file 'C:\lua\..\lib\lua\5.4\dkjson.dll'
+	no file 'C:\lua\loadall.dll'
+	no file '.\dkjson.dll'
+	no file 'C:\lua\dkjson54.dll'
+	no file '.\dkjson54.dll'
+stack traceback:
+	[C]: in function 'require'
+	src/lua/merge.lua:3: in main chunk
+	[C]: in ?
+
+2024-01-12 18:31:30,676 - INFO - Processing combined data
+2024-01-12 18:31:30,718 - INFO - Created html output
+2024-01-12 18:31:30,718 - INFO - Generating pilot pages
+2024-01-12 18:33:23,316 - INFO - Running merge.lua script
+2024-01-12 18:33:23,322 - ERROR - Error running Lua script: lua54: src/lua/merge.lua:3: module 'dkjson' not found:
+	no field package.preload['dkjson']
+	no file 'C:\lua\lua\dkjson.lua'
+	no file 'C:\lua\lua\dkjson\init.lua'
+	no file 'C:\lua\dkjson.lua'
+	no file 'C:\lua\dkjson\init.lua'
+	no file 'C:\lua\..\share\lua\5.4\dkjson.lua'
+	no file 'C:\lua\..\share\lua\5.4\dkjson\init.lua'
+	no file '.\dkjson.lua'
+	no file '.\dkjson\init.lua'
+	no file 'C:\Program Files (x86)\Lua\5.1\lua\dkjson.luac'
+	no file 'C:\lua\dkjson.dll'
+	no file 'C:\lua\..\lib\lua\5.4\dkjson.dll'
+	no file 'C:\lua\loadall.dll'
+	no file '.\dkjson.dll'
+	no file 'C:\lua\dkjson54.dll'
+	no file '.\dkjson54.dll'
+stack traceback:
+	[C]: in function 'require'
+	src/lua/merge.lua:3: in main chunk
+	[C]: in ?
+
+2024-01-12 18:33:23,323 - INFO - Processing combined data
+2024-01-12 18:33:23,359 - INFO - Created html output
+2024-01-12 18:33:23,359 - INFO - Generating pilot pages
+2024-01-12 18:33:45,825 - INFO - Running merge.lua script
+2024-01-12 18:33:45,831 - ERROR - Error running Lua script: lua54: src/lua/merge.lua:3: module 'dkjson' not found:
+	no field package.preload['dkjson']
+	no file 'C:\lua\lua\dkjson.lua'
+	no file 'C:\lua\lua\dkjson\init.lua'
+	no file 'C:\lua\dkjson.lua'
+	no file 'C:\lua\dkjson\init.lua'
+	no file 'C:\lua\..\share\lua\5.4\dkjson.lua'
+	no file 'C:\lua\..\share\lua\5.4\dkjson\init.lua'
+	no file '.\dkjson.lua'
+	no file '.\dkjson\init.lua'
+	no file 'C:\Program Files (x86)\Lua\5.1\lua\dkjson.luac'
+	no file 'C:\lua\dkjson.dll'
+	no file 'C:\lua\..\lib\lua\5.4\dkjson.dll'
+	no file 'C:\lua\loadall.dll'
+	no file '.\dkjson.dll'
+	no file 'C:\lua\dkjson54.dll'
+	no file '.\dkjson54.dll'
+stack traceback:
+	[C]: in function 'require'
+	src/lua/merge.lua:3: in main chunk
+	[C]: in ?
+
+2024-01-12 18:33:45,832 - INFO - Processing combined data
+2024-01-12 18:33:45,867 - INFO - Created html output
+2024-01-12 18:33:45,867 - INFO - Generating pilot pages
+2024-01-12 18:35:04,736 - INFO - Running merge.lua script
+2024-01-12 18:35:04,736 - ERROR - Error running Lua script: lua54: src/lua/merge.lua:3: module 'dkjson' not found:
+	no field package.preload['dkjson']
+	no file 'C:\lua\lua\dkjson.lua'
+	no file 'C:\lua\lua\dkjson\init.lua'
+	no file 'C:\lua\dkjson.lua'
+	no file 'C:\lua\dkjson\init.lua'
+	no file 'C:\lua\..\share\lua\5.4\dkjson.lua'
+	no file 'C:\lua\..\share\lua\5.4\dkjson\init.lua'
+	no file '.\dkjson.lua'
+	no file '.\dkjson\init.lua'
+	no file 'C:\Program Files (x86)\Lua\5.1\lua\dkjson.luac'
+	no file 'C:\lua\dkjson.dll'
+	no file 'C:\lua\..\lib\lua\5.4\dkjson.dll'
+	no file 'C:\lua\loadall.dll'
+	no file '.\dkjson.dll'
+	no file 'C:\lua\dkjson54.dll'
+	no file '.\dkjson54.dll'
+stack traceback:
+	[C]: in function 'require'
+	src/lua/merge.lua:3: in main chunk
+	[C]: in ?
+
+2024-01-12 18:35:04,736 - INFO - Processing combined data
+2024-01-12 18:35:04,786 - INFO - Created html output
+2024-01-12 18:35:04,786 - INFO - Generating pilot pages
+2024-01-12 18:36:37,317 - INFO - Running merge.lua script
+2024-01-12 18:36:37,323 - ERROR - Error running Lua script: lua54: src/lua/merge.lua:3: module 'dkjson' not found:
+	no field package.preload['dkjson']
+	no file 'C:\lua\lua\dkjson.lua'
+	no file 'C:\lua\lua\dkjson\init.lua'
+	no file 'C:\lua\dkjson.lua'
+	no file 'C:\lua\dkjson\init.lua'
+	no file 'C:\lua\..\share\lua\5.4\dkjson.lua'
+	no file 'C:\lua\..\share\lua\5.4\dkjson\init.lua'
+	no file '.\dkjson.lua'
+	no file '.\dkjson\init.lua'
+	no file 'C:\Program Files (x86)\Lua\5.1\lua\dkjson.luac'
+	no file 'C:\lua\dkjson.dll'
+	no file 'C:\lua\..\lib\lua\5.4\dkjson.dll'
+	no file 'C:\lua\loadall.dll'
+	no file '.\dkjson.dll'
+	no file 'C:\lua\dkjson54.dll'
+	no file '.\dkjson54.dll'
+stack traceback:
+	[C]: in function 'require'
+	src/lua/merge.lua:3: in main chunk
+	[C]: in ?
+
+2024-01-12 18:36:37,324 - INFO - Processing combined data
+2024-01-12 18:36:37,366 - INFO - Created html output
+2024-01-12 18:36:37,366 - INFO - Generating pilot pages
+2024-01-12 18:41:57,681 - INFO - Running merge.lua script
+2024-01-12 18:41:57,687 - ERROR - Error running Lua script: lua54: src/lua/merge.lua:3: module 'dkjson' not found:
+	no field package.preload['dkjson']
+	no file 'C:\lua\lua\dkjson.lua'
+	no file 'C:\lua\lua\dkjson\init.lua'
+	no file 'C:\lua\dkjson.lua'
+	no file 'C:\lua\dkjson\init.lua'
+	no file 'C:\lua\..\share\lua\5.4\dkjson.lua'
+	no file 'C:\lua\..\share\lua\5.4\dkjson\init.lua'
+	no file '.\dkjson.lua'
+	no file '.\dkjson\init.lua'
+	no file 'C:\Program Files (x86)\Lua\5.1\lua\dkjson.luac'
+	no file 'C:\lua\dkjson.dll'
+	no file 'C:\lua\..\lib\lua\5.4\dkjson.dll'
+	no file 'C:\lua\loadall.dll'
+	no file '.\dkjson.dll'
+	no file 'C:\lua\dkjson54.dll'
+	no file '.\dkjson54.dll'
+stack traceback:
+	[C]: in function 'require'
+	src/lua/merge.lua:3: in main chunk
+	[C]: in ?
+
+2024-01-12 18:41:57,687 - INFO - Processing combined data
+2024-01-12 18:41:57,730 - INFO - Created html output
+2024-01-12 18:41:57,730 - INFO - Generating pilot pages
+2024-01-12 18:46:17,538 - INFO - Running merge.lua script
+2024-01-12 18:46:17,545 - ERROR - Error running Lua script: lua54: src/lua/merge.lua:3: module 'dkjson' not found:
+	no field package.preload['dkjson']
+	no file 'C:\lua\lua\dkjson.lua'
+	no file 'C:\lua\lua\dkjson\init.lua'
+	no file 'C:\lua\dkjson.lua'
+	no file 'C:\lua\dkjson\init.lua'
+	no file 'C:\lua\..\share\lua\5.4\dkjson.lua'
+	no file 'C:\lua\..\share\lua\5.4\dkjson\init.lua'
+	no file '.\dkjson.lua'
+	no file '.\dkjson\init.lua'
+	no file 'C:\Program Files (x86)\Lua\5.1\lua\dkjson.luac'
+	no file 'C:\lua\dkjson.dll'
+	no file 'C:\lua\..\lib\lua\5.4\dkjson.dll'
+	no file 'C:\lua\loadall.dll'
+	no file '.\dkjson.dll'
+	no file 'C:\lua\dkjson54.dll'
+	no file '.\dkjson54.dll'
+stack traceback:
+	[C]: in function 'require'
+	src/lua/merge.lua:3: in main chunk
+	[C]: in ?
+
+2024-01-12 18:46:17,545 - INFO - Processing combined data
+2024-01-12 18:46:17,588 - INFO - Created html output
+2024-01-12 18:46:17,588 - INFO - Generating pilot pages
+2024-01-12 18:46:24,665 - INFO - Running merge.lua script
+2024-01-12 18:46:24,671 - ERROR - Error running Lua script: lua54: src/lua/merge.lua:3: module 'dkjson' not found:
+	no field package.preload['dkjson']
+	no file 'C:\lua\lua\dkjson.lua'
+	no file 'C:\lua\lua\dkjson\init.lua'
+	no file 'C:\lua\dkjson.lua'
+	no file 'C:\lua\dkjson\init.lua'
+	no file 'C:\lua\..\share\lua\5.4\dkjson.lua'
+	no file 'C:\lua\..\share\lua\5.4\dkjson\init.lua'
+	no file '.\dkjson.lua'
+	no file '.\dkjson\init.lua'
+	no file 'C:\Program Files (x86)\Lua\5.1\lua\dkjson.luac'
+	no file 'C:\lua\dkjson.dll'
+	no file 'C:\lua\..\lib\lua\5.4\dkjson.dll'
+	no file 'C:\lua\loadall.dll'
+	no file '.\dkjson.dll'
+	no file 'C:\lua\dkjson54.dll'
+	no file '.\dkjson54.dll'
+stack traceback:
+	[C]: in function 'require'
+	src/lua/merge.lua:3: in main chunk
+	[C]: in ?
+
+2024-01-12 18:46:24,671 - INFO - Processing combined data
+2024-01-12 18:46:24,713 - INFO - Created html output
+2024-01-12 18:46:24,713 - INFO - Generating pilot pages
+2024-01-12 18:46:28,837 - DEBUG - matplotlib data path: C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\matplotlib\mpl-data
+2024-01-12 18:46:28,840 - DEBUG - CONFIGDIR=C:\Users\Gavin\.matplotlib
+2024-01-12 18:46:28,841 - DEBUG - interactive is False
+2024-01-12 18:46:28,841 - DEBUG - platform is win32
+2024-01-12 18:46:28,900 - WARNING - PyNaCl is not installed, voice will NOT be supported
+2024-01-12 18:46:28,901 - DEBUG - Using proactor: IocpProactor
+2024-01-12 18:46:28,901 - INFO - logging in using static token
+2024-01-12 18:46:29,683 - INFO - Shard ID None has connected to Gateway (Session ID: d4661061f3074673c779d08833812296).
+2024-01-12 18:51:40,136 - DEBUG - matplotlib data path: C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\matplotlib\mpl-data
+2024-01-12 18:51:40,139 - DEBUG - CONFIGDIR=C:\Users\Gavin\.matplotlib
+2024-01-12 18:51:40,140 - DEBUG - interactive is False
+2024-01-12 18:51:40,140 - DEBUG - platform is win32
+2024-01-12 18:51:40,195 - WARNING - PyNaCl is not installed, voice will NOT be supported
+2024-01-12 18:51:40,196 - DEBUG - Using proactor: IocpProactor
+2024-01-12 18:51:40,197 - INFO - logging in using static token
+2024-01-12 18:51:41,110 - INFO - Shard ID None has connected to Gateway (Session ID: 0a50a20f789da97a868af0e335bfba18).
+2024-01-12 18:56:37,287 - INFO - Running merge.lua script
+2024-01-12 18:56:37,294 - ERROR - Error running Lua script: lua54: src/lua/merge.lua:3: module 'dkjson' not found:
+	no field package.preload['dkjson']
+	no file 'C:\lua\lua\dkjson.lua'
+	no file 'C:\lua\lua\dkjson\init.lua'
+	no file 'C:\lua\dkjson.lua'
+	no file 'C:\lua\dkjson\init.lua'
+	no file 'C:\lua\..\share\lua\5.4\dkjson.lua'
+	no file 'C:\lua\..\share\lua\5.4\dkjson\init.lua'
+	no file '.\dkjson.lua'
+	no file '.\dkjson\init.lua'
+	no file 'C:\Program Files (x86)\Lua\5.1\lua\dkjson.luac'
+	no file 'C:\lua\dkjson.dll'
+	no file 'C:\lua\..\lib\lua\5.4\dkjson.dll'
+	no file 'C:\lua\loadall.dll'
+	no file '.\dkjson.dll'
+	no file 'C:\lua\dkjson54.dll'
+	no file '.\dkjson54.dll'
+stack traceback:
+	[C]: in function 'require'
+	src/lua/merge.lua:3: in main chunk
+	[C]: in ?
+
+2024-01-12 18:56:37,294 - INFO - Processing combined data
+2024-01-12 18:56:37,338 - INFO - Created html output
+2024-01-12 18:56:37,338 - INFO - Generating pilot pages
+2024-01-12 18:56:56,328 - DEBUG - matplotlib data path: C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\matplotlib\mpl-data
+2024-01-12 18:56:56,331 - DEBUG - CONFIGDIR=C:\Users\Gavin\.matplotlib
+2024-01-12 18:56:56,331 - DEBUG - interactive is False
+2024-01-12 18:56:56,332 - DEBUG - platform is win32
+2024-01-12 18:56:56,386 - WARNING - PyNaCl is not installed, voice will NOT be supported
+2024-01-12 18:56:56,387 - DEBUG - Using proactor: IocpProactor
+2024-01-12 18:56:56,388 - INFO - logging in using static token
+2024-01-12 18:56:57,188 - INFO - Shard ID None has connected to Gateway (Session ID: 39b284b69beb60d95dd0392e65211fd1).
+2024-01-12 18:57:08,081 - ERROR - Ignoring exception in command None
+discord.ext.commands.errors.CommandNotFound: Command "flight_plan" is not found
+2024-01-12 18:58:43,063 - ERROR - Ignoring exception in command file_flight_plan
+Traceback (most recent call last):
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\discord\ext\commands\core.py", line 235, in wrapped
+    ret = await coro(*args, **kwargs)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\src\bot.py", line 535, in file_flight_plan
+    if insert_success:
+       ^^^^^^^^^^^^^^
+NameError: name 'insert_success' is not defined
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\discord\ext\commands\bot.py", line 1350, in invoke
+    await ctx.command.invoke(ctx)
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\discord\ext\commands\core.py", line 1029, in invoke
+    await injected(*ctx.args, **ctx.kwargs)  # type: ignore
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\discord\ext\commands\core.py", line 244, in wrapped
+    raise CommandInvokeError(exc) from exc
+discord.ext.commands.errors.CommandInvokeError: Command raised an exception: NameError: name 'insert_success' is not defined
+2024-01-12 19:00:10,429 - DEBUG - matplotlib data path: C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\matplotlib\mpl-data
+2024-01-12 19:00:10,432 - DEBUG - CONFIGDIR=C:\Users\Gavin\.matplotlib
+2024-01-12 19:00:10,433 - DEBUG - interactive is False
+2024-01-12 19:00:10,433 - DEBUG - platform is win32
+2024-01-12 19:00:10,488 - WARNING - PyNaCl is not installed, voice will NOT be supported
+2024-01-12 19:00:10,489 - DEBUG - Using proactor: IocpProactor
+2024-01-12 19:00:10,490 - INFO - logging in using static token
+2024-01-12 19:00:11,597 - INFO - Shard ID None has connected to Gateway (Session ID: 1c638442d8101809805c9a7a2dd71a5c).
+2024-01-12 19:03:34,665 - DEBUG - matplotlib data path: C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\matplotlib\mpl-data
+2024-01-12 19:03:34,668 - DEBUG - CONFIGDIR=C:\Users\Gavin\.matplotlib
+2024-01-12 19:03:34,669 - DEBUG - interactive is False
+2024-01-12 19:03:34,669 - DEBUG - platform is win32
+2024-01-12 19:03:34,727 - WARNING - PyNaCl is not installed, voice will NOT be supported
+2024-01-12 19:03:34,727 - DEBUG - Using proactor: IocpProactor
+2024-01-12 19:03:34,728 - INFO - logging in using static token
+2024-01-12 19:03:35,579 - INFO - Shard ID None has connected to Gateway (Session ID: 6b834acbc48c77fcb8679a351b41db13).
+2024-01-12 19:04:41,985 - ERROR - Ignoring exception in command file_flight_plan
+Traceback (most recent call last):
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\discord\ext\commands\core.py", line 235, in wrapped
+    ret = await coro(*args, **kwargs)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\src\bot.py", line 560, in file_flight_plan
+    for channel in ctx.guild.channels:
+                   ^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'channels'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\discord\ext\commands\bot.py", line 1350, in invoke
+    await ctx.command.invoke(ctx)
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\discord\ext\commands\core.py", line 1029, in invoke
+    await injected(*ctx.args, **ctx.kwargs)  # type: ignore
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\discord\ext\commands\core.py", line 244, in wrapped
+    raise CommandInvokeError(exc) from exc
+discord.ext.commands.errors.CommandInvokeError: Command raised an exception: AttributeError: 'NoneType' object has no attribute 'channels'
+2024-01-12 19:24:43,601 - DEBUG - matplotlib data path: C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\matplotlib\mpl-data
+2024-01-12 19:24:43,604 - DEBUG - CONFIGDIR=C:\Users\Gavin\.matplotlib
+2024-01-12 19:24:43,605 - DEBUG - interactive is False
+2024-01-12 19:24:43,605 - DEBUG - platform is win32
+2024-01-12 19:24:43,663 - WARNING - PyNaCl is not installed, voice will NOT be supported
+2024-01-12 19:24:43,663 - DEBUG - Using proactor: IocpProactor
+2024-01-12 19:24:43,664 - INFO - logging in using static token
+2024-01-12 19:24:44,438 - INFO - Shard ID None has connected to Gateway (Session ID: 267b46fc92e8f80ad0e8a2fd5e94c1f6).
+2024-01-12 19:24:46,851 - INFO - Running merge.lua script
+2024-01-12 19:24:46,858 - ERROR - Error running Lua script: lua54: src/lua/merge.lua:3: module 'dkjson' not found:
+	no field package.preload['dkjson']
+	no file 'C:\lua\lua\dkjson.lua'
+	no file 'C:\lua\lua\dkjson\init.lua'
+	no file 'C:\lua\dkjson.lua'
+	no file 'C:\lua\dkjson\init.lua'
+	no file 'C:\lua\..\share\lua\5.4\dkjson.lua'
+	no file 'C:\lua\..\share\lua\5.4\dkjson\init.lua'
+	no file '.\dkjson.lua'
+	no file '.\dkjson\init.lua'
+	no file 'C:\Program Files (x86)\Lua\5.1\lua\dkjson.luac'
+	no file 'C:\lua\dkjson.dll'
+	no file 'C:\lua\..\lib\lua\5.4\dkjson.dll'
+	no file 'C:\lua\loadall.dll'
+	no file '.\dkjson.dll'
+	no file 'C:\lua\dkjson54.dll'
+	no file '.\dkjson54.dll'
+stack traceback:
+	[C]: in function 'require'
+	src/lua/merge.lua:3: in main chunk
+	[C]: in ?
+
+2024-01-12 19:24:46,858 - INFO - Processing combined data
+2024-01-12 19:24:46,901 - INFO - Created html output
+2024-01-12 19:24:46,901 - INFO - Generating pilot pages
+2024-01-12 19:46:25,234 - DEBUG - matplotlib data path: C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\matplotlib\mpl-data
+2024-01-12 19:46:25,237 - DEBUG - CONFIGDIR=C:\Users\Gavin\.matplotlib
+2024-01-12 19:46:25,238 - DEBUG - interactive is False
+2024-01-12 19:46:25,238 - DEBUG - platform is win32
+2024-01-12 19:47:47,997 - DEBUG - matplotlib data path: C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\matplotlib\mpl-data
+2024-01-12 19:47:48,000 - DEBUG - CONFIGDIR=C:\Users\Gavin\.matplotlib
+2024-01-12 19:47:48,001 - DEBUG - interactive is False
+2024-01-12 19:47:48,001 - DEBUG - platform is win32
+2024-01-12 19:48:49,092 - DEBUG - matplotlib data path: C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\matplotlib\mpl-data
+2024-01-12 19:48:49,095 - DEBUG - CONFIGDIR=C:\Users\Gavin\.matplotlib
+2024-01-12 19:48:49,096 - DEBUG - interactive is False
+2024-01-12 19:48:49,096 - DEBUG - platform is win32
+2024-01-12 19:48:49,153 - WARNING - PyNaCl is not installed, voice will NOT be supported
+2024-01-12 19:48:49,154 - DEBUG - Using proactor: IocpProactor
+2024-01-12 19:48:49,154 - INFO - logging in using static token
+2024-01-12 19:48:50,083 - INFO - Shard ID None has connected to Gateway (Session ID: ae3dac3e71f93ceec5e77163c3b0d3f1).
+2024-01-12 19:49:29,457 - ERROR - Ignoring exception in command pilot_info
+Traceback (most recent call last):
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\discord\ext\commands\core.py", line 235, in wrapped
+    ret = await coro(*args, **kwargs)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\src\bot.py", line 64, in pilot_info
+    pilot_details = get_pilot_details(DB_PATH, pilot_id, combined_stats)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\src\utils\stat_processing.py", line 45, in get_pilot_details
+    last_join_date = datetime.datetime.fromtimestamp(last_join).strftime('%Y-%m-%d')
+                     ^^^^^^^^^^^^^^^^^
+AttributeError: type object 'datetime.datetime' has no attribute 'datetime'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\discord\ext\commands\bot.py", line 1350, in invoke
+    await ctx.command.invoke(ctx)
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\discord\ext\commands\core.py", line 1029, in invoke
+    await injected(*ctx.args, **ctx.kwargs)  # type: ignore
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\discord\ext\commands\core.py", line 244, in wrapped
+    raise CommandInvokeError(exc) from exc
+discord.ext.commands.errors.CommandInvokeError: Command raised an exception: AttributeError: type object 'datetime.datetime' has no attribute 'datetime'
+2024-01-12 19:54:40,094 - DEBUG - matplotlib data path: C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\matplotlib\mpl-data
+2024-01-12 19:54:40,097 - DEBUG - CONFIGDIR=C:\Users\Gavin\.matplotlib
+2024-01-12 19:54:40,098 - DEBUG - interactive is False
+2024-01-12 19:54:40,098 - DEBUG - platform is win32
+2024-01-12 19:54:40,155 - WARNING - PyNaCl is not installed, voice will NOT be supported
+2024-01-12 19:54:40,155 - DEBUG - Using proactor: IocpProactor
+2024-01-12 19:54:40,156 - INFO - logging in using static token
+2024-01-12 19:54:41,058 - INFO - Shard ID None has connected to Gateway (Session ID: 1ad7c798f0c2c3ff6f1e8212f9513c62).
+2024-01-12 19:54:46,339 - ERROR - Ignoring exception in command pilot_info
+Traceback (most recent call last):
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\discord\ext\commands\core.py", line 235, in wrapped
+    ret = await coro(*args, **kwargs)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\src\bot.py", line 70, in pilot_info
+    create_award_quilt(DB_PATH, pilot_id)  # This will create the image at 'web/img/fruit_salad/[pilot_id].png'
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\src\utils\ribbon.py", line 121, in create_award_quilt
+    ribbons = [Image.open(f'web/img/ribbons/{award_id[0]}.png') for award_id in award_ids]
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\PIL\Image.py", line 3247, in open
+    fp = builtins.open(filename, "rb")
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'web/img/ribbons/4.png'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\discord\ext\commands\bot.py", line 1350, in invoke
+    await ctx.command.invoke(ctx)
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\discord\ext\commands\core.py", line 1029, in invoke
+    await injected(*ctx.args, **ctx.kwargs)  # type: ignore
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\discord\ext\commands\core.py", line 244, in wrapped
+    raise CommandInvokeError(exc) from exc
+discord.ext.commands.errors.CommandInvokeError: Command raised an exception: FileNotFoundError: [Errno 2] No such file or directory: 'web/img/ribbons/4.png'
+2024-01-12 19:54:48,849 - ERROR - Ignoring exception in command pilot_info
+Traceback (most recent call last):
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\discord\ext\commands\core.py", line 235, in wrapped
+    ret = await coro(*args, **kwargs)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\src\bot.py", line 70, in pilot_info
+    create_award_quilt(DB_PATH, pilot_id)  # This will create the image at 'web/img/fruit_salad/[pilot_id].png'
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\src\utils\ribbon.py", line 121, in create_award_quilt
+    ribbons = [Image.open(f'web/img/ribbons/{award_id[0]}.png') for award_id in award_ids]
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\PIL\Image.py", line 3247, in open
+    fp = builtins.open(filename, "rb")
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'web/img/ribbons/4.png'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\discord\ext\commands\bot.py", line 1350, in invoke
+    await ctx.command.invoke(ctx)
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\discord\ext\commands\core.py", line 1029, in invoke
+    await injected(*ctx.args, **ctx.kwargs)  # type: ignore
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\discord\ext\commands\core.py", line 244, in wrapped
+    raise CommandInvokeError(exc) from exc
+discord.ext.commands.errors.CommandInvokeError: Command raised an exception: FileNotFoundError: [Errno 2] No such file or directory: 'web/img/ribbons/4.png'
+2024-01-12 19:56:54,305 - DEBUG - matplotlib data path: C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\matplotlib\mpl-data
+2024-01-12 19:56:54,309 - DEBUG - CONFIGDIR=C:\Users\Gavin\.matplotlib
+2024-01-12 19:56:54,309 - DEBUG - interactive is False
+2024-01-12 19:56:54,309 - DEBUG - platform is win32
+2024-01-12 19:56:54,367 - WARNING - PyNaCl is not installed, voice will NOT be supported
+2024-01-12 19:56:54,368 - DEBUG - Using proactor: IocpProactor
+2024-01-12 19:56:54,368 - INFO - logging in using static token
+2024-01-12 19:56:55,224 - INFO - Shard ID None has connected to Gateway (Session ID: 251926da484a0f343618e7c9ffd5b38b).
+2024-01-12 19:57:00,113 - ERROR - Ignoring exception in command pilot_info
+Traceback (most recent call last):
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\discord\ext\commands\core.py", line 235, in wrapped
+    ret = await coro(*args, **kwargs)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\src\bot.py", line 70, in pilot_info
+    create_award_quilt(DB_PATH, pilot_id)  # This will create the image at 'web/img/fruit_salad/[pilot_id].png'
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\src\utils\ribbon.py", line 121, in create_award_quilt
+    ribbons = [Image.open(f'web/img/ribbons/{award_id[0]}.png') for award_id in award_ids]
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\PIL\Image.py", line 3247, in open
+    fp = builtins.open(filename, "rb")
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'web/img/ribbons/4.png'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\discord\ext\commands\bot.py", line 1350, in invoke
+    await ctx.command.invoke(ctx)
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\discord\ext\commands\core.py", line 1029, in invoke
+    await injected(*ctx.args, **ctx.kwargs)  # type: ignore
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\discord\ext\commands\core.py", line 244, in wrapped
+    raise CommandInvokeError(exc) from exc
+discord.ext.commands.errors.CommandInvokeError: Command raised an exception: FileNotFoundError: [Errno 2] No such file or directory: 'web/img/ribbons/4.png'
+2024-01-12 19:58:09,993 - DEBUG - matplotlib data path: C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\matplotlib\mpl-data
+2024-01-12 19:58:09,996 - DEBUG - CONFIGDIR=C:\Users\Gavin\.matplotlib
+2024-01-12 19:58:09,997 - DEBUG - interactive is False
+2024-01-12 19:58:09,997 - DEBUG - platform is win32
+2024-01-12 19:58:10,053 - WARNING - PyNaCl is not installed, voice will NOT be supported
+2024-01-12 19:58:10,054 - DEBUG - Using proactor: IocpProactor
+2024-01-12 19:58:10,054 - INFO - logging in using static token
+2024-01-12 19:58:10,883 - INFO - Shard ID None has connected to Gateway (Session ID: 5c4830a0f4450d43c0cad2cc5f1d05dd).
+2024-01-12 19:58:14,398 - ERROR - Ignoring exception in command pilot_info
+Traceback (most recent call last):
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\discord\ext\commands\core.py", line 235, in wrapped
+    ret = await coro(*args, **kwargs)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\src\bot.py", line 70, in pilot_info
+    create_award_quilt(DB_PATH, pilot_id)  # This will create the image at 'web/img/fruit_salad/[pilot_id].png'
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\src\utils\ribbon.py", line 121, in create_award_quilt
+    ribbons = [Image.open(f'web/img/ribbons/{award_id[0]}.png') for award_id in award_ids]
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\PIL\Image.py", line 3247, in open
+    fp = builtins.open(filename, "rb")
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'web/img/ribbons/4.png'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\discord\ext\commands\bot.py", line 1350, in invoke
+    await ctx.command.invoke(ctx)
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\discord\ext\commands\core.py", line 1029, in invoke
+    await injected(*ctx.args, **ctx.kwargs)  # type: ignore
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\discord\ext\commands\core.py", line 244, in wrapped
+    raise CommandInvokeError(exc) from exc
+discord.ext.commands.errors.CommandInvokeError: Command raised an exception: FileNotFoundError: [Errno 2] No such file or directory: 'web/img/ribbons/4.png'
+2024-01-12 19:59:14,399 - DEBUG - matplotlib data path: C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\matplotlib\mpl-data
+2024-01-12 19:59:14,402 - DEBUG - CONFIGDIR=C:\Users\Gavin\.matplotlib
+2024-01-12 19:59:14,403 - DEBUG - interactive is False
+2024-01-12 19:59:14,403 - DEBUG - platform is win32
+2024-01-12 19:59:14,459 - WARNING - PyNaCl is not installed, voice will NOT be supported
+2024-01-12 19:59:14,460 - DEBUG - Using proactor: IocpProactor
+2024-01-12 19:59:14,460 - INFO - logging in using static token
+2024-01-12 19:59:15,285 - INFO - Shard ID None has connected to Gateway (Session ID: a2ff1559ce97808e35a198ceddf9017b).
+2024-01-12 19:59:22,797 - ERROR - Ignoring exception in command pilot_info
+Traceback (most recent call last):
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\discord\ext\commands\core.py", line 235, in wrapped
+    ret = await coro(*args, **kwargs)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\src\bot.py", line 70, in pilot_info
+    create_award_quilt(DB_PATH, pilot_id)  # This will create the image at 'web/img/fruit_salad/[pilot_id].png'
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\src\utils\ribbon.py", line 132, in create_award_quilt
+    ribbon_width, ribbon_height = ribbons[0].size
+                                  ~~~~~~~^^^
+IndexError: list index out of range
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\discord\ext\commands\bot.py", line 1350, in invoke
+    await ctx.command.invoke(ctx)
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\discord\ext\commands\core.py", line 1029, in invoke
+    await injected(*ctx.args, **ctx.kwargs)  # type: ignore
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\discord\ext\commands\core.py", line 244, in wrapped
+    raise CommandInvokeError(exc) from exc
+discord.ext.commands.errors.CommandInvokeError: Command raised an exception: IndexError: list index out of range
+2024-01-12 20:01:43,159 - DEBUG - matplotlib data path: C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\matplotlib\mpl-data
+2024-01-12 20:01:43,161 - DEBUG - CONFIGDIR=C:\Users\Gavin\.matplotlib
+2024-01-12 20:01:43,163 - DEBUG - interactive is False
+2024-01-12 20:01:43,163 - DEBUG - platform is win32
+2024-01-12 20:01:43,218 - WARNING - PyNaCl is not installed, voice will NOT be supported
+2024-01-12 20:01:43,219 - DEBUG - Using proactor: IocpProactor
+2024-01-12 20:01:43,220 - INFO - logging in using static token
+2024-01-12 20:01:44,129 - INFO - Shard ID None has connected to Gateway (Session ID: 69fac75a7e16af8437d1c96c8f7f93fb).
+2024-01-12 20:01:47,054 - DEBUG - STREAM b'IHDR' 16 13
+2024-01-12 20:01:47,054 - DEBUG - STREAM b'IDAT' 41 266
+2024-01-12 20:01:47,057 - DEBUG - STREAM b'IHDR' 16 13
+2024-01-12 20:01:47,057 - DEBUG - STREAM b'IDAT' 41 265
+2024-01-12 20:01:47,060 - DEBUG - STREAM b'IHDR' 16 13
+2024-01-12 20:01:47,060 - DEBUG - STREAM b'IDAT' 41 274
+2024-01-12 20:01:47,063 - DEBUG - STREAM b'IHDR' 16 13
+2024-01-12 20:01:47,063 - DEBUG - STREAM b'IDAT' 41 266
+2024-01-12 20:01:47,065 - DEBUG - STREAM b'IHDR' 16 13
+2024-01-12 20:01:47,065 - DEBUG - STREAM b'IDAT' 41 269
+2024-01-12 20:01:47,067 - DEBUG - STREAM b'IHDR' 16 13
+2024-01-12 20:01:47,067 - DEBUG - STREAM b'IDAT' 41 250
+2024-01-12 20:01:47,070 - DEBUG - STREAM b'IHDR' 16 13
+2024-01-12 20:01:47,070 - DEBUG - STREAM b'IDAT' 41 259
+2024-01-12 20:01:47,073 - DEBUG - STREAM b'IHDR' 16 13
+2024-01-12 20:01:47,073 - DEBUG - STREAM b'IDAT' 41 273
+2024-01-12 20:01:47,075 - DEBUG - STREAM b'IHDR' 16 13
+2024-01-12 20:01:47,075 - DEBUG - STREAM b'IDAT' 41 246
+2024-01-12 20:01:47,077 - DEBUG - STREAM b'IHDR' 16 13
+2024-01-12 20:01:47,078 - DEBUG - STREAM b'IDAT' 41 254
+2024-01-12 20:01:47,080 - DEBUG - STREAM b'IHDR' 16 13
+2024-01-12 20:01:47,080 - DEBUG - STREAM b'IDAT' 41 262
+2024-01-12 20:01:47,082 - DEBUG - STREAM b'IHDR' 16 13
+2024-01-12 20:01:47,082 - DEBUG - STREAM b'IDAT' 41 270
+2024-01-12 20:01:47,085 - DEBUG - STREAM b'IHDR' 16 13
+2024-01-12 20:01:47,085 - DEBUG - STREAM b'IDAT' 41 246
+2024-01-12 20:01:47,087 - DEBUG - STREAM b'IHDR' 16 13
+2024-01-12 20:01:47,087 - DEBUG - STREAM b'IDAT' 41 273
+2024-01-12 20:01:47,090 - DEBUG - STREAM b'IHDR' 16 13
+2024-01-12 20:01:47,090 - DEBUG - STREAM b'IDAT' 41 253
+2024-01-12 20:04:33,932 - DEBUG - matplotlib data path: C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\matplotlib\mpl-data
+2024-01-12 20:04:33,935 - DEBUG - CONFIGDIR=C:\Users\Gavin\.matplotlib
+2024-01-12 20:04:33,936 - DEBUG - interactive is False
+2024-01-12 20:04:33,936 - DEBUG - platform is win32
+2024-01-12 20:04:33,992 - WARNING - PyNaCl is not installed, voice will NOT be supported
+2024-01-12 20:04:33,993 - DEBUG - Using proactor: IocpProactor
+2024-01-12 20:04:33,993 - INFO - logging in using static token
+2024-01-12 20:04:35,712 - INFO - Shard ID None has connected to Gateway (Session ID: f55d7b3d0cd3c6e3e94065beb05ee52f).
+2024-01-12 20:04:38,152 - DEBUG - STREAM b'IHDR' 16 13
+2024-01-12 20:04:38,152 - DEBUG - STREAM b'IDAT' 41 266
+2024-01-12 20:04:38,152 - ERROR - Ignoring exception in command pilot_info
+Traceback (most recent call last):
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\discord\ext\commands\core.py", line 235, in wrapped
+    ret = await coro(*args, **kwargs)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\src\bot.py", line 70, in pilot_info
+    create_award_quilt(DB_PATH, pilot_id)  # This will create the image at 'web/img/fruit_salad/[pilot_id].png'
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\src\utils\ribbon.py", line 128, in create_award_quilt
+    ribbon = ImageOps.expand(ribbon, border=border_size, fill='black')
+             ^^^^^^^^
+NameError: name 'ImageOps' is not defined
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\discord\ext\commands\bot.py", line 1350, in invoke
+    await ctx.command.invoke(ctx)
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\discord\ext\commands\core.py", line 1029, in invoke
+    await injected(*ctx.args, **ctx.kwargs)  # type: ignore
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\discord\ext\commands\core.py", line 244, in wrapped
+    raise CommandInvokeError(exc) from exc
+discord.ext.commands.errors.CommandInvokeError: Command raised an exception: NameError: name 'ImageOps' is not defined
+2024-01-12 20:05:03,556 - DEBUG - matplotlib data path: C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\matplotlib\mpl-data
+2024-01-12 20:05:03,559 - DEBUG - CONFIGDIR=C:\Users\Gavin\.matplotlib
+2024-01-12 20:05:03,559 - DEBUG - interactive is False
+2024-01-12 20:05:03,559 - DEBUG - platform is win32
+2024-01-12 20:05:03,614 - WARNING - PyNaCl is not installed, voice will NOT be supported
+2024-01-12 20:05:03,614 - DEBUG - Using proactor: IocpProactor
+2024-01-12 20:05:03,615 - INFO - logging in using static token
+2024-01-12 20:05:04,450 - INFO - Shard ID None has connected to Gateway (Session ID: 8341b68769a1386dc0b193088f5e3027).
+2024-01-12 20:05:16,408 - DEBUG - STREAM b'IHDR' 16 13
+2024-01-12 20:05:16,408 - DEBUG - STREAM b'IDAT' 41 266
+2024-01-12 20:05:16,409 - DEBUG - STREAM b'IHDR' 16 13
+2024-01-12 20:05:16,409 - DEBUG - STREAM b'IDAT' 41 265
+2024-01-12 20:05:16,410 - DEBUG - STREAM b'IHDR' 16 13
+2024-01-12 20:05:16,410 - DEBUG - STREAM b'IDAT' 41 274
+2024-01-12 20:05:16,410 - DEBUG - STREAM b'IHDR' 16 13
+2024-01-12 20:05:16,410 - DEBUG - STREAM b'IDAT' 41 266
+2024-01-12 20:05:16,411 - DEBUG - STREAM b'IHDR' 16 13
+2024-01-12 20:05:16,411 - DEBUG - STREAM b'IDAT' 41 269
+2024-01-12 20:05:16,412 - DEBUG - STREAM b'IHDR' 16 13
+2024-01-12 20:05:16,412 - DEBUG - STREAM b'IDAT' 41 250
+2024-01-12 20:05:16,412 - DEBUG - STREAM b'IHDR' 16 13
+2024-01-12 20:05:16,412 - DEBUG - STREAM b'IDAT' 41 259
+2024-01-12 20:05:16,413 - DEBUG - STREAM b'IHDR' 16 13
+2024-01-12 20:05:16,413 - DEBUG - STREAM b'IDAT' 41 273
+2024-01-12 20:05:16,414 - DEBUG - STREAM b'IHDR' 16 13
+2024-01-12 20:05:16,414 - DEBUG - STREAM b'IDAT' 41 246
+2024-01-12 20:05:16,414 - DEBUG - STREAM b'IHDR' 16 13
+2024-01-12 20:05:16,414 - DEBUG - STREAM b'IDAT' 41 254
+2024-01-12 20:05:16,415 - DEBUG - STREAM b'IHDR' 16 13
+2024-01-12 20:05:16,415 - DEBUG - STREAM b'IDAT' 41 262
+2024-01-12 20:05:16,416 - DEBUG - STREAM b'IHDR' 16 13
+2024-01-12 20:05:16,416 - DEBUG - STREAM b'IDAT' 41 270
+2024-01-12 20:05:16,416 - DEBUG - STREAM b'IHDR' 16 13
+2024-01-12 20:05:16,417 - DEBUG - STREAM b'IDAT' 41 246
+2024-01-12 20:05:16,417 - DEBUG - STREAM b'IHDR' 16 13
+2024-01-12 20:05:16,417 - DEBUG - STREAM b'IDAT' 41 273
+2024-01-12 20:05:16,417 - DEBUG - STREAM b'IHDR' 16 13
+2024-01-12 20:05:16,417 - DEBUG - STREAM b'IDAT' 41 253
+2024-01-12 20:05:16,419 - ERROR - Ignoring exception in command pilot_info
+Traceback (most recent call last):
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\discord\ext\commands\core.py", line 235, in wrapped
+    ret = await coro(*args, **kwargs)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\src\bot.py", line 70, in pilot_info
+    create_award_quilt(DB_PATH, pilot_id)  # This will create the image at 'web/img/fruit_salad/[pilot_id].png'
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\src\utils\ribbon.py", line 161, in create_award_quilt
+    quilt = quilt.resize(new_size, Image.ANTIALIAS)
+                                   ^^^^^^^^^^^^^^^
+AttributeError: module 'PIL.Image' has no attribute 'ANTIALIAS'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\discord\ext\commands\bot.py", line 1350, in invoke
+    await ctx.command.invoke(ctx)
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\discord\ext\commands\core.py", line 1029, in invoke
+    await injected(*ctx.args, **ctx.kwargs)  # type: ignore
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\discord\ext\commands\core.py", line 244, in wrapped
+    raise CommandInvokeError(exc) from exc
+discord.ext.commands.errors.CommandInvokeError: Command raised an exception: AttributeError: module 'PIL.Image' has no attribute 'ANTIALIAS'
+2024-01-12 20:06:21,319 - DEBUG - matplotlib data path: C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\matplotlib\mpl-data
+2024-01-12 20:06:21,322 - DEBUG - CONFIGDIR=C:\Users\Gavin\.matplotlib
+2024-01-12 20:06:21,323 - DEBUG - interactive is False
+2024-01-12 20:06:21,323 - DEBUG - platform is win32
+2024-01-12 20:06:21,378 - WARNING - PyNaCl is not installed, voice will NOT be supported
+2024-01-12 20:06:21,379 - DEBUG - Using proactor: IocpProactor
+2024-01-12 20:06:21,380 - INFO - logging in using static token
+2024-01-12 20:06:22,155 - INFO - Shard ID None has connected to Gateway (Session ID: 9608b4a3eb73cd70a43a1010a7e7f0ef).
+2024-01-12 20:06:25,026 - DEBUG - STREAM b'IHDR' 16 13
+2024-01-12 20:06:25,026 - DEBUG - STREAM b'IDAT' 41 266
+2024-01-12 20:06:25,027 - DEBUG - STREAM b'IHDR' 16 13
+2024-01-12 20:06:25,027 - DEBUG - STREAM b'IDAT' 41 265
+2024-01-12 20:06:25,028 - DEBUG - STREAM b'IHDR' 16 13
+2024-01-12 20:06:25,028 - DEBUG - STREAM b'IDAT' 41 274
+2024-01-12 20:06:25,029 - DEBUG - STREAM b'IHDR' 16 13
+2024-01-12 20:06:25,029 - DEBUG - STREAM b'IDAT' 41 266
+2024-01-12 20:06:25,029 - DEBUG - STREAM b'IHDR' 16 13
+2024-01-12 20:06:25,029 - DEBUG - STREAM b'IDAT' 41 269
+2024-01-12 20:06:25,030 - DEBUG - STREAM b'IHDR' 16 13
+2024-01-12 20:06:25,030 - DEBUG - STREAM b'IDAT' 41 250
+2024-01-12 20:06:25,031 - DEBUG - STREAM b'IHDR' 16 13
+2024-01-12 20:06:25,031 - DEBUG - STREAM b'IDAT' 41 259
+2024-01-12 20:06:25,031 - DEBUG - STREAM b'IHDR' 16 13
+2024-01-12 20:06:25,031 - DEBUG - STREAM b'IDAT' 41 273
+2024-01-12 20:06:25,032 - DEBUG - STREAM b'IHDR' 16 13
+2024-01-12 20:06:25,032 - DEBUG - STREAM b'IDAT' 41 246
+2024-01-12 20:06:25,033 - DEBUG - STREAM b'IHDR' 16 13
+2024-01-12 20:06:25,033 - DEBUG - STREAM b'IDAT' 41 254
+2024-01-12 20:06:25,033 - DEBUG - STREAM b'IHDR' 16 13
+2024-01-12 20:06:25,033 - DEBUG - STREAM b'IDAT' 41 262
+2024-01-12 20:06:25,034 - DEBUG - STREAM b'IHDR' 16 13
+2024-01-12 20:06:25,034 - DEBUG - STREAM b'IDAT' 41 270
+2024-01-12 20:06:25,035 - DEBUG - STREAM b'IHDR' 16 13
+2024-01-12 20:06:25,035 - DEBUG - STREAM b'IDAT' 41 246
+2024-01-12 20:06:25,035 - DEBUG - STREAM b'IHDR' 16 13
+2024-01-12 20:06:25,035 - DEBUG - STREAM b'IDAT' 41 273
+2024-01-12 20:06:25,036 - DEBUG - STREAM b'IHDR' 16 13
+2024-01-12 20:06:25,036 - DEBUG - STREAM b'IDAT' 41 253
+2024-01-12 20:06:52,887 - DEBUG - matplotlib data path: C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\matplotlib\mpl-data
+2024-01-12 20:06:52,891 - DEBUG - CONFIGDIR=C:\Users\Gavin\.matplotlib
+2024-01-12 20:06:52,892 - DEBUG - interactive is False
+2024-01-12 20:06:52,892 - DEBUG - platform is win32
+2024-01-12 20:06:52,949 - WARNING - PyNaCl is not installed, voice will NOT be supported
+2024-01-12 20:06:52,950 - DEBUG - Using proactor: IocpProactor
+2024-01-12 20:06:52,950 - INFO - logging in using static token
+2024-01-12 20:06:53,756 - INFO - Shard ID None has connected to Gateway (Session ID: 13c4bd88608941241d8043a043e1748e).
+2024-01-12 20:06:56,774 - DEBUG - STREAM b'IHDR' 16 13
+2024-01-12 20:06:56,774 - DEBUG - STREAM b'IDAT' 41 266
+2024-01-12 20:06:56,775 - DEBUG - STREAM b'IHDR' 16 13
+2024-01-12 20:06:56,775 - DEBUG - STREAM b'IDAT' 41 265
+2024-01-12 20:06:56,776 - DEBUG - STREAM b'IHDR' 16 13
+2024-01-12 20:06:56,776 - DEBUG - STREAM b'IDAT' 41 274
+2024-01-12 20:06:56,777 - DEBUG - STREAM b'IHDR' 16 13
+2024-01-12 20:06:56,777 - DEBUG - STREAM b'IDAT' 41 266
+2024-01-12 20:06:56,777 - DEBUG - STREAM b'IHDR' 16 13
+2024-01-12 20:06:56,777 - DEBUG - STREAM b'IDAT' 41 269
+2024-01-12 20:06:56,778 - DEBUG - STREAM b'IHDR' 16 13
+2024-01-12 20:06:56,778 - DEBUG - STREAM b'IDAT' 41 250
+2024-01-12 20:06:56,779 - DEBUG - STREAM b'IHDR' 16 13
+2024-01-12 20:06:56,779 - DEBUG - STREAM b'IDAT' 41 259
+2024-01-12 20:06:56,779 - DEBUG - STREAM b'IHDR' 16 13
+2024-01-12 20:06:56,779 - DEBUG - STREAM b'IDAT' 41 273
+2024-01-12 20:06:56,780 - DEBUG - STREAM b'IHDR' 16 13
+2024-01-12 20:06:56,780 - DEBUG - STREAM b'IDAT' 41 246
+2024-01-12 20:06:56,780 - DEBUG - STREAM b'IHDR' 16 13
+2024-01-12 20:06:56,780 - DEBUG - STREAM b'IDAT' 41 254
+2024-01-12 20:06:56,781 - DEBUG - STREAM b'IHDR' 16 13
+2024-01-12 20:06:56,781 - DEBUG - STREAM b'IDAT' 41 262
+2024-01-12 20:06:56,782 - DEBUG - STREAM b'IHDR' 16 13
+2024-01-12 20:06:56,782 - DEBUG - STREAM b'IDAT' 41 270
+2024-01-12 20:06:56,782 - DEBUG - STREAM b'IHDR' 16 13
+2024-01-12 20:06:56,782 - DEBUG - STREAM b'IDAT' 41 246
+2024-01-12 20:06:56,783 - DEBUG - STREAM b'IHDR' 16 13
+2024-01-12 20:06:56,783 - DEBUG - STREAM b'IDAT' 41 273
+2024-01-12 20:06:56,784 - DEBUG - STREAM b'IHDR' 16 13
+2024-01-12 20:06:56,784 - DEBUG - STREAM b'IDAT' 41 253
+2024-01-12 20:07:08,084 - DEBUG - STREAM b'IHDR' 16 13
+2024-01-12 20:07:08,084 - DEBUG - STREAM b'IDAT' 41 266
+2024-01-12 20:07:08,085 - DEBUG - STREAM b'IHDR' 16 13
+2024-01-12 20:07:08,085 - DEBUG - STREAM b'IDAT' 41 265
+2024-01-12 20:07:08,085 - DEBUG - STREAM b'IHDR' 16 13
+2024-01-12 20:07:08,085 - DEBUG - STREAM b'IDAT' 41 274
+2024-01-12 20:07:08,085 - DEBUG - STREAM b'IHDR' 16 13
+2024-01-12 20:07:08,085 - DEBUG - STREAM b'IDAT' 41 266
+2024-01-12 20:07:08,086 - DEBUG - STREAM b'IHDR' 16 13
+2024-01-12 20:07:08,086 - DEBUG - STREAM b'IDAT' 41 269
+2024-01-12 20:07:08,086 - DEBUG - STREAM b'IHDR' 16 13
+2024-01-12 20:07:08,086 - DEBUG - STREAM b'IDAT' 41 246
+2024-01-12 20:07:08,087 - DEBUG - STREAM b'IHDR' 16 13
+2024-01-12 20:07:08,087 - DEBUG - STREAM b'IDAT' 41 254
+2024-01-12 20:07:08,092 - DEBUG - STREAM b'IHDR' 16 13
+2024-01-12 20:07:08,092 - DEBUG - STREAM b'IDAT' 41 272
+2024-01-12 20:07:08,096 - DEBUG - STREAM b'IHDR' 16 13
+2024-01-12 20:07:08,096 - DEBUG - STREAM b'IDAT' 41 271
+2024-01-12 20:07:08,098 - DEBUG - STREAM b'IHDR' 16 13
+2024-01-12 20:07:08,098 - DEBUG - STREAM b'IDAT' 41 250
+2024-01-12 20:07:08,100 - DEBUG - STREAM b'IHDR' 16 13
+2024-01-12 20:07:08,100 - DEBUG - STREAM b'IDAT' 41 272
+2024-01-12 20:07:51,739 - DEBUG - matplotlib data path: C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\matplotlib\mpl-data
+2024-01-12 20:07:51,742 - DEBUG - CONFIGDIR=C:\Users\Gavin\.matplotlib
+2024-01-12 20:07:51,743 - DEBUG - interactive is False
+2024-01-12 20:07:51,743 - DEBUG - platform is win32
+2024-01-12 20:07:51,801 - WARNING - PyNaCl is not installed, voice will NOT be supported
+2024-01-12 20:07:51,802 - DEBUG - Using proactor: IocpProactor
+2024-01-12 20:07:51,802 - INFO - logging in using static token
+2024-01-12 20:07:52,553 - INFO - Shard ID None has connected to Gateway (Session ID: 6cb308a86d542e4a95616cdbdd19a1c9).
+2024-01-12 20:07:54,558 - DEBUG - STREAM b'IHDR' 16 13
+2024-01-12 20:07:54,558 - DEBUG - STREAM b'IDAT' 41 266
+2024-01-12 20:07:54,559 - ERROR - Ignoring exception in command pilot_info
+Traceback (most recent call last):
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\discord\ext\commands\core.py", line 235, in wrapped
+    ret = await coro(*args, **kwargs)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\src\bot.py", line 70, in pilot_info
+    create_award_quilt(DB_PATH, pilot_id)  # This will create the image at 'web/img/fruit_salad/[pilot_id].png'
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\src\utils\ribbon.py", line 128, in create_award_quilt
+    ribbon = ImageOps.expand(ribbon, border=border_size, fill='none')
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\PIL\ImageOps.py", line 434, in expand
+    color = _color(fill, image.mode)
+            ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\PIL\ImageOps.py", line 46, in _color
+    color = ImageColor.getcolor(color, mode)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\PIL\ImageColor.py", line 142, in getcolor
+    color, alpha = getrgb(color), 255
+                   ^^^^^^^^^^^^^
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\PIL\ImageColor.py", line 123, in getrgb
+    raise ValueError(msg)
+ValueError: unknown color specifier: 'none'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\discord\ext\commands\bot.py", line 1350, in invoke
+    await ctx.command.invoke(ctx)
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\discord\ext\commands\core.py", line 1029, in invoke
+    await injected(*ctx.args, **ctx.kwargs)  # type: ignore
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\discord\ext\commands\core.py", line 244, in wrapped
+    raise CommandInvokeError(exc) from exc
+discord.ext.commands.errors.CommandInvokeError: Command raised an exception: ValueError: unknown color specifier: 'none'
+2024-01-12 20:11:06,615 - DEBUG - matplotlib data path: C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\matplotlib\mpl-data
+2024-01-12 20:11:06,618 - DEBUG - CONFIGDIR=C:\Users\Gavin\.matplotlib
+2024-01-12 20:11:06,619 - DEBUG - interactive is False
+2024-01-12 20:11:06,619 - DEBUG - platform is win32
+2024-01-12 20:11:06,676 - WARNING - PyNaCl is not installed, voice will NOT be supported
+2024-01-12 20:11:06,677 - DEBUG - Using proactor: IocpProactor
+2024-01-12 20:11:06,677 - INFO - logging in using static token
+2024-01-12 20:11:07,554 - INFO - Shard ID None has connected to Gateway (Session ID: ac4afa6c065630fdd636af81276e6b85).
+2024-01-12 20:11:11,357 - DEBUG - STREAM b'IHDR' 16 13
+2024-01-12 20:11:11,357 - DEBUG - STREAM b'IDAT' 41 266
+2024-01-12 20:11:11,358 - ERROR - Ignoring exception in command pilot_info
+Traceback (most recent call last):
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\discord\ext\commands\core.py", line 235, in wrapped
+    ret = await coro(*args, **kwargs)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\src\bot.py", line 70, in pilot_info
+    create_award_quilt(DB_PATH, pilot_id)  # This will create the image at 'web/img/fruit_salad/[pilot_id].png'
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\src\utils\ribbon.py", line 128, in create_award_quilt
+    ribbon = ImageOps.expand(ribbon, border=border_size, fill='none')
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\PIL\ImageOps.py", line 434, in expand
+    color = _color(fill, image.mode)
+            ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\PIL\ImageOps.py", line 46, in _color
+    color = ImageColor.getcolor(color, mode)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\PIL\ImageColor.py", line 142, in getcolor
+    color, alpha = getrgb(color), 255
+                   ^^^^^^^^^^^^^
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\PIL\ImageColor.py", line 123, in getrgb
+    raise ValueError(msg)
+ValueError: unknown color specifier: 'none'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\discord\ext\commands\bot.py", line 1350, in invoke
+    await ctx.command.invoke(ctx)
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\discord\ext\commands\core.py", line 1029, in invoke
+    await injected(*ctx.args, **ctx.kwargs)  # type: ignore
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\discord\ext\commands\core.py", line 244, in wrapped
+    raise CommandInvokeError(exc) from exc
+discord.ext.commands.errors.CommandInvokeError: Command raised an exception: ValueError: unknown color specifier: 'none'
+2024-01-12 20:11:42,151 - DEBUG - matplotlib data path: C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\matplotlib\mpl-data
+2024-01-12 20:11:42,154 - DEBUG - CONFIGDIR=C:\Users\Gavin\.matplotlib
+2024-01-12 20:11:42,155 - DEBUG - interactive is False
+2024-01-12 20:11:42,155 - DEBUG - platform is win32
+2024-01-12 20:11:42,211 - WARNING - PyNaCl is not installed, voice will NOT be supported
+2024-01-12 20:11:42,211 - DEBUG - Using proactor: IocpProactor
+2024-01-12 20:11:42,212 - INFO - logging in using static token
+2024-01-12 20:11:43,095 - INFO - Shard ID None has connected to Gateway (Session ID: 7dfb188718e13bd42a8d33b8625c4792).
+2024-01-12 20:11:46,317 - DEBUG - STREAM b'IHDR' 16 13
+2024-01-12 20:11:46,317 - DEBUG - STREAM b'IDAT' 41 266
+2024-01-12 20:11:46,318 - DEBUG - STREAM b'IHDR' 16 13
+2024-01-12 20:11:46,318 - DEBUG - STREAM b'IDAT' 41 265
+2024-01-12 20:11:46,321 - DEBUG - STREAM b'IHDR' 16 13
+2024-01-12 20:11:46,321 - DEBUG - STREAM b'IDAT' 41 274
+2024-01-12 20:11:46,322 - DEBUG - STREAM b'IHDR' 16 13
+2024-01-12 20:11:46,322 - DEBUG - STREAM b'IDAT' 41 266
+2024-01-12 20:11:46,323 - DEBUG - STREAM b'IHDR' 16 13
+2024-01-12 20:11:46,323 - DEBUG - STREAM b'IDAT' 41 269
+2024-01-12 20:11:46,323 - DEBUG - STREAM b'IHDR' 16 13
+2024-01-12 20:11:46,323 - DEBUG - STREAM b'IDAT' 41 246
+2024-01-12 20:11:46,324 - DEBUG - STREAM b'IHDR' 16 13
+2024-01-12 20:11:46,324 - DEBUG - STREAM b'IDAT' 41 254
+2024-01-12 20:11:46,324 - DEBUG - STREAM b'IHDR' 16 13
+2024-01-12 20:11:46,325 - DEBUG - STREAM b'IDAT' 41 272
+2024-01-12 20:11:46,325 - DEBUG - STREAM b'IHDR' 16 13
+2024-01-12 20:11:46,325 - DEBUG - STREAM b'IDAT' 41 271
+2024-01-12 20:11:46,326 - DEBUG - STREAM b'IHDR' 16 13
+2024-01-12 20:11:46,326 - DEBUG - STREAM b'IDAT' 41 250
+2024-01-12 20:11:46,327 - DEBUG - STREAM b'IHDR' 16 13
+2024-01-12 20:11:46,327 - DEBUG - STREAM b'IDAT' 41 272
+2024-01-12 20:12:11,567 - DEBUG - matplotlib data path: C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\matplotlib\mpl-data
+2024-01-12 20:12:11,570 - DEBUG - CONFIGDIR=C:\Users\Gavin\.matplotlib
+2024-01-12 20:12:11,570 - DEBUG - interactive is False
+2024-01-12 20:12:11,570 - DEBUG - platform is win32
+2024-01-12 20:12:11,627 - WARNING - PyNaCl is not installed, voice will NOT be supported
+2024-01-12 20:12:11,628 - DEBUG - Using proactor: IocpProactor
+2024-01-12 20:12:11,629 - INFO - logging in using static token
+2024-01-12 20:12:12,532 - INFO - Shard ID None has connected to Gateway (Session ID: 11ee90842e789944b9ca9f7c0ee02c6c).
+2024-01-12 20:12:14,363 - DEBUG - STREAM b'IHDR' 16 13
+2024-01-12 20:12:14,363 - DEBUG - STREAM b'IDAT' 41 266
+2024-01-12 20:12:14,364 - DEBUG - STREAM b'IHDR' 16 13
+2024-01-12 20:12:14,364 - DEBUG - STREAM b'IDAT' 41 265
+2024-01-12 20:12:14,364 - DEBUG - STREAM b'IHDR' 16 13
+2024-01-12 20:12:14,365 - DEBUG - STREAM b'IDAT' 41 274
+2024-01-12 20:12:14,365 - DEBUG - STREAM b'IHDR' 16 13
+2024-01-12 20:12:14,365 - DEBUG - STREAM b'IDAT' 41 266
+2024-01-12 20:12:14,366 - DEBUG - STREAM b'IHDR' 16 13
+2024-01-12 20:12:14,366 - DEBUG - STREAM b'IDAT' 41 269
+2024-01-12 20:12:14,367 - DEBUG - STREAM b'IHDR' 16 13
+2024-01-12 20:12:14,367 - DEBUG - STREAM b'IDAT' 41 246
+2024-01-12 20:12:14,367 - DEBUG - STREAM b'IHDR' 16 13
+2024-01-12 20:12:14,367 - DEBUG - STREAM b'IDAT' 41 254
+2024-01-12 20:12:14,368 - DEBUG - STREAM b'IHDR' 16 13
+2024-01-12 20:12:14,368 - DEBUG - STREAM b'IDAT' 41 272
+2024-01-12 20:12:14,369 - DEBUG - STREAM b'IHDR' 16 13
+2024-01-12 20:12:14,369 - DEBUG - STREAM b'IDAT' 41 271
+2024-01-12 20:12:14,369 - DEBUG - STREAM b'IHDR' 16 13
+2024-01-12 20:12:14,369 - DEBUG - STREAM b'IDAT' 41 250
+2024-01-12 20:12:14,370 - DEBUG - STREAM b'IHDR' 16 13
+2024-01-12 20:12:14,370 - DEBUG - STREAM b'IDAT' 41 272
+2024-01-12 20:12:28,523 - DEBUG - matplotlib data path: C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\matplotlib\mpl-data
+2024-01-12 20:12:28,526 - DEBUG - CONFIGDIR=C:\Users\Gavin\.matplotlib
+2024-01-12 20:12:28,527 - DEBUG - interactive is False
+2024-01-12 20:12:28,527 - DEBUG - platform is win32
+2024-01-12 20:12:28,585 - WARNING - PyNaCl is not installed, voice will NOT be supported
+2024-01-12 20:12:28,586 - DEBUG - Using proactor: IocpProactor
+2024-01-12 20:12:28,587 - INFO - logging in using static token
+2024-01-12 20:12:29,454 - INFO - Shard ID None has connected to Gateway (Session ID: 1b57bdc31a2129e349c681597fba1759).
+2024-01-12 20:12:31,527 - DEBUG - STREAM b'IHDR' 16 13
+2024-01-12 20:12:31,527 - DEBUG - STREAM b'IDAT' 41 266
+2024-01-12 20:12:31,528 - DEBUG - STREAM b'IHDR' 16 13
+2024-01-12 20:12:31,528 - DEBUG - STREAM b'IDAT' 41 265
+2024-01-12 20:12:31,529 - DEBUG - STREAM b'IHDR' 16 13
+2024-01-12 20:12:31,529 - DEBUG - STREAM b'IDAT' 41 274
+2024-01-12 20:12:31,530 - DEBUG - STREAM b'IHDR' 16 13
+2024-01-12 20:12:31,530 - DEBUG - STREAM b'IDAT' 41 266
+2024-01-12 20:12:31,531 - DEBUG - STREAM b'IHDR' 16 13
+2024-01-12 20:12:31,531 - DEBUG - STREAM b'IDAT' 41 269
+2024-01-12 20:12:31,531 - DEBUG - STREAM b'IHDR' 16 13
+2024-01-12 20:12:31,531 - DEBUG - STREAM b'IDAT' 41 246
+2024-01-12 20:12:31,532 - DEBUG - STREAM b'IHDR' 16 13
+2024-01-12 20:12:31,532 - DEBUG - STREAM b'IDAT' 41 254
+2024-01-12 20:12:31,533 - DEBUG - STREAM b'IHDR' 16 13
+2024-01-12 20:12:31,533 - DEBUG - STREAM b'IDAT' 41 272
+2024-01-12 20:12:31,533 - DEBUG - STREAM b'IHDR' 16 13
+2024-01-12 20:12:31,533 - DEBUG - STREAM b'IDAT' 41 271
+2024-01-12 20:12:31,534 - DEBUG - STREAM b'IHDR' 16 13
+2024-01-12 20:12:31,534 - DEBUG - STREAM b'IDAT' 41 250
+2024-01-12 20:12:31,535 - DEBUG - STREAM b'IHDR' 16 13
+2024-01-12 20:12:31,535 - DEBUG - STREAM b'IDAT' 41 272
+2024-01-12 20:12:48,028 - DEBUG - STREAM b'IHDR' 16 13
+2024-01-12 20:12:48,028 - DEBUG - STREAM b'IDAT' 41 265
+2024-01-12 20:12:48,028 - DEBUG - STREAM b'IHDR' 16 13
+2024-01-12 20:12:48,028 - DEBUG - STREAM b'IDAT' 41 269
+2024-01-12 20:12:48,029 - DEBUG - STREAM b'IHDR' 16 13
+2024-01-12 20:12:48,029 - DEBUG - STREAM b'IDAT' 41 273
+2024-01-12 20:12:48,030 - DEBUG - STREAM b'IHDR' 16 13
+2024-01-12 20:12:48,030 - DEBUG - STREAM b'IDAT' 41 272
+2024-01-12 20:13:29,068 - DEBUG - matplotlib data path: C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\matplotlib\mpl-data
+2024-01-12 20:13:29,071 - DEBUG - CONFIGDIR=C:\Users\Gavin\.matplotlib
+2024-01-12 20:13:29,071 - DEBUG - interactive is False
+2024-01-12 20:13:29,072 - DEBUG - platform is win32
+2024-01-12 20:13:29,129 - WARNING - PyNaCl is not installed, voice will NOT be supported
+2024-01-12 20:13:29,130 - DEBUG - Using proactor: IocpProactor
+2024-01-12 20:13:29,131 - INFO - logging in using static token
+2024-01-12 20:13:30,274 - INFO - Shard ID None has connected to Gateway (Session ID: 5423ac90618fa7250458bac4fc57ee55).
+2024-01-12 20:13:32,306 - DEBUG - STREAM b'IHDR' 16 13
+2024-01-12 20:13:32,306 - DEBUG - STREAM b'IDAT' 41 266
+2024-01-12 20:13:32,307 - DEBUG - STREAM b'IHDR' 16 13
+2024-01-12 20:13:32,307 - DEBUG - STREAM b'IDAT' 41 265
+2024-01-12 20:13:32,307 - DEBUG - STREAM b'IHDR' 16 13
+2024-01-12 20:13:32,307 - DEBUG - STREAM b'IDAT' 41 274
+2024-01-12 20:13:32,308 - DEBUG - STREAM b'IHDR' 16 13
+2024-01-12 20:13:32,308 - DEBUG - STREAM b'IDAT' 41 266
+2024-01-12 20:13:32,309 - DEBUG - STREAM b'IHDR' 16 13
+2024-01-12 20:13:32,309 - DEBUG - STREAM b'IDAT' 41 269
+2024-01-12 20:13:32,309 - DEBUG - STREAM b'IHDR' 16 13
+2024-01-12 20:13:32,310 - DEBUG - STREAM b'IDAT' 41 246
+2024-01-12 20:13:32,310 - DEBUG - STREAM b'IHDR' 16 13
+2024-01-12 20:13:32,310 - DEBUG - STREAM b'IDAT' 41 254
+2024-01-12 20:13:32,311 - DEBUG - STREAM b'IHDR' 16 13
+2024-01-12 20:13:32,311 - DEBUG - STREAM b'IDAT' 41 272
+2024-01-12 20:13:32,311 - DEBUG - STREAM b'IHDR' 16 13
+2024-01-12 20:13:32,312 - DEBUG - STREAM b'IDAT' 41 271
+2024-01-12 20:13:32,312 - DEBUG - STREAM b'IHDR' 16 13
+2024-01-12 20:13:32,312 - DEBUG - STREAM b'IDAT' 41 250
+2024-01-12 20:13:32,313 - DEBUG - STREAM b'IHDR' 16 13
+2024-01-12 20:13:32,313 - DEBUG - STREAM b'IDAT' 41 272

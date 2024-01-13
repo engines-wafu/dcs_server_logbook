@@ -1,6 +1,6 @@
 import hashlib, random, sqlite3
 import numpy as np
-from PIL import Image
+from PIL import Image, ImageOps
 from matplotlib.colors import to_rgb
 
 class ribbonGenerator:
@@ -107,6 +107,75 @@ pattern_generator = ribbonGenerator(
     min_block_width_percent=5,
     max_block_width_percent=40
 )
+
+def create_award_quilt(db_path, pilot_id):
+    # Database connection
+    conn = sqlite3.connect(db_path)
+    cursor = conn.cursor()
+
+    # Fetch award_names for the given pilot_id
+    cursor.execute("SELECT a.award_name FROM Pilot_Awards pa INNER JOIN Awards a ON pa.award_id = a.award_id WHERE pa.pilot_id = ?", (pilot_id,))
+    award_names = cursor.fetchall()
+
+    ribbons = []
+    for award_name in award_names:
+        try:
+            ribbon_path = f'web/img/ribbons/{award_name[0]}.png'
+            ribbon = Image.open(ribbon_path)
+
+            # Add a black border around the ribbon
+            border_size = 4  # Adjust the border size as needed
+            ribbon = ImageOps.expand(ribbon, border=border_size, fill='black')
+
+            ribbons.append(ribbon)
+        except FileNotFoundError:
+            print(f"Ribbon image not found for award_name: {award_name[0]}")
+
+    # Check if ribbons list is empty
+    if not ribbons:
+        print(f"No ribbon images found for pilot_id: {pilot_id}")
+        return
+
+    # Calculate quilt dimensions and spacing
+    num_ribbons = len(ribbons)
+    ribbon_width, ribbon_height = ribbons[0].size
+    spacing = 5  # Spacing between ribbons
+
+    row_width = min(3, num_ribbons)  # Max 3 ribbons per row
+    num_rows = (num_ribbons + 2) // 3
+    quilt_width = row_width * ribbon_width + (row_width - 1) * spacing
+    quilt_height = num_rows * ribbon_height + (num_rows - 1) * spacing
+
+    # Create a new image for the quilt with transparent background
+    quilt = Image.new('RGBA', (quilt_width, quilt_height), (0, 0, 0, 0))
+
+    # Calculate the number of ribbons in the top row
+    top_row_ribbons = num_ribbons % 3 or 3
+    start_index = 0
+
+    # Arrange ribbons in the quilt
+    for i in range(num_rows):
+        ribbons_in_row = top_row_ribbons if i == 0 else 3
+        for j in range(ribbons_in_row):
+            x = j * (ribbon_width + spacing) + ((3 - ribbons_in_row) * ribbon_width + spacing) // 2
+            y = i * (ribbon_height + spacing)
+            quilt.paste(ribbons[start_index + j], (x, y))
+        start_index += ribbons_in_row
+
+    # Resize the quilt
+    scale_factor = 0.25
+    new_size = (int(quilt.width * scale_factor), int(quilt.height * scale_factor))
+    quilt = quilt.resize(new_size, Image.Resampling.LANCZOS)
+
+    # Save the quilt
+    filename = f'web/img/fruit_salad/{pilot_id}.png'
+    quilt.save(filename)
+
+    # Close the database connection
+    conn.close()
+
+# Example usage
+# create_award_quilt('example_pilot_id')
 
 # Fetch award names using the instance of the pattern generator
 award_names = pattern_generator.fetch_award_names(db_path)
