@@ -1,4 +1,4 @@
-import discord, asyncio, logging, time
+import discord, asyncio, logging, time, datetime, tracemalloc
 from main import main
 from utils.ribbon import ribbonGenerator, create_award_quilt
 from discord.ext import commands
@@ -6,6 +6,8 @@ from html_generator.html_generator import generate_index_html, load_combined_sta
 from utils.stat_processing import get_pilot_qualifications_with_details, get_pilot_awards_with_details, get_pilot_details
 from database.db_crud import *
 from config import TOKEN, DB_PATH, JSON_PATH
+
+tracemalloc.start()
 
 # Configure logging
 log_filename = f"data/logs/bot.log"
@@ -30,6 +32,90 @@ predefined_colors = [
   "#6B8E23"
 ]
 
+@bot.command(name='add_squadron')
+async def add_squadron(ctx):
+    """
+    Adds a new squadron to the database, with details collected via direct messages (DMs).
+
+    This command guides the user through the process of adding a new squadron by prompting for necessary information such as squadron ID, motto, service branch, commission date, commanding officer, aircraft type, and pseudo type. The process is conducted through DMs for privacy. Once all details are provided, the new squadron is added to the database, and a confirmation is sent in an embedded message format.
+
+    Usage: !add_squadron
+
+    Example:
+    User: !add_squadron
+    Bot: [In DMs] Please enter the squadron ID:
+    User: [Responds in DMs with each detail as prompted]
+    Bot: [In server] Squadron Added Successfully [with detailed embed]
+    """
+    # Helper function to prompt for input in DMs and return response
+    async def prompt_and_get_response_dm(prompt):
+        dm_channel = await ctx.author.create_dm()
+        await dm_channel.send(prompt)
+        response = await get_response_dm(ctx, dm_channel)
+        return response if response else None
+
+    # Function to wait for user's response in DMs
+    async def get_response_dm(ctx, dm_channel):
+        def check(m):
+            return m.author == ctx.author and m.channel == dm_channel
+
+        try:
+            response = await bot.wait_for('message', check=check, timeout=90.0)
+            return response.content
+        except asyncio.TimeoutError:
+            await dm_channel.send("You did not respond in time.")
+            return None
+
+    # Collecting squadron details from the user
+    logging.info("Starting to collect squadron details via DMs.")
+    squadron_id = await prompt_and_get_response_dm("Please enter the squadron ID:")
+    if not squadron_id:
+        logging.warning("Squadron ID not provided. Exiting command.")
+        return
+
+    squadron_motto = await prompt_and_get_response_dm("Please enter the squadron motto:")
+    squadron_service = await prompt_and_get_response_dm("Please enter the squadron service branch (e.g., RN, Army, RAF):")
+    squadron_commission_date_str = await prompt_and_get_response_dm("Please enter the squadron commission date (YYYY-MM-DD):")
+    if not squadron_commission_date_str:
+        return
+    squadron_commanding_officer = await prompt_and_get_response_dm("Please enter the name of the commanding officer:")
+    squadron_aircraft_type = await prompt_and_get_response_dm("Please enter the squadron aircraft type:")
+    squadron_pseudo_type = await prompt_and_get_response_dm("Please enter the squadron pseudo type:")
+
+    # Validate squadron_service
+    valid_services = ['RN', 'Army', 'RAF']
+    if squadron_service not in valid_services:
+        await ctx.send(f"Invalid service branch. Please choose from {valid_services}.")
+        return
+
+    # Convert the date string to epoch time
+    try:
+        commission_date_obj = datetime.datetime.strptime(squadron_commission_date_str, "%Y-%m-%d")
+        squadron_commission_date = int(commission_date_obj.timestamp())
+    except ValueError:
+        await ctx.send("Invalid date format. Please use YYYY-MM-DD.")
+        return
+
+    logging.info("Starting the !add_squadron command.")
+    try:
+        # Run the add_squadron function in an executor to avoid blocking
+        loop = asyncio.get_event_loop()
+        insert_success = await loop.run_in_executor(None, add_squadron, 
+            DB_PATH, squadron_id, squadron_motto, squadron_service,
+            squadron_commission_date, squadron_commanding_officer,
+            squadron_aircraft_type, squadron_pseudo_type)
+
+        if insert_success:
+            logging.info(f"Squadron {squadron_id} added successfully to the database.")
+            # Sending confirmation message with embedded format
+            # [Construct and send the embedded message as before]
+        else:
+            logging.warning(f"Failed to add Squadron {squadron_id} to the database.")
+            await ctx.send("Failed to add the squadron.")
+    except Exception as e:
+        logging.exception("Exception occurred in !add_squadron command: ", exc_info=e)
+        await ctx.send("An error occurred while processing the command.")
+
 def generate_single_ribbon(award_name, file_path, min_block_width_percent=10, max_block_width_percent=30):
     pattern_generator = ribbonGenerator(
         award_name,
@@ -52,7 +138,21 @@ async def get_response(ctx):
 
 @bot.command(name='pilot_info')
 async def pilot_info(ctx, *, pilot_name):
+    """
+    Retrieves and displays information about a specific pilot.
+    
+    This command searches for a pilot by their name and provides details including service, rank, total hours, last join date, qualifications, and awards. It also generates a ribbon quilt image representing the pilot's awards and includes it in the response.
+    
+    Usage: !pilot_info <pilot_name>
+    
+    Parameters:
+    pilot_name (str): The name of the pilot to retrieve information for.
+    
+    Example:
+    !pilot_info JohnDoe
+    """
     pilot_id = find_pilot_id_by_name(DB_PATH, pilot_name)
+    pilot_name = get_pilot_name(DB_PATH, pilot_id)
 
     if not pilot_id:
         await ctx.send(f"No pilot found with the name: {pilot_name}")
@@ -106,6 +206,18 @@ async def pilot_info(ctx, *, pilot_name):
 
 @bot.command(name='update_logbook')
 async def update_logbook(ctx):
+    """
+    Updates the logbook with the latest data.
+
+    This command triggers an update process that refreshes the logbook with the most current information. It's typically used to ensure that the logbook reflects recent changes or additions.
+
+    Usage: !update_logbook
+
+    Example:
+    User: !update_logbook
+    Bot: Updating logbook, please wait...
+    Bot: Logbook updated successfully.
+    """
     try:
         await ctx.send("Updating logbook, please wait...")
         main()  # Call the main function from main.py
@@ -115,6 +227,20 @@ async def update_logbook(ctx):
 
 @bot.command(name='create_award')
 async def create_award(ctx):
+    """
+    Creates a new award and generates a ribbon for it.
+    
+    This command prompts the user to enter the name and optional description of a new award. The award is then added to the database, and a ribbon image is generated to represent it.
+    
+    Usage: !create_award
+    
+    Example:
+    User: !create_award
+    Bot: Enter award name:
+    User: Outstanding Service
+    Bot: Enter award description (optional):
+    User: Awarded for exceptional service
+    """
     # Ask for award details
     await ctx.send("Enter award name:")
     award_name = await get_response(ctx)
@@ -140,6 +266,22 @@ async def create_award(ctx):
     
 @bot.command(name='create_qualification')
 async def create_qualification(ctx):
+    """
+    Creates a new qualification entry in the database.
+
+    This command prompts the user to enter the name, optional description, and optional duration (in days) of a new qualification. The qualification is then added to the database.
+
+    Usage: !create_qualification
+
+    Example:
+    User: !create_qualification
+    Bot: Enter qualification name:
+    User: Advanced Flight Training
+    Bot: Enter qualification description (optional):
+    User: Qualification for advanced flight techniques
+    Bot: Enter qualification duration in days (optional, enter a number or skip):
+    User: 365
+    """
     # Ask for qualification details
     await ctx.send("Enter qualification name:")
     qualification_name = await get_response(ctx)
@@ -162,6 +304,21 @@ async def create_qualification(ctx):
 
 @bot.command(name='give_award')
 async def give_award(ctx):
+    """
+    Assigns specified awards to selected pilots.
+    
+    This command first displays a list of available awards. The user is then prompted to enter the names of the pilots (comma-separated) and the IDs of the awards (also comma-separated). The specified awards are then assigned to the given pilots.
+    
+    Usage: !give_award
+
+    Example:
+    User: !give_award
+    Bot: [Displays list of available awards]
+    Bot: Enter pilot name(s) (comma-separated):
+    User: JohnDoe, JaneDoe
+    Bot: Enter the award ID(s) from the list above (comma-separated):
+    User: 1, 3
+    """
     # Retrieve available awards
     awards = get_awards(DB_PATH)
     if not awards:
@@ -201,6 +358,21 @@ async def give_award(ctx):
 
 @bot.command(name='give_qualification')
 async def give_qualification(ctx):
+    """
+    Assigns specified qualifications to selected pilots.
+
+    This command first displays a list of available qualifications. The user is then prompted to enter the names of the pilots (comma-separated) and the ID of the qualification. The specified qualification is then assigned to the given pilots, along with its duration.
+
+    Usage: !give_qualification
+
+    Example:
+    User: !give_qualification
+    Bot: [Displays list of available qualifications]
+    Bot: Enter pilot name(s) (comma-separated):
+    User: JohnDoe, JaneDoe
+    Bot: Enter the qualification ID from the list above:
+    User: 1
+    """
     # Retrieve available qualifications
     qualifications = get_qualifications(DB_PATH)
     if not qualifications:
@@ -242,6 +414,22 @@ async def give_qualification(ctx):
 
 @bot.command(name='clear_award')
 async def clear_award(ctx, *, pilot_name):
+    """
+    Removes specified awards from a pilot's record.
+
+    This command displays the awards currently assigned to a pilot. The user is then prompted to select which awards to remove by entering their IDs (comma-separated). The selected awards are then removed from the pilot's record.
+
+    Usage: !clear_award <pilot_name>
+
+    Parameters:
+    pilot_name (str): The name of the pilot whose awards are to be cleared.
+
+    Example:
+    User: !clear_award JohnDoe
+    Bot: [Displays JohnDoe's awards]
+    Bot: Select award IDs to remove (comma-separated).
+    User: 1, 3
+    """
     pilot_id = find_pilot_id_by_name(DB_PATH, pilot_name)
     if not pilot_id:
         await ctx.send(f"No pilot found with the name: {pilot_name}")
@@ -273,6 +461,22 @@ async def clear_award(ctx, *, pilot_name):
 
 @bot.command(name='clear_qualification')
 async def clear_qualification(ctx, *, pilot_name):
+    """
+    Removes specified qualifications from a pilot's record.
+
+    This command displays the qualifications currently assigned to a pilot. The user is then prompted to select which qualifications to remove by entering their IDs (comma-separated). The selected qualifications are then removed from the pilot's record.
+
+    Usage: !clear_qualification <pilot_name>
+
+    Parameters:
+    pilot_name (str): The name of the pilot whose qualifications are to be cleared.
+
+    Example:
+    User: !clear_qualification JohnDoe
+    Bot: [Displays JohnDoe's qualifications]
+    Bot: Select qualification IDs to remove (comma-separated).
+    User: 1, 2
+    """
     pilot_id = find_pilot_id_by_name(DB_PATH, pilot_name)
     if not pilot_id:
         await ctx.send(f"No pilot found with the name: {pilot_name}")
@@ -304,6 +508,22 @@ async def clear_qualification(ctx, *, pilot_name):
 
 @bot.command(name='assign_co')
 async def assign_co(ctx, *, pilot_name):
+    """
+    Assigns a pilot as the commanding officer (CO) of a squadron.
+
+    This command finds a pilot based on the provided name and displays a list of available squadrons. The user is then prompted to select a squadron number for the pilot to lead as CO.
+
+    Usage: !assign_co <pilot_name>
+
+    Parameters:
+    pilot_name (str): The name of the pilot to be assigned as CO.
+
+    Example:
+    User: !assign_co JohnDoe
+    Bot: [Displays list of squadrons]
+    Bot: Select squadron by number:
+    User: 1
+    """
     pilot_id = find_pilot_id_by_name(DB_PATH, pilot_name)
     pilot_name = get_pilot_full_name(DB_PATH, pilot_id)
 
@@ -346,6 +566,22 @@ async def assign_co(ctx, *, pilot_name):
 
 @bot.command(name='assign_pilot')
 async def assign_pilot(ctx, *, pilot_names):  # Use '*' to capture all text after the command
+    """
+    Assigns one or more pilots to squadrons.
+
+    This command allows the user to assign multiple pilots to squadrons. The user enters the names of the pilots (comma-separated), and then selects the squadrons for each pilot by entering their numbers (also comma-separated).
+
+    Usage: !assign_pilot <pilot_names>
+
+    Parameters:
+    pilot_names (str): The names of the pilots to be assigned, separated by commas.
+
+    Example:
+    User: !assign_pilot JohnDoe, JaneDoe
+    Bot: [Displays list of squadrons]
+    Bot: Select squadrons for the pilots by number:
+    User: 1, 2
+    """
     pilot_names = [name.strip() for name in pilot_names.split(',')]  # Split and strip pilot names
 
     pilot_ids = []
@@ -397,6 +633,22 @@ async def assign_pilot(ctx, *, pilot_names):  # Use '*' to capture all text afte
 
 @bot.command(name='assign_aircraft')
 async def assign_aircraft(ctx):
+    """
+    Assigns selected aircraft to a squadron or sends them to maintenance.
+
+    This command first prompts the user to select aircraft by IDs. Then, it offers a choice to assign these aircraft to a specific squadron or send them to maintenance. The user selects a squadron by number or types 'maintenance' to send the aircraft to maintenance.
+
+    Usage: !assign_aircraft
+
+    Example:
+    User: !assign_aircraft
+    Bot: [Displays list of aircraft]
+    Bot: Enter aircraft ID(s) (comma-separated):
+    User: 1, 2
+    Bot: [Displays list of squadrons and maintenance option]
+    Bot: Select a squadron by number or type 'maintenance':
+    User: maintenance
+    """
     # Fetch and display aircraft types
     aircraft_types = fetch_aircraft_types(DB_PATH)
     embed = discord.Embed(title="Aircraft Types", description="Select an aircraft type by number:", color=0x00ff00)
@@ -472,6 +724,19 @@ async def assign_aircraft(ctx):
 
 @bot.command(name='file_flight_plan')
 async def file_flight_plan(ctx):
+    """
+    Files a new flight plan by collecting necessary details through direct messages (DMs).
+
+    This command facilitates the filing of a flight plan by prompting the user to provide various details such as aircraft type, callsign, flight rules, type of flight, departure and destination aerodromes, route, and other relevant information. The process is carried out through DMs for privacy and ease of data collection. Upon successful filing, a confirmation message is sent, and the flight plan details are updated in the database.
+
+    Usage: !file_flight_plan
+
+    Example:
+    User: !file_flight_plan
+    Bot: [In DMs] Please enter the aircraft type (e.g., FGR1 X2):
+    User: [Responds in DMs with each detail as prompted]
+    Bot: [In server] Flight Plan Filed Successfully [with detailed embed]
+    """
     # Helper function to prompt for input, convert to uppercase, and return response in DMs
     async def prompt_and_get_response_dm(prompt):
         dm_channel = await ctx.author.create_dm()
@@ -585,5 +850,40 @@ async def file_flight_plan(ctx):
     else:
         # Handle the failure to insert a new flight plan
         await ctx.send("Failed to file the flight plan.")
+
+# Override the default help command
+bot.remove_command('help')
+
+@bot.command(name='help')
+async def help_command(ctx, command_name=None):
+    """
+    Provides help information about commands using embedded messages, with headlines from docstrings.
+
+    Usage: !help [command_name]
+
+    Parameters:
+    command_name (str, optional): The name of the command to get detailed help for.
+
+    Example:
+    !help  # Lists all commands with headlines from docstrings
+    !help assign_pilot  # Detailed help for assign_pilot command
+    """
+    if command_name:
+        # Detailed help for a specific command
+        command = bot.get_command(command_name)
+        if command:
+            help_text = command.help or 'No detailed help available for this command.'
+            embed = discord.Embed(title=f"!{command.name}", description=help_text, color=0x00ff00)
+            await ctx.send(embed=embed)
+        else:
+            await ctx.send(f"No command named '{command_name}' found.")
+    else:
+        # General help - list all commands with embedded format
+        embed = discord.Embed(title="Available Commands", description="List of all available commands and their arguments:", color=0x00ff00)
+        for command in bot.commands:
+            # Extract the first line (headline) from the command's docstring
+            first_line = command.help.split('\n')[0] if command.help else 'No description available'
+            embed.add_field(name=f"!{command.name} {command.signature}", value=first_line, inline=False)
+        await ctx.send(embed=embed)
 
 bot.run(TOKEN)

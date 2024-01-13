@@ -1,5 +1,5 @@
 # config.py
-TOKEN = ''
+TOKEN = 'MTE5MTAwMDgxOTgwNjUwMzA2Mg.GH9wr2.rJ6J-PcmC70IkpE6hDnSjq1QatVghP9X4lUx20'
 DB_PATH = 'data/db/mayfly.db'
 JSON_PATH = 'data/stats/combinedStats.json'
 STATS_FILES = [

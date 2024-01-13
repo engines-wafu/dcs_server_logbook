@@ -1,8 +1,9 @@
-import sqlite3
-import time
-import logging
+import sqlite3, time, logging, tracemalloc
 
 # Configure logging
+
+tracemalloc.start()
+
 log_filename = f"data/logs/database.log"
 logging.basicConfig(filename=log_filename, level=logging.DEBUG, 
                     format='%(asctime)s - %(levelname)s - %(message)s')
@@ -275,30 +276,37 @@ def remove_qualification_from_pilot(db_path, pilot_id, qualification_id):
         conn.close()
 
 def add_squadron(db_path, squadron_id, squadron_motto, squadron_service, squadron_commission_date, squadron_commanding_officer, squadron_aircraft_type, squadron_pseudo_type):
-    """
-    Adds a new squadron to the database.
+    logging.info(f"Adding new squadron to the database: {squadron_id}")
+    try:
+        # Log the connection attempt
+        logging.debug(f"Connecting to the database at {db_path}")
+        conn = sqlite3.connect(db_path)
+        cursor = conn.cursor()
 
-    :param db_path: Path to the SQLite database file.
-    :param squadron_id: Unique identifier for the squadron.
-    :param squadron_motto: Motto of the squadron.
-    :param squadron_service: Service branch of the squadron (e.g., RN, Army, RAF).
-    :param squadron_commission_date: Date of commissioning.
-    :param squadron_commanding_officer: Name of the commanding officer.
-    :param squadron_aircraft_type: Type of aircraft used by the squadron.
-    :param squadron_pseudo_type: Pseudo type of the squadron.
-    """
-    conn = sqlite3.connect(db_path)
-    cursor = conn.cursor()
+        # Log the execution of the SQL command
+        logging.debug("Preparing to execute INSERT command")
+        sql_command = """
+            INSERT INTO Squadrons (squadron_id, squadron_motto, squadron_service, squadron_commission_date, squadron_commanding_officer, squadron_aircraft_type, squadron_pseudo_type)
+            VALUES (?, ?, ?, ?, ?, ?, ?)
+        """
+        logging.debug(f"SQL Command: {sql_command}")
+        logging.debug(f"Values: {squadron_id}, {squadron_motto}, {squadron_service}, {squadron_commission_date}, {squadron_commanding_officer}, {squadron_aircraft_type}, {squadron_pseudo_type}")
+        
+        cursor.execute(sql_command, (squadron_id, squadron_motto, squadron_service, squadron_commission_date, squadron_commanding_officer, squadron_aircraft_type, squadron_pseudo_type))
 
-    cursor.execute("""
-        INSERT INTO Squadrons (squadron_id, squadron_motto, squadron_service, squadron_commission_date, squadron_commanding_officer, squadron_aircraft_type, squadron_pseudo_type)
-        VALUES (?, ?, ?, ?, ?, ?, ?)
-    """, (squadron_id, squadron_motto, squadron_service, squadron_commission_date, squadron_commanding_officer, squadron_aircraft_type, squadron_pseudo_type))
+        # Log the commit
+        logging.debug("Committing the transaction")
+        conn.commit()
 
-    conn.commit()
-    conn.close()
+        # Log the closing of the connection
+        logging.debug("Closing the database connection")
+        conn.close()
 
-    logging.info("Squadron added: " + str(squadron_id))
+        logging.info("Squadron successfully added to the database.")
+        return True
+    except Exception as e:
+        logging.exception("Exception occurred while adding squadron to the database: ", exc_info=e)
+        return False
 
 def edit_squadron(db_path, squadron_id, squadron_motto=None, squadron_service=None, squadron_commission_date=None, squadron_commanding_officer=None, squadron_aircraft_type=None, squadron_pseudo_type=None):
     """
