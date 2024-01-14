@@ -40,6 +40,7 @@ def get_pilot_details(db_path, pilot_id, combined_stats):
 
     # Calculate total hours and last join date from combined_stats
     pilot_stats = combined_stats.get(pilot_id, {})
+    total_hours = 0
     total_hours = sum(seconds_to_hours(aircraft_stats.get('total', 0)) for aircraft_type, aircraft_stats in pilot_stats.get('times', {}).items())
     last_join = pilot_stats.get('lastJoin', 0)
     last_join_date = datetime.datetime.fromtimestamp(last_join).strftime('%Y-%m-%d')

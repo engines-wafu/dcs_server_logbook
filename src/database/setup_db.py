@@ -2,7 +2,7 @@ import sqlite3
 import logging
 
 # Configure logging
-log_filename = f"data/logs/databse.log"
+log_filename = f"data/logs/database.log"
 logging.basicConfig(filename=log_filename, level=logging.DEBUG, 
                     format='%(asctime)s - %(levelname)s - %(message)s')
 
@@ -28,6 +28,13 @@ create_tables_commands = [
         pilot_service TEXT CHECK(pilot_service IN ('RN', 'Army', 'RAF')),
         pilot_rank TEXT NOT NULL
     );''',
+    '''CREATE TABLE IF NOT EXISTS Former_Pilots (
+        pilot_id TEXT PRIMARY KEY,
+        pilot_name TEXT NOT NULL,
+        pilot_service TEXT CHECK(pilot_service IN ('RN', 'Army', 'RAF')),
+        pilot_rank TEXT NOT NULL,
+        removal_date TEXT
+    );''',
     '''CREATE TABLE IF NOT EXISTS Squadrons (
         squadron_id TEXT PRIMARY KEY,
         squadron_motto TEXT,
@@ -45,7 +52,7 @@ create_tables_commands = [
         aircraft_etbol INTEGER,
         aircraft_remarks TEXT
     );''',
-    '''CREATE TABLE IF NOT EXISTS IcaoIfrFlightPlan (
+    '''CREATE TABLE IF NOT EXISTS Flight_Plans (
         id INTEGER PRIMARY KEY,
         aircraft_type TEXT,
         aircraft_callsign TEXT,

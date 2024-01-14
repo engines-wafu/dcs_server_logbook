@@ -124,8 +124,8 @@ def create_award_quilt(db_path, pilot_id):
             ribbon = Image.open(ribbon_path)
 
             # Add a black border around the ribbon
-            #border_size = 4  # Adjust the border size as needed
-            #ribbon = ImageOps.expand(ribbon, border=border_size, fill='black')
+            border_size = 4  # Adjust the border size as needed
+            ribbon = ImageOps.expand(ribbon, border=border_size, fill='black')
 
             ribbons.append(ribbon)
         except FileNotFoundError:
@@ -164,8 +164,6 @@ def create_award_quilt(db_path, pilot_id):
             quilt.paste(ribbons[start_index + j], (x, y))
         start_index += ribbons_in_row
 
-
-    quilt.save(f'web/img/fruit_salad/{pilot_id}_debug.png')
 
     # Resize the quilt
     scale_factor = 0.25

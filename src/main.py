@@ -9,7 +9,7 @@ from config import DB_PATH, JSON_PATH, STATS_FILES
 
 # Configure logging
 log_filename = "data/logs/mayfly.log"
-logging.basicConfig(filename=log_filename, level=logging.DEBUG, 
+logging.basicConfig(filename=log_filename, level=logging.ERROR, 
                     format='%(asctime)s - %(levelname)s - %(message)s')
 
 def run_lua_script(script_path):
@@ -42,7 +42,7 @@ def process_combined_data(file_path):
     except Exception as e:
         logging.error(f"Error reading file: {e}")
 
-def main():
+def update_logbook_report():
     lua_script_path = 'src/lua/merge.lua'
 
     logging.info("Running merge.lua script")
@@ -72,4 +72,4 @@ def main():
             generate_pilot_info_page(DB_PATH, pilot_id, pilot_specific_stats, output_dir)
 
 if __name__ == "__main__":
-    main()
+    update_logbook_report()

@@ -1,5 +1,6 @@
-import discord, asyncio, logging, time, datetime, tracemalloc
-from main import main
+import discord, asyncio, logging, time, datetime, tracemalloc, os
+from utils.time_management import epoch_from_date
+from main import update_logbook_report
 from utils.ribbon import ribbonGenerator, create_award_quilt
 from discord.ext import commands
 from discord.ext.commands import has_role, CheckFailure
@@ -111,6 +112,78 @@ async def get_response(ctx):
         await ctx.send("You did not respond in time.")
         return None
 
+@bot.command(name='add_pilot')
+@is_commanding_officer()
+async def add_pilot_command(ctx):
+    """
+    Adds a new pilot to the database, with details collected via direct messages (DMs).
+
+    This command guides the user through the process of adding a new pilot by prompting for necessary information such as pilot ID, name, service branch, and rank. The process is conducted through DMs for privacy. Once all details are provided, the new pilot is added to the database, and a confirmation is sent in an embedded message format.
+
+    Usage: !add_pilot
+
+    Example:
+    User: !add_pilot
+    Bot: [In DMs] Please enter the pilot ID:
+    User: [Responds in DMs with each detail as prompted]
+    Bot: [In server] Pilot Added Successfully [with detailed embed]
+    """
+    details = {}
+    fields = [
+        ("pilot ID", None),
+        ("pilot name", None),
+        ("pilot service branch (e.g., RN, Army, RAF)", ['RN', 'Army', 'RAF']),
+        ("pilot rank", None)
+    ]
+
+    for field, validation in fields:
+        response = await prompt_for_details(ctx, f"Please enter the {field}:")
+        if not response:
+            await ctx.author.send("No response provided. Exiting command.")
+            return
+
+        if isinstance(validation, list) and response not in validation:
+            await ctx.author.send(f"Invalid input. Please choose from {validation}.")
+            return
+        else:
+            details[field] = response
+
+    # Construct and send the confirmation embed via DM
+    embed = discord.Embed(title="Please Confirm Pilot Details", color=0x00ff00)
+    for field, value in details.items():
+        embed.add_field(name=field.capitalize(), value=value, inline=False)
+
+    dm_channel = await ctx.author.create_dm()
+    confirmation_message = await dm_channel.send(embed=embed)
+    await confirmation_message.add_reaction("✅")
+    await confirmation_message.add_reaction("❌")
+
+    # Check for user's reaction in DM
+    def check(reaction, user):
+        return user == ctx.author and reaction.message.id == confirmation_message.id and str(reaction.emoji) in ["✅", "❌"]
+
+    try:
+        reaction, user = await bot.wait_for('reaction_add', timeout=60.0, check=check)
+        if str(reaction.emoji) == "✅":
+            # User confirmed, proceed with adding to database
+            loop = asyncio.get_event_loop()
+            insert_success = await loop.run_in_executor(None, add_pilot_to_db, 
+                                                       DB_PATH, 
+                                                       details["pilot ID"], 
+                                                       details["pilot name"], 
+                                                       details["pilot service branch (e.g., RN, Army, RAF)"], 
+                                                       details["pilot rank"])
+            if insert_success:
+                logging.info(f"Pilot {details['pilot ID']} added successfully to the database.")
+                await ctx.send(embed=embed)  # Send confirmation in the text channel
+            else:
+                logging.warning(f"Failed to add Pilot {details['pilot ID']} to the database.")
+                await ctx.author.send("Failed to add the pilot.")
+        elif str(reaction.emoji) == "❌":
+            await ctx.author.send("Pilot addition canceled.")
+    except asyncio.TimeoutError:
+        await ctx.author.send("No response received. Pilot addition canceled.")
+
 @bot.command(name='add_squadron')
 @is_server_admin()
 async def add_squadron_command(ctx):
@@ -208,6 +281,81 @@ async def add_squadron_command(ctx):
     except asyncio.TimeoutError:
         await ctx.author.send("No response received. Squadron addition canceled.")
 
+@bot.command(name='edit_pilot')
+@is_server_admin()
+async def edit_pilot_command(ctx, pilot_name: str):
+    """
+    Edits an existing pilot's details in the database.
+
+    This command allows server admins to update the details of a pilot by specifying the pilot's name. 
+    Upon invocation with a pilot's name, the bot prompts the admin to update various details of the pilot, 
+    such as their service branch and rank. The admin can confirm or cancel these updates.
+
+    Usage: 
+    !edit_pilot [pilot_name]
+
+    Example:
+    User: !edit_pilot JohnDoe
+    Bot: [Prompts for updates in DMs]
+    User: [Responds with updated details]
+    Bot: [Shows confirmation embed]
+    User: [Confirms the updates]
+    """
+
+    # Find the pilot ID by name
+    pilot_id = find_pilot_id_by_name(DB_PATH, pilot_name)
+    if not pilot_id:
+        await ctx.send(f"No pilot found with the name: {pilot_name}")
+        return
+
+    # Load combined stats from the JSON file
+    combined_stats = load_combined_stats(JSON_PATH)
+
+    # Fetch current details of the pilot
+    current_details = get_pilot_details(DB_PATH, pilot_id, combined_stats)
+    if not current_details:
+        await ctx.send(f"No details found for Pilot: {pilot_name}.")
+        return
+
+    # Create a Direct Message channel with the user
+    dm_channel = await ctx.author.create_dm()
+
+    # Fields that can be edited
+    editable_fields = ["name", "service", "rank"]
+
+    # Collect new details from the user
+    new_details = {}
+    for field in editable_fields:
+        new_value = await prompt_for_details(ctx, f"Enter the new {field} (or type 'skip' to keep current):")
+        if new_value.lower() != 'skip':
+            new_details[field] = new_value
+
+    # Construct confirmation embed with new details
+    confirm_embed = discord.Embed(title="Confirm Pilot Updates", color=0x00ff00)
+    for field, value in new_details.items():
+        confirm_embed.add_field(name=field.capitalize(), value=value, inline=False)
+    confirm_message = await dm_channel.send(embed=confirm_embed)
+    await confirm_message.add_reaction("✅")
+    await confirm_message.add_reaction("❌")
+
+    # Check for user's reaction
+    def check(reaction, user):
+        return user == ctx.author and reaction.message.id == confirm_message.id and str(reaction.emoji) in ["✅", "❌"]
+
+    try:
+        reaction, user = await bot.wait_for('reaction_add', timeout=60.0, check=check)
+        if str(reaction.emoji) == "✅":
+            # User confirmed, update details in database
+            update_success = update_pilot(DB_PATH, pilot_id, new_details)
+            if update_success:
+                await ctx.send(f"Pilot {pilot_name} updated successfully.")
+            else:
+                await ctx.send("Failed to update the pilot.")
+        elif str(reaction.emoji) == "❌":
+            await ctx.author.send("Update canceled.")
+    except asyncio.TimeoutError:
+        await ctx.author.send("No response received. Update canceled.")
+
 @bot.command(name='edit_squadron')
 @is_server_admin()
 async def edit_squadron_command(ctx):
@@ -278,14 +426,26 @@ async def edit_squadron_command(ctx):
 
     # Collect new details from the user
     new_details = {}
+    confirmation_details = {}  # For confirmation message
     for field in editable_fields:
         new_value = await prompt_for_details(ctx, f"Enter the new {field} (or type 'skip' to keep current):")
         if new_value.lower() != 'skip':
-            new_details[field] = new_value
+            if field == "commission date":
+                # Convert date to epoch format for database update
+                epoch_value = epoch_from_date(new_value)
+                if epoch_value is not None:
+                    new_details[field] = epoch_value
+                    confirmation_details[field] = new_value  # Keep user-friendly format for confirmation
+                else:
+                    await dm_channel.send("Invalid date format for commission date. Update canceled.")
+                    return
+            else:
+                new_details[field] = new_value
+                confirmation_details[field] = new_value  # Same value for other fields
 
-    # Construct confirmation embed with new details
+    # Construct confirmation embed with user-friendly details
     confirm_embed = discord.Embed(title="Confirm Squadron Updates", color=0x00ff00)
-    for field, value in new_details.items():
+    for field, value in confirmation_details.items():
         confirm_embed.add_field(name=field.capitalize(), value=value, inline=False)
     confirm_message = await dm_channel.send(embed=confirm_embed)
     await confirm_message.add_reaction("✅")
@@ -309,6 +469,50 @@ async def edit_squadron_command(ctx):
     except asyncio.TimeoutError:
         await ctx.author.send("No response received. Update canceled.")
 
+@bot.command(name='remove_pilot')
+@is_server_admin()
+async def remove_pilot_command(ctx, pilot_name: str):
+    """
+    Archives a pilot by moving their record from the Pilots table to the Former_Pilots table.
+
+    This command is used to archive pilots who are no longer active. It first verifies the existence of the pilot 
+    in the database and then prompts the admin for confirmation before moving the pilot's record to the Former_Pilots table.
+
+    Usage: 
+    !remove_pilot [pilot_name]
+
+    Example:
+    User: !remove_pilot JohnDoe
+    Bot: Are you sure you want to archive Pilot JohnDoe? (Yes/No)
+    User: Yes
+    Bot: Pilot JohnDoe archived successfully.
+    """
+
+    # Find the pilot ID by name
+    pilot_id = find_pilot_id_by_name(DB_PATH, pilot_name)
+    if not pilot_id:
+        await ctx.send(f"No pilot found with the name: {pilot_name}")
+        return
+
+    # Ask for confirmation
+    confirm_message = await ctx.send(f"Are you sure you want to archive Pilot {pilot_name}? (Yes/No)")
+
+    def check(m):
+        return m.author == ctx.author and m.channel == ctx.channel and m.content.lower() in ["yes", "no"]
+
+    try:
+        message = await bot.wait_for('message', check=check, timeout=30.0)
+        if message.content.lower() == "yes":
+            # Proceed with moving to Former_Pilots
+            if move_pilot_to_former(DB_PATH, pilot_id):
+                await ctx.send(f"Pilot {pilot_name} archived successfully.")
+            else:
+                await ctx.send("Failed to archive the pilot.")
+        else:
+            await ctx.send("Pilot archiving canceled.")
+    except asyncio.TimeoutError:
+        await ctx.send("No response received. Pilot archiving canceled.")
+
 @bot.command(name='pilot_info')
 async def pilot_info(ctx, *, pilot_name):
     """
@@ -325,26 +529,16 @@ async def pilot_info(ctx, *, pilot_name):
     !pilot_info JohnDoe
     """
     pilot_id = find_pilot_id_by_name(DB_PATH, pilot_name)
-    pilot_name = get_pilot_name(DB_PATH, pilot_id)
-
     if not pilot_id:
         await ctx.send(f"No pilot found with the name: {pilot_name}")
         return
 
-    # Load combined stats from the JSON file
-    combined_stats = load_combined_stats(JSON_PATH)  # Ensure that JSON_PATH is correctly defined and accessible
-
+    # Load combined stats and fetch pilot details
+    combined_stats = load_combined_stats(JSON_PATH)
     pilot_details = get_pilot_details(DB_PATH, pilot_id, combined_stats)
     if not pilot_details:
         await ctx.send(f"No details found for pilot: {pilot_name}")
         return
-
-    # Generate ribbon quilt image
-    create_award_quilt(DB_PATH, pilot_id)  # This will create the image at 'web/img/fruit_salad/[pilot_id].png'
-
-    # Prepare the image file to be sent
-    image_path = f'web/img/fruit_salad/{pilot_id}.png'
-    image_file = discord.File(image_path, filename='fruit_salad.png')
 
     # Construct the embedded message with pilot details
     embed = discord.Embed(title=f"Pilot Information: {pilot_name}", color=0x00ff00)
@@ -355,27 +549,31 @@ async def pilot_info(ctx, *, pilot_name):
 
     # Add qualifications and awards to the embed
     qualifications = get_pilot_qualifications_with_details(DB_PATH, pilot_id)
-    awards = get_pilot_awards_with_details(DB_PATH, pilot_id)
-    
-    # Add qualifications to embed
     if qualifications:
         qualifications_text = "\n".join(f"{q[1]} (Issued: {q[3]}, Expires: {q[4]})" for q in qualifications)
         embed.add_field(name="Qualifications", value=qualifications_text, inline=False)
     else:
         embed.add_field(name="Qualifications", value="None", inline=False)
 
-    # Add awards to embed
+    awards = get_pilot_awards_with_details(DB_PATH, pilot_id)
     if awards:
         awards_text = "\n".join(f"{a[1]} (Issued: {a[3]})" for a in awards)
         embed.add_field(name="Awards", value=awards_text, inline=False)
     else:
         embed.add_field(name="Awards", value="None", inline=False)
 
-    # Attach the image to the embed
-    embed.set_image(url="attachment://fruit_salad.png")
+    # Generate ribbon quilt image
+    create_award_quilt(DB_PATH, pilot_id)  # Generate the quilt image
 
-    # Send the embed with the image
-    await ctx.send(file=image_file, embed=embed)
+    # Generate ribbon quilt image and prepare the image file to be sent if it exists
+    image_path = f'web/img/fruit_salad/{pilot_id}.png'
+    if os.path.exists(image_path):
+        with open(image_path, 'rb') as img:
+            image_file = discord.File(img, filename='fruit_salad.png')
+            embed.set_image(url="attachment://fruit_salad.png")
+            await ctx.send(file=image_file, embed=embed)
+    else:
+        await ctx.send(embed=embed)
 
 @bot.command(name='update_logbook')
 @is_server_admin()
@@ -394,7 +592,7 @@ async def update_logbook(ctx):
     """
     try:
         await ctx.send("Updating logbook, please wait...")
-        main()  # Call the main function from main.py
+        update_logbook_report()  # Call the main function from main.py
         await ctx.send("Logbook updated successfully.")
     except Exception as e:
         await ctx.send(f"An error occurred while updating the logbook: {e}")

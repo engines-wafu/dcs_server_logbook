@@ -1,4 +1,31 @@
 import sqlite3, time, logging
+import datetime
+
+def find_pilot_id_by_name(db_path, pilot_name):
+    """
+    Searches for a pilot in the database by name and returns their ID.
+
+    Args:
+        db_path (str): The path to the database file.
+        pilot_name (str): The name of the pilot to search for.
+
+    Returns:
+        str: The ID of the pilot if found, otherwise None.
+    """
+    try:
+        conn = sqlite3.connect(db_path)
+        cursor = conn.cursor()
+
+        sql_query = "SELECT pilot_id FROM Pilots WHERE pilot_name = ?"
+        cursor.execute(sql_query, (pilot_name,))
+        result = cursor.fetchone()
+
+        return result[0] if result else None
+    except sqlite3.Error as e:
+        print(f"Database error: {e}")
+        return None
+    finally:
+        conn.close()
 
 def get_squadron_ids(db_path):
     """
@@ -344,6 +371,25 @@ def remove_qualification_from_pilot(db_path, pilot_id, qualification_id):
     finally:
         conn.close()
 
+def add_pilot_to_db(db_path, pilot_id, pilot_name, pilot_service, pilot_rank):
+    """Adds a new pilot to the database."""
+    try:
+        conn = sqlite3.connect(db_path)
+        cursor = conn.cursor()
+
+        sql_command = """
+            INSERT INTO Pilots (pilot_id, pilot_name, pilot_service, pilot_rank)
+            VALUES (?, ?, ?, ?)
+        """
+        cursor.execute(sql_command, (pilot_id, pilot_name, pilot_service, pilot_rank))
+        conn.commit()
+        return True
+    except sqlite3.Error as e:
+        print(f"Database error: {e}")
+        return False
+    finally:
+        conn.close()
+
 def add_squadron_to_db(db_path, squadron_id, squadron_motto, squadron_service, squadron_commission_date, squadron_commanding_officer, squadron_aircraft_type, squadron_pseudo_type):
     logging.info(f"Adding new squadron to the database: {squadron_id}")
     try:
@@ -376,6 +422,52 @@ def add_squadron_to_db(db_path, squadron_id, squadron_motto, squadron_service, s
     except Exception as e:
         logging.exception("Exception occurred while adding squadron to the database: ", exc_info=e)
         return False
+
+def update_pilot(db_path, pilot_id, new_details):
+    """Updates a pilot's details in the database.
+
+    Args:
+        db_path (str): The path to the database file.
+        pilot_id (str): The ID of the pilot to update.
+        new_details (dict): A dictionary containing the pilot's updated details.
+    """
+    try:
+        conn = sqlite3.connect(db_path)
+        cursor = conn.cursor()
+
+        # Prepare the SQL update query
+        updates = []
+        values = []
+        for key, value in new_details.items():
+            # Map the user-friendly field names to database column names
+            db_column = {
+                "name": "pilot_name",
+                "service": "pilot_service",
+                "rank": "pilot_rank"
+            }.get(key)
+
+            if db_column:
+                updates.append(f"{db_column} = ?")
+                values.append(value)
+
+        if not updates:
+            print("No valid fields to update.")
+            return False
+
+        # Add the pilot_id to the values list for the WHERE clause
+        values.append(pilot_id)
+
+        # Execute the update query
+        sql_update_query = f"UPDATE Pilots SET {', '.join(updates)} WHERE pilot_id = ?"
+        cursor.execute(sql_update_query, values)
+        conn.commit()
+
+        return True
+    except sqlite3.Error as e:
+        print(f"Database error: {e}")
+        return False
+    finally:
+        conn.close()
 
 def edit_squadron(db_path, squadron_id, squadron_motto=None, squadron_service=None, squadron_commission_date=None, squadron_commanding_officer=None, squadron_aircraft_type=None, squadron_pseudo_type=None):
     """
@@ -442,6 +534,32 @@ def delete_squadron(db_path, squadron_id):
     conn.close()
 
     logging.info("Squadron deleted: " + str(squadron_id))
+
+def move_pilot_to_former(db_path, pilot_id):
+    try:
+        conn = sqlite3.connect(db_path)
+        cursor = conn.cursor()
+
+        # Fetch the pilot's details
+        cursor.execute("SELECT * FROM Pilots WHERE pilot_id = ?", (pilot_id,))
+        pilot_data = cursor.fetchone()
+
+        if pilot_data:
+            # Add removal date and insert into Former_Pilots
+            removal_date = datetime.datetime.now().strftime("%Y-%m-%d")
+            cursor.execute("INSERT INTO Former_Pilots VALUES (?, ?, ?, ?, ?)", 
+                           (*pilot_data, removal_date))
+
+            # Delete the pilot from Pilots
+            cursor.execute("DELETE FROM Pilots WHERE pilot_id = ?", (pilot_id,))
+            conn.commit()
+
+        return True
+    except sqlite3.Error as e:
+        print(f"Database error: {e}")
+        return False
+    finally:
+        conn.close()
 
 def get_pilot_full_name(db_path, pilot_id):
     """

@@ -1,5 +1,5 @@
 # src/html_generator/html_generator.py
-import sqlite3, os
+import sqlite3, os, datetime
 from database.db_crud import *
 from utils.stat_processing import load_combined_stats, generate_squadron_pilot_rows
 
@@ -72,8 +72,10 @@ def generate_index_html(db_path, output_path, json_file_path):
 
     # Fetch squadron information including aircraft type
     cursor.execute("""
-        SELECT squadron_id, squadron_motto, squadron_pseudo_type, squadron_commanding_officer, squadron_aircraft_type
-        FROM Squadrons""")
+        SELECT squadron_id, squadron_motto, squadron_pseudo_type, 
+               squadron_commanding_officer, squadron_aircraft_type, squadron_commission_date
+        FROM Squadrons
+        ORDER BY squadron_commission_date ASC""")
     squadrons = cursor.fetchall()
 
     if not squadrons:
@@ -83,14 +85,22 @@ def generate_index_html(db_path, output_path, json_file_path):
 
     # Start building the HTML content for each squadron
     squadrons_content = ""
-    for squadron_id, motto, pseudo_type, commanding_officer_id, squadron_aircraft_type in squadrons:
+    for squadron_id, motto, pseudo_type, commanding_officer_id, squadron_aircraft_type, commission_date in squadrons:
+        try:
+            commission_epoch = int(commission_date)  # Convert string to integer
+            readable_date = datetime.datetime.fromtimestamp(commission_epoch).strftime('%e %B %Y')
+        except ValueError:
+            readable_date = "Unknown"  # or some default value
+
         co_full_name = get_pilot_full_name(db_path, commanding_officer_id)
+ 
         pilot_rows_html = generate_squadron_pilot_rows(db_path, squadron_id, squadron_aircraft_type, combined_stats)
 
         squadrons_content += f"""
             <section>
                 <h2>{squadron_id}</h2>
                 <p>Motto: {motto}</p>
+                <p>Commission Date: {readable_date}</p>
                 <p>Type: {pseudo_type}</p>
                 <h3>Commanding Officer</h3>
                 <p>{co_full_name if co_full_name else 'Not available'}</p>
@@ -230,8 +240,6 @@ def generate_mayfly_html(db_path, output_file_path):
     # Fetch data from the database
     squadrons = get_squadron_ids(db_path)
     assigned_aircraft, unassigned_aircraft = fetch_aircraft_by_squadron(db_path)
-    logging.info("Example assigned aircraft data: " + str(assigned_aircraft[0]))
-    logging.info("Example unassigned aircraft data: " + str(unassigned_aircraft[0]))
 
     # Read the navbar HTML content
     navbar_path = 'web/navbar.html'
