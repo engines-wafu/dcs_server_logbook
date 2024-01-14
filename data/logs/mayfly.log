@@ -8847,3 +8847,937 @@ stack traceback:
 2024-01-13 14:26:59,756 - INFO - Example unassigned aircraft data: ('XZ457', 'Harrier GR9', 'S', None, None)
 2024-01-13 14:26:59,756 - INFO - Created html output
 2024-01-13 14:26:59,756 - INFO - Generating pilot pages
+2024-01-13 16:10:42,859 - DEBUG - matplotlib data path: C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\matplotlib\mpl-data
+2024-01-13 16:10:42,863 - DEBUG - CONFIGDIR=C:\Users\Gavin\.matplotlib
+2024-01-13 16:10:42,863 - DEBUG - interactive is False
+2024-01-13 16:10:42,864 - DEBUG - platform is win32
+2024-01-13 16:10:42,920 - WARNING - PyNaCl is not installed, voice will NOT be supported
+2024-01-13 16:10:42,921 - DEBUG - Using proactor: IocpProactor
+2024-01-13 16:10:42,921 - INFO - logging in using static token
+2024-01-13 16:10:43,767 - INFO - Shard ID None has connected to Gateway (Session ID: 2075b13f0f81b5d5825a335acf20ae1b).
+2024-01-13 16:12:52,718 - DEBUG - matplotlib data path: C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\matplotlib\mpl-data
+2024-01-13 16:12:52,722 - DEBUG - CONFIGDIR=C:\Users\Gavin\.matplotlib
+2024-01-13 16:12:52,723 - DEBUG - interactive is False
+2024-01-13 16:12:52,723 - DEBUG - platform is win32
+2024-01-13 16:12:52,781 - WARNING - PyNaCl is not installed, voice will NOT be supported
+2024-01-13 16:12:52,784 - DEBUG - Using proactor: IocpProactor
+2024-01-13 16:12:52,784 - INFO - logging in using static token
+2024-01-13 16:12:53,564 - INFO - Shard ID None has connected to Gateway (Session ID: 3e501d58b1e2037aaca835ec21d2e3ba).
+2024-01-13 16:13:07,996 - DEBUG - STREAM b'IHDR' 16 13
+2024-01-13 16:13:07,997 - DEBUG - STREAM b'IDAT' 41 266
+2024-01-13 16:13:08,001 - DEBUG - STREAM b'IHDR' 16 13
+2024-01-13 16:13:08,001 - DEBUG - STREAM b'IDAT' 41 265
+2024-01-13 16:13:08,004 - DEBUG - STREAM b'IHDR' 16 13
+2024-01-13 16:13:08,004 - DEBUG - STREAM b'IDAT' 41 274
+2024-01-13 16:13:08,006 - DEBUG - STREAM b'IHDR' 16 13
+2024-01-13 16:13:08,006 - DEBUG - STREAM b'IDAT' 41 266
+2024-01-13 16:13:08,009 - DEBUG - STREAM b'IHDR' 16 13
+2024-01-13 16:13:08,009 - DEBUG - STREAM b'IDAT' 41 269
+2024-01-13 16:13:08,011 - DEBUG - STREAM b'IHDR' 16 13
+2024-01-13 16:13:08,012 - DEBUG - STREAM b'IDAT' 41 250
+2024-01-13 16:13:08,014 - DEBUG - STREAM b'IHDR' 16 13
+2024-01-13 16:13:08,014 - DEBUG - STREAM b'IDAT' 41 259
+2024-01-13 16:13:08,017 - DEBUG - STREAM b'IHDR' 16 13
+2024-01-13 16:13:08,018 - DEBUG - STREAM b'IDAT' 41 273
+2024-01-13 16:13:08,020 - DEBUG - STREAM b'IHDR' 16 13
+2024-01-13 16:13:08,020 - DEBUG - STREAM b'IDAT' 41 246
+2024-01-13 16:13:08,023 - DEBUG - STREAM b'IHDR' 16 13
+2024-01-13 16:13:08,023 - DEBUG - STREAM b'IDAT' 41 254
+2024-01-13 16:13:08,026 - DEBUG - STREAM b'IHDR' 16 13
+2024-01-13 16:13:08,026 - DEBUG - STREAM b'IDAT' 41 262
+2024-01-13 16:13:08,028 - DEBUG - STREAM b'IHDR' 16 13
+2024-01-13 16:13:08,028 - DEBUG - STREAM b'IDAT' 41 270
+2024-01-13 16:13:08,031 - DEBUG - STREAM b'IHDR' 16 13
+2024-01-13 16:13:08,031 - DEBUG - STREAM b'IDAT' 41 246
+2024-01-13 16:13:08,034 - DEBUG - STREAM b'IHDR' 16 13
+2024-01-13 16:13:08,034 - DEBUG - STREAM b'IDAT' 41 273
+2024-01-13 16:13:08,036 - DEBUG - STREAM b'IHDR' 16 13
+2024-01-13 16:13:08,036 - DEBUG - STREAM b'IDAT' 41 253
+2024-01-13 16:14:42,896 - INFO - Starting to collect squadron details via DMs.
+2024-01-13 16:15:16,956 - INFO - Starting the !add_squadron command.
+2024-01-13 16:15:16,956 - INFO - Squadron 809 NAS added successfully to the database.
+2024-01-13 16:21:24,143 - DEBUG - matplotlib data path: C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\matplotlib\mpl-data
+2024-01-13 16:21:24,146 - DEBUG - CONFIGDIR=C:\Users\Gavin\.matplotlib
+2024-01-13 16:21:24,147 - DEBUG - interactive is False
+2024-01-13 16:21:24,147 - DEBUG - platform is win32
+2024-01-13 16:21:24,205 - WARNING - PyNaCl is not installed, voice will NOT be supported
+2024-01-13 16:21:24,207 - DEBUG - Using proactor: IocpProactor
+2024-01-13 16:21:24,208 - INFO - logging in using static token
+2024-01-13 16:21:25,150 - INFO - Shard ID None has connected to Gateway (Session ID: 56da189e94456b6f6b304541c3d903cd).
+2024-01-13 16:25:33,099 - DEBUG - matplotlib data path: C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\matplotlib\mpl-data
+2024-01-13 16:25:33,102 - DEBUG - CONFIGDIR=C:\Users\Gavin\.matplotlib
+2024-01-13 16:25:33,103 - DEBUG - interactive is False
+2024-01-13 16:25:33,103 - DEBUG - platform is win32
+2024-01-13 16:25:33,159 - WARNING - PyNaCl is not installed, voice will NOT be supported
+2024-01-13 16:25:33,162 - DEBUG - Using proactor: IocpProactor
+2024-01-13 16:25:33,163 - INFO - logging in using static token
+2024-01-13 16:25:34,047 - INFO - Shard ID None has connected to Gateway (Session ID: 396d9751b1523b08f1bc897baee211b8).
+2024-01-13 16:25:41,586 - INFO - Starting to collect squadron details via DMs.
+2024-01-13 16:26:07,913 - ERROR - Exception occurred in add_squadron command: 
+Traceback (most recent call last):
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\src\bot.py", line 108, in add_squadron_command
+    insert_success = await loop.run_in_executor(None, add_squadron_to_db, DB_PATH, *details.values())
+                                                      ^^^^^^^^^^^^^^^^^^
+NameError: name 'add_squadron_to_db' is not defined. Did you mean: 'add_squadron_command'?
+2024-01-13 16:28:49,321 - DEBUG - matplotlib data path: C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\matplotlib\mpl-data
+2024-01-13 16:28:49,329 - DEBUG - CONFIGDIR=C:\Users\Gavin\.matplotlib
+2024-01-13 16:28:49,329 - DEBUG - interactive is False
+2024-01-13 16:28:49,329 - DEBUG - platform is win32
+2024-01-13 16:28:49,387 - WARNING - PyNaCl is not installed, voice will NOT be supported
+2024-01-13 16:28:49,391 - DEBUG - Using proactor: IocpProactor
+2024-01-13 16:28:49,391 - INFO - logging in using static token
+2024-01-13 16:28:50,267 - INFO - Shard ID None has connected to Gateway (Session ID: 5ac60f0c19f547d3167dcd700a69232a).
+2024-01-13 16:28:56,173 - INFO - Starting to collect squadron details via DMs.
+2024-01-13 16:29:27,085 - INFO - Adding new squadron to the database: 809 NAS
+2024-01-13 16:29:27,085 - DEBUG - Connecting to the database at data/db/mayfly.db
+2024-01-13 16:29:27,085 - DEBUG - Preparing to execute INSERT command
+2024-01-13 16:29:27,085 - DEBUG - SQL Command: 
+            INSERT INTO Squadrons (squadron_id, squadron_motto, squadron_service, squadron_commission_date, squadron_commanding_officer, squadron_aircraft_type, squadron_pseudo_type)
+            VALUES (?, ?, ?, ?, ?, ?, ?)
+        
+2024-01-13 16:29:27,085 - DEBUG - Values: 809 NAS, do zooms, RN, 1680678000, nil, AV8BNA, Harrier GR9
+2024-01-13 16:29:27,088 - DEBUG - Committing the transaction
+2024-01-13 16:29:27,095 - DEBUG - Closing the database connection
+2024-01-13 16:29:27,095 - INFO - Squadron successfully added to the database.
+2024-01-13 16:29:27,095 - INFO - Squadron 809 NAS added successfully to the database.
+2024-01-13 16:34:48,734 - INFO - Starting to collect squadron details via DMs.
+2024-01-13 16:35:21,914 - INFO - Adding new squadron to the database: 809 NAS
+2024-01-13 16:35:21,914 - DEBUG - Connecting to the database at data/db/mayfly.db
+2024-01-13 16:35:21,914 - DEBUG - Preparing to execute INSERT command
+2024-01-13 16:35:21,915 - DEBUG - SQL Command: 
+            INSERT INTO Squadrons (squadron_id, squadron_motto, squadron_service, squadron_commission_date, squadron_commanding_officer, squadron_aircraft_type, squadron_pseudo_type)
+            VALUES (?, ?, ?, ?, ?, ?, ?)
+        
+2024-01-13 16:35:21,915 - DEBUG - Values: 809 NAS, do zooms, RN, 1704096000, nil, AV8BNA, Harrier FA2
+2024-01-13 16:35:21,917 - DEBUG - Committing the transaction
+2024-01-13 16:35:21,923 - DEBUG - Closing the database connection
+2024-01-13 16:35:21,924 - INFO - Squadron successfully added to the database.
+2024-01-13 16:35:21,924 - INFO - Squadron 809 NAS added successfully to the database.
+2024-01-13 16:47:56,214 - DEBUG - matplotlib data path: C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\matplotlib\mpl-data
+2024-01-13 16:47:56,217 - DEBUG - CONFIGDIR=C:\Users\Gavin\.matplotlib
+2024-01-13 16:47:56,218 - DEBUG - interactive is False
+2024-01-13 16:47:56,218 - DEBUG - platform is win32
+2024-01-13 16:47:56,275 - WARNING - PyNaCl is not installed, voice will NOT be supported
+2024-01-13 16:47:56,277 - DEBUG - Using proactor: IocpProactor
+2024-01-13 16:47:56,278 - INFO - logging in using static token
+2024-01-13 16:47:57,208 - INFO - Shard ID None has connected to Gateway (Session ID: 3d72bac7067b6d3121c178b370a77018).
+2024-01-13 16:48:07,811 - INFO - Starting to collect squadron details via DMs.
+2024-01-13 16:48:53,405 - INFO - Starting to collect squadron details via DMs.
+2024-01-13 16:49:38,574 - ERROR - Ignoring exception in command add_squadron
+Traceback (most recent call last):
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\discord\ext\commands\core.py", line 235, in wrapped
+    ret = await coro(*args, **kwargs)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\src\bot.py", line 122, in add_squadron_command
+    insert_success = await loop.run_in_executor(None, add_squadron_to_db, DB_PATH, *details.values())
+                           ^^^^
+NameError: name 'loop' is not defined
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\discord\ext\commands\bot.py", line 1350, in invoke
+    await ctx.command.invoke(ctx)
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\discord\ext\commands\core.py", line 1029, in invoke
+    await injected(*ctx.args, **ctx.kwargs)  # type: ignore
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\discord\ext\commands\core.py", line 244, in wrapped
+    raise CommandInvokeError(exc) from exc
+discord.ext.commands.errors.CommandInvokeError: Command raised an exception: NameError: name 'loop' is not defined
+2024-01-13 16:52:58,501 - DEBUG - matplotlib data path: C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\matplotlib\mpl-data
+2024-01-13 16:52:58,504 - DEBUG - CONFIGDIR=C:\Users\Gavin\.matplotlib
+2024-01-13 16:52:58,505 - DEBUG - interactive is False
+2024-01-13 16:52:58,505 - DEBUG - platform is win32
+2024-01-13 16:52:58,561 - WARNING - PyNaCl is not installed, voice will NOT be supported
+2024-01-13 16:52:58,564 - DEBUG - Using proactor: IocpProactor
+2024-01-13 16:52:58,564 - INFO - logging in using static token
+2024-01-13 16:52:59,442 - INFO - Shard ID None has connected to Gateway (Session ID: c5a528ed120afdf5a045dc7dd82b0d6b).
+2024-01-13 16:53:08,943 - INFO - Starting to collect squadron details via DMs.
+2024-01-13 16:53:31,021 - INFO - Adding new squadron to the database: 899
+2024-01-13 16:53:31,021 - DEBUG - Connecting to the database at data/db/mayfly.db
+2024-01-13 16:53:31,022 - DEBUG - Preparing to execute INSERT command
+2024-01-13 16:53:31,022 - DEBUG - SQL Command: 
+            INSERT INTO Squadrons (squadron_id, squadron_motto, squadron_service, squadron_commission_date, squadron_commanding_officer, squadron_aircraft_type, squadron_pseudo_type)
+            VALUES (?, ?, ?, ?, ?, ?, ?)
+        
+2024-01-13 16:53:31,022 - DEBUG - Values: 899, 899, RN, 1234-12-04, nil, nil, nil
+2024-01-13 16:53:31,023 - DEBUG - Committing the transaction
+2024-01-13 16:53:31,030 - DEBUG - Closing the database connection
+2024-01-13 16:53:31,030 - INFO - Squadron successfully added to the database.
+2024-01-13 16:53:31,030 - INFO - Squadron 899 added successfully to the database.
+2024-01-13 16:55:39,129 - DEBUG - matplotlib data path: C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\matplotlib\mpl-data
+2024-01-13 16:55:39,132 - DEBUG - CONFIGDIR=C:\Users\Gavin\.matplotlib
+2024-01-13 16:55:39,133 - DEBUG - interactive is False
+2024-01-13 16:55:39,133 - DEBUG - platform is win32
+2024-01-13 16:55:39,190 - WARNING - PyNaCl is not installed, voice will NOT be supported
+2024-01-13 16:55:39,193 - DEBUG - Using proactor: IocpProactor
+2024-01-13 16:55:39,194 - INFO - logging in using static token
+2024-01-13 16:55:40,045 - INFO - Shard ID None has connected to Gateway (Session ID: dc8bb385933916c22987c62914a6ad0c).
+2024-01-13 17:07:45,082 - DEBUG - matplotlib data path: C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\matplotlib\mpl-data
+2024-01-13 17:07:45,085 - DEBUG - CONFIGDIR=C:\Users\Gavin\.matplotlib
+2024-01-13 17:07:45,086 - DEBUG - interactive is False
+2024-01-13 17:07:45,086 - DEBUG - platform is win32
+2024-01-13 17:07:45,143 - WARNING - PyNaCl is not installed, voice will NOT be supported
+2024-01-13 17:07:45,146 - DEBUG - Using proactor: IocpProactor
+2024-01-13 17:07:45,146 - INFO - logging in using static token
+2024-01-13 17:07:45,997 - INFO - Shard ID None has connected to Gateway (Session ID: 9cdd0262044d8b93a9f66e87198539f8).
+2024-01-13 17:11:58,221 - DEBUG - matplotlib data path: C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\matplotlib\mpl-data
+2024-01-13 17:11:58,224 - DEBUG - CONFIGDIR=C:\Users\Gavin\.matplotlib
+2024-01-13 17:11:58,225 - DEBUG - interactive is False
+2024-01-13 17:11:58,225 - DEBUG - platform is win32
+2024-01-13 17:11:58,282 - WARNING - PyNaCl is not installed, voice will NOT be supported
+2024-01-13 17:11:58,285 - DEBUG - Using proactor: IocpProactor
+2024-01-13 17:11:58,286 - INFO - logging in using static token
+2024-01-13 17:11:59,172 - INFO - Shard ID None has connected to Gateway (Session ID: 0b800b34098ec074e7061dd6cf82f44a).
+2024-01-13 17:17:28,091 - DEBUG - matplotlib data path: C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\matplotlib\mpl-data
+2024-01-13 17:17:28,094 - DEBUG - CONFIGDIR=C:\Users\Gavin\.matplotlib
+2024-01-13 17:17:28,095 - DEBUG - interactive is False
+2024-01-13 17:17:28,095 - DEBUG - platform is win32
+2024-01-13 17:17:28,151 - WARNING - PyNaCl is not installed, voice will NOT be supported
+2024-01-13 17:17:28,152 - DEBUG - on_command_error has successfully been registered as an event
+2024-01-13 17:17:28,154 - DEBUG - Using proactor: IocpProactor
+2024-01-13 17:17:28,155 - INFO - logging in using static token
+2024-01-13 17:17:29,036 - INFO - Shard ID None has connected to Gateway (Session ID: 02b127fab0eafbc18630f474556c4fab).
+2024-01-13 17:17:50,527 - ERROR - Ignoring exception in on_message
+Traceback (most recent call last):
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\discord\client.py", line 441, in _run_event
+    await coro(*args, **kwargs)
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\discord\ext\commands\bot.py", line 1395, in on_message
+    await self.process_commands(message)
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\discord\ext\commands\bot.py", line 1392, in process_commands
+    await self.invoke(ctx)  # type: ignore
+    ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\discord\ext\commands\bot.py", line 1350, in invoke
+    await ctx.command.invoke(ctx)
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\discord\ext\commands\core.py", line 1021, in invoke
+    await self.prepare(ctx)
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\discord\ext\commands\core.py", line 925, in prepare
+    if not await self.can_run(ctx):
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\discord\ext\commands\core.py", line 1288, in can_run
+    return await discord.utils.async_all(predicate(ctx) for predicate in predicates)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\discord\utils.py", line 705, in async_all
+    elem = await elem
+           ^^^^^^^^^^
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\src\bot.py", line 37, in predicate
+    if has_role('Server admin'):
+       ^^^^^^^^
+NameError: name 'has_role' is not defined
+2024-01-13 17:18:15,630 - DEBUG - matplotlib data path: C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\matplotlib\mpl-data
+2024-01-13 17:18:15,633 - DEBUG - CONFIGDIR=C:\Users\Gavin\.matplotlib
+2024-01-13 17:18:15,634 - DEBUG - interactive is False
+2024-01-13 17:18:15,634 - DEBUG - platform is win32
+2024-01-13 17:18:40,377 - DEBUG - matplotlib data path: C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\matplotlib\mpl-data
+2024-01-13 17:18:40,380 - DEBUG - CONFIGDIR=C:\Users\Gavin\.matplotlib
+2024-01-13 17:18:40,381 - DEBUG - interactive is False
+2024-01-13 17:18:40,381 - DEBUG - platform is win32
+2024-01-13 17:18:40,437 - WARNING - PyNaCl is not installed, voice will NOT be supported
+2024-01-13 17:18:40,439 - DEBUG - on_command_error has successfully been registered as an event
+2024-01-13 17:18:40,442 - DEBUG - Using proactor: IocpProactor
+2024-01-13 17:18:40,442 - INFO - logging in using static token
+2024-01-13 17:18:41,412 - INFO - Shard ID None has connected to Gateway (Session ID: af4fd69e65ae16945f20356a32752b1d).
+2024-01-13 17:18:44,773 - INFO - Starting to collect squadron details via DMs.
+2024-01-13 17:19:08,877 - DEBUG - matplotlib data path: C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\matplotlib\mpl-data
+2024-01-13 17:19:08,881 - DEBUG - CONFIGDIR=C:\Users\Gavin\.matplotlib
+2024-01-13 17:19:08,882 - DEBUG - interactive is False
+2024-01-13 17:19:08,882 - DEBUG - platform is win32
+2024-01-13 17:19:08,937 - WARNING - PyNaCl is not installed, voice will NOT be supported
+2024-01-13 17:19:08,938 - DEBUG - on_command_error has successfully been registered as an event
+2024-01-13 17:19:08,940 - DEBUG - Using proactor: IocpProactor
+2024-01-13 17:19:08,941 - INFO - logging in using static token
+2024-01-13 17:19:09,723 - INFO - Shard ID None has connected to Gateway (Session ID: 59d10f3e25adde972d45eddcd74f78a2).
+2024-01-13 17:21:37,051 - DEBUG - matplotlib data path: C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\matplotlib\mpl-data
+2024-01-13 17:21:37,054 - DEBUG - CONFIGDIR=C:\Users\Gavin\.matplotlib
+2024-01-13 17:21:37,055 - DEBUG - interactive is False
+2024-01-13 17:21:37,055 - DEBUG - platform is win32
+2024-01-13 17:21:37,112 - WARNING - PyNaCl is not installed, voice will NOT be supported
+2024-01-13 17:21:37,112 - DEBUG - on_command_error has successfully been registered as an event
+2024-01-13 17:21:37,115 - DEBUG - Using proactor: IocpProactor
+2024-01-13 17:21:37,116 - INFO - logging in using static token
+2024-01-13 17:21:38,044 - INFO - Shard ID None has connected to Gateway (Session ID: 83b28c001f82a7e94870ed2df13d758a).
+2024-01-13 17:22:30,372 - INFO - Starting to collect squadron details via DMs.
+2024-01-13 17:26:59,728 - DEBUG - matplotlib data path: C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\matplotlib\mpl-data
+2024-01-13 17:26:59,731 - DEBUG - CONFIGDIR=C:\Users\Gavin\.matplotlib
+2024-01-13 17:26:59,732 - DEBUG - interactive is False
+2024-01-13 17:26:59,732 - DEBUG - platform is win32
+2024-01-13 17:26:59,787 - WARNING - PyNaCl is not installed, voice will NOT be supported
+2024-01-13 17:26:59,788 - DEBUG - on_command_error has successfully been registered as an event
+2024-01-13 17:26:59,791 - DEBUG - Using proactor: IocpProactor
+2024-01-13 17:26:59,792 - INFO - logging in using static token
+2024-01-13 17:27:00,705 - INFO - Shard ID None has connected to Gateway (Session ID: 5f9b6d7b31c71a7c179c1386bc9af7ca).
+2024-01-13 17:29:21,493 - DEBUG - matplotlib data path: C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\matplotlib\mpl-data
+2024-01-13 17:29:21,497 - DEBUG - CONFIGDIR=C:\Users\Gavin\.matplotlib
+2024-01-13 17:29:21,497 - DEBUG - interactive is False
+2024-01-13 17:29:21,497 - DEBUG - platform is win32
+2024-01-13 17:29:21,555 - WARNING - PyNaCl is not installed, voice will NOT be supported
+2024-01-13 17:29:21,556 - DEBUG - on_command_error has successfully been registered as an event
+2024-01-13 17:29:21,559 - DEBUG - Using proactor: IocpProactor
+2024-01-13 17:29:21,559 - INFO - logging in using static token
+2024-01-13 17:29:22,403 - INFO - Shard ID None has connected to Gateway (Session ID: 51c6cec646e838721ead76a2bb06b701).
+2024-01-13 17:29:57,385 - DEBUG - STREAM b'IHDR' 16 13
+2024-01-13 17:29:57,385 - DEBUG - STREAM b'IDAT' 41 266
+2024-01-13 17:30:38,364 - DEBUG - STREAM b'IHDR' 16 13
+2024-01-13 17:30:38,364 - DEBUG - STREAM b'IDAT' 41 266
+2024-01-13 17:30:49,565 - DEBUG - STREAM b'IHDR' 16 13
+2024-01-13 17:30:49,565 - DEBUG - STREAM b'IDAT' 41 266
+2024-01-13 17:30:49,566 - DEBUG - STREAM b'IHDR' 16 13
+2024-01-13 17:30:49,566 - DEBUG - STREAM b'IDAT' 41 265
+2024-01-13 17:30:49,567 - DEBUG - STREAM b'IHDR' 16 13
+2024-01-13 17:30:49,567 - DEBUG - STREAM b'IDAT' 41 274
+2024-01-13 17:30:49,568 - DEBUG - STREAM b'IHDR' 16 13
+2024-01-13 17:30:49,568 - DEBUG - STREAM b'IDAT' 41 266
+2024-01-13 17:30:49,569 - DEBUG - STREAM b'IHDR' 16 13
+2024-01-13 17:30:49,569 - DEBUG - STREAM b'IDAT' 41 269
+2024-01-13 17:30:49,570 - DEBUG - STREAM b'IHDR' 16 13
+2024-01-13 17:30:49,570 - DEBUG - STREAM b'IDAT' 41 250
+2024-01-13 17:30:49,574 - DEBUG - STREAM b'IHDR' 16 13
+2024-01-13 17:30:49,574 - DEBUG - STREAM b'IDAT' 41 259
+2024-01-13 17:30:49,575 - DEBUG - STREAM b'IHDR' 16 13
+2024-01-13 17:30:49,575 - DEBUG - STREAM b'IDAT' 41 273
+2024-01-13 17:30:49,576 - DEBUG - STREAM b'IHDR' 16 13
+2024-01-13 17:30:49,576 - DEBUG - STREAM b'IDAT' 41 246
+2024-01-13 17:30:49,577 - DEBUG - STREAM b'IHDR' 16 13
+2024-01-13 17:30:49,577 - DEBUG - STREAM b'IDAT' 41 254
+2024-01-13 17:30:49,580 - DEBUG - STREAM b'IHDR' 16 13
+2024-01-13 17:30:49,580 - DEBUG - STREAM b'IDAT' 41 262
+2024-01-13 17:30:49,581 - DEBUG - STREAM b'IHDR' 16 13
+2024-01-13 17:30:49,581 - DEBUG - STREAM b'IDAT' 41 270
+2024-01-13 17:30:49,582 - DEBUG - STREAM b'IHDR' 16 13
+2024-01-13 17:30:49,582 - DEBUG - STREAM b'IDAT' 41 246
+2024-01-13 17:30:49,583 - DEBUG - STREAM b'IHDR' 16 13
+2024-01-13 17:30:49,583 - DEBUG - STREAM b'IDAT' 41 273
+2024-01-13 17:30:49,584 - DEBUG - STREAM b'IHDR' 16 13
+2024-01-13 17:30:49,584 - DEBUG - STREAM b'IDAT' 41 253
+2024-01-13 17:33:49,350 - DEBUG - STREAM b'IHDR' 16 13
+2024-01-13 17:33:49,350 - DEBUG - STREAM b'IDAT' 41 266
+2024-01-13 17:34:57,763 - DEBUG - STREAM b'IHDR' 16 13
+2024-01-13 17:34:57,763 - DEBUG - STREAM b'IDAT' 41 265
+2024-01-13 17:34:57,763 - DEBUG - STREAM b'IHDR' 16 13
+2024-01-13 17:34:57,763 - DEBUG - STREAM b'IDAT' 41 269
+2024-01-13 17:34:57,764 - DEBUG - STREAM b'IHDR' 16 13
+2024-01-13 17:34:57,764 - DEBUG - STREAM b'IDAT' 41 273
+2024-01-13 17:34:57,768 - DEBUG - STREAM b'IHDR' 16 13
+2024-01-13 17:34:57,768 - DEBUG - STREAM b'IDAT' 41 272
+2024-01-13 17:35:07,408 - DEBUG - STREAM b'IHDR' 16 13
+2024-01-13 17:35:07,408 - DEBUG - STREAM b'IDAT' 41 265
+2024-01-13 17:35:07,408 - DEBUG - STREAM b'IHDR' 16 13
+2024-01-13 17:35:07,409 - DEBUG - STREAM b'IDAT' 41 269
+2024-01-13 17:35:07,409 - DEBUG - STREAM b'IHDR' 16 13
+2024-01-13 17:35:07,409 - DEBUG - STREAM b'IDAT' 41 273
+2024-01-13 17:35:07,410 - DEBUG - STREAM b'IHDR' 16 13
+2024-01-13 17:35:07,410 - DEBUG - STREAM b'IDAT' 41 272
+2024-01-13 17:35:18,625 - DEBUG - STREAM b'IHDR' 16 13
+2024-01-13 17:35:18,625 - DEBUG - STREAM b'IDAT' 41 266
+2024-01-13 17:39:30,171 - DEBUG - matplotlib data path: C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\matplotlib\mpl-data
+2024-01-13 17:39:30,174 - DEBUG - CONFIGDIR=C:\Users\Gavin\.matplotlib
+2024-01-13 17:39:30,175 - DEBUG - interactive is False
+2024-01-13 17:39:30,175 - DEBUG - platform is win32
+2024-01-13 17:39:30,232 - WARNING - PyNaCl is not installed, voice will NOT be supported
+2024-01-13 17:39:30,232 - DEBUG - on_command_error has successfully been registered as an event
+2024-01-13 17:39:30,235 - DEBUG - Using proactor: IocpProactor
+2024-01-13 17:39:30,235 - INFO - logging in using static token
+2024-01-13 17:39:31,052 - INFO - Shard ID None has connected to Gateway (Session ID: 5d029430584f4f38c797a35d21f599ce).
+2024-01-13 17:39:44,315 - DEBUG - STREAM b'IHDR' 16 13
+2024-01-13 17:39:44,315 - DEBUG - STREAM b'IDAT' 41 266
+2024-01-13 17:40:30,705 - DEBUG - matplotlib data path: C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\matplotlib\mpl-data
+2024-01-13 17:40:30,708 - DEBUG - CONFIGDIR=C:\Users\Gavin\.matplotlib
+2024-01-13 17:40:30,709 - DEBUG - interactive is False
+2024-01-13 17:40:30,709 - DEBUG - platform is win32
+2024-01-13 17:40:30,767 - WARNING - PyNaCl is not installed, voice will NOT be supported
+2024-01-13 17:40:30,767 - DEBUG - on_command_error has successfully been registered as an event
+2024-01-13 17:40:30,770 - DEBUG - Using proactor: IocpProactor
+2024-01-13 17:40:30,771 - INFO - logging in using static token
+2024-01-13 17:40:31,564 - INFO - Shard ID None has connected to Gateway (Session ID: 39f5ee18d440aa17c8b1336b5d08f1de).
+2024-01-13 17:40:36,689 - DEBUG - STREAM b'IHDR' 16 13
+2024-01-13 17:40:36,689 - DEBUG - STREAM b'IDAT' 41 266
+2024-01-13 17:44:41,712 - DEBUG - STREAM b'IHDR' 16 13
+2024-01-13 17:44:41,713 - DEBUG - STREAM b'IDAT' 41 266
+2024-01-13 17:45:37,801 - DEBUG - STREAM b'IHDR' 16 13
+2024-01-13 17:45:37,801 - DEBUG - STREAM b'IDAT' 41 266
+2024-01-13 17:45:37,802 - DEBUG - STREAM b'IHDR' 16 13
+2024-01-13 17:45:37,802 - DEBUG - STREAM b'IDAT' 41 246
+2024-01-13 17:46:37,724 - DEBUG - STREAM b'IHDR' 16 13
+2024-01-13 17:46:37,724 - DEBUG - STREAM b'IDAT' 41 266
+2024-01-13 17:46:37,724 - DEBUG - STREAM b'IHDR' 16 13
+2024-01-13 17:46:37,724 - DEBUG - STREAM b'IDAT' 41 273
+2024-01-13 17:46:37,725 - DEBUG - STREAM b'IHDR' 16 13
+2024-01-13 17:46:37,725 - DEBUG - STREAM b'IDAT' 41 246
+2024-01-13 17:48:45,603 - DEBUG - matplotlib data path: C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\matplotlib\mpl-data
+2024-01-13 17:48:45,606 - DEBUG - CONFIGDIR=C:\Users\Gavin\.matplotlib
+2024-01-13 17:48:45,607 - DEBUG - interactive is False
+2024-01-13 17:48:45,607 - DEBUG - platform is win32
+2024-01-13 17:48:45,664 - WARNING - PyNaCl is not installed, voice will NOT be supported
+2024-01-13 17:48:45,665 - DEBUG - on_command_error has successfully been registered as an event
+2024-01-13 17:48:45,667 - DEBUG - Using proactor: IocpProactor
+2024-01-13 17:48:45,669 - INFO - logging in using static token
+2024-01-13 17:48:46,586 - INFO - Shard ID None has connected to Gateway (Session ID: f982dc718bc1c7293be0edae9110bf09).
+2024-01-13 17:49:05,971 - DEBUG - STREAM b'IHDR' 16 13
+2024-01-13 17:49:05,971 - DEBUG - STREAM b'IDAT' 41 266
+2024-01-13 17:49:26,159 - DEBUG - STREAM b'IHDR' 16 13
+2024-01-13 17:49:26,159 - DEBUG - STREAM b'IDAT' 41 266
+2024-01-13 17:49:26,160 - DEBUG - STREAM b'IHDR' 16 13
+2024-01-13 17:49:26,160 - DEBUG - STREAM b'IDAT' 41 250
+2024-01-13 17:50:09,832 - DEBUG - STREAM b'IHDR' 16 13
+2024-01-13 17:50:09,832 - DEBUG - STREAM b'IDAT' 41 265
+2024-01-13 17:50:09,833 - DEBUG - STREAM b'IHDR' 16 13
+2024-01-13 17:50:09,833 - DEBUG - STREAM b'IDAT' 41 269
+2024-01-13 17:50:09,834 - DEBUG - STREAM b'IHDR' 16 13
+2024-01-13 17:50:09,834 - DEBUG - STREAM b'IDAT' 41 273
+2024-01-13 17:50:09,834 - DEBUG - STREAM b'IHDR' 16 13
+2024-01-13 17:50:09,835 - DEBUG - STREAM b'IDAT' 41 272
+2024-01-13 17:50:29,141 - ERROR - Ignoring exception in on_command_error
+Traceback (most recent call last):
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\discord\client.py", line 441, in _run_event
+    await coro(*args, **kwargs)
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\src\bot.py", line 51, in on_command_error
+    raise error  # Re-raise other errors so you can notice them
+    ^^^^^^^^^^^
+discord.ext.commands.errors.CommandNotFound: Command "add_award" is not found
+2024-01-13 17:52:38,515 - ERROR - Ignoring exception in on_command_error
+Traceback (most recent call last):
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\discord\ext\commands\core.py", line 235, in wrapped
+    ret = await coro(*args, **kwargs)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\src\bot.py", line 485, in give_award
+    award_msg = await ctx.send(embed=embed)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\discord\ext\commands\context.py", line 1024, in send
+    return await super().send(
+           ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\discord\abc.py", line 1561, in send
+    data = await state.http.send_message(channel.id, params=params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\discord\http.py", line 745, in request
+    raise HTTPException(response, data)
+discord.errors.HTTPException: 400 Bad Request (error code: 50035): Invalid Form Body
+In embeds.0.fields: Must be 25 or fewer in length.
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\discord\client.py", line 441, in _run_event
+    await coro(*args, **kwargs)
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\src\bot.py", line 51, in on_command_error
+    raise error  # Re-raise other errors so you can notice them
+    ^^^^^^^^^^^
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\discord\ext\commands\bot.py", line 1350, in invoke
+    await ctx.command.invoke(ctx)
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\discord\ext\commands\core.py", line 1029, in invoke
+    await injected(*ctx.args, **ctx.kwargs)  # type: ignore
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\discord\ext\commands\core.py", line 244, in wrapped
+    raise CommandInvokeError(exc) from exc
+discord.ext.commands.errors.CommandInvokeError: Command raised an exception: HTTPException: 400 Bad Request (error code: 50035): Invalid Form Body
+In embeds.0.fields: Must be 25 or fewer in length.
+2024-01-13 17:52:54,641 - ERROR - Ignoring exception in on_command_error
+Traceback (most recent call last):
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\discord\ext\commands\core.py", line 235, in wrapped
+    ret = await coro(*args, **kwargs)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\src\bot.py", line 485, in give_award
+    award_msg = await ctx.send(embed=embed)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\discord\ext\commands\context.py", line 1024, in send
+    return await super().send(
+           ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\discord\abc.py", line 1561, in send
+    data = await state.http.send_message(channel.id, params=params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\discord\http.py", line 745, in request
+    raise HTTPException(response, data)
+discord.errors.HTTPException: 400 Bad Request (error code: 50035): Invalid Form Body
+In embeds.0.fields: Must be 25 or fewer in length.
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\discord\client.py", line 441, in _run_event
+    await coro(*args, **kwargs)
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\src\bot.py", line 51, in on_command_error
+    raise error  # Re-raise other errors so you can notice them
+    ^^^^^^^^^^^
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\discord\ext\commands\bot.py", line 1350, in invoke
+    await ctx.command.invoke(ctx)
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\discord\ext\commands\core.py", line 1029, in invoke
+    await injected(*ctx.args, **ctx.kwargs)  # type: ignore
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\discord\ext\commands\core.py", line 244, in wrapped
+    raise CommandInvokeError(exc) from exc
+discord.ext.commands.errors.CommandInvokeError: Command raised an exception: HTTPException: 400 Bad Request (error code: 50035): Invalid Form Body
+In embeds.0.fields: Must be 25 or fewer in length.
+2024-01-13 17:56:52,528 - DEBUG - matplotlib data path: C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\matplotlib\mpl-data
+2024-01-13 17:56:52,530 - DEBUG - CONFIGDIR=C:\Users\Gavin\.matplotlib
+2024-01-13 17:56:52,531 - DEBUG - interactive is False
+2024-01-13 17:56:52,531 - DEBUG - platform is win32
+2024-01-13 17:56:52,589 - WARNING - PyNaCl is not installed, voice will NOT be supported
+2024-01-13 17:56:52,590 - DEBUG - on_command_error has successfully been registered as an event
+2024-01-13 17:56:52,592 - DEBUG - Using proactor: IocpProactor
+2024-01-13 17:56:52,593 - INFO - logging in using static token
+2024-01-13 17:56:53,482 - INFO - Shard ID None has connected to Gateway (Session ID: c1fb64b24517a3800801afb8546b8893).
+2024-01-13 18:00:09,782 - DEBUG - matplotlib data path: C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\matplotlib\mpl-data
+2024-01-13 18:00:09,785 - DEBUG - CONFIGDIR=C:\Users\Gavin\.matplotlib
+2024-01-13 18:00:09,786 - DEBUG - interactive is False
+2024-01-13 18:00:09,786 - DEBUG - platform is win32
+2024-01-13 18:00:09,844 - WARNING - PyNaCl is not installed, voice will NOT be supported
+2024-01-13 18:00:09,845 - DEBUG - on_command_error has successfully been registered as an event
+2024-01-13 18:00:09,847 - DEBUG - Using proactor: IocpProactor
+2024-01-13 18:00:09,848 - INFO - logging in using static token
+2024-01-13 18:00:10,793 - INFO - Shard ID None has connected to Gateway (Session ID: ff96aebd2a6b364c924a65de0778d6f0).
+2024-01-13 18:04:49,269 - DEBUG - matplotlib data path: C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\matplotlib\mpl-data
+2024-01-13 18:04:49,273 - DEBUG - CONFIGDIR=C:\Users\Gavin\.matplotlib
+2024-01-13 18:04:49,274 - DEBUG - interactive is False
+2024-01-13 18:04:49,274 - DEBUG - platform is win32
+2024-01-13 18:04:49,335 - WARNING - PyNaCl is not installed, voice will NOT be supported
+2024-01-13 18:04:49,336 - DEBUG - on_command_error has successfully been registered as an event
+2024-01-13 18:04:49,336 - DEBUG - on_reaction_add has successfully been registered as an event
+2024-01-13 18:04:49,338 - DEBUG - Using proactor: IocpProactor
+2024-01-13 18:04:49,339 - INFO - logging in using static token
+2024-01-13 18:04:50,273 - INFO - Shard ID None has connected to Gateway (Session ID: d830d9abbc617d8e955b2978f2d9aee3).
+2024-01-13 18:04:58,699 - ERROR - Ignoring exception in on_reaction_add
+Traceback (most recent call last):
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\discord\client.py", line 441, in _run_event
+    await coro(*args, **kwargs)
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\src\bot.py", line 55, in on_reaction_add
+    if user == ctx.bot.user or reaction.message.id != message.id:
+               ^^^
+NameError: name 'ctx' is not defined
+2024-01-13 18:04:59,253 - ERROR - Ignoring exception in on_reaction_add
+Traceback (most recent call last):
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\discord\client.py", line 441, in _run_event
+    await coro(*args, **kwargs)
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\src\bot.py", line 55, in on_reaction_add
+    if user == ctx.bot.user or reaction.message.id != message.id:
+               ^^^
+NameError: name 'ctx' is not defined
+2024-01-13 18:05:01,911 - ERROR - Ignoring exception in on_reaction_add
+Traceback (most recent call last):
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\discord\client.py", line 441, in _run_event
+    await coro(*args, **kwargs)
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\src\bot.py", line 55, in on_reaction_add
+    if user == ctx.bot.user or reaction.message.id != message.id:
+               ^^^
+NameError: name 'ctx' is not defined
+2024-01-13 18:05:11,060 - ERROR - Ignoring exception in on_reaction_add
+Traceback (most recent call last):
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\discord\client.py", line 441, in _run_event
+    await coro(*args, **kwargs)
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\src\bot.py", line 55, in on_reaction_add
+    if user == ctx.bot.user or reaction.message.id != message.id:
+               ^^^
+NameError: name 'ctx' is not defined
+2024-01-13 18:05:14,756 - ERROR - Ignoring exception in on_reaction_add
+Traceback (most recent call last):
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\discord\client.py", line 441, in _run_event
+    await coro(*args, **kwargs)
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\src\bot.py", line 55, in on_reaction_add
+    if user == ctx.bot.user or reaction.message.id != message.id:
+               ^^^
+NameError: name 'ctx' is not defined
+2024-01-13 18:08:21,287 - DEBUG - matplotlib data path: C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\matplotlib\mpl-data
+2024-01-13 18:08:21,291 - DEBUG - CONFIGDIR=C:\Users\Gavin\.matplotlib
+2024-01-13 18:08:21,292 - DEBUG - interactive is False
+2024-01-13 18:08:21,292 - DEBUG - platform is win32
+2024-01-13 18:08:21,350 - WARNING - PyNaCl is not installed, voice will NOT be supported
+2024-01-13 18:08:21,351 - DEBUG - on_command_error has successfully been registered as an event
+2024-01-13 18:08:21,351 - DEBUG - on_reaction_add has successfully been registered as an event
+2024-01-13 18:08:21,354 - DEBUG - Using proactor: IocpProactor
+2024-01-13 18:08:21,354 - INFO - logging in using static token
+2024-01-13 18:08:22,259 - INFO - Shard ID None has connected to Gateway (Session ID: 3f6de976ca5a67b6c1ba6423764a75e1).
+2024-01-13 18:08:29,782 - ERROR - Ignoring exception in on_command_error
+Traceback (most recent call last):
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\discord\ext\commands\core.py", line 235, in wrapped
+    ret = await coro(*args, **kwargs)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\src\bot.py", line 512, in give_award
+    message = await ctx.send(embed=embed)
+                                   ^^^^^
+UnboundLocalError: cannot access local variable 'embed' where it is not associated with a value
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\discord\client.py", line 441, in _run_event
+    await coro(*args, **kwargs)
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\src\bot.py", line 52, in on_command_error
+    raise error  # Re-raise other errors so you can notice them
+    ^^^^^^^^^^^
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\discord\ext\commands\bot.py", line 1350, in invoke
+    await ctx.command.invoke(ctx)
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\discord\ext\commands\core.py", line 1029, in invoke
+    await injected(*ctx.args, **ctx.kwargs)  # type: ignore
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\discord\ext\commands\core.py", line 244, in wrapped
+    raise CommandInvokeError(exc) from exc
+discord.ext.commands.errors.CommandInvokeError: Command raised an exception: UnboundLocalError: cannot access local variable 'embed' where it is not associated with a value
+2024-01-13 18:11:10,520 - DEBUG - matplotlib data path: C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\matplotlib\mpl-data
+2024-01-13 18:11:10,523 - DEBUG - CONFIGDIR=C:\Users\Gavin\.matplotlib
+2024-01-13 18:11:10,524 - DEBUG - interactive is False
+2024-01-13 18:11:10,524 - DEBUG - platform is win32
+2024-01-13 18:11:10,581 - WARNING - PyNaCl is not installed, voice will NOT be supported
+2024-01-13 18:11:10,582 - DEBUG - on_command_error has successfully been registered as an event
+2024-01-13 18:11:10,582 - DEBUG - on_reaction_add has successfully been registered as an event
+2024-01-13 18:11:10,585 - DEBUG - Using proactor: IocpProactor
+2024-01-13 18:11:10,585 - INFO - logging in using static token
+2024-01-13 18:11:11,424 - INFO - Shard ID None has connected to Gateway (Session ID: dc059f6c13a12e2b8dc10c0ebb81ff4a).
+2024-01-13 18:11:29,785 - ERROR - Ignoring exception in on_reaction_add
+Traceback (most recent call last):
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\discord\client.py", line 441, in _run_event
+    await coro(*args, **kwargs)
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\src\bot.py", line 75, in on_reaction_add
+    embed = create_awards_embed(awards, current_page, items_per_page)
+                                                      ^^^^^^^^^^^^^^
+NameError: name 'items_per_page' is not defined
+2024-01-13 18:13:11,559 - DEBUG - matplotlib data path: C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\matplotlib\mpl-data
+2024-01-13 18:13:11,562 - DEBUG - CONFIGDIR=C:\Users\Gavin\.matplotlib
+2024-01-13 18:13:11,563 - DEBUG - interactive is False
+2024-01-13 18:13:11,563 - DEBUG - platform is win32
+2024-01-13 18:13:11,620 - WARNING - PyNaCl is not installed, voice will NOT be supported
+2024-01-13 18:13:11,621 - DEBUG - on_command_error has successfully been registered as an event
+2024-01-13 18:13:11,621 - DEBUG - on_reaction_add has successfully been registered as an event
+2024-01-13 18:13:11,624 - DEBUG - Using proactor: IocpProactor
+2024-01-13 18:13:11,625 - INFO - logging in using static token
+2024-01-13 18:13:12,477 - INFO - Shard ID None has connected to Gateway (Session ID: 6847b2b289996672b520d6812806c8f5).
+2024-01-13 18:14:15,697 - DEBUG - matplotlib data path: C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\matplotlib\mpl-data
+2024-01-13 18:14:15,700 - DEBUG - CONFIGDIR=C:\Users\Gavin\.matplotlib
+2024-01-13 18:14:15,701 - DEBUG - interactive is False
+2024-01-13 18:14:15,701 - DEBUG - platform is win32
+2024-01-13 18:14:15,758 - WARNING - PyNaCl is not installed, voice will NOT be supported
+2024-01-13 18:14:15,759 - DEBUG - on_command_error has successfully been registered as an event
+2024-01-13 18:14:15,759 - DEBUG - on_reaction_add has successfully been registered as an event
+2024-01-13 18:14:15,761 - DEBUG - Using proactor: IocpProactor
+2024-01-13 18:14:15,762 - INFO - logging in using static token
+2024-01-13 18:14:16,535 - INFO - Shard ID None has connected to Gateway (Session ID: 00693c7b1041b0623f93fee99405520f).
+2024-01-13 18:14:30,537 - ERROR - Ignoring exception in on_reaction_add
+Traceback (most recent call last):
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\discord\client.py", line 441, in _run_event
+    await coro(*args, **kwargs)
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\src\bot.py", line 70, in on_reaction_add
+    await reaction.message.remove_reaction(reaction.emoji, user)
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\discord\message.py", line 1159, in remove_reaction
+    await self._state.http.remove_reaction(self.channel.id, self.id, emoji, member.id)
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\discord\http.py", line 739, in request
+    raise Forbidden(response, data)
+discord.errors.Forbidden: 403 Forbidden (error code: 50013): Missing Permissions
+2024-01-13 18:14:37,817 - ERROR - Ignoring exception in on_reaction_add
+Traceback (most recent call last):
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\discord\client.py", line 441, in _run_event
+    await coro(*args, **kwargs)
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\src\bot.py", line 70, in on_reaction_add
+    await reaction.message.remove_reaction(reaction.emoji, user)
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\discord\message.py", line 1159, in remove_reaction
+    await self._state.http.remove_reaction(self.channel.id, self.id, emoji, member.id)
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\discord\http.py", line 739, in request
+    raise Forbidden(response, data)
+discord.errors.Forbidden: 403 Forbidden (error code: 50013): Missing Permissions
+2024-01-13 18:14:52,056 - DEBUG - matplotlib data path: C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\matplotlib\mpl-data
+2024-01-13 18:14:52,059 - DEBUG - CONFIGDIR=C:\Users\Gavin\.matplotlib
+2024-01-13 18:14:52,059 - DEBUG - interactive is False
+2024-01-13 18:14:52,059 - DEBUG - platform is win32
+2024-01-13 18:14:52,116 - WARNING - PyNaCl is not installed, voice will NOT be supported
+2024-01-13 18:14:52,117 - DEBUG - on_command_error has successfully been registered as an event
+2024-01-13 18:14:52,117 - DEBUG - on_reaction_add has successfully been registered as an event
+2024-01-13 18:14:52,120 - DEBUG - Using proactor: IocpProactor
+2024-01-13 18:14:52,121 - INFO - logging in using static token
+2024-01-13 18:14:53,054 - INFO - Shard ID None has connected to Gateway (Session ID: d706f371e22b9dbb4a73ae5d3307aa29).
+2024-01-13 18:15:21,468 - DEBUG - matplotlib data path: C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\matplotlib\mpl-data
+2024-01-13 18:15:21,470 - DEBUG - CONFIGDIR=C:\Users\Gavin\.matplotlib
+2024-01-13 18:15:21,471 - DEBUG - interactive is False
+2024-01-13 18:15:21,471 - DEBUG - platform is win32
+2024-01-13 18:15:21,529 - WARNING - PyNaCl is not installed, voice will NOT be supported
+2024-01-13 18:15:21,529 - DEBUG - on_command_error has successfully been registered as an event
+2024-01-13 18:15:21,529 - DEBUG - on_reaction_add has successfully been registered as an event
+2024-01-13 18:15:21,532 - DEBUG - Using proactor: IocpProactor
+2024-01-13 18:15:21,532 - INFO - logging in using static token
+2024-01-13 18:15:22,472 - INFO - Shard ID None has connected to Gateway (Session ID: a6736455d8ed34b4c9a30f4421ab4265).
+2024-01-13 18:15:49,030 - DEBUG - matplotlib data path: C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\matplotlib\mpl-data
+2024-01-13 18:15:49,034 - DEBUG - CONFIGDIR=C:\Users\Gavin\.matplotlib
+2024-01-13 18:15:49,034 - DEBUG - interactive is False
+2024-01-13 18:15:49,034 - DEBUG - platform is win32
+2024-01-13 18:15:49,091 - WARNING - PyNaCl is not installed, voice will NOT be supported
+2024-01-13 18:15:49,092 - DEBUG - on_command_error has successfully been registered as an event
+2024-01-13 18:15:49,092 - DEBUG - on_reaction_add has successfully been registered as an event
+2024-01-13 18:15:49,094 - DEBUG - Using proactor: IocpProactor
+2024-01-13 18:15:49,095 - INFO - logging in using static token
+2024-01-13 18:15:49,938 - INFO - Shard ID None has connected to Gateway (Session ID: 631649881b5362143df2de7413301ae6).
+2024-01-13 18:16:05,452 - ERROR - Ignoring exception in on_reaction_add
+Traceback (most recent call last):
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\discord\client.py", line 441, in _run_event
+    await coro(*args, **kwargs)
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\src\bot.py", line 70, in on_reaction_add
+    await reaction.message.remove_reaction(reaction.emoji, user)
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\discord\message.py", line 1159, in remove_reaction
+    await self._state.http.remove_reaction(self.channel.id, self.id, emoji, member.id)
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\discord\http.py", line 739, in request
+    raise Forbidden(response, data)
+discord.errors.Forbidden: 403 Forbidden (error code: 50013): Missing Permissions
+2024-01-13 18:16:22,727 - ERROR - Ignoring exception in on_reaction_add
+Traceback (most recent call last):
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\discord\client.py", line 441, in _run_event
+    await coro(*args, **kwargs)
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\src\bot.py", line 70, in on_reaction_add
+    await reaction.message.remove_reaction(reaction.emoji, user)
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\discord\message.py", line 1159, in remove_reaction
+    await self._state.http.remove_reaction(self.channel.id, self.id, emoji, member.id)
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\discord\http.py", line 739, in request
+    raise Forbidden(response, data)
+discord.errors.Forbidden: 403 Forbidden (error code: 50013): Missing Permissions
+2024-01-13 18:16:30,432 - ERROR - Ignoring exception in on_reaction_add
+Traceback (most recent call last):
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\discord\client.py", line 441, in _run_event
+    await coro(*args, **kwargs)
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\src\bot.py", line 70, in on_reaction_add
+    await reaction.message.remove_reaction(reaction.emoji, user)
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\discord\message.py", line 1159, in remove_reaction
+    await self._state.http.remove_reaction(self.channel.id, self.id, emoji, member.id)
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\discord\http.py", line 739, in request
+    raise Forbidden(response, data)
+discord.errors.Forbidden: 403 Forbidden (error code: 50013): Missing Permissions
+2024-01-13 18:16:34,584 - ERROR - Ignoring exception in on_reaction_add
+Traceback (most recent call last):
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\discord\client.py", line 441, in _run_event
+    await coro(*args, **kwargs)
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\src\bot.py", line 70, in on_reaction_add
+    await reaction.message.remove_reaction(reaction.emoji, user)
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\discord\message.py", line 1159, in remove_reaction
+    await self._state.http.remove_reaction(self.channel.id, self.id, emoji, member.id)
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\discord\http.py", line 739, in request
+    raise Forbidden(response, data)
+discord.errors.Forbidden: 403 Forbidden (error code: 50013): Missing Permissions
+2024-01-13 18:16:38,653 - ERROR - Ignoring exception in on_reaction_add
+Traceback (most recent call last):
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\discord\client.py", line 441, in _run_event
+    await coro(*args, **kwargs)
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\src\bot.py", line 70, in on_reaction_add
+    await reaction.message.remove_reaction(reaction.emoji, user)
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\discord\message.py", line 1159, in remove_reaction
+    await self._state.http.remove_reaction(self.channel.id, self.id, emoji, member.id)
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\discord\http.py", line 739, in request
+    raise Forbidden(response, data)
+discord.errors.Forbidden: 403 Forbidden (error code: 50013): Missing Permissions
+2024-01-13 18:16:42,014 - ERROR - Ignoring exception in on_command_error
+Traceback (most recent call last):
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\discord\ext\commands\core.py", line 235, in wrapped
+    ret = await coro(*args, **kwargs)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\src\bot.py", line 545, in give_award
+    if award_id.strip() in awards_dict:
+                           ^^^^^^^^^^^
+NameError: name 'awards_dict' is not defined
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\discord\client.py", line 441, in _run_event
+    await coro(*args, **kwargs)
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\src\bot.py", line 39, in on_command_error
+    raise error  # Re-raise other errors so you can notice them
+    ^^^^^^^^^^^
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\discord\ext\commands\bot.py", line 1350, in invoke
+    await ctx.command.invoke(ctx)
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\discord\ext\commands\core.py", line 1029, in invoke
+    await injected(*ctx.args, **ctx.kwargs)  # type: ignore
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\discord\ext\commands\core.py", line 244, in wrapped
+    raise CommandInvokeError(exc) from exc
+discord.ext.commands.errors.CommandInvokeError: Command raised an exception: NameError: name 'awards_dict' is not defined
+2024-01-13 18:17:01,271 - ERROR - Ignoring exception in on_reaction_add
+Traceback (most recent call last):
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\discord\client.py", line 441, in _run_event
+    await coro(*args, **kwargs)
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\src\bot.py", line 70, in on_reaction_add
+    await reaction.message.remove_reaction(reaction.emoji, user)
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\discord\message.py", line 1159, in remove_reaction
+    await self._state.http.remove_reaction(self.channel.id, self.id, emoji, member.id)
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\discord\http.py", line 739, in request
+    raise Forbidden(response, data)
+discord.errors.Forbidden: 403 Forbidden (error code: 50013): Missing Permissions
+2024-01-13 18:17:05,928 - ERROR - Ignoring exception in on_reaction_add
+Traceback (most recent call last):
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\discord\client.py", line 441, in _run_event
+    await coro(*args, **kwargs)
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\src\bot.py", line 70, in on_reaction_add
+    await reaction.message.remove_reaction(reaction.emoji, user)
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\discord\message.py", line 1159, in remove_reaction
+    await self._state.http.remove_reaction(self.channel.id, self.id, emoji, member.id)
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\discord\http.py", line 739, in request
+    raise Forbidden(response, data)
+discord.errors.Forbidden: 403 Forbidden (error code: 50013): Missing Permissions
+2024-01-13 18:17:09,749 - ERROR - Ignoring exception in on_reaction_add
+Traceback (most recent call last):
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\discord\client.py", line 441, in _run_event
+    await coro(*args, **kwargs)
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\src\bot.py", line 70, in on_reaction_add
+    await reaction.message.remove_reaction(reaction.emoji, user)
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\discord\message.py", line 1159, in remove_reaction
+    await self._state.http.remove_reaction(self.channel.id, self.id, emoji, member.id)
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\discord\http.py", line 739, in request
+    raise Forbidden(response, data)
+discord.errors.Forbidden: 403 Forbidden (error code: 50013): Missing Permissions
+2024-01-13 18:17:21,733 - ERROR - Ignoring exception in on_command_error
+Traceback (most recent call last):
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\discord\ext\commands\core.py", line 235, in wrapped
+    ret = await coro(*args, **kwargs)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\src\bot.py", line 545, in give_award
+    if award_id.strip() in awards_dict:
+                           ^^^^^^^^^^^
+NameError: name 'awards_dict' is not defined
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\discord\client.py", line 441, in _run_event
+    await coro(*args, **kwargs)
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\src\bot.py", line 39, in on_command_error
+    raise error  # Re-raise other errors so you can notice them
+    ^^^^^^^^^^^
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\discord\ext\commands\bot.py", line 1350, in invoke
+    await ctx.command.invoke(ctx)
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\discord\ext\commands\core.py", line 1029, in invoke
+    await injected(*ctx.args, **ctx.kwargs)  # type: ignore
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\discord\ext\commands\core.py", line 244, in wrapped
+    raise CommandInvokeError(exc) from exc
+discord.ext.commands.errors.CommandInvokeError: Command raised an exception: NameError: name 'awards_dict' is not defined
+2024-01-13 18:18:47,493 - ERROR - Ignoring exception in on_command_error
+Traceback (most recent call last):
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\discord\ext\commands\core.py", line 235, in wrapped
+    ret = await coro(*args, **kwargs)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\src\bot.py", line 545, in give_award
+    if award_id.strip() in awards_dict:
+                           ^^^^^^^^^^^
+NameError: name 'awards_dict' is not defined
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\discord\client.py", line 441, in _run_event
+    await coro(*args, **kwargs)
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\src\bot.py", line 39, in on_command_error
+    raise error  # Re-raise other errors so you can notice them
+    ^^^^^^^^^^^
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\discord\ext\commands\bot.py", line 1350, in invoke
+    await ctx.command.invoke(ctx)
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\discord\ext\commands\core.py", line 1029, in invoke
+    await injected(*ctx.args, **ctx.kwargs)  # type: ignore
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\discord\ext\commands\core.py", line 244, in wrapped
+    raise CommandInvokeError(exc) from exc
+discord.ext.commands.errors.CommandInvokeError: Command raised an exception: NameError: name 'awards_dict' is not defined
+2024-01-13 18:20:02,107 - DEBUG - matplotlib data path: C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\matplotlib\mpl-data
+2024-01-13 18:20:02,110 - DEBUG - CONFIGDIR=C:\Users\Gavin\.matplotlib
+2024-01-13 18:20:02,111 - DEBUG - interactive is False
+2024-01-13 18:20:02,111 - DEBUG - platform is win32
+2024-01-13 18:20:02,174 - WARNING - PyNaCl is not installed, voice will NOT be supported
+2024-01-13 18:20:02,175 - DEBUG - on_command_error has successfully been registered as an event
+2024-01-13 18:20:02,175 - DEBUG - on_reaction_add has successfully been registered as an event
+2024-01-13 18:20:02,177 - DEBUG - Using proactor: IocpProactor
+2024-01-13 18:20:02,179 - INFO - logging in using static token
+2024-01-13 18:20:03,015 - INFO - Shard ID None has connected to Gateway (Session ID: 992eb7c32c2724dc331f2232580a8100).
+2024-01-13 18:20:49,218 - DEBUG - STREAM b'IHDR' 16 13
+2024-01-13 18:20:49,218 - DEBUG - STREAM b'IDAT' 41 266
+2024-01-13 18:20:49,220 - DEBUG - STREAM b'IHDR' 16 13
+2024-01-13 18:20:49,220 - DEBUG - STREAM b'IDAT' 41 265
+2024-01-13 18:20:49,222 - DEBUG - STREAM b'IHDR' 16 13
+2024-01-13 18:20:49,223 - DEBUG - STREAM b'IDAT' 41 274
+2024-01-13 18:20:49,225 - DEBUG - STREAM b'IHDR' 16 13
+2024-01-13 18:20:49,225 - DEBUG - STREAM b'IDAT' 41 266
+2024-01-13 18:20:49,228 - DEBUG - STREAM b'IHDR' 16 13
+2024-01-13 18:20:49,228 - DEBUG - STREAM b'IDAT' 41 269
+2024-01-13 18:20:49,231 - DEBUG - STREAM b'IHDR' 16 13
+2024-01-13 18:20:49,231 - DEBUG - STREAM b'IDAT' 41 246
+2024-01-13 18:20:49,233 - DEBUG - STREAM b'IHDR' 16 13
+2024-01-13 18:20:49,234 - DEBUG - STREAM b'IDAT' 41 254
+2024-01-13 18:20:49,236 - DEBUG - STREAM b'IHDR' 16 13
+2024-01-13 18:20:49,236 - DEBUG - STREAM b'IDAT' 41 272
+2024-01-13 18:20:49,237 - DEBUG - STREAM b'IHDR' 16 13
+2024-01-13 18:20:49,237 - DEBUG - STREAM b'IDAT' 41 271
+2024-01-13 18:20:49,237 - DEBUG - STREAM b'IHDR' 16 13
+2024-01-13 18:20:49,237 - DEBUG - STREAM b'IDAT' 41 250
+2024-01-13 18:20:49,244 - DEBUG - STREAM b'IHDR' 16 13
+2024-01-13 18:20:49,244 - DEBUG - STREAM b'IDAT' 41 272
+2024-01-13 18:20:49,246 - DEBUG - STREAM b'IHDR' 16 13
+2024-01-13 18:20:49,246 - DEBUG - STREAM b'IDAT' 41 247
+2024-01-13 18:22:11,455 - DEBUG - STREAM b'IHDR' 16 13
+2024-01-13 18:22:11,455 - DEBUG - STREAM b'IDAT' 41 266
+2024-01-13 18:22:11,455 - DEBUG - STREAM b'IHDR' 16 13
+2024-01-13 18:22:11,455 - DEBUG - STREAM b'IDAT' 41 265
+2024-01-13 18:22:11,455 - DEBUG - STREAM b'IHDR' 16 13
+2024-01-13 18:22:11,455 - DEBUG - STREAM b'IDAT' 41 274
+2024-01-13 18:22:11,456 - DEBUG - STREAM b'IHDR' 16 13
+2024-01-13 18:22:11,456 - DEBUG - STREAM b'IDAT' 41 266
+2024-01-13 18:22:11,456 - DEBUG - STREAM b'IHDR' 16 13
+2024-01-13 18:22:11,456 - DEBUG - STREAM b'IDAT' 41 269
+2024-01-13 18:22:11,456 - DEBUG - STREAM b'IHDR' 16 13
+2024-01-13 18:22:11,456 - DEBUG - STREAM b'IDAT' 41 246
+2024-01-13 18:22:11,457 - DEBUG - STREAM b'IHDR' 16 13
+2024-01-13 18:22:11,457 - DEBUG - STREAM b'IDAT' 41 272
+2024-01-13 18:22:11,457 - DEBUG - STREAM b'IHDR' 16 13
+2024-01-13 18:22:11,457 - DEBUG - STREAM b'IDAT' 41 271
+2024-01-13 18:22:11,457 - DEBUG - STREAM b'IHDR' 16 13
+2024-01-13 18:22:11,457 - DEBUG - STREAM b'IDAT' 41 250
+2024-01-13 18:22:11,457 - DEBUG - STREAM b'IHDR' 16 13
+2024-01-13 18:22:11,457 - DEBUG - STREAM b'IDAT' 41 272
+2024-01-13 18:22:11,457 - DEBUG - STREAM b'IHDR' 16 13
+2024-01-13 18:22:11,457 - DEBUG - STREAM b'IDAT' 41 247
+2024-01-13 18:22:52,182 - DEBUG - STREAM b'IHDR' 16 13
+2024-01-13 18:22:52,183 - DEBUG - STREAM b'IDAT' 41 265
+2024-01-13 18:22:52,183 - DEBUG - STREAM b'IHDR' 16 13
+2024-01-13 18:22:52,183 - DEBUG - STREAM b'IDAT' 41 269
+2024-01-13 18:22:52,187 - DEBUG - STREAM b'IHDR' 16 13
+2024-01-13 18:22:52,187 - DEBUG - STREAM b'IDAT' 41 273
+2024-01-13 18:22:52,187 - DEBUG - STREAM b'IHDR' 16 13
+2024-01-13 18:22:52,187 - DEBUG - STREAM b'IDAT' 41 272
+2024-01-13 18:22:52,187 - DEBUG - STREAM b'IHDR' 16 13
+2024-01-13 18:22:52,187 - DEBUG - STREAM b'IDAT' 41 247
+2024-01-13 18:26:08,145 - DEBUG - matplotlib data path: C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\matplotlib\mpl-data
+2024-01-13 18:26:08,149 - DEBUG - CONFIGDIR=C:\Users\Gavin\.matplotlib
+2024-01-13 18:26:08,150 - DEBUG - interactive is False
+2024-01-13 18:26:08,150 - DEBUG - platform is win32
+2024-01-13 18:26:08,209 - WARNING - PyNaCl is not installed, voice will NOT be supported
+2024-01-13 18:26:08,210 - DEBUG - on_command_error has successfully been registered as an event
+2024-01-13 18:26:08,210 - DEBUG - on_reaction_add has successfully been registered as an event
+2024-01-13 18:26:08,212 - DEBUG - Using proactor: IocpProactor
+2024-01-13 18:26:08,213 - INFO - logging in using static token
+2024-01-13 18:26:09,058 - INFO - Shard ID None has connected to Gateway (Session ID: 0865bd12321d31fe8e3ca600195be4b9).
+2024-01-13 18:26:17,346 - ERROR - Ignoring exception in on_command_error
+Traceback (most recent call last):
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\discord\ext\commands\core.py", line 235, in wrapped
+    ret = await coro(*args, **kwargs)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\src\bot.py", line 514, in give_award
+    embed = create_awards_embed(awards, current_page, items_per_page)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\src\bot.py", line 76, in create_awards_embed
+    for aid, aname, adesc in awards[page_start:page_end]:
+        ^^^^^^^^^^^^^^^^^
+ValueError: not enough values to unpack (expected 3, got 2)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\discord\client.py", line 441, in _run_event
+    await coro(*args, **kwargs)
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\src\bot.py", line 39, in on_command_error
+    raise error  # Re-raise other errors so you can notice them
+    ^^^^^^^^^^^
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\discord\ext\commands\bot.py", line 1350, in invoke
+    await ctx.command.invoke(ctx)
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\discord\ext\commands\core.py", line 1029, in invoke
+    await injected(*ctx.args, **ctx.kwargs)  # type: ignore
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\discord\ext\commands\core.py", line 244, in wrapped
+    raise CommandInvokeError(exc) from exc
+discord.ext.commands.errors.CommandInvokeError: Command raised an exception: ValueError: not enough values to unpack (expected 3, got 2)
+2024-01-13 18:26:30,807 - DEBUG - matplotlib data path: C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\matplotlib\mpl-data
+2024-01-13 18:26:30,811 - DEBUG - CONFIGDIR=C:\Users\Gavin\.matplotlib
+2024-01-13 18:26:30,812 - DEBUG - interactive is False
+2024-01-13 18:26:30,813 - DEBUG - platform is win32
+2024-01-13 18:26:30,875 - WARNING - PyNaCl is not installed, voice will NOT be supported
+2024-01-13 18:26:30,875 - DEBUG - on_command_error has successfully been registered as an event
+2024-01-13 18:26:30,875 - DEBUG - on_reaction_add has successfully been registered as an event
+2024-01-13 18:26:30,878 - DEBUG - Using proactor: IocpProactor
+2024-01-13 18:26:30,878 - INFO - logging in using static token
+2024-01-13 18:26:31,675 - INFO - Shard ID None has connected to Gateway (Session ID: e041cb0ab5b047856a934aa41a5f2633).

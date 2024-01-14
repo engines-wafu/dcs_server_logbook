@@ -2,10 +2,11 @@ import discord, asyncio, logging, time, datetime, tracemalloc
 from main import main
 from utils.ribbon import ribbonGenerator, create_award_quilt
 from discord.ext import commands
+from discord.ext.commands import has_role, CheckFailure
 from html_generator.html_generator import generate_index_html, load_combined_stats, generate_flight_plans_page
 from utils.stat_processing import get_pilot_qualifications_with_details, get_pilot_awards_with_details, get_pilot_details
 from database.db_crud import *
-from config import TOKEN, DB_PATH, JSON_PATH
+from config import *
 
 tracemalloc.start()
 
@@ -16,105 +17,65 @@ logging.basicConfig(filename=log_filename, level=logging.DEBUG,
 
 output_path = 'web/index.html'
 json_path = 'data/stats/combinedStats.json'
+award_messages = {}
 bot = commands.Bot(command_prefix='!', intents=discord.Intents.all())
-predefined_colors = [
-  "#DAA520", 
-  "#C0C0C0", 
-  "#CD7F32", 
-  "#B9CCED", 
-  "#800000", 
-  "#008000", 
-  "#000080", 
-  "#FFD700", 
-  "#A52A2A", 
-  "#FFA500", 
-  "#4682B4", 
-  "#6B8E23"
-]
+predefined_colors = PREDEFINED_COLORS
 
-@bot.command(name='add_squadron')
-async def add_squadron(ctx):
-    """
-    Adds a new squadron to the database, with details collected via direct messages (DMs).
+def is_commanding_officer():
+    async def predicate(ctx):
+        return any(role.name == 'Squadron Commanders' for role in ctx.author.roles)
+    return commands.check(predicate)
 
-    This command guides the user through the process of adding a new squadron by prompting for necessary information such as squadron ID, motto, service branch, commission date, commanding officer, aircraft type, and pseudo type. The process is conducted through DMs for privacy. Once all details are provided, the new squadron is added to the database, and a confirmation is sent in an embedded message format.
+def is_server_admin():
+    async def predicate(ctx):
+        return any(role.name == 'Server admin' for role in ctx.author.roles)
+    return commands.check(predicate)
 
-    Usage: !add_squadron
+@bot.event
+async def on_command_error(ctx, error):
+    if isinstance(error, commands.CheckFailure):
+        await ctx.send("You do not have the required role to use this command.")
+    else:
+        raise error  # Re-raise other errors so you can notice them
 
-    Example:
-    User: !add_squadron
-    Bot: [In DMs] Please enter the squadron ID:
-    User: [Responds in DMs with each detail as prompted]
-    Bot: [In server] Squadron Added Successfully [with detailed embed]
-    """
-    # Helper function to prompt for input in DMs and return response
-    async def prompt_and_get_response_dm(prompt):
-        dm_channel = await ctx.author.create_dm()
-        await dm_channel.send(prompt)
-        response = await get_response_dm(ctx, dm_channel)
-        return response if response else None
-
-    # Function to wait for user's response in DMs
-    async def get_response_dm(ctx, dm_channel):
-        def check(m):
-            return m.author == ctx.author and m.channel == dm_channel
-
-        try:
-            response = await bot.wait_for('message', check=check, timeout=90.0)
-            return response.content
-        except asyncio.TimeoutError:
-            await dm_channel.send("You did not respond in time.")
-            return None
-
-    # Collecting squadron details from the user
-    logging.info("Starting to collect squadron details via DMs.")
-    squadron_id = await prompt_and_get_response_dm("Please enter the squadron ID:")
-    if not squadron_id:
-        logging.warning("Squadron ID not provided. Exiting command.")
+@bot.event
+async def on_reaction_add(reaction, user):
+    # Ignore the bot's own reactions and other messages
+    if user.bot or reaction.message.id not in award_messages:
         return
 
-    squadron_motto = await prompt_and_get_response_dm("Please enter the squadron motto:")
-    squadron_service = await prompt_and_get_response_dm("Please enter the squadron service branch (e.g., RN, Army, RAF):")
-    squadron_commission_date_str = await prompt_and_get_response_dm("Please enter the squadron commission date (YYYY-MM-DD):")
-    if not squadron_commission_date_str:
-        return
-    squadron_commanding_officer = await prompt_and_get_response_dm("Please enter the name of the commanding officer:")
-    squadron_aircraft_type = await prompt_and_get_response_dm("Please enter the squadron aircraft type:")
-    squadron_pseudo_type = await prompt_and_get_response_dm("Please enter the squadron pseudo type:")
+    # Retrieve the state for the current message
+    message_info = award_messages[reaction.message.id]
+    current_page = message_info['page']
+    total_pages = message_info['total_pages']
+    awards = message_info['awards']
+    items_per_page = message_info['items_per_page']  # Retrieve items_per_page
 
-    # Validate squadron_service
-    valid_services = ['RN', 'Army', 'RAF']
-    if squadron_service not in valid_services:
-        await ctx.send(f"Invalid service branch. Please choose from {valid_services}.")
-        return
+    # Check which reaction was added and update the page number
+    if str(reaction.emoji) == "⬅️" and current_page > 1:
+        current_page -= 1
+    elif str(reaction.emoji) == "➡️" and current_page < total_pages:
+        current_page += 1
+    else:
+        return  # If it's not one of the navigation reactions, ignore
 
-    # Convert the date string to epoch time
-    try:
-        commission_date_obj = datetime.datetime.strptime(squadron_commission_date_str, "%Y-%m-%d")
-        squadron_commission_date = int(commission_date_obj.timestamp())
-    except ValueError:
-        await ctx.send("Invalid date format. Please use YYYY-MM-DD.")
-        return
+    # Edit the message with the new embed for the updated page
+    embed = create_awards_embed(awards, current_page, items_per_page)
+    await reaction.message.edit(embed=embed)
 
-    logging.info("Starting the !add_squadron command.")
-    try:
-        # Run the add_squadron function in an executor to avoid blocking
-        loop = asyncio.get_event_loop()
-        insert_success = await loop.run_in_executor(None, add_squadron, 
-            DB_PATH, squadron_id, squadron_motto, squadron_service,
-            squadron_commission_date, squadron_commanding_officer,
-            squadron_aircraft_type, squadron_pseudo_type)
+    # Update the global dictionary with the new current page
+    award_messages[reaction.message.id]['page'] = current_page
 
-        if insert_success:
-            logging.info(f"Squadron {squadron_id} added successfully to the database.")
-            # Sending confirmation message with embedded format
-            # [Construct and send the embedded message as before]
-        else:
-            logging.warning(f"Failed to add Squadron {squadron_id} to the database.")
-            await ctx.send("Failed to add the squadron.")
-    except Exception as e:
-        logging.exception("Exception occurred in !add_squadron command: ", exc_info=e)
-        await ctx.send("An error occurred while processing the command.")
+    # Remove the reaction to allow for re-use
+    await reaction.message.remove_reaction(reaction.emoji, user)
+
+def create_awards_embed(awards, page, items_per_page=ITEMS_PER_PAGE):
+    embed = discord.Embed(title=f"Available Awards - Page {page}", color=0x00ff00)
+    page_start = (page - 1) * items_per_page
+    page_end = page_start + items_per_page
+    for aid, aname in awards[page_start:page_end]:
+        embed.add_field(name=f"ID: {aid}", value=aname, inline=False)
+    return embed
 
 def generate_single_ribbon(award_name, file_path, min_block_width_percent=10, max_block_width_percent=30):
     pattern_generator = ribbonGenerator(
@@ -124,6 +85,20 @@ def generate_single_ribbon(award_name, file_path, min_block_width_percent=10, ma
         max_block_width_percent=max_block_width_percent
     )
     pattern_generator.save_pattern_as_png(file_path)
+
+# Helper function to prompt for input in DMs and return response
+async def prompt_for_details(ctx, prompt_text):
+    """
+    Sends a prompt to the user in DM and waits for a response.
+    Returns the response content, or None if no response is given.
+    """
+    try:
+        await ctx.author.send(prompt_text)
+        message = await bot.wait_for('message', timeout=90.0, check=lambda m: m.author == ctx.author and isinstance(m.channel, discord.DMChannel))
+        return message.content
+    except asyncio.TimeoutError:
+        await ctx.author.send("You did not respond in time.")
+        return None
 
 async def get_response(ctx):
     def check(m):
@@ -135,6 +110,204 @@ async def get_response(ctx):
     except asyncio.TimeoutError:
         await ctx.send("You did not respond in time.")
         return None
+
+@bot.command(name='add_squadron')
+@is_server_admin()
+async def add_squadron_command(ctx):
+    """
+    Adds a new squadron to the database, with details collected via direct messages (DMs).
+
+    This command initiates a process to add a new squadron to the database. The user is prompted to provide various details about the squadron through DMs, ensuring privacy and data integrity. The bot collects information such as the squadron ID, motto, service branch, commission date, commanding officer, aircraft type, and pseudo type.
+
+    Once all the necessary information is collected, the bot sends a confirmation message back to the user in DMs, displaying all the entered details in an embedded message format. The user can then review these details and either confirm or cancel the addition of the squadron to the database.
+
+    If the user confirms, the bot proceeds to add the squadron to the database and then sends a confirmation message in the public text channel where the command was initially invoked, indicating the successful addition. If the user cancels or fails to respond, the process is terminated, and no changes are made to the database.
+
+    Usage:
+    User invokes the command in a text channel: 
+    !add_squadron
+
+    Bot responds via DM and guides the user through the data entry process.
+
+    Example Interaction:
+    User: !add_squadron
+    Bot: [In DMs] Please enter the squadron ID:
+    User: [Responds in DMs] 101
+    Bot: [In DMs] Please enter the squadron motto:
+    User: [Responds in DMs] Semper Paratus
+    ... [further data collection interactions]
+    Bot: [In DMs] Here are the details you entered: [Shows Embed]
+    User: [Reacts with ✅ or ❌ in DMs]
+    Bot: [In server channel if ✅] Squadron 101 added successfully.
+
+    Note:
+    - The user must react with ✅ to confirm or ❌ to cancel the addition.
+    - If the user does not react within 60 seconds, the operation is automatically canceled.
+    - The user can restart the process by invoking the command again.
+    """
+    logging.info("Starting to collect squadron details via DMs.")
+    details = {}
+    fields = [
+        ("squadron ID", None),
+        ("squadron motto", None),
+        ("squadron service branch (e.g., RN, Army, RAF)", ['RN', 'Army', 'RAF']),
+        ("squadron commission date (YYYY-MM-DD)", "date"),
+        ("name of the commanding officer", None),
+        ("squadron aircraft type", None),
+        ("squadron pseudo type", None)
+    ]
+
+    for field, validation in fields:
+        response = await prompt_for_details(ctx, f"Please enter the {field}:")
+        if not response:
+            await ctx.author.send("No response provided. Exiting command.")
+            return
+
+        if validation == "date":
+            try:
+                commission_date_obj = datetime.datetime.strptime(response, "%Y-%m-%d")
+                details[field] = commission_date_obj.strftime("%Y-%m-%d")  # Store as string for display
+            except ValueError:
+                await ctx.author.send("Invalid date format. Please use YYYY-MM-DD.")
+                return
+        elif isinstance(validation, list) and response not in validation:
+            await ctx.author.send(f"Invalid input. Please choose from {validation}.")
+            return
+        else:
+            details[field] = response
+
+    # Construct and send the confirmation embed via DM
+    embed = discord.Embed(title="Please Confirm Squadron Details", color=0x00ff00)
+    for field, value in details.items():
+        embed.add_field(name=field.capitalize(), value=value, inline=False)
+
+    dm_channel = await ctx.author.create_dm()
+    confirmation_message = await dm_channel.send(embed=embed)
+    await confirmation_message.add_reaction("✅")
+    await confirmation_message.add_reaction("❌")
+
+    # Check for user's reaction in DM
+    def check(reaction, user):
+        return user == ctx.author and reaction.message.id == confirmation_message.id and str(reaction.emoji) in ["✅", "❌"]
+
+    try:
+        reaction, user = await bot.wait_for('reaction_add', timeout=60.0, check=check)
+        if str(reaction.emoji) == "✅":
+            # User confirmed, proceed with adding to database
+            loop = asyncio.get_event_loop()
+            insert_success = await loop.run_in_executor(None, add_squadron_to_db, DB_PATH, *details.values())
+            if insert_success:
+                logging.info(f"Squadron {details['squadron ID']} added successfully to the database.")
+                await ctx.send(embed=embed)  # Send confirmation in the text channel
+            else:
+                logging.warning(f"Failed to add Squadron {details['squadron ID']} to the database.")
+                await ctx.author.send("Failed to add the squadron.")
+        elif str(reaction.emoji) == "❌":
+            # User denied, start data entry process again or exit
+            await ctx.author.send("Data entry canceled. Please start over with !add_squadron.")
+    except asyncio.TimeoutError:
+        await ctx.author.send("No response received. Squadron addition canceled.")
+
+@bot.command(name='edit_squadron')
+@is_server_admin()
+async def edit_squadron_command(ctx):
+    """
+    Edits an existing squadron's details in the database, with interactions conducted via DMs.
+
+    The command first presents a list of existing squadrons to the user in a DM. The user selects a squadron to edit by specifying its list number. The bot then prompts the user to edit various details of the squadron. Once the user has provided all necessary updates, the bot sends a confirmation message with the updated details in an embedded format. The user confirms the updates, and the bot then commits these changes to the database.
+
+    Usage: !edit_squadron
+
+    Example:
+    User: !edit_squadron
+    Bot: [In DMs] Here are the available squadrons: [Shows Embed]
+    User: [Responds in DMs] 1
+    Bot: [In DMs] Please enter the new motto for Squadron [ID]:
+    User: [Responds in DMs with updated details]
+    Bot: [In DMs] Here are the updated details: [Shows Embed]
+    User: [Confirms the details]
+    Bot: [In server] Squadron [ID] updated successfully.
+    """
+
+    # Fetch list of squadron IDs
+    squadrons = get_squadron_ids(DB_PATH)
+    if not squadrons:
+        await ctx.author.send("No squadrons available to edit.")
+        return
+
+    # Send a list of squadrons in an embed via DM
+    embed = discord.Embed(title="Available Squadrons", description="Select a squadron to edit by entering its number.", color=0x00ff00)
+    for index, squadron_id in enumerate(squadrons, start=1):
+        embed.add_field(name=f"Squadron {index}", value=squadron_id, inline=False)
+    
+    dm_channel = await ctx.author.create_dm()
+    squadron_list_message = await dm_channel.send(embed=embed)
+
+    # Prompt user to select a squadron
+    selected_squadron = await prompt_for_details(ctx, "Please enter the number of the squadron you wish to edit:")
+
+    # Validate user's choice
+    try:
+        selected_index = int(selected_squadron) - 1
+        if selected_index < 0 or selected_index >= len(squadrons):
+            raise ValueError
+    except ValueError:
+        await dm_channel.send("Invalid selection. Please start over with !edit_squadron.")
+        return
+
+    squadron_id = squadrons[selected_index]
+
+    # Prompt for details to edit
+
+    # Assuming 'squadron_id' is the ID of the squadron to be edited
+    # Fetch current details of the selected squadron
+    current_details = get_squadron_details(DB_PATH, squadron_id)
+    if not current_details:
+        await dm_channel.send(f"No details found for Squadron ID: {squadron_id}. Please try again.")
+        return
+
+    # Fields that can be edited (add more as needed)
+    editable_fields = [
+        "motto",
+        "service branch",
+        "commission date",
+        "commanding officer",
+        "aircraft type",
+        "pseudo type"
+    ]
+
+    # Collect new details from the user
+    new_details = {}
+    for field in editable_fields:
+        new_value = await prompt_for_details(ctx, f"Enter the new {field} (or type 'skip' to keep current):")
+        if new_value.lower() != 'skip':
+            new_details[field] = new_value
+
+    # Construct confirmation embed with new details
+    confirm_embed = discord.Embed(title="Confirm Squadron Updates", color=0x00ff00)
+    for field, value in new_details.items():
+        confirm_embed.add_field(name=field.capitalize(), value=value, inline=False)
+    confirm_message = await dm_channel.send(embed=confirm_embed)
+    await confirm_message.add_reaction("✅")
+    await confirm_message.add_reaction("❌")
+
+    # Check for user's reaction
+    def check(reaction, user):
+        return user == ctx.author and reaction.message.id == confirm_message.id and str(reaction.emoji) in ["✅", "❌"]
+
+    try:
+        reaction, user = await bot.wait_for('reaction_add', timeout=60.0, check=check)
+        if str(reaction.emoji) == "✅":
+            # User confirmed, update details in database
+            update_success = update_squadron(DB_PATH, squadron_id, new_details)
+            if update_success:
+                await ctx.send(f"Squadron {squadron_id} updated successfully.")
+            else:
+                await ctx.send("Failed to update the squadron.")
+        elif str(reaction.emoji) == "❌":
+            await ctx.author.send("Update canceled.")
+    except asyncio.TimeoutError:
+        await ctx.author.send("No response received. Update canceled.")
 
 @bot.command(name='pilot_info')
 async def pilot_info(ctx, *, pilot_name):
@@ -205,6 +378,7 @@ async def pilot_info(ctx, *, pilot_name):
     await ctx.send(file=image_file, embed=embed)
 
 @bot.command(name='update_logbook')
+@is_server_admin()
 async def update_logbook(ctx):
     """
     Updates the logbook with the latest data.
@@ -226,6 +400,7 @@ async def update_logbook(ctx):
         await ctx.send(f"An error occurred while updating the logbook: {e}")
 
 @bot.command(name='create_award')
+@is_server_admin()
 async def create_award(ctx):
     """
     Creates a new award and generates a ribbon for it.
@@ -265,6 +440,7 @@ async def create_award(ctx):
         await ctx.send(f"Failed to create ribbon: {e}")
     
 @bot.command(name='create_qualification')
+@is_server_admin()
 async def create_qualification(ctx):
     """
     Creates a new qualification entry in the database.
@@ -303,6 +479,7 @@ async def create_qualification(ctx):
         await ctx.send(f"Failed to create qualification: {e}")
 
 @bot.command(name='give_award')
+@is_commanding_officer()
 async def give_award(ctx):
     """
     Assigns specified awards to selected pilots.
@@ -325,27 +502,44 @@ async def give_award(ctx):
         await ctx.send(embed=discord.Embed(description="No awards available.", color=0xff0000))
         return
 
-    # Create an embed for awards
-    embed = discord.Embed(title="Available Awards", description="Select an award by its ID.", color=0x00ff00)
+    # Create a dictionary of awards
     awards_dict = {str(aid): aname for aid, aname in awards}
-    for aid, aname in awards_dict.items():
-        embed.add_field(name=aid, value=aname, inline=False)
 
-    # Send award list and ask for pilot name(s)
-    award_msg = await ctx.send(embed=embed)
+    # Define page variables
+    current_page = 1
+    items_per_page = ITEMS_PER_PAGE
+    total_pages = (len(awards) + items_per_page - 1) // items_per_page
+
+    # Create an embed for awards
+    embed = create_awards_embed(awards, current_page, items_per_page)
+    
+    # Send the initial awards list
+    message = await ctx.send(embed=embed)
+
+    # Store the message ID and other details for reaction handling
+    award_messages[message.id] = {'page': current_page, 'total_pages': total_pages, 'awards': awards, 'items_per_page': items_per_page}
+
+    # Add reaction emojis for navigation if there are multiple pages
+    if total_pages > 1:
+        await message.add_reaction("⬅️")
+        await message.add_reaction("➡️")
+
+    # Get pilot names
     await ctx.send("Enter pilot name(s) (comma-separated):")
     pilot_names_response = await get_response(ctx)
     if not pilot_names_response:
         return
 
+    # Process pilot names and get their IDs
     pilot_ids = [find_pilot_id_by_name(DB_PATH, name.strip()) for name in pilot_names_response.split(",") if name.strip()]
 
-    # Prompt for award selection
+    # Get award IDs from the user
     await ctx.send("Enter the award ID(s) from the list above (comma-separated):")
     award_ids_response = await get_response(ctx)
     if not award_ids_response:
         return
 
+    # Process award IDs
     award_ids = award_ids_response.split(",")
 
     # Assign award to pilots
@@ -354,9 +548,11 @@ async def give_award(ctx):
             if award_id.strip() in awards_dict:
                 assign_award_to_pilot(DB_PATH, pilot_id, int(award_id.strip()))
 
+    # Confirmation message
     await ctx.send(embed=discord.Embed(description="Award(s) assigned to selected pilot(s).", color=0x00ff00))
 
 @bot.command(name='give_qualification')
+@is_commanding_officer()
 async def give_qualification(ctx):
     """
     Assigns specified qualifications to selected pilots.
@@ -413,6 +609,7 @@ async def give_qualification(ctx):
     await ctx.send(embed=discord.Embed(description="Qualification assigned to selected pilots.", color=0x00ff00))
 
 @bot.command(name='clear_award')
+@is_commanding_officer()
 async def clear_award(ctx, *, pilot_name):
     """
     Removes specified awards from a pilot's record.
@@ -460,6 +657,7 @@ async def clear_award(ctx, *, pilot_name):
     await ctx.send(f"Awards removed from pilot {pilot_name}'s record.")
 
 @bot.command(name='clear_qualification')
+@is_commanding_officer()
 async def clear_qualification(ctx, *, pilot_name):
     """
     Removes specified qualifications from a pilot's record.
@@ -507,6 +705,7 @@ async def clear_qualification(ctx, *, pilot_name):
     await ctx.send(f"Qualifications removed from pilot {pilot_name}'s record.")
 
 @bot.command(name='assign_co')
+@is_server_admin()
 async def assign_co(ctx, *, pilot_name):
     """
     Assigns a pilot as the commanding officer (CO) of a squadron.
@@ -565,6 +764,7 @@ async def assign_co(ctx, *, pilot_name):
         await ctx.send(f"An error occurred: {e}")
 
 @bot.command(name='assign_pilot')
+@is_commanding_officer()
 async def assign_pilot(ctx, *, pilot_names):  # Use '*' to capture all text after the command
     """
     Assigns one or more pilots to squadrons.
@@ -632,6 +832,7 @@ async def assign_pilot(ctx, *, pilot_names):  # Use '*' to capture all text afte
         await ctx.send(f"An error occurred: {e}")
 
 @bot.command(name='assign_aircraft')
+@is_commanding_officer()
 async def assign_aircraft(ctx):
     """
     Assigns selected aircraft to a squadron or sends them to maintenance.
@@ -857,7 +1058,7 @@ bot.remove_command('help')
 @bot.command(name='help')
 async def help_command(ctx, command_name=None):
     """
-    Provides help information about commands using embedded messages, with headlines from docstrings.
+    Provides help information about commands using embedded messages, sorted alphabetically.
 
     Usage: !help [command_name]
 
@@ -865,7 +1066,7 @@ async def help_command(ctx, command_name=None):
     command_name (str, optional): The name of the command to get detailed help for.
 
     Example:
-    !help  # Lists all commands with headlines from docstrings
+    !help  # Lists all commands alphabetically
     !help assign_pilot  # Detailed help for assign_pilot command
     """
     if command_name:
@@ -878,12 +1079,20 @@ async def help_command(ctx, command_name=None):
         else:
             await ctx.send(f"No command named '{command_name}' found.")
     else:
-        # General help - list all commands with embedded format
-        embed = discord.Embed(title="Available Commands", description="List of all available commands and their arguments:", color=0x00ff00)
-        for command in bot.commands:
-            # Extract the first line (headline) from the command's docstring
+        # General help - list all commands alphabetically
+        embed = discord.Embed(title="Available Commands", description="List of all available commands and their arguments, sorted alphabetically:", color=0x00ff00)
+        commands_sorted = sorted(bot.commands, key=lambda cmd: cmd.name)
+        for command in commands_sorted:
+            # Determine the permission requirement for the command
+            permission_info = ""
+            if any(check.__qualname__.startswith('is_server_admin') for check in command.checks):
+                permission_info = " [Server Admin Only]"
+            elif any(check.__qualname__.startswith('is_commanding_officer') for check in command.checks):
+                permission_info = " [Commanding Officer Only]"
+
+            # Add command info to the embed
             first_line = command.help.split('\n')[0] if command.help else 'No description available'
-            embed.add_field(name=f"!{command.name} {command.signature}", value=first_line, inline=False)
+            embed.add_field(name=f"!{command.name} {command.signature}{permission_info}", value=first_line, inline=False)
         await ctx.send(embed=embed)
 
 bot.run(TOKEN)

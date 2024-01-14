@@ -22,6 +22,74 @@ def get_squadron_ids(db_path):
     finally:
         conn.close()
 
+def get_squadron_details(db_path, squadron_id):
+    try:
+        conn = sqlite3.connect(db_path)
+        cursor = conn.cursor()
+
+        sql_query = "SELECT * FROM Squadrons WHERE squadron_id = ?"
+        cursor.execute(sql_query, (squadron_id,))
+        row = cursor.fetchone()
+
+        if row:
+            details = {
+                "squadron_id": row[0],
+                "squadron_motto": row[1],
+                "squadron_service": row[2],
+                "squadron_commission_date": row[3],
+                "squadron_commanding_officer": row[4],
+                "squadron_aircraft_type": row[5],
+                "squadron_pseudo_type": row[6]
+            }
+            return details
+        else:
+            return None
+    except sqlite3.Error as e:
+        print(f"Database error: {e}")
+        return None
+    finally:
+        conn.close()
+
+def update_squadron(db_path, squadron_id, new_details):
+    try:
+        conn = sqlite3.connect(db_path)
+        cursor = conn.cursor()
+
+        # Map from user input keys to database column names
+        column_map = {
+            "motto": "squadron_motto",
+            "service branch": "squadron_service",
+            "commission date": "squadron_commission_date",
+            "commanding officer": "squadron_commanding_officer",
+            "aircraft type": "squadron_aircraft_type",
+            "pseudo type": "squadron_pseudo_type"
+        }
+
+        # Prepare the SQL update query
+        columns = []
+        values = []
+        for key, value in new_details.items():
+            db_column = column_map.get(key)
+            if db_column:
+                columns.append(f"{db_column} = ?")
+                values.append(value)
+
+        if not columns:
+            print("No valid columns to update.")
+            return False
+
+        sql_update_query = f"UPDATE Squadrons SET {', '.join(columns)} WHERE squadron_id = ?"
+        values.append(squadron_id)
+
+        cursor.execute(sql_update_query, values)
+        conn.commit()
+        return True
+    except sqlite3.Error as e:
+        print(f"Database error: {e}")
+        return False
+    finally:
+        conn.close()
+
 def fetch_aircraft_by_squadron(db_path):
     conn = sqlite3.connect(db_path)
     cursor = conn.cursor()
@@ -276,7 +344,7 @@ def remove_qualification_from_pilot(db_path, pilot_id, qualification_id):
     finally:
         conn.close()
 
-def add_squadron(db_path, squadron_id, squadron_motto, squadron_service, squadron_commission_date, squadron_commanding_officer, squadron_aircraft_type, squadron_pseudo_type):
+def add_squadron_to_db(db_path, squadron_id, squadron_motto, squadron_service, squadron_commission_date, squadron_commanding_officer, squadron_aircraft_type, squadron_pseudo_type):
     logging.info(f"Adding new squadron to the database: {squadron_id}")
     try:
         # Log the connection attempt
@@ -572,3 +640,4 @@ pilot_name = 'raz'
 # move_pilot_to_squadron(db_path, pilot_id, squadron_id)
 # remove_pilot_from_squadron(db_path, pilot_id)
 # print(find_pilot_id_by_name(db_path, pilot_name))
+# add_squadron_to_db(db_path, "809 NAS", "Do zooms", "RN", 11111111, "Nil", "AV8BNA", "Harrier GR9")
