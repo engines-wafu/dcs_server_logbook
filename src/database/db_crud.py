@@ -585,6 +585,16 @@ def get_pilot_full_name(db_path, pilot_id):
     else:
         return None
 
+def get_pilot_name_and_rank(db_path, pilot_id):
+    # This function needs to query the database to get the pilot's name and rank
+    # Placeholder implementation - replace this with actual database query
+    conn = sqlite3.connect(db_path)
+    cursor = conn.cursor()
+    cursor.execute("SELECT pilot_name, pilot_rank FROM Pilots WHERE pilot_id = ?", (pilot_id,))
+    result = cursor.fetchone()
+    conn.close()
+    return result if result else ("Unknown", "Unknown")
+
 def get_pilot_name(db_path, pilot_id):
     """
     Fetches the name of a pilot based on the pilot_id.

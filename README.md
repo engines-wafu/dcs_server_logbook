@@ -39,6 +39,12 @@ The DCS Server Logbook is a comprehensive tool designed for enhancing the experi
    ```
 
 5. Configure `config.py` with your Discord bot token and other preferences.
+6. Invite the Discord bot to the server and give it the necessary permissions including:
+  a. View channels
+  b. Manage roles
+  c. Send messages
+  d. Manage messages
+  e. Read message history
 
 ## Usage
 

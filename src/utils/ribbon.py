@@ -4,7 +4,7 @@ from PIL import Image, ImageOps
 from matplotlib.colors import to_rgb
 
 class ribbonGenerator:
-    def __init__(self, input_string, image_size=(64, 190), color_array=None, min_block_width_percent=5, max_block_width_percent=20):
+    def __init__(self, input_string, image_size=(64, 190), color_array=None, min_block_width_percent=3, max_block_width_percent=20):
         self.input_string = input_string
         self.image_size = image_size
         self.hash_string = self._string_to_hash(input_string)
@@ -22,7 +22,7 @@ class ribbonGenerator:
         """Uses the hash to seed a random number generator and determines the number of color blocks."""
         hash_int = int(self.hash_string, 16)
         random.seed(hash_int)
-        return random.randint(2, 4)
+        return random.randint(2, 14)
 
     def _hash_to_color_and_width_blocks(self):
         colors = random.choices(self.color_array, k=self.num_blocks)
@@ -84,18 +84,15 @@ class ribbonGenerator:
         Image.fromarray(pattern_image.astype('uint8'), 'RGB').save(file_path)
 
 predefined_colors = [
-  "#DAA520", 
-  "#C0C0C0", 
-  "#CD7F32", 
-  "#B9CCED", 
-  "#800000", 
-  "#008000", 
-  "#000080", 
-  "#FFD700", 
-  "#A52A2A", 
-  "#FFA500", 
-  "#4682B4", 
-  "#6B8E23"
+  "#C0C0C0",  # Silver
+  "#B9CCED",  # Light Steel Blue
+  "#800000",  # Maroon
+  "#008000",  # Green
+  "#000B40",  # Navy (Updated)*
+  "#DD1C1A",  # Brown (Updated)*
+  "#FFB20F",  # Orange (Updated)*
+  "#5A5F6F",  # Steel Blue (Updated)*
+  "#514B23"   # Olive Drab (Updated)*
 ]
 
 db_path = 'data/db/mayfly.db'

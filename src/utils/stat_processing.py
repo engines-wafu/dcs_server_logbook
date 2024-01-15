@@ -1,4 +1,4 @@
-import os, json, sqlite3
+import os, json, sqlite3, logging
 import datetime
 from utils.time_management import seconds_to_hours, days_from_epoch
 from database.db_crud import get_pilot_full_name
@@ -17,18 +17,9 @@ def format_epoch_to_date(epoch_time):
     return 'N/A'
 
 def get_pilot_details(db_path, pilot_id, combined_stats):
-    """
-    Fetches the details of a pilot, including service, rank, total hours, and last joined date.
-
-    :param db_path: Path to the SQLite database file.
-    :param pilot_id: Unique identifier of the pilot.
-    :param combined_stats: Dictionary containing the combined stats of all pilots.
-    :return: A dictionary containing the pilot's details.
-    """
+    # Fetch basic pilot details
     conn = sqlite3.connect(db_path)
     cursor = conn.cursor()
-
-    # Fetch basic pilot details
     cursor.execute("SELECT pilot_service, pilot_rank FROM Pilots WHERE pilot_id = ?", (pilot_id,))
     result = cursor.fetchone()
     conn.close()
@@ -38,12 +29,29 @@ def get_pilot_details(db_path, pilot_id, combined_stats):
 
     pilot_service, pilot_rank = result
 
-    # Calculate total hours and last join date from combined_stats
-    pilot_stats = combined_stats.get(pilot_id, {})
+    # Initialize total hours
     total_hours = 0
-    total_hours = sum(seconds_to_hours(aircraft_stats.get('total', 0)) for aircraft_type, aircraft_stats in pilot_stats.get('times', {}).items())
+
+    # Get the pilot's stats
+    pilot_stats = combined_stats.get(pilot_id, {})
+    times = pilot_stats.get('times', {})
+
+    try:
+        if isinstance(times, dict):
+            # Calculate total hours from a dictionary
+            for aircraft_stats in times.values():
+                if isinstance(aircraft_stats, dict):
+                    total_hours += seconds_to_hours(aircraft_stats.get('total', 0))
+                # Skip if aircraft_stats is an empty list or any other type
+
+        # Empty list or unexpected formats will result in total_hours remaining 0
+    except Exception as e:
+        logging.error(f"Error processing 'times' data for pilot_id {pilot_id}: {e}")
+        total_hours = 0
+
+    total_hours = round(total_hours,1)
     last_join = pilot_stats.get('lastJoin', 0)
-    last_join_date = datetime.datetime.fromtimestamp(last_join).strftime('%Y-%m-%d')
+    last_join_date = datetime.datetime.fromtimestamp(last_join).strftime('%Y-%m-%d') if last_join else "Unknown"
 
     return {
         'service': pilot_service,

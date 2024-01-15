@@ -1,0 +1,115 @@
+2024-01-14 19:39:22,416 - DEBUG - Bot script started.
+2024-01-14 19:41:16,840 - DEBUG - Bot script started.
+2024-01-14 19:41:42,267 - DEBUG - Attempting to give awards
+2024-01-14 19:41:47,752 - DEBUG - Assigning award: 42 to pilot: Engines, Lt Cdr
+2024-01-14 19:41:47,752 - DEBUG - Attempting to assign LCR role for award ID 42
+2024-01-14 19:45:49,746 - DEBUG - Bot script started.
+2024-01-14 19:46:11,473 - DEBUG - Attempting to give awards
+2024-01-14 19:46:16,333 - DEBUG - Assigning award: 42 to pilot: Lt Cdr Engines
+2024-01-14 19:46:16,333 - DEBUG - Attempting to assign LCR role for award ID 42
+2024-01-14 19:46:22,632 - DEBUG - Bot script started.
+2024-01-14 19:46:47,373 - DEBUG - Bot script started.
+2024-01-14 19:47:01,925 - DEBUG - Attempting to give awards
+2024-01-14 19:47:07,062 - DEBUG - Assigning award: 42 to pilot: Lt Cdr Engines
+2024-01-14 19:47:07,062 - DEBUG - Attempting to assign LCR role for award ID 42
+2024-01-14 19:48:35,206 - DEBUG - Bot script started.
+2024-01-14 19:50:43,970 - DEBUG - Bot script started.
+2024-01-14 19:51:20,427 - DEBUG - Attempting to give awards
+2024-01-14 19:51:27,497 - DEBUG - Assigning award: 42 to pilot: Lt Cdr Engines
+2024-01-14 19:51:27,497 - DEBUG - Attempting to assign LCR role for award ID 42
+2024-01-14 19:52:59,292 - DEBUG - Bot script started.
+2024-01-14 19:53:19,490 - DEBUG - Attempting to give awards
+2024-01-14 19:53:26,053 - DEBUG - Assigning award: 42 to pilot: Lt Cdr Engines
+2024-01-14 19:53:26,053 - DEBUG - Attempting to assign LCR role for award ID 42
+2024-01-14 19:53:26,054 - DEBUG - Found Discord user ID: 666056172192923649 for pilot: Engines, Lt Cdr
+2024-01-14 19:53:26,054 - WARNING - Member or role not found. Member: engines., Role: None
+2024-01-14 20:02:33,873 - DEBUG - Attempting to give awards
+2024-01-14 20:02:38,766 - DEBUG - Assigning award: 42 to pilot: Lt Cdr Engines
+2024-01-14 20:02:38,766 - DEBUG - Attempting to assign LCR role for award ID 42
+2024-01-14 20:02:38,767 - DEBUG - Found Discord user ID: 666056172192923649 for pilot: Engines, Lt Cdr
+2024-01-14 20:02:38,767 - WARNING - Member or role not found. Member: engines., Role: None
+2024-01-14 20:07:11,103 - DEBUG - Bot script started.
+2024-01-14 20:07:26,136 - DEBUG - Attempting to give awards
+2024-01-14 20:07:30,116 - DEBUG - Assigning award: 42 to pilot: Lt Cdr Engines
+2024-01-14 20:07:30,116 - DEBUG - Attempting to assign LCR role for award ID 42
+2024-01-14 20:07:30,116 - DEBUG - Assigning role id: 1196287080184152064
+2024-01-14 20:07:30,117 - DEBUG - Found Discord user ID: 666056172192923649 for pilot: Engines, Lt Cdr
+2024-01-14 20:07:30,117 - WARNING - Member or role not found. Member: engines., Role: None
+2024-01-14 20:08:59,373 - DEBUG - Bot script started.
+2024-01-14 20:09:29,041 - DEBUG - Attempting to give awards
+2024-01-14 20:09:36,513 - DEBUG - Assigning award: 42 to pilot: Lt Cdr Engines
+2024-01-14 20:09:36,513 - DEBUG - Attempting to assign LCR role for award ID 42
+2024-01-14 20:09:36,513 - DEBUG - Assigning role id: 1196287080184152064
+2024-01-14 20:09:36,513 - DEBUG - Assigning role id 1196287080184152064 to Engines
+2024-01-14 20:09:36,514 - DEBUG - Found Discord user ID: 666056172192923649 for pilot: Engines, Lt Cdr
+2024-01-14 20:09:36,514 - WARNING - Member or role not found. Member: engines., Role: None
+2024-01-14 20:13:29,960 - DEBUG - Bot script started.
+2024-01-14 20:13:41,793 - DEBUG - Attempting to give awards
+2024-01-14 20:13:45,991 - DEBUG - Assigning award: 42 to pilot: Lt Cdr Engines
+2024-01-14 20:13:45,991 - DEBUG - Attempting to assign LCR role for award ID 42
+2024-01-14 20:13:45,991 - DEBUG - Assigning role id: 1196287080184152064
+2024-01-14 20:13:45,991 - DEBUG - Attempting to assign role ID 1196287080184152064 to pilot: Lt Cdr Engines
+2024-01-14 20:13:45,992 - DEBUG - Guild ID: 1190999875609968690, Guild Name: ETDS
+2024-01-14 20:13:45,992 - DEBUG - Role ID: 1190999875609968690, Role Name: @everyone
+2024-01-14 20:13:45,992 - DEBUG - Role ID: 1196303166854140006, Role Name: logso
+2024-01-14 20:13:45,992 - DEBUG - Role ID: 1196287277001871481, Role Name: CR
+2024-01-14 20:13:45,992 - DEBUG - Role ID: 1196287080184152064, Role Name: LCR
+2024-01-14 20:13:45,992 - DEBUG - Role ID: 1195908014746640434, Role Name: Squadron Commanders
+2024-01-14 20:13:45,992 - DEBUG - Role ID: 1195900618225758229, Role Name: Server admin
+2024-01-14 20:13:45,993 - DEBUG - Role ID: 1195557831223545888, Role Name: Controllers
+2024-01-14 20:13:59,516 - DEBUG - Bot script started.
+2024-01-14 20:14:06,656 - DEBUG - Attempting to give awards
+2024-01-14 20:14:10,838 - DEBUG - Assigning award: 42 to pilot: Lt Cdr Engines
+2024-01-14 20:14:10,839 - DEBUG - Attempting to assign LCR role for award ID 42
+2024-01-14 20:14:10,839 - DEBUG - Assigning role id: 1196287080184152064
+2024-01-14 20:14:10,839 - DEBUG - Attempting to assign role ID 1196287080184152064 to pilot: Lt Cdr Engines
+2024-01-14 20:14:10,839 - DEBUG - Guild ID: 1190999875609968690, Guild Name: ETDS
+2024-01-14 20:14:10,839 - DEBUG - Role ID: 1190999875609968690, Role Name: @everyone
+2024-01-14 20:14:10,839 - DEBUG - Role ID: 1196303166854140006, Role Name: logso
+2024-01-14 20:14:10,839 - DEBUG - Role ID: 1196287277001871481, Role Name: CR
+2024-01-14 20:14:10,840 - DEBUG - Role ID: 1196287080184152064, Role Name: LCR
+2024-01-14 20:14:10,840 - DEBUG - Role ID: 1195908014746640434, Role Name: Squadron Commanders
+2024-01-14 20:14:10,840 - DEBUG - Role ID: 1195900618225758229, Role Name: Server admin
+2024-01-14 20:14:10,840 - DEBUG - Role ID: 1195557831223545888, Role Name: Controllers
+2024-01-14 20:14:11,001 - ERROR - Error assigning role: 403 Forbidden (error code: 50013): Missing Permissions
+2024-01-14 20:14:28,264 - DEBUG - Attempting to give awards
+2024-01-14 20:14:33,121 - DEBUG - Assigning award: 42 to pilot: Lt Cdr Engines
+2024-01-14 20:14:33,121 - DEBUG - Attempting to assign LCR role for award ID 42
+2024-01-14 20:14:33,121 - DEBUG - Assigning role id: 1196287080184152064
+2024-01-14 20:14:33,122 - DEBUG - Attempting to assign role ID 1196287080184152064 to pilot: Lt Cdr Engines
+2024-01-14 20:14:33,122 - DEBUG - Guild ID: 1190999875609968690, Guild Name: ETDS
+2024-01-14 20:14:33,122 - DEBUG - Role ID: 1190999875609968690, Role Name: @everyone
+2024-01-14 20:14:33,122 - DEBUG - Role ID: 1196303166854140006, Role Name: logso
+2024-01-14 20:14:33,122 - DEBUG - Role ID: 1196287277001871481, Role Name: CR
+2024-01-14 20:14:33,122 - DEBUG - Role ID: 1196287080184152064, Role Name: LCR
+2024-01-14 20:14:33,122 - DEBUG - Role ID: 1195908014746640434, Role Name: Squadron Commanders
+2024-01-14 20:14:33,123 - DEBUG - Role ID: 1195900618225758229, Role Name: Server admin
+2024-01-14 20:14:33,123 - DEBUG - Role ID: 1195557831223545888, Role Name: Controllers
+2024-01-14 20:14:33,283 - ERROR - Error assigning role: 403 Forbidden (error code: 50013): Missing Permissions
+2024-01-14 20:16:45,077 - DEBUG - Attempting to give awards
+2024-01-14 20:16:49,337 - DEBUG - Assigning award: 42 to pilot: Lt Cdr Engines
+2024-01-14 20:16:49,337 - DEBUG - Attempting to assign LCR role for award ID 42
+2024-01-14 20:16:49,337 - DEBUG - Assigning role id: 1196287080184152064
+2024-01-14 20:16:49,337 - DEBUG - Attempting to assign role ID 1196287080184152064 to pilot: Lt Cdr Engines
+2024-01-14 20:16:49,338 - DEBUG - Guild ID: 1190999875609968690, Guild Name: ETDS
+2024-01-14 20:16:49,338 - DEBUG - Role ID: 1190999875609968690, Role Name: @everyone
+2024-01-14 20:16:49,338 - DEBUG - Role ID: 1196287277001871481, Role Name: CR
+2024-01-14 20:16:49,338 - DEBUG - Role ID: 1196287080184152064, Role Name: LCR
+2024-01-14 20:16:49,338 - DEBUG - Role ID: 1195908014746640434, Role Name: Squadron Commanders
+2024-01-14 20:16:49,338 - DEBUG - Role ID: 1195900618225758229, Role Name: Server admin
+2024-01-14 20:16:49,338 - DEBUG - Role ID: 1195557831223545888, Role Name: Controllers
+2024-01-14 20:16:49,339 - DEBUG - Role ID: 1196303166854140006, Role Name: logso
+2024-01-14 20:16:49,568 - INFO - Assigned role LCR to user Engines
+2024-01-14 20:38:46,454 - DEBUG - Attempting to give awards
+2024-01-14 20:38:52,071 - DEBUG - Assigning award: 16 to pilot: Lt Cdr Engines
+2024-01-14 20:38:52,071 - DEBUG - Attempting to assign CR role for award ID 16
+2024-01-14 20:38:52,071 - DEBUG - Attempting to assign role ID 1196287277001871481 to pilot: Lt Cdr Engines
+2024-01-14 20:38:52,072 - DEBUG - Guild ID: 1190999875609968690, Guild Name: ETDS
+2024-01-14 20:38:52,072 - DEBUG - Role ID: 1190999875609968690, Role Name: @everyone
+2024-01-14 20:38:52,072 - DEBUG - Role ID: 1196287277001871481, Role Name: CR
+2024-01-14 20:38:52,072 - DEBUG - Role ID: 1196287080184152064, Role Name: LCR
+2024-01-14 20:38:52,072 - DEBUG - Role ID: 1195908014746640434, Role Name: Squadron Commanders
+2024-01-14 20:38:52,072 - DEBUG - Role ID: 1195900618225758229, Role Name: Server admin
+2024-01-14 20:38:52,072 - DEBUG - Role ID: 1195557831223545888, Role Name: Controllers
+2024-01-14 20:38:52,072 - DEBUG - Role ID: 1196303166854140006, Role Name: logso
+2024-01-14 20:38:52,288 - INFO - Assigned role CR to user Engines

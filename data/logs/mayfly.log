@@ -71,3 +71,539 @@
 2024-01-14 00:23:09,212 - INFO - Created html output
 2024-01-14 00:23:09,213 - INFO - Generating pilot pages
 2024-01-14 00:26:49,361 - INFO - Shard ID None has successfully RESUMED session 39bdf57dfbd30ff50bf4862d4c4f0cb5.
+2024-01-14 11:06:29,518 - INFO - logging in using static token
+2024-01-14 11:06:30,508 - INFO - Shard ID None has connected to Gateway (Session ID: 035553f11209cec30b2da6c982cad457).
+2024-01-14 11:07:47,898 - ERROR - Ignoring exception in on_command_error
+Traceback (most recent call last):
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\discord\ext\commands\core.py", line 235, in wrapped
+    ret = await coro(*args, **kwargs)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\src\bot.py", line 538, in pilot_info
+    pilot_details = get_pilot_details(DB_PATH, pilot_id, combined_stats)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\src\utils\stat_processing.py", line 44, in get_pilot_details
+    total_hours = sum(seconds_to_hours(aircraft_stats.get('total', 0)) for aircraft_type, aircraft_stats in pilot_stats.get('times', {}).items())
+                                                                                                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'list' object has no attribute 'items'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\discord\client.py", line 441, in _run_event
+    await coro(*args, **kwargs)
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\src\bot.py", line 40, in on_command_error
+    raise error  # Re-raise other errors so you can notice them
+    ^^^^^^^^^^^
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\discord\ext\commands\bot.py", line 1350, in invoke
+    await ctx.command.invoke(ctx)
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\discord\ext\commands\core.py", line 1029, in invoke
+    await injected(*ctx.args, **ctx.kwargs)  # type: ignore
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\discord\ext\commands\core.py", line 244, in wrapped
+    raise CommandInvokeError(exc) from exc
+discord.ext.commands.errors.CommandInvokeError: Command raised an exception: AttributeError: 'list' object has no attribute 'items'
+2024-01-14 11:14:53,333 - INFO - logging in using static token
+2024-01-14 11:14:54,173 - INFO - Shard ID None has connected to Gateway (Session ID: c572c1ec39f5c510df4a375f98b881a4).
+2024-01-14 11:16:36,687 - INFO - logging in using static token
+2024-01-14 11:16:37,462 - INFO - Shard ID None has connected to Gateway (Session ID: a0def294ce4a1b71810993c80df820b8).
+2024-01-14 11:17:40,898 - INFO - logging in using static token
+2024-01-14 11:17:41,725 - INFO - Shard ID None has connected to Gateway (Session ID: 0381473d06ec10904e545a31e1e0bbab).
+2024-01-14 12:19:26,253 - ERROR - Ignoring exception in on_command_error
+Traceback (most recent call last):
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\discord\ext\commands\core.py", line 235, in wrapped
+    ret = await coro(*args, **kwargs)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\src\bot.py", line 538, in pilot_info
+    pilot_details = get_pilot_details(DB_PATH, pilot_id, combined_stats)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\src\utils\stat_processing.py", line 51, in get_pilot_details
+    total_hours = sum(seconds_to_hours(aircraft_stats.get('total', 0)) for aircraft_type, aircraft_stats in times.items())
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\src\utils\stat_processing.py", line 51, in <genexpr>
+    total_hours = sum(seconds_to_hours(aircraft_stats.get('total', 0)) for aircraft_type, aircraft_stats in times.items())
+                                       ^^^^^^^^^^^^^^^^^^
+AttributeError: 'list' object has no attribute 'get'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\discord\client.py", line 441, in _run_event
+    await coro(*args, **kwargs)
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\src\bot.py", line 40, in on_command_error
+    raise error  # Re-raise other errors so you can notice them
+    ^^^^^^^^^^^
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\discord\ext\commands\bot.py", line 1350, in invoke
+    await ctx.command.invoke(ctx)
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\discord\ext\commands\core.py", line 1029, in invoke
+    await injected(*ctx.args, **ctx.kwargs)  # type: ignore
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\discord\ext\commands\core.py", line 244, in wrapped
+    raise CommandInvokeError(exc) from exc
+discord.ext.commands.errors.CommandInvokeError: Command raised an exception: AttributeError: 'list' object has no attribute 'get'
+2024-01-14 12:19:34,054 - ERROR - Ignoring exception in on_command_error
+Traceback (most recent call last):
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\discord\ext\commands\core.py", line 235, in wrapped
+    ret = await coro(*args, **kwargs)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\src\bot.py", line 538, in pilot_info
+    pilot_details = get_pilot_details(DB_PATH, pilot_id, combined_stats)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\src\utils\stat_processing.py", line 51, in get_pilot_details
+    total_hours = sum(seconds_to_hours(aircraft_stats.get('total', 0)) for aircraft_type, aircraft_stats in times.items())
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\src\utils\stat_processing.py", line 51, in <genexpr>
+    total_hours = sum(seconds_to_hours(aircraft_stats.get('total', 0)) for aircraft_type, aircraft_stats in times.items())
+                                       ^^^^^^^^^^^^^^^^^^
+AttributeError: 'list' object has no attribute 'get'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\discord\client.py", line 441, in _run_event
+    await coro(*args, **kwargs)
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\src\bot.py", line 40, in on_command_error
+    raise error  # Re-raise other errors so you can notice them
+    ^^^^^^^^^^^
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\discord\ext\commands\bot.py", line 1350, in invoke
+    await ctx.command.invoke(ctx)
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\discord\ext\commands\core.py", line 1029, in invoke
+    await injected(*ctx.args, **ctx.kwargs)  # type: ignore
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\discord\ext\commands\core.py", line 244, in wrapped
+    raise CommandInvokeError(exc) from exc
+discord.ext.commands.errors.CommandInvokeError: Command raised an exception: AttributeError: 'list' object has no attribute 'get'
+2024-01-14 12:21:39,254 - INFO - logging in using static token
+2024-01-14 12:21:40,060 - INFO - Shard ID None has connected to Gateway (Session ID: fdf8261e49fdb336f7e1bfc6a8edbedf).
+2024-01-14 12:21:47,746 - ERROR - Ignoring exception in on_command_error
+Traceback (most recent call last):
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\discord\ext\commands\core.py", line 235, in wrapped
+    ret = await coro(*args, **kwargs)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\src\bot.py", line 538, in pilot_info
+    pilot_details = get_pilot_details(DB_PATH, pilot_id, combined_stats)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\src\utils\stat_processing.py", line 50, in get_pilot_details
+    total_hours = sum(seconds_to_hours(aircraft_stats.get('total', 0)) for aircraft_type, aircraft_stats in times.items())
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\src\utils\stat_processing.py", line 50, in <genexpr>
+    total_hours = sum(seconds_to_hours(aircraft_stats.get('total', 0)) for aircraft_type, aircraft_stats in times.items())
+                                       ^^^^^^^^^^^^^^^^^^
+AttributeError: 'list' object has no attribute 'get'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\discord\client.py", line 441, in _run_event
+    await coro(*args, **kwargs)
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\src\bot.py", line 40, in on_command_error
+    raise error  # Re-raise other errors so you can notice them
+    ^^^^^^^^^^^
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\discord\ext\commands\bot.py", line 1350, in invoke
+    await ctx.command.invoke(ctx)
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\discord\ext\commands\core.py", line 1029, in invoke
+    await injected(*ctx.args, **ctx.kwargs)  # type: ignore
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\discord\ext\commands\core.py", line 244, in wrapped
+    raise CommandInvokeError(exc) from exc
+discord.ext.commands.errors.CommandInvokeError: Command raised an exception: AttributeError: 'list' object has no attribute 'get'
+2024-01-14 12:21:58,720 - INFO - logging in using static token
+2024-01-14 12:21:59,583 - INFO - Shard ID None has connected to Gateway (Session ID: 966a3602ccebca15013258af6a0e67f5).
+2024-01-14 12:22:03,532 - ERROR - Ignoring exception in on_command_error
+Traceback (most recent call last):
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\discord\ext\commands\core.py", line 235, in wrapped
+    ret = await coro(*args, **kwargs)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\src\bot.py", line 538, in pilot_info
+    pilot_details = get_pilot_details(DB_PATH, pilot_id, combined_stats)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\src\utils\stat_processing.py", line 50, in get_pilot_details
+    total_hours = sum(seconds_to_hours(aircraft_stats.get('total', 0)) for aircraft_type, aircraft_stats in times.items())
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\src\utils\stat_processing.py", line 50, in <genexpr>
+    total_hours = sum(seconds_to_hours(aircraft_stats.get('total', 0)) for aircraft_type, aircraft_stats in times.items())
+                                       ^^^^^^^^^^^^^^^^^^
+AttributeError: 'list' object has no attribute 'get'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\discord\client.py", line 441, in _run_event
+    await coro(*args, **kwargs)
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\src\bot.py", line 40, in on_command_error
+    raise error  # Re-raise other errors so you can notice them
+    ^^^^^^^^^^^
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\discord\ext\commands\bot.py", line 1350, in invoke
+    await ctx.command.invoke(ctx)
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\discord\ext\commands\core.py", line 1029, in invoke
+    await injected(*ctx.args, **ctx.kwargs)  # type: ignore
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\discord\ext\commands\core.py", line 244, in wrapped
+    raise CommandInvokeError(exc) from exc
+discord.ext.commands.errors.CommandInvokeError: Command raised an exception: AttributeError: 'list' object has no attribute 'get'
+2024-01-14 12:24:14,082 - INFO - logging in using static token
+2024-01-14 12:24:15,050 - INFO - Shard ID None has connected to Gateway (Session ID: c972806e7afd0cded9b291b6886ac486).
+2024-01-14 12:24:19,167 - ERROR - Ignoring exception in on_command_error
+Traceback (most recent call last):
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\discord\ext\commands\core.py", line 235, in wrapped
+    ret = await coro(*args, **kwargs)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\src\bot.py", line 538, in pilot_info
+    pilot_details = get_pilot_details(DB_PATH, pilot_id, combined_stats)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\src\utils\stat_processing.py", line 52, in get_pilot_details
+    total_hours = sum(seconds_to_hours(aircraft_stats.get('total', 0)) for aircraft_type, aircraft_stats in times.items())
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\src\utils\stat_processing.py", line 52, in <genexpr>
+    total_hours = sum(seconds_to_hours(aircraft_stats.get('total', 0)) for aircraft_type, aircraft_stats in times.items())
+                                       ^^^^^^^^^^^^^^^^^^
+AttributeError: 'list' object has no attribute 'get'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\discord\client.py", line 441, in _run_event
+    await coro(*args, **kwargs)
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\src\bot.py", line 40, in on_command_error
+    raise error  # Re-raise other errors so you can notice them
+    ^^^^^^^^^^^
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\discord\ext\commands\bot.py", line 1350, in invoke
+    await ctx.command.invoke(ctx)
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\discord\ext\commands\core.py", line 1029, in invoke
+    await injected(*ctx.args, **ctx.kwargs)  # type: ignore
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\discord\ext\commands\core.py", line 244, in wrapped
+    raise CommandInvokeError(exc) from exc
+discord.ext.commands.errors.CommandInvokeError: Command raised an exception: AttributeError: 'list' object has no attribute 'get'
+2024-01-14 12:25:57,100 - INFO - logging in using static token
+2024-01-14 12:25:57,931 - INFO - Shard ID None has connected to Gateway (Session ID: 45c376022169adb531d212be8a1a3b9e).
+2024-01-14 12:26:02,427 - ERROR - Ignoring exception in on_command_error
+Traceback (most recent call last):
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\discord\ext\commands\core.py", line 235, in wrapped
+    ret = await coro(*args, **kwargs)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\src\bot.py", line 538, in pilot_info
+    pilot_details = get_pilot_details(DB_PATH, pilot_id, combined_stats)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\src\utils\stat_processing.py", line 50, in get_pilot_details
+    total_hours = sum(seconds_to_hours(aircraft_stats.get('total', 0)) for aircraft_type, aircraft_stats in times.items())
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\src\utils\stat_processing.py", line 50, in <genexpr>
+    total_hours = sum(seconds_to_hours(aircraft_stats.get('total', 0)) for aircraft_type, aircraft_stats in times.items())
+                                       ^^^^^^^^^^^^^^^^^^
+AttributeError: 'list' object has no attribute 'get'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\discord\client.py", line 441, in _run_event
+    await coro(*args, **kwargs)
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\src\bot.py", line 40, in on_command_error
+    raise error  # Re-raise other errors so you can notice them
+    ^^^^^^^^^^^
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\discord\ext\commands\bot.py", line 1350, in invoke
+    await ctx.command.invoke(ctx)
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\discord\ext\commands\core.py", line 1029, in invoke
+    await injected(*ctx.args, **ctx.kwargs)  # type: ignore
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\discord\ext\commands\core.py", line 244, in wrapped
+    raise CommandInvokeError(exc) from exc
+discord.ext.commands.errors.CommandInvokeError: Command raised an exception: AttributeError: 'list' object has no attribute 'get'
+2024-01-14 12:29:06,749 - INFO - logging in using static token
+2024-01-14 12:29:07,566 - INFO - Shard ID None has connected to Gateway (Session ID: f4190b2b707e74903af1d45317caed18).
+2024-01-14 12:29:26,815 - ERROR - Ignoring exception in on_command_error
+Traceback (most recent call last):
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\discord\ext\commands\core.py", line 235, in wrapped
+    ret = await coro(*args, **kwargs)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\src\bot.py", line 538, in pilot_info
+    pilot_details = get_pilot_details(DB_PATH, pilot_id, combined_stats)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\src\utils\stat_processing.py", line 46, in get_pilot_details
+    for aircraft_type, aircraft_stats in times.items():
+                                         ^^^^^^^^^^^
+AttributeError: 'list' object has no attribute 'items'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\discord\client.py", line 441, in _run_event
+    await coro(*args, **kwargs)
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\src\bot.py", line 40, in on_command_error
+    raise error  # Re-raise other errors so you can notice them
+    ^^^^^^^^^^^
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\discord\ext\commands\bot.py", line 1350, in invoke
+    await ctx.command.invoke(ctx)
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\discord\ext\commands\core.py", line 1029, in invoke
+    await injected(*ctx.args, **ctx.kwargs)  # type: ignore
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\discord\ext\commands\core.py", line 244, in wrapped
+    raise CommandInvokeError(exc) from exc
+discord.ext.commands.errors.CommandInvokeError: Command raised an exception: AttributeError: 'list' object has no attribute 'items'
+2024-01-14 12:31:41,943 - INFO - logging in using static token
+2024-01-14 12:31:42,806 - INFO - Shard ID None has connected to Gateway (Session ID: 3dc04aab90cf69ed81056e63c87f44be).
+2024-01-14 12:32:02,478 - ERROR - Ignoring exception in on_command_error
+Traceback (most recent call last):
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\discord\ext\commands\core.py", line 235, in wrapped
+    ret = await coro(*args, **kwargs)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\src\bot.py", line 538, in pilot_info
+    pilot_details = get_pilot_details(DB_PATH, pilot_id, combined_stats)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\src\utils\stat_processing.py", line 42, in get_pilot_details
+    total_hours += seconds_to_hours(aircraft_stats.get('total', 0))
+                                    ^^^^^^^^^^^^^^^^^^
+AttributeError: 'list' object has no attribute 'get'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\discord\client.py", line 441, in _run_event
+    await coro(*args, **kwargs)
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\src\bot.py", line 40, in on_command_error
+    raise error  # Re-raise other errors so you can notice them
+    ^^^^^^^^^^^
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\discord\ext\commands\bot.py", line 1350, in invoke
+    await ctx.command.invoke(ctx)
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\discord\ext\commands\core.py", line 1029, in invoke
+    await injected(*ctx.args, **ctx.kwargs)  # type: ignore
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\discord\ext\commands\core.py", line 244, in wrapped
+    raise CommandInvokeError(exc) from exc
+discord.ext.commands.errors.CommandInvokeError: Command raised an exception: AttributeError: 'list' object has no attribute 'get'
+2024-01-14 12:35:01,450 - INFO - logging in using static token
+2024-01-14 12:35:02,307 - INFO - Shard ID None has connected to Gateway (Session ID: 76a7e7e803eb04d6dec4dfc89f653a8a).
+2024-01-14 12:35:11,535 - ERROR - Ignoring exception in on_command_error
+Traceback (most recent call last):
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\src\utils\stat_processing.py", line 42, in get_pilot_details
+    total_hours = sum(seconds_to_hours(aircraft_stats.get('total', 0)) for aircraft_stats in times.values())
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\src\utils\stat_processing.py", line 42, in <genexpr>
+    total_hours = sum(seconds_to_hours(aircraft_stats.get('total', 0)) for aircraft_stats in times.values())
+                                       ^^^^^^^^^^^^^^^^^^
+AttributeError: 'list' object has no attribute 'get'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\discord\ext\commands\core.py", line 235, in wrapped
+    ret = await coro(*args, **kwargs)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\src\bot.py", line 538, in pilot_info
+    pilot_details = get_pilot_details(DB_PATH, pilot_id, combined_stats)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\src\utils\stat_processing.py", line 48, in get_pilot_details
+    logging.error(f"Error processing 'times' data for pilot_id {pilot_id}: {e}")
+    ^^^^^^^
+NameError: name 'logging' is not defined. Did you forget to import 'logging'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\discord\client.py", line 441, in _run_event
+    await coro(*args, **kwargs)
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\src\bot.py", line 40, in on_command_error
+    raise error  # Re-raise other errors so you can notice them
+    ^^^^^^^^^^^
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\discord\ext\commands\bot.py", line 1350, in invoke
+    await ctx.command.invoke(ctx)
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\discord\ext\commands\core.py", line 1029, in invoke
+    await injected(*ctx.args, **ctx.kwargs)  # type: ignore
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\discord\ext\commands\core.py", line 244, in wrapped
+    raise CommandInvokeError(exc) from exc
+discord.ext.commands.errors.CommandInvokeError: Command raised an exception: NameError: name 'logging' is not defined
+2024-01-14 12:35:22,486 - INFO - logging in using static token
+2024-01-14 12:35:23,294 - INFO - Shard ID None has connected to Gateway (Session ID: 6d27a68b4d920374e432645a667680f3).
+2024-01-14 12:35:26,452 - ERROR - Error processing 'times' data for pilot_id c153e49b73efbf650cd11ac76f3831df: 'list' object has no attribute 'get'
+2024-01-14 12:37:58,951 - INFO - logging in using static token
+2024-01-14 12:37:59,873 - INFO - Shard ID None has connected to Gateway (Session ID: 63f9c75594c325693f254adc08d5d58e).
+2024-01-14 12:38:57,611 - INFO - logging in using static token
+2024-01-14 12:38:58,450 - INFO - Shard ID None has connected to Gateway (Session ID: 4f90d624c9ba4235516e94d5fe1b3aba).
+2024-01-14 14:53:56,019 - INFO - Shard ID None has successfully RESUMED session 4f90d624c9ba4235516e94d5fe1b3aba.
+2024-01-14 17:39:55,105 - INFO - Shard ID None has successfully RESUMED session 4f90d624c9ba4235516e94d5fe1b3aba.
+2024-01-14 19:02:50,224 - INFO - Shard ID None has successfully RESUMED session 4f90d624c9ba4235516e94d5fe1b3aba.
+2024-01-14 19:22:56,621 - INFO - logging in using static token
+2024-01-14 19:22:57,725 - INFO - Shard ID None has connected to Gateway (Session ID: ac2d14aa036e3d2097ed7d97625fd137).
+2024-01-14 19:23:41,059 - ERROR - Could not find a close match for Discord user.
+2024-01-14 19:24:48,648 - ERROR - Ignoring exception in on_command_error
+Traceback (most recent call last):
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\discord\client.py", line 441, in _run_event
+    await coro(*args, **kwargs)
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\src\bot.py", line 41, in on_command_error
+    raise error  # Re-raise other errors so you can notice them
+    ^^^^^^^^^^^
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\discord\ext\commands\bot.py", line 1350, in invoke
+    await ctx.command.invoke(ctx)
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\discord\ext\commands\core.py", line 1021, in invoke
+    await self.prepare(ctx)
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\discord\ext\commands\core.py", line 938, in prepare
+    await self._parse_arguments(ctx)
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\discord\ext\commands\core.py", line 853, in _parse_arguments
+    kwargs[name] = await self.transform(ctx, param, attachments)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\discord\ext\commands\core.py", line 697, in transform
+    raise MissingRequiredArgument(param)
+discord.ext.commands.errors.MissingRequiredArgument: pilot_name is a required argument that is missing.
+2024-01-14 19:25:41,514 - INFO - logging in using static token
+2024-01-14 19:25:42,463 - INFO - Shard ID None has connected to Gateway (Session ID: eb067788069bd64644d7077580c25b18).
+2024-01-14 19:28:17,492 - INFO - logging in using static token
+2024-01-14 19:28:18,379 - INFO - Shard ID None has connected to Gateway (Session ID: 2bedd2eb2d4d4200646bead930c3c37c).
+2024-01-14 19:30:05,018 - INFO - logging in using static token
+2024-01-14 19:30:05,846 - INFO - Shard ID None has connected to Gateway (Session ID: 433b54fd90eb7ddab66bcba404dc3b6e).
+2024-01-14 19:31:06,990 - INFO - logging in using static token
+2024-01-14 19:31:07,729 - INFO - Shard ID None has connected to Gateway (Session ID: 3af38ab44482aba000a35e195aec2177).
+2024-01-14 19:37:02,784 - INFO - logging in using static token
+2024-01-14 19:37:03,627 - INFO - Shard ID None has connected to Gateway (Session ID: f71b15eaae3b52a231c1d75ecd867c4b).
+2024-01-14 19:37:21,249 - INFO - logging in using static token
+2024-01-14 19:37:22,089 - INFO - Shard ID None has connected to Gateway (Session ID: 62beab1cdc6e61fd3de8fc4ed467ab8c).
+2024-01-14 19:39:22,416 - DEBUG - Bot script started.
+2024-01-14 19:39:22,421 - INFO - logging in using static token
+2024-01-14 19:39:23,316 - INFO - Shard ID None has connected to Gateway (Session ID: 555c2321b4bb7fd0428c5180881d82b7).
+2024-01-14 19:41:16,840 - DEBUG - Bot script started.
+2024-01-14 19:41:16,845 - INFO - logging in using static token
+2024-01-14 19:41:17,648 - INFO - Shard ID None has connected to Gateway (Session ID: 4884bd6af8c51671d1d536a44a1c428a).
+2024-01-14 19:41:42,267 - DEBUG - Attempting to give awards
+2024-01-14 19:41:47,752 - DEBUG - Assigning award: 42 to pilot: Engines, Lt Cdr
+2024-01-14 19:41:47,752 - DEBUG - Attempting to assign LCR role for award ID 42
+2024-01-14 19:45:49,746 - DEBUG - Bot script started.
+2024-01-14 19:45:49,751 - INFO - logging in using static token
+2024-01-14 19:45:50,569 - INFO - Shard ID None has connected to Gateway (Session ID: bfc1962a9e964f08ff22c04b98bbe46a).
+2024-01-14 19:46:11,473 - DEBUG - Attempting to give awards
+2024-01-14 19:46:16,333 - DEBUG - Assigning award: 42 to pilot: Lt Cdr Engines
+2024-01-14 19:46:16,333 - DEBUG - Attempting to assign LCR role for award ID 42
+2024-01-14 19:46:22,632 - DEBUG - Bot script started.
+2024-01-14 19:46:22,637 - INFO - logging in using static token
+2024-01-14 19:46:23,624 - INFO - Shard ID None has connected to Gateway (Session ID: a703ec002069c5a361a72d2d8597bcce).
+2024-01-14 19:46:47,373 - DEBUG - Bot script started.
+2024-01-14 19:46:47,378 - INFO - logging in using static token
+2024-01-14 19:46:48,267 - INFO - Shard ID None has connected to Gateway (Session ID: d7f1e97d55f9d7c5663da61d55219e35).
+2024-01-14 19:47:01,925 - DEBUG - Attempting to give awards
+2024-01-14 19:47:07,062 - DEBUG - Assigning award: 42 to pilot: Lt Cdr Engines
+2024-01-14 19:47:07,062 - DEBUG - Attempting to assign LCR role for award ID 42
+2024-01-14 19:48:35,206 - DEBUG - Bot script started.
+2024-01-14 19:48:35,211 - INFO - logging in using static token
+2024-01-14 19:48:36,205 - INFO - Shard ID None has connected to Gateway (Session ID: 70f4f22f416d6a09def480bbabcbf148).
+2024-01-14 19:50:43,970 - DEBUG - Bot script started.
+2024-01-14 19:50:43,975 - INFO - logging in using static token
+2024-01-14 19:50:44,847 - INFO - Shard ID None has connected to Gateway (Session ID: 573e38d9625600d06c710bdd53318650).
+2024-01-14 19:50:51,357 - ERROR - Ignoring exception in on_command_error
+Traceback (most recent call last):
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\discord\client.py", line 441, in _run_event
+    await coro(*args, **kwargs)
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\src\bot.py", line 55, in on_command_error
+    raise error  # Re-raise other errors so you can notice them
+    ^^^^^^^^^^^
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\discord\ext\commands\bot.py", line 1350, in invoke
+    await ctx.command.invoke(ctx)
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\discord\ext\commands\core.py", line 1021, in invoke
+    await self.prepare(ctx)
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\discord\ext\commands\core.py", line 938, in prepare
+    await self._parse_arguments(ctx)
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\discord\ext\commands\core.py", line 853, in _parse_arguments
+    kwargs[name] = await self.transform(ctx, param, attachments)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\discord\ext\commands\core.py", line 697, in transform
+    raise MissingRequiredArgument(param)
+discord.ext.commands.errors.MissingRequiredArgument: pilot_name is a required argument that is missing.
+2024-01-14 19:51:20,427 - DEBUG - Attempting to give awards
+2024-01-14 19:51:27,497 - DEBUG - Assigning award: 42 to pilot: Lt Cdr Engines
+2024-01-14 19:51:27,497 - DEBUG - Attempting to assign LCR role for award ID 42
+2024-01-14 19:52:59,278 - DEBUG - Bot script started.
+2024-01-14 19:52:59,292 - DEBUG - Bot script started.
+2024-01-14 19:52:59,297 - INFO - logging in using static token
+2024-01-14 19:53:00,123 - INFO - Shard ID None has connected to Gateway (Session ID: 7ccd5791a4280de113cc05d61bd455cb).
+2024-01-14 19:53:04,244 - ERROR - Ignoring exception in on_command_error
+Traceback (most recent call last):
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\discord\client.py", line 441, in _run_event
+    await coro(*args, **kwargs)
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\src\bot.py", line 55, in on_command_error
+    raise error  # Re-raise other errors so you can notice them
+    ^^^^^^^^^^^
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\discord\ext\commands\bot.py", line 1350, in invoke
+    await ctx.command.invoke(ctx)
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\discord\ext\commands\core.py", line 1021, in invoke
+    await self.prepare(ctx)
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\discord\ext\commands\core.py", line 938, in prepare
+    await self._parse_arguments(ctx)
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\discord\ext\commands\core.py", line 853, in _parse_arguments
+    kwargs[name] = await self.transform(ctx, param, attachments)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\discord\ext\commands\core.py", line 697, in transform
+    raise MissingRequiredArgument(param)
+discord.ext.commands.errors.MissingRequiredArgument: pilot_name is a required argument that is missing.
+2024-01-14 19:53:19,490 - DEBUG - Attempting to give awards
+2024-01-14 19:53:26,053 - DEBUG - Assigning award: 42 to pilot: Lt Cdr Engines
+2024-01-14 19:53:26,053 - DEBUG - Attempting to assign LCR role for award ID 42
+2024-01-14 19:53:26,054 - DEBUG - Found Discord user ID: 666056172192923649 for pilot: Engines, Lt Cdr
+2024-01-14 19:53:26,054 - WARNING - Member or role not found. Member: engines., Role: None
+2024-01-14 20:02:33,873 - DEBUG - Attempting to give awards
+2024-01-14 20:02:38,766 - DEBUG - Assigning award: 42 to pilot: Lt Cdr Engines
+2024-01-14 20:02:38,766 - DEBUG - Attempting to assign LCR role for award ID 42
+2024-01-14 20:02:38,767 - DEBUG - Found Discord user ID: 666056172192923649 for pilot: Engines, Lt Cdr
+2024-01-14 20:02:38,767 - WARNING - Member or role not found. Member: engines., Role: None
+2024-01-14 20:07:11,088 - DEBUG - Bot script started.
+2024-01-14 20:07:11,103 - DEBUG - Bot script started.
+2024-01-14 20:07:11,103 - INFO - logging in using static token
+2024-01-14 20:07:11,891 - INFO - Shard ID None has connected to Gateway (Session ID: 493030c82df724621565cc636b1d983a).
+2024-01-14 20:07:26,136 - DEBUG - Attempting to give awards
+2024-01-14 20:07:30,116 - DEBUG - Assigning award: 42 to pilot: Lt Cdr Engines
+2024-01-14 20:07:30,116 - DEBUG - Attempting to assign LCR role for award ID 42
+2024-01-14 20:07:30,116 - DEBUG - Assigning role id: 1196287080184152064
+2024-01-14 20:07:30,117 - DEBUG - Found Discord user ID: 666056172192923649 for pilot: Engines, Lt Cdr
+2024-01-14 20:07:30,117 - WARNING - Member or role not found. Member: engines., Role: None
+2024-01-14 20:08:59,358 - DEBUG - Bot script started.
+2024-01-14 20:08:59,373 - DEBUG - Bot script started.
+2024-01-14 20:08:59,378 - INFO - logging in using static token
+2024-01-14 20:09:00,194 - INFO - Shard ID None has connected to Gateway (Session ID: b7e6adf6e3b57250f1afbf4dbc745ae6).
+2024-01-14 20:09:29,041 - DEBUG - Attempting to give awards
+2024-01-14 20:09:36,513 - DEBUG - Assigning award: 42 to pilot: Lt Cdr Engines
+2024-01-14 20:09:36,513 - DEBUG - Attempting to assign LCR role for award ID 42
+2024-01-14 20:09:36,513 - DEBUG - Assigning role id: 1196287080184152064
+2024-01-14 20:09:36,513 - DEBUG - Assigning role id 1196287080184152064 to Engines
+2024-01-14 20:09:36,514 - DEBUG - Found Discord user ID: 666056172192923649 for pilot: Engines, Lt Cdr
+2024-01-14 20:09:36,514 - WARNING - Member or role not found. Member: engines., Role: None
+2024-01-14 20:13:29,946 - DEBUG - Bot script started.
+2024-01-14 20:13:29,960 - DEBUG - Bot script started.
+2024-01-14 20:13:29,965 - INFO - logging in using static token
+2024-01-14 20:13:30,732 - INFO - Shard ID None has connected to Gateway (Session ID: e1548b696b98617eb11b4e5329f6b98c).
+2024-01-14 20:13:41,793 - DEBUG - Attempting to give awards
+2024-01-14 20:13:45,991 - DEBUG - Assigning award: 42 to pilot: Lt Cdr Engines
+2024-01-14 20:13:45,991 - DEBUG - Attempting to assign LCR role for award ID 42
+2024-01-14 20:13:45,991 - DEBUG - Assigning role id: 1196287080184152064
+2024-01-14 20:13:45,991 - DEBUG - Attempting to assign role ID 1196287080184152064 to pilot: Lt Cdr Engines
+2024-01-14 20:13:45,992 - DEBUG - Guild ID: 1190999875609968690, Guild Name: ETDS
+2024-01-14 20:13:45,992 - DEBUG - Role ID: 1190999875609968690, Role Name: @everyone
+2024-01-14 20:13:45,992 - DEBUG - Role ID: 1196303166854140006, Role Name: logso
+2024-01-14 20:13:45,992 - DEBUG - Role ID: 1196287277001871481, Role Name: CR
+2024-01-14 20:13:45,992 - DEBUG - Role ID: 1196287080184152064, Role Name: LCR
+2024-01-14 20:13:45,992 - DEBUG - Role ID: 1195908014746640434, Role Name: Squadron Commanders
+2024-01-14 20:13:45,992 - DEBUG - Role ID: 1195900618225758229, Role Name: Server admin
+2024-01-14 20:13:45,993 - DEBUG - Role ID: 1195557831223545888, Role Name: Controllers
+2024-01-14 20:13:45,993 - ERROR - Ignoring exception in on_command_error
+Traceback (most recent call last):
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\discord\ext\commands\core.py", line 235, in wrapped
+    ret = await coro(*args, **kwargs)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\src\bot.py", line 778, in give_award
+    await assign_role(ctx, pilot_name, pilot_rank, LCR_ROLE)
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\src\utils\discord_utils.py", line 49, in assign_role
+    role = discord.utils.get(guild.roles, id=int(role_id))
+           ^^^^^^^
+NameError: name 'discord' is not defined
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\discord\client.py", line 441, in _run_event
+    await coro(*args, **kwargs)
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\src\bot.py", line 55, in on_command_error
+    raise error  # Re-raise other errors so you can notice them
+    ^^^^^^^^^^^
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\discord\ext\commands\bot.py", line 1350, in invoke
+    await ctx.command.invoke(ctx)
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\discord\ext\commands\core.py", line 1029, in invoke
+    await injected(*ctx.args, **ctx.kwargs)  # type: ignore
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\discord\ext\commands\core.py", line 244, in wrapped
+    raise CommandInvokeError(exc) from exc
+discord.ext.commands.errors.CommandInvokeError: Command raised an exception: NameError: name 'discord' is not defined

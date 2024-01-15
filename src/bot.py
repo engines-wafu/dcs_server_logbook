@@ -1,7 +1,8 @@
 import discord, asyncio, logging, time, datetime, tracemalloc, os
 from utils.time_management import epoch_from_date
 from main import update_logbook_report
-from utils.ribbon import ribbonGenerator, create_award_quilt
+from utils.ribbon import *
+from utils.discord_utils import *
 from discord.ext import commands
 from discord.ext.commands import has_role, CheckFailure
 from html_generator.html_generator import generate_index_html, load_combined_stats, generate_flight_plans_page
@@ -9,12 +10,26 @@ from utils.stat_processing import get_pilot_qualifications_with_details, get_pil
 from database.db_crud import *
 from config import *
 
-tracemalloc.start()
+# Get the absolute path of the project root directory
+project_root = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
-# Configure logging
-log_filename = f"data/logs/bot.log"
-logging.basicConfig(filename=log_filename, level=logging.DEBUG, 
-                    format='%(asctime)s - %(levelname)s - %(message)s')
+# Log file path
+log_filename = os.path.join(project_root, "data/logs/bot.log")
+
+# Ensure the log directory exists
+os.makedirs(os.path.dirname(log_filename), exist_ok=True)
+
+# Configure a separate logger for your bot
+logger = logging.getLogger('my_bot')
+logger.setLevel(logging.DEBUG)
+file_handler = logging.FileHandler(filename=log_filename)
+file_handler.setFormatter(logging.Formatter('%(asctime)s - %(levelname)s - %(message)s'))
+logger.addHandler(file_handler)
+
+# Use this logger for your debug messages
+logger.debug("Bot script started.")
+
+tracemalloc.start()
 
 output_path = 'web/index.html'
 json_path = 'data/stats/combinedStats.json'
@@ -174,10 +189,10 @@ async def add_pilot_command(ctx):
                                                        details["pilot service branch (e.g., RN, Army, RAF)"], 
                                                        details["pilot rank"])
             if insert_success:
-                logging.info(f"Pilot {details['pilot ID']} added successfully to the database.")
+                logger.info(f"Pilot {details['pilot ID']} added successfully to the database.")
                 await ctx.send(embed=embed)  # Send confirmation in the text channel
             else:
-                logging.warning(f"Failed to add Pilot {details['pilot ID']} to the database.")
+                logger.warning(f"Failed to add Pilot {details['pilot ID']} to the database.")
                 await ctx.author.send("Failed to add the pilot.")
         elif str(reaction.emoji) == "❌":
             await ctx.author.send("Pilot addition canceled.")
@@ -218,7 +233,7 @@ async def add_squadron_command(ctx):
     - If the user does not react within 60 seconds, the operation is automatically canceled.
     - The user can restart the process by invoking the command again.
     """
-    logging.info("Starting to collect squadron details via DMs.")
+    logger.info("Starting to collect squadron details via DMs.")
     details = {}
     fields = [
         ("squadron ID", None),
@@ -270,10 +285,10 @@ async def add_squadron_command(ctx):
             loop = asyncio.get_event_loop()
             insert_success = await loop.run_in_executor(None, add_squadron_to_db, DB_PATH, *details.values())
             if insert_success:
-                logging.info(f"Squadron {details['squadron ID']} added successfully to the database.")
+                logger.info(f"Squadron {details['squadron ID']} added successfully to the database.")
                 await ctx.send(embed=embed)  # Send confirmation in the text channel
             else:
-                logging.warning(f"Failed to add Squadron {details['squadron ID']} to the database.")
+                logger.warning(f"Failed to add Squadron {details['squadron ID']} to the database.")
                 await ctx.author.send("Failed to add the squadron.")
         elif str(reaction.emoji) == "❌":
             # User denied, start data entry process again or exit
@@ -540,6 +555,9 @@ async def pilot_info(ctx, *, pilot_name):
         await ctx.send(f"No details found for pilot: {pilot_name}")
         return
 
+    # Use the proper name if available
+    pilot_name = get_pilot_name(DB_PATH, pilot_id)
+
     # Construct the embedded message with pilot details
     embed = discord.Embed(title=f"Pilot Information: {pilot_name}", color=0x00ff00)
     embed.add_field(name="Service", value=pilot_details['service'], inline=True)
@@ -694,6 +712,7 @@ async def give_award(ctx):
     Bot: Enter the award ID(s) from the list above (comma-separated):
     User: 1, 3
     """
+    logger.debug(f"Attempting to give awards")
     # Retrieve available awards
     awards = get_awards(DB_PATH)
     if not awards:
@@ -740,11 +759,28 @@ async def give_award(ctx):
     # Process award IDs
     award_ids = award_ids_response.split(",")
 
-    # Assign award to pilots
     for pilot_id in pilot_ids:
         for award_id in award_ids:
             if award_id.strip() in awards_dict:
+                # Assign the award
                 assign_award_to_pilot(DB_PATH, pilot_id, int(award_id.strip()))
+
+                # Get pilot details for role assignment
+                pilot_name, pilot_rank = get_pilot_name_and_rank(DB_PATH, pilot_id)
+
+                # Debug logger
+                logger.debug(f"Assigning award: {award_id.strip()} to pilot: {pilot_rank} {pilot_name}")
+
+                # Check for role assignment
+                if int(award_id.strip()) in LCR_AWARDS:
+                    logger.debug(f"Attempting to assign LCR role for award ID {award_id.strip()}")
+                    logger.debug(f"Assigning role id: {LCR_ROLE}")
+                    await assign_role(ctx, pilot_name, pilot_rank, LCR_ROLE)
+                elif int(award_id.strip()) in CR_AWARDS:
+                    logger.debug(f"Attempting to assign CR role for award ID {award_id.strip()}")
+                    await assign_role(ctx, pilot_name, pilot_rank, CR_ROLE)
+                else:
+                    logger.debug(f"Award {award_id.strip()} not a role award.")
 
     # Confirmation message
     await ctx.send(embed=discord.Embed(description="Award(s) assigned to selected pilot(s).", color=0x00ff00))
@@ -1237,7 +1273,7 @@ async def file_flight_plan(ctx):
                 break
 
         # Specify the role you want to mention (by ID)
-        role_id = 1195557831223545888 # Replace with the actual role ID
+        role_id = CONTROLLER_ROLE
         role_to_mention = ctx.guild.get_role(role_id)
 
         # Send the message to the specified channel and mention the role
