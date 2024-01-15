@@ -113,3 +113,36 @@
 2024-01-14 20:38:52,072 - DEBUG - Role ID: 1195557831223545888, Role Name: Controllers
 2024-01-14 20:38:52,072 - DEBUG - Role ID: 1196303166854140006, Role Name: logso
 2024-01-14 20:38:52,288 - INFO - Assigned role CR to user Engines
+2024-01-14 23:54:34,931 - DEBUG - Bot script started.
+2024-01-14 23:59:37,978 - DEBUG - Bot script started.
+2024-01-15 00:02:54,321 - DEBUG - Bot script started.
+2024-01-15 00:10:31,300 - DEBUG - Bot script started.
+2024-01-15 00:12:41,266 - DEBUG - Bot script started.
+2024-01-15 00:13:14,310 - INFO - Checking channel: Text Channels
+2024-01-15 00:13:14,311 - INFO - Checking channel: Voice Channels
+2024-01-15 00:13:14,311 - INFO - Checking channel: general
+2024-01-15 00:13:14,311 - INFO - Checking channel: General
+2024-01-15 00:13:14,311 - INFO - Checking channel: controllers
+2024-01-15 00:13:14,311 - INFO - Checking channel: flight-plans
+2024-01-15 00:13:14,311 - INFO - Found channel: flight-plans
+2024-01-15 00:13:14,311 - ERROR - Role not found.
+2024-01-15 00:16:00,118 - DEBUG - Bot script started.
+2024-01-15 00:16:25,901 - INFO - Checking channel: Text Channels
+2024-01-15 00:16:25,901 - INFO - Checking channel: Voice Channels
+2024-01-15 00:16:25,901 - INFO - Checking channel: general
+2024-01-15 00:16:25,901 - INFO - Checking channel: General
+2024-01-15 00:16:25,901 - INFO - Checking channel: controllers
+2024-01-15 00:16:25,901 - INFO - Checking channel: flight-plans
+2024-01-15 00:16:25,901 - INFO - Found channel: flight-plans
+2024-01-15 00:16:25,901 - INFO - Looking for role ID: 1195557831223545888.  Corresponsing role name: None
+2024-01-15 00:16:25,901 - ERROR - Role not found.
+2024-01-15 00:19:28,401 - DEBUG - Bot script started.
+2024-01-15 00:19:59,784 - INFO - Checking channel: Text Channels
+2024-01-15 00:19:59,784 - INFO - Checking channel: Voice Channels
+2024-01-15 00:19:59,785 - INFO - Checking channel: general
+2024-01-15 00:19:59,785 - INFO - Checking channel: General
+2024-01-15 00:19:59,785 - INFO - Checking channel: controllers
+2024-01-15 00:19:59,785 - INFO - Checking channel: flight-plans
+2024-01-15 00:19:59,785 - INFO - Found channel: flight-plans
+2024-01-15 00:19:59,785 - INFO - Looking for role ID: 1195557831223545888.  Corresponsing role name: Controllers
+2024-01-15 00:19:59,785 - INFO - Found role: Controllers

@@ -607,3 +607,174 @@ Traceback (most recent call last):
   File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\discord\ext\commands\core.py", line 244, in wrapped
     raise CommandInvokeError(exc) from exc
 discord.ext.commands.errors.CommandInvokeError: Command raised an exception: NameError: name 'discord' is not defined
+2024-01-14 20:13:59,503 - DEBUG - Bot script started.
+2024-01-14 20:13:59,516 - DEBUG - Bot script started.
+2024-01-14 20:13:59,521 - INFO - logging in using static token
+2024-01-14 20:14:00,353 - INFO - Shard ID None has connected to Gateway (Session ID: dbb0e438d7da5de56f13b5c8f3c6485d).
+2024-01-14 20:14:06,656 - DEBUG - Attempting to give awards
+2024-01-14 20:14:10,838 - DEBUG - Assigning award: 42 to pilot: Lt Cdr Engines
+2024-01-14 20:14:10,839 - DEBUG - Attempting to assign LCR role for award ID 42
+2024-01-14 20:14:10,839 - DEBUG - Assigning role id: 1196287080184152064
+2024-01-14 20:14:10,839 - DEBUG - Attempting to assign role ID 1196287080184152064 to pilot: Lt Cdr Engines
+2024-01-14 20:14:10,839 - DEBUG - Guild ID: 1190999875609968690, Guild Name: ETDS
+2024-01-14 20:14:10,839 - DEBUG - Role ID: 1190999875609968690, Role Name: @everyone
+2024-01-14 20:14:10,839 - DEBUG - Role ID: 1196303166854140006, Role Name: logso
+2024-01-14 20:14:10,839 - DEBUG - Role ID: 1196287277001871481, Role Name: CR
+2024-01-14 20:14:10,840 - DEBUG - Role ID: 1196287080184152064, Role Name: LCR
+2024-01-14 20:14:10,840 - DEBUG - Role ID: 1195908014746640434, Role Name: Squadron Commanders
+2024-01-14 20:14:10,840 - DEBUG - Role ID: 1195900618225758229, Role Name: Server admin
+2024-01-14 20:14:10,840 - DEBUG - Role ID: 1195557831223545888, Role Name: Controllers
+2024-01-14 20:14:11,001 - ERROR - Error assigning role: 403 Forbidden (error code: 50013): Missing Permissions
+2024-01-14 20:14:16,825 - ERROR - Ignoring exception in on_command_error
+Traceback (most recent call last):
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\discord\client.py", line 441, in _run_event
+    await coro(*args, **kwargs)
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\src\bot.py", line 55, in on_command_error
+    raise error  # Re-raise other errors so you can notice them
+    ^^^^^^^^^^^
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\discord\ext\commands\bot.py", line 1350, in invoke
+    await ctx.command.invoke(ctx)
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\discord\ext\commands\core.py", line 1021, in invoke
+    await self.prepare(ctx)
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\discord\ext\commands\core.py", line 938, in prepare
+    await self._parse_arguments(ctx)
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\discord\ext\commands\core.py", line 853, in _parse_arguments
+    kwargs[name] = await self.transform(ctx, param, attachments)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\discord\ext\commands\core.py", line 697, in transform
+    raise MissingRequiredArgument(param)
+discord.ext.commands.errors.MissingRequiredArgument: pilot_name is a required argument that is missing.
+2024-01-14 20:14:28,264 - DEBUG - Attempting to give awards
+2024-01-14 20:14:33,121 - DEBUG - Assigning award: 42 to pilot: Lt Cdr Engines
+2024-01-14 20:14:33,121 - DEBUG - Attempting to assign LCR role for award ID 42
+2024-01-14 20:14:33,121 - DEBUG - Assigning role id: 1196287080184152064
+2024-01-14 20:14:33,122 - DEBUG - Attempting to assign role ID 1196287080184152064 to pilot: Lt Cdr Engines
+2024-01-14 20:14:33,122 - DEBUG - Guild ID: 1190999875609968690, Guild Name: ETDS
+2024-01-14 20:14:33,122 - DEBUG - Role ID: 1190999875609968690, Role Name: @everyone
+2024-01-14 20:14:33,122 - DEBUG - Role ID: 1196303166854140006, Role Name: logso
+2024-01-14 20:14:33,122 - DEBUG - Role ID: 1196287277001871481, Role Name: CR
+2024-01-14 20:14:33,122 - DEBUG - Role ID: 1196287080184152064, Role Name: LCR
+2024-01-14 20:14:33,122 - DEBUG - Role ID: 1195908014746640434, Role Name: Squadron Commanders
+2024-01-14 20:14:33,123 - DEBUG - Role ID: 1195900618225758229, Role Name: Server admin
+2024-01-14 20:14:33,123 - DEBUG - Role ID: 1195557831223545888, Role Name: Controllers
+2024-01-14 20:14:33,283 - ERROR - Error assigning role: 403 Forbidden (error code: 50013): Missing Permissions
+2024-01-14 20:16:31,094 - ERROR - Ignoring exception in on_command_error
+Traceback (most recent call last):
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\discord\client.py", line 441, in _run_event
+    await coro(*args, **kwargs)
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\src\bot.py", line 55, in on_command_error
+    raise error  # Re-raise other errors so you can notice them
+    ^^^^^^^^^^^
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\discord\ext\commands\bot.py", line 1350, in invoke
+    await ctx.command.invoke(ctx)
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\discord\ext\commands\core.py", line 1021, in invoke
+    await self.prepare(ctx)
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\discord\ext\commands\core.py", line 938, in prepare
+    await self._parse_arguments(ctx)
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\discord\ext\commands\core.py", line 853, in _parse_arguments
+    kwargs[name] = await self.transform(ctx, param, attachments)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\discord\ext\commands\core.py", line 697, in transform
+    raise MissingRequiredArgument(param)
+discord.ext.commands.errors.MissingRequiredArgument: pilot_name is a required argument that is missing.
+2024-01-14 20:16:45,077 - DEBUG - Attempting to give awards
+2024-01-14 20:16:49,337 - DEBUG - Assigning award: 42 to pilot: Lt Cdr Engines
+2024-01-14 20:16:49,337 - DEBUG - Attempting to assign LCR role for award ID 42
+2024-01-14 20:16:49,337 - DEBUG - Assigning role id: 1196287080184152064
+2024-01-14 20:16:49,337 - DEBUG - Attempting to assign role ID 1196287080184152064 to pilot: Lt Cdr Engines
+2024-01-14 20:16:49,338 - DEBUG - Guild ID: 1190999875609968690, Guild Name: ETDS
+2024-01-14 20:16:49,338 - DEBUG - Role ID: 1190999875609968690, Role Name: @everyone
+2024-01-14 20:16:49,338 - DEBUG - Role ID: 1196287277001871481, Role Name: CR
+2024-01-14 20:16:49,338 - DEBUG - Role ID: 1196287080184152064, Role Name: LCR
+2024-01-14 20:16:49,338 - DEBUG - Role ID: 1195908014746640434, Role Name: Squadron Commanders
+2024-01-14 20:16:49,338 - DEBUG - Role ID: 1195900618225758229, Role Name: Server admin
+2024-01-14 20:16:49,338 - DEBUG - Role ID: 1195557831223545888, Role Name: Controllers
+2024-01-14 20:16:49,339 - DEBUG - Role ID: 1196303166854140006, Role Name: logso
+2024-01-14 20:16:49,568 - INFO - Assigned role LCR to user Engines
+2024-01-14 20:38:46,454 - DEBUG - Attempting to give awards
+2024-01-14 20:38:52,071 - DEBUG - Assigning award: 16 to pilot: Lt Cdr Engines
+2024-01-14 20:38:52,071 - DEBUG - Attempting to assign CR role for award ID 16
+2024-01-14 20:38:52,071 - DEBUG - Attempting to assign role ID 1196287277001871481 to pilot: Lt Cdr Engines
+2024-01-14 20:38:52,072 - DEBUG - Guild ID: 1190999875609968690, Guild Name: ETDS
+2024-01-14 20:38:52,072 - DEBUG - Role ID: 1190999875609968690, Role Name: @everyone
+2024-01-14 20:38:52,072 - DEBUG - Role ID: 1196287277001871481, Role Name: CR
+2024-01-14 20:38:52,072 - DEBUG - Role ID: 1196287080184152064, Role Name: LCR
+2024-01-14 20:38:52,072 - DEBUG - Role ID: 1195908014746640434, Role Name: Squadron Commanders
+2024-01-14 20:38:52,072 - DEBUG - Role ID: 1195900618225758229, Role Name: Server admin
+2024-01-14 20:38:52,072 - DEBUG - Role ID: 1195557831223545888, Role Name: Controllers
+2024-01-14 20:38:52,072 - DEBUG - Role ID: 1196303166854140006, Role Name: logso
+2024-01-14 20:38:52,288 - INFO - Assigned role CR to user Engines
+2024-01-14 20:39:06,806 - ERROR - Ignoring exception in on_command_error
+Traceback (most recent call last):
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\discord\client.py", line 441, in _run_event
+    await coro(*args, **kwargs)
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\src\bot.py", line 55, in on_command_error
+    raise error  # Re-raise other errors so you can notice them
+    ^^^^^^^^^^^
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\discord\ext\commands\bot.py", line 1350, in invoke
+    await ctx.command.invoke(ctx)
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\discord\ext\commands\core.py", line 1021, in invoke
+    await self.prepare(ctx)
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\discord\ext\commands\core.py", line 938, in prepare
+    await self._parse_arguments(ctx)
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\discord\ext\commands\core.py", line 853, in _parse_arguments
+    kwargs[name] = await self.transform(ctx, param, attachments)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\discord\ext\commands\core.py", line 697, in transform
+    raise MissingRequiredArgument(param)
+discord.ext.commands.errors.MissingRequiredArgument: pilot_name is a required argument that is missing.
+2024-01-14 23:54:34,911 - DEBUG - Bot script started.
+2024-01-14 23:54:34,931 - DEBUG - Bot script started.
+2024-01-14 23:54:34,938 - INFO - logging in using static token
+2024-01-14 23:54:36,115 - INFO - Shard ID None has connected to Gateway (Session ID: 1069f54f7ebf4eb5d4e853f5ee6d3e89).
+2024-01-14 23:59:37,962 - DEBUG - Bot script started.
+2024-01-14 23:59:37,978 - DEBUG - Bot script started.
+2024-01-14 23:59:37,982 - INFO - logging in using static token
+2024-01-14 23:59:38,954 - INFO - Shard ID None has connected to Gateway (Session ID: e8da9139f0049533d6c5065c3004e8aa).
+2024-01-15 00:02:54,305 - DEBUG - Bot script started.
+2024-01-15 00:02:54,321 - DEBUG - Bot script started.
+2024-01-15 00:02:54,327 - INFO - logging in using static token
+2024-01-15 00:02:55,252 - INFO - Shard ID None has connected to Gateway (Session ID: 7dcfd51e6f6367770afb7a1395847707).
+2024-01-15 00:10:31,285 - DEBUG - Bot script started.
+2024-01-15 00:10:31,300 - DEBUG - Bot script started.
+2024-01-15 00:10:31,305 - INFO - logging in using static token
+2024-01-15 00:10:32,251 - INFO - Shard ID None has connected to Gateway (Session ID: dfd3a8ef0d2dec26192a63452cf376d2).
+2024-01-15 00:12:41,252 - DEBUG - Bot script started.
+2024-01-15 00:12:41,266 - DEBUG - Bot script started.
+2024-01-15 00:12:41,272 - INFO - logging in using static token
+2024-01-15 00:12:42,101 - INFO - Shard ID None has connected to Gateway (Session ID: 042fe7861e16963454997ff2121332dd).
+2024-01-15 00:13:14,310 - INFO - Checking channel: Text Channels
+2024-01-15 00:13:14,311 - INFO - Checking channel: Voice Channels
+2024-01-15 00:13:14,311 - INFO - Checking channel: general
+2024-01-15 00:13:14,311 - INFO - Checking channel: General
+2024-01-15 00:13:14,311 - INFO - Checking channel: controllers
+2024-01-15 00:13:14,311 - INFO - Checking channel: flight-plans
+2024-01-15 00:13:14,311 - INFO - Found channel: flight-plans
+2024-01-15 00:13:14,311 - ERROR - Role not found.
+2024-01-15 00:16:00,103 - DEBUG - Bot script started.
+2024-01-15 00:16:00,118 - DEBUG - Bot script started.
+2024-01-15 00:16:00,123 - INFO - logging in using static token
+2024-01-15 00:16:01,120 - INFO - Shard ID None has connected to Gateway (Session ID: 1e2918f4eb8daac493824c16aca952e0).
+2024-01-15 00:16:25,901 - INFO - Checking channel: Text Channels
+2024-01-15 00:16:25,901 - INFO - Checking channel: Voice Channels
+2024-01-15 00:16:25,901 - INFO - Checking channel: general
+2024-01-15 00:16:25,901 - INFO - Checking channel: General
+2024-01-15 00:16:25,901 - INFO - Checking channel: controllers
+2024-01-15 00:16:25,901 - INFO - Checking channel: flight-plans
+2024-01-15 00:16:25,901 - INFO - Found channel: flight-plans
+2024-01-15 00:16:25,901 - INFO - Looking for role ID: 1195557831223545888.  Corresponsing role name: None
+2024-01-15 00:16:25,901 - ERROR - Role not found.
+2024-01-15 00:19:28,388 - DEBUG - Bot script started.
+2024-01-15 00:19:28,401 - DEBUG - Bot script started.
+2024-01-15 00:19:28,407 - INFO - logging in using static token
+2024-01-15 00:19:29,364 - INFO - Shard ID None has connected to Gateway (Session ID: 4fcdffc908a33e567d40c9fb147fe054).
+2024-01-15 00:19:59,784 - INFO - Checking channel: Text Channels
+2024-01-15 00:19:59,784 - INFO - Checking channel: Voice Channels
+2024-01-15 00:19:59,785 - INFO - Checking channel: general
+2024-01-15 00:19:59,785 - INFO - Checking channel: General
+2024-01-15 00:19:59,785 - INFO - Checking channel: controllers
+2024-01-15 00:19:59,785 - INFO - Checking channel: flight-plans
+2024-01-15 00:19:59,785 - INFO - Found channel: flight-plans
+2024-01-15 00:19:59,785 - INFO - Looking for role ID: 1195557831223545888.  Corresponsing role name: Controllers
+2024-01-15 00:19:59,785 - INFO - Found role: Controllers
+2024-01-15 00:40:40,500 - INFO - Shard ID None has successfully RESUMED session 4fcdffc908a33e567d40c9fb147fe054.

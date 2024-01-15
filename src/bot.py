@@ -1263,25 +1263,39 @@ async def file_flight_plan(ctx):
 
         embed.add_field(name="Remarks", value=other_information or "None", inline=False)
         embed.set_footer(text="Flight Plan Filed Successfully")
-    
+
         # Specify the target channel by name
-        target_channel_name = 'controllers'
+        target_channel_name = CONTROLLERS_CHANNEL_NAME
         target_channel = None
         for channel in ctx.guild.channels:
+            logger.info(f"Checking channel: {channel.name}")  # Debugging statement
             if channel.name == target_channel_name:
                 target_channel = channel
                 break
+            
+        # Debugging: Check if the channel was found
+        if target_channel:
+            logger.info(f"Found channel: {target_channel.name}")
+        else:
+            logger.error("Channel not found.")
 
         # Specify the role you want to mention (by ID)
-        role_id = CONTROLLER_ROLE
+        role_id = int(CONTROLLER_ROLE)
         role_to_mention = ctx.guild.get_role(role_id)
+        logger.info(f"Looking for role ID: {role_id}.  Corresponsing role name: {role_to_mention}")
+
+        # Debugging: Check if the role was found
+        if role_to_mention:
+            logger.info(f"Found role: {role_to_mention.name}")
+        else:
+            logger.error("Role not found.")
 
         # Send the message to the specified channel and mention the role
         if target_channel and role_to_mention:
             await target_channel.send(content=f"{role_to_mention.mention}", embed=embed)
         else:
             await ctx.send("Target channel or role not found.")
-            # ... [code to send the embed message] ...
+
     else:
         # Handle the failure to insert a new flight plan
         await ctx.send("Failed to file the flight plan.")

@@ -86,3 +86,56 @@
 2024-01-14 20:16:49,338 - DEBUG - Role ID: 1195557831223545888, Role Name: Controllers
 2024-01-14 20:16:49,339 - DEBUG - Role ID: 1196303166854140006, Role Name: logso
 2024-01-14 20:16:49,568 - INFO - Assigned role LCR to user Engines
+2024-01-14 20:38:46,454 - DEBUG - Attempting to give awards
+2024-01-14 20:38:52,071 - DEBUG - Assigning award: 16 to pilot: Lt Cdr Engines
+2024-01-14 20:38:52,071 - DEBUG - Attempting to assign CR role for award ID 16
+2024-01-14 20:38:52,071 - DEBUG - Attempting to assign role ID 1196287277001871481 to pilot: Lt Cdr Engines
+2024-01-14 20:38:52,072 - DEBUG - Guild ID: 1190999875609968690, Guild Name: ETDS
+2024-01-14 20:38:52,072 - DEBUG - Role ID: 1190999875609968690, Role Name: @everyone
+2024-01-14 20:38:52,072 - DEBUG - Role ID: 1196287277001871481, Role Name: CR
+2024-01-14 20:38:52,072 - DEBUG - Role ID: 1196287080184152064, Role Name: LCR
+2024-01-14 20:38:52,072 - DEBUG - Role ID: 1195908014746640434, Role Name: Squadron Commanders
+2024-01-14 20:38:52,072 - DEBUG - Role ID: 1195900618225758229, Role Name: Server admin
+2024-01-14 20:38:52,072 - DEBUG - Role ID: 1195557831223545888, Role Name: Controllers
+2024-01-14 20:38:52,072 - DEBUG - Role ID: 1196303166854140006, Role Name: logso
+2024-01-14 20:38:52,288 - INFO - Assigned role CR to user Engines
+2024-01-14 23:54:34,911 - DEBUG - Bot script started.
+2024-01-14 23:54:34,931 - DEBUG - Bot script started.
+2024-01-14 23:59:37,962 - DEBUG - Bot script started.
+2024-01-14 23:59:37,978 - DEBUG - Bot script started.
+2024-01-15 00:02:54,305 - DEBUG - Bot script started.
+2024-01-15 00:02:54,321 - DEBUG - Bot script started.
+2024-01-15 00:10:31,285 - DEBUG - Bot script started.
+2024-01-15 00:10:31,300 - DEBUG - Bot script started.
+2024-01-15 00:12:41,252 - DEBUG - Bot script started.
+2024-01-15 00:12:41,266 - DEBUG - Bot script started.
+2024-01-15 00:13:14,310 - INFO - Checking channel: Text Channels
+2024-01-15 00:13:14,311 - INFO - Checking channel: Voice Channels
+2024-01-15 00:13:14,311 - INFO - Checking channel: general
+2024-01-15 00:13:14,311 - INFO - Checking channel: General
+2024-01-15 00:13:14,311 - INFO - Checking channel: controllers
+2024-01-15 00:13:14,311 - INFO - Checking channel: flight-plans
+2024-01-15 00:13:14,311 - INFO - Found channel: flight-plans
+2024-01-15 00:13:14,311 - ERROR - Role not found.
+2024-01-15 00:16:00,103 - DEBUG - Bot script started.
+2024-01-15 00:16:00,118 - DEBUG - Bot script started.
+2024-01-15 00:16:25,901 - INFO - Checking channel: Text Channels
+2024-01-15 00:16:25,901 - INFO - Checking channel: Voice Channels
+2024-01-15 00:16:25,901 - INFO - Checking channel: general
+2024-01-15 00:16:25,901 - INFO - Checking channel: General
+2024-01-15 00:16:25,901 - INFO - Checking channel: controllers
+2024-01-15 00:16:25,901 - INFO - Checking channel: flight-plans
+2024-01-15 00:16:25,901 - INFO - Found channel: flight-plans
+2024-01-15 00:16:25,901 - INFO - Looking for role ID: 1195557831223545888.  Corresponsing role name: None
+2024-01-15 00:16:25,901 - ERROR - Role not found.
+2024-01-15 00:19:28,388 - DEBUG - Bot script started.
+2024-01-15 00:19:28,401 - DEBUG - Bot script started.
+2024-01-15 00:19:59,784 - INFO - Checking channel: Text Channels
+2024-01-15 00:19:59,784 - INFO - Checking channel: Voice Channels
+2024-01-15 00:19:59,785 - INFO - Checking channel: general
+2024-01-15 00:19:59,785 - INFO - Checking channel: General
+2024-01-15 00:19:59,785 - INFO - Checking channel: controllers
+2024-01-15 00:19:59,785 - INFO - Checking channel: flight-plans
+2024-01-15 00:19:59,785 - INFO - Found channel: flight-plans
+2024-01-15 00:19:59,785 - INFO - Looking for role ID: 1195557831223545888.  Corresponsing role name: Controllers
+2024-01-15 00:19:59,785 - INFO - Found role: Controllers
