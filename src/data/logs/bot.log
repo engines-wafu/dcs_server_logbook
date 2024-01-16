@@ -139,3 +139,99 @@
 2024-01-15 00:19:59,785 - INFO - Found channel: flight-plans
 2024-01-15 00:19:59,785 - INFO - Looking for role ID: 1195557831223545888.  Corresponsing role name: Controllers
 2024-01-15 00:19:59,785 - INFO - Found role: Controllers
+2024-01-15 11:44:30,665 - DEBUG - Bot script started.
+2024-01-15 11:44:30,680 - DEBUG - Bot script started.
+2024-01-15 11:46:19,482 - INFO - Checking channel: 617 Sqn Crew Room
+2024-01-15 11:46:19,483 - INFO - Checking channel: operation-purple-warrior
+2024-01-15 11:46:19,483 - INFO - Checking channel: JSW HQ
+2024-01-15 11:46:19,483 - INFO - Checking channel: hardware-and-software
+2024-01-15 11:46:19,483 - INFO - Checking channel: guests
+2024-01-15 11:46:19,483 - INFO - Checking channel: squadron-commanders
+2024-01-15 11:46:19,483 - INFO - Checking channel: General Channels
+2024-01-15 11:46:19,483 - INFO - Checking channel: range-booking
+2024-01-15 11:46:19,484 - INFO - Checking channel: mission-briefings
+2024-01-15 11:46:19,484 - INFO - Checking channel: 4 Sqn Crew Room
+2024-01-15 11:46:19,484 - INFO - Checking channel: ops-room
+2024-01-15 11:46:19,484 - INFO - Checking channel: orders-from-hq
+2024-01-15 11:46:19,484 - INFO - Checking channel: briefing-and-debrief
+2024-01-15 11:46:19,484 - INFO - Checking channel: JSW HQ
+2024-01-15 11:46:19,484 - INFO - Checking channel: lizzy-chat
+2024-01-15 11:46:19,484 - INFO - Checking channel: server-details
+2024-01-15 11:46:19,485 - INFO - Checking channel: qhi-office
+2024-01-15 11:46:19,485 - INFO - Checking channel: server-admin
+2024-01-15 11:46:19,485 - INFO - Checking channel: IV AC Sqn
+2024-01-15 11:46:19,485 - INFO - Checking channel: special-events
+2024-01-15 11:46:19,485 - INFO - Checking channel: media
+2024-01-15 11:46:19,485 - INFO - Checking channel: operation-rampart
+2024-01-15 11:46:19,485 - INFO - Checking channel: cw-wardroom
+2024-01-15 11:46:19,485 - INFO - Checking channel: mods-and-skins
+2024-01-15 11:46:19,486 - INFO - Checking channel: operation-shader
+2024-01-15 11:46:19,486 - INFO - Checking channel: JSW Crew Room
+2024-01-15 11:46:19,486 - INFO - Checking channel: sqn-bar
+2024-01-15 11:46:19,486 - INFO - Checking channel: 892 NAS
+2024-01-15 11:46:19,486 - INFO - Checking channel: Green Channel
+2024-01-15 11:46:19,486 - INFO - Checking channel: controllers-bar
+2024-01-15 11:46:19,486 - INFO - Checking channel: JSW CO’s Office
+2024-01-15 11:46:19,486 - INFO - Checking channel: 801 NAS Wardroom
+2024-01-15 11:46:19,487 - INFO - Checking channel: joint-exercises
+2024-01-15 11:46:19,487 - INFO - Checking channel: ops
+2024-01-15 11:46:19,487 - INFO - Checking channel: logistics-office
+2024-01-15 11:46:19,487 - INFO - Checking channel: Operations
+2024-01-15 11:46:19,487 - INFO - Checking channel: Logistics
+2024-01-15 11:46:19,487 - INFO - Checking channel: WWII RAF
+2024-01-15 11:46:19,487 - INFO - Checking channel: orders
+2024-01-15 11:46:19,487 - INFO - Checking channel: Check Flight
+2024-01-15 11:46:19,488 - INFO - Checking channel: mods-and-skins
+2024-01-15 11:46:19,488 - INFO - Checking channel: 892 NAS Wardroom
+2024-01-15 11:46:19,488 - INFO - Checking channel: hq
+2024-01-15 11:46:19,488 - INFO - Checking channel: OCU QFI's Office
+2024-01-15 11:46:19,488 - INFO - Checking channel: paddles
+2024-01-15 11:46:19,488 - INFO - Checking channel: sqn-bar
+2024-01-15 11:46:19,488 - INFO - Checking channel: welcome-channel
+2024-01-15 11:46:19,488 - INFO - Checking channel: 617 Sqn RAF
+2024-01-15 11:46:19,489 - INFO - Checking channel: training-syllabus
+2024-01-15 11:46:19,489 - INFO - Checking channel: mission-making
+2024-01-15 11:46:19,489 - INFO - Checking channel: Yellow Channel
+2024-01-15 11:46:19,489 - INFO - Checking channel: Blue Channel
+2024-01-15 11:46:19,490 - INFO - Checking channel: sqn-bar
+2024-01-15 11:46:19,490 - INFO - Checking channel: training-reference
+2024-01-15 11:46:19,490 - INFO - Checking channel: cw-flyco
+2024-01-15 11:46:19,490 - INFO - Checking channel: reference
+2024-01-15 11:46:19,490 - INFO - Checking channel: Voice Channels
+2024-01-15 11:46:19,490 - INFO - Checking channel: ops-room
+2024-01-15 11:46:19,490 - INFO - Checking channel: paddles
+2024-01-15 11:46:19,490 - INFO - Checking channel: organise-flights
+2024-01-15 11:46:19,490 - INFO - Checking channel: Mission Briefing
+2024-01-15 11:46:19,491 - INFO - Checking channel: qfi-office
+2024-01-15 11:46:19,491 - INFO - Checking channel: Controllers Corner
+2024-01-15 11:46:19,491 - INFO - Checking channel: XI F Sqn RAF
+2024-01-15 11:46:19,491 - INFO - Checking channel: Red Channel
+2024-01-15 11:46:19,491 - INFO - Checking channel: operation-thresher
+2024-01-15 11:46:19,491 - INFO - Checking channel: squadron-commanders
+2024-01-15 11:46:19,491 - INFO - Checking channel: Mission Making
+2024-01-15 11:46:19,491 - INFO - Checking channel: crew-bar
+2024-01-15 11:46:19,492 - INFO - Checking channel: 656 AAC Crew Room
+2024-01-15 11:46:19,492 - INFO - Checking channel: sqn-bar
+2024-01-15 11:46:19,492 - INFO - Checking channel: sqn-bar
+2024-01-15 11:46:19,492 - INFO - Checking channel: hq
+2024-01-15 11:46:19,492 - INFO - Checking channel: dcs-world-general
+2024-01-15 11:46:19,492 - INFO - Checking channel: library
+2024-01-15 11:46:19,492 - INFO - Checking channel: training-syllabus
+2024-01-15 11:46:19,492 - INFO - Checking channel: sorties
+2024-01-15 11:46:19,493 - INFO - Checking channel: dispersal-hut
+2024-01-15 11:46:19,493 - INFO - Checking channel: aggressors
+2024-01-15 11:46:19,493 - INFO - Checking channel: Reference Library
+2024-01-15 11:46:19,493 - INFO - Checking channel: training-reference
+2024-01-15 11:46:19,493 - INFO - Checking channel: WWII Luftwaffe
+2024-01-15 11:46:19,493 - INFO - Checking channel: briefings
+2024-01-15 11:46:19,493 - INFO - Checking channel: 656 Sqn AAC
+2024-01-15 11:46:19,493 - INFO - Checking channel: ops-room
+2024-01-15 11:46:19,494 - INFO - Checking channel: 801 NAS
+2024-01-15 11:46:19,494 - INFO - Checking channel: WWII
+2024-01-15 11:46:19,494 - INFO - Checking channel: ATC
+2024-01-15 11:46:19,494 - INFO - Checking channel: orders-and-tasking
+2024-01-15 11:46:19,494 - INFO - Checking channel: flight-plans
+2024-01-15 11:46:19,494 - INFO - Found channel: flight-plans
+2024-01-15 11:46:19,494 - INFO - Looking for role ID: 939955938486538250.  Corresponsing role name: Controllers
+2024-01-15 11:46:19,494 - INFO - Found role: Controllers
+2024-01-15 14:23:19,277 - DEBUG - Attempting to give awards
