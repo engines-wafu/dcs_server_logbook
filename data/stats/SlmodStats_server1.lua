@@ -82,21 +82,19 @@ stats =
             [1] = "№15 | Drona",
         }, -- end of ["names"]
     }, -- end of ["717804a94409494c619322b78e28218b"]
-    ["05be445e57c28e2e19b5b90487252fd1"] = 
+    ["d83864b3d00546b45db3ca613c9875ef"] = 
     {
         ["times"] = 
         {
         }, -- end of ["times"]
-        ["joinDate"] = 1693767295,
-        ["lastJoin"] = 1704471038,
-        ["id"] = 243,
+        ["joinDate"] = 1678564805,
+        ["lastJoin"] = 1678567781,
+        ["id"] = 194,
         ["names"] = 
         {
-            [1] = "[BSD] Solex",
-            [2] = "Solex",
-            [3] = "=JSW= Solex",
+            [1] = "SHARK 1-2 | ETF Doormouse",
         }, -- end of ["names"]
-    }, -- end of ["05be445e57c28e2e19b5b90487252fd1"]
+    }, -- end of ["d83864b3d00546b45db3ca613c9875ef"]
     ["f7ca469d1d02fd73da4fb05cdd225963"] = 
     {
         ["times"] = 
@@ -134,33 +132,6 @@ stats =
             [1] = "VIGIT 1-2",
         }, -- end of ["names"]
     }, -- end of ["404e93017b683843a6b19370dcad28d7"]
-    ["625e2b83a3111e6a948b89a0daab3696"] = 
-    {
-        ["times"] = 
-        {
-        }, -- end of ["times"]
-        ["joinDate"] = 1704437514,
-        ["lastJoin"] = 1704440640,
-        ["id"] = 254,
-        ["names"] = 
-        {
-            [1] = "THUNDER 5-3 | Gideon",
-            [2] = "MACHETE 10 | Gideon",
-        }, -- end of ["names"]
-    }, -- end of ["625e2b83a3111e6a948b89a0daab3696"]
-    ["d83864b3d00546b45db3ca613c9875ef"] = 
-    {
-        ["times"] = 
-        {
-        }, -- end of ["times"]
-        ["joinDate"] = 1678564805,
-        ["lastJoin"] = 1678567781,
-        ["id"] = 194,
-        ["names"] = 
-        {
-            [1] = "SHARK 1-2 | ETF Doormouse",
-        }, -- end of ["names"]
-    }, -- end of ["d83864b3d00546b45db3ca613c9875ef"]
     ["ff8ac29385fabb37718ef64097be182b"] = 
     {
         ["times"] = 
@@ -175,363 +146,6 @@ stats =
             [2] = "Funktifino",
         }, -- end of ["names"]
     }, -- end of ["ff8ac29385fabb37718ef64097be182b"]
-    ["e5d4c5716cacd4092a1cbfd45b1c0268"] = 
-    {
-        ["times"] = 
-        {
-            ["AV8BNA"] = 
-            {
-                ["total"] = 209061.75999999,
-                ["kills"] = 
-                {
-                    ["Ground Units"] = 
-                    {
-                        ["SAM"] = 3,
-                        ["Unarmored"] = 1,
-                        ["APCs"] = 1,
-                        ["total"] = 13,
-                        ["Tanks"] = 8,
-                    }, -- end of ["Ground Units"]
-                    ["Buildings"] = 
-                    {
-                        ["total"] = 3,
-                        ["Static"] = 3,
-                    }, -- end of ["Buildings"]
-                }, -- end of ["kills"]
-                ["actions"] = 
-                {
-                    ["takeoff"] = 
-                    {
-                        ["austere"] = 5,
-                        ["airbase"] = 8,
-                        ["hms_invincible"] = 2,
-                    }, -- end of ["takeoff"]
-                    ["bounced"] = 2,
-                    ["landing"] = 
-                    {
-                        ["austere"] = 2,
-                        ["airbase"] = 5,
-                        ["AM2_4"] = 1,
-                        ["hms_invincible"] = 1,
-                    }, -- end of ["landing"]
-                    ["losses"] = 
-                    {
-                        ["pilotDeath"] = 14,
-                        ["crash"] = 16,
-                        ["eject"] = 5,
-                        ["crashLanding"] = 1,
-                    }, -- end of ["losses"]
-                    ["bolter"] = 1,
-                }, -- end of ["actions"]
-                ["weapons"] = 
-                {
-                    ["AIM-9M"] = 
-                    {
-                        ["numHits"] = 1,
-                        ["kills"] = 0,
-                        ["shot"] = 3,
-                        ["hit"] = 0,
-                    }, -- end of ["AIM-9M"]
-                    ["AGM-65G"] = 
-                    {
-                        ["numHits"] = 0,
-                        ["kills"] = 0,
-                        ["shot"] = 5,
-                        ["hit"] = 0,
-                    }, -- end of ["AGM-65G"]
-                    ["AGM-65L"] = 
-                    {
-                        ["numHits"] = 6,
-                        ["kills"] = 0,
-                        ["shot"] = 6,
-                        ["hit"] = 0,
-                    }, -- end of ["AGM-65L"]
-                    ["Mk-82"] = 
-                    {
-                        ["hit"] = 0,
-                        ["kills"] = 0,
-                        ["shot"] = 37,
-                        ["numHits"] = 0,
-                    }, -- end of ["Mk-82"]
-                    ["kamikaze"] = 
-                    {
-                        ["hit"] = 0,
-                        ["kills"] = 3,
-                        ["shot"] = 0,
-                        ["numHits"] = 7,
-                    }, -- end of ["kamikaze"]
-                    ["Mk-82 SnakeEye"] = 
-                    {
-                        ["hit"] = 0,
-                        ["kills"] = 0,
-                        ["shot"] = 28,
-                        ["numHits"] = 5,
-                    }, -- end of ["Mk-82 SnakeEye"]
-                    ["GBU-32(V)2/B"] = 
-                    {
-                        ["hit"] = 0,
-                        ["kills"] = 0,
-                        ["shot"] = 2,
-                        ["numHits"] = 2,
-                    }, -- end of ["GBU-32(V)2/B"]
-                    ["GAU_12"] = 
-                    {
-                        ["kills"] = 0,
-                        ["shot"] = 1597,
-                        ["hit"] = 0,
-                        ["gun"] = true,
-                        ["numHits"] = 311,
-                    }, -- end of ["GAU_12"]
-                    ["GBU-38"] = 
-                    {
-                        ["hit"] = 0,
-                        ["kills"] = 3,
-                        ["shot"] = 14,
-                        ["numHits"] = 6,
-                    }, -- end of ["GBU-38"]
-                    ["AGM-122"] = 
-                    {
-                        ["numHits"] = 1,
-                        ["kills"] = 1,
-                        ["shot"] = 1,
-                        ["hit"] = 0,
-                    }, -- end of ["AGM-122"]
-                    ["HYDRA-70 HE APKWS"] = 
-                    {
-                        ["hit"] = 0,
-                        ["kills"] = 0,
-                        ["shot"] = 26,
-                        ["numHits"] = 5,
-                    }, -- end of ["HYDRA-70 HE APKWS"]
-                    ["Mk-83"] = 
-                    {
-                        ["hit"] = 0,
-                        ["kills"] = 0,
-                        ["shot"] = 16,
-                        ["numHits"] = 0,
-                    }, -- end of ["Mk-83"]
-                    ["HYDRA-70 M151"] = 
-                    {
-                        ["hit"] = 0,
-                        ["kills"] = 0,
-                        ["shot"] = 14,
-                        ["numHits"] = 10,
-                    }, -- end of ["HYDRA-70 M151"]
-                    ["AGM-65E"] = 
-                    {
-                        ["numHits"] = 7,
-                        ["kills"] = 7,
-                        ["shot"] = 29,
-                        ["hit"] = 0,
-                    }, -- end of ["AGM-65E"]
-                    ["HYDRA-70 MPP APKWS"] = 
-                    {
-                        ["numHits"] = 3,
-                        ["kills"] = 0,
-                        ["shot"] = 14,
-                        ["hit"] = 0,
-                    }, -- end of ["HYDRA-70 MPP APKWS"]
-                    ["AGM-65F"] = 
-                    {
-                        ["hit"] = 0,
-                        ["kills"] = 0,
-                        ["shot"] = 10,
-                        ["numHits"] = 10,
-                    }, -- end of ["AGM-65F"]
-                    ["shot"] = 4,
-                    ["HYDRA-70 M156 WP"] = 
-                    {
-                        ["hit"] = 0,
-                        ["kills"] = 0,
-                        ["shot"] = 84,
-                        ["numHits"] = 0,
-                    }, -- end of ["HYDRA-70 M156 WP"]
-                    ["GBU-12"] = 
-                    {
-                        ["numHits"] = 8,
-                        ["kills"] = 2,
-                        ["shot"] = 4,
-                        ["hit"] = 0,
-                    }, -- end of ["GBU-12"]
-                    ["unknown"] = 
-                    {
-                        ["hit"] = 0,
-                        ["kills"] = 0,
-                        ["shot"] = 0,
-                        ["numHits"] = 30,
-                    }, -- end of ["unknown"]
-                    ["Mk-82AIR"] = 
-                    {
-                        ["hit"] = 0,
-                        ["kills"] = 0,
-                        ["shot"] = 6,
-                        ["numHits"] = 0,
-                    }, -- end of ["Mk-82AIR"]
-                    ["Mk-82 Snakeye"] = 
-                    {
-                        ["numHits"] = 4,
-                        ["kills"] = 0,
-                        ["shot"] = 4,
-                        ["hit"] = 3,
-                    }, -- end of ["Mk-82 Snakeye"]
-                }, -- end of ["weapons"]
-                ["inAir"] = 131220.673,
-                ["losses"] = 
-                {
-                    ["pilotDeath"] = 0,
-                    ["crash"] = 1,
-                    ["eject"] = 0,
-                }, -- end of ["losses"]
-                ["pvp"] = 
-                {
-                    ["losses"] = 1,
-                    ["kills"] = 16,
-                }, -- end of ["pvp"]
-            }, -- end of ["AV8BNA"]
-            ["SpitfireLFMkIXCW"] = 
-            {
-                ["inAir"] = 760.44,
-                ["weapons"] = 
-                {
-                    ["Browning .303 Mk. II"] = 
-                    {
-                        ["kills"] = 0,
-                        ["shot"] = 73,
-                        ["hit"] = 0,
-                        ["gun"] = true,
-                        ["numHits"] = 0,
-                    }, -- end of ["Browning .303 Mk. II"]
-                }, -- end of ["weapons"]
-                ["actions"] = 
-                {
-                    ["losses"] = 
-                    {
-                        ["pilotDeath"] = 1,
-                        ["crash"] = 1,
-                        ["eject"] = 0,
-                    }, -- end of ["losses"]
-                }, -- end of ["actions"]
-                ["total"] = 1110.592,
-            }, -- end of ["SpitfireLFMkIXCW"]
-            ["SpitfireLFMkIX"] = 
-            {
-                ["total"] = 10277.312,
-                ["kills"] = 
-                {
-                    ["Ground Units"] = 
-                    {
-                        ["AAA"] = 1,
-                        ["total"] = 1,
-                    }, -- end of ["Ground Units"]
-                    ["Planes"] = 
-                    {
-                        ["Bombers"] = 1,
-                        ["total"] = 1,
-                    }, -- end of ["Planes"]
-                }, -- end of ["kills"]
-                ["weapons"] = 
-                {
-                    ["kamikaze"] = 
-                    {
-                        ["numHits"] = 0,
-                        ["kills"] = 0,
-                        ["shot"] = 0,
-                        ["hit"] = 0,
-                    }, -- end of ["kamikaze"]
-                    ["Hispano Mk. II"] = 
-                    {
-                        ["numHits"] = 12,
-                        ["kills"] = 2,
-                        ["shot"] = 296,
-                        ["hit"] = 0,
-                    }, -- end of ["Hispano Mk. II"]
-                    ["Browning .303 Mk. II"] = 
-                    {
-                        ["numHits"] = 0,
-                        ["kills"] = 0,
-                        ["shot"] = 37,
-                        ["hit"] = 0,
-                    }, -- end of ["Browning .303 Mk. II"]
-                }, -- end of ["weapons"]
-                ["inAir"] = 8575.779,
-                ["actions"] = 
-                {
-                    ["losses"] = 
-                    {
-                        ["pilotDeath"] = 2,
-                        ["crash"] = 2,
-                        ["eject"] = 1,
-                    }, -- end of ["losses"]
-                }, -- end of ["actions"]
-                ["pvp"] = 
-                {
-                    ["kills"] = 2,
-                }, -- end of ["pvp"]
-            }, -- end of ["SpitfireLFMkIX"]
-            ["UH-1H"] = 
-            {
-                ["weapons"] = 
-                {
-                    ["M134 Minigun"] = 
-                    {
-                        ["kills"] = 0,
-                        ["shot"] = 4741,
-                        ["hit"] = 0,
-                        ["gun"] = true,
-                        ["numHits"] = 0,
-                    }, -- end of ["M134 Minigun"]
-                    ["kamikaze"] = 
-                    {
-                        ["hit"] = 0,
-                        ["kills"] = 0,
-                        ["shot"] = 0,
-                        ["numHits"] = 0,
-                    }, -- end of ["kamikaze"]
-                    ["HYDRA-70 MK5"] = 
-                    {
-                        ["numHits"] = 0,
-                        ["kills"] = 0,
-                        ["shot"] = 14,
-                        ["hit"] = 0,
-                    }, -- end of ["HYDRA-70 MK5"]
-                }, -- end of ["weapons"]
-                ["total"] = 19853.857,
-                ["actions"] = 
-                {
-                    ["landing"] = 
-                    {
-                        ["airbase"] = 4,
-                        ["austere"] = 2,
-                    }, -- end of ["landing"]
-                    ["takeoff"] = 
-                    {
-                        ["austere"] = 3,
-                        ["airbase"] = 6,
-                    }, -- end of ["takeoff"]
-                    ["losses"] = 
-                    {
-                        ["pilotDeath"] = 7,
-                        ["crash"] = 5,
-                        ["eject"] = 0,
-                    }, -- end of ["losses"]
-                }, -- end of ["actions"]
-                ["inAir"] = 11808.765,
-            }, -- end of ["UH-1H"]
-            ["T-45"] = 
-            {
-                ["total"] = 3321.738,
-                ["inAir"] = 1140.417,
-            }, -- end of ["T-45"]
-        }, -- end of ["times"]
-        ["joinDate"] = 1588241248,
-        ["lastJoin"] = 1667639131,
-        ["id"] = 27,
-        ["names"] = 
-        {
-            [1] = "C_Dub73",
-            [2] = "C_Dub",
-        }, -- end of ["names"]
-    }, -- end of ["e5d4c5716cacd4092a1cbfd45b1c0268"]
     ["300f7304bfba57bccf45fdc1b82d8d9b"] = 
     {
         ["times"] = 
@@ -545,6 +159,509 @@ stats =
             [1] = "Hawk 3-2 | Stathi",
         }, -- end of ["names"]
     }, -- end of ["300f7304bfba57bccf45fdc1b82d8d9b"]
+    ["fc7eaf2e8fdf3fdf85fd150d8d31117a"] = 
+    {
+        ["times"] = 
+        {
+        }, -- end of ["times"]
+        ["joinDate"] = 1703263619,
+        ["lastJoin"] = 1705072340,
+        ["id"] = 253,
+        ["names"] = 
+        {
+            [1] = "CasperStu",
+            [2] = "\"Machete 1\" Casper",
+        }, -- end of ["names"]
+    }, -- end of ["fc7eaf2e8fdf3fdf85fd150d8d31117a"]
+    ["ce5daf7b948f6e509678cbad75a57b60"] = 
+    {
+        ["times"] = 
+        {
+        }, -- end of ["times"]
+        ["joinDate"] = 1684532071,
+        ["lastJoin"] = 1689800635,
+        ["id"] = 217,
+        ["names"] = 
+        {
+            [1] = "Nightmare",
+        }, -- end of ["names"]
+    }, -- end of ["ce5daf7b948f6e509678cbad75a57b60"]
+    ["6f784cb7b82e58ea996432664a6d9ba8"] = 
+    {
+        ["pvp"] = 
+        {
+            ["F-16C_50"] = 
+            {
+                ["losses"] = 3,
+                ["kills"] = 5,
+            }, -- end of ["F-16C_50"]
+        }, -- end of ["pvp"]
+        ["times"] = 
+        {
+            ["T-45 Copilot"] = 
+            {
+                ["inAir"] = 7304.916,
+                ["actions"] = 
+                {
+                    ["bounced"] = 4,
+                    ["takeoff"] = 
+                    {
+                        ["airbase"] = 6,
+                    }, -- end of ["takeoff"]
+                    ["losses"] = 
+                    {
+                        ["pilotDeath"] = 1,
+                        ["crash"] = 0,
+                        ["eject"] = 0,
+                        ["pilotError"] = 1,
+                    }, -- end of ["losses"]
+                    ["landing"] = 
+                    {
+                        ["airbase"] = 2,
+                    }, -- end of ["landing"]
+                }, -- end of ["actions"]
+                ["total"] = 9806.983,
+            }, -- end of ["T-45 Copilot"]
+            ["F-16C_50"] = 
+            {
+                ["total"] = 29532.055,
+                ["kills"] = 
+                {
+                    ["Planes"] = 
+                    {
+                        ["total"] = 5,
+                        ["Fighters"] = 5,
+                    }, -- end of ["Planes"]
+                }, -- end of ["kills"]
+                ["inAir"] = 21923.635,
+                ["actions"] = 
+                {
+                    ["lostTo"] = 
+                    {
+                        ["Planes"] = 
+                        {
+                            ["Fighters"] = 4,
+                        }, -- end of ["Planes"]
+                    }, -- end of ["lostTo"]
+                    ["takeoff"] = 
+                    {
+                        ["airbase"] = 20,
+                    }, -- end of ["takeoff"]
+                    ["losses"] = 
+                    {
+                        ["pilotDeath"] = 5,
+                        ["crash"] = 7,
+                        ["eject"] = 0,
+                        ["pilotError"] = 2,
+                    }, -- end of ["losses"]
+                    ["landing"] = 
+                    {
+                        ["airbase"] = 5,
+                    }, -- end of ["landing"]
+                }, -- end of ["actions"]
+                ["weapons"] = 
+                {
+                    ["AIM-9M"] = 
+                    {
+                        ["hit"] = 5,
+                        ["kills"] = 5,
+                        ["shot"] = 9,
+                        ["numHits"] = 8,
+                    }, -- end of ["AIM-9M"]
+                    ["AIM-120C"] = 
+                    {
+                        ["hit"] = 0,
+                        ["kills"] = 0,
+                        ["shot"] = 5,
+                        ["numHits"] = 0,
+                    }, -- end of ["AIM-120C"]
+                    ["AIM-9L"] = 
+                    {
+                        ["hit"] = 0,
+                        ["kills"] = 0,
+                        ["shot"] = 2,
+                        ["numHits"] = 0,
+                    }, -- end of ["AIM-9L"]
+                    ["Mk-82 Snakeye"] = 
+                    {
+                        ["hit"] = 0,
+                        ["kills"] = 0,
+                        ["shot"] = 1,
+                        ["numHits"] = 0,
+                    }, -- end of ["Mk-82 Snakeye"]
+                }, -- end of ["weapons"]
+            }, -- end of ["F-16C_50"]
+            ["FA-18C_hornet"] = 
+            {
+                ["total"] = 30.045,
+                ["inAir"] = 30.045,
+            }, -- end of ["FA-18C_hornet"]
+            ["T-45"] = 
+            {
+                ["weapons"] = 
+                {
+                    ["BDU-33"] = 
+                    {
+                        ["hit"] = 0,
+                        ["kills"] = 0,
+                        ["shot"] = 12,
+                        ["numHits"] = 0,
+                    }, -- end of ["BDU-33"]
+                }, -- end of ["weapons"]
+                ["inAir"] = 43868.691,
+                ["actions"] = 
+                {
+                    ["lostTo"] = 
+                    {
+                        ["Planes"] = 
+                        {
+                            ["Fighters"] = 1,
+                        }, -- end of ["Planes"]
+                    }, -- end of ["lostTo"]
+                    ["takeoff"] = 
+                    {
+                        ["airbase"] = 46,
+                    }, -- end of ["takeoff"]
+                    ["bounced"] = 19,
+                    ["losses"] = 
+                    {
+                        ["pilotDeath"] = 3,
+                        ["crash"] = 1,
+                        ["eject"] = 1,
+                        ["pilotError"] = 3,
+                    }, -- end of ["losses"]
+                    ["landing"] = 
+                    {
+                        ["airbase"] = 12,
+                    }, -- end of ["landing"]
+                }, -- end of ["actions"]
+                ["total"] = 65874.007999999,
+            }, -- end of ["T-45"]
+        }, -- end of ["times"]
+        ["joinDate"] = 1670284054,
+        ["lastJoin"] = 1704835279,
+        ["id"] = 160,
+        ["names"] = 
+        {
+            [1] = "gamingsight",
+            [2] = "Chaos 3-3 =JSW= Jez",
+            [4] = "Jez",
+            [3] = "=JSW= Jez",
+        }, -- end of ["names"]
+    }, -- end of ["6f784cb7b82e58ea996432664a6d9ba8"]
+    ["b564266749ac14a3fe3e5df7d29cf243"] = 
+    {
+        ["names"] = 
+        {
+            [1] = "WiFi 1-1 | Blythee",
+        }, -- end of ["names"]
+        ["times"] = 
+        {
+            ["F-16C_50"] = 
+            {
+                ["total"] = 15216.968,
+                ["weapons"] = 
+                {
+                    ["AIM-9M"] = 
+                    {
+                        ["numHits"] = 4,
+                        ["kills"] = 4,
+                        ["shot"] = 9,
+                        ["hit"] = 4,
+                    }, -- end of ["AIM-9M"]
+                    ["M-61"] = 
+                    {
+                        ["kills"] = 0,
+                        ["shot"] = 374,
+                        ["hit"] = 0,
+                        ["gun"] = true,
+                        ["numHits"] = 0,
+                    }, -- end of ["M-61"]
+                    ["AIM-9L"] = 
+                    {
+                        ["hit"] = 0,
+                        ["kills"] = 0,
+                        ["shot"] = 2,
+                        ["numHits"] = 0,
+                    }, -- end of ["AIM-9L"]
+                    ["AIM-120C"] = 
+                    {
+                        ["hit"] = 0,
+                        ["kills"] = 0,
+                        ["shot"] = 5,
+                        ["numHits"] = 0,
+                    }, -- end of ["AIM-120C"]
+                }, -- end of ["weapons"]
+                ["inAir"] = 11382.786,
+                ["actions"] = 
+                {
+                    ["landing"] = 
+                    {
+                        ["airbase"] = 4,
+                    }, -- end of ["landing"]
+                    ["takeoff"] = 
+                    {
+                        ["airbase"] = 10,
+                    }, -- end of ["takeoff"]
+                    ["losses"] = 
+                    {
+                        ["pilotDeath"] = 4,
+                        ["crash"] = 4,
+                        ["eject"] = 0,
+                        ["pilotError"] = 3,
+                    }, -- end of ["losses"]
+                    ["lostTo"] = 
+                    {
+                        ["Planes"] = 
+                        {
+                            ["Fighters"] = 2,
+                        }, -- end of ["Planes"]
+                    }, -- end of ["lostTo"]
+                }, -- end of ["actions"]
+                ["kills"] = 
+                {
+                    ["Planes"] = 
+                    {
+                        ["Fighters"] = 4,
+                        ["total"] = 4,
+                    }, -- end of ["Planes"]
+                }, -- end of ["kills"]
+            }, -- end of ["F-16C_50"]
+            ["T-45"] = 
+            {
+                ["inAir"] = 11393.61,
+                ["actions"] = 
+                {
+                    ["landing"] = 
+                    {
+                        ["airbase"] = 3,
+                    }, -- end of ["landing"]
+                    ["takeoff"] = 
+                    {
+                        ["airbase"] = 8,
+                    }, -- end of ["takeoff"]
+                }, -- end of ["actions"]
+                ["total"] = 15558.405,
+            }, -- end of ["T-45"]
+            ["T-45 Copilot"] = 
+            {
+                ["inAir"] = 12844.352,
+                ["actions"] = 
+                {
+                    ["landing"] = 
+                    {
+                        ["airbase"] = 6,
+                    }, -- end of ["landing"]
+                    ["takeoff"] = 
+                    {
+                        ["airbase"] = 10,
+                    }, -- end of ["takeoff"]
+                }, -- end of ["actions"]
+                ["total"] = 16337.926,
+            }, -- end of ["T-45 Copilot"]
+        }, -- end of ["times"]
+        ["joinDate"] = 1665776189,
+        ["id"] = 146,
+        ["lastJoin"] = 1699390316,
+        ["pvp"] = 
+        {
+            ["F-16C_50"] = 
+            {
+                ["losses"] = 2,
+                ["kills"] = 4,
+            }, -- end of ["F-16C_50"]
+        }, -- end of ["pvp"]
+    }, -- end of ["b564266749ac14a3fe3e5df7d29cf243"]
+    ["86f1da13f0accb1b9987d3f906241c2c"] = 
+    {
+        ["times"] = 
+        {
+            ["F-16C_50"] = 
+            {
+                ["total"] = 7038.956,
+                ["weapons"] = 
+                {
+                    ["AIM-120C"] = 
+                    {
+                        ["numHits"] = 0,
+                        ["kills"] = 0,
+                        ["shot"] = 8,
+                        ["hit"] = 0,
+                    }, -- end of ["AIM-120C"]
+                }, -- end of ["weapons"]
+                ["losses"] = 
+                {
+                    ["pilotDeath"] = 0,
+                    ["crash"] = 1,
+                    ["eject"] = 0,
+                }, -- end of ["losses"]
+                ["inAir"] = 4455.596,
+                ["actions"] = 
+                {
+                    ["losses"] = 
+                    {
+                        ["pilotDeath"] = 1,
+                        ["crash"] = 0,
+                        ["eject"] = 0,
+                    }, -- end of ["losses"]
+                }, -- end of ["actions"]
+                ["pvp"] = 
+                {
+                    ["losses"] = 1,
+                }, -- end of ["pvp"]
+            }, -- end of ["F-16C_50"]
+        }, -- end of ["times"]
+        ["joinDate"] = 1601752774,
+        ["lastJoin"] = 1601760141,
+        ["id"] = 56,
+        ["names"] = 
+        {
+            [1] = "№20 | KillerDog",
+        }, -- end of ["names"]
+    }, -- end of ["86f1da13f0accb1b9987d3f906241c2c"]
+    ["624cc694cfd28f1e49b708bf17d7da52"] = 
+    {
+        ["times"] = 
+        {
+            ["J-11A"] = 
+            {
+                ["total"] = 1962.037,
+                ["weapons"] = 
+                {
+                    ["R-27ET (AA-10D)"] = 
+                    {
+                        ["numHits"] = 0,
+                        ["kills"] = 0,
+                        ["shot"] = 1,
+                        ["hit"] = 0,
+                    }, -- end of ["R-27ET (AA-10D)"]
+                }, -- end of ["weapons"]
+                ["inAir"] = 1641.773,
+                ["losses"] = 
+                {
+                    ["pilotDeath"] = 0,
+                    ["crash"] = 1,
+                    ["eject"] = 0,
+                }, -- end of ["losses"]
+                ["pvp"] = 
+                {
+                    ["losses"] = 1,
+                }, -- end of ["pvp"]
+            }, -- end of ["J-11A"]
+            ["JF-17"] = 
+            {
+                ["total"] = 921.467,
+                ["losses"] = 
+                {
+                    ["pilotDeath"] = 0,
+                    ["crash"] = 1,
+                    ["eject"] = 0,
+                }, -- end of ["losses"]
+                ["inAir"] = 650.78,
+                ["actions"] = 
+                {
+                    ["losses"] = 
+                    {
+                        ["pilotDeath"] = 1,
+                        ["crash"] = 0,
+                        ["eject"] = 0,
+                    }, -- end of ["losses"]
+                }, -- end of ["actions"]
+                ["pvp"] = 
+                {
+                    ["losses"] = 1,
+                }, -- end of ["pvp"]
+            }, -- end of ["JF-17"]
+        }, -- end of ["times"]
+        ["joinDate"] = 1601755842,
+        ["lastJoin"] = 1601759333,
+        ["id"] = 68,
+        ["names"] = 
+        {
+            [1] = "№15 | Tail",
+        }, -- end of ["names"]
+    }, -- end of ["624cc694cfd28f1e49b708bf17d7da52"]
+    ["3990a8e1621a043f257d8f978c11124c"] = 
+    {
+        ["times"] = 
+        {
+            ["FA-18C_hornet"] = 
+            {
+                ["total"] = 6282.192,
+                ["kills"] = 
+                {
+                    ["Ground Units"] = 
+                    {
+                        ["SAM"] = 1,
+                        ["total"] = 1,
+                    }, -- end of ["Ground Units"]
+                }, -- end of ["kills"]
+                ["inAir"] = 2321.016,
+                ["weapons"] = 
+                {
+                    ["AGM-88C"] = 
+                    {
+                        ["hit"] = 0,
+                        ["kills"] = 1,
+                        ["shot"] = 2,
+                        ["numHits"] = 2,
+                    }, -- end of ["AGM-88C"]
+                    ["F/A-18C Lot 20"] = 
+                    {
+                        ["hit"] = 0,
+                        ["kills"] = 0,
+                        ["shot"] = 0,
+                        ["numHits"] = 0,
+                    }, -- end of ["F/A-18C Lot 20"]
+                }, -- end of ["weapons"]
+                ["actions"] = 
+                {
+                    ["losses"] = 
+                    {
+                        ["pilotDeath"] = 1,
+                        ["crash"] = 0,
+                        ["eject"] = 0,
+                    }, -- end of ["losses"]
+                }, -- end of ["actions"]
+                ["pvp"] = 
+                {
+                    ["kills"] = 1,
+                }, -- end of ["pvp"]
+            }, -- end of ["FA-18C_hornet"]
+        }, -- end of ["times"]
+        ["joinDate"] = 1615058164,
+        ["lastJoin"] = 1615065296,
+        ["id"] = 99,
+        ["names"] = 
+        {
+            [1] = "{TFT} Animal",
+        }, -- end of ["names"]
+    }, -- end of ["3990a8e1621a043f257d8f978c11124c"]
+    ["d386d57de5c66b60b739f55feddab177"] = 
+    {
+        ["times"] = 
+        {
+            ["F-16C_50"] = 
+            {
+                ["inAir"] = 1511.528,
+                ["actions"] = 
+                {
+                    ["takeoff"] = 
+                    {
+                        ["airbase"] = 2,
+                    }, -- end of ["takeoff"]
+                }, -- end of ["actions"]
+                ["total"] = 1982.167,
+            }, -- end of ["F-16C_50"]
+        }, -- end of ["times"]
+        ["joinDate"] = 1678566305,
+        ["lastJoin"] = 1678568386,
+        ["id"] = 204,
+        ["names"] = 
+        {
+            [1] = "Knight 3-3 | 107th Vapor",
+        }, -- end of ["names"]
+    }, -- end of ["d386d57de5c66b60b739f55feddab177"]
     ["c82a053e0cc44ca3fafbcd435609b6e9"] = 
     {
         ["times"] = 
@@ -578,40 +695,11 @@ stats =
                 }, -- end of ["actions"]
                 ["total"] = 6996.484,
             }, -- end of ["F-15C"]
-            ["MiG-29S"] = 
+            ["Ka-50_3"] = 
             {
-                ["total"] = 3082.967,
-                ["kills"] = 
-                {
-                    ["Ground Units"] = 
-                    {
-                        ["Unarmored"] = 2,
-                        ["total"] = 2,
-                    }, -- end of ["Ground Units"]
-                }, -- end of ["kills"]
-                ["inAir"] = 1621.57,
-                ["actions"] = 
-                {
-                    ["landing"] = 
-                    {
-                        ["airbase"] = 3,
-                    }, -- end of ["landing"]
-                    ["takeoff"] = 
-                    {
-                        ["airbase"] = 6,
-                    }, -- end of ["takeoff"]
-                }, -- end of ["actions"]
-                ["weapons"] = 
-                {
-                    ["S-8KOM"] = 
-                    {
-                        ["hit"] = 1,
-                        ["kills"] = 2,
-                        ["shot"] = 40,
-                        ["numHits"] = 2,
-                    }, -- end of ["S-8KOM"]
-                }, -- end of ["weapons"]
-            }, -- end of ["MiG-29S"]
+                ["total"] = 120.097,
+                ["inAir"] = 0,
+            }, -- end of ["Ka-50_3"]
             ["AH-64D_BLK_II"] = 
             {
                 ["total"] = 21213.084,
@@ -637,6 +725,20 @@ stats =
                         ["Tanks"] = 2,
                     }, -- end of ["Ground Units"]
                 }, -- end of ["kills"]
+                ["inAir"] = 13314.611,
+                ["actions"] = 
+                {
+                    ["landing"] = 
+                    {
+                        ["FARP"] = 1,
+                        ["airbase"] = 6,
+                    }, -- end of ["landing"]
+                    ["takeoff"] = 
+                    {
+                        ["austere"] = 1,
+                        ["airbase"] = 20,
+                    }, -- end of ["takeoff"]
+                }, -- end of ["actions"]
                 ["weapons"] = 
                 {
                     ["AGM-114K"] = 
@@ -662,20 +764,6 @@ stats =
                         ["hit"] = 0,
                     }, -- end of ["unknown"]
                 }, -- end of ["weapons"]
-                ["actions"] = 
-                {
-                    ["landing"] = 
-                    {
-                        ["FARP"] = 1,
-                        ["airbase"] = 6,
-                    }, -- end of ["landing"]
-                    ["takeoff"] = 
-                    {
-                        ["austere"] = 1,
-                        ["airbase"] = 20,
-                    }, -- end of ["takeoff"]
-                }, -- end of ["actions"]
-                ["inAir"] = 13314.611,
             }, -- end of ["AH-64D_BLK_II"]
             ["AV8BNA"] = 
             {
@@ -765,13 +853,14 @@ stats =
                         ["shot"] = 4,
                         ["numHits"] = 2,
                     }, -- end of ["GBU-32(V)2/B"]
-                    ["Mk-82AIR"] = 
+                    ["GAU_12"] = 
                     {
-                        ["numHits"] = 5,
                         ["kills"] = 0,
-                        ["shot"] = 6,
-                        ["hit"] = 3,
-                    }, -- end of ["Mk-82AIR"]
+                        ["shot"] = 126,
+                        ["hit"] = 0,
+                        ["gun"] = true,
+                        ["numHits"] = 6,
+                    }, -- end of ["GAU_12"]
                     ["GBU-38"] = 
                     {
                         ["kills"] = 0,
@@ -822,14 +911,13 @@ stats =
                         ["shot"] = 22,
                         ["hit"] = 0,
                     }, -- end of ["HYDRA-70 MPP APKWS"]
-                    ["GAU_12"] = 
+                    ["Mk-82AIR"] = 
                     {
+                        ["numHits"] = 5,
                         ["kills"] = 0,
-                        ["shot"] = 126,
-                        ["hit"] = 0,
-                        ["gun"] = true,
-                        ["numHits"] = 6,
-                    }, -- end of ["GAU_12"]
+                        ["shot"] = 6,
+                        ["hit"] = 3,
+                    }, -- end of ["Mk-82AIR"]
                     ["shot"] = 13,
                     ["AGM-65F"] = 
                     {
@@ -838,6 +926,20 @@ stats =
                         ["shot"] = 8,
                         ["hit"] = 0,
                     }, -- end of ["AGM-65F"]
+                    ["AGM-65L"] = 
+                    {
+                        ["numHits"] = 2,
+                        ["kills"] = 0,
+                        ["shot"] = 4,
+                        ["hit"] = 1,
+                    }, -- end of ["AGM-65L"]
+                    ["unknown"] = 
+                    {
+                        ["numHits"] = 130,
+                        ["kills"] = 0,
+                        ["shot"] = 0,
+                        ["hit"] = 0,
+                    }, -- end of ["unknown"]
                     ["GBU-12"] = 
                     {
                         ["kills"] = 0,
@@ -846,20 +948,6 @@ stats =
                         ["assist"] = 3,
                         ["hit"] = 3,
                     }, -- end of ["GBU-12"]
-                    ["unknown"] = 
-                    {
-                        ["numHits"] = 130,
-                        ["kills"] = 0,
-                        ["shot"] = 0,
-                        ["hit"] = 0,
-                    }, -- end of ["unknown"]
-                    ["AGM-65L"] = 
-                    {
-                        ["numHits"] = 2,
-                        ["kills"] = 0,
-                        ["shot"] = 4,
-                        ["hit"] = 1,
-                    }, -- end of ["AGM-65L"]
                     ["Mk-82 Snakeye"] = 
                     {
                         ["numHits"] = 12,
@@ -879,11 +967,40 @@ stats =
                     ["losses"] = 1,
                 }, -- end of ["pvp"]
             }, -- end of ["AV8BNA"]
-            ["Ka-50_3"] = 
+            ["MiG-29S"] = 
             {
-                ["total"] = 120.097,
-                ["inAir"] = 0,
-            }, -- end of ["Ka-50_3"]
+                ["total"] = 3082.967,
+                ["kills"] = 
+                {
+                    ["Ground Units"] = 
+                    {
+                        ["Unarmored"] = 2,
+                        ["total"] = 2,
+                    }, -- end of ["Ground Units"]
+                }, -- end of ["kills"]
+                ["weapons"] = 
+                {
+                    ["S-8KOM"] = 
+                    {
+                        ["hit"] = 1,
+                        ["kills"] = 2,
+                        ["shot"] = 40,
+                        ["numHits"] = 2,
+                    }, -- end of ["S-8KOM"]
+                }, -- end of ["weapons"]
+                ["actions"] = 
+                {
+                    ["landing"] = 
+                    {
+                        ["airbase"] = 3,
+                    }, -- end of ["landing"]
+                    ["takeoff"] = 
+                    {
+                        ["airbase"] = 6,
+                    }, -- end of ["takeoff"]
+                }, -- end of ["actions"]
+                ["inAir"] = 1621.57,
+            }, -- end of ["MiG-29S"]
             ["AH-64D_BLK_II Copilot"] = 
             {
                 ["total"] = 10240.707,
@@ -901,19 +1018,6 @@ stats =
                         ["Static"] = 5,
                     }, -- end of ["Buildings"]
                 }, -- end of ["kills"]
-                ["inAir"] = 8398.8,
-                ["actions"] = 
-                {
-                    ["landing"] = 
-                    {
-                        ["airbase"] = 2,
-                    }, -- end of ["landing"]
-                    ["takeoff"] = 
-                    {
-                        ["austere"] = 1,
-                        ["airbase"] = 4,
-                    }, -- end of ["takeoff"]
-                }, -- end of ["actions"]
                 ["weapons"] = 
                 {
                     ["unknown"] = 
@@ -939,6 +1043,19 @@ stats =
                         ["numHits"] = 1,
                     }, -- end of ["AGM-114K"]
                 }, -- end of ["weapons"]
+                ["actions"] = 
+                {
+                    ["landing"] = 
+                    {
+                        ["airbase"] = 2,
+                    }, -- end of ["landing"]
+                    ["takeoff"] = 
+                    {
+                        ["austere"] = 1,
+                        ["airbase"] = 4,
+                    }, -- end of ["takeoff"]
+                }, -- end of ["actions"]
+                ["inAir"] = 8398.8,
             }, -- end of ["AH-64D_BLK_II Copilot"]
             ["FA-18C_hornet"] = 
             {
@@ -952,21 +1069,6 @@ stats =
                         ["total"] = 19,
                     }, -- end of ["Ground Units"]
                 }, -- end of ["kills"]
-                ["inAir"] = 8549.55,
-                ["actions"] = 
-                {
-                    ["losses"] = 
-                    {
-                        ["pilotDeath"] = 0,
-                        ["crash"] = 0,
-                        ["eject"] = 1,
-                        ["pilotError"] = 1,
-                    }, -- end of ["losses"]
-                    ["takeoff"] = 
-                    {
-                        ["Forrestal"] = 1,
-                    }, -- end of ["takeoff"]
-                }, -- end of ["actions"]
                 ["weapons"] = 
                 {
                     ["GBU-24 Paveway III"] = 
@@ -985,7 +1087,38 @@ stats =
                         ["hit"] = 2,
                     }, -- end of ["GBU-12"]
                 }, -- end of ["weapons"]
+                ["actions"] = 
+                {
+                    ["losses"] = 
+                    {
+                        ["pilotDeath"] = 0,
+                        ["crash"] = 0,
+                        ["eject"] = 1,
+                        ["pilotError"] = 1,
+                    }, -- end of ["losses"]
+                    ["takeoff"] = 
+                    {
+                        ["Forrestal"] = 1,
+                    }, -- end of ["takeoff"]
+                }, -- end of ["actions"]
+                ["inAir"] = 8549.55,
             }, -- end of ["FA-18C_hornet"]
+            ["F-16C_50"] = 
+            {
+                ["total"] = 5555.979,
+                ["actions"] = 
+                {
+                    ["landing"] = 
+                    {
+                        ["airbase"] = 2,
+                    }, -- end of ["landing"]
+                    ["takeoff"] = 
+                    {
+                        ["airbase"] = 4,
+                    }, -- end of ["takeoff"]
+                }, -- end of ["actions"]
+                ["inAir"] = 2863.072,
+            }, -- end of ["F-16C_50"]
             ["Mi-8MT"] = 
             {
                 ["inAir"] = 1751.794,
@@ -1004,22 +1137,6 @@ stats =
                 }, -- end of ["actions"]
                 ["total"] = 5475.324,
             }, -- end of ["Mi-8MT"]
-            ["F-16C_50"] = 
-            {
-                ["total"] = 5555.979,
-                ["actions"] = 
-                {
-                    ["landing"] = 
-                    {
-                        ["airbase"] = 2,
-                    }, -- end of ["landing"]
-                    ["takeoff"] = 
-                    {
-                        ["airbase"] = 4,
-                    }, -- end of ["takeoff"]
-                }, -- end of ["actions"]
-                ["inAir"] = 2863.072,
-            }, -- end of ["F-16C_50"]
             ["T-45"] = 
             {
                 ["inAir"] = 7448.614,
@@ -1052,7 +1169,7 @@ stats =
             }, -- end of ["T-45"]
         }, -- end of ["times"]
         ["joinDate"] = 1612800236,
-        ["lastJoin"] = 1703877063,
+        ["lastJoin"] = 1705353008,
         ["id"] = 78,
         ["names"] = 
         {
@@ -1061,12 +1178,13 @@ stats =
             [4] = "Vixen 1-4 \"Duke\"",
             [8] = "SGT Sphloshi",
             [16] = "Duke",
-            [17] = "=JSW=Duke",
+            [17] = "\"Duke\" aka Chris",
             [9] = "Chris \"Duke\"",
-            [18] = "\"Duke\" aka Chris",
+            [18] = "\"Duke\" Chris",
             [5] = "Duke (Rafair)",
             [10] = "Magic 1-1 =JSW Duke=",
-            [20] = "=JSW= \"Duke\" Chris",
+            [20] = "=JSW= Duke",
+            [21] = "=JSW=Duke",
             [11] = "Cobra 1-1 \"Duke\"",
             [3] = "476 Chris \"Duke\"",
             [6] = "Vixen 1-2 Chris \"Duke\"",
@@ -1075,410 +1193,42 @@ stats =
             [7] = "=JSW= Chris \"Duke\"",
             [14] = "[CAW] \"Duke\" Rafair",
             [15] = "=JSW= \"Duke\"",
-            [19] = "\"Duke\" Chris",
+            [19] = "=JSW= \"Duke\" Chris",
         }, -- end of ["names"]
     }, -- end of ["c82a053e0cc44ca3fafbcd435609b6e9"]
-    ["83502c7ed1e1852a844498e714722f58"] = 
-    {
-        ["times"] = 
-        {
-            ["FA-18C_hornet"] = 
-            {
-                ["total"] = 3163.683,
-                ["actions"] = 
-                {
-                    ["lostTo"] = 
-                    {
-                        ["Ground Units"] = 
-                        {
-                            ["SAM"] = 1,
-                        }, -- end of ["Ground Units"]
-                    }, -- end of ["lostTo"]
-                    ["takeoff"] = 
-                    {
-                        ["CVN_72"] = 1,
-                    }, -- end of ["takeoff"]
-                    ["losses"] = 
-                    {
-                        ["pilotDeath"] = 1,
-                        ["crash"] = 1,
-                        ["eject"] = 0,
-                        ["pilotError"] = 1,
-                    }, -- end of ["losses"]
-                }, -- end of ["actions"]
-                ["inAir"] = 700.767,
-            }, -- end of ["FA-18C_hornet"]
-        }, -- end of ["times"]
-        ["joinDate"] = 1678311559,
-        ["lastJoin"] = 1678568760,
-        ["id"] = 174,
-        ["names"] = 
-        {
-            [1] = "0309 Geoff",
-            [2] = "Ronin 4-1 41Sqn Geoff",
-        }, -- end of ["names"]
-    }, -- end of ["83502c7ed1e1852a844498e714722f58"]
-    ["624cc694cfd28f1e49b708bf17d7da52"] = 
-    {
-        ["times"] = 
-        {
-            ["J-11A"] = 
-            {
-                ["total"] = 1962.037,
-                ["weapons"] = 
-                {
-                    ["R-27ET (AA-10D)"] = 
-                    {
-                        ["numHits"] = 0,
-                        ["kills"] = 0,
-                        ["shot"] = 1,
-                        ["hit"] = 0,
-                    }, -- end of ["R-27ET (AA-10D)"]
-                }, -- end of ["weapons"]
-                ["inAir"] = 1641.773,
-                ["losses"] = 
-                {
-                    ["pilotDeath"] = 0,
-                    ["crash"] = 1,
-                    ["eject"] = 0,
-                }, -- end of ["losses"]
-                ["pvp"] = 
-                {
-                    ["losses"] = 1,
-                }, -- end of ["pvp"]
-            }, -- end of ["J-11A"]
-            ["JF-17"] = 
-            {
-                ["total"] = 921.467,
-                ["losses"] = 
-                {
-                    ["pilotDeath"] = 0,
-                    ["crash"] = 1,
-                    ["eject"] = 0,
-                }, -- end of ["losses"]
-                ["inAir"] = 650.78,
-                ["actions"] = 
-                {
-                    ["losses"] = 
-                    {
-                        ["pilotDeath"] = 1,
-                        ["crash"] = 0,
-                        ["eject"] = 0,
-                    }, -- end of ["losses"]
-                }, -- end of ["actions"]
-                ["pvp"] = 
-                {
-                    ["losses"] = 1,
-                }, -- end of ["pvp"]
-            }, -- end of ["JF-17"]
-        }, -- end of ["times"]
-        ["joinDate"] = 1601755842,
-        ["lastJoin"] = 1601759333,
-        ["id"] = 68,
-        ["names"] = 
-        {
-            [1] = "№15 | Tail",
-        }, -- end of ["names"]
-    }, -- end of ["624cc694cfd28f1e49b708bf17d7da52"]
-    ["1ae5c656623ee0792397970e46ed00ad"] = 
-    {
-        ["times"] = 
-        {
-            ["T-45"] = 
-            {
-                ["inAir"] = 3653.472,
-                ["actions"] = 
-                {
-                    ["bounced"] = 1,
-                    ["takeoff"] = 
-                    {
-                        ["airbase"] = 2,
-                    }, -- end of ["takeoff"]
-                    ["landing"] = 
-                    {
-                        ["airbase"] = 1,
-                    }, -- end of ["landing"]
-                }, -- end of ["actions"]
-                ["total"] = 6406.347,
-            }, -- end of ["T-45"]
-        }, -- end of ["times"]
-        ["joinDate"] = 1680460010,
-        ["lastJoin"] = 1702677966,
-        ["id"] = 208,
-        ["names"] = 
-        {
-            [1] = "Hawk",
-            [2] = "Vader 3-3 | Mk_IX_Hawk",
-            [4] = "Mk_IX_Hawk",
-            [3] = "Vader 4-3 | Mk_IX_Hawk",
-        }, -- end of ["names"]
-    }, -- end of ["1ae5c656623ee0792397970e46ed00ad"]
-    ["d386d57de5c66b60b739f55feddab177"] = 
+    ["9ce1bd7252838cd82f16d2da53e6c3d2"] = 
     {
         ["times"] = 
         {
             ["F-16C_50"] = 
             {
-                ["inAir"] = 1511.528,
-                ["actions"] = 
-                {
-                    ["takeoff"] = 
-                    {
-                        ["airbase"] = 2,
-                    }, -- end of ["takeoff"]
-                }, -- end of ["actions"]
-                ["total"] = 1982.167,
+                ["total"] = 730.82,
+                ["inAir"] = 0,
             }, -- end of ["F-16C_50"]
         }, -- end of ["times"]
-        ["joinDate"] = 1678566305,
-        ["lastJoin"] = 1678568386,
-        ["id"] = 204,
+        ["joinDate"] = 1678564372,
+        ["lastJoin"] = 1678568542,
+        ["id"] = 192,
         ["names"] = 
         {
-            [1] = "Knight 3-3 | 107th Vapor",
+            [1] = "KNIGHT 3-2 | Kamsa 730",
         }, -- end of ["names"]
-    }, -- end of ["d386d57de5c66b60b739f55feddab177"]
-    ["6f784cb7b82e58ea996432664a6d9ba8"] = 
-    {
-        ["pvp"] = 
-        {
-            ["F-16C_50"] = 
-            {
-                ["losses"] = 3,
-                ["kills"] = 5,
-            }, -- end of ["F-16C_50"]
-        }, -- end of ["pvp"]
-        ["times"] = 
-        {
-            ["T-45 Copilot"] = 
-            {
-                ["inAir"] = 7304.916,
-                ["actions"] = 
-                {
-                    ["bounced"] = 4,
-                    ["takeoff"] = 
-                    {
-                        ["airbase"] = 6,
-                    }, -- end of ["takeoff"]
-                    ["losses"] = 
-                    {
-                        ["pilotDeath"] = 1,
-                        ["crash"] = 0,
-                        ["eject"] = 0,
-                        ["pilotError"] = 1,
-                    }, -- end of ["losses"]
-                    ["landing"] = 
-                    {
-                        ["airbase"] = 2,
-                    }, -- end of ["landing"]
-                }, -- end of ["actions"]
-                ["total"] = 9806.983,
-            }, -- end of ["T-45 Copilot"]
-            ["F-16C_50"] = 
-            {
-                ["total"] = 29532.055,
-                ["kills"] = 
-                {
-                    ["Planes"] = 
-                    {
-                        ["total"] = 5,
-                        ["Fighters"] = 5,
-                    }, -- end of ["Planes"]
-                }, -- end of ["kills"]
-                ["weapons"] = 
-                {
-                    ["AIM-9M"] = 
-                    {
-                        ["hit"] = 5,
-                        ["kills"] = 5,
-                        ["shot"] = 9,
-                        ["numHits"] = 8,
-                    }, -- end of ["AIM-9M"]
-                    ["AIM-120C"] = 
-                    {
-                        ["hit"] = 0,
-                        ["kills"] = 0,
-                        ["shot"] = 5,
-                        ["numHits"] = 0,
-                    }, -- end of ["AIM-120C"]
-                    ["AIM-9L"] = 
-                    {
-                        ["hit"] = 0,
-                        ["kills"] = 0,
-                        ["shot"] = 2,
-                        ["numHits"] = 0,
-                    }, -- end of ["AIM-9L"]
-                    ["Mk-82 Snakeye"] = 
-                    {
-                        ["hit"] = 0,
-                        ["kills"] = 0,
-                        ["shot"] = 1,
-                        ["numHits"] = 0,
-                    }, -- end of ["Mk-82 Snakeye"]
-                }, -- end of ["weapons"]
-                ["actions"] = 
-                {
-                    ["lostTo"] = 
-                    {
-                        ["Planes"] = 
-                        {
-                            ["Fighters"] = 4,
-                        }, -- end of ["Planes"]
-                    }, -- end of ["lostTo"]
-                    ["takeoff"] = 
-                    {
-                        ["airbase"] = 20,
-                    }, -- end of ["takeoff"]
-                    ["losses"] = 
-                    {
-                        ["pilotDeath"] = 5,
-                        ["crash"] = 7,
-                        ["eject"] = 0,
-                        ["pilotError"] = 2,
-                    }, -- end of ["losses"]
-                    ["landing"] = 
-                    {
-                        ["airbase"] = 5,
-                    }, -- end of ["landing"]
-                }, -- end of ["actions"]
-                ["inAir"] = 21923.635,
-            }, -- end of ["F-16C_50"]
-            ["FA-18C_hornet"] = 
-            {
-                ["total"] = 30.045,
-                ["inAir"] = 30.045,
-            }, -- end of ["FA-18C_hornet"]
-            ["T-45"] = 
-            {
-                ["total"] = 65874.007999999,
-                ["weapons"] = 
-                {
-                    ["BDU-33"] = 
-                    {
-                        ["hit"] = 0,
-                        ["kills"] = 0,
-                        ["shot"] = 12,
-                        ["numHits"] = 0,
-                    }, -- end of ["BDU-33"]
-                }, -- end of ["weapons"]
-                ["actions"] = 
-                {
-                    ["lostTo"] = 
-                    {
-                        ["Planes"] = 
-                        {
-                            ["Fighters"] = 1,
-                        }, -- end of ["Planes"]
-                    }, -- end of ["lostTo"]
-                    ["takeoff"] = 
-                    {
-                        ["airbase"] = 46,
-                    }, -- end of ["takeoff"]
-                    ["bounced"] = 19,
-                    ["losses"] = 
-                    {
-                        ["pilotDeath"] = 3,
-                        ["crash"] = 1,
-                        ["eject"] = 1,
-                        ["pilotError"] = 3,
-                    }, -- end of ["losses"]
-                    ["landing"] = 
-                    {
-                        ["airbase"] = 12,
-                    }, -- end of ["landing"]
-                }, -- end of ["actions"]
-                ["inAir"] = 43868.691,
-            }, -- end of ["T-45"]
-        }, -- end of ["times"]
-        ["joinDate"] = 1670284054,
-        ["lastJoin"] = 1704395388,
-        ["id"] = 160,
-        ["names"] = 
-        {
-            [1] = "gamingsight",
-            [2] = "Chaos 3-3 =JSW= Jez",
-            [4] = "Jez",
-            [3] = "=JSW= Jez",
-        }, -- end of ["names"]
-    }, -- end of ["6f784cb7b82e58ea996432664a6d9ba8"]
-    ["d167552c2c6466e4ce1ce8e156a2b5fc"] = 
-    {
-        ["names"] = 
-        {
-            [1] = "WidowMaker",
-        }, -- end of ["names"]
-        ["times"] = 
-        {
-            ["MiG-19P"] = 
-            {
-                ["total"] = 890.639,
-                ["weapons"] = 
-                {
-                    ["R-3S - AAM, IR guided"] = 
-                    {
-                        ["numHits"] = 0,
-                        ["kills"] = 0,
-                        ["shot"] = 2,
-                        ["hit"] = 0,
-                    }, -- end of ["R-3S - AAM, IR guided"]
-                }, -- end of ["weapons"]
-                ["actions"] = 
-                {
-                    ["losses"] = 
-                    {
-                        ["pilotDeath"] = 2,
-                        ["crash"] = 4,
-                        ["eject"] = 1,
-                        ["pilotError"] = 1,
-                    }, -- end of ["losses"]
-                    ["lostTo"] = 
-                    {
-                        ["Planes"] = 
-                        {
-                            ["Fighters"] = 2,
-                        }, -- end of ["Planes"]
-                    }, -- end of ["lostTo"]
-                }, -- end of ["actions"]
-                ["inAir"] = 890.639,
-            }, -- end of ["MiG-19P"]
-            ["F-16C_50"] = 
-            {
-                ["inAir"] = 90.067,
-                ["actions"] = 
-                {
-                    ["losses"] = 
-                    {
-                        ["pilotDeath"] = 1,
-                        ["crash"] = 0,
-                        ["eject"] = 0,
-                        ["pilotError"] = 1,
-                    }, -- end of ["losses"]
-                }, -- end of ["actions"]
-                ["total"] = 90.067,
-            }, -- end of ["F-16C_50"]
-            ["MiG-29S"] = 
-            {
-                ["inAir"] = 50.007,
-                ["total"] = 50.007,
-            }, -- end of ["MiG-29S"]
-        }, -- end of ["times"]
-        ["joinDate"] = 1669667558,
-        ["id"] = 152,
-        ["lastJoin"] = 1669671507,
-        ["pvp"] = 
-        {
-            ["MiG-19P"] = 
-            {
-                ["losses"] = 2,
-            }, -- end of ["MiG-19P"]
-        }, -- end of ["pvp"]
-    }, -- end of ["d167552c2c6466e4ce1ce8e156a2b5fc"]
+    }, -- end of ["9ce1bd7252838cd82f16d2da53e6c3d2"]
     ["c964a7c9b21e9f24f875155bdc91c87f"] = 
     {
         ["times"] = 
         {
             ["AH-64D_BLK_II"] = 
             {
+                ["inAir"] = 2643.007,
+                ["total"] = 3413.888,
+                ["actions"] = 
+                {
+                    ["takeoff"] = 
+                    {
+                        ["austere"] = 1,
+                    }, -- end of ["takeoff"]
+                }, -- end of ["actions"]
                 ["weapons"] = 
                 {
                     ["AGM-114K"] = 
@@ -1489,15 +1239,6 @@ stats =
                         ["numHits"] = 0,
                     }, -- end of ["AGM-114K"]
                 }, -- end of ["weapons"]
-                ["inAir"] = 2643.007,
-                ["actions"] = 
-                {
-                    ["takeoff"] = 
-                    {
-                        ["austere"] = 1,
-                    }, -- end of ["takeoff"]
-                }, -- end of ["actions"]
-                ["total"] = 3413.888,
             }, -- end of ["AH-64D_BLK_II"]
             ["F-16C_50"] = 
             {
@@ -1524,18 +1265,6 @@ stats =
                         ["Static"] = 3,
                     }, -- end of ["Buildings"]
                 }, -- end of ["kills"]
-                ["inAir"] = 6156.242,
-                ["actions"] = 
-                {
-                    ["landing"] = 
-                    {
-                        ["airbase"] = 2,
-                    }, -- end of ["landing"]
-                    ["takeoff"] = 
-                    {
-                        ["airbase"] = 4,
-                    }, -- end of ["takeoff"]
-                }, -- end of ["actions"]
                 ["weapons"] = 
                 {
                     ["Hydra 70 M151 HE"] = 
@@ -1568,6 +1297,18 @@ stats =
                         ["numHits"] = 1,
                     }, -- end of ["Hydra 70 M257 IL"]
                 }, -- end of ["weapons"]
+                ["actions"] = 
+                {
+                    ["landing"] = 
+                    {
+                        ["airbase"] = 2,
+                    }, -- end of ["landing"]
+                    ["takeoff"] = 
+                    {
+                        ["airbase"] = 4,
+                    }, -- end of ["takeoff"]
+                }, -- end of ["actions"]
+                ["inAir"] = 6156.242,
             }, -- end of ["AH-64D_BLK_II Copilot"]
         }, -- end of ["times"]
         ["joinDate"] = 1678392965,
@@ -1590,7 +1331,7 @@ stats =
         {
         }, -- end of ["times"]
         ["joinDate"] = 1689607599,
-        ["lastJoin"] = 1703195942,
+        ["lastJoin"] = 1704835037,
         ["id"] = 223,
         ["names"] = 
         {
@@ -1610,129 +1351,41 @@ stats =
             [1] = "Farebro",
         }, -- end of ["names"]
     }, -- end of ["9ac90c1f8194fc41bcbeff835fb43359"]
-    ["b564266749ac14a3fe3e5df7d29cf243"] = 
+    ["1ffd5abe765a21afc850fe45c6099ed4"] = 
     {
-        ["names"] = 
-        {
-            [1] = "WiFi 1-1 | Blythee",
-        }, -- end of ["names"]
         ["times"] = 
         {
-            ["F-16C_50"] = 
+            ["AV8BNA"] = 
             {
-                ["total"] = 15216.968,
-                ["inAir"] = 11382.786,
+                ["total"] = 7321.125,
                 ["weapons"] = 
                 {
-                    ["AIM-9M"] = 
+                    ["Zuni-127"] = 
                     {
-                        ["numHits"] = 4,
-                        ["kills"] = 4,
-                        ["shot"] = 9,
-                        ["hit"] = 4,
-                    }, -- end of ["AIM-9M"]
-                    ["M-61"] = 
-                    {
-                        ["kills"] = 0,
-                        ["shot"] = 374,
-                        ["hit"] = 0,
-                        ["gun"] = true,
                         ["numHits"] = 0,
-                    }, -- end of ["M-61"]
-                    ["AIM-9L"] = 
-                    {
-                        ["hit"] = 0,
                         ["kills"] = 0,
-                        ["shot"] = 2,
-                        ["numHits"] = 0,
-                    }, -- end of ["AIM-9L"]
-                    ["AIM-120C"] = 
-                    {
+                        ["shot"] = 8,
                         ["hit"] = 0,
-                        ["kills"] = 0,
-                        ["shot"] = 5,
+                    }, -- end of ["Zuni-127"]
+                    ["Mk-82 Snakeye"] = 
+                    {
                         ["numHits"] = 0,
-                    }, -- end of ["AIM-120C"]
+                        ["kills"] = 0,
+                        ["shot"] = 10,
+                        ["hit"] = 0,
+                    }, -- end of ["Mk-82 Snakeye"]
                 }, -- end of ["weapons"]
-                ["actions"] = 
-                {
-                    ["landing"] = 
-                    {
-                        ["airbase"] = 4,
-                    }, -- end of ["landing"]
-                    ["takeoff"] = 
-                    {
-                        ["airbase"] = 10,
-                    }, -- end of ["takeoff"]
-                    ["losses"] = 
-                    {
-                        ["pilotDeath"] = 4,
-                        ["crash"] = 4,
-                        ["eject"] = 0,
-                        ["pilotError"] = 3,
-                    }, -- end of ["losses"]
-                    ["lostTo"] = 
-                    {
-                        ["Planes"] = 
-                        {
-                            ["Fighters"] = 2,
-                        }, -- end of ["Planes"]
-                    }, -- end of ["lostTo"]
-                }, -- end of ["actions"]
-                ["kills"] = 
-                {
-                    ["Planes"] = 
-                    {
-                        ["Fighters"] = 4,
-                        ["total"] = 4,
-                    }, -- end of ["Planes"]
-                }, -- end of ["kills"]
-            }, -- end of ["F-16C_50"]
-            ["T-45"] = 
-            {
-                ["inAir"] = 11393.61,
-                ["actions"] = 
-                {
-                    ["landing"] = 
-                    {
-                        ["airbase"] = 3,
-                    }, -- end of ["landing"]
-                    ["takeoff"] = 
-                    {
-                        ["airbase"] = 8,
-                    }, -- end of ["takeoff"]
-                }, -- end of ["actions"]
-                ["total"] = 15558.405,
-            }, -- end of ["T-45"]
-            ["T-45 Copilot"] = 
-            {
-                ["inAir"] = 12844.352,
-                ["actions"] = 
-                {
-                    ["landing"] = 
-                    {
-                        ["airbase"] = 6,
-                    }, -- end of ["landing"]
-                    ["takeoff"] = 
-                    {
-                        ["airbase"] = 10,
-                    }, -- end of ["takeoff"]
-                }, -- end of ["actions"]
-                ["total"] = 16337.926,
-            }, -- end of ["T-45 Copilot"]
+                ["inAir"] = 4196.476,
+            }, -- end of ["AV8BNA"]
         }, -- end of ["times"]
-        ["joinDate"] = 1665776189,
-        ["id"] = 146,
-        ["lastJoin"] = 1699390316,
-        ["pvp"] = 
+        ["joinDate"] = 1622318964,
+        ["lastJoin"] = 1622670999,
+        ["id"] = 123,
+        ["names"] = 
         {
-            ["F-16C_50"] = 
-            {
-                ["losses"] = 2,
-                ["kills"] = 4,
-            }, -- end of ["F-16C_50"]
-        }, -- end of ["pvp"]
-    }, -- end of ["b564266749ac14a3fe3e5df7d29cf243"]
+            [1] = "(Vixen4-1)Flick",
+        }, -- end of ["names"]
+    }, -- end of ["1ffd5abe765a21afc850fe45c6099ed4"]
     ["c64692a6c29dabccc20ed5dc0988f52e"] = 
     {
         ["pvp"] = 
@@ -1809,67 +1462,6 @@ stats =
             [2] = "Talon 1-2 ETF Dizzy",
         }, -- end of ["names"]
     }, -- end of ["c64692a6c29dabccc20ed5dc0988f52e"]
-    ["86f1da13f0accb1b9987d3f906241c2c"] = 
-    {
-        ["times"] = 
-        {
-            ["F-16C_50"] = 
-            {
-                ["total"] = 7038.956,
-                ["weapons"] = 
-                {
-                    ["AIM-120C"] = 
-                    {
-                        ["numHits"] = 0,
-                        ["kills"] = 0,
-                        ["shot"] = 8,
-                        ["hit"] = 0,
-                    }, -- end of ["AIM-120C"]
-                }, -- end of ["weapons"]
-                ["losses"] = 
-                {
-                    ["pilotDeath"] = 0,
-                    ["crash"] = 1,
-                    ["eject"] = 0,
-                }, -- end of ["losses"]
-                ["inAir"] = 4455.596,
-                ["actions"] = 
-                {
-                    ["losses"] = 
-                    {
-                        ["pilotDeath"] = 1,
-                        ["crash"] = 0,
-                        ["eject"] = 0,
-                    }, -- end of ["losses"]
-                }, -- end of ["actions"]
-                ["pvp"] = 
-                {
-                    ["losses"] = 1,
-                }, -- end of ["pvp"]
-            }, -- end of ["F-16C_50"]
-        }, -- end of ["times"]
-        ["joinDate"] = 1601752774,
-        ["lastJoin"] = 1601760141,
-        ["id"] = 56,
-        ["names"] = 
-        {
-            [1] = "№20 | KillerDog",
-        }, -- end of ["names"]
-    }, -- end of ["86f1da13f0accb1b9987d3f906241c2c"]
-    ["21092747ed0e2cc51a09da192333f059"] = 
-    {
-        ["times"] = 
-        {
-        }, -- end of ["times"]
-        ["joinDate"] = 1704461562,
-        ["lastJoin"] = 1704470933,
-        ["id"] = 255,
-        ["names"] = 
-        {
-            [1] = "thatguy",
-            [2] = "Sly",
-        }, -- end of ["names"]
-    }, -- end of ["21092747ed0e2cc51a09da192333f059"]
     ["2c100601d5af772a82581ac2d8635d05"] = 
     {
         ["times"] = 
@@ -1925,6 +1517,34 @@ stats =
             [1] = "Doc",
         }, -- end of ["names"]
     }, -- end of ["2c100601d5af772a82581ac2d8635d05"]
+    ["21092747ed0e2cc51a09da192333f059"] = 
+    {
+        ["times"] = 
+        {
+        }, -- end of ["times"]
+        ["joinDate"] = 1704461562,
+        ["lastJoin"] = 1704583218,
+        ["id"] = 255,
+        ["names"] = 
+        {
+            [1] = "thatguy",
+            [2] = "Sly",
+            [3] = "=JSW= Sly",
+        }, -- end of ["names"]
+    }, -- end of ["21092747ed0e2cc51a09da192333f059"]
+    ["f90161d22bbe96060013f288a74e805f"] = 
+    {
+        ["times"] = 
+        {
+        }, -- end of ["times"]
+        ["joinDate"] = 1691866680,
+        ["lastJoin"] = 1691871780,
+        ["id"] = 226,
+        ["names"] = 
+        {
+            [1] = "Roman 3-1 | bez",
+        }, -- end of ["names"]
+    }, -- end of ["f90161d22bbe96060013f288a74e805f"]
     ["aa66a7c9e81d23c6acd0f22d79bb9ad6"] = 
     {
         ["times"] = 
@@ -1959,96 +1579,78 @@ stats =
             [2] = "Metal 1-4 41Sqn Sneezy",
         }, -- end of ["names"]
     }, -- end of ["aa66a7c9e81d23c6acd0f22d79bb9ad6"]
-    ["deff02349efaa365d0665370e17f5c96"] = 
+    ["641bcbb4c777c560716a76a5232f0002"] = 
     {
-        ["pvp"] = 
-        {
-            ["FA-18C_hornet"] = 
-            {
-                ["losses"] = 1,
-            }, -- end of ["FA-18C_hornet"]
-        }, -- end of ["pvp"]
         ["times"] = 
         {
-            ["FA-18C_hornet"] = 
+        }, -- end of ["times"]
+        ["joinDate"] = 1691866700,
+        ["lastJoin"] = 1693081772,
+        ["id"] = 228,
+        ["names"] = 
+        {
+            [1] = "[VAF] Flammeus | Dagger 2",
+            [2] = "Dagger 3-2 | Flammeus",
+        }, -- end of ["names"]
+    }, -- end of ["641bcbb4c777c560716a76a5232f0002"]
+    ["8c98e7d5563e509ab88c286c0b85959c"] = 
+    {
+        ["times"] = 
+        {
+            ["JF-17"] = 
             {
+                ["total"] = 7082.374,
+                ["kills"] = 
+                {
+                    ["Planes"] = 
+                    {
+                        ["Fighters"] = 2,
+                        ["Bombers"] = 2,
+                        ["total"] = 4,
+                    }, -- end of ["Planes"]
+                }, -- end of ["kills"]
+                ["inAir"] = 2461.109,
                 ["weapons"] = 
                 {
-                    ["AIM-120C"] = 
+                    ["SD-10"] = 
                     {
                         ["hit"] = 0,
-                        ["kills"] = 0,
+                        ["kills"] = 3,
+                        ["shot"] = 3,
+                        ["numHits"] = 3,
+                    }, -- end of ["SD-10"]
+                    ["PL-5EII"] = 
+                    {
+                        ["hit"] = 0,
+                        ["kills"] = 1,
                         ["shot"] = 1,
-                        ["numHits"] = 0,
-                    }, -- end of ["AIM-120C"]
+                        ["numHits"] = 2,
+                    }, -- end of ["PL-5EII"]
                 }, -- end of ["weapons"]
-                ["inAir"] = 670.922,
                 ["actions"] = 
                 {
-                    ["lostTo"] = 
-                    {
-                        ["Planes"] = 
-                        {
-                            ["Fighters"] = 1,
-                        }, -- end of ["Planes"]
-                    }, -- end of ["lostTo"]
-                    ["takeoff"] = 
-                    {
-                        ["airbase"] = 2,
-                    }, -- end of ["takeoff"]
                     ["losses"] = 
                     {
                         ["pilotDeath"] = 1,
-                        ["crash"] = 2,
+                        ["crash"] = 0,
                         ["eject"] = 0,
                     }, -- end of ["losses"]
                 }, -- end of ["actions"]
-                ["total"] = 2332.728,
-            }, -- end of ["FA-18C_hornet"]
+                ["pvp"] = 
+                {
+                    ["kills"] = 4,
+                }, -- end of ["pvp"]
+            }, -- end of ["JF-17"]
         }, -- end of ["times"]
-        ["joinDate"] = 1678564279,
-        ["lastJoin"] = 1678567779,
-        ["id"] = 190,
+        ["joinDate"] = 1615056390,
+        ["lastJoin"] = 1615065724,
+        ["id"] = 90,
         ["names"] = 
         {
-            [1] = "Ninja 1-1 [FTQ] Chesty",
+            [1] = "E-TF[852] n8d0g",
+            [2] = "E-TF[103] n8d0g",
         }, -- end of ["names"]
-    }, -- end of ["deff02349efaa365d0665370e17f5c96"]
-    ["f44fbb277a06562bc192531155e58d16"] = 
-    {
-        ["times"] = 
-        {
-            ["FA-18C_hornet"] = 
-            {
-                ["weapons"] = 
-                {
-                    ["AGM-88C"] = 
-                    {
-                        ["hit"] = 0,
-                        ["kills"] = 0,
-                        ["shot"] = 4,
-                        ["numHits"] = 0,
-                    }, -- end of ["AGM-88C"]
-                }, -- end of ["weapons"]
-                ["total"] = 3764.266,
-                ["actions"] = 
-                {
-                    ["takeoff"] = 
-                    {
-                        ["CVN_72"] = 1,
-                    }, -- end of ["takeoff"]
-                }, -- end of ["actions"]
-                ["inAir"] = 1361.349,
-            }, -- end of ["FA-18C_hornet"]
-        }, -- end of ["times"]
-        ["joinDate"] = 1678397991,
-        ["lastJoin"] = 1678568396,
-        ["id"] = 183,
-        ["names"] = 
-        {
-            [1] = "RONIN 1-1 41Sqn YOGI",
-        }, -- end of ["names"]
-    }, -- end of ["f44fbb277a06562bc192531155e58d16"]
+    }, -- end of ["8c98e7d5563e509ab88c286c0b85959c"]
     ["891c8993e8fdbcb509aa0dbe2c9fe43e"] = 
     {
         ["times"] = 
@@ -2070,6 +1672,7 @@ stats =
             ["AV8BNA"] = 
             {
                 ["total"] = 89663.596999999,
+                ["inAir"] = 54827.24,
                 ["weapons"] = 
                 {
                     ["AIM-9M"] = 
@@ -2114,14 +1717,6 @@ stats =
                         ["shot"] = 16,
                         ["hit"] = 3,
                     }, -- end of ["Zuni-127"]
-                    ["GBU-12"] = 
-                    {
-                        ["hit"] = 1,
-                        ["kills"] = 0,
-                        ["shot"] = 9,
-                        ["numHits"] = 9,
-                    }, -- end of ["GBU-12"]
-                    ["shot"] = 10,
                     ["GAU_12"] = 
                     {
                         ["hit"] = 0,
@@ -2129,6 +1724,7 @@ stats =
                         ["shot"] = 57,
                         ["numHits"] = 0,
                     }, -- end of ["GAU_12"]
+                    ["shot"] = 10,
                     ["Mk-82AIR"] = 
                     {
                         ["numHits"] = 3,
@@ -2136,6 +1732,20 @@ stats =
                         ["shot"] = 6,
                         ["hit"] = 1,
                     }, -- end of ["Mk-82AIR"]
+                    ["GBU-12"] = 
+                    {
+                        ["hit"] = 1,
+                        ["kills"] = 0,
+                        ["shot"] = 9,
+                        ["numHits"] = 9,
+                    }, -- end of ["GBU-12"]
+                    ["GBU-54B"] = 
+                    {
+                        ["hit"] = 0,
+                        ["kills"] = 0,
+                        ["shot"] = 2,
+                        ["numHits"] = 2,
+                    }, -- end of ["GBU-54B"]
                     ["unknown"] = 
                     {
                         ["numHits"] = 46,
@@ -2150,15 +1760,7 @@ stats =
                         ["shot"] = 8,
                         ["numHits"] = 8,
                     }, -- end of ["Mk-82"]
-                    ["GBU-54B"] = 
-                    {
-                        ["hit"] = 0,
-                        ["kills"] = 0,
-                        ["shot"] = 2,
-                        ["numHits"] = 2,
-                    }, -- end of ["GBU-54B"]
                 }, -- end of ["weapons"]
-                ["inAir"] = 54827.24,
                 ["actions"] = 
                 {
                     ["landing"] = 
@@ -2200,173 +1802,43 @@ stats =
             [9] = "TEMPEST 2-1 =JSW= SHAKES",
             [5] = "SAXON 1-1 SHAKES",
             [10] = "VIXEN 1 =JSW= SHAKES",
-            [11] = "WULF 1-2 SHAKES =JSW=",
             [3] = "TRIDENT 1-2 SHAKES",
+            [11] = "WULF 1-2 SHAKES =JSW=",
             [6] = "VIXEN 2 | =JSW=SHAKES",
             [12] = "VANGUARD 1-2 SHAKES =JSW=",
             [14] = "TRIDENT 1-1 SHAKES =JSW=",
         }, -- end of ["names"]
     }, -- end of ["891c8993e8fdbcb509aa0dbe2c9fe43e"]
-    ["f2babbbe46d996465a90be1aa25148f5"] = 
+    ["66e4049ecc6c5fe805362d0088023edf"] = 
     {
         ["times"] = 
         {
-            ["M-2000C"] = 
+            ["T-45"] = 
             {
-                ["total"] = 2641.464,
+                ["inAir"] = 3803.678,
                 ["actions"] = 
                 {
-                    ["losses"] = 
+                    ["bounced"] = 2,
+                    ["takeoff"] = 
                     {
-                        ["pilotDeath"] = 1,
-                        ["crash"] = 0,
-                        ["eject"] = 0,
-                    }, -- end of ["losses"]
+                        ["airbase"] = 2,
+                    }, -- end of ["takeoff"]
+                    ["landing"] = 
+                    {
+                        ["airbase"] = 1,
+                    }, -- end of ["landing"]
                 }, -- end of ["actions"]
-                ["inAir"] = 600.39,
-            }, -- end of ["M-2000C"]
-            ["FA-18C_hornet"] = 
-            {
-                ["total"] = 97934.953000001,
-                ["kills"] = 
-                {
-                    ["Ground Units"] = 
-                    {
-                        ["SAM"] = 3,
-                        ["Unarmored"] = 1,
-                        ["total"] = 4,
-                    }, -- end of ["Ground Units"]
-                }, -- end of ["kills"]
-                ["losses"] = 
-                {
-                    ["pilotDeath"] = 0,
-                    ["crash"] = 1,
-                    ["eject"] = 0,
-                }, -- end of ["losses"]
-                ["weapons"] = 
-                {
-                    ["M-61"] = 
-                    {
-                        ["kills"] = 0,
-                        ["shot"] = 76,
-                        ["hit"] = 0,
-                        ["gun"] = true,
-                        ["numHits"] = 64,
-                    }, -- end of ["M-61"]
-                    ["AGM-88C"] = 
-                    {
-                        ["numHits"] = 7,
-                        ["kills"] = 3,
-                        ["shot"] = 12,
-                        ["hit"] = 0,
-                    }, -- end of ["AGM-88C"]
-                    ["F/A-18C Lot 20"] = 
-                    {
-                        ["numHits"] = 0,
-                        ["kills"] = 0,
-                        ["shot"] = 0,
-                        ["hit"] = 0,
-                    }, -- end of ["F/A-18C Lot 20"]
-                    ["GBU-12"] = 
-                    {
-                        ["hit"] = 0,
-                        ["kills"] = 0,
-                        ["shot"] = 8,
-                        ["numHits"] = 10,
-                    }, -- end of ["GBU-12"]
-                    ["AIM-120C"] = 
-                    {
-                        ["hit"] = 0,
-                        ["kills"] = 0,
-                        ["shot"] = 3,
-                        ["numHits"] = 0,
-                    }, -- end of ["AIM-120C"]
-                    ["Mk-82 SnakeEye"] = 
-                    {
-                        ["hit"] = 0,
-                        ["kills"] = 1,
-                        ["shot"] = 8,
-                        ["numHits"] = 1,
-                    }, -- end of ["Mk-82 SnakeEye"]
-                }, -- end of ["weapons"]
-                ["inAir"] = 67275.991,
-                ["actions"] = 
-                {
-                    ["losses"] = 
-                    {
-                        ["pilotDeath"] = 3,
-                        ["crash"] = 3,
-                        ["eject"] = 5,
-                    }, -- end of ["losses"]
-                }, -- end of ["actions"]
-                ["pvp"] = 
-                {
-                    ["losses"] = 1,
-                    ["kills"] = 4,
-                }, -- end of ["pvp"]
-            }, -- end of ["FA-18C_hornet"]
-            ["A-10C"] = 
-            {
-                ["inAir"] = 0,
-                ["total"] = 150.093,
-            }, -- end of ["A-10C"]
-            ["Mi-8MT"] = 
-            {
-                ["total"] = 5583.352,
-                ["weapons"] = 
-                {
-                    ["Mi-8MTV2"] = 
-                    {
-                        ["numHits"] = 0,
-                        ["kills"] = 0,
-                        ["shot"] = 0,
-                        ["hit"] = 0,
-                    }, -- end of ["Mi-8MTV2"]
-                }, -- end of ["weapons"]
-                ["inAir"] = 3232.047,
-            }, -- end of ["Mi-8MT"]
-            ["F-16C_50"] = 
-            {
-                ["total"] = 7353.433,
-                ["weapons"] = 
-                {
-                    ["AGM-88C"] = 
-                    {
-                        ["numHits"] = 2,
-                        ["kills"] = 0,
-                        ["shot"] = 2,
-                        ["hit"] = 0,
-                    }, -- end of ["AGM-88C"]
-                    ["Mk-82 SnakeEye"] = 
-                    {
-                        ["numHits"] = 8,
-                        ["kills"] = 0,
-                        ["shot"] = 6,
-                        ["hit"] = 0,
-                    }, -- end of ["Mk-82 SnakeEye"]
-                }, -- end of ["weapons"]
-                ["inAir"] = 6092.645,
-            }, -- end of ["F-16C_50"]
-            ["UH-1H"] = 
-            {
-                ["inAir"] = 810.422,
-                ["total"] = 1260.674,
-            }, -- end of ["UH-1H"]
-            ["AV8BNA"] = 
-            {
-                ["total"] = 1460.457,
-                ["inAir"] = 370.101,
-            }, -- end of ["AV8BNA"]
+                ["total"] = 5205.131,
+            }, -- end of ["T-45"]
         }, -- end of ["times"]
-        ["joinDate"] = 1586030476,
-        ["lastJoin"] = 1641927652,
-        ["id"] = 20,
+        ["joinDate"] = 1680464933,
+        ["lastJoin"] = 1705097677,
+        ["id"] = 210,
         ["names"] = 
         {
-            [1] = "=JSW006=Badger",
-            [2] = "Badger",
+            [1] = "Funky 1-1 | Funky",
         }, -- end of ["names"]
-    }, -- end of ["f2babbbe46d996465a90be1aa25148f5"]
+    }, -- end of ["66e4049ecc6c5fe805362d0088023edf"]
     ["34c23a0cab571e621d0005ccf0c34970"] = 
     {
         ["times"] = 
@@ -2436,17 +1908,7 @@ stats =
         {
             ["AV8BNA"] = 
             {
-                ["total"] = 11436.605,
                 ["inAir"] = 9585.484,
-                ["actions"] = 
-                {
-                    ["losses"] = 
-                    {
-                        ["pilotDeath"] = 1,
-                        ["crash"] = 1,
-                        ["eject"] = 0,
-                    }, -- end of ["losses"]
-                }, -- end of ["actions"]
                 ["weapons"] = 
                 {
                     ["AGM-65E"] = 
@@ -2499,6 +1961,16 @@ stats =
                         ["hit"] = 0,
                     }, -- end of ["Mk-82 SnakeEye"]
                 }, -- end of ["weapons"]
+                ["actions"] = 
+                {
+                    ["losses"] = 
+                    {
+                        ["pilotDeath"] = 1,
+                        ["crash"] = 1,
+                        ["eject"] = 0,
+                    }, -- end of ["losses"]
+                }, -- end of ["actions"]
+                ["total"] = 11436.605,
             }, -- end of ["AV8BNA"]
         }, -- end of ["times"]
         ["joinDate"] = 1606336836,
@@ -2509,19 +1981,6 @@ stats =
             [1] = "=JSW=CrimsonAngel",
         }, -- end of ["names"]
     }, -- end of ["70b8afe7e597b3d6e16cd06d7e99c2ed"]
-    ["d786382e3b3935526e27537fc3994bd1"] = 
-    {
-        ["times"] = 
-        {
-        }, -- end of ["times"]
-        ["joinDate"] = 1693076594,
-        ["lastJoin"] = 1693081285,
-        ["id"] = 241,
-        ["names"] = 
-        {
-            [1] = "Roman 3-2 | Burty",
-        }, -- end of ["names"]
-    }, -- end of ["d786382e3b3935526e27537fc3994bd1"]
     ["2696b72c00faf3784b85aa81140f6949"] = 
     {
         ["times"] = 
@@ -2561,7 +2020,6 @@ stats =
             }, -- end of ["FA-18C_hornet"]
             ["F-16C_50"] = 
             {
-                ["inAir"] = 950.563,
                 ["weapons"] = 
                 {
                     ["Mk-82"] = 
@@ -2572,6 +2030,7 @@ stats =
                         ["numHits"] = 0,
                     }, -- end of ["Mk-82"]
                 }, -- end of ["weapons"]
+                ["total"] = 2081.235,
                 ["actions"] = 
                 {
                     ["losses"] = 
@@ -2581,7 +2040,7 @@ stats =
                         ["eject"] = 0,
                     }, -- end of ["losses"]
                 }, -- end of ["actions"]
-                ["total"] = 2081.235,
+                ["inAir"] = 950.563,
             }, -- end of ["F-16C_50"]
         }, -- end of ["times"]
         ["joinDate"] = 1587069171,
@@ -2592,13 +2051,25 @@ stats =
             [1] = "Smithy",
         }, -- end of ["names"]
     }, -- end of ["2696b72c00faf3784b85aa81140f6949"]
+    ["3dc61d51d243828efa4501c49a06742e"] = 
+    {
+        ["times"] = 
+        {
+        }, -- end of ["times"]
+        ["joinDate"] = 1693076729,
+        ["lastJoin"] = 1693081699,
+        ["id"] = 242,
+        ["names"] = 
+        {
+            [1] = "Trident 3-5 | Zulu",
+        }, -- end of ["names"]
+    }, -- end of ["3dc61d51d243828efa4501c49a06742e"]
     ["4948e7c311fe6dcfbc1d45ac63bf310f"] = 
     {
         ["times"] = 
         {
             ["FA-18C_hornet"] = 
             {
-                ["inAir"] = 2802.89,
                 ["weapons"] = 
                 {
                     ["numHits"] = 0,
@@ -2606,6 +2077,7 @@ stats =
                     ["shot"] = 46,
                     ["hit"] = 0,
                 }, -- end of ["weapons"]
+                ["total"] = 4544.72,
                 ["actions"] = 
                 {
                     ["losses"] = 
@@ -2615,7 +2087,7 @@ stats =
                         ["eject"] = 2,
                     }, -- end of ["losses"]
                 }, -- end of ["actions"]
-                ["total"] = 4544.72,
+                ["inAir"] = 2802.89,
             }, -- end of ["FA-18C_hornet"]
             ["T-45"] = 
             {
@@ -2642,7 +2114,6 @@ stats =
             }, -- end of ["M-2000C"]
             ["A-10C"] = 
             {
-                ["inAir"] = 610.312,
                 ["weapons"] = 
                 {
                     ["GAU-8"] = 
@@ -2654,6 +2125,7 @@ stats =
                         ["numHits"] = 0,
                     }, -- end of ["GAU-8"]
                 }, -- end of ["weapons"]
+                ["total"] = 1150.608,
                 ["actions"] = 
                 {
                     ["losses"] = 
@@ -2663,7 +2135,7 @@ stats =
                         ["eject"] = 0,
                     }, -- end of ["losses"]
                 }, -- end of ["actions"]
-                ["total"] = 1150.608,
+                ["inAir"] = 610.312,
             }, -- end of ["A-10C"]
             ["P-51D"] = 
             {
@@ -2800,11 +2272,11 @@ stats =
                     ["kills"] = 6,
                 }, -- end of ["pvp"]
             }, -- end of ["FA-18C_hornet"]
-            ["Mi-8MT"] = 
+            ["F-16C_50"] = 
             {
                 ["inAir"] = 0,
-                ["total"] = 30.023,
-            }, -- end of ["Mi-8MT"]
+                ["total"] = 10,
+            }, -- end of ["F-16C_50"]
             ["F-14B"] = 
             {
                 ["total"] = 44601.379,
@@ -2862,24 +2334,14 @@ stats =
                     ["kills"] = 1,
                 }, -- end of ["pvp"]
             }, -- end of ["F-14B"]
-            ["F-16C_50"] = 
+            ["Mi-8MT"] = 
             {
                 ["inAir"] = 0,
-                ["total"] = 10,
-            }, -- end of ["F-16C_50"]
+                ["total"] = 30.023,
+            }, -- end of ["Mi-8MT"]
             ["AV8BNA"] = 
             {
-                ["inAir"] = 23741.715,
                 ["total"] = 35617.718,
-                ["actions"] = 
-                {
-                    ["losses"] = 
-                    {
-                        ["pilotDeath"] = 4,
-                        ["crash"] = 3,
-                        ["eject"] = 1,
-                    }, -- end of ["losses"]
-                }, -- end of ["actions"]
                 ["weapons"] = 
                 {
                     ["AGM-88C"] = 
@@ -2954,6 +2416,16 @@ stats =
                         ["hit"] = 7,
                     }, -- end of ["Mk-82 Snakeye"]
                 }, -- end of ["weapons"]
+                ["actions"] = 
+                {
+                    ["losses"] = 
+                    {
+                        ["pilotDeath"] = 4,
+                        ["crash"] = 3,
+                        ["eject"] = 1,
+                    }, -- end of ["losses"]
+                }, -- end of ["actions"]
+                ["inAir"] = 23741.715,
             }, -- end of ["AV8BNA"]
             ["SpitfireLFMkIXCW"] = 
             {
@@ -2970,97 +2442,113 @@ stats =
             [2] = "Gaz",
         }, -- end of ["names"]
     }, -- end of ["125c908ff7f225385248d91ad8b292de"]
-    ["1ffd5abe765a21afc850fe45c6099ed4"] = 
+    ["d786382e3b3935526e27537fc3994bd1"] = 
     {
         ["times"] = 
         {
-            ["AV8BNA"] = 
-            {
-                ["total"] = 7321.125,
-                ["weapons"] = 
-                {
-                    ["Zuni-127"] = 
-                    {
-                        ["numHits"] = 0,
-                        ["kills"] = 0,
-                        ["shot"] = 8,
-                        ["hit"] = 0,
-                    }, -- end of ["Zuni-127"]
-                    ["Mk-82 Snakeye"] = 
-                    {
-                        ["numHits"] = 0,
-                        ["kills"] = 0,
-                        ["shot"] = 10,
-                        ["hit"] = 0,
-                    }, -- end of ["Mk-82 Snakeye"]
-                }, -- end of ["weapons"]
-                ["inAir"] = 4196.476,
-            }, -- end of ["AV8BNA"]
         }, -- end of ["times"]
-        ["joinDate"] = 1622318964,
-        ["lastJoin"] = 1622670999,
-        ["id"] = 123,
+        ["joinDate"] = 1693076594,
+        ["lastJoin"] = 1693081285,
+        ["id"] = 241,
         ["names"] = 
         {
-            [1] = "(Vixen4-1)Flick",
+            [1] = "Roman 3-2 | Burty",
         }, -- end of ["names"]
-    }, -- end of ["1ffd5abe765a21afc850fe45c6099ed4"]
-    ["9ce1bd7252838cd82f16d2da53e6c3d2"] = 
-    {
-        ["times"] = 
-        {
-            ["F-16C_50"] = 
-            {
-                ["total"] = 730.82,
-                ["inAir"] = 0,
-            }, -- end of ["F-16C_50"]
-        }, -- end of ["times"]
-        ["joinDate"] = 1678564372,
-        ["lastJoin"] = 1678568542,
-        ["id"] = 192,
-        ["names"] = 
-        {
-            [1] = "KNIGHT 3-2 | Kamsa 730",
-        }, -- end of ["names"]
-    }, -- end of ["9ce1bd7252838cd82f16d2da53e6c3d2"]
-    ["e7b92d0f806ff616c4b27b06fe2234d9"] = 
+    }, -- end of ["d786382e3b3935526e27537fc3994bd1"]
+    ["4d6db87376ebe62974f357ba3681773c"] = 
     {
         ["times"] = 
         {
             ["FA-18C_hornet"] = 
             {
-                ["inAir"] = 1481.509,
+                ["total"] = 1962.208,
+                ["weapons"] = 
+                {
+                    ["AIM-120C"] = 
+                    {
+                        ["numHits"] = 0,
+                        ["kills"] = 0,
+                        ["shot"] = 6,
+                        ["hit"] = 0,
+                    }, -- end of ["AIM-120C"]
+                }, -- end of ["weapons"]
+                ["losses"] = 
+                {
+                    ["pilotDeath"] = 0,
+                    ["crash"] = 1,
+                    ["eject"] = 0,
+                }, -- end of ["losses"]
+                ["inAir"] = 1361.474,
                 ["actions"] = 
                 {
-                    ["lostTo"] = 
-                    {
-                        ["Planes"] = 
-                        {
-                            ["Fighters"] = 1,
-                        }, -- end of ["Planes"]
-                    }, -- end of ["lostTo"]
-                    ["takeoff"] = 
-                    {
-                        ["CVN_72"] = 1,
-                    }, -- end of ["takeoff"]
                     ["losses"] = 
                     {
-                        ["pilotDeath"] = 1,
-                        ["crash"] = 1,
+                        ["pilotDeath"] = 3,
+                        ["crash"] = 2,
                         ["eject"] = 0,
                     }, -- end of ["losses"]
                 }, -- end of ["actions"]
-                ["total"] = 3383.858,
+                ["pvp"] = 
+                {
+                    ["losses"] = 1,
+                }, -- end of ["pvp"]
             }, -- end of ["FA-18C_hornet"]
+            ["F-16C_50"] = 
+            {
+                ["total"] = 3415.423,
+                ["weapons"] = 
+                {
+                    ["AIM-120C"] = 
+                    {
+                        ["numHits"] = 0,
+                        ["kills"] = 0,
+                        ["shot"] = 4,
+                        ["hit"] = 0,
+                    }, -- end of ["AIM-120C"]
+                }, -- end of ["weapons"]
+                ["losses"] = 
+                {
+                    ["pilotDeath"] = 0,
+                    ["crash"] = 1,
+                    ["eject"] = 0,
+                }, -- end of ["losses"]
+                ["inAir"] = 1082.362,
+                ["actions"] = 
+                {
+                    ["losses"] = 
+                    {
+                        ["pilotDeath"] = 1,
+                        ["crash"] = 0,
+                        ["eject"] = 0,
+                    }, -- end of ["losses"]
+                }, -- end of ["actions"]
+                ["pvp"] = 
+                {
+                    ["losses"] = 1,
+                }, -- end of ["pvp"]
+            }, -- end of ["F-16C_50"]
         }, -- end of ["times"]
-        ["joinDate"] = 1678563140,
-        ["lastJoin"] = 1678568348,
-        ["id"] = 188,
+        ["joinDate"] = 1601752813,
+        ["lastJoin"] = 1601758298,
+        ["id"] = 58,
         ["names"] = 
         {
-            [1] = "Kaiser 1-2 41Sqn Russ",
+            [1] = "{TFT} PlagueDoctor",
         }, -- end of ["names"]
-    }, -- end of ["e7b92d0f806ff616c4b27b06fe2234d9"]
+    }, -- end of ["4d6db87376ebe62974f357ba3681773c"]
+    ["adced234c71461042b6824d96cc37224"] = 
+    {
+        ["times"] = 
+        {
+        }, -- end of ["times"]
+        ["joinDate"] = 1601753623,
+        ["lastJoin"] = 1601753623,
+        ["id"] = 66,
+        ["names"] = 
+        {
+            [1] = "№20 | Freaky",
+        }, -- end of ["names"]
+    }, -- end of ["adced234c71461042b6824d96cc37224"]
     ["c5ee9eef26f08d654a01261475009836"] = 
     {
         ["times"] = 
@@ -3109,206 +2597,147 @@ stats =
             [2] = "JTFF | Zanck' | VMFA 314",
         }, -- end of ["names"]
     }, -- end of ["c5ee9eef26f08d654a01261475009836"]
-    ["b90884d0bb68395f9d208aef54f2a841"] = 
+    ["4636d52df5b6fe799294c1f3887f1585"] = 
     {
+        ["pvp"] = 
+        {
+            ["F-16C_50"] = 
+            {
+                ["losses"] = 1,
+                ["kills"] = 1,
+            }, -- end of ["F-16C_50"]
+        }, -- end of ["pvp"]
         ["times"] = 
         {
-            ["T-45"] = 
+            ["F-16C_50"] = 
             {
-                ["inAir"] = 0,
-                ["total"] = 50.022000000001,
-            }, -- end of ["T-45"]
-            ["AV8BNA"] = 
-            {
-                ["total"] = 75753.061,
+                ["total"] = 1551.837,
                 ["kills"] = 
                 {
-                    ["Ground Units"] = 
+                    ["Planes"] = 
                     {
-                        ["total"] = 4,
-                        ["SAM"] = 4,
-                    }, -- end of ["Ground Units"]
+                        ["total"] = 1,
+                        ["Fighters"] = 1,
+                    }, -- end of ["Planes"]
                 }, -- end of ["kills"]
+                ["weapons"] = 
+                {
+                    ["AIM-120C"] = 
+                    {
+                        ["hit"] = 0,
+                        ["kills"] = 1,
+                        ["shot"] = 3,
+                        ["numHits"] = 1,
+                    }, -- end of ["AIM-120C"]
+                }, -- end of ["weapons"]
                 ["actions"] = 
                 {
-                    ["losses"] = 
+                    ["lostTo"] = 
                     {
-                        ["pilotDeath"] = 4,
-                        ["crash"] = 3,
-                        ["eject"] = 1,
-                    }, -- end of ["losses"]
+                        ["Planes"] = 
+                        {
+                            ["Fighters"] = 1,
+                        }, -- end of ["Planes"]
+                    }, -- end of ["lostTo"]
                     ["takeoff"] = 
                     {
                         ["airbase"] = 2,
                     }, -- end of ["takeoff"]
+                    ["losses"] = 
+                    {
+                        ["pilotDeath"] = 1,
+                        ["crash"] = 2,
+                        ["eject"] = 0,
+                    }, -- end of ["losses"]
                 }, -- end of ["actions"]
-                ["inAir"] = 47762.871,
+                ["inAir"] = 690.906,
+            }, -- end of ["F-16C_50"]
+        }, -- end of ["times"]
+        ["joinDate"] = 1678564961,
+        ["lastJoin"] = 1678567405,
+        ["id"] = 196,
+        ["names"] = 
+        {
+            [1] = "Chaos 1-1 [FTQ] Revenge",
+        }, -- end of ["names"]
+    }, -- end of ["4636d52df5b6fe799294c1f3887f1585"]
+    ["83502c7ed1e1852a844498e714722f58"] = 
+    {
+        ["times"] = 
+        {
+            ["FA-18C_hornet"] = 
+            {
+                ["total"] = 3163.683,
+                ["actions"] = 
+                {
+                    ["lostTo"] = 
+                    {
+                        ["Ground Units"] = 
+                        {
+                            ["SAM"] = 1,
+                        }, -- end of ["Ground Units"]
+                    }, -- end of ["lostTo"]
+                    ["takeoff"] = 
+                    {
+                        ["CVN_72"] = 1,
+                    }, -- end of ["takeoff"]
+                    ["losses"] = 
+                    {
+                        ["pilotDeath"] = 1,
+                        ["crash"] = 1,
+                        ["eject"] = 0,
+                        ["pilotError"] = 1,
+                    }, -- end of ["losses"]
+                }, -- end of ["actions"]
+                ["inAir"] = 700.767,
+            }, -- end of ["FA-18C_hornet"]
+        }, -- end of ["times"]
+        ["joinDate"] = 1678311559,
+        ["lastJoin"] = 1678568760,
+        ["id"] = 174,
+        ["names"] = 
+        {
+            [1] = "0309 Geoff",
+            [2] = "Ronin 4-1 41Sqn Geoff",
+        }, -- end of ["names"]
+    }, -- end of ["83502c7ed1e1852a844498e714722f58"]
+    ["b86fc958109c9bf5cd5fa4af78980b72"] = 
+    {
+        ["times"] = 
+        {
+            ["FA-18C_hornet"] = 
+            {
+                ["total"] = 3383.726,
+                ["inAir"] = 1231.22,
+                ["actions"] = 
+                {
+                    ["takeoff"] = 
+                    {
+                        ["CVN_72"] = 1,
+                    }, -- end of ["takeoff"]
+                }, -- end of ["actions"]
                 ["weapons"] = 
                 {
-                    ["Zuni-127"] = 
-                    {
-                        ["numHits"] = 24,
-                        ["kills"] = 0,
-                        ["shot"] = 31,
-                        ["hit"] = 7,
-                    }, -- end of ["Zuni-127"]
-                    ["Mk-82"] = 
-                    {
-                        ["numHits"] = 15,
-                        ["kills"] = 2,
-                        ["shot"] = 21,
-                        ["hit"] = 6,
-                    }, -- end of ["Mk-82"]
-                    ["Mk-81"] = 
+                    ["M-61"] = 
                     {
                         ["hit"] = 0,
                         ["kills"] = 0,
-                        ["shot"] = 2,
-                        ["numHits"] = 4,
-                    }, -- end of ["Mk-81"]
-                    ["GBU-38"] = 
-                    {
-                        ["kills"] = 0,
-                        ["shot"] = 1,
-                        ["numHits"] = 2,
-                        ["assist"] = 1,
-                        ["hit"] = 0,
-                    }, -- end of ["GBU-38"]
-                    ["GBU-54(V)1/B"] = 
-                    {
-                        ["hit"] = 0,
-                        ["kills"] = 0,
-                        ["shot"] = 4,
+                        ["shot"] = 367,
                         ["numHits"] = 0,
-                    }, -- end of ["GBU-54(V)1/B"]
-                    ["GBU-12"] = 
-                    {
-                        ["hit"] = 0,
-                        ["kills"] = 0,
-                        ["shot"] = 2,
-                        ["numHits"] = 0,
-                    }, -- end of ["GBU-12"]
-                    ["Mk-83"] = 
-                    {
-                        ["numHits"] = 2,
-                        ["kills"] = 0,
-                        ["shot"] = 2,
-                        ["hit"] = 2,
-                    }, -- end of ["Mk-83"]
-                    ["HYDRA-70 M151"] = 
-                    {
-                        ["numHits"] = 0,
-                        ["kills"] = 0,
-                        ["shot"] = 10,
-                        ["hit"] = 0,
-                    }, -- end of ["HYDRA-70 M151"]
-                    ["Mk-82 SnakeEye"] = 
-                    {
-                        ["hit"] = 0,
-                        ["kills"] = 0,
-                        ["shot"] = 2,
-                        ["numHits"] = 2,
-                    }, -- end of ["Mk-82 SnakeEye"]
-                    ["BDU-33"] = 
-                    {
-                        ["hit"] = 0,
-                        ["kills"] = 0,
-                        ["shot"] = 2,
-                        ["numHits"] = 0,
-                    }, -- end of ["BDU-33"]
-                    ["GAU_12"] = 
-                    {
-                        ["kills"] = 0,
-                        ["shot"] = 194,
-                        ["numHits"] = 71,
-                        ["assist"] = 1,
-                        ["hit"] = 0,
-                    }, -- end of ["GAU_12"]
-                    ["shot"] = 17,
-                    ["AGM-65F"] = 
-                    {
-                        ["hit"] = 0,
-                        ["kills"] = 0,
-                        ["shot"] = 1,
-                        ["numHits"] = 2,
-                    }, -- end of ["AGM-65F"]
-                    ["Mk-82AIR"] = 
-                    {
-                        ["hit"] = 0,
-                        ["kills"] = 0,
-                        ["shot"] = 0,
-                        ["numHits"] = 1,
-                    }, -- end of ["Mk-82AIR"]
-                    ["unknown"] = 
-                    {
-                        ["numHits"] = 147,
-                        ["kills"] = 0,
-                        ["shot"] = 0,
-                        ["hit"] = 0,
-                    }, -- end of ["unknown"]
-                    ["GBU-54B"] = 
-                    {
-                        ["kills"] = 0,
-                        ["shot"] = 2,
-                        ["numHits"] = 4,
-                        ["assist"] = 1,
-                        ["hit"] = 2,
-                    }, -- end of ["GBU-54B"]
-                    ["Mk-20 Rockeye"] = 
-                    {
-                        ["numHits"] = 4,
-                        ["kills"] = 2,
-                        ["shot"] = 4,
-                        ["hit"] = 0,
-                    }, -- end of ["Mk-20 Rockeye"]
+                    }, -- end of ["M-61"]
                 }, -- end of ["weapons"]
-                ["losses"] = 
-                {
-                    ["pilotDeath"] = 0,
-                    ["crash"] = 1,
-                    ["eject"] = 0,
-                }, -- end of ["losses"]
-                ["pvp"] = 
-                {
-                    ["losses"] = 1,
-                    ["kills"] = 4,
-                }, -- end of ["pvp"]
-            }, -- end of ["AV8BNA"]
+            }, -- end of ["FA-18C_hornet"]
         }, -- end of ["times"]
-        ["joinDate"] = 1612794517,
-        ["lastJoin"] = 1652057016,
-        ["id"] = 77,
+        ["joinDate"] = 1678271546,
+        ["lastJoin"] = 1678568420,
+        ["id"] = 169,
         ["names"] = 
         {
-            [1] = "SeeBread",
+            [1] = "OscarVictor 11",
+            [2] = "0327 Bob (RAFAIRUK(",
+            [3] = "Ronin 1-3 41Sqn Bob",
         }, -- end of ["names"]
-    }, -- end of ["b90884d0bb68395f9d208aef54f2a841"]
-    ["f90161d22bbe96060013f288a74e805f"] = 
-    {
-        ["times"] = 
-        {
-        }, -- end of ["times"]
-        ["joinDate"] = 1691866680,
-        ["lastJoin"] = 1691871780,
-        ["id"] = 226,
-        ["names"] = 
-        {
-            [1] = "Roman 3-1 | bez",
-        }, -- end of ["names"]
-    }, -- end of ["f90161d22bbe96060013f288a74e805f"]
-    ["255deb9bed096e477602362e714d67f5"] = 
-    {
-        ["times"] = 
-        {
-        }, -- end of ["times"]
-        ["joinDate"] = 1691867089,
-        ["lastJoin"] = 1691867379,
-        ["id"] = 233,
-        ["names"] = 
-        {
-            [1] = "Chaos 3-2 | Pistol",
-        }, -- end of ["names"]
-    }, -- end of ["255deb9bed096e477602362e714d67f5"]
+    }, -- end of ["b86fc958109c9bf5cd5fa4af78980b72"]
     ["3316bca529c797f031d8c54c14a0f5d3"] = 
     {
         ["times"] = 
@@ -3336,6 +2765,40 @@ stats =
                         ["Tanks"] = 7,
                     }, -- end of ["Ground Units"]
                 }, -- end of ["kills"]
+                ["inAir"] = 31912.714,
+                ["actions"] = 
+                {
+                    ["lostTo"] = 
+                    {
+                        ["Ground Units"] = 
+                        {
+                            ["IFVs"] = 1,
+                            ["Tanks"] = 1,
+                        }, -- end of ["Ground Units"]
+                        ["Helicopters"] = 
+                        {
+                            ["Attack"] = 19,
+                        }, -- end of ["Helicopters"]
+                    }, -- end of ["lostTo"]
+                    ["takeoff"] = 
+                    {
+                        ["airbase"] = 42,
+                        ["austere"] = 2,
+                    }, -- end of ["takeoff"]
+                    ["landing"] = 
+                    {
+                        ["austere"] = 1,
+                        ["airbase"] = 12,
+                        ["landedWhileDamaged"] = 1,
+                    }, -- end of ["landing"]
+                    ["losses"] = 
+                    {
+                        ["pilotDeath"] = 2,
+                        ["crash"] = 21,
+                        ["eject"] = 0,
+                    }, -- end of ["losses"]
+                    ["bounced"] = 2,
+                }, -- end of ["actions"]
                 ["weapons"] = 
                 {
                     ["Hydra 70 M151 HE"] = 
@@ -3371,40 +2834,6 @@ stats =
                         ["numHits"] = 10,
                     }, -- end of ["unknown"]
                 }, -- end of ["weapons"]
-                ["actions"] = 
-                {
-                    ["lostTo"] = 
-                    {
-                        ["Ground Units"] = 
-                        {
-                            ["IFVs"] = 1,
-                            ["Tanks"] = 1,
-                        }, -- end of ["Ground Units"]
-                        ["Helicopters"] = 
-                        {
-                            ["Attack"] = 19,
-                        }, -- end of ["Helicopters"]
-                    }, -- end of ["lostTo"]
-                    ["takeoff"] = 
-                    {
-                        ["airbase"] = 42,
-                        ["austere"] = 2,
-                    }, -- end of ["takeoff"]
-                    ["landing"] = 
-                    {
-                        ["austere"] = 1,
-                        ["airbase"] = 12,
-                        ["landedWhileDamaged"] = 1,
-                    }, -- end of ["landing"]
-                    ["losses"] = 
-                    {
-                        ["pilotDeath"] = 2,
-                        ["crash"] = 21,
-                        ["eject"] = 0,
-                    }, -- end of ["losses"]
-                    ["bounced"] = 2,
-                }, -- end of ["actions"]
-                ["inAir"] = 31912.714,
             }, -- end of ["AH-64D_BLK_II"]
             ["Ka-50_3"] = 
             {
@@ -3424,28 +2853,6 @@ stats =
                         ["APCs"] = 2,
                     }, -- end of ["Ground Units"]
                 }, -- end of ["kills"]
-                ["inAir"] = 2932.915,
-                ["actions"] = 
-                {
-                    ["lostTo"] = 
-                    {
-                        ["Ground Units"] = 
-                        {
-                            ["IFVs"] = 3,
-                            ["SAM"] = 1,
-                        }, -- end of ["Ground Units"]
-                    }, -- end of ["lostTo"]
-                    ["takeoff"] = 
-                    {
-                        ["austere"] = 3,
-                    }, -- end of ["takeoff"]
-                    ["losses"] = 
-                    {
-                        ["pilotDeath"] = 3,
-                        ["crash"] = 4,
-                        ["eject"] = 0,
-                    }, -- end of ["losses"]
-                }, -- end of ["actions"]
                 ["weapons"] = 
                 {
                     ["GSh-30-2K"] = 
@@ -3472,6 +2879,28 @@ stats =
                         ["numHits"] = 4,
                     }, -- end of ["9M114 Shturm-V (AT-6 Spiral)"]
                 }, -- end of ["weapons"]
+                ["actions"] = 
+                {
+                    ["lostTo"] = 
+                    {
+                        ["Ground Units"] = 
+                        {
+                            ["IFVs"] = 3,
+                            ["SAM"] = 1,
+                        }, -- end of ["Ground Units"]
+                    }, -- end of ["lostTo"]
+                    ["takeoff"] = 
+                    {
+                        ["austere"] = 3,
+                    }, -- end of ["takeoff"]
+                    ["losses"] = 
+                    {
+                        ["pilotDeath"] = 3,
+                        ["crash"] = 4,
+                        ["eject"] = 0,
+                    }, -- end of ["losses"]
+                }, -- end of ["actions"]
+                ["inAir"] = 2932.915,
             }, -- end of ["Mi-24P"]
             ["AH-64D_BLK_II Copilot"] = 
             {
@@ -3489,19 +2918,6 @@ stats =
                         ["total"] = 43,
                     }, -- end of ["Ground Units"]
                 }, -- end of ["kills"]
-                ["inAir"] = 5485.391,
-                ["actions"] = 
-                {
-                    ["landing"] = 
-                    {
-                        ["austere"] = 1,
-                    }, -- end of ["landing"]
-                    ["takeoff"] = 
-                    {
-                        ["austere"] = 1,
-                        ["airbase"] = 2,
-                    }, -- end of ["takeoff"]
-                }, -- end of ["actions"]
                 ["weapons"] = 
                 {
                     ["Hydra 70 M151 HE"] = 
@@ -3528,6 +2944,19 @@ stats =
                         ["numHits"] = 25,
                     }, -- end of ["unknown"]
                 }, -- end of ["weapons"]
+                ["actions"] = 
+                {
+                    ["landing"] = 
+                    {
+                        ["austere"] = 1,
+                    }, -- end of ["landing"]
+                    ["takeoff"] = 
+                    {
+                        ["austere"] = 1,
+                        ["airbase"] = 2,
+                    }, -- end of ["takeoff"]
+                }, -- end of ["actions"]
+                ["inAir"] = 5485.391,
             }, -- end of ["AH-64D_BLK_II Copilot"]
             ["Mi-8MT"] = 
             {
@@ -3580,14 +3009,14 @@ stats =
             }, -- end of ["T-45"]
         }, -- end of ["times"]
         ["joinDate"] = 1668195400,
-        ["lastJoin"] = 1703331045,
+        ["lastJoin"] = 1705353129,
         ["id"] = 149,
         ["names"] = 
         {
             [1] = "Wee Neal 0414",
             [2] = "Ugly 1-1 JSW Neal",
-            [4] = "JSW Neal",
-            [3] = "Player",
+            [4] = "Player",
+            [3] = "JSW Neal",
         }, -- end of ["names"]
     }, -- end of ["3316bca529c797f031d8c54c14a0f5d3"]
     ["606b3219538f69a2c4571c9b8e34eab3"] = 
@@ -3694,7 +3123,7 @@ stats =
         {
         }, -- end of ["times"]
         ["joinDate"] = 1692730762,
-        ["lastJoin"] = 1704121169,
+        ["lastJoin"] = 1705353240,
         ["id"] = 237,
         ["names"] = 
         {
@@ -3703,30 +3132,21 @@ stats =
             [3] = "=JSW=Phoenix",
         }, -- end of ["names"]
     }, -- end of ["6c977c9fc7ed1cdceb2ab823f0e0dab9"]
-    ["6801be787dd849e0898e44f7fc8ffda5"] = 
+    ["deff02349efaa365d0665370e17f5c96"] = 
     {
         ["pvp"] = 
         {
-            ["JF-17"] = 
+            ["FA-18C_hornet"] = 
             {
                 ["losses"] = 1,
-                ["kills"] = 2,
-            }, -- end of ["JF-17"]
+            }, -- end of ["FA-18C_hornet"]
         }, -- end of ["pvp"]
         ["times"] = 
         {
-            ["JF-17"] = 
+            ["FA-18C_hornet"] = 
             {
-                ["total"] = 1832.269,
-                ["kills"] = 
-                {
-                    ["Planes"] = 
-                    {
-                        ["total"] = 2,
-                        ["Fighters"] = 2,
-                    }, -- end of ["Planes"]
-                }, -- end of ["kills"]
-                ["inAir"] = 1251.611,
+                ["inAir"] = 670.922,
+                ["total"] = 2332.728,
                 ["actions"] = 
                 {
                     ["lostTo"] = 
@@ -3745,30 +3165,28 @@ stats =
                         ["pilotDeath"] = 1,
                         ["crash"] = 2,
                         ["eject"] = 0,
-                        ["pilotError"] = 1,
                     }, -- end of ["losses"]
                 }, -- end of ["actions"]
                 ["weapons"] = 
                 {
-                    ["SD-10"] = 
+                    ["AIM-120C"] = 
                     {
-                        ["hit"] = 1,
-                        ["kills"] = 2,
-                        ["shot"] = 3,
-                        ["numHits"] = 2,
-                    }, -- end of ["SD-10"]
+                        ["hit"] = 0,
+                        ["kills"] = 0,
+                        ["shot"] = 1,
+                        ["numHits"] = 0,
+                    }, -- end of ["AIM-120C"]
                 }, -- end of ["weapons"]
-            }, -- end of ["JF-17"]
+            }, -- end of ["FA-18C_hornet"]
         }, -- end of ["times"]
-        ["joinDate"] = 1678311224,
-        ["lastJoin"] = 1678567722,
-        ["id"] = 173,
+        ["joinDate"] = 1678564279,
+        ["lastJoin"] = 1678567779,
+        ["id"] = 190,
         ["names"] = 
         {
-            [1] = "E-TF[105] EletroBull",
-            [2] = "TALON 1-1 ETF EletroBull",
+            [1] = "Ninja 1-1 [FTQ] Chesty",
         }, -- end of ["names"]
-    }, -- end of ["6801be787dd849e0898e44f7fc8ffda5"]
+    }, -- end of ["deff02349efaa365d0665370e17f5c96"]
     ["d36fc2fd422bac487872d42b890bcf99"] = 
     {
         ["times"] = 
@@ -3893,13 +3311,13 @@ stats =
                         ["shot"] = 4,
                         ["numHits"] = 13,
                     }, -- end of ["Mk-82 SnakeEye"]
-                    ["AIM_54A_Mk60"] = 
+                    ["Zuni-127"] = 
                     {
                         ["hit"] = 0,
-                        ["kills"] = 0,
-                        ["shot"] = 3,
-                        ["numHits"] = 0,
-                    }, -- end of ["AIM_54A_Mk60"]
+                        ["kills"] = 1,
+                        ["shot"] = 17,
+                        ["numHits"] = 5,
+                    }, -- end of ["Zuni-127"]
                     ["kamikaze"] = 
                     {
                         ["numHits"] = 0,
@@ -3942,13 +3360,13 @@ stats =
                         ["shot"] = 5,
                         ["numHits"] = 2,
                     }, -- end of ["Mk-84"]
-                    ["Zuni-127"] = 
+                    ["AIM_54A_Mk60"] = 
                     {
                         ["hit"] = 0,
-                        ["kills"] = 1,
-                        ["shot"] = 17,
-                        ["numHits"] = 5,
-                    }, -- end of ["Zuni-127"]
+                        ["kills"] = 0,
+                        ["shot"] = 3,
+                        ["numHits"] = 0,
+                    }, -- end of ["AIM_54A_Mk60"]
                 }, -- end of ["weapons"]
                 ["actions"] = 
                 {
@@ -3993,7 +3411,6 @@ stats =
             }, -- end of ["F-16C_50"]
             ["F-5E-3"] = 
             {
-                ["inAir"] = 1720.849,
                 ["weapons"] = 
                 {
                     ["M-39"] = 
@@ -4004,6 +3421,7 @@ stats =
                         ["numHits"] = 0,
                     }, -- end of ["M-39"]
                 }, -- end of ["weapons"]
+                ["total"] = 2161.051,
                 ["actions"] = 
                 {
                     ["losses"] = 
@@ -4013,7 +3431,7 @@ stats =
                         ["eject"] = 0,
                     }, -- end of ["losses"]
                 }, -- end of ["actions"]
-                ["total"] = 2161.051,
+                ["inAir"] = 1720.849,
             }, -- end of ["F-5E-3"]
         }, -- end of ["times"]
         ["joinDate"] = 1585253033,
@@ -4135,193 +3553,168 @@ stats =
             [1] = "PIRATE 1-1 E-TF Ankou",
         }, -- end of ["names"]
     }, -- end of ["c4086be5600d16ddc096b12495edf317"]
-    ["3dc61d51d243828efa4501c49a06742e"] = 
+    ["7cdda24c9dff09ebf8f2341545cbab22"] = 
     {
         ["times"] = 
         {
-        }, -- end of ["times"]
-        ["joinDate"] = 1693076729,
-        ["lastJoin"] = 1693081699,
-        ["id"] = 242,
-        ["names"] = 
-        {
-            [1] = "Trident 3-5 | Zulu",
-        }, -- end of ["names"]
-    }, -- end of ["3dc61d51d243828efa4501c49a06742e"]
-    ["0d091545902a7878ce1f90e114390dd1"] = 
-    {
-        ["times"] = 
-        {
-            ["AV8BNA"] = 
+            ["FA-18C_hornet"] = 
             {
+                ["inAir"] = 4894.702,
+                ["total"] = 9855.931,
                 ["weapons"] = 
                 {
-                    ["AGM-62 Walleye II"] = 
-                    {
-                        ["numHits"] = 1,
-                        ["kills"] = 0,
-                        ["shot"] = 0,
-                        ["hit"] = 0,
-                    }, -- end of ["AGM-62 Walleye II"]
-                    ["AGM-84D"] = 
-                    {
-                        ["numHits"] = 1,
-                        ["kills"] = 0,
-                        ["shot"] = 0,
-                        ["hit"] = 0,
-                    }, -- end of ["AGM-84D"]
-                    ["kamikaze"] = 
+                    ["Mk-84"] = 
                     {
                         ["hit"] = 0,
                         ["kills"] = 0,
-                        ["shot"] = 0,
+                        ["shot"] = 8,
                         ["numHits"] = 0,
-                    }, -- end of ["kamikaze"]
-                    ["Mk-82 SnakeEye"] = 
+                    }, -- end of ["Mk-84"]
+                }, -- end of ["weapons"]
+            }, -- end of ["FA-18C_hornet"]
+            ["F-16C_50"] = 
+            {
+                ["total"] = 106041.589,
+                ["weapons"] = 
+                {
+                    ["AIM-9M"] = 
                     {
+                        ["numHits"] = 0,
+                        ["kills"] = 0,
+                        ["shot"] = 3,
                         ["hit"] = 0,
+                    }, -- end of ["AIM-9M"]
+                    ["M-61"] = 
+                    {
+                        ["numHits"] = 181,
+                        ["kills"] = 0,
+                        ["shot"] = 493,
+                        ["hit"] = 0,
+                    }, -- end of ["M-61"]
+                    ["AGM-65H"] = 
+                    {
+                        ["kills"] = 4,
+                        ["shot"] = 9,
+                        ["numHits"] = 17,
+                        ["assist"] = 1,
+                        ["hit"] = 0,
+                    }, -- end of ["AGM-65H"]
+                    ["AGM-65D"] = 
+                    {
+                        ["kills"] = 2,
+                        ["shot"] = 9,
+                        ["numHits"] = 16,
+                        ["assist"] = 3,
+                        ["hit"] = 0,
+                    }, -- end of ["AGM-65D"]
+                    ["AIM-120C-5"] = 
+                    {
+                        ["numHits"] = 2,
+                        ["kills"] = 1,
+                        ["shot"] = 6,
+                        ["hit"] = 1,
+                    }, -- end of ["AIM-120C-5"]
+                    ["shot"] = 1,
+                    ["AIM-120C"] = 
+                    {
+                        ["hit"] = 1,
+                        ["kills"] = 1,
+                        ["shot"] = 2,
+                        ["numHits"] = 1,
+                    }, -- end of ["AIM-120C"]
+                    ["GBU-12"] = 
+                    {
                         ["kills"] = 0,
                         ["shot"] = 15,
-                        ["numHits"] = 3,
-                    }, -- end of ["Mk-82 SnakeEye"]
+                        ["hit"] = 7,
+                        ["assist"] = 1,
+                        ["numHits"] = 12,
+                    }, -- end of ["GBU-12"]
+                    ["Mk-82"] = 
+                    {
+                        ["numHits"] = 7,
+                        ["kills"] = 0,
+                        ["shot"] = 17,
+                        ["hit"] = 2,
+                    }, -- end of ["Mk-82"]
+                    ["GBU-38"] = 
+                    {
+                        ["numHits"] = 8,
+                        ["kills"] = 2,
+                        ["shot"] = 8,
+                        ["hit"] = 3,
+                    }, -- end of ["GBU-38"]
+                    ["Mk-82 Snakeye"] = 
+                    {
+                        ["numHits"] = 7,
+                        ["kills"] = 0,
+                        ["shot"] = 18,
+                        ["hit"] = 4,
+                    }, -- end of ["Mk-82 Snakeye"]
                 }, -- end of ["weapons"]
-                ["inAir"] = 15955.398,
+                ["inAir"] = 70237.438999999,
                 ["actions"] = 
                 {
-                    ["losses"] = 
-                    {
-                        ["crash"] = 4,
-                    }, -- end of ["losses"]
-                }, -- end of ["actions"]
-                ["total"] = 38113.869,
-            }, -- end of ["AV8BNA"]
-        }, -- end of ["times"]
-        ["joinDate"] = 1586625535,
-        ["lastJoin"] = 1591278597,
-        ["id"] = 21,
-        ["names"] = 
-        {
-            [1] = "Goose4291",
-        }, -- end of ["names"]
-    }, -- end of ["0d091545902a7878ce1f90e114390dd1"]
-    ["66e4049ecc6c5fe805362d0088023edf"] = 
-    {
-        ["times"] = 
-        {
-            ["T-45"] = 
-            {
-                ["inAir"] = 3803.678,
-                ["actions"] = 
-                {
-                    ["bounced"] = 2,
-                    ["takeoff"] = 
-                    {
-                        ["airbase"] = 2,
-                    }, -- end of ["takeoff"]
                     ["landing"] = 
                     {
-                        ["airbase"] = 1,
+                        ["airbase"] = 14,
                     }, -- end of ["landing"]
+                    ["takeoff"] = 
+                    {
+                        ["airbase"] = 36,
+                    }, -- end of ["takeoff"]
+                    ["losses"] = 
+                    {
+                        ["pilotDeath"] = 2,
+                        ["crash"] = 1,
+                        ["eject"] = 0,
+                        ["pilotError"] = 1,
+                    }, -- end of ["losses"]
                 }, -- end of ["actions"]
-                ["total"] = 5205.131,
-            }, -- end of ["T-45"]
-        }, -- end of ["times"]
-        ["joinDate"] = 1680464933,
-        ["lastJoin"] = 1703156876,
-        ["id"] = 210,
-        ["names"] = 
-        {
-            [1] = "Funky 1-1 | Funky",
-        }, -- end of ["names"]
-    }, -- end of ["66e4049ecc6c5fe805362d0088023edf"]
-    ["5d0a9fa06ccc34c06ca48d5e644ac976"] = 
-    {
-        ["times"] = 
-        {
-            ["JF-17"] = 
-            {
-                ["total"] = 13450.151,
                 ["kills"] = 
                 {
                     ["Planes"] = 
                     {
-                        ["total"] = 5,
-                        ["Fighters"] = 5,
+                        ["Fighters"] = 2,
+                        ["total"] = 2,
                     }, -- end of ["Planes"]
+                    ["Helicopters"] = 
+                    {
+                        ["Utility"] = 5,
+                        ["total"] = 5,
+                    }, -- end of ["Helicopters"]
                     ["Ground Units"] = 
                     {
-                        ["AAA"] = 3,
+                        ["Forts"] = 3,
                         ["total"] = 3,
                     }, -- end of ["Ground Units"]
-                    ["Buildings"] = 
-                    {
-                        ["total"] = 27,
-                        ["Static"] = 27,
-                    }, -- end of ["Buildings"]
                 }, -- end of ["kills"]
-                ["weapons"] = 
-                {
-                    ["GB-6-SFW"] = 
-                    {
-                        ["numHits"] = 25,
-                        ["kills"] = 17,
-                        ["shot"] = 2,
-                        ["hit"] = 0,
-                    }, -- end of ["GB-6-SFW"]
-                    ["SD-10"] = 
-                    {
-                        ["numHits"] = 4,
-                        ["kills"] = 4,
-                        ["shot"] = 9,
-                        ["hit"] = 0,
-                    }, -- end of ["SD-10"]
-                    ["GSh-2-23"] = 
-                    {
-                        ["hit"] = 0,
-                        ["kills"] = 0,
-                        ["shot"] = 72,
-                        ["numHits"] = 0,
-                    }, -- end of ["GSh-2-23"]
-                    ["kamikaze"] = 
-                    {
-                        ["numHits"] = 47,
-                        ["kills"] = 13,
-                        ["shot"] = 0,
-                        ["hit"] = 0,
-                    }, -- end of ["kamikaze"]
-                    ["PL-5EII"] = 
-                    {
-                        ["hit"] = 0,
-                        ["kills"] = 1,
-                        ["shot"] = 1,
-                        ["numHits"] = 2,
-                    }, -- end of ["PL-5EII"]
-                }, -- end of ["weapons"]
-                ["inAir"] = 6125.987,
-                ["actions"] = 
-                {
-                    ["losses"] = 
-                    {
-                        ["pilotDeath"] = 4,
-                        ["crash"] = 1,
-                        ["eject"] = 0,
-                    }, -- end of ["losses"]
-                }, -- end of ["actions"]
-                ["pvp"] = 
-                {
-                    ["kills"] = 35,
-                }, -- end of ["pvp"]
-            }, -- end of ["JF-17"]
+            }, -- end of ["F-16C_50"]
         }, -- end of ["times"]
-        ["joinDate"] = 1601752483,
-        ["lastJoin"] = 1678567385,
-        ["id"] = 50,
+        ["joinDate"] = 1621521189,
+        ["lastJoin"] = 1664399277,
+        ["id"] = 104,
         ["names"] = 
         {
-            [1] = "E-TF[101] Breeze",
-            [2] = "[Grim1-1]E-TF[101] Breeze",
+            [1] = "TIGER 2",
+            [2] = "Ben",
+            [4] = "BENj1sc",
+            [3] = "=JSW=BENj1sc",
         }, -- end of ["names"]
-    }, -- end of ["5d0a9fa06ccc34c06ca48d5e644ac976"]
+    }, -- end of ["7cdda24c9dff09ebf8f2341545cbab22"]
+    ["046224b0a3089993f6c9af8801613cb9"] = 
+    {
+        ["times"] = 
+        {
+        }, -- end of ["times"]
+        ["joinDate"] = 1683655663,
+        ["lastJoin"] = 1683670793,
+        ["id"] = 214,
+        ["names"] = 
+        {
+            [1] = "Tiffy",
+        }, -- end of ["names"]
+    }, -- end of ["046224b0a3089993f6c9af8801613cb9"]
     ["ed937ad7fd31fd6633644b7128b14166"] = 
     {
         ["times"] = 
@@ -4439,14 +3832,6 @@ stats =
                         ["shot"] = 14,
                         ["hit"] = 1,
                     }, -- end of ["AGM-88C"]
-                    ["Mk-82AIR"] = 
-                    {
-                        ["hit"] = 4,
-                        ["kills"] = 0,
-                        ["shot"] = 18,
-                        ["numHits"] = 11,
-                    }, -- end of ["Mk-82AIR"]
-                    ["shot"] = 13,
                     ["AIM-9L"] = 
                     {
                         ["hit"] = 0,
@@ -4454,20 +3839,14 @@ stats =
                         ["shot"] = 2,
                         ["numHits"] = 0,
                     }, -- end of ["AIM-9L"]
-                    ["GBU-12"] = 
+                    ["shot"] = 13,
+                    ["Mk-82AIR"] = 
                     {
+                        ["hit"] = 4,
+                        ["kills"] = 0,
+                        ["shot"] = 18,
                         ["numHits"] = 11,
-                        ["kills"] = 1,
-                        ["shot"] = 12,
-                        ["hit"] = 2,
-                    }, -- end of ["GBU-12"]
-                    ["unknown"] = 
-                    {
-                        ["numHits"] = 13,
-                        ["kills"] = 2,
-                        ["shot"] = 0,
-                        ["hit"] = 0,
-                    }, -- end of ["unknown"]
+                    }, -- end of ["Mk-82AIR"]
                     ["CBU-87/CBU-103 CEM"] = 
                     {
                         ["hit"] = 0,
@@ -4475,6 +3854,20 @@ stats =
                         ["shot"] = 2,
                         ["numHits"] = 2,
                     }, -- end of ["CBU-87/CBU-103 CEM"]
+                    ["unknown"] = 
+                    {
+                        ["numHits"] = 13,
+                        ["kills"] = 2,
+                        ["shot"] = 0,
+                        ["hit"] = 0,
+                    }, -- end of ["unknown"]
+                    ["GBU-12"] = 
+                    {
+                        ["numHits"] = 11,
+                        ["kills"] = 1,
+                        ["shot"] = 12,
+                        ["hit"] = 2,
+                    }, -- end of ["GBU-12"]
                     ["Mk-82 Snakeye"] = 
                     {
                         ["hit"] = 4,
@@ -4516,7 +3909,7 @@ stats =
             }, -- end of ["F-16C_50"]
         }, -- end of ["times"]
         ["joinDate"] = 1609963102,
-        ["lastJoin"] = 1704130615,
+        ["lastJoin"] = 1704647006,
         ["id"] = 74,
         ["names"] = 
         {
@@ -4525,6 +3918,130 @@ stats =
             [3] = "=JSW=Ajax",
         }, -- end of ["names"]
     }, -- end of ["ed937ad7fd31fd6633644b7128b14166"]
+    ["5d0a9fa06ccc34c06ca48d5e644ac976"] = 
+    {
+        ["times"] = 
+        {
+            ["JF-17"] = 
+            {
+                ["total"] = 13450.151,
+                ["kills"] = 
+                {
+                    ["Planes"] = 
+                    {
+                        ["total"] = 5,
+                        ["Fighters"] = 5,
+                    }, -- end of ["Planes"]
+                    ["Ground Units"] = 
+                    {
+                        ["AAA"] = 3,
+                        ["total"] = 3,
+                    }, -- end of ["Ground Units"]
+                    ["Buildings"] = 
+                    {
+                        ["total"] = 27,
+                        ["Static"] = 27,
+                    }, -- end of ["Buildings"]
+                }, -- end of ["kills"]
+                ["weapons"] = 
+                {
+                    ["GB-6-SFW"] = 
+                    {
+                        ["numHits"] = 25,
+                        ["kills"] = 17,
+                        ["shot"] = 2,
+                        ["hit"] = 0,
+                    }, -- end of ["GB-6-SFW"]
+                    ["SD-10"] = 
+                    {
+                        ["numHits"] = 4,
+                        ["kills"] = 4,
+                        ["shot"] = 9,
+                        ["hit"] = 0,
+                    }, -- end of ["SD-10"]
+                    ["GSh-2-23"] = 
+                    {
+                        ["hit"] = 0,
+                        ["kills"] = 0,
+                        ["shot"] = 72,
+                        ["numHits"] = 0,
+                    }, -- end of ["GSh-2-23"]
+                    ["kamikaze"] = 
+                    {
+                        ["numHits"] = 47,
+                        ["kills"] = 13,
+                        ["shot"] = 0,
+                        ["hit"] = 0,
+                    }, -- end of ["kamikaze"]
+                    ["PL-5EII"] = 
+                    {
+                        ["hit"] = 0,
+                        ["kills"] = 1,
+                        ["shot"] = 1,
+                        ["numHits"] = 2,
+                    }, -- end of ["PL-5EII"]
+                }, -- end of ["weapons"]
+                ["inAir"] = 6125.987,
+                ["actions"] = 
+                {
+                    ["losses"] = 
+                    {
+                        ["pilotDeath"] = 4,
+                        ["crash"] = 1,
+                        ["eject"] = 0,
+                    }, -- end of ["losses"]
+                }, -- end of ["actions"]
+                ["pvp"] = 
+                {
+                    ["kills"] = 35,
+                }, -- end of ["pvp"]
+            }, -- end of ["JF-17"]
+        }, -- end of ["times"]
+        ["joinDate"] = 1601752483,
+        ["lastJoin"] = 1678567385,
+        ["id"] = 50,
+        ["names"] = 
+        {
+            [1] = "E-TF[101] Breeze",
+            [2] = "[Grim1-1]E-TF[101] Breeze",
+        }, -- end of ["names"]
+    }, -- end of ["5d0a9fa06ccc34c06ca48d5e644ac976"]
+    ["d0c1a69b6c9a213e843d9778b736e095"] = 
+    {
+        ["times"] = 
+        {
+            ["FA-18C_hornet"] = 
+            {
+                ["total"] = 15652.23,
+                ["inAir"] = 7813.464,
+                ["weapons"] = 
+                {
+                    ["Mk-84"] = 
+                    {
+                        ["hit"] = 0,
+                        ["kills"] = 0,
+                        ["shot"] = 8,
+                        ["numHits"] = 0,
+                    }, -- end of ["Mk-84"]
+                    ["GBU-10"] = 
+                    {
+                        ["hit"] = 0,
+                        ["kills"] = 0,
+                        ["shot"] = 4,
+                        ["numHits"] = 0,
+                    }, -- end of ["GBU-10"]
+                }, -- end of ["weapons"]
+            }, -- end of ["FA-18C_hornet"]
+        }, -- end of ["times"]
+        ["joinDate"] = 1621545236,
+        ["lastJoin"] = 1621709909,
+        ["id"] = 108,
+        ["names"] = 
+        {
+            [1] = "Sh0rty",
+            [2] = "Tiger-1 (Sh0rty)",
+        }, -- end of ["names"]
+    }, -- end of ["d0c1a69b6c9a213e843d9778b736e095"]
     ["803abf3c05cfa1b2eb7eaf194303b0ef"] = 
     {
         ["times"] = 
@@ -4587,56 +4104,6 @@ stats =
             [1] = "Jxckmc",
         }, -- end of ["names"]
     }, -- end of ["a450226ca342ba4235e5734f73989e9e"]
-    ["d0c1a69b6c9a213e843d9778b736e095"] = 
-    {
-        ["times"] = 
-        {
-            ["FA-18C_hornet"] = 
-            {
-                ["total"] = 15652.23,
-                ["inAir"] = 7813.464,
-                ["weapons"] = 
-                {
-                    ["Mk-84"] = 
-                    {
-                        ["hit"] = 0,
-                        ["kills"] = 0,
-                        ["shot"] = 8,
-                        ["numHits"] = 0,
-                    }, -- end of ["Mk-84"]
-                    ["GBU-10"] = 
-                    {
-                        ["hit"] = 0,
-                        ["kills"] = 0,
-                        ["shot"] = 4,
-                        ["numHits"] = 0,
-                    }, -- end of ["GBU-10"]
-                }, -- end of ["weapons"]
-            }, -- end of ["FA-18C_hornet"]
-        }, -- end of ["times"]
-        ["joinDate"] = 1621545236,
-        ["lastJoin"] = 1621709909,
-        ["id"] = 108,
-        ["names"] = 
-        {
-            [1] = "Sh0rty",
-            [2] = "Tiger-1 (Sh0rty)",
-        }, -- end of ["names"]
-    }, -- end of ["d0c1a69b6c9a213e843d9778b736e095"]
-    ["25e873c6f2e21552e7eb837adf496179"] = 
-    {
-        ["times"] = 
-        {
-        }, -- end of ["times"]
-        ["joinDate"] = 1699992891,
-        ["lastJoin"] = 1704227316,
-        ["id"] = 250,
-        ["names"] = 
-        {
-            [1] = "MiMiKiwi",
-            [2] = "=JSW= MiMiKiwi",
-        }, -- end of ["names"]
-    }, -- end of ["25e873c6f2e21552e7eb837adf496179"]
     ["31f79da84f0afe4a37b7db5e544184ef"] = 
     {
         ["times"] = 
@@ -4717,9 +4184,13 @@ stats =
                     ["kills"] = 1,
                 }, -- end of ["pvp"]
             }, -- end of ["FA-18C_hornet"]
+            ["SA342Mistral"] = 
+            {
+                ["inAir"] = 0,
+                ["total"] = 310.014,
+            }, -- end of ["SA342Mistral"]
             ["F-14B"] = 
             {
-                ["total"] = 144765.023,
                 ["weapons"] = 
                 {
                     ["AIM_54C_Mk47"] = 
@@ -4780,6 +4251,7 @@ stats =
                         ["numHits"] = 0,
                     }, -- end of ["Mk-82 SnakeEye"]
                 }, -- end of ["weapons"]
+                ["inAir"] = 95480.631000001,
                 ["actions"] = 
                 {
                     ["losses"] = 
@@ -4789,13 +4261,8 @@ stats =
                         ["eject"] = 0,
                     }, -- end of ["losses"]
                 }, -- end of ["actions"]
-                ["inAir"] = 95480.631000001,
+                ["total"] = 144765.023,
             }, -- end of ["F-14B"]
-            ["SA342Mistral"] = 
-            {
-                ["inAir"] = 0,
-                ["total"] = 310.014,
-            }, -- end of ["SA342Mistral"]
             ["SA342Minigun"] = 
             {
                 ["inAir"] = 0,
@@ -4856,7 +4323,7 @@ stats =
             }, -- end of ["AV8BNA"]
         }, -- end of ["times"]
         ["joinDate"] = 1585427519,
-        ["lastJoin"] = 1699393718,
+        ["lastJoin"] = 1705353110,
         ["id"] = 14,
         ["names"] = 
         {
@@ -4864,88 +4331,33 @@ stats =
             [2] = "=JSW=lenny",
         }, -- end of ["names"]
     }, -- end of ["31f79da84f0afe4a37b7db5e544184ef"]
-    ["4636d52df5b6fe799294c1f3887f1585"] = 
-    {
-        ["pvp"] = 
-        {
-            ["F-16C_50"] = 
-            {
-                ["losses"] = 1,
-                ["kills"] = 1,
-            }, -- end of ["F-16C_50"]
-        }, -- end of ["pvp"]
-        ["times"] = 
-        {
-            ["F-16C_50"] = 
-            {
-                ["total"] = 1551.837,
-                ["kills"] = 
-                {
-                    ["Planes"] = 
-                    {
-                        ["total"] = 1,
-                        ["Fighters"] = 1,
-                    }, -- end of ["Planes"]
-                }, -- end of ["kills"]
-                ["inAir"] = 690.906,
-                ["actions"] = 
-                {
-                    ["lostTo"] = 
-                    {
-                        ["Planes"] = 
-                        {
-                            ["Fighters"] = 1,
-                        }, -- end of ["Planes"]
-                    }, -- end of ["lostTo"]
-                    ["takeoff"] = 
-                    {
-                        ["airbase"] = 2,
-                    }, -- end of ["takeoff"]
-                    ["losses"] = 
-                    {
-                        ["pilotDeath"] = 1,
-                        ["crash"] = 2,
-                        ["eject"] = 0,
-                    }, -- end of ["losses"]
-                }, -- end of ["actions"]
-                ["weapons"] = 
-                {
-                    ["AIM-120C"] = 
-                    {
-                        ["hit"] = 0,
-                        ["kills"] = 1,
-                        ["shot"] = 3,
-                        ["numHits"] = 1,
-                    }, -- end of ["AIM-120C"]
-                }, -- end of ["weapons"]
-            }, -- end of ["F-16C_50"]
-        }, -- end of ["times"]
-        ["joinDate"] = 1678564961,
-        ["lastJoin"] = 1678567405,
-        ["id"] = 196,
-        ["names"] = 
-        {
-            [1] = "Chaos 1-1 [FTQ] Revenge",
-        }, -- end of ["names"]
-    }, -- end of ["4636d52df5b6fe799294c1f3887f1585"]
-    ["c9c76ed7e1250b5c7d37a3120dbe1f75"] = 
+    ["25e873c6f2e21552e7eb837adf496179"] = 
     {
         ["times"] = 
         {
-            ["F-16C_50"] = 
-            {
-                ["total"] = 1631.573,
-                ["inAir"] = 1071.1,
-            }, -- end of ["F-16C_50"]
         }, -- end of ["times"]
-        ["joinDate"] = 1638914775,
-        ["lastJoin"] = 1638916411,
-        ["id"] = 128,
+        ["joinDate"] = 1699992891,
+        ["lastJoin"] = 1704836746,
+        ["id"] = 250,
         ["names"] = 
         {
-            [1] = "Devil 2 1 Michael",
+            [1] = "MiMiKiwi",
+            [2] = "=JSW= MiMiKiwi",
         }, -- end of ["names"]
-    }, -- end of ["c9c76ed7e1250b5c7d37a3120dbe1f75"]
+    }, -- end of ["25e873c6f2e21552e7eb837adf496179"]
+    ["255deb9bed096e477602362e714d67f5"] = 
+    {
+        ["times"] = 
+        {
+        }, -- end of ["times"]
+        ["joinDate"] = 1691867089,
+        ["lastJoin"] = 1691867379,
+        ["id"] = 233,
+        ["names"] = 
+        {
+            [1] = "Chaos 3-2 | Pistol",
+        }, -- end of ["names"]
+    }, -- end of ["255deb9bed096e477602362e714d67f5"]
     ["abcd66987f65616ec5f5cfecb18f7c16"] = 
     {
         ["times"] = 
@@ -4969,6 +4381,62 @@ stats =
             [1] = "Bloodnok",
         }, -- end of ["names"]
     }, -- end of ["abcd66987f65616ec5f5cfecb18f7c16"]
+    ["c9c76ed7e1250b5c7d37a3120dbe1f75"] = 
+    {
+        ["times"] = 
+        {
+            ["F-16C_50"] = 
+            {
+                ["total"] = 1631.573,
+                ["inAir"] = 1071.1,
+            }, -- end of ["F-16C_50"]
+        }, -- end of ["times"]
+        ["joinDate"] = 1638914775,
+        ["lastJoin"] = 1638916411,
+        ["id"] = 128,
+        ["names"] = 
+        {
+            [1] = "Devil 2 1 Michael",
+        }, -- end of ["names"]
+    }, -- end of ["c9c76ed7e1250b5c7d37a3120dbe1f75"]
+    ["a35f9fb41f82a91391392bb170450b5f"] = 
+    {
+        ["times"] = 
+        {
+            ["FA-18C_hornet"] = 
+            {
+                ["weapons"] = 
+                {
+                    ["AGM-88C"] = 
+                    {
+                        ["hit"] = 0,
+                        ["kills"] = 0,
+                        ["shot"] = 1,
+                        ["numHits"] = 0,
+                    }, -- end of ["AGM-88C"]
+                }, -- end of ["weapons"]
+                ["total"] = 5541.959,
+                ["actions"] = 
+                {
+                    ["losses"] = 
+                    {
+                        ["pilotDeath"] = 2,
+                        ["crash"] = 1,
+                        ["eject"] = 0,
+                    }, -- end of ["losses"]
+                }, -- end of ["actions"]
+                ["inAir"] = 1590.627,
+            }, -- end of ["FA-18C_hornet"]
+        }, -- end of ["times"]
+        ["joinDate"] = 1615058131,
+        ["lastJoin"] = 1615066255,
+        ["id"] = 98,
+        ["names"] = 
+        {
+            [1] = "",
+            [2] = "Weagle",
+        }, -- end of ["names"]
+    }, -- end of ["a35f9fb41f82a91391392bb170450b5f"]
     ["dc26a6b0d67818741258099dac1b0755"] = 
     {
         ["names"] = 
@@ -4981,7 +4449,6 @@ stats =
             ["FA-18C_hornet"] = 
             {
                 ["total"] = 790.915,
-                ["inAir"] = 790.915,
                 ["weapons"] = 
                 {
                     ["M-61"] = 
@@ -4993,6 +4460,7 @@ stats =
                         ["numHits"] = 6,
                     }, -- end of ["M-61"]
                 }, -- end of ["weapons"]
+                ["inAir"] = 790.915,
                 ["actions"] = 
                 {
                     ["losses"] = 
@@ -5021,7 +4489,6 @@ stats =
             ["F-16C_50"] = 
             {
                 ["total"] = 1301.385,
-                ["inAir"] = 1301.385,
                 ["weapons"] = 
                 {
                     ["AIM-9M"] = 
@@ -5047,6 +4514,7 @@ stats =
                         ["hit"] = 0,
                     }, -- end of ["AIM-120C"]
                 }, -- end of ["weapons"]
+                ["inAir"] = 1301.385,
                 ["actions"] = 
                 {
                     ["losses"] = 
@@ -5091,153 +4559,119 @@ stats =
             }, -- end of ["F-16C_50"]
         }, -- end of ["pvp"]
     }, -- end of ["dc26a6b0d67818741258099dac1b0755"]
-    ["a35f9fb41f82a91391392bb170450b5f"] = 
+    ["af052d37437161079cbb63979215eb18"] = 
     {
         ["times"] = 
         {
-            ["FA-18C_hornet"] = 
+            ["T-45"] = 
             {
-                ["inAir"] = 1590.627,
-                ["weapons"] = 
-                {
-                    ["AGM-88C"] = 
-                    {
-                        ["hit"] = 0,
-                        ["kills"] = 0,
-                        ["shot"] = 1,
-                        ["numHits"] = 0,
-                    }, -- end of ["AGM-88C"]
-                }, -- end of ["weapons"]
+                ["inAir"] = 2813.153,
+                ["total"] = 4134.658,
                 ["actions"] = 
                 {
-                    ["losses"] = 
+                    ["landing"] = 
                     {
-                        ["pilotDeath"] = 2,
-                        ["crash"] = 1,
-                        ["eject"] = 0,
-                    }, -- end of ["losses"]
-                }, -- end of ["actions"]
-                ["total"] = 5541.959,
-            }, -- end of ["FA-18C_hornet"]
-        }, -- end of ["times"]
-        ["joinDate"] = 1615058131,
-        ["lastJoin"] = 1615066255,
-        ["id"] = 98,
-        ["names"] = 
-        {
-            [1] = "",
-            [2] = "Weagle",
-        }, -- end of ["names"]
-    }, -- end of ["a35f9fb41f82a91391392bb170450b5f"]
-    ["b86fc958109c9bf5cd5fa4af78980b72"] = 
-    {
-        ["times"] = 
-        {
-            ["FA-18C_hornet"] = 
-            {
-                ["weapons"] = 
-                {
-                    ["M-61"] = 
-                    {
-                        ["hit"] = 0,
-                        ["kills"] = 0,
-                        ["shot"] = 367,
-                        ["numHits"] = 0,
-                    }, -- end of ["M-61"]
-                }, -- end of ["weapons"]
-                ["total"] = 3383.726,
-                ["actions"] = 
-                {
+                        ["airbase"] = 1,
+                    }, -- end of ["landing"]
                     ["takeoff"] = 
                     {
-                        ["CVN_72"] = 1,
+                        ["airbase"] = 2,
                     }, -- end of ["takeoff"]
-                }, -- end of ["actions"]
-                ["inAir"] = 1231.22,
-            }, -- end of ["FA-18C_hornet"]
-        }, -- end of ["times"]
-        ["joinDate"] = 1678271546,
-        ["lastJoin"] = 1678568420,
-        ["id"] = 169,
-        ["names"] = 
-        {
-            [1] = "OscarVictor 11",
-            [2] = "0327 Bob (RAFAIRUK(",
-            [3] = "Ronin 1-3 41Sqn Bob",
-        }, -- end of ["names"]
-    }, -- end of ["b86fc958109c9bf5cd5fa4af78980b72"]
-    ["641bcbb4c777c560716a76a5232f0002"] = 
-    {
-        ["times"] = 
-        {
-        }, -- end of ["times"]
-        ["joinDate"] = 1691866700,
-        ["lastJoin"] = 1693081772,
-        ["id"] = 228,
-        ["names"] = 
-        {
-            [1] = "[VAF] Flammeus | Dagger 2",
-            [2] = "Dagger 3-2 | Flammeus",
-        }, -- end of ["names"]
-    }, -- end of ["641bcbb4c777c560716a76a5232f0002"]
-    ["8c98e7d5563e509ab88c286c0b85959c"] = 
-    {
-        ["times"] = 
-        {
-            ["JF-17"] = 
-            {
-                ["total"] = 7082.374,
-                ["kills"] = 
-                {
-                    ["Planes"] = 
-                    {
-                        ["Fighters"] = 2,
-                        ["Bombers"] = 2,
-                        ["total"] = 4,
-                    }, -- end of ["Planes"]
-                }, -- end of ["kills"]
-                ["inAir"] = 2461.109,
-                ["weapons"] = 
-                {
-                    ["SD-10"] = 
-                    {
-                        ["hit"] = 0,
-                        ["kills"] = 3,
-                        ["shot"] = 3,
-                        ["numHits"] = 3,
-                    }, -- end of ["SD-10"]
-                    ["PL-5EII"] = 
-                    {
-                        ["hit"] = 0,
-                        ["kills"] = 1,
-                        ["shot"] = 1,
-                        ["numHits"] = 2,
-                    }, -- end of ["PL-5EII"]
-                }, -- end of ["weapons"]
-                ["actions"] = 
-                {
                     ["losses"] = 
                     {
-                        ["pilotDeath"] = 1,
+                        ["pilotDeath"] = 0,
                         ["crash"] = 0,
-                        ["eject"] = 0,
+                        ["eject"] = 1,
                     }, -- end of ["losses"]
                 }, -- end of ["actions"]
-                ["pvp"] = 
+                ["weapons"] = 
                 {
-                    ["kills"] = 4,
-                }, -- end of ["pvp"]
-            }, -- end of ["JF-17"]
+                    ["BDU-33"] = 
+                    {
+                        ["hit"] = 0,
+                        ["kills"] = 0,
+                        ["shot"] = 8,
+                        ["numHits"] = 0,
+                    }, -- end of ["BDU-33"]
+                }, -- end of ["weapons"]
+            }, -- end of ["T-45"]
+            ["AV8BNA"] = 
+            {
+                ["total"] = 35806.84,
+                ["kills"] = 
+                {
+                    ["Ground Units"] = 
+                    {
+                        ["AAA"] = 2,
+                        ["Tanks"] = 3,
+                        ["Unarmored"] = 4,
+                        ["SAM"] = 1,
+                        ["IFVs"] = 2,
+                        ["Arty/MLRS"] = 3,
+                        ["Forts"] = 6,
+                        ["total"] = 21,
+                    }, -- end of ["Ground Units"]
+                }, -- end of ["kills"]
+                ["inAir"] = 26316.999,
+                ["actions"] = 
+                {
+                    ["landing"] = 
+                    {
+                        ["airbase"] = 5,
+                        ["austere"] = 1,
+                    }, -- end of ["landing"]
+                    ["takeoff"] = 
+                    {
+                        ["hms_invincible"] = 1,
+                        ["airbase"] = 12,
+                        ["austere"] = 1,
+                    }, -- end of ["takeoff"]
+                    ["bounced"] = 1,
+                }, -- end of ["actions"]
+                ["weapons"] = 
+                {
+                    ["GBU-12"] = 
+                    {
+                        ["kills"] = 2,
+                        ["shot"] = 9,
+                        ["numHits"] = 5,
+                        ["assist"] = 3,
+                        ["hit"] = 2,
+                    }, -- end of ["GBU-12"]
+                    ["GBU-54B"] = 
+                    {
+                        ["kills"] = 15,
+                        ["shot"] = 16,
+                        ["numHits"] = 18,
+                        ["assist"] = 1,
+                        ["hit"] = 4,
+                    }, -- end of ["GBU-54B"]
+                    ["GBU-38"] = 
+                    {
+                        ["kills"] = 4,
+                        ["shot"] = 9,
+                        ["numHits"] = 8,
+                        ["assist"] = 4,
+                        ["hit"] = 1,
+                    }, -- end of ["GBU-38"]
+                    ["AIM-9M"] = 
+                    {
+                        ["hit"] = 0,
+                        ["kills"] = 0,
+                        ["shot"] = 1,
+                        ["numHits"] = 0,
+                    }, -- end of ["AIM-9M"]
+                }, -- end of ["weapons"]
+            }, -- end of ["AV8BNA"]
         }, -- end of ["times"]
-        ["joinDate"] = 1615056390,
-        ["lastJoin"] = 1615065724,
-        ["id"] = 90,
+        ["joinDate"] = 1658775841,
+        ["lastJoin"] = 1664832059,
+        ["id"] = 140,
         ["names"] = 
         {
-            [1] = "E-TF[852] n8d0g",
-            [2] = "E-TF[103] n8d0g",
+            [1] = "OBrien",
         }, -- end of ["names"]
-    }, -- end of ["8c98e7d5563e509ab88c286c0b85959c"]
+    }, -- end of ["af052d37437161079cbb63979215eb18"]
     ["348312498b0f7cad5e9ce84c708ecdd2"] = 
     {
         ["times"] = 
@@ -5266,368 +4700,267 @@ stats =
             [1] = "{TFT} Ghost#751",
         }, -- end of ["names"]
     }, -- end of ["348312498b0f7cad5e9ce84c708ecdd2"]
-    ["f95a3a2e6e9d498670f654d6b2e7e951"] = 
+    ["host"] = 
     {
-        ["names"] = 
-        {
-            [1] = "Dobbie",
-            [2] = "=JSW= Dobbie",
-        }, -- end of ["names"]
+        ["id"] = 1,
         ["times"] = 
         {
-            ["AH-64D_BLK_II"] = 
+        }, -- end of ["times"]
+        ["joinDate"] = 1585221247,
+        ["names"] = 
+        {
+            [1] = "host",
+        }, -- end of ["names"]
+    }, -- end of ["host"]
+    ["6801be787dd849e0898e44f7fc8ffda5"] = 
+    {
+        ["pvp"] = 
+        {
+            ["JF-17"] = 
             {
-                ["weapons"] = 
-                {
-                    ["AGM-114K"] = 
-                    {
-                        ["numHits"] = 2,
-                        ["kills"] = 0,
-                        ["shot"] = 2,
-                        ["hit"] = 2,
-                    }, -- end of ["AGM-114K"]
-                }, -- end of ["weapons"]
-                ["inAir"] = 4014.554,
-                ["actions"] = 
-                {
-                    ["landing"] = 
-                    {
-                        ["austere"] = 2,
-                    }, -- end of ["landing"]
-                    ["takeoff"] = 
-                    {
-                        ["austere"] = 2,
-                    }, -- end of ["takeoff"]
-                }, -- end of ["actions"]
-                ["total"] = 4414.977,
-            }, -- end of ["AH-64D_BLK_II"]
-            ["F-16C_50"] = 
+                ["losses"] = 1,
+                ["kills"] = 2,
+            }, -- end of ["JF-17"]
+        }, -- end of ["pvp"]
+        ["times"] = 
+        {
+            ["JF-17"] = 
             {
-                ["total"] = 72275.59,
+                ["total"] = 1832.269,
                 ["kills"] = 
                 {
-                    ["Ground Units"] = 
-                    {
-                        ["Arty/MLRS"] = 2,
-                        ["total"] = 9,
-                        ["APCs"] = 2,
-                        ["IFVs"] = 1,
-                        ["AAA"] = 2,
-                        ["Forts"] = 1,
-                        ["Tanks"] = 1,
-                    }, -- end of ["Ground Units"]
                     ["Planes"] = 
                     {
-                        ["total"] = 15,
-                        ["Fighters"] = 15,
+                        ["total"] = 2,
+                        ["Fighters"] = 2,
                     }, -- end of ["Planes"]
                 }, -- end of ["kills"]
-                ["inAir"] = 53935.966,
+                ["weapons"] = 
+                {
+                    ["SD-10"] = 
+                    {
+                        ["hit"] = 1,
+                        ["kills"] = 2,
+                        ["shot"] = 3,
+                        ["numHits"] = 2,
+                    }, -- end of ["SD-10"]
+                }, -- end of ["weapons"]
                 ["actions"] = 
                 {
-                    ["landing"] = 
-                    {
-                        ["airbase"] = 12,
-                    }, -- end of ["landing"]
-                    ["takeoff"] = 
-                    {
-                        ["airbase"] = 40,
-                    }, -- end of ["takeoff"]
-                    ["losses"] = 
-                    {
-                        ["pilotDeath"] = 3,
-                        ["crash"] = 9,
-                        ["eject"] = 2,
-                        ["pilotError"] = 3,
-                    }, -- end of ["losses"]
                     ["lostTo"] = 
                     {
                         ["Planes"] = 
                         {
-                            ["Fighters"] = 5,
+                            ["Fighters"] = 1,
                         }, -- end of ["Planes"]
                     }, -- end of ["lostTo"]
-                }, -- end of ["actions"]
-                ["weapons"] = 
-                {
-                    ["AIM-9M"] = 
-                    {
-                        ["hit"] = 9,
-                        ["kills"] = 10,
-                        ["shot"] = 12,
-                        ["numHits"] = 11,
-                    }, -- end of ["AIM-9M"]
-                    ["M-61"] = 
-                    {
-                        ["hit"] = 0,
-                        ["kills"] = 2,
-                        ["shot"] = 1076,
-                        ["numHits"] = 2,
-                    }, -- end of ["M-61"]
-                    ["AGM-65H"] = 
-                    {
-                        ["numHits"] = 2,
-                        ["kills"] = 0,
-                        ["shot"] = 2,
-                        ["hit"] = 0,
-                    }, -- end of ["AGM-65H"]
-                    ["AGM-65D"] = 
-                    {
-                        ["numHits"] = 2,
-                        ["kills"] = 0,
-                        ["shot"] = 2,
-                        ["hit"] = 1,
-                    }, -- end of ["AGM-65D"]
-                    ["AIM-120C"] = 
-                    {
-                        ["hit"] = 1,
-                        ["kills"] = 3,
-                        ["shot"] = 6,
-                        ["numHits"] = 3,
-                    }, -- end of ["AIM-120C"]
-                    ["GBU-12"] = 
-                    {
-                        ["numHits"] = 11,
-                        ["kills"] = 6,
-                        ["shot"] = 13,
-                        ["hit"] = 6,
-                    }, -- end of ["GBU-12"]
-                    ["AIM-9L"] = 
-                    {
-                        ["hit"] = 0,
-                        ["kills"] = 0,
-                        ["shot"] = 4,
-                        ["numHits"] = 0,
-                    }, -- end of ["AIM-9L"]
-                    ["GBU-38"] = 
-                    {
-                        ["kills"] = 1,
-                        ["shot"] = 7,
-                        ["hit"] = 3,
-                        ["assist"] = 1,
-                        ["numHits"] = 7,
-                    }, -- end of ["GBU-38"]
-                    ["Mk-82 Snakeye"] = 
-                    {
-                        ["kills"] = 2,
-                        ["shot"] = 4,
-                        ["numHits"] = 4,
-                        ["assist"] = 1,
-                        ["hit"] = 2,
-                    }, -- end of ["Mk-82 Snakeye"]
-                }, -- end of ["weapons"]
-            }, -- end of ["F-16C_50"]
-            ["T-45"] = 
-            {
-                ["total"] = 4485.124,
-                ["actions"] = 
-                {
-                    ["landing"] = 
-                    {
-                        ["airbase"] = 1,
-                    }, -- end of ["landing"]
                     ["takeoff"] = 
                     {
                         ["airbase"] = 2,
                     }, -- end of ["takeoff"]
+                    ["losses"] = 
+                    {
+                        ["pilotDeath"] = 1,
+                        ["crash"] = 2,
+                        ["eject"] = 0,
+                        ["pilotError"] = 1,
+                    }, -- end of ["losses"]
                 }, -- end of ["actions"]
-                ["inAir"] = 2663.116,
-            }, -- end of ["T-45"]
+                ["inAir"] = 1251.611,
+            }, -- end of ["JF-17"]
         }, -- end of ["times"]
-        ["joinDate"] = 1658773738,
-        ["id"] = 139,
-        ["lastJoin"] = 1687690755,
-        ["pvp"] = 
-        {
-            ["F-16C_50"] = 
-            {
-                ["losses"] = 4,
-                ["kills"] = 13,
-            }, -- end of ["F-16C_50"]
-        }, -- end of ["pvp"]
-    }, -- end of ["f95a3a2e6e9d498670f654d6b2e7e951"]
-    ["c8b5270f6f9955945d0ea51a44cb7bd1"] = 
-    {
+        ["joinDate"] = 1678311224,
+        ["lastJoin"] = 1678567722,
+        ["id"] = 173,
         ["names"] = 
         {
-            [1] = "Jake-m1900",
+            [1] = "E-TF[105] EletroBull",
+            [2] = "TALON 1-1 ETF EletroBull",
         }, -- end of ["names"]
+    }, -- end of ["6801be787dd849e0898e44f7fc8ffda5"]
+    ["a738c4f64c11171c5e968d3a90ae1899"] = 
+    {
         ["times"] = 
         {
-            ["AH-64D_BLK_II"] = 
+        }, -- end of ["times"]
+        ["joinDate"] = 1692730788,
+        ["lastJoin"] = 1694459409,
+        ["id"] = 239,
+        ["names"] = 
+        {
+            [1] = "Tweedy",
+        }, -- end of ["names"]
+    }, -- end of ["a738c4f64c11171c5e968d3a90ae1899"]
+    ["4735c8e0dedb622c1f850dbb78470d20"] = 
+    {
+        ["times"] = 
+        {
+        }, -- end of ["times"]
+        ["joinDate"] = 1680462072,
+        ["lastJoin"] = 1705349954,
+        ["id"] = 209,
+        ["names"] = 
+        {
+            [1] = "[BSD] Carto",
+            [2] = "Carto",
+            [4] = "=JSW= Carto",
+            [3] = "=JSW=Carto",
+        }, -- end of ["names"]
+    }, -- end of ["4735c8e0dedb622c1f850dbb78470d20"]
+    ["d6975c2ce812d0e8fdcfe728c5e20f34"] = 
+    {
+        ["times"] = 
+        {
+            ["M-2000C"] = 
             {
-                ["inAir"] = 0,
-                ["total"] = 170.185,
-            }, -- end of ["AH-64D_BLK_II"]
-            ["AV8BNA"] = 
+                ["total"] = 2211.262,
+                ["inAir"] = 610.327,
+            }, -- end of ["M-2000C"]
+            ["F-14B"] = 
             {
-                ["total"] = 23823.997,
+                ["total"] = 81066.125000002,
+                ["kills"] = 
+                {
+                    ["Planes"] = 
+                    {
+                        ["total"] = 1,
+                        ["Fighters"] = 1,
+                    }, -- end of ["Planes"]
+                    ["Ground Units"] = 
+                    {
+                        ["Tanks"] = 1,
+                        ["total"] = 1,
+                    }, -- end of ["Ground Units"]
+                    ["Buildings"] = 
+                    {
+                        ["Static"] = 1,
+                        ["total"] = 1,
+                    }, -- end of ["Buildings"]
+                }, -- end of ["kills"]
+                ["inAir"] = 44769.317999999,
+                ["weapons"] = 
+                {
+                    ["AIM-9M"] = 
+                    {
+                        ["numHits"] = 0,
+                        ["kills"] = 0,
+                        ["shot"] = 2,
+                        ["hit"] = 0,
+                    }, -- end of ["AIM-9M"]
+                    ["M-61A1"] = 
+                    {
+                        ["hit"] = 0,
+                        ["kills"] = 0,
+                        ["shot"] = 326,
+                        ["numHits"] = 0,
+                    }, -- end of ["M-61A1"]
+                    ["AIM_54A_Mk60"] = 
+                    {
+                        ["numHits"] = 1,
+                        ["kills"] = 1,
+                        ["shot"] = 5,
+                        ["hit"] = 0,
+                    }, -- end of ["AIM_54A_Mk60"]
+                    ["AIM-7M"] = 
+                    {
+                        ["numHits"] = 0,
+                        ["kills"] = 0,
+                        ["shot"] = 3,
+                        ["hit"] = 0,
+                    }, -- end of ["AIM-7M"]
+                    ["kamikaze"] = 
+                    {
+                        ["hit"] = 0,
+                        ["kills"] = 1,
+                        ["shot"] = 0,
+                        ["numHits"] = 1,
+                    }, -- end of ["kamikaze"]
+                    ["Mk-82 SnakeEye"] = 
+                    {
+                        ["hit"] = 0,
+                        ["kills"] = 1,
+                        ["shot"] = 70,
+                        ["numHits"] = 4,
+                    }, -- end of ["Mk-82 SnakeEye"]
+                }, -- end of ["weapons"]
+                ["actions"] = 
+                {
+                    ["losses"] = 
+                    {
+                        ["pilotDeath"] = 0,
+                        ["crash"] = 2,
+                        ["eject"] = 0,
+                    }, -- end of ["losses"]
+                }, -- end of ["actions"]
+                ["pvp"] = 
+                {
+                    ["kills"] = 3,
+                }, -- end of ["pvp"]
+            }, -- end of ["F-14B"]
+            ["F-16C_50"] = 
+            {
+                ["total"] = 13556.871,
+                ["inAir"] = 7263.612,
+                ["weapons"] = 
+                {
+                    ["Mk-82 SnakeEye"] = 
+                    {
+                        ["hit"] = 0,
+                        ["kills"] = 1,
+                        ["shot"] = 18,
+                        ["numHits"] = 3,
+                    }, -- end of ["Mk-82 SnakeEye"]
+                    ["M-61"] = 
+                    {
+                        ["hit"] = 0,
+                        ["kills"] = 0,
+                        ["shot"] = 403,
+                        ["numHits"] = 326,
+                    }, -- end of ["M-61"]
+                }, -- end of ["weapons"]
                 ["kills"] = 
                 {
                     ["Ground Units"] = 
                     {
-                        ["IFVs"] = 1,
-                        ["total"] = 4,
-                        ["Unarmored"] = 2,
-                        ["Arty/MLRS"] = 1,
+                        ["Tanks"] = 1,
+                        ["total"] = 1,
                     }, -- end of ["Ground Units"]
-                    ["Planes"] = 
-                    {
-                        ["Fighters"] = 2,
-                        ["total"] = 2,
-                    }, -- end of ["Planes"]
                 }, -- end of ["kills"]
-                ["weapons"] = 
+                ["pvp"] = 
                 {
-                    ["GBU-12"] = 
-                    {
-                        ["hit"] = 0,
-                        ["kills"] = 1,
-                        ["shot"] = 10,
-                        ["numHits"] = 1,
-                    }, -- end of ["GBU-12"]
-                    ["GBU-54B"] = 
-                    {
-                        ["hit"] = 0,
-                        ["kills"] = 1,
-                        ["shot"] = 1,
-                        ["numHits"] = 1,
-                    }, -- end of ["GBU-54B"]
-                    ["GBU-38"] = 
-                    {
-                        ["kills"] = 2,
-                        ["shot"] = 4,
-                        ["numHits"] = 4,
-                        ["assist"] = 1,
-                        ["hit"] = 1,
-                    }, -- end of ["GBU-38"]
-                    ["AIM-9M"] = 
-                    {
-                        ["numHits"] = 2,
-                        ["kills"] = 2,
-                        ["shot"] = 4,
-                        ["hit"] = 2,
-                    }, -- end of ["AIM-9M"]
-                }, -- end of ["weapons"]
-                ["actions"] = 
-                {
-                    ["bounced"] = 3,
-                    ["takeoff"] = 
-                    {
-                        ["austere"] = 2,
-                        ["airbase"] = 10,
-                        ["hms_invincible"] = 1,
-                    }, -- end of ["takeoff"]
-                    ["landing"] = 
-                    {
-                        ["AM2_4"] = 1,
-                        ["airbase"] = 3,
-                    }, -- end of ["landing"]
-                }, -- end of ["actions"]
-                ["inAir"] = 16646.812,
-            }, -- end of ["AV8BNA"]
-            ["T-45"] = 
-            {
-                ["weapons"] = 
-                {
-                    ["BDU-33"] = 
-                    {
-                        ["hit"] = 0,
-                        ["kills"] = 0,
-                        ["shot"] = 12,
-                        ["numHits"] = 0,
-                    }, -- end of ["BDU-33"]
-                }, -- end of ["weapons"]
-                ["inAir"] = 16337.179,
-                ["actions"] = 
-                {
-                    ["lostTo"] = 
-                    {
-                        ["Planes"] = 
-                        {
-                            ["Fighters"] = 3,
-                        }, -- end of ["Planes"]
-                    }, -- end of ["lostTo"]
-                    ["takeoff"] = 
-                    {
-                        ["airbase"] = 20,
-                    }, -- end of ["takeoff"]
-                    ["bounced"] = 11,
-                    ["losses"] = 
-                    {
-                        ["pilotDeath"] = 0,
-                        ["crash"] = 3,
-                        ["eject"] = 4,
-                        ["pilotError"] = 1,
-                    }, -- end of ["losses"]
-                    ["landing"] = 
-                    {
-                        ["airbase"] = 5,
-                    }, -- end of ["landing"]
-                }, -- end of ["actions"]
-                ["total"] = 21642.984,
-            }, -- end of ["T-45"]
-            ["UH-1H"] = 
-            {
-                ["inAir"] = 170.16,
-                ["actions"] = 
-                {
-                    ["landing"] = 
-                    {
-                        ["austere"] = 1,
-                    }, -- end of ["landing"]
-                    ["takeoff"] = 
-                    {
-                        ["austere"] = 1,
-                    }, -- end of ["takeoff"]
-                }, -- end of ["actions"]
-                ["total"] = 520.589,
-            }, -- end of ["UH-1H"]
-            ["T-45 Copilot"] = 
-            {
-                ["inAir"] = 3954.593,
-                ["total"] = 4695.457,
-                ["actions"] = 
-                {
-                    ["bounced"] = 2,
-                    ["takeoff"] = 
-                    {
-                        ["airbase"] = 4,
-                    }, -- end of ["takeoff"]
-                    ["losses"] = 
-                    {
-                        ["pilotDeath"] = 0,
-                        ["crash"] = 0,
-                        ["eject"] = 2,
-                    }, -- end of ["losses"]
-                    ["landing"] = 
-                    {
-                        ["airbase"] = 1,
-                    }, -- end of ["landing"]
-                }, -- end of ["actions"]
-                ["weapons"] = 
-                {
-                    ["BDU-33"] = 
-                    {
-                        ["numHits"] = 0,
-                        ["kills"] = 0,
-                        ["shot"] = 12,
-                        ["hit"] = 0,
-                    }, -- end of ["BDU-33"]
-                }, -- end of ["weapons"]
-            }, -- end of ["T-45 Copilot"]
-        }, -- end of ["times"]
-        ["joinDate"] = 1661203252,
-        ["id"] = 142,
-        ["lastJoin"] = 1692137229,
-        ["pvp"] = 
-        {
+                    ["kills"] = 1,
+                }, -- end of ["pvp"]
+            }, -- end of ["F-16C_50"]
             ["AV8BNA"] = 
             {
-                ["kills"] = 2,
+                ["total"] = 8363.816,
+                ["inAir"] = 5342.522,
+                ["weapons"] = 
+                {
+                    ["Mk-82 SnakeEye"] = 
+                    {
+                        ["hit"] = 0,
+                        ["kills"] = 0,
+                        ["shot"] = 4,
+                        ["numHits"] = 0,
+                    }, -- end of ["Mk-82 SnakeEye"]
+                }, -- end of ["weapons"]
             }, -- end of ["AV8BNA"]
-        }, -- end of ["pvp"]
-    }, -- end of ["c8b5270f6f9955945d0ea51a44cb7bd1"]
+            ["F-14B RIO"] = 
+            {
+                ["total"] = 23999.038,
+                ["inAir"] = 12724.716,
+            }, -- end of ["F-14B RIO"]
+        }, -- end of ["times"]
+        ["joinDate"] = 1585321816,
+        ["lastJoin"] = 1591477298,
+        ["id"] = 7,
+        ["names"] = 
+        {
+            [1] = "=JSW CLAW",
+            [2] = "=JSW=CLAW",
+        }, -- end of ["names"]
+    }, -- end of ["d6975c2ce812d0e8fdcfe728c5e20f34"]
     ["6c6d992bf3bf77c4ce628c18bde22de7"] = 
     {
         ["times"] = 
@@ -5647,19 +4980,41 @@ stats =
             [2] = "Baldrick \"Cmdr\" Gramps",
         }, -- end of ["names"]
     }, -- end of ["6c6d992bf3bf77c4ce628c18bde22de7"]
-    ["046224b0a3089993f6c9af8801613cb9"] = 
+    ["f44fbb277a06562bc192531155e58d16"] = 
     {
         ["times"] = 
         {
+            ["FA-18C_hornet"] = 
+            {
+                ["total"] = 3764.266,
+                ["inAir"] = 1361.349,
+                ["actions"] = 
+                {
+                    ["takeoff"] = 
+                    {
+                        ["CVN_72"] = 1,
+                    }, -- end of ["takeoff"]
+                }, -- end of ["actions"]
+                ["weapons"] = 
+                {
+                    ["AGM-88C"] = 
+                    {
+                        ["hit"] = 0,
+                        ["kills"] = 0,
+                        ["shot"] = 4,
+                        ["numHits"] = 0,
+                    }, -- end of ["AGM-88C"]
+                }, -- end of ["weapons"]
+            }, -- end of ["FA-18C_hornet"]
         }, -- end of ["times"]
-        ["joinDate"] = 1683655663,
-        ["lastJoin"] = 1683670793,
-        ["id"] = 214,
+        ["joinDate"] = 1678397991,
+        ["lastJoin"] = 1678568396,
+        ["id"] = 183,
         ["names"] = 
         {
-            [1] = "Tiffy",
+            [1] = "RONIN 1-1 41Sqn YOGI",
         }, -- end of ["names"]
-    }, -- end of ["046224b0a3089993f6c9af8801613cb9"]
+    }, -- end of ["f44fbb277a06562bc192531155e58d16"]
     ["9992194c92046737ddc9f172339e5ad3"] = 
     {
         ["times"] = 
@@ -5674,34 +5029,62 @@ stats =
             [2] = "Roman 3-1 | Edt",
         }, -- end of ["names"]
     }, -- end of ["9992194c92046737ddc9f172339e5ad3"]
-    ["21cf500349c9d53fb5998e043676b215"] = 
+    ["0cacbc19770e7c15606c928774a4d691"] = 
     {
         ["times"] = 
         {
+            ["FA-18C_hornet"] = 
+            {
+                ["total"] = 3395.389,
+                ["kills"] = 
+                {
+                    ["Ground Units"] = 
+                    {
+                        ["total"] = 1,
+                        ["SAM"] = 1,
+                    }, -- end of ["Ground Units"]
+                }, -- end of ["kills"]
+                ["losses"] = 
+                {
+                    ["pilotDeath"] = 0,
+                    ["crash"] = 1,
+                    ["eject"] = 0,
+                }, -- end of ["losses"]
+                ["weapons"] = 
+                {
+                    ["AGM-88C"] = 
+                    {
+                        ["numHits"] = 1,
+                        ["kills"] = 1,
+                        ["shot"] = 2,
+                        ["hit"] = 0,
+                    }, -- end of ["AGM-88C"]
+                }, -- end of ["weapons"]
+                ["inAir"] = 2003.516,
+                ["actions"] = 
+                {
+                    ["losses"] = 
+                    {
+                        ["pilotDeath"] = 1,
+                        ["crash"] = 0,
+                        ["eject"] = 0,
+                    }, -- end of ["losses"]
+                }, -- end of ["actions"]
+                ["pvp"] = 
+                {
+                    ["losses"] = 1,
+                    ["kills"] = 1,
+                }, -- end of ["pvp"]
+            }, -- end of ["FA-18C_hornet"]
         }, -- end of ["times"]
-        ["joinDate"] = 1691866703,
-        ["lastJoin"] = 1691871671,
-        ["id"] = 229,
+        ["joinDate"] = 1601752747,
+        ["lastJoin"] = 1602011749,
+        ["id"] = 55,
         ["names"] = 
         {
-            [1] = "Dagger 2-2 Headless",
+            [1] = "sollymans",
         }, -- end of ["names"]
-    }, -- end of ["21cf500349c9d53fb5998e043676b215"]
-    ["4735c8e0dedb622c1f850dbb78470d20"] = 
-    {
-        ["times"] = 
-        {
-        }, -- end of ["times"]
-        ["joinDate"] = 1680462072,
-        ["lastJoin"] = 1701121413,
-        ["id"] = 209,
-        ["names"] = 
-        {
-            [1] = "[BSD] Carto",
-            [2] = "Carto",
-            [3] = "=JSW=Carto",
-        }, -- end of ["names"]
-    }, -- end of ["4735c8e0dedb622c1f850dbb78470d20"]
+    }, -- end of ["0cacbc19770e7c15606c928774a4d691"]
     ["07b9394ca33401c8fff69f8fde723e8e"] = 
     {
         ["times"] = 
@@ -5863,7 +5246,6 @@ stats =
             }, -- end of ["UH-1H"]
             ["P-51D-30-NA"] = 
             {
-                ["inAir"] = 1130.593,
                 ["weapons"] = 
                 {
                     ["Browning .50 M2"] = 
@@ -5874,6 +5256,7 @@ stats =
                         ["hit"] = 0,
                     }, -- end of ["Browning .50 M2"]
                 }, -- end of ["weapons"]
+                ["total"] = 1570.827,
                 ["actions"] = 
                 {
                     ["losses"] = 
@@ -5883,7 +5266,7 @@ stats =
                         ["eject"] = 0,
                     }, -- end of ["losses"]
                 }, -- end of ["actions"]
-                ["total"] = 1570.827,
+                ["inAir"] = 1130.593,
             }, -- end of ["P-51D-30-NA"]
         }, -- end of ["times"]
         ["joinDate"] = 1585221685,
@@ -5894,6 +5277,20 @@ stats =
             [1] = "=JSW008= Tricky",
         }, -- end of ["names"]
     }, -- end of ["07b9394ca33401c8fff69f8fde723e8e"]
+    ["f94e59d80a9b9da02ff078db283f6b75"] = 
+    {
+        ["times"] = 
+        {
+        }, -- end of ["times"]
+        ["joinDate"] = 1698259527,
+        ["lastJoin"] = 1700435392,
+        ["id"] = 248,
+        ["names"] = 
+        {
+            [1] = "Player",
+            [2] = "=JSW= Yuri",
+        }, -- end of ["names"]
+    }, -- end of ["f94e59d80a9b9da02ff078db283f6b75"]
     ["c1316ce37f1f6b38eeca31f120cd4540"] = 
     {
         ["times"] = 
@@ -5964,20 +5361,6 @@ stats =
             [1] = "№15 | VIPER",
         }, -- end of ["names"]
     }, -- end of ["c1316ce37f1f6b38eeca31f120cd4540"]
-    ["f94e59d80a9b9da02ff078db283f6b75"] = 
-    {
-        ["times"] = 
-        {
-        }, -- end of ["times"]
-        ["joinDate"] = 1698259527,
-        ["lastJoin"] = 1700435392,
-        ["id"] = 248,
-        ["names"] = 
-        {
-            [1] = "Player",
-            [2] = "=JSW= Yuri",
-        }, -- end of ["names"]
-    }, -- end of ["f94e59d80a9b9da02ff078db283f6b75"]
     ["df253930497f3d3a81a98d3586293ecf"] = 
     {
         ["times"] = 
@@ -6025,6 +5408,51 @@ stats =
             [1] = "№15 | RAAVAN",
         }, -- end of ["names"]
     }, -- end of ["df253930497f3d3a81a98d3586293ecf"]
+    ["b8f3357aa3b7fb9a9d67912cd30a1b7a"] = 
+    {
+        ["times"] = 
+        {
+            ["FA-18C_hornet"] = 
+            {
+                ["total"] = 2915.971,
+                ["weapons"] = 
+                {
+                    ["AIM-9L"] = 
+                    {
+                        ["numHits"] = 0,
+                        ["kills"] = 0,
+                        ["shot"] = 2,
+                        ["hit"] = 0,
+                    }, -- end of ["AIM-9L"]
+                    ["GBU-31(V)1/B"] = 
+                    {
+                        ["numHits"] = 0,
+                        ["kills"] = 0,
+                        ["shot"] = 2,
+                        ["hit"] = 0,
+                    }, -- end of ["GBU-31(V)1/B"]
+                }, -- end of ["weapons"]
+                ["actions"] = 
+                {
+                    ["losses"] = 
+                    {
+                        ["pilotDeath"] = 1,
+                        ["crash"] = 1,
+                        ["eject"] = 0,
+                    }, -- end of ["losses"]
+                }, -- end of ["actions"]
+                ["inAir"] = 1391.581,
+            }, -- end of ["FA-18C_hornet"]
+        }, -- end of ["times"]
+        ["joinDate"] = 1621525591,
+        ["lastJoin"] = 1621706620,
+        ["id"] = 105,
+        ["names"] = 
+        {
+            [1] = "JesT",
+            [2] = "SNAPPER2 JesT",
+        }, -- end of ["names"]
+    }, -- end of ["b8f3357aa3b7fb9a9d67912cd30a1b7a"]
     ["0423655c0b20af07ca6adadbb19a9fb0"] = 
     {
         ["times"] = 
@@ -6053,23 +5481,66 @@ stats =
             [1] = "{TFT} K-dot",
         }, -- end of ["names"]
     }, -- end of ["0423655c0b20af07ca6adadbb19a9fb0"]
-    ["af052d37437161079cbb63979215eb18"] = 
+    ["1819ac6376d2289564f5960fb0c88c8d"] = 
     {
         ["times"] = 
         {
-            ["T-45"] = 
+            ["SA342L"] = 
             {
                 ["weapons"] = 
                 {
-                    ["BDU-33"] = 
+                    ["GIAT_M621G"] = 
+                    {
+                        ["kills"] = 0,
+                        ["shot"] = 106,
+                        ["hit"] = 0,
+                        ["gun"] = true,
+                        ["numHits"] = 0,
+                    }, -- end of ["GIAT_M621G"]
+                    ["SNEB68_EAP"] = 
                     {
                         ["hit"] = 0,
                         ["kills"] = 0,
-                        ["shot"] = 8,
+                        ["shot"] = 13,
                         ["numHits"] = 0,
-                    }, -- end of ["BDU-33"]
+                    }, -- end of ["SNEB68_EAP"]
                 }, -- end of ["weapons"]
-                ["inAir"] = 2813.153,
+                ["inAir"] = 3464.147,
+                ["actions"] = 
+                {
+                    ["losses"] = 
+                    {
+                        ["pilotDeath"] = 3,
+                        ["crash"] = 0,
+                        ["eject"] = 0,
+                        ["pilotError"] = 3,
+                    }, -- end of ["losses"]
+                    ["takeoff"] = 
+                    {
+                        ["austere"] = 3,
+                    }, -- end of ["takeoff"]
+                }, -- end of ["actions"]
+                ["total"] = 4245.056,
+            }, -- end of ["SA342L"]
+            ["AV8BNA"] = 
+            {
+                ["inAir"] = 2512.76,
+                ["actions"] = 
+                {
+                    ["landing"] = 
+                    {
+                        ["airbase"] = 1,
+                    }, -- end of ["landing"]
+                    ["takeoff"] = 
+                    {
+                        ["airbase"] = 2,
+                    }, -- end of ["takeoff"]
+                }, -- end of ["actions"]
+                ["total"] = 3884.812,
+            }, -- end of ["AV8BNA"]
+            ["T-45"] = 
+            {
+                ["inAir"] = 2110.77,
                 ["actions"] = 
                 {
                     ["landing"] = 
@@ -6084,109 +5555,93 @@ stats =
                     {
                         ["pilotDeath"] = 0,
                         ["crash"] = 0,
-                        ["eject"] = 1,
+                        ["eject"] = 2,
                     }, -- end of ["losses"]
                 }, -- end of ["actions"]
-                ["total"] = 4134.658,
+                ["total"] = 4191.533,
             }, -- end of ["T-45"]
+        }, -- end of ["times"]
+        ["joinDate"] = 1648410242,
+        ["lastJoin"] = 1659816474,
+        ["id"] = 135,
+        ["names"] = 
+        {
+            [1] = "AnuttySquirrel",
+        }, -- end of ["names"]
+    }, -- end of ["1819ac6376d2289564f5960fb0c88c8d"]
+    ["3b098502440fbc185006a2c60838a9c8"] = 
+    {
+        ["times"] = 
+        {
             ["AV8BNA"] = 
             {
-                ["total"] = 35806.84,
+                ["total"] = 9836.243,
+                ["weapons"] = 
+                {
+                    ["GAU_12"] = 
+                    {
+                        ["hit"] = 0,
+                        ["kills"] = 3,
+                        ["shot"] = 320,
+                        ["numHits"] = 3,
+                    }, -- end of ["GAU_12"]
+                    ["GBU-12"] = 
+                    {
+                        ["hit"] = 0,
+                        ["kills"] = 2,
+                        ["shot"] = 2,
+                        ["numHits"] = 2,
+                    }, -- end of ["GBU-12"]
+                    ["FFAR Mk1 HE"] = 
+                    {
+                        ["hit"] = 0,
+                        ["kills"] = 3,
+                        ["shot"] = 38,
+                        ["numHits"] = 3,
+                    }, -- end of ["FFAR Mk1 HE"]
+                }, -- end of ["weapons"]
+                ["inAir"] = 7034.4,
                 ["kills"] = 
                 {
                     ["Ground Units"] = 
                     {
-                        ["AAA"] = 2,
-                        ["Tanks"] = 3,
-                        ["Unarmored"] = 4,
-                        ["SAM"] = 1,
-                        ["IFVs"] = 2,
-                        ["Arty/MLRS"] = 3,
-                        ["Forts"] = 6,
-                        ["total"] = 21,
+                        ["Arty/MLRS"] = 7,
+                        ["total"] = 8,
+                        ["Infantry"] = 1,
                     }, -- end of ["Ground Units"]
                 }, -- end of ["kills"]
-                ["weapons"] = 
+                ["pvp"] = 
                 {
-                    ["GBU-12"] = 
-                    {
-                        ["kills"] = 2,
-                        ["shot"] = 9,
-                        ["numHits"] = 5,
-                        ["assist"] = 3,
-                        ["hit"] = 2,
-                    }, -- end of ["GBU-12"]
-                    ["GBU-54B"] = 
-                    {
-                        ["kills"] = 15,
-                        ["shot"] = 16,
-                        ["numHits"] = 18,
-                        ["assist"] = 1,
-                        ["hit"] = 4,
-                    }, -- end of ["GBU-54B"]
-                    ["GBU-38"] = 
-                    {
-                        ["kills"] = 4,
-                        ["shot"] = 9,
-                        ["numHits"] = 8,
-                        ["assist"] = 4,
-                        ["hit"] = 1,
-                    }, -- end of ["GBU-38"]
-                    ["AIM-9M"] = 
-                    {
-                        ["hit"] = 0,
-                        ["kills"] = 0,
-                        ["shot"] = 1,
-                        ["numHits"] = 0,
-                    }, -- end of ["AIM-9M"]
-                }, -- end of ["weapons"]
-                ["actions"] = 
-                {
-                    ["landing"] = 
-                    {
-                        ["airbase"] = 5,
-                        ["austere"] = 1,
-                    }, -- end of ["landing"]
-                    ["takeoff"] = 
-                    {
-                        ["hms_invincible"] = 1,
-                        ["airbase"] = 12,
-                        ["austere"] = 1,
-                    }, -- end of ["takeoff"]
-                    ["bounced"] = 1,
-                }, -- end of ["actions"]
-                ["inAir"] = 26316.999,
+                    ["kills"] = 8,
+                }, -- end of ["pvp"]
             }, -- end of ["AV8BNA"]
         }, -- end of ["times"]
-        ["joinDate"] = 1658775841,
-        ["lastJoin"] = 1664832059,
-        ["id"] = 140,
+        ["joinDate"] = 1601666188,
+        ["lastJoin"] = 1602369236,
+        ["id"] = 40,
         ["names"] = 
         {
-            [1] = "OBrien",
+            [1] = "JoePineapples",
+            [2] = "=JSW=Pineapples",
         }, -- end of ["names"]
-    }, -- end of ["af052d37437161079cbb63979215eb18"]
-    ["a738c4f64c11171c5e968d3a90ae1899"] = 
-    {
-        ["times"] = 
-        {
-        }, -- end of ["times"]
-        ["joinDate"] = 1692730788,
-        ["lastJoin"] = 1694459409,
-        ["id"] = 239,
-        ["names"] = 
-        {
-            [1] = "Tweedy",
-        }, -- end of ["names"]
-    }, -- end of ["a738c4f64c11171c5e968d3a90ae1899"]
+    }, -- end of ["3b098502440fbc185006a2c60838a9c8"]
     ["d03a11990bbf6b289c317cf97b5db642"] = 
     {
         ["times"] = 
         {
             ["UH-1H"] = 
             {
-                ["inAir"] = 4794.867,
                 ["total"] = 6496.582,
+                ["weapons"] = 
+                {
+                    ["M134 Minigun"] = 
+                    {
+                        ["hit"] = 0,
+                        ["kills"] = 0,
+                        ["shot"] = 302,
+                        ["numHits"] = 0,
+                    }, -- end of ["M134 Minigun"]
+                }, -- end of ["weapons"]
                 ["actions"] = 
                 {
                     ["landing"] = 
@@ -6206,16 +5661,7 @@ stats =
                     }, -- end of ["losses"]
                     ["bounced"] = 1,
                 }, -- end of ["actions"]
-                ["weapons"] = 
-                {
-                    ["M134 Minigun"] = 
-                    {
-                        ["hit"] = 0,
-                        ["kills"] = 0,
-                        ["shot"] = 302,
-                        ["numHits"] = 0,
-                    }, -- end of ["M134 Minigun"]
-                }, -- end of ["weapons"]
+                ["inAir"] = 4794.867,
             }, -- end of ["UH-1H"]
         }, -- end of ["times"]
         ["joinDate"] = 1679858873,
@@ -6290,7 +5736,17 @@ stats =
                         ["Infantry"] = 1,
                     }, -- end of ["Ground Units"]
                 }, -- end of ["kills"]
-                ["inAir"] = 5345.367,
+                ["weapons"] = 
+                {
+                    ["M134 Minigun"] = 
+                    {
+                        ["kills"] = 1,
+                        ["shot"] = 1111,
+                        ["hit"] = 0,
+                        ["gun"] = true,
+                        ["numHits"] = 3,
+                    }, -- end of ["M134 Minigun"]
+                }, -- end of ["weapons"]
                 ["actions"] = 
                 {
                     ["landing"] = 
@@ -6304,17 +5760,7 @@ stats =
                         ["austere"] = 2,
                     }, -- end of ["takeoff"]
                 }, -- end of ["actions"]
-                ["weapons"] = 
-                {
-                    ["M134 Minigun"] = 
-                    {
-                        ["kills"] = 1,
-                        ["shot"] = 1111,
-                        ["hit"] = 0,
-                        ["gun"] = true,
-                        ["numHits"] = 3,
-                    }, -- end of ["M134 Minigun"]
-                }, -- end of ["weapons"]
+                ["inAir"] = 5345.367,
             }, -- end of ["UH-1H"]
             ["T-45"] = 
             {
@@ -6361,56 +5807,47 @@ stats =
             [2] = "=JSW= Cowan",
         }, -- end of ["names"]
     }, -- end of ["7567ee520811f12f54cd2471c4ff0016"]
-    ["fd3f951aa61fe5aef09abfb331620fd1"] = 
+    ["609cc24bb120294efd385ac790d95de4"] = 
     {
         ["times"] = 
         {
             ["FA-18C_hornet"] = 
             {
-                ["total"] = 2683.012,
+                ["total"] = 7640.474,
+                ["inAir"] = 2838.658,
+                ["weapons"] = 
+                {
+                    ["AGM-65F"] = 
+                    {
+                        ["hit"] = 0,
+                        ["kills"] = 3,
+                        ["shot"] = 4,
+                        ["numHits"] = 5,
+                    }, -- end of ["AGM-65F"]
+                }, -- end of ["weapons"]
                 ["kills"] = 
                 {
                     ["Ground Units"] = 
                     {
-                        ["total"] = 1,
-                        ["SAM"] = 1,
+                        ["SAM"] = 3,
+                        ["total"] = 3,
                     }, -- end of ["Ground Units"]
                 }, -- end of ["kills"]
-                ["inAir"] = 1041.363,
-                ["actions"] = 
+                ["pvp"] = 
                 {
-                    ["losses"] = 
-                    {
-                        ["pilotDeath"] = 1,
-                        ["crash"] = 0,
-                        ["eject"] = 0,
-                        ["pilotError"] = 1,
-                    }, -- end of ["losses"]
-                    ["takeoff"] = 
-                    {
-                        ["airbase"] = 2,
-                    }, -- end of ["takeoff"]
-                }, -- end of ["actions"]
-                ["weapons"] = 
-                {
-                    ["AGM-88C"] = 
-                    {
-                        ["hit"] = 0,
-                        ["kills"] = 1,
-                        ["shot"] = 2,
-                        ["numHits"] = 1,
-                    }, -- end of ["AGM-88C"]
-                }, -- end of ["weapons"]
+                    ["kills"] = 1,
+                }, -- end of ["pvp"]
             }, -- end of ["FA-18C_hornet"]
         }, -- end of ["times"]
-        ["joinDate"] = 1678564288,
-        ["lastJoin"] = 1678567982,
-        ["id"] = 191,
+        ["joinDate"] = 1621686234,
+        ["lastJoin"] = 1621709947,
+        ["id"] = 116,
         ["names"] = 
         {
-            [1] = "Ninja 1-3 [FTQ] GivingTNT",
+            [1] = "Klarkeus",
+            [2] = "COBRA 1-1 Klarkeus",
         }, -- end of ["names"]
-    }, -- end of ["fd3f951aa61fe5aef09abfb331620fd1"]
+    }, -- end of ["609cc24bb120294efd385ac790d95de4"]
     ["d49354c26430bcd08d6b03c9457b3480"] = 
     {
         ["times"] = 
@@ -6425,188 +5862,183 @@ stats =
             [2] = "Dagger 3-1 ¦[VAF] Hammi",
         }, -- end of ["names"]
     }, -- end of ["d49354c26430bcd08d6b03c9457b3480"]
-    ["520d768a67604b6328ecc5c6cd829fc5"] = 
+    ["7086694a72c10edea00db7d545df282b"] = 
     {
         ["times"] = 
         {
-            ["AH-64D_BLK_II"] = 
+            ["F-14B RIO"] = 
             {
-                ["total"] = 32061.951999999,
-                ["kills"] = 
-                {
-                    ["Ground Units"] = 
-                    {
-                        ["Arty/MLRS"] = 2,
-                        ["Infantry"] = 20,
-                        ["Unarmored"] = 12,
-                        ["APCs"] = 6,
-                        ["AAA"] = 3,
-                        ["IFVs"] = 5,
-                        ["Tanks"] = 9,
-                        ["SAM"] = 4,
-                        ["total"] = 61,
-                    }, -- end of ["Ground Units"]
-                    ["Buildings"] = 
-                    {
-                        ["total"] = 2,
-                        ["Static"] = 2,
-                    }, -- end of ["Buildings"]
-                }, -- end of ["kills"]
+                ["total"] = 4850.761,
+                ["inAir"] = 2650.432,
+            }, -- end of ["F-14B RIO"]
+            ["AV8BNA"] = 
+            {
+                ["total"] = 5375.998,
                 ["weapons"] = 
                 {
-                    ["Hydra 70 M151 HE"] = 
+                    ["AGM-65E"] = 
+                    {
+                        ["numHits"] = 1,
+                        ["kills"] = 0,
+                        ["shot"] = 0,
+                        ["hit"] = 0,
+                    }, -- end of ["AGM-65E"]
+                    ["unknown"] = 
+                    {
+                        ["numHits"] = 45,
+                        ["kills"] = 0,
+                        ["shot"] = 0,
+                        ["hit"] = 0,
+                    }, -- end of ["unknown"]
+                    ["shot"] = 10,
+                    ["Mk-82 Snakeye"] = 
+                    {
+                        ["numHits"] = 10,
+                        ["kills"] = 0,
+                        ["shot"] = 12,
+                        ["hit"] = 6,
+                    }, -- end of ["Mk-82 Snakeye"]
+                }, -- end of ["weapons"]
+                ["inAir"] = 3363.856,
+            }, -- end of ["AV8BNA"]
+            ["F-16C_50"] = 
+            {
+                ["total"] = 40493.564,
+                ["kills"] = 
+                {
+                    ["Planes"] = 
+                    {
+                        ["Fighters"] = 1,
+                        ["total"] = 1,
+                    }, -- end of ["Planes"]
+                }, -- end of ["kills"]
+                ["actions"] = 
+                {
+                    ["losses"] = 
+                    {
+                        ["pilotDeath"] = 3,
+                        ["crash"] = 1,
+                        ["eject"] = 0,
+                    }, -- end of ["losses"]
+                }, -- end of ["actions"]
+                ["inAir"] = 23077.707,
+                ["weapons"] = 
+                {
+                    ["AGM-88C"] = 
                     {
                         ["hit"] = 0,
                         ["kills"] = 0,
-                        ["shot"] = 62,
-                        ["numHits"] = 0,
-                    }, -- end of ["Hydra 70 M151 HE"]
-                    ["unknown"] = 
+                        ["shot"] = 2,
+                        ["numHits"] = 1,
+                    }, -- end of ["AGM-88C"]
+                    ["F-16CM bl.50"] = 
                     {
                         ["hit"] = 0,
-                        ["kills"] = 6,
+                        ["kills"] = 0,
                         ["shot"] = 0,
-                        ["numHits"] = 6,
-                    }, -- end of ["unknown"]
-                    ["M230_new"] = 
+                        ["numHits"] = 0,
+                    }, -- end of ["F-16CM bl.50"]
+                    ["AGM-65D"] = 
                     {
-                        ["kills"] = 2,
-                        ["shot"] = 786,
                         ["hit"] = 0,
-                        ["gun"] = true,
+                        ["kills"] = 0,
+                        ["shot"] = 6,
+                        ["numHits"] = 13,
+                    }, -- end of ["AGM-65D"]
+                    ["Mk-82"] = 
+                    {
+                        ["hit"] = 0,
+                        ["kills"] = 0,
+                        ["shot"] = 8,
+                        ["numHits"] = 13,
+                    }, -- end of ["Mk-82"]
+                    ["AIM-9X"] = 
+                    {
+                        ["hit"] = 0,
+                        ["kills"] = 1,
+                        ["shot"] = 1,
                         ["numHits"] = 2,
-                    }, -- end of ["M230_new"]
-                    ["AGM-114K"] = 
+                    }, -- end of ["AIM-9X"]
+                    ["Mk-82 SnakeEye"] = 
                     {
-                        ["kills"] = 55,
-                        ["shot"] = 21,
-                        ["numHits"] = 73,
-                        ["assist"] = 1,
-                        ["hit"] = 3,
-                    }, -- end of ["AGM-114K"]
+                        ["hit"] = 0,
+                        ["kills"] = 0,
+                        ["shot"] = 6,
+                        ["numHits"] = 3,
+                    }, -- end of ["Mk-82 SnakeEye"]
                 }, -- end of ["weapons"]
+                ["losses"] = 
+                {
+                    ["pilotDeath"] = 0,
+                    ["crash"] = 1,
+                    ["eject"] = 0,
+                }, -- end of ["losses"]
+                ["pvp"] = 
+                {
+                    ["losses"] = 1,
+                    ["kills"] = 1,
+                }, -- end of ["pvp"]
+            }, -- end of ["F-16C_50"]
+        }, -- end of ["times"]
+        ["joinDate"] = 1610043542,
+        ["lastJoin"] = 1623614141,
+        ["id"] = 76,
+        ["names"] = 
+        {
+            [2] = "VANDY2-2|MrHappy",
+            [3] = "VANDY2-3|MrHappy",
+            [1] = "MrHappy",
+            [4] = "=JSW=MrHappy",
+            [5] = "Gremlin 1-1|MrHappy",
+        }, -- end of ["names"]
+    }, -- end of ["7086694a72c10edea00db7d545df282b"]
+    ["a9e033cc9e64f8b35a45ae4e8666e556"] = 
+    {
+        ["times"] = 
+        {
+            ["F-14B"] = 
+            {
+                ["total"] = 7682.83,
+                ["inAir"] = 4281.764,
                 ["actions"] = 
                 {
-                    ["landing"] = 
-                    {
-                        ["austere"] = 1,
-                        ["airbase"] = 5,
-                        ["landedWhileDamaged"] = 1,
-                    }, -- end of ["landing"]
-                    ["takeoff"] = 
-                    {
-                        ["airbase"] = 18,
-                        ["austere"] = 1,
-                    }, -- end of ["takeoff"]
-                    ["losses"] = 
-                    {
-                        ["pilotDeath"] = 2,
-                        ["crash"] = 3,
-                        ["eject"] = 0,
-                        ["pilotError"] = 1,
-                    }, -- end of ["losses"]
-                    ["lostTo"] = 
-                    {
-                        ["Helicopters"] = 
-                        {
-                            ["Attack"] = 3,
-                        }, -- end of ["Helicopters"]
-                    }, -- end of ["lostTo"]
-                }, -- end of ["actions"]
-                ["inAir"] = 24383.944,
-            }, -- end of ["AH-64D_BLK_II"]
-            ["T-45 Copilot"] = 
-            {
-                ["total"] = 2412.959,
-                ["inAir"] = 2412.959,
-            }, -- end of ["T-45 Copilot"]
-            ["F-16C_50"] = 
-            {
-                ["inAir"] = 2782.656,
-                ["total"] = 5024.684,
-                ["actions"] = 
-                {
-                    ["bounced"] = 1,
-                    ["takeoff"] = 
-                    {
-                        ["airbase"] = 2,
-                    }, -- end of ["takeoff"]
                     ["losses"] = 
                     {
                         ["pilotDeath"] = 1,
-                        ["crash"] = 0,
+                        ["crash"] = 1,
                         ["eject"] = 0,
                     }, -- end of ["losses"]
                 }, -- end of ["actions"]
                 ["weapons"] = 
                 {
-                    ["Mk-82 Snakeye"] = 
+                    ["kamikaze"] = 
                     {
-                        ["hit"] = 1,
+                        ["numHits"] = 0,
                         ["kills"] = 0,
-                        ["shot"] = 2,
-                        ["numHits"] = 2,
-                    }, -- end of ["Mk-82 Snakeye"]
+                        ["shot"] = 0,
+                        ["hit"] = 0,
+                    }, -- end of ["kamikaze"]
                 }, -- end of ["weapons"]
-            }, -- end of ["F-16C_50"]
-            ["AH-64D_BLK_II Copilot"] = 
-            {
-                ["inAir"] = 200.231,
-                ["actions"] = 
+                ["losses"] = 
                 {
-                    ["landing"] = 
-                    {
-                        ["airbase"] = 2,
-                    }, -- end of ["landing"]
-                    ["takeoff"] = 
-                    {
-                        ["airbase"] = 4,
-                    }, -- end of ["takeoff"]
-                }, -- end of ["actions"]
-                ["total"] = 3333.891,
-            }, -- end of ["AH-64D_BLK_II Copilot"]
-            ["T-45"] = 
-            {
-                ["inAir"] = 12314.785,
-                ["actions"] = 
+                    ["pilotDeath"] = 0,
+                    ["crash"] = 1,
+                    ["eject"] = 0,
+                }, -- end of ["losses"]
+                ["pvp"] = 
                 {
-                    ["landing"] = 
-                    {
-                        ["airbase"] = 3,
-                    }, -- end of ["landing"]
-                    ["takeoff"] = 
-                    {
-                        ["airbase"] = 8,
-                    }, -- end of ["takeoff"]
-                    ["bounced"] = 1,
-                }, -- end of ["actions"]
-                ["total"] = 16759.995,
-            }, -- end of ["T-45"]
+                    ["losses"] = 1,
+                }, -- end of ["pvp"]
+            }, -- end of ["F-14B"]
         }, -- end of ["times"]
-        ["joinDate"] = 1670876692,
-        ["lastJoin"] = 1702981546,
-        ["id"] = 161,
+        ["joinDate"] = 1615027096,
+        ["lastJoin"] = 1615065747,
+        ["id"] = 83,
         ["names"] = 
         {
-            [1] = "Falcon",
+            [1] = "JTFF | Gemini | VF-84",
         }, -- end of ["names"]
-    }, -- end of ["520d768a67604b6328ecc5c6cd829fc5"]
-    ["779a2c65fbebc6abc99f9dace3a68af8"] = 
-    {
-        ["times"] = 
-        {
-        }, -- end of ["times"]
-        ["joinDate"] = 1695474334,
-        ["lastJoin"] = 1704471093,
-        ["id"] = 246,
-        ["names"] = 
-        {
-            [1] = "Podo=JSW=Podo",
-            [2] = "=JSW=Podoo",
-            [4] = "=JSW=Podo",
-            [3] = "Podo",
-        }, -- end of ["names"]
-    }, -- end of ["779a2c65fbebc6abc99f9dace3a68af8"]
+    }, -- end of ["a9e033cc9e64f8b35a45ae4e8666e556"]
     ["8e603ad5faa24e64b7630a4e7ad929e9"] = 
     {
         ["times"] = 
@@ -6821,7 +6253,7 @@ stats =
             }, -- end of ["T-45"]
         }, -- end of ["times"]
         ["joinDate"] = 1667746345,
-        ["lastJoin"] = 1702678479,
+        ["lastJoin"] = 1705093566,
         ["id"] = 147,
         ["names"] = 
         {
@@ -6863,24 +6295,8 @@ stats =
         {
             ["F-16C_50"] = 
             {
-                ["weapons"] = 
-                {
-                    ["AGM-88C"] = 
-                    {
-                        ["numHits"] = 0,
-                        ["kills"] = 0,
-                        ["shot"] = 2,
-                        ["hit"] = 0,
-                    }, -- end of ["AGM-88C"]
-                    ["AIM-120C"] = 
-                    {
-                        ["hit"] = 0,
-                        ["kills"] = 0,
-                        ["shot"] = 1,
-                        ["numHits"] = 0,
-                    }, -- end of ["AIM-120C"]
-                }, -- end of ["weapons"]
                 ["total"] = 2362.666,
+                ["inAir"] = 991.167,
                 ["actions"] = 
                 {
                     ["lostTo"] = 
@@ -6901,7 +6317,23 @@ stats =
                         ["eject"] = 0,
                     }, -- end of ["losses"]
                 }, -- end of ["actions"]
-                ["inAir"] = 991.167,
+                ["weapons"] = 
+                {
+                    ["AGM-88C"] = 
+                    {
+                        ["numHits"] = 0,
+                        ["kills"] = 0,
+                        ["shot"] = 2,
+                        ["hit"] = 0,
+                    }, -- end of ["AGM-88C"]
+                    ["AIM-120C"] = 
+                    {
+                        ["hit"] = 0,
+                        ["kills"] = 0,
+                        ["shot"] = 1,
+                        ["numHits"] = 0,
+                    }, -- end of ["AIM-120C"]
+                }, -- end of ["weapons"]
             }, -- end of ["F-16C_50"]
         }, -- end of ["times"]
         ["joinDate"] = 1678398446,
@@ -6913,125 +6345,86 @@ stats =
             [2] = "Chaos 1-3 [FTQ] BMD",
         }, -- end of ["names"]
     }, -- end of ["62d511d6f4f28e7b942d72bdeeb98b63"]
-    ["2d4687a1e8563df17d6e7ba5abb0aeeb"] = 
+    ["6a58a95719d22d4eb14e1544da092cea"] = 
     {
         ["times"] = 
         {
-            ["F-16C_50"] = 
+            ["F-14B"] = 
             {
-                ["inAir"] = 0,
-                ["total"] = 90.043000000001,
-            }, -- end of ["F-16C_50"]
-            ["AV8BNA"] = 
-            {
-                ["inAir"] = 0,
-                ["total"] = 60.019,
-            }, -- end of ["AV8BNA"]
-            ["Mi-8MT"] = 
-            {
-                ["inAir"] = 0,
-                ["total"] = 50.02,
-            }, -- end of ["Mi-8MT"]
-            ["T-45"] = 
-            {
-                ["inAir"] = 0,
-                ["total"] = 120.04,
-            }, -- end of ["T-45"]
+                ["total"] = 8605.711,
+                ["inAir"] = 2745.867,
+                ["weapons"] = 
+                {
+                    ["AIM-9M"] = 
+                    {
+                        ["hit"] = 0,
+                        ["kills"] = 1,
+                        ["shot"] = 2,
+                        ["numHits"] = 1,
+                    }, -- end of ["AIM-9M"]
+                    ["AIM-54C-Mk47"] = 
+                    {
+                        ["hit"] = 0,
+                        ["kills"] = 0,
+                        ["shot"] = 1,
+                        ["numHits"] = 0,
+                    }, -- end of ["AIM-54C-Mk47"]
+                    ["M-61A1"] = 
+                    {
+                        ["hit"] = 0,
+                        ["kills"] = 0,
+                        ["shot"] = 150,
+                        ["numHits"] = 0,
+                    }, -- end of ["M-61A1"]
+                }, -- end of ["weapons"]
+                ["kills"] = 
+                {
+                    ["Planes"] = 
+                    {
+                        ["Fighters"] = 1,
+                        ["total"] = 1,
+                    }, -- end of ["Planes"]
+                }, -- end of ["kills"]
+                ["pvp"] = 
+                {
+                    ["kills"] = 1,
+                }, -- end of ["pvp"]
+            }, -- end of ["F-14B"]
         }, -- end of ["times"]
-        ["joinDate"] = 1631835313,
-        ["lastJoin"] = 1703801062,
-        ["id"] = 127,
+        ["joinDate"] = 1621599364,
+        ["lastJoin"] = 1621712397,
+        ["id"] = 110,
         ["names"] = 
         {
-            [1] = "Yeti | Guest",
-            [2] = "Jethro |",
-            [3] = "Jethro",
+            [1] = "MoshyP",
+            [2] = "MoshyP (Baldrick - 3)",
         }, -- end of ["names"]
-    }, -- end of ["2d4687a1e8563df17d6e7ba5abb0aeeb"]
-    ["b8f3357aa3b7fb9a9d67912cd30a1b7a"] = 
+    }, -- end of ["6a58a95719d22d4eb14e1544da092cea"]
+    ["fd3f951aa61fe5aef09abfb331620fd1"] = 
     {
         ["times"] = 
         {
             ["FA-18C_hornet"] = 
             {
-                ["inAir"] = 1391.581,
-                ["total"] = 2915.971,
-                ["actions"] = 
-                {
-                    ["losses"] = 
-                    {
-                        ["pilotDeath"] = 1,
-                        ["crash"] = 1,
-                        ["eject"] = 0,
-                    }, -- end of ["losses"]
-                }, -- end of ["actions"]
-                ["weapons"] = 
-                {
-                    ["AIM-9L"] = 
-                    {
-                        ["numHits"] = 0,
-                        ["kills"] = 0,
-                        ["shot"] = 2,
-                        ["hit"] = 0,
-                    }, -- end of ["AIM-9L"]
-                    ["GBU-31(V)1/B"] = 
-                    {
-                        ["numHits"] = 0,
-                        ["kills"] = 0,
-                        ["shot"] = 2,
-                        ["hit"] = 0,
-                    }, -- end of ["GBU-31(V)1/B"]
-                }, -- end of ["weapons"]
-            }, -- end of ["FA-18C_hornet"]
-        }, -- end of ["times"]
-        ["joinDate"] = 1621525591,
-        ["lastJoin"] = 1621706620,
-        ["id"] = 105,
-        ["names"] = 
-        {
-            [1] = "JesT",
-            [2] = "SNAPPER2 JesT",
-        }, -- end of ["names"]
-    }, -- end of ["b8f3357aa3b7fb9a9d67912cd30a1b7a"]
-    ["0992572bff0fa0f359389e4bafde8c63"] = 
-    {
-        ["names"] = 
-        {
-            [1] = "[GR] Ventura1980",
-            [2] = "Ventura 60kts",
-        }, -- end of ["names"]
-        ["times"] = 
-        {
-            ["AV8BNA"] = 
-            {
-                ["total"] = 8835.874,
-                ["weapons"] = 
-                {
-                    ["GBU-12"] = 
-                    {
-                        ["hit"] = 0,
-                        ["kills"] = 3,
-                        ["shot"] = 3,
-                        ["numHits"] = 3,
-                    }, -- end of ["GBU-12"]
-                }, -- end of ["weapons"]
-                ["inAir"] = 6374.264,
+                ["total"] = 2683.012,
                 ["kills"] = 
                 {
                     ["Ground Units"] = 
                     {
-                        ["APCs"] = 3,
-                        ["total"] = 3,
+                        ["total"] = 1,
+                        ["SAM"] = 1,
                     }, -- end of ["Ground Units"]
                 }, -- end of ["kills"]
-                ["pvp"] = 
+                ["weapons"] = 
                 {
-                    ["kills"] = 3,
-                }, -- end of ["pvp"]
-            }, -- end of ["AV8BNA"]
-            ["FA-18C_hornet"] = 
-            {
-                ["inAir"] = 240.192,
+                    ["AGM-88C"] = 
+                    {
+                        ["hit"] = 0,
+                        ["kills"] = 1,
+                        ["shot"] = 2,
+                        ["numHits"] = 1,
+                    }, -- end of ["AGM-88C"]
+                }, -- end of ["weapons"]
                 ["actions"] = 
                 {
                     ["losses"] = 
@@ -7041,712 +6434,629 @@ stats =
                         ["eject"] = 0,
                         ["pilotError"] = 1,
                     }, -- end of ["losses"]
-                }, -- end of ["actions"]
-                ["total"] = 240.192,
-            }, -- end of ["FA-18C_hornet"]
-            ["F-16C_50"] = 
-            {
-                ["total"] = 760.527,
-                ["weapons"] = 
-                {
-                    ["AIM-9M"] = 
-                    {
-                        ["numHits"] = 0,
-                        ["kills"] = 0,
-                        ["shot"] = 5,
-                        ["hit"] = 0,
-                    }, -- end of ["AIM-9M"]
-                    ["M-61"] = 
-                    {
-                        ["kills"] = 0,
-                        ["shot"] = 6,
-                        ["hit"] = 0,
-                        ["gun"] = true,
-                        ["numHits"] = 0,
-                    }, -- end of ["M-61"]
-                }, -- end of ["weapons"]
-                ["actions"] = 
-                {
-                    ["losses"] = 
-                    {
-                        ["pilotDeath"] = 5,
-                        ["crash"] = 10,
-                        ["eject"] = 0,
-                        ["pilotError"] = 3,
-                    }, -- end of ["losses"]
-                    ["lostTo"] = 
-                    {
-                        ["Planes"] = 
-                        {
-                            ["Bombers"] = 3,
-                            ["Fighters"] = 2,
-                        }, -- end of ["Planes"]
-                    }, -- end of ["lostTo"]
-                }, -- end of ["actions"]
-                ["inAir"] = 760.527,
-            }, -- end of ["F-16C_50"]
-        }, -- end of ["times"]
-        ["joinDate"] = 1602258547,
-        ["id"] = 70,
-        ["lastJoin"] = 1669671569,
-        ["pvp"] = 
-        {
-            ["F-16C_50"] = 
-            {
-                ["losses"] = 5,
-            }, -- end of ["F-16C_50"]
-        }, -- end of ["pvp"]
-    }, -- end of ["0992572bff0fa0f359389e4bafde8c63"]
-    ["36d17da910ba947c46daa5bd82df45ac"] = 
-    {
-        ["times"] = 
-        {
-            ["F-16C_50"] = 
-            {
-                ["total"] = 7252.477,
-                ["kills"] = 
-                {
-                    ["Planes"] = 
-                    {
-                        ["Fighters"] = 1,
-                        ["total"] = 1,
-                    }, -- end of ["Planes"]
-                }, -- end of ["kills"]
-                ["actions"] = 
-                {
-                    ["losses"] = 
-                    {
-                        ["pilotDeath"] = 1,
-                        ["crash"] = 0,
-                        ["eject"] = 0,
-                    }, -- end of ["losses"]
-                }, -- end of ["actions"]
-                ["inAir"] = 2841.164,
-                ["weapons"] = 
-                {
-                    ["AIM-120C"] = 
-                    {
-                        ["hit"] = 0,
-                        ["kills"] = 1,
-                        ["shot"] = 5,
-                        ["numHits"] = 1,
-                    }, -- end of ["AIM-120C"]
-                }, -- end of ["weapons"]
-                ["losses"] = 
-                {
-                    ["pilotDeath"] = 0,
-                    ["crash"] = 1,
-                    ["eject"] = 0,
-                }, -- end of ["losses"]
-                ["pvp"] = 
-                {
-                    ["losses"] = 1,
-                    ["kills"] = 1,
-                }, -- end of ["pvp"]
-            }, -- end of ["F-16C_50"]
-        }, -- end of ["times"]
-        ["joinDate"] = 1615055129,
-        ["lastJoin"] = 1615065939,
-        ["id"] = 86,
-        ["names"] = 
-        {
-            [1] = "Kinder",
-        }, -- end of ["names"]
-    }, -- end of ["36d17da910ba947c46daa5bd82df45ac"]
-    ["609cc24bb120294efd385ac790d95de4"] = 
-    {
-        ["times"] = 
-        {
-            ["FA-18C_hornet"] = 
-            {
-                ["total"] = 7640.474,
-                ["inAir"] = 2838.658,
-                ["weapons"] = 
-                {
-                    ["AGM-65F"] = 
-                    {
-                        ["hit"] = 0,
-                        ["kills"] = 3,
-                        ["shot"] = 4,
-                        ["numHits"] = 5,
-                    }, -- end of ["AGM-65F"]
-                }, -- end of ["weapons"]
-                ["kills"] = 
-                {
-                    ["Ground Units"] = 
-                    {
-                        ["SAM"] = 3,
-                        ["total"] = 3,
-                    }, -- end of ["Ground Units"]
-                }, -- end of ["kills"]
-                ["pvp"] = 
-                {
-                    ["kills"] = 1,
-                }, -- end of ["pvp"]
-            }, -- end of ["FA-18C_hornet"]
-        }, -- end of ["times"]
-        ["joinDate"] = 1621686234,
-        ["lastJoin"] = 1621709947,
-        ["id"] = 116,
-        ["names"] = 
-        {
-            [1] = "Klarkeus",
-            [2] = "COBRA 1-1 Klarkeus",
-        }, -- end of ["names"]
-    }, -- end of ["609cc24bb120294efd385ac790d95de4"]
-    ["7086694a72c10edea00db7d545df282b"] = 
-    {
-        ["times"] = 
-        {
-            ["F-14B RIO"] = 
-            {
-                ["total"] = 4850.761,
-                ["inAir"] = 2650.432,
-            }, -- end of ["F-14B RIO"]
-            ["AV8BNA"] = 
-            {
-                ["total"] = 5375.998,
-                ["weapons"] = 
-                {
-                    ["AGM-65E"] = 
-                    {
-                        ["numHits"] = 1,
-                        ["kills"] = 0,
-                        ["shot"] = 0,
-                        ["hit"] = 0,
-                    }, -- end of ["AGM-65E"]
-                    ["unknown"] = 
-                    {
-                        ["numHits"] = 45,
-                        ["kills"] = 0,
-                        ["shot"] = 0,
-                        ["hit"] = 0,
-                    }, -- end of ["unknown"]
-                    ["shot"] = 10,
-                    ["Mk-82 Snakeye"] = 
-                    {
-                        ["numHits"] = 10,
-                        ["kills"] = 0,
-                        ["shot"] = 12,
-                        ["hit"] = 6,
-                    }, -- end of ["Mk-82 Snakeye"]
-                }, -- end of ["weapons"]
-                ["inAir"] = 3363.856,
-            }, -- end of ["AV8BNA"]
-            ["F-16C_50"] = 
-            {
-                ["total"] = 40493.564,
-                ["kills"] = 
-                {
-                    ["Planes"] = 
-                    {
-                        ["Fighters"] = 1,
-                        ["total"] = 1,
-                    }, -- end of ["Planes"]
-                }, -- end of ["kills"]
-                ["actions"] = 
-                {
-                    ["losses"] = 
-                    {
-                        ["pilotDeath"] = 3,
-                        ["crash"] = 1,
-                        ["eject"] = 0,
-                    }, -- end of ["losses"]
-                }, -- end of ["actions"]
-                ["inAir"] = 23077.707,
-                ["weapons"] = 
-                {
-                    ["AGM-88C"] = 
-                    {
-                        ["hit"] = 0,
-                        ["kills"] = 0,
-                        ["shot"] = 2,
-                        ["numHits"] = 1,
-                    }, -- end of ["AGM-88C"]
-                    ["F-16CM bl.50"] = 
-                    {
-                        ["hit"] = 0,
-                        ["kills"] = 0,
-                        ["shot"] = 0,
-                        ["numHits"] = 0,
-                    }, -- end of ["F-16CM bl.50"]
-                    ["AGM-65D"] = 
-                    {
-                        ["hit"] = 0,
-                        ["kills"] = 0,
-                        ["shot"] = 6,
-                        ["numHits"] = 13,
-                    }, -- end of ["AGM-65D"]
-                    ["Mk-82"] = 
-                    {
-                        ["hit"] = 0,
-                        ["kills"] = 0,
-                        ["shot"] = 8,
-                        ["numHits"] = 13,
-                    }, -- end of ["Mk-82"]
-                    ["AIM-9X"] = 
-                    {
-                        ["hit"] = 0,
-                        ["kills"] = 1,
-                        ["shot"] = 1,
-                        ["numHits"] = 2,
-                    }, -- end of ["AIM-9X"]
-                    ["Mk-82 SnakeEye"] = 
-                    {
-                        ["hit"] = 0,
-                        ["kills"] = 0,
-                        ["shot"] = 6,
-                        ["numHits"] = 3,
-                    }, -- end of ["Mk-82 SnakeEye"]
-                }, -- end of ["weapons"]
-                ["losses"] = 
-                {
-                    ["pilotDeath"] = 0,
-                    ["crash"] = 1,
-                    ["eject"] = 0,
-                }, -- end of ["losses"]
-                ["pvp"] = 
-                {
-                    ["losses"] = 1,
-                    ["kills"] = 1,
-                }, -- end of ["pvp"]
-            }, -- end of ["F-16C_50"]
-        }, -- end of ["times"]
-        ["joinDate"] = 1610043542,
-        ["lastJoin"] = 1623614141,
-        ["id"] = 76,
-        ["names"] = 
-        {
-            [2] = "VANDY2-2|MrHappy",
-            [3] = "VANDY2-3|MrHappy",
-            [1] = "MrHappy",
-            [4] = "=JSW=MrHappy",
-            [5] = "Gremlin 1-1|MrHappy",
-        }, -- end of ["names"]
-    }, -- end of ["7086694a72c10edea00db7d545df282b"]
-    ["34c71ada8848ff2a30d8f2631cdaf664"] = 
-    {
-        ["times"] = 
-        {
-        }, -- end of ["times"]
-        ["joinDate"] = 1682191574,
-        ["lastJoin"] = 1699652645,
-        ["id"] = 212,
-        ["names"] = 
-        {
-            [1] = "[BSD] Houseman",
-        }, -- end of ["names"]
-    }, -- end of ["34c71ada8848ff2a30d8f2631cdaf664"]
-    ["c8a4cdb3b0509f4aa6e7b84838f509c5"] = 
-    {
-        ["times"] = 
-        {
-            ["FA-18C_hornet"] = 
-            {
-                ["total"] = 4105.877,
-                ["inAir"] = 2804.338,
-                ["actions"] = 
-                {
-                    ["losses"] = 
-                    {
-                        ["pilotDeath"] = 2,
-                        ["crash"] = 2,
-                        ["eject"] = 0,
-                    }, -- end of ["losses"]
-                }, -- end of ["actions"]
-                ["weapons"] = 
-                {
-                    ["AGM-88C"] = 
-                    {
-                        ["numHits"] = 5,
-                        ["kills"] = 0,
-                        ["shot"] = 5,
-                        ["hit"] = 0,
-                    }, -- end of ["AGM-88C"]
-                    ["F/A-18C Lot 20"] = 
-                    {
-                        ["numHits"] = 0,
-                        ["kills"] = 0,
-                        ["shot"] = 0,
-                        ["hit"] = 0,
-                    }, -- end of ["F/A-18C Lot 20"]
-                }, -- end of ["weapons"]
-            }, -- end of ["FA-18C_hornet"]
-        }, -- end of ["times"]
-        ["joinDate"] = 1601752857,
-        ["lastJoin"] = 1615066185,
-        ["id"] = 60,
-        ["names"] = 
-        {
-            [1] = "{TFT} Razor >>",
-            [2] = "Blake",
-        }, -- end of ["names"]
-    }, -- end of ["c8a4cdb3b0509f4aa6e7b84838f509c5"]
-    ["c153e49b73efbf650cd11ac76f3831df"] = 
-    {
-        ["names"] = 
-        {
-            [7] = "Chaos 3-1=JSW= RJF",
-            [1] = "RJF",
-            [2] = "CHAOS 4 (=JSW= RJF)",
-            [4] = "Bounce 2",
-            [8] = "DOMINO71 | RJF",
-            [9] = "=JSW= RJF",
-            [5] = "Lance 7-2 RJF",
-            [3] = "=JSW=RJF",
-            [6] = "ANVIL 2-4 | RJF",
-        }, -- end of ["names"]
-        ["times"] = 
-        {
-            ["MB-339A"] = 
-            {
-                ["actions"] = 
-                {
-                    ["landing"] = 
-                    {
-                        ["airbase"] = 1,
-                    }, -- end of ["landing"]
-                }, -- end of ["actions"]
-            }, -- end of ["MB-339A"]
-            ["AV8BNA"] = 
-            {
-                ["total"] = 4884.668,
-                ["actions"] = 
-                {
-                    ["landing"] = 
-                    {
-                        ["airbase"] = 1,
-                    }, -- end of ["landing"]
                     ["takeoff"] = 
                     {
                         ["airbase"] = 2,
                     }, -- end of ["takeoff"]
                 }, -- end of ["actions"]
-                ["inAir"] = 2392.689,
-            }, -- end of ["AV8BNA"]
-            ["FA-18C_hornet"] = 
+                ["inAir"] = 1041.363,
+            }, -- end of ["FA-18C_hornet"]
+        }, -- end of ["times"]
+        ["joinDate"] = 1678564288,
+        ["lastJoin"] = 1678567982,
+        ["id"] = 191,
+        ["names"] = 
+        {
+            [1] = "Ninja 1-3 [FTQ] GivingTNT",
+        }, -- end of ["names"]
+    }, -- end of ["fd3f951aa61fe5aef09abfb331620fd1"]
+    ["6c9eccd7ed6b35bdf36bd4dae5223a9e"] = 
+    {
+        ["times"] = 
+        {
+            ["SA342Minigun"] = 
             {
-                ["inAir"] = 6584.269,
+                ["total"] = 60.046000000002,
+                ["inAir"] = 0,
+            }, -- end of ["SA342Minigun"]
+            ["M-2000C"] = 
+            {
+                ["total"] = 3071.312,
                 ["weapons"] = 
                 {
-                    ["F/A-18C Lot 20"] = 
+                    ["BLG-66 Belouga"] = 
                     {
                         ["numHits"] = 0,
                         ["kills"] = 0,
-                        ["shot"] = 0,
+                        ["shot"] = 8,
                         ["hit"] = 0,
-                    }, -- end of ["F/A-18C Lot 20"]
+                    }, -- end of ["BLG-66 Belouga"]
                 }, -- end of ["weapons"]
-                ["total"] = 10336.037,
-            }, -- end of ["FA-18C_hornet"]
-            ["T-45"] = 
+                ["inAir"] = 2020.875,
+            }, -- end of ["M-2000C"]
+            ["SA342L"] = 
             {
-                ["total"] = 112244.448,
-                ["actions"] = 
-                {
-                    ["landing"] = 
-                    {
-                        ["airbase"] = 26,
-                    }, -- end of ["landing"]
-                    ["takeoff"] = 
-                    {
-                        ["airbase"] = 62,
-                    }, -- end of ["takeoff"]
-                    ["losses"] = 
-                    {
-                        ["pilotDeath"] = 0,
-                        ["crash"] = 0,
-                        ["eject"] = 3,
-                    }, -- end of ["losses"]
-                    ["bounced"] = 10,
-                }, -- end of ["actions"]
-                ["inAir"] = 81568.765999998,
-            }, -- end of ["T-45"]
-            ["F-14B"] = 
-            {
-                ["inAir"] = 0,
-                ["total"] = 310.299,
-            }, -- end of ["F-14B"]
-            ["F-16C_50"] = 
-            {
-                ["total"] = 175795.93300001,
-                ["kills"] = 
-                {
-                    ["Ground Units"] = 
-                    {
-                        ["AAA"] = 1,
-                        ["total"] = 15,
-                        ["Arty/MLRS"] = 1,
-                        ["Forts"] = 2,
-                        ["Infantry"] = 11,
-                    }, -- end of ["Ground Units"]
-                    ["Planes"] = 
-                    {
-                        ["total"] = 21,
-                        ["Fighters"] = 21,
-                    }, -- end of ["Planes"]
-                }, -- end of ["kills"]
+                ["total"] = 1100.392,
                 ["weapons"] = 
                 {
-                    ["AIM-9M"] = 
+                    ["SNEB68_EAP"] = 
                     {
-                        ["hit"] = 9,
-                        ["kills"] = 9,
-                        ["shot"] = 15,
-                        ["numHits"] = 14,
-                    }, -- end of ["AIM-9M"]
-                    ["M-61"] = 
+                        ["hit"] = 0,
+                        ["kills"] = 0,
+                        ["shot"] = 8,
+                        ["numHits"] = 0,
+                    }, -- end of ["SNEB68_EAP"]
+                    ["GIAT_M621G"] = 
                     {
-                        ["kills"] = 4,
-                        ["shot"] = 2650,
+                        ["kills"] = 0,
+                        ["shot"] = 531,
                         ["hit"] = 0,
                         ["gun"] = true,
-                        ["numHits"] = 229,
-                    }, -- end of ["M-61"]
-                    ["AGM-88C"] = 
+                        ["numHits"] = 0,
+                    }, -- end of ["GIAT_M621G"]
+                    ["kamikaze"] = 
                     {
-                        ["numHits"] = 4,
-                        ["kills"] = 0,
-                        ["shot"] = 6,
                         ["hit"] = 0,
-                    }, -- end of ["AGM-88C"]
-                    ["Mk-82 Snakeye"] = 
+                        ["kills"] = 0,
+                        ["shot"] = 0,
+                        ["numHits"] = 0,
+                    }, -- end of ["kamikaze"]
+                }, -- end of ["weapons"]
+                ["actions"] = 
+                {
+                    ["losses"] = 
                     {
-                        ["hit"] = 2,
+                        ["pilotDeath"] = 1,
+                        ["crash"] = 1,
+                        ["eject"] = 0,
+                    }, -- end of ["losses"]
+                }, -- end of ["actions"]
+                ["inAir"] = 780.30799999999,
+            }, -- end of ["SA342L"]
+            ["Ka-50"] = 
+            {
+                ["inAir"] = 30.014999999999,
+                ["total"] = 30.014999999999,
+            }, -- end of ["Ka-50"]
+            ["SpitfireLFMkIX"] = 
+            {
+                ["inAir"] = 2461.469,
+                ["total"] = 2721.661,
+            }, -- end of ["SpitfireLFMkIX"]
+            ["P-51D"] = 
+            {
+                ["inAir"] = 2101.196,
+                ["total"] = 2281.326,
+            }, -- end of ["P-51D"]
+            ["FW-190A8"] = 
+            {
+                ["inAir"] = 2541.553,
+                ["total"] = 3071.895,
+                ["weapons"] = 
+                {
+                    ["MG 131"] = 
+                    {
+                        ["numHits"] = 0,
+                        ["kills"] = 0,
+                        ["shot"] = 9,
+                        ["hit"] = 0,
+                    }, -- end of ["MG 131"]
+                    ["MG 151/20"] = 
+                    {
+                        ["numHits"] = 0,
+                        ["kills"] = 0,
+                        ["shot"] = 10,
+                        ["hit"] = 0,
+                    }, -- end of ["MG 151/20"]
+                }, -- end of ["weapons"]
+            }, -- end of ["FW-190A8"]
+            ["SA342M"] = 
+            {
+                ["total"] = 1260.593,
+                ["inAir"] = 780.376,
+                ["weapons"] = 
+                {
+                    ["HOT3"] = 
+                    {
+                        ["hit"] = 0,
+                        ["kills"] = 0,
+                        ["shot"] = 4,
+                        ["numHits"] = 0,
+                    }, -- end of ["HOT3"]
+                }, -- end of ["weapons"]
+            }, -- end of ["SA342M"]
+            ["AV8BNA"] = 
+            {
+                ["total"] = 3461.257,
+                ["inAir"] = 2430.942,
+                ["actions"] = 
+                {
+                    ["losses"] = 
+                    {
+                        ["pilotDeath"] = 3,
+                        ["crash"] = 3,
+                        ["eject"] = 0,
+                    }, -- end of ["losses"]
+                }, -- end of ["actions"]
+                ["weapons"] = 
+                {
+                    ["AGM-65E"] = 
+                    {
+                        ["numHits"] = 0,
+                        ["kills"] = 0,
+                        ["shot"] = 4,
+                        ["hit"] = 0,
+                    }, -- end of ["AGM-65E"]
+                    ["FFAR M156 WP"] = 
+                    {
+                        ["hit"] = 0,
+                        ["kills"] = 0,
+                        ["shot"] = 19,
+                        ["numHits"] = 0,
+                    }, -- end of ["FFAR M156 WP"]
+                    ["FFAR Mk1 HE"] = 
+                    {
+                        ["hit"] = 0,
+                        ["kills"] = 0,
+                        ["shot"] = 57,
+                        ["numHits"] = 0,
+                    }, -- end of ["FFAR Mk1 HE"]
+                }, -- end of ["weapons"]
+            }, -- end of ["AV8BNA"]
+            ["FA-18C_hornet"] = 
+            {
+                ["total"] = 81407.251,
+                ["inAir"] = 59847.481,
+                ["weapons"] = 
+                {
+                    ["AGM-84E SLAM"] = 
+                    {
+                        ["numHits"] = 1,
                         ["kills"] = 1,
-                        ["shot"] = 4,
-                        ["numHits"] = 2,
-                    }, -- end of ["Mk-82 Snakeye"]
-                    ["GBU-38"] = 
+                        ["shot"] = 3,
+                        ["hit"] = 0,
+                    }, -- end of ["AGM-84E SLAM"]
+                    ["AGM-154C"] = 
                     {
-                        ["hit"] = 4,
-                        ["kills"] = 10,
+                        ["numHits"] = 0,
+                        ["kills"] = 0,
                         ["shot"] = 4,
-                        ["numHits"] = 16,
-                    }, -- end of ["GBU-38"]
-                    ["AIM-120C-5"] = 
-                    {
-                        ["numHits"] = 5,
-                        ["kills"] = 5,
-                        ["shot"] = 13,
-                        ["hit"] = 1,
-                    }, -- end of ["AIM-120C-5"]
+                        ["hit"] = 0,
+                    }, -- end of ["AGM-154C"]
                     ["AIM-9X"] = 
                     {
                         ["numHits"] = 1,
                         ["kills"] = 1,
                         ["shot"] = 2,
-                        ["hit"] = 1,
+                        ["hit"] = 0,
                     }, -- end of ["AIM-9X"]
+                    ["AGM-65E"] = 
+                    {
+                        ["numHits"] = 3,
+                        ["kills"] = 3,
+                        ["shot"] = 8,
+                        ["hit"] = 0,
+                    }, -- end of ["AGM-65E"]
+                    ["HOT3"] = 
+                    {
+                        ["numHits"] = 2,
+                        ["kills"] = 2,
+                        ["shot"] = 0,
+                        ["hit"] = 0,
+                    }, -- end of ["HOT3"]
                     ["Mk-82 SnakeEye"] = 
                     {
+                        ["numHits"] = 12,
+                        ["kills"] = 4,
+                        ["shot"] = 24,
                         ["hit"] = 0,
+                    }, -- end of ["Mk-82 SnakeEye"]
+                    ["AGM-65F"] = 
+                    {
+                        ["numHits"] = 0,
                         ["kills"] = 0,
                         ["shot"] = 6,
-                        ["numHits"] = 6,
-                    }, -- end of ["Mk-82 SnakeEye"]
+                        ["hit"] = 0,
+                    }, -- end of ["AGM-65F"]
                     ["GBU-12"] = 
                     {
-                        ["hit"] = 0,
+                        ["numHits"] = 1,
                         ["kills"] = 1,
-                        ["shot"] = 6,
-                        ["numHits"] = 2,
-                    }, -- end of ["GBU-12"]
-                    ["Mk-82AIR"] = 
-                    {
-                        ["hit"] = 1,
-                        ["kills"] = 0,
-                        ["shot"] = 11,
-                        ["numHits"] = 4,
-                    }, -- end of ["Mk-82AIR"]
-                    ["shot"] = 4,
-                    ["AIM-120C"] = 
-                    {
-                        ["hit"] = 1,
-                        ["kills"] = 4,
-                        ["shot"] = 20,
-                        ["numHits"] = 4,
-                    }, -- end of ["AIM-120C"]
-                    ["AIM-9L"] = 
-                    {
+                        ["shot"] = 8,
                         ["hit"] = 0,
-                        ["kills"] = 0,
-                        ["shot"] = 2,
-                        ["numHits"] = 0,
-                    }, -- end of ["AIM-9L"]
+                    }, -- end of ["GBU-12"]
                     ["Mk-82"] = 
                     {
-                        ["numHits"] = 0,
-                        ["kills"] = 0,
-                        ["shot"] = 4,
                         ["hit"] = 0,
+                        ["kills"] = 0,
+                        ["shot"] = 6,
+                        ["numHits"] = 4,
                     }, -- end of ["Mk-82"]
-                    ["Mk-84"] = 
+                    ["AIM-120C"] = 
                     {
+                        ["numHits"] = 1,
                         ["kills"] = 1,
                         ["shot"] = 2,
-                        ["numHits"] = 2,
-                        ["assist"] = 1,
                         ["hit"] = 0,
-                    }, -- end of ["Mk-84"]
-                    ["F-16CM bl.50"] = 
+                    }, -- end of ["AIM-120C"]
+                    ["Mk-20 Rockeye"] = 
                     {
-                        ["hit"] = 0,
-                        ["kills"] = 0,
-                        ["shot"] = 0,
                         ["numHits"] = 0,
-                    }, -- end of ["F-16CM bl.50"]
+                        ["kills"] = 0,
+                        ["shot"] = 2,
+                        ["hit"] = 0,
+                    }, -- end of ["Mk-20 Rockeye"]
                 }, -- end of ["weapons"]
-                ["actions"] = 
-                {
-                    ["landing"] = 
-                    {
-                        ["airbase"] = 21,
-                    }, -- end of ["landing"]
-                    ["takeoff"] = 
-                    {
-                        ["airbase"] = 54,
-                    }, -- end of ["takeoff"]
-                    ["losses"] = 
-                    {
-                        ["pilotDeath"] = 20,
-                        ["crash"] = 32,
-                        ["eject"] = 4,
-                        ["pilotError"] = 10,
-                    }, -- end of ["losses"]
-                    ["lostTo"] = 
-                    {
-                        ["Planes"] = 
-                        {
-                            ["Fighters"] = 16,
-                        }, -- end of ["Planes"]
-                    }, -- end of ["lostTo"]
-                }, -- end of ["actions"]
-                ["inAir"] = 117057.298,
-            }, -- end of ["F-16C_50"]
-            ["Su-27"] = 
-            {
-                ["total"] = 570.645,
                 ["kills"] = 
                 {
+                    ["Ground Units"] = 
+                    {
+                        ["total"] = 11,
+                        ["SAM"] = 5,
+                        ["Unarmored"] = 1,
+                        ["Tanks"] = 5,
+                    }, -- end of ["Ground Units"]
                     ["Planes"] = 
                     {
                         ["total"] = 2,
                         ["Fighters"] = 2,
                     }, -- end of ["Planes"]
                 }, -- end of ["kills"]
+                ["pvp"] = 
+                {
+                    ["kills"] = 13,
+                }, -- end of ["pvp"]
+            }, -- end of ["FA-18C_hornet"]
+            ["Mi-8MT"] = 
+            {
+                ["total"] = 10679.76,
+                ["kills"] = 
+                {
+                    ["Ground Units"] = 
+                    {
+                        ["Unarmored"] = 1,
+                        ["total"] = 1,
+                    }, -- end of ["Ground Units"]
+                }, -- end of ["kills"]
+                ["inAir"] = 7737.498,
                 ["weapons"] = 
                 {
-                    ["R-27ET (AA-10 Alamo D)"] = 
+                    ["UPK-23-250"] = 
                     {
-                        ["hit"] = 2,
-                        ["kills"] = 2,
-                        ["shot"] = 2,
-                        ["numHits"] = 3,
-                    }, -- end of ["R-27ET (AA-10 Alamo D)"]
-                    ["R-27ER (AA-10 Alamo C)"] = 
+                        ["hit"] = 0,
+                        ["kills"] = 1,
+                        ["shot"] = 1378,
+                        ["numHits"] = 4,
+                    }, -- end of ["UPK-23-250"]
+                    ["S-8KOM"] = 
                     {
                         ["hit"] = 0,
                         ["kills"] = 0,
-                        ["shot"] = 2,
+                        ["shot"] = 120,
                         ["numHits"] = 0,
-                    }, -- end of ["R-27ER (AA-10 Alamo C)"]
+                    }, -- end of ["S-8KOM"]
+                    ["YakB-12.7"] = 
+                    {
+                        ["hit"] = 0,
+                        ["kills"] = 0,
+                        ["shot"] = 526,
+                        ["numHits"] = 0,
+                    }, -- end of ["YakB-12.7"]
                 }, -- end of ["weapons"]
-                ["inAir"] = 570.645,
-            }, -- end of ["Su-27"]
-            ["T-45 Copilot"] = 
-            {
-                ["inAir"] = 22346.009,
                 ["actions"] = 
                 {
-                    ["lostTo"] = 
+                    ["losses"] = 
                     {
-                        ["Planes"] = 
-                        {
-                            ["Fighters"] = 1,
-                        }, -- end of ["Planes"]
-                    }, -- end of ["lostTo"]
-                    ["takeoff"] = 
+                        ["pilotDeath"] = 1,
+                        ["crash"] = 0,
+                        ["eject"] = 0,
+                    }, -- end of ["losses"]
+                }, -- end of ["actions"]
+                ["pvp"] = 
+                {
+                    ["kills"] = 1,
+                }, -- end of ["pvp"]
+            }, -- end of ["Mi-8MT"]
+            ["F-14B"] = 
+            {
+                ["total"] = 4072.136,
+                ["inAir"] = 2911.544,
+                ["weapons"] = 
+                {
+                    ["AIM_54A_Mk60"] = 
                     {
-                        ["airbase"] = 16,
-                    }, -- end of ["takeoff"]
-                    ["landing"] = 
+                        ["hit"] = 0,
+                        ["kills"] = 1,
+                        ["shot"] = 1,
+                        ["numHits"] = 1,
+                    }, -- end of ["AIM_54A_Mk60"]
+                }, -- end of ["weapons"]
+                ["kills"] = 
+                {
+                    ["Planes"] = 
                     {
-                        ["airbase"] = 5,
-                    }, -- end of ["landing"]
+                        ["Attack"] = 1,
+                        ["total"] = 1,
+                    }, -- end of ["Planes"]
+                }, -- end of ["kills"]
+                ["pvp"] = 
+                {
+                    ["kills"] = 1,
+                }, -- end of ["pvp"]
+            }, -- end of ["F-14B"]
+            ["F-16C_50"] = 
+            {
+                ["total"] = 5992.633,
+                ["kills"] = 
+                {
+                    ["Ground Units"] = 
+                    {
+                        ["Tanks"] = 6,
+                        ["Unarmored"] = 1,
+                        ["total"] = 7,
+                    }, -- end of ["Ground Units"]
+                }, -- end of ["kills"]
+                ["weapons"] = 
+                {
+                    ["CBU-97/CBU-105 SFW"] = 
+                    {
+                        ["numHits"] = 13,
+                        ["kills"] = 7,
+                        ["shot"] = 14,
+                        ["hit"] = 0,
+                    }, -- end of ["CBU-97/CBU-105 SFW"]
+                }, -- end of ["weapons"]
+                ["inAir"] = 2911.145,
+                ["actions"] = 
+                {
                     ["losses"] = 
                     {
                         ["pilotDeath"] = 1,
                         ["crash"] = 1,
                         ["eject"] = 0,
                     }, -- end of ["losses"]
-                    ["bounced"] = 1,
                 }, -- end of ["actions"]
-                ["total"] = 28012.442,
-            }, -- end of ["T-45 Copilot"]
-        }, -- end of ["times"]
-        ["joinDate"] = 1600544226,
-        ["id"] = 39,
-        ["lastJoin"] = 1703195260,
-        ["pvp"] = 
-        {
-            ["Su-27"] = 
-            {
-                ["kills"] = 2,
-            }, -- end of ["Su-27"]
-            ["F-16C_50"] = 
-            {
-                ["losses"] = 14,
-                ["kills"] = 11,
-            }, -- end of ["F-16C_50"]
-        }, -- end of ["pvp"]
-    }, -- end of ["c153e49b73efbf650cd11ac76f3831df"]
-    ["6471a13f44ba5bf71cd0597407051959"] = 
-    {
-        ["times"] = 
-        {
-            ["F-14B"] = 
-            {
-                ["total"] = 7762.912,
-                ["inAir"] = 2011.021,
-                ["losses"] = 
-                {
-                    ["pilotDeath"] = 0,
-                    ["crash"] = 1,
-                    ["eject"] = 0,
-                }, -- end of ["losses"]
                 ["pvp"] = 
                 {
-                    ["losses"] = 1,
+                    ["kills"] = 7,
                 }, -- end of ["pvp"]
-            }, -- end of ["F-14B"]
+            }, -- end of ["F-16C_50"]
+            ["UH-1H"] = 
+            {
+                ["total"] = 8765.64,
+                ["inAir"] = 5823.627,
+                ["actions"] = 
+                {
+                    ["losses"] = 
+                    {
+                        ["pilotDeath"] = 5,
+                        ["crash"] = 4,
+                        ["eject"] = 0,
+                    }, -- end of ["losses"]
+                }, -- end of ["actions"]
+                ["weapons"] = 
+                {
+                    ["HYDRA-70 M151"] = 
+                    {
+                        ["hit"] = 0,
+                        ["kills"] = 0,
+                        ["shot"] = 38,
+                        ["numHits"] = 0,
+                    }, -- end of ["HYDRA-70 M151"]
+                    ["M134 Minigun"] = 
+                    {
+                        ["hit"] = 0,
+                        ["kills"] = 0,
+                        ["shot"] = 4312,
+                        ["numHits"] = 0,
+                    }, -- end of ["M134 Minigun"]
+                }, -- end of ["weapons"]
+            }, -- end of ["UH-1H"]
+            ["Yak-52"] = 
+            {
+                ["total"] = 620.31299999999,
+                ["inAir"] = 440.234,
+            }, -- end of ["Yak-52"]
         }, -- end of ["times"]
-        ["joinDate"] = 1615029221,
-        ["lastJoin"] = 1615067769,
-        ["id"] = 85,
+        ["joinDate"] = 1589917357,
+        ["lastJoin"] = 1601758553,
+        ["id"] = 29,
         ["names"] = 
         {
-            [1] = "JTFF/BULLITT/VF84",
+            [1] = "Sukebe",
         }, -- end of ["names"]
-    }, -- end of ["6471a13f44ba5bf71cd0597407051959"]
-    ["73d3bc0e07624ce53657866809fa5519"] = 
+    }, -- end of ["6c9eccd7ed6b35bdf36bd4dae5223a9e"]
+    ["824e9e3e19b3764ede298720a8b656f4"] = 
     {
         ["times"] = 
         {
-            ["F-16C_50"] = 
+            ["FA-18C_hornet"] = 
             {
-                ["inAir"] = 0,
-                ["total"] = 940.885,
-            }, -- end of ["F-16C_50"]
+                ["inAir"] = 1491.511,
+                ["actions"] = 
+                {
+                    ["takeoff"] = 
+                    {
+                        ["CVN_72"] = 1,
+                    }, -- end of ["takeoff"]
+                }, -- end of ["actions"]
+                ["total"] = 3473.901,
+            }, -- end of ["FA-18C_hornet"]
         }, -- end of ["times"]
-        ["joinDate"] = 1601752826,
-        ["lastJoin"] = 1601753968,
-        ["id"] = 59,
+        ["joinDate"] = 1678564883,
+        ["lastJoin"] = 1678568653,
+        ["id"] = 195,
         ["names"] = 
         {
-            [1] = "{TFT} Chewy ¦¦¦| wiv",
+            [1] = "KAISER 1-2 41Sqn Mike",
         }, -- end of ["names"]
-    }, -- end of ["73d3bc0e07624ce53657866809fa5519"]
+    }, -- end of ["824e9e3e19b3764ede298720a8b656f4"]
+    ["520d768a67604b6328ecc5c6cd829fc5"] = 
+    {
+        ["times"] = 
+        {
+            ["AH-64D_BLK_II"] = 
+            {
+                ["total"] = 32061.951999999,
+                ["kills"] = 
+                {
+                    ["Ground Units"] = 
+                    {
+                        ["Arty/MLRS"] = 2,
+                        ["Infantry"] = 20,
+                        ["Unarmored"] = 12,
+                        ["APCs"] = 6,
+                        ["AAA"] = 3,
+                        ["IFVs"] = 5,
+                        ["Tanks"] = 9,
+                        ["SAM"] = 4,
+                        ["total"] = 61,
+                    }, -- end of ["Ground Units"]
+                    ["Buildings"] = 
+                    {
+                        ["total"] = 2,
+                        ["Static"] = 2,
+                    }, -- end of ["Buildings"]
+                }, -- end of ["kills"]
+                ["inAir"] = 24383.944,
+                ["actions"] = 
+                {
+                    ["landing"] = 
+                    {
+                        ["austere"] = 1,
+                        ["airbase"] = 5,
+                        ["landedWhileDamaged"] = 1,
+                    }, -- end of ["landing"]
+                    ["takeoff"] = 
+                    {
+                        ["airbase"] = 18,
+                        ["austere"] = 1,
+                    }, -- end of ["takeoff"]
+                    ["losses"] = 
+                    {
+                        ["pilotDeath"] = 2,
+                        ["crash"] = 3,
+                        ["eject"] = 0,
+                        ["pilotError"] = 1,
+                    }, -- end of ["losses"]
+                    ["lostTo"] = 
+                    {
+                        ["Helicopters"] = 
+                        {
+                            ["Attack"] = 3,
+                        }, -- end of ["Helicopters"]
+                    }, -- end of ["lostTo"]
+                }, -- end of ["actions"]
+                ["weapons"] = 
+                {
+                    ["Hydra 70 M151 HE"] = 
+                    {
+                        ["hit"] = 0,
+                        ["kills"] = 0,
+                        ["shot"] = 62,
+                        ["numHits"] = 0,
+                    }, -- end of ["Hydra 70 M151 HE"]
+                    ["unknown"] = 
+                    {
+                        ["hit"] = 0,
+                        ["kills"] = 6,
+                        ["shot"] = 0,
+                        ["numHits"] = 6,
+                    }, -- end of ["unknown"]
+                    ["M230_new"] = 
+                    {
+                        ["kills"] = 2,
+                        ["shot"] = 786,
+                        ["hit"] = 0,
+                        ["gun"] = true,
+                        ["numHits"] = 2,
+                    }, -- end of ["M230_new"]
+                    ["AGM-114K"] = 
+                    {
+                        ["kills"] = 55,
+                        ["shot"] = 21,
+                        ["numHits"] = 73,
+                        ["assist"] = 1,
+                        ["hit"] = 3,
+                    }, -- end of ["AGM-114K"]
+                }, -- end of ["weapons"]
+            }, -- end of ["AH-64D_BLK_II"]
+            ["T-45 Copilot"] = 
+            {
+                ["total"] = 2412.959,
+                ["inAir"] = 2412.959,
+            }, -- end of ["T-45 Copilot"]
+            ["F-16C_50"] = 
+            {
+                ["total"] = 5024.684,
+                ["weapons"] = 
+                {
+                    ["Mk-82 Snakeye"] = 
+                    {
+                        ["hit"] = 1,
+                        ["kills"] = 0,
+                        ["shot"] = 2,
+                        ["numHits"] = 2,
+                    }, -- end of ["Mk-82 Snakeye"]
+                }, -- end of ["weapons"]
+                ["actions"] = 
+                {
+                    ["bounced"] = 1,
+                    ["takeoff"] = 
+                    {
+                        ["airbase"] = 2,
+                    }, -- end of ["takeoff"]
+                    ["losses"] = 
+                    {
+                        ["pilotDeath"] = 1,
+                        ["crash"] = 0,
+                        ["eject"] = 0,
+                    }, -- end of ["losses"]
+                }, -- end of ["actions"]
+                ["inAir"] = 2782.656,
+            }, -- end of ["F-16C_50"]
+            ["AH-64D_BLK_II Copilot"] = 
+            {
+                ["inAir"] = 200.231,
+                ["actions"] = 
+                {
+                    ["landing"] = 
+                    {
+                        ["airbase"] = 2,
+                    }, -- end of ["landing"]
+                    ["takeoff"] = 
+                    {
+                        ["airbase"] = 4,
+                    }, -- end of ["takeoff"]
+                }, -- end of ["actions"]
+                ["total"] = 3333.891,
+            }, -- end of ["AH-64D_BLK_II Copilot"]
+            ["T-45"] = 
+            {
+                ["inAir"] = 12314.785,
+                ["actions"] = 
+                {
+                    ["landing"] = 
+                    {
+                        ["airbase"] = 3,
+                    }, -- end of ["landing"]
+                    ["takeoff"] = 
+                    {
+                        ["airbase"] = 8,
+                    }, -- end of ["takeoff"]
+                    ["bounced"] = 1,
+                }, -- end of ["actions"]
+                ["total"] = 16759.995,
+            }, -- end of ["T-45"]
+        }, -- end of ["times"]
+        ["joinDate"] = 1670876692,
+        ["lastJoin"] = 1704837411,
+        ["id"] = 161,
+        ["names"] = 
+        {
+            [1] = "Falcon",
+        }, -- end of ["names"]
+    }, -- end of ["520d768a67604b6328ecc5c6cd829fc5"]
     ["27faf08a6ad0692d6eb7832da31a71ea"] = 
     {
         ["times"] = 
@@ -7765,13 +7075,13 @@ stats =
                 ["inAir"] = 47203.956,
                 ["weapons"] = 
                 {
-                    ["AGM-65G"] = 
+                    ["Mk-83"] = 
                     {
                         ["hit"] = 0,
                         ["kills"] = 0,
-                        ["shot"] = 2,
-                        ["numHits"] = 4,
-                    }, -- end of ["AGM-65G"]
+                        ["shot"] = 8,
+                        ["numHits"] = 0,
+                    }, -- end of ["Mk-83"]
                     ["GBU-12"] = 
                     {
                         ["numHits"] = 2,
@@ -7779,13 +7089,13 @@ stats =
                         ["shot"] = 8,
                         ["hit"] = 0,
                     }, -- end of ["GBU-12"]
-                    ["Mk-82"] = 
+                    ["AGM-65G"] = 
                     {
-                        ["numHits"] = 0,
-                        ["kills"] = 0,
-                        ["shot"] = 11,
                         ["hit"] = 0,
-                    }, -- end of ["Mk-82"]
+                        ["kills"] = 0,
+                        ["shot"] = 2,
+                        ["numHits"] = 4,
+                    }, -- end of ["AGM-65G"]
                     ["GAU_12"] = 
                     {
                         ["kills"] = 0,
@@ -7794,13 +7104,13 @@ stats =
                         ["gun"] = true,
                         ["numHits"] = 43,
                     }, -- end of ["GAU_12"]
-                    ["Mk-83"] = 
+                    ["Mk-82"] = 
                     {
-                        ["hit"] = 0,
-                        ["kills"] = 0,
-                        ["shot"] = 8,
                         ["numHits"] = 0,
-                    }, -- end of ["Mk-83"]
+                        ["kills"] = 0,
+                        ["shot"] = 11,
+                        ["hit"] = 0,
+                    }, -- end of ["Mk-82"]
                     ["kamikaze"] = 
                     {
                         ["hit"] = 0,
@@ -7859,47 +7169,556 @@ stats =
             [1] = "=JSW=Poncho",
         }, -- end of ["names"]
     }, -- end of ["27faf08a6ad0692d6eb7832da31a71ea"]
-    ["6b9bef9868635c06f8c089d212d5ca32"] = 
+    ["34c71ada8848ff2a30d8f2631cdaf664"] = 
+    {
+        ["times"] = 
+        {
+        }, -- end of ["times"]
+        ["joinDate"] = 1682191574,
+        ["lastJoin"] = 1699652645,
+        ["id"] = 212,
+        ["names"] = 
+        {
+            [1] = "[BSD] Houseman",
+        }, -- end of ["names"]
+    }, -- end of ["34c71ada8848ff2a30d8f2631cdaf664"]
+    ["c8a4cdb3b0509f4aa6e7b84838f509c5"] = 
+    {
+        ["times"] = 
+        {
+            ["FA-18C_hornet"] = 
+            {
+                ["inAir"] = 2804.338,
+                ["weapons"] = 
+                {
+                    ["AGM-88C"] = 
+                    {
+                        ["numHits"] = 5,
+                        ["kills"] = 0,
+                        ["shot"] = 5,
+                        ["hit"] = 0,
+                    }, -- end of ["AGM-88C"]
+                    ["F/A-18C Lot 20"] = 
+                    {
+                        ["numHits"] = 0,
+                        ["kills"] = 0,
+                        ["shot"] = 0,
+                        ["hit"] = 0,
+                    }, -- end of ["F/A-18C Lot 20"]
+                }, -- end of ["weapons"]
+                ["actions"] = 
+                {
+                    ["losses"] = 
+                    {
+                        ["pilotDeath"] = 2,
+                        ["crash"] = 2,
+                        ["eject"] = 0,
+                    }, -- end of ["losses"]
+                }, -- end of ["actions"]
+                ["total"] = 4105.877,
+            }, -- end of ["FA-18C_hornet"]
+        }, -- end of ["times"]
+        ["joinDate"] = 1601752857,
+        ["lastJoin"] = 1615066185,
+        ["id"] = 60,
+        ["names"] = 
+        {
+            [1] = "{TFT} Razor >>",
+            [2] = "Blake",
+        }, -- end of ["names"]
+    }, -- end of ["c8a4cdb3b0509f4aa6e7b84838f509c5"]
+    ["18f0d336392715972e3a1f0f63ef9654"] = 
+    {
+        ["times"] = 
+        {
+            ["JF-17"] = 
+            {
+                ["total"] = 13210.574,
+                ["kills"] = 
+                {
+                    ["Planes"] = 
+                    {
+                        ["Fighters"] = 1,
+                        ["total"] = 1,
+                    }, -- end of ["Planes"]
+                }, -- end of ["kills"]
+                ["losses"] = 
+                {
+                    ["pilotDeath"] = 0,
+                    ["crash"] = 3,
+                    ["eject"] = 0,
+                }, -- end of ["losses"]
+                ["weapons"] = 
+                {
+                    ["kamikaze"] = 
+                    {
+                        ["hit"] = 0,
+                        ["kills"] = 0,
+                        ["shot"] = 0,
+                        ["numHits"] = 0,
+                    }, -- end of ["kamikaze"]
+                    ["SD-10"] = 
+                    {
+                        ["numHits"] = 2,
+                        ["kills"] = 1,
+                        ["shot"] = 15,
+                        ["hit"] = 0,
+                    }, -- end of ["SD-10"]
+                }, -- end of ["weapons"]
+                ["inAir"] = 6305.665,
+                ["actions"] = 
+                {
+                    ["losses"] = 
+                    {
+                        ["pilotDeath"] = 3,
+                        ["crash"] = 0,
+                        ["eject"] = 0,
+                    }, -- end of ["losses"]
+                }, -- end of ["actions"]
+                ["pvp"] = 
+                {
+                    ["losses"] = 3,
+                    ["kills"] = 1,
+                }, -- end of ["pvp"]
+            }, -- end of ["JF-17"]
+            ["F-16C_50"] = 
+            {
+                ["total"] = 20.001,
+                ["inAir"] = 0,
+            }, -- end of ["F-16C_50"]
+        }, -- end of ["times"]
+        ["joinDate"] = 1601752483,
+        ["lastJoin"] = 1678567508,
+        ["id"] = 47,
+        ["names"] = 
+        {
+            [1] = "E-TF[119] Riker",
+            [2] = "E-TF[102] Riker",
+            [3] = "SHARK 1-1 E-TF[102] Riker",
+        }, -- end of ["names"]
+    }, -- end of ["18f0d336392715972e3a1f0f63ef9654"]
+    ["6471a13f44ba5bf71cd0597407051959"] = 
+    {
+        ["times"] = 
+        {
+            ["F-14B"] = 
+            {
+                ["total"] = 7762.912,
+                ["inAir"] = 2011.021,
+                ["losses"] = 
+                {
+                    ["pilotDeath"] = 0,
+                    ["crash"] = 1,
+                    ["eject"] = 0,
+                }, -- end of ["losses"]
+                ["pvp"] = 
+                {
+                    ["losses"] = 1,
+                }, -- end of ["pvp"]
+            }, -- end of ["F-14B"]
+        }, -- end of ["times"]
+        ["joinDate"] = 1615029221,
+        ["lastJoin"] = 1615067769,
+        ["id"] = 85,
+        ["names"] = 
+        {
+            [1] = "JTFF/BULLITT/VF84",
+        }, -- end of ["names"]
+    }, -- end of ["6471a13f44ba5bf71cd0597407051959"]
+    ["73d3bc0e07624ce53657866809fa5519"] = 
+    {
+        ["times"] = 
+        {
+            ["F-16C_50"] = 
+            {
+                ["inAir"] = 0,
+                ["total"] = 940.885,
+            }, -- end of ["F-16C_50"]
+        }, -- end of ["times"]
+        ["joinDate"] = 1601752826,
+        ["lastJoin"] = 1601753968,
+        ["id"] = 59,
+        ["names"] = 
+        {
+            [1] = "{TFT} Chewy ¦¦¦| wiv",
+        }, -- end of ["names"]
+    }, -- end of ["73d3bc0e07624ce53657866809fa5519"]
+    ["88dae793ecd2d2ed030fbd6bca2297f7"] = 
+    {
+        ["times"] = 
+        {
+            ["SA342M"] = 
+            {
+                ["total"] = 20.030000000001,
+                ["inAir"] = 20.030000000001,
+            }, -- end of ["SA342M"]
+            ["Ka-50_3"] = 
+            {
+                ["total"] = 5335.154,
+                ["kills"] = 
+                {
+                    ["Ground Units"] = 
+                    {
+                        ["AAA"] = 1,
+                        ["Tanks"] = 1,
+                        ["IFVs"] = 1,
+                        ["total"] = 5,
+                        ["SAM"] = 2,
+                    }, -- end of ["Ground Units"]
+                }, -- end of ["kills"]
+                ["weapons"] = 
+                {
+                    ["2A42"] = 
+                    {
+                        ["hit"] = 0,
+                        ["kills"] = 0,
+                        ["shot"] = 22,
+                        ["numHits"] = 0,
+                    }, -- end of ["2A42"]
+                    ["9M127-1 Vikhr-M"] = 
+                    {
+                        ["kills"] = 5,
+                        ["shot"] = 9,
+                        ["numHits"] = 6,
+                        ["assist"] = 1,
+                        ["hit"] = 6,
+                    }, -- end of ["9M127-1 Vikhr-M"]
+                    ["9M39 Igla"] = 
+                    {
+                        ["hit"] = 0,
+                        ["kills"] = 0,
+                        ["shot"] = 1,
+                        ["numHits"] = 0,
+                    }, -- end of ["9M39 Igla"]
+                }, -- end of ["weapons"]
+                ["actions"] = 
+                {
+                    ["lostTo"] = 
+                    {
+                        ["Ground Units"] = 
+                        {
+                            ["IFVs"] = 1,
+                            ["Tanks"] = 1,
+                        }, -- end of ["Ground Units"]
+                    }, -- end of ["lostTo"]
+                    ["takeoff"] = 
+                    {
+                        ["austere"] = 3,
+                    }, -- end of ["takeoff"]
+                    ["losses"] = 
+                    {
+                        ["pilotDeath"] = 1,
+                        ["crash"] = 2,
+                        ["eject"] = 0,
+                    }, -- end of ["losses"]
+                    ["landing"] = 
+                    {
+                        ["austere"] = 1,
+                        ["landedWhileDamaged"] = 1,
+                    }, -- end of ["landing"]
+                }, -- end of ["actions"]
+                ["inAir"] = 3723.551,
+            }, -- end of ["Ka-50_3"]
+            ["Mi-24P"] = 
+            {
+                ["total"] = 60.058,
+                ["inAir"] = 0,
+            }, -- end of ["Mi-24P"]
+            ["F-16C_50"] = 
+            {
+                ["inAir"] = 340.369,
+                ["total"] = 1772.058,
+            }, -- end of ["F-16C_50"]
+            ["AH-64D_BLK_II Copilot"] = 
+            {
+                ["total"] = 10060.716,
+                ["kills"] = 
+                {
+                    ["Ground Units"] = 
+                    {
+                        ["AAA"] = 1,
+                        ["SAM"] = 1,
+                        ["Unarmored"] = 3,
+                        ["APCs"] = 1,
+                        ["total"] = 6,
+                    }, -- end of ["Ground Units"]
+                }, -- end of ["kills"]
+                ["weapons"] = 
+                {
+                    ["Hydra-70 M229 HEDP"] = 
+                    {
+                        ["numHits"] = 5,
+                        ["kills"] = 0,
+                        ["shot"] = 21,
+                        ["hit"] = 4,
+                    }, -- end of ["Hydra-70 M229 HEDP"]
+                    ["AGM-114K"] = 
+                    {
+                        ["kills"] = 5,
+                        ["shot"] = 5,
+                        ["hit"] = 2,
+                        ["assist"] = 3,
+                        ["numHits"] = 14,
+                    }, -- end of ["AGM-114K"]
+                    ["unknown"] = 
+                    {
+                        ["numHits"] = 8,
+                        ["kills"] = 1,
+                        ["shot"] = 0,
+                        ["hit"] = 0,
+                    }, -- end of ["unknown"]
+                    ["M230_new"] = 
+                    {
+                        ["kills"] = 0,
+                        ["shot"] = 94,
+                        ["hit"] = 0,
+                        ["gun"] = true,
+                        ["numHits"] = 0,
+                    }, -- end of ["M230_new"]
+                    ["shot"] = 4,
+                }, -- end of ["weapons"]
+                ["actions"] = 
+                {
+                    ["landing"] = 
+                    {
+                        ["FARP"] = 3,
+                        ["airbase"] = 4,
+                    }, -- end of ["landing"]
+                    ["takeoff"] = 
+                    {
+                        ["austere"] = 3,
+                        ["airbase"] = 10,
+                    }, -- end of ["takeoff"]
+                }, -- end of ["actions"]
+                ["inAir"] = 6346.534,
+            }, -- end of ["AH-64D_BLK_II Copilot"]
+            ["AH-64D_BLK_II"] = 
+            {
+                ["total"] = 82616.940999998,
+                ["kills"] = 
+                {
+                    ["Ground Units"] = 
+                    {
+                        ["Arty/MLRS"] = 4,
+                        ["total"] = 54,
+                        ["Unarmored"] = 20,
+                        ["APCs"] = 6,
+                        ["IFVs"] = 3,
+                        ["Tanks"] = 2,
+                        ["AAA"] = 3,
+                        ["Infantry"] = 16,
+                    }, -- end of ["Ground Units"]
+                    ["Buildings"] = 
+                    {
+                        ["total"] = 1,
+                        ["Static"] = 1,
+                    }, -- end of ["Buildings"]
+                }, -- end of ["kills"]
+                ["weapons"] = 
+                {
+                    ["Hydra 70 M229 HE"] = 
+                    {
+                        ["numHits"] = 2,
+                        ["kills"] = 1,
+                        ["shot"] = 19,
+                        ["hit"] = 1,
+                    }, -- end of ["Hydra 70 M229 HE"]
+                    ["shot"] = 5,
+                    ["unknown"] = 
+                    {
+                        ["hit"] = 0,
+                        ["kills"] = 3,
+                        ["shot"] = 0,
+                        ["numHits"] = 3,
+                    }, -- end of ["unknown"]
+                    ["M230_new"] = 
+                    {
+                        ["kills"] = 21,
+                        ["shot"] = 891,
+                        ["hit"] = 0,
+                        ["assist"] = 2,
+                        ["gun"] = true,
+                        ["numHits"] = 64,
+                    }, -- end of ["M230_new"]
+                    ["AGM-114K"] = 
+                    {
+                        ["kills"] = 15,
+                        ["shot"] = 24,
+                        ["numHits"] = 26,
+                        ["assist"] = 1,
+                        ["hit"] = 8,
+                    }, -- end of ["AGM-114K"]
+                    ["HYDRA-70 M151"] = 
+                    {
+                        ["kills"] = 3,
+                        ["shot"] = 76,
+                        ["numHits"] = 5,
+                        ["assist"] = 1,
+                        ["hit"] = 3,
+                    }, -- end of ["HYDRA-70 M151"]
+                    ["Hydra 70 M282 MPP"] = 
+                    {
+                        ["kills"] = 12,
+                        ["shot"] = 116,
+                        ["hit"] = 21,
+                        ["assist"] = 2,
+                        ["numHits"] = 40,
+                    }, -- end of ["Hydra 70 M282 MPP"]
+                }, -- end of ["weapons"]
+                ["actions"] = 
+                {
+                    ["lostTo"] = 
+                    {
+                        ["Ground Units"] = 
+                        {
+                            ["Tanks"] = 1,
+                        }, -- end of ["Ground Units"]
+                    }, -- end of ["lostTo"]
+                    ["takeoff"] = 
+                    {
+                        ["austere"] = 10,
+                        ["airbase"] = 42,
+                    }, -- end of ["takeoff"]
+                    ["bounced"] = 2,
+                    ["losses"] = 
+                    {
+                        ["pilotDeath"] = 4,
+                        ["crashLanding"] = 3,
+                        ["crash"] = 1,
+                        ["eject"] = 0,
+                        ["pilotError"] = 1,
+                    }, -- end of ["losses"]
+                    ["landing"] = 
+                    {
+                        ["austere"] = 6,
+                        ["FARP"] = 1,
+                        ["airbase"] = 11,
+                        ["landedWhileDamaged"] = 1,
+                    }, -- end of ["landing"]
+                }, -- end of ["actions"]
+                ["inAir"] = 51574.476,
+            }, -- end of ["AH-64D_BLK_II"]
+            ["T-45"] = 
+            {
+                ["weapons"] = 
+                {
+                    ["BDU-33"] = 
+                    {
+                        ["numHits"] = 0,
+                        ["kills"] = 0,
+                        ["shot"] = 12,
+                        ["hit"] = 0,
+                    }, -- end of ["BDU-33"]
+                }, -- end of ["weapons"]
+                ["inAir"] = 22495.862,
+                ["actions"] = 
+                {
+                    ["landing"] = 
+                    {
+                        ["airbase"] = 9,
+                    }, -- end of ["landing"]
+                    ["takeoff"] = 
+                    {
+                        ["airbase"] = 22,
+                    }, -- end of ["takeoff"]
+                    ["bounced"] = 10,
+                }, -- end of ["actions"]
+                ["total"] = 34049.068,
+            }, -- end of ["T-45"]
+        }, -- end of ["times"]
+        ["joinDate"] = 1645651411,
+        ["lastJoin"] = 1704749696,
+        ["id"] = 132,
+        ["names"] = 
+        {
+            [7] = "[BSD] Gimbal",
+            [1] = "Gimbal",
+            [2] = "=JSW=Gimbal",
+            [4] = "Player",
+            [8] = "=JSW= Gimbal",
+            [9] = "=JSW= Gimbal",
+            [5] = "UGLY 1-1 =JSW= Gimbal",
+            [3] = "Player",
+            [6] = "UGLY 1-1 =JSW= Gimbal",
+        }, -- end of ["names"]
+    }, -- end of ["88dae793ecd2d2ed030fbd6bca2297f7"]
+    ["d30a8bc09f9e453798bfc601e9f607c6"] = 
     {
         ["times"] = 
         {
             ["AV8BNA"] = 
             {
-                ["weapons"] = 
-                {
-                    ["Mk-82 Snakeye"] = 
-                    {
-                        ["hit"] = 0,
-                        ["kills"] = 0,
-                        ["shot"] = 4,
-                        ["numHits"] = 0,
-                    }, -- end of ["Mk-82 Snakeye"]
-                }, -- end of ["weapons"]
-                ["inAir"] = 1291.276,
+                ["inAir"] = 10010.474,
+                ["total"] = 16687.533,
                 ["actions"] = 
                 {
+                    ["landing"] = 
+                    {
+                        ["airbase"] = 3,
+                    }, -- end of ["landing"]
                     ["takeoff"] = 
                     {
+                        ["airbase"] = 6,
                         ["austere"] = 1,
                     }, -- end of ["takeoff"]
+                    ["losses"] = 
+                    {
+                        ["pilotDeath"] = 1,
+                        ["crash"] = 0,
+                        ["eject"] = 0,
+                        ["pilotError"] = 1,
+                    }, -- end of ["losses"]
                 }, -- end of ["actions"]
-                ["total"] = 3573.98,
+                ["weapons"] = 
+                {
+                    ["Mk-82"] = 
+                    {
+                        ["hit"] = 1,
+                        ["kills"] = 0,
+                        ["shot"] = 4,
+                        ["numHits"] = 2,
+                    }, -- end of ["Mk-82"]
+                }, -- end of ["weapons"]
             }, -- end of ["AV8BNA"]
             ["T-45"] = 
             {
-                ["total"] = 240.299,
-                ["inAir"] = 0,
+                ["total"] = 33076.288,
+                ["actions"] = 
+                {
+                    ["landing"] = 
+                    {
+                        ["airbase"] = 8,
+                    }, -- end of ["landing"]
+                    ["takeoff"] = 
+                    {
+                        ["airbase"] = 20,
+                    }, -- end of ["takeoff"]
+                    ["losses"] = 
+                    {
+                        ["pilotError"] = 2,
+                        ["pilotDeath"] = 1,
+                    }, -- end of ["losses"]
+                    ["bounced"] = 4,
+                }, -- end of ["actions"]
+                ["inAir"] = 22584.489,
             }, -- end of ["T-45"]
+            ["T-45 Copilot"] = 
+            {
+                ["inAir"] = 3203.834,
+                ["total"] = 3243.878,
+            }, -- end of ["T-45 Copilot"]
         }, -- end of ["times"]
-        ["joinDate"] = 1678547569,
-        ["lastJoin"] = 1678568789,
-        ["id"] = 185,
+        ["joinDate"] = 1668541933,
+        ["lastJoin"] = 1704668157,
+        ["id"] = 150,
         ["names"] = 
         {
-            [1] = "Red 1-1 \"Winkle\"",
-            [2] = "SAXON 1 Red Sqn \"Winkle\"",
+            [1] = "NIGHTMARE 1-1 | Madog",
+            [2] = "Trident 1-2 =JSW= Madog",
+            [4] = "=JSW= Madog",
+            [3] = "TRIDENT 3-2 =JSW= Madog",
         }, -- end of ["names"]
-    }, -- end of ["6b9bef9868635c06f8c089d212d5ca32"]
+    }, -- end of ["d30a8bc09f9e453798bfc601e9f607c6"]
     ["30f30ebc24983a7a35d59d2ee6034513"] = 
     {
         ["times"] = 
@@ -7927,17 +7746,8 @@ stats =
         {
             ["FA-18C_hornet"] = 
             {
-                ["weapons"] = 
-                {
-                    ["AIM-120C"] = 
-                    {
-                        ["hit"] = 0,
-                        ["kills"] = 0,
-                        ["shot"] = 2,
-                        ["numHits"] = 0,
-                    }, -- end of ["AIM-120C"]
-                }, -- end of ["weapons"]
                 ["inAir"] = 791.085,
+                ["total"] = 1772.227,
                 ["actions"] = 
                 {
                     ["lostTo"] = 
@@ -7959,7 +7769,16 @@ stats =
                         ["pilotError"] = 1,
                     }, -- end of ["losses"]
                 }, -- end of ["actions"]
-                ["total"] = 1772.227,
+                ["weapons"] = 
+                {
+                    ["AIM-120C"] = 
+                    {
+                        ["hit"] = 0,
+                        ["kills"] = 0,
+                        ["shot"] = 2,
+                        ["numHits"] = 0,
+                    }, -- end of ["AIM-120C"]
+                }, -- end of ["weapons"]
             }, -- end of ["FA-18C_hornet"]
         }, -- end of ["times"]
         ["joinDate"] = 1678564428,
@@ -7976,8 +7795,14 @@ stats =
         {
             ["AV8BNA"] = 
             {
-                ["total"] = 2420.939,
                 ["inAir"] = 1600.606,
+                ["weapons"] = 
+                {
+                    ["numHits"] = 0,
+                    ["kills"] = 0,
+                    ["shot"] = 7,
+                    ["hit"] = 0,
+                }, -- end of ["weapons"]
                 ["actions"] = 
                 {
                     ["losses"] = 
@@ -7987,13 +7812,7 @@ stats =
                         ["eject"] = 0,
                     }, -- end of ["losses"]
                 }, -- end of ["actions"]
-                ["weapons"] = 
-                {
-                    ["numHits"] = 0,
-                    ["kills"] = 0,
-                    ["shot"] = 7,
-                    ["hit"] = 0,
-                }, -- end of ["weapons"]
+                ["total"] = 2420.939,
             }, -- end of ["AV8BNA"]
             ["T-45"] = 
             {
@@ -8040,27 +7859,8 @@ stats =
         }, -- end of ["names"]
         ["times"] = 
         {
-            ["AV8BNA"] = 
-            {
-                ["inAir"] = 10.002,
-                ["actions"] = 
-                {
-                    ["losses"] = 
-                    {
-                        ["pilotDeath"] = 1,
-                        ["crash"] = 0,
-                        ["eject"] = 0,
-                    }, -- end of ["losses"]
-                    ["takeoff"] = 
-                    {
-                        ["austere"] = 1,
-                    }, -- end of ["takeoff"]
-                }, -- end of ["actions"]
-                ["total"] = 1962.283,
-            }, -- end of ["AV8BNA"]
             ["F-16C_50"] = 
             {
-                ["total"] = 470.277,
                 ["weapons"] = 
                 {
                     ["AIM-9M"] = 
@@ -8078,6 +7878,7 @@ stats =
                         ["hit"] = 0,
                     }, -- end of ["M-61"]
                 }, -- end of ["weapons"]
+                ["inAir"] = 470.277,
                 ["actions"] = 
                 {
                     ["losses"] = 
@@ -8096,13 +7897,26 @@ stats =
                         }, -- end of ["Planes"]
                     }, -- end of ["lostTo"]
                 }, -- end of ["actions"]
-                ["inAir"] = 470.277,
+                ["total"] = 470.277,
             }, -- end of ["F-16C_50"]
-            ["FA-18C_hornet"] = 
+            ["AV8BNA"] = 
             {
-                ["inAir"] = 40.043,
-                ["total"] = 40.043,
-            }, -- end of ["FA-18C_hornet"]
+                ["inAir"] = 10.002,
+                ["actions"] = 
+                {
+                    ["losses"] = 
+                    {
+                        ["pilotDeath"] = 1,
+                        ["crash"] = 0,
+                        ["eject"] = 0,
+                    }, -- end of ["losses"]
+                    ["takeoff"] = 
+                    {
+                        ["austere"] = 1,
+                    }, -- end of ["takeoff"]
+                }, -- end of ["actions"]
+                ["total"] = 1962.283,
+            }, -- end of ["AV8BNA"]
             ["MiG-29S"] = 
             {
                 ["inAir"] = 70.063,
@@ -8118,6 +7932,11 @@ stats =
                     }, -- end of ["GSh-30-1"]
                 }, -- end of ["weapons"]
             }, -- end of ["MiG-29S"]
+            ["FA-18C_hornet"] = 
+            {
+                ["inAir"] = 40.043,
+                ["total"] = 40.043,
+            }, -- end of ["FA-18C_hornet"]
         }, -- end of ["times"]
         ["joinDate"] = 1669667626,
         ["id"] = 154,
@@ -8130,83 +7949,36 @@ stats =
             }, -- end of ["F-16C_50"]
         }, -- end of ["pvp"]
     }, -- end of ["a33c40a450ec0355cc518322c6868ad5"]
-    ["d30a8bc09f9e453798bfc601e9f607c6"] = 
+    ["937c23088dad300551dde43f5f6e6304"] = 
     {
         ["times"] = 
         {
-            ["AV8BNA"] = 
+            ["FA-18C_hornet"] = 
             {
-                ["weapons"] = 
-                {
-                    ["Mk-82"] = 
-                    {
-                        ["hit"] = 1,
-                        ["kills"] = 0,
-                        ["shot"] = 4,
-                        ["numHits"] = 2,
-                    }, -- end of ["Mk-82"]
-                }, -- end of ["weapons"]
-                ["inAir"] = 10010.474,
+                ["inAir"] = 3846.137,
                 ["actions"] = 
                 {
-                    ["landing"] = 
-                    {
-                        ["airbase"] = 3,
-                    }, -- end of ["landing"]
-                    ["takeoff"] = 
-                    {
-                        ["airbase"] = 6,
-                        ["austere"] = 1,
-                    }, -- end of ["takeoff"]
                     ["losses"] = 
                     {
                         ["pilotDeath"] = 1,
                         ["crash"] = 0,
                         ["eject"] = 0,
-                        ["pilotError"] = 1,
                     }, -- end of ["losses"]
                 }, -- end of ["actions"]
-                ["total"] = 16687.533,
-            }, -- end of ["AV8BNA"]
-            ["T-45"] = 
-            {
-                ["total"] = 33076.288,
-                ["actions"] = 
-                {
-                    ["landing"] = 
-                    {
-                        ["airbase"] = 8,
-                    }, -- end of ["landing"]
-                    ["takeoff"] = 
-                    {
-                        ["airbase"] = 20,
-                    }, -- end of ["takeoff"]
-                    ["losses"] = 
-                    {
-                        ["pilotError"] = 2,
-                        ["pilotDeath"] = 1,
-                    }, -- end of ["losses"]
-                    ["bounced"] = 4,
-                }, -- end of ["actions"]
-                ["inAir"] = 22584.489,
-            }, -- end of ["T-45"]
-            ["T-45 Copilot"] = 
-            {
-                ["inAir"] = 3203.834,
-                ["total"] = 3243.878,
-            }, -- end of ["T-45 Copilot"]
+                ["total"] = 5591.677,
+            }, -- end of ["FA-18C_hornet"]
         }, -- end of ["times"]
-        ["joinDate"] = 1668541933,
-        ["lastJoin"] = 1700257492,
-        ["id"] = 150,
+        ["joinDate"] = 1621681598,
+        ["lastJoin"] = 1621710915,
+        ["id"] = 115,
         ["names"] = 
         {
-            [1] = "NIGHTMARE 1-1 | Madog",
-            [2] = "Trident 1-2 =JSW= Madog",
-            [4] = "=JSW= Madog",
-            [3] = "TRIDENT 3-2 =JSW= Madog",
+            [1] = "Piers",
+            [2] = "Bobcat-3 (Piers)",
+            [4] = "Bobcat-2 (Piers)",
+            [3] = "Bobcat-1 (Piers)",
         }, -- end of ["names"]
-    }, -- end of ["d30a8bc09f9e453798bfc601e9f607c6"]
+    }, -- end of ["937c23088dad300551dde43f5f6e6304"]
     ["b15ce22d8f2c8a8df4fb777a9263a5d3"] = 
     {
         ["times"] = 
@@ -8262,356 +8034,40 @@ stats =
             [2] = "=JSW= VELCRO",
         }, -- end of ["names"]
     }, -- end of ["b15ce22d8f2c8a8df4fb777a9263a5d3"]
-    ["824e9e3e19b3764ede298720a8b656f4"] = 
+    ["36d17da910ba947c46daa5bd82df45ac"] = 
     {
         ["times"] = 
         {
-            ["FA-18C_hornet"] = 
-            {
-                ["inAir"] = 1491.511,
-                ["actions"] = 
-                {
-                    ["takeoff"] = 
-                    {
-                        ["CVN_72"] = 1,
-                    }, -- end of ["takeoff"]
-                }, -- end of ["actions"]
-                ["total"] = 3473.901,
-            }, -- end of ["FA-18C_hornet"]
-        }, -- end of ["times"]
-        ["joinDate"] = 1678564883,
-        ["lastJoin"] = 1678568653,
-        ["id"] = 195,
-        ["names"] = 
-        {
-            [1] = "KAISER 1-2 41Sqn Mike",
-        }, -- end of ["names"]
-    }, -- end of ["824e9e3e19b3764ede298720a8b656f4"]
-    ["88dae793ecd2d2ed030fbd6bca2297f7"] = 
-    {
-        ["times"] = 
-        {
-            ["SA342M"] = 
-            {
-                ["total"] = 20.030000000001,
-                ["inAir"] = 20.030000000001,
-            }, -- end of ["SA342M"]
-            ["Ka-50_3"] = 
-            {
-                ["total"] = 5335.154,
-                ["kills"] = 
-                {
-                    ["Ground Units"] = 
-                    {
-                        ["AAA"] = 1,
-                        ["Tanks"] = 1,
-                        ["IFVs"] = 1,
-                        ["total"] = 5,
-                        ["SAM"] = 2,
-                    }, -- end of ["Ground Units"]
-                }, -- end of ["kills"]
-                ["inAir"] = 3723.551,
-                ["actions"] = 
-                {
-                    ["lostTo"] = 
-                    {
-                        ["Ground Units"] = 
-                        {
-                            ["IFVs"] = 1,
-                            ["Tanks"] = 1,
-                        }, -- end of ["Ground Units"]
-                    }, -- end of ["lostTo"]
-                    ["takeoff"] = 
-                    {
-                        ["austere"] = 3,
-                    }, -- end of ["takeoff"]
-                    ["losses"] = 
-                    {
-                        ["pilotDeath"] = 1,
-                        ["crash"] = 2,
-                        ["eject"] = 0,
-                    }, -- end of ["losses"]
-                    ["landing"] = 
-                    {
-                        ["austere"] = 1,
-                        ["landedWhileDamaged"] = 1,
-                    }, -- end of ["landing"]
-                }, -- end of ["actions"]
-                ["weapons"] = 
-                {
-                    ["2A42"] = 
-                    {
-                        ["hit"] = 0,
-                        ["kills"] = 0,
-                        ["shot"] = 22,
-                        ["numHits"] = 0,
-                    }, -- end of ["2A42"]
-                    ["9M127-1 Vikhr-M"] = 
-                    {
-                        ["kills"] = 5,
-                        ["shot"] = 9,
-                        ["numHits"] = 6,
-                        ["assist"] = 1,
-                        ["hit"] = 6,
-                    }, -- end of ["9M127-1 Vikhr-M"]
-                    ["9M39 Igla"] = 
-                    {
-                        ["hit"] = 0,
-                        ["kills"] = 0,
-                        ["shot"] = 1,
-                        ["numHits"] = 0,
-                    }, -- end of ["9M39 Igla"]
-                }, -- end of ["weapons"]
-            }, -- end of ["Ka-50_3"]
-            ["Mi-24P"] = 
-            {
-                ["total"] = 60.058,
-                ["inAir"] = 0,
-            }, -- end of ["Mi-24P"]
             ["F-16C_50"] = 
             {
-                ["inAir"] = 340.369,
-                ["total"] = 1772.058,
-            }, -- end of ["F-16C_50"]
-            ["AH-64D_BLK_II Copilot"] = 
-            {
-                ["total"] = 10060.716,
+                ["total"] = 7252.477,
                 ["kills"] = 
                 {
-                    ["Ground Units"] = 
+                    ["Planes"] = 
                     {
-                        ["AAA"] = 1,
-                        ["SAM"] = 1,
-                        ["Unarmored"] = 3,
-                        ["APCs"] = 1,
-                        ["total"] = 6,
-                    }, -- end of ["Ground Units"]
-                }, -- end of ["kills"]
-                ["inAir"] = 6346.534,
-                ["actions"] = 
-                {
-                    ["landing"] = 
-                    {
-                        ["FARP"] = 3,
-                        ["airbase"] = 4,
-                    }, -- end of ["landing"]
-                    ["takeoff"] = 
-                    {
-                        ["austere"] = 3,
-                        ["airbase"] = 10,
-                    }, -- end of ["takeoff"]
-                }, -- end of ["actions"]
-                ["weapons"] = 
-                {
-                    ["Hydra-70 M229 HEDP"] = 
-                    {
-                        ["numHits"] = 5,
-                        ["kills"] = 0,
-                        ["shot"] = 21,
-                        ["hit"] = 4,
-                    }, -- end of ["Hydra-70 M229 HEDP"]
-                    ["unknown"] = 
-                    {
-                        ["numHits"] = 8,
-                        ["kills"] = 1,
-                        ["shot"] = 0,
-                        ["hit"] = 0,
-                    }, -- end of ["unknown"]
-                    ["AGM-114K"] = 
-                    {
-                        ["kills"] = 5,
-                        ["shot"] = 5,
-                        ["hit"] = 2,
-                        ["assist"] = 3,
-                        ["numHits"] = 14,
-                    }, -- end of ["AGM-114K"]
-                    ["M230_new"] = 
-                    {
-                        ["kills"] = 0,
-                        ["shot"] = 94,
-                        ["hit"] = 0,
-                        ["gun"] = true,
-                        ["numHits"] = 0,
-                    }, -- end of ["M230_new"]
-                    ["shot"] = 4,
-                }, -- end of ["weapons"]
-            }, -- end of ["AH-64D_BLK_II Copilot"]
-            ["AH-64D_BLK_II"] = 
-            {
-                ["total"] = 82616.940999998,
-                ["kills"] = 
-                {
-                    ["Ground Units"] = 
-                    {
-                        ["Arty/MLRS"] = 4,
-                        ["total"] = 54,
-                        ["Unarmored"] = 20,
-                        ["IFVs"] = 3,
-                        ["APCs"] = 6,
-                        ["Tanks"] = 2,
-                        ["AAA"] = 3,
-                        ["Infantry"] = 16,
-                    }, -- end of ["Ground Units"]
-                    ["Buildings"] = 
-                    {
+                        ["Fighters"] = 1,
                         ["total"] = 1,
-                        ["Static"] = 1,
-                    }, -- end of ["Buildings"]
+                    }, -- end of ["Planes"]
                 }, -- end of ["kills"]
-                ["inAir"] = 51574.476,
-                ["actions"] = 
-                {
-                    ["lostTo"] = 
-                    {
-                        ["Ground Units"] = 
-                        {
-                            ["Tanks"] = 1,
-                        }, -- end of ["Ground Units"]
-                    }, -- end of ["lostTo"]
-                    ["takeoff"] = 
-                    {
-                        ["austere"] = 10,
-                        ["airbase"] = 42,
-                    }, -- end of ["takeoff"]
-                    ["bounced"] = 2,
-                    ["losses"] = 
-                    {
-                        ["pilotDeath"] = 4,
-                        ["crashLanding"] = 3,
-                        ["crash"] = 1,
-                        ["eject"] = 0,
-                        ["pilotError"] = 1,
-                    }, -- end of ["losses"]
-                    ["landing"] = 
-                    {
-                        ["austere"] = 6,
-                        ["FARP"] = 1,
-                        ["airbase"] = 11,
-                        ["landedWhileDamaged"] = 1,
-                    }, -- end of ["landing"]
-                }, -- end of ["actions"]
-                ["weapons"] = 
-                {
-                    ["Hydra 70 M229 HE"] = 
-                    {
-                        ["numHits"] = 2,
-                        ["kills"] = 1,
-                        ["shot"] = 19,
-                        ["hit"] = 1,
-                    }, -- end of ["Hydra 70 M229 HE"]
-                    ["shot"] = 5,
-                    ["unknown"] = 
-                    {
-                        ["hit"] = 0,
-                        ["kills"] = 3,
-                        ["shot"] = 0,
-                        ["numHits"] = 3,
-                    }, -- end of ["unknown"]
-                    ["M230_new"] = 
-                    {
-                        ["kills"] = 21,
-                        ["shot"] = 891,
-                        ["hit"] = 0,
-                        ["assist"] = 2,
-                        ["gun"] = true,
-                        ["numHits"] = 64,
-                    }, -- end of ["M230_new"]
-                    ["AGM-114K"] = 
-                    {
-                        ["kills"] = 15,
-                        ["shot"] = 24,
-                        ["numHits"] = 26,
-                        ["assist"] = 1,
-                        ["hit"] = 8,
-                    }, -- end of ["AGM-114K"]
-                    ["HYDRA-70 M151"] = 
-                    {
-                        ["kills"] = 3,
-                        ["shot"] = 76,
-                        ["numHits"] = 5,
-                        ["assist"] = 1,
-                        ["hit"] = 3,
-                    }, -- end of ["HYDRA-70 M151"]
-                    ["Hydra 70 M282 MPP"] = 
-                    {
-                        ["kills"] = 12,
-                        ["shot"] = 116,
-                        ["hit"] = 21,
-                        ["assist"] = 2,
-                        ["numHits"] = 40,
-                    }, -- end of ["Hydra 70 M282 MPP"]
-                }, -- end of ["weapons"]
-            }, -- end of ["AH-64D_BLK_II"]
-            ["T-45"] = 
-            {
-                ["total"] = 34049.068,
-                ["weapons"] = 
-                {
-                    ["BDU-33"] = 
-                    {
-                        ["numHits"] = 0,
-                        ["kills"] = 0,
-                        ["shot"] = 12,
-                        ["hit"] = 0,
-                    }, -- end of ["BDU-33"]
-                }, -- end of ["weapons"]
-                ["actions"] = 
-                {
-                    ["landing"] = 
-                    {
-                        ["airbase"] = 9,
-                    }, -- end of ["landing"]
-                    ["takeoff"] = 
-                    {
-                        ["airbase"] = 22,
-                    }, -- end of ["takeoff"]
-                    ["bounced"] = 10,
-                }, -- end of ["actions"]
-                ["inAir"] = 22495.862,
-            }, -- end of ["T-45"]
-        }, -- end of ["times"]
-        ["joinDate"] = 1645651411,
-        ["lastJoin"] = 1702680358,
-        ["id"] = 132,
-        ["names"] = 
-        {
-            [7] = "[BSD] Gimbal",
-            [1] = "Gimbal",
-            [2] = "=JSW=Gimbal",
-            [4] = "Player",
-            [8] = "=JSW= Gimbal",
-            [9] = "=JSW= Gimbal",
-            [5] = "UGLY 1-1 =JSW= Gimbal",
-            [3] = "Player",
-            [6] = "UGLY 1-1 =JSW= Gimbal",
-        }, -- end of ["names"]
-    }, -- end of ["88dae793ecd2d2ed030fbd6bca2297f7"]
-    ["a9e033cc9e64f8b35a45ae4e8666e556"] = 
-    {
-        ["times"] = 
-        {
-            ["F-14B"] = 
-            {
-                ["total"] = 7682.83,
-                ["inAir"] = 4281.764,
                 ["actions"] = 
                 {
                     ["losses"] = 
                     {
                         ["pilotDeath"] = 1,
-                        ["crash"] = 1,
+                        ["crash"] = 0,
                         ["eject"] = 0,
                     }, -- end of ["losses"]
                 }, -- end of ["actions"]
+                ["inAir"] = 2841.164,
                 ["weapons"] = 
                 {
-                    ["kamikaze"] = 
+                    ["AIM-120C"] = 
                     {
-                        ["numHits"] = 0,
-                        ["kills"] = 0,
-                        ["shot"] = 0,
                         ["hit"] = 0,
-                    }, -- end of ["kamikaze"]
+                        ["kills"] = 1,
+                        ["shot"] = 5,
+                        ["numHits"] = 1,
+                    }, -- end of ["AIM-120C"]
                 }, -- end of ["weapons"]
                 ["losses"] = 
                 {
@@ -8622,91 +8078,131 @@ stats =
                 ["pvp"] = 
                 {
                     ["losses"] = 1,
+                    ["kills"] = 1,
                 }, -- end of ["pvp"]
-            }, -- end of ["F-14B"]
+            }, -- end of ["F-16C_50"]
         }, -- end of ["times"]
-        ["joinDate"] = 1615027096,
-        ["lastJoin"] = 1615065747,
-        ["id"] = 83,
+        ["joinDate"] = 1615055129,
+        ["lastJoin"] = 1615065939,
+        ["id"] = 86,
         ["names"] = 
         {
-            [1] = "JTFF | Gemini | VF-84",
+            [1] = "Kinder",
         }, -- end of ["names"]
-    }, -- end of ["a9e033cc9e64f8b35a45ae4e8666e556"]
-    ["937c23088dad300551dde43f5f6e6304"] = 
+    }, -- end of ["36d17da910ba947c46daa5bd82df45ac"]
+    ["e78d9437dbba3a8bc254fba991dbb3c8"] = 
     {
         ["times"] = 
         {
-            ["FA-18C_hornet"] = 
+            ["AH-64D_BLK_II"] = 
             {
-                ["inAir"] = 3846.137,
-                ["actions"] = 
+                ["total"] = 3493.851,
+                ["kills"] = 
                 {
-                    ["losses"] = 
+                    ["Ground Units"] = 
                     {
-                        ["pilotDeath"] = 1,
-                        ["crash"] = 0,
-                        ["eject"] = 0,
-                    }, -- end of ["losses"]
-                }, -- end of ["actions"]
-                ["total"] = 5591.677,
-            }, -- end of ["FA-18C_hornet"]
-        }, -- end of ["times"]
-        ["joinDate"] = 1621681598,
-        ["lastJoin"] = 1621710915,
-        ["id"] = 115,
-        ["names"] = 
-        {
-            [1] = "Piers",
-            [2] = "Bobcat-3 (Piers)",
-            [4] = "Bobcat-2 (Piers)",
-            [3] = "Bobcat-1 (Piers)",
-        }, -- end of ["names"]
-    }, -- end of ["937c23088dad300551dde43f5f6e6304"]
-    ["d4dfacf7d87e9a24c1f705bb886ab0dd"] = 
-    {
-        ["times"] = 
-        {
-        }, -- end of ["times"]
-        ["joinDate"] = 1684266695,
-        ["lastJoin"] = 1704406295,
-        ["id"] = 215,
-        ["names"] = 
-        {
-            [6] = "MEMPHIS 3-2 | PG",
-            [2] = "Pete G",
-            [3] = "NINJA 1-3 =JSW= PG",
-            [1] = "Player",
-            [4] = "NINJA 3-3 =JSW= PG",
-            [5] = "TRIDENT 3-3 =JSW= PG",
-            [7] = "=JSW= PG",
-        }, -- end of ["names"]
-    }, -- end of ["d4dfacf7d87e9a24c1f705bb886ab0dd"]
-    ["e63f3295aaeae40a45eabde070ecf50f"] = 
-    {
-        ["times"] = 
-        {
-            ["FA-18C_hornet"] = 
-            {
-                ["inAir"] = 1081.039,
+                        ["AAA"] = 1,
+                        ["total"] = 2,
+                        ["Unarmored"] = 1,
+                    }, -- end of ["Ground Units"]
+                }, -- end of ["kills"]
+                ["inAir"] = 2252.39,
                 ["actions"] = 
                 {
+                    ["landing"] = 
+                    {
+                        ["airbase"] = 3,
+                    }, -- end of ["landing"]
                     ["takeoff"] = 
                     {
-                        ["CVN_72"] = 1,
+                        ["airbase"] = 10,
                     }, -- end of ["takeoff"]
                 }, -- end of ["actions"]
-                ["total"] = 3924.303,
-            }, -- end of ["FA-18C_hornet"]
+                ["weapons"] = 
+                {
+                    ["Hydra 70 M151 HE"] = 
+                    {
+                        ["hit"] = 0,
+                        ["kills"] = 0,
+                        ["shot"] = 6,
+                        ["numHits"] = 0,
+                    }, -- end of ["Hydra 70 M151 HE"]
+                    ["AGM-114K"] = 
+                    {
+                        ["kills"] = 2,
+                        ["shot"] = 1,
+                        ["numHits"] = 5,
+                        ["assist"] = 3,
+                        ["hit"] = 0,
+                    }, -- end of ["AGM-114K"]
+                    ["M230_new"] = 
+                    {
+                        ["kills"] = 0,
+                        ["shot"] = 94,
+                        ["hit"] = 0,
+                        ["gun"] = true,
+                        ["numHits"] = 0,
+                    }, -- end of ["M230_new"]
+                }, -- end of ["weapons"]
+            }, -- end of ["AH-64D_BLK_II"]
+            ["AH-64D_BLK_II Copilot"] = 
+            {
+                ["total"] = 12119.144,
+                ["kills"] = 
+                {
+                    ["Ground Units"] = 
+                    {
+                        ["Arty/MLRS"] = 2,
+                        ["Infantry"] = 4,
+                        ["Unarmored"] = 3,
+                        ["APCs"] = 3,
+                        ["total"] = 12,
+                    }, -- end of ["Ground Units"]
+                    ["Buildings"] = 
+                    {
+                        ["total"] = 1,
+                        ["Static"] = 1,
+                    }, -- end of ["Buildings"]
+                }, -- end of ["kills"]
+                ["inAir"] = 9386.569,
+                ["actions"] = 
+                {
+                    ["landing"] = 
+                    {
+                        ["airbase"] = 1,
+                    }, -- end of ["landing"]
+                    ["takeoff"] = 
+                    {
+                        ["airbase"] = 6,
+                    }, -- end of ["takeoff"]
+                }, -- end of ["actions"]
+                ["weapons"] = 
+                {
+                    ["unknown"] = 
+                    {
+                        ["hit"] = 0,
+                        ["kills"] = 2,
+                        ["shot"] = 0,
+                        ["numHits"] = 2,
+                    }, -- end of ["unknown"]
+                    ["AGM-114K"] = 
+                    {
+                        ["numHits"] = 18,
+                        ["kills"] = 11,
+                        ["shot"] = 5,
+                        ["hit"] = 0,
+                    }, -- end of ["AGM-114K"]
+                }, -- end of ["weapons"]
+            }, -- end of ["AH-64D_BLK_II Copilot"]
         }, -- end of ["times"]
-        ["joinDate"] = 1678562137,
-        ["lastJoin"] = 1678568463,
-        ["id"] = 187,
+        ["joinDate"] = 1670876863,
+        ["lastJoin"] = 1671487130,
+        ["id"] = 162,
         ["names"] = 
         {
-            [1] = "Metal 1-2 41 SQN DAVE",
+            [1] = "Catchey",
         }, -- end of ["names"]
-    }, -- end of ["e63f3295aaeae40a45eabde070ecf50f"]
+    }, -- end of ["e78d9437dbba3a8bc254fba991dbb3c8"]
     ["5c1e735107362c2bb116b5b961361856"] = 
     {
         ["times"] = 
@@ -8747,35 +8243,126 @@ stats =
             [3] = "Tyrant 3-1 | [VAF] Jup",
         }, -- end of ["names"]
     }, -- end of ["5c1e735107362c2bb116b5b961361856"]
-    ["8456b92c1d10b237d8f337c00e3914d7"] = 
+    ["779a2c65fbebc6abc99f9dace3a68af8"] = 
+    {
+        ["times"] = 
+        {
+        }, -- end of ["times"]
+        ["joinDate"] = 1695474334,
+        ["lastJoin"] = 1705353115,
+        ["id"] = 246,
+        ["names"] = 
+        {
+            [1] = "Podo=JSW=Podo",
+            [2] = "=JSW=Podoo",
+            [4] = "=JSW=Podo",
+            [3] = "Podo",
+        }, -- end of ["names"]
+    }, -- end of ["779a2c65fbebc6abc99f9dace3a68af8"]
+    ["d4dfacf7d87e9a24c1f705bb886ab0dd"] = 
+    {
+        ["times"] = 
+        {
+        }, -- end of ["times"]
+        ["joinDate"] = 1684266695,
+        ["lastJoin"] = 1705272026,
+        ["id"] = 215,
+        ["names"] = 
+        {
+            [6] = "MEMPHIS 3-2 | PG",
+            [2] = "Pete G",
+            [3] = "NINJA 1-3 =JSW= PG",
+            [1] = "Player",
+            [4] = "NINJA 3-3 =JSW= PG",
+            [5] = "TRIDENT 3-3 =JSW= PG",
+            [7] = "=JSW= PG",
+        }, -- end of ["names"]
+    }, -- end of ["d4dfacf7d87e9a24c1f705bb886ab0dd"]
+    ["e63f3295aaeae40a45eabde070ecf50f"] = 
     {
         ["times"] = 
         {
             ["FA-18C_hornet"] = 
             {
-                ["total"] = 4914.032,
-                ["inAir"] = 2712.575,
+                ["inAir"] = 1081.039,
+                ["actions"] = 
+                {
+                    ["takeoff"] = 
+                    {
+                        ["CVN_72"] = 1,
+                    }, -- end of ["takeoff"]
+                }, -- end of ["actions"]
+                ["total"] = 3924.303,
+            }, -- end of ["FA-18C_hornet"]
+        }, -- end of ["times"]
+        ["joinDate"] = 1678562137,
+        ["lastJoin"] = 1678568463,
+        ["id"] = 187,
+        ["names"] = 
+        {
+            [1] = "Metal 1-2 41 SQN DAVE",
+        }, -- end of ["names"]
+    }, -- end of ["e63f3295aaeae40a45eabde070ecf50f"]
+    ["244dfcf57cb994fe09ce8fd1140391aa"] = 
+    {
+        ["times"] = 
+        {
+            ["F-14B"] = 
+            {
+                ["total"] = 5490.304,
+                ["inAir"] = 2939.216,
+            }, -- end of ["F-14B"]
+            ["FA-18C_hornet"] = 
+            {
+                ["inAir"] = 2202.479,
+                ["total"] = 3493.904,
+                ["actions"] = 
+                {
+                    ["takeoff"] = 
+                    {
+                        ["CVN_71"] = 1,
+                    }, -- end of ["takeoff"]
+                }, -- end of ["actions"]
                 ["weapons"] = 
                 {
-                    ["Mk-84"] = 
+                    ["GBU-31(V)4/B"] = 
                     {
                         ["hit"] = 0,
                         ["kills"] = 0,
                         ["shot"] = 2,
-                        ["numHits"] = 7,
-                    }, -- end of ["Mk-84"]
+                        ["numHits"] = 0,
+                    }, -- end of ["GBU-31(V)4/B"]
                 }, -- end of ["weapons"]
             }, -- end of ["FA-18C_hornet"]
         }, -- end of ["times"]
-        ["joinDate"] = 1621623537,
-        ["lastJoin"] = 1621709671,
-        ["id"] = 111,
+        ["joinDate"] = 1621702957,
+        ["lastJoin"] = 1678568478,
+        ["id"] = 119,
         ["names"] = 
         {
-            [1] = "ags",
-            [2] = "SNAPPER1",
+            [1] = "Fantastic",
+            [2] = "BALDRICK 2 Fantastic",
+            [3] = "HAMMER 1-2 [VAF]FANTASTIC",
         }, -- end of ["names"]
-    }, -- end of ["8456b92c1d10b237d8f337c00e3914d7"]
+    }, -- end of ["244dfcf57cb994fe09ce8fd1140391aa"]
+    ["cf1df73c0502e8d905ce4ee6f82801dc"] = 
+    {
+        ["times"] = 
+        {
+            ["F-16C_50"] = 
+            {
+                ["inAir"] = 0,
+                ["total"] = 30.007,
+            }, -- end of ["F-16C_50"]
+        }, -- end of ["times"]
+        ["joinDate"] = 1603313559,
+        ["lastJoin"] = 1603313599,
+        ["id"] = 71,
+        ["names"] = 
+        {
+            [1] = "Maddog",
+        }, -- end of ["names"]
+    }, -- end of ["cf1df73c0502e8d905ce4ee6f82801dc"]
     ["67685fc9d16c0e4701d43a82ecb4ca82"] = 
     {
         ["times"] = 
@@ -8840,20 +8427,20 @@ stats =
                         ["shot"] = 8,
                         ["numHits"] = 3,
                     }, -- end of ["GBU-38"]
-                    ["GBU-12"] = 
+                    ["Mk-82AIR"] = 
                     {
-                        ["hit"] = 3,
+                        ["hit"] = 1,
                         ["kills"] = 0,
                         ["shot"] = 12,
-                        ["numHits"] = 8,
-                    }, -- end of ["GBU-12"]
-                    ["GAU_12"] = 
+                        ["numHits"] = 9,
+                    }, -- end of ["Mk-82AIR"]
+                    ["AGM-65L"] = 
                     {
-                        ["hit"] = 0,
+                        ["hit"] = 1,
                         ["kills"] = 0,
-                        ["shot"] = 105,
-                        ["numHits"] = 108,
-                    }, -- end of ["GAU_12"]
+                        ["shot"] = 2,
+                        ["numHits"] = 1,
+                    }, -- end of ["AGM-65L"]
                     ["Mk-83"] = 
                     {
                         ["numHits"] = 1,
@@ -8890,20 +8477,20 @@ stats =
                         ["numHits"] = 22,
                     }, -- end of ["Mk-82"]
                     ["shot"] = 4,
-                    ["Mk-82AIR"] = 
+                    ["GBU-12"] = 
                     {
-                        ["hit"] = 1,
+                        ["hit"] = 3,
                         ["kills"] = 0,
                         ["shot"] = 12,
-                        ["numHits"] = 9,
-                    }, -- end of ["Mk-82AIR"]
-                    ["AGM-65L"] = 
+                        ["numHits"] = 8,
+                    }, -- end of ["GBU-12"]
+                    ["GAU_12"] = 
                     {
-                        ["hit"] = 1,
+                        ["hit"] = 0,
                         ["kills"] = 0,
-                        ["shot"] = 2,
-                        ["numHits"] = 1,
-                    }, -- end of ["AGM-65L"]
+                        ["shot"] = 105,
+                        ["numHits"] = 108,
+                    }, -- end of ["GAU_12"]
                     ["unknown"] = 
                     {
                         ["hit"] = 0,
@@ -8956,7 +8543,24 @@ stats =
                         ["Infantry"] = 3,
                     }, -- end of ["Ground Units"]
                 }, -- end of ["kills"]
-                ["inAir"] = 3453.303,
+                ["weapons"] = 
+                {
+                    ["2A42"] = 
+                    {
+                        ["kills"] = 11,
+                        ["shot"] = 213,
+                        ["hit"] = 0,
+                        ["gun"] = true,
+                        ["numHits"] = 76,
+                    }, -- end of ["2A42"]
+                    ["9M127-1 Vikhr-M"] = 
+                    {
+                        ["hit"] = 5,
+                        ["kills"] = 5,
+                        ["shot"] = 7,
+                        ["numHits"] = 6,
+                    }, -- end of ["9M127-1 Vikhr-M"]
+                }, -- end of ["weapons"]
                 ["actions"] = 
                 {
                     ["lostTo"] = 
@@ -8977,24 +8581,7 @@ stats =
                         ["eject"] = 0,
                     }, -- end of ["losses"]
                 }, -- end of ["actions"]
-                ["weapons"] = 
-                {
-                    ["2A42"] = 
-                    {
-                        ["kills"] = 11,
-                        ["shot"] = 213,
-                        ["hit"] = 0,
-                        ["gun"] = true,
-                        ["numHits"] = 76,
-                    }, -- end of ["2A42"]
-                    ["9M127-1 Vikhr-M"] = 
-                    {
-                        ["hit"] = 5,
-                        ["kills"] = 5,
-                        ["shot"] = 7,
-                        ["numHits"] = 6,
-                    }, -- end of ["9M127-1 Vikhr-M"]
-                }, -- end of ["weapons"]
+                ["inAir"] = 3453.303,
             }, -- end of ["Ka-50_3"]
             ["F-16C_50"] = 
             {
@@ -9043,24 +8630,35 @@ stats =
             [15] = "VANGUARD 1-1 SLIPPY",
         }, -- end of ["names"]
     }, -- end of ["67685fc9d16c0e4701d43a82ecb4ca82"]
-    ["cf1df73c0502e8d905ce4ee6f82801dc"] = 
+    ["8456b92c1d10b237d8f337c00e3914d7"] = 
     {
         ["times"] = 
         {
-            ["F-16C_50"] = 
+            ["FA-18C_hornet"] = 
             {
-                ["inAir"] = 0,
-                ["total"] = 30.007,
-            }, -- end of ["F-16C_50"]
+                ["total"] = 4914.032,
+                ["inAir"] = 2712.575,
+                ["weapons"] = 
+                {
+                    ["Mk-84"] = 
+                    {
+                        ["hit"] = 0,
+                        ["kills"] = 0,
+                        ["shot"] = 2,
+                        ["numHits"] = 7,
+                    }, -- end of ["Mk-84"]
+                }, -- end of ["weapons"]
+            }, -- end of ["FA-18C_hornet"]
         }, -- end of ["times"]
-        ["joinDate"] = 1603313559,
-        ["lastJoin"] = 1603313599,
-        ["id"] = 71,
+        ["joinDate"] = 1621623537,
+        ["lastJoin"] = 1621709671,
+        ["id"] = 111,
         ["names"] = 
         {
-            [1] = "Maddog",
+            [1] = "ags",
+            [2] = "SNAPPER1",
         }, -- end of ["names"]
-    }, -- end of ["cf1df73c0502e8d905ce4ee6f82801dc"]
+    }, -- end of ["8456b92c1d10b237d8f337c00e3914d7"]
     ["2cac92e97586f40b6c17bd7a167b5f5a"] = 
     {
         ["times"] = 
@@ -9160,11 +8758,12 @@ stats =
         {
         }, -- end of ["times"]
         ["joinDate"] = 1703180795,
-        ["lastJoin"] = 1703204211,
+        ["lastJoin"] = 1705353165,
         ["id"] = 252,
         ["names"] = 
         {
             [1] = "DannyR",
+            [2] = "=JSW= DannyR",
         }, -- end of ["names"]
     }, -- end of ["c515900aec81f4de675708369df6db7b"]
     ["a6271744fd547e44aeb0a15faaec0c49"] = 
@@ -9189,7 +8788,16 @@ stats =
                         ["Fighters"] = 1,
                     }, -- end of ["Planes"]
                 }, -- end of ["kills"]
-                ["inAir"] = 10190.34,
+                ["weapons"] = 
+                {
+                    ["AIM-9M"] = 
+                    {
+                        ["hit"] = 1,
+                        ["kills"] = 1,
+                        ["shot"] = 1,
+                        ["numHits"] = 2,
+                    }, -- end of ["AIM-9M"]
+                }, -- end of ["weapons"]
                 ["actions"] = 
                 {
                     ["bounced"] = 8,
@@ -9209,16 +8817,7 @@ stats =
                         ["airbase"] = 2,
                     }, -- end of ["landing"]
                 }, -- end of ["actions"]
-                ["weapons"] = 
-                {
-                    ["AIM-9M"] = 
-                    {
-                        ["hit"] = 1,
-                        ["kills"] = 1,
-                        ["shot"] = 1,
-                        ["numHits"] = 2,
-                    }, -- end of ["AIM-9M"]
-                }, -- end of ["weapons"]
+                ["inAir"] = 10190.34,
             }, -- end of ["F-16C_50"]
             ["T-45 Copilot"] = 
             {
@@ -9238,7 +8837,6 @@ stats =
             }, -- end of ["T-45 Copilot"]
             ["T-45"] = 
             {
-                ["inAir"] = 7558.776,
                 ["weapons"] = 
                 {
                     ["BDU-33"] = 
@@ -9249,6 +8847,7 @@ stats =
                         ["numHits"] = 0,
                     }, -- end of ["BDU-33"]
                 }, -- end of ["weapons"]
+                ["total"] = 17439.86,
                 ["actions"] = 
                 {
                     ["landing"] = 
@@ -9268,7 +8867,7 @@ stats =
                     }, -- end of ["losses"]
                     ["bounced"] = 2,
                 }, -- end of ["actions"]
-                ["total"] = 17439.86,
+                ["inAir"] = 7558.776,
             }, -- end of ["T-45"]
         }, -- end of ["times"]
         ["joinDate"] = 1661346043,
@@ -9285,17 +8884,7 @@ stats =
         {
             ["AV8BNA"] = 
             {
-                ["total"] = 5131.912,
                 ["inAir"] = 3551.3,
-                ["actions"] = 
-                {
-                    ["losses"] = 
-                    {
-                        ["pilotDeath"] = 1,
-                        ["crash"] = 0,
-                        ["eject"] = 0,
-                    }, -- end of ["losses"]
-                }, -- end of ["actions"]
                 ["weapons"] = 
                 {
                     ["kills"] = 0,
@@ -9310,6 +8899,16 @@ stats =
                     }, -- end of ["unknown"]
                     ["numHits"] = 0,
                 }, -- end of ["weapons"]
+                ["actions"] = 
+                {
+                    ["losses"] = 
+                    {
+                        ["pilotDeath"] = 1,
+                        ["crash"] = 0,
+                        ["eject"] = 0,
+                    }, -- end of ["losses"]
+                }, -- end of ["actions"]
+                ["total"] = 5131.912,
             }, -- end of ["AV8BNA"]
             ["F-16C_50"] = 
             {
@@ -9387,13 +8986,13 @@ stats =
                         ["shot"] = 0,
                         ["numHits"] = 2,
                     }, -- end of ["AGM-65F"]
-                    ["unknown"] = 
+                    ["Mk-82"] = 
                     {
                         ["hit"] = 0,
                         ["kills"] = 0,
-                        ["shot"] = 0,
-                        ["numHits"] = 0,
-                    }, -- end of ["unknown"]
+                        ["shot"] = 2,
+                        ["numHits"] = 4,
+                    }, -- end of ["Mk-82"]
                     ["shot"] = 7,
                     ["AIM-120C"] = 
                     {
@@ -9402,20 +9001,6 @@ stats =
                         ["shot"] = 5,
                         ["numHits"] = 0,
                     }, -- end of ["AIM-120C"]
-                    ["AIM-9L"] = 
-                    {
-                        ["hit"] = 0,
-                        ["kills"] = 0,
-                        ["shot"] = 3,
-                        ["numHits"] = 0,
-                    }, -- end of ["AIM-9L"]
-                    ["Mk-82"] = 
-                    {
-                        ["hit"] = 0,
-                        ["kills"] = 0,
-                        ["shot"] = 2,
-                        ["numHits"] = 4,
-                    }, -- end of ["Mk-82"]
                     ["GBU-12"] = 
                     {
                         ["hit"] = 0,
@@ -9423,6 +9008,20 @@ stats =
                         ["shot"] = 2,
                         ["numHits"] = 0,
                     }, -- end of ["GBU-12"]
+                    ["unknown"] = 
+                    {
+                        ["hit"] = 0,
+                        ["kills"] = 0,
+                        ["shot"] = 0,
+                        ["numHits"] = 0,
+                    }, -- end of ["unknown"]
+                    ["AIM-9L"] = 
+                    {
+                        ["hit"] = 0,
+                        ["kills"] = 0,
+                        ["shot"] = 3,
+                        ["numHits"] = 0,
+                    }, -- end of ["AIM-9L"]
                     ["F-16CM bl.50"] = 
                     {
                         ["numHits"] = 0,
@@ -9527,6 +9126,25 @@ stats =
             [1] = "Jester1(Kingsnake)",
         }, -- end of ["names"]
     }, -- end of ["dc3ca91b5f21857fe8ff178b147b6fd3"]
+    ["b7928590583ec207b434e4d77453aed5"] = 
+    {
+        ["times"] = 
+        {
+            ["FA-18C_hornet"] = 
+            {
+                ["total"] = 5661.759,
+                ["inAir"] = 3836.122,
+            }, -- end of ["FA-18C_hornet"]
+        }, -- end of ["times"]
+        ["joinDate"] = 1621596091,
+        ["lastJoin"] = 1621710905,
+        ["id"] = 109,
+        ["names"] = 
+        {
+            [1] = "Lockey",
+            [2] = "Bobcat-1 Lockey",
+        }, -- end of ["names"]
+    }, -- end of ["b7928590583ec207b434e4d77453aed5"]
     ["722cf1692ccaba3c130c29609cbcb823"] = 
     {
         ["times"] = 
@@ -9620,32 +9238,12 @@ stats =
             [3] = "FS",
         }, -- end of ["names"]
     }, -- end of ["722cf1692ccaba3c130c29609cbcb823"]
-    ["b7928590583ec207b434e4d77453aed5"] = 
-    {
-        ["times"] = 
-        {
-            ["FA-18C_hornet"] = 
-            {
-                ["total"] = 5661.759,
-                ["inAir"] = 3836.122,
-            }, -- end of ["FA-18C_hornet"]
-        }, -- end of ["times"]
-        ["joinDate"] = 1621596091,
-        ["lastJoin"] = 1621710905,
-        ["id"] = 109,
-        ["names"] = 
-        {
-            [1] = "Lockey",
-            [2] = "Bobcat-1 Lockey",
-        }, -- end of ["names"]
-    }, -- end of ["b7928590583ec207b434e4d77453aed5"]
     ["66da139623630056fce2fbac07e5a50b"] = 
     {
         ["times"] = 
         {
             ["MiG-29G"] = 
             {
-                ["inAir"] = 480.297,
                 ["weapons"] = 
                 {
                     ["GSh-30-1"] = 
@@ -9656,6 +9254,7 @@ stats =
                         ["hit"] = 0,
                     }, -- end of ["GSh-30-1"]
                 }, -- end of ["weapons"]
+                ["total"] = 1200.597,
                 ["actions"] = 
                 {
                     ["losses"] = 
@@ -9665,7 +9264,7 @@ stats =
                         ["eject"] = 0,
                     }, -- end of ["losses"]
                 }, -- end of ["actions"]
-                ["total"] = 1200.597,
+                ["inAir"] = 480.297,
             }, -- end of ["MiG-29G"]
             ["Ka-50"] = 
             {
@@ -9683,7 +9282,6 @@ stats =
             }, -- end of ["Ka-50"]
             ["SpitfireLFMkIX"] = 
             {
-                ["inAir"] = 860.489,
                 ["weapons"] = 
                 {
                     ["Hispano Mk. II"] = 
@@ -9703,6 +9301,7 @@ stats =
                         ["numHits"] = 0,
                     }, -- end of ["Browning .303 Mk. II"]
                 }, -- end of ["weapons"]
+                ["total"] = 1460.771,
                 ["actions"] = 
                 {
                     ["losses"] = 
@@ -9712,7 +9311,7 @@ stats =
                         ["eject"] = 0,
                     }, -- end of ["losses"]
                 }, -- end of ["actions"]
-                ["total"] = 1460.771,
+                ["inAir"] = 860.489,
             }, -- end of ["SpitfireLFMkIX"]
             ["F-15C"] = 
             {
@@ -9879,7 +9478,6 @@ stats =
         {
             ["MiG-21Bis"] = 
             {
-                ["inAir"] = 2391.407,
                 ["weapons"] = 
                 {
                     ["GSH_23"] = 
@@ -9891,6 +9489,7 @@ stats =
                         ["numHits"] = 0,
                     }, -- end of ["GSH_23"]
                 }, -- end of ["weapons"]
+                ["total"] = 7033.648,
                 ["actions"] = 
                 {
                     ["losses"] = 
@@ -9900,7 +9499,7 @@ stats =
                         ["eject"] = 0,
                     }, -- end of ["losses"]
                 }, -- end of ["actions"]
-                ["total"] = 7033.648,
+                ["inAir"] = 2391.407,
             }, -- end of ["MiG-21Bis"]
             ["F-16C_50"] = 
             {
@@ -9986,13 +9585,6 @@ stats =
                         ["shot"] = 3,
                         ["numHits"] = 2,
                     }, -- end of ["AGM-65E"]
-                    ["F/A-18C Lot 20"] = 
-                    {
-                        ["numHits"] = 6,
-                        ["kills"] = 1,
-                        ["shot"] = 0,
-                        ["hit"] = 0,
-                    }, -- end of ["F/A-18C Lot 20"]
                     ["AIM-120C"] = 
                     {
                         ["hit"] = 0,
@@ -10000,6 +9592,13 @@ stats =
                         ["shot"] = 6,
                         ["numHits"] = 3,
                     }, -- end of ["AIM-120C"]
+                    ["F/A-18C Lot 20"] = 
+                    {
+                        ["numHits"] = 6,
+                        ["kills"] = 1,
+                        ["shot"] = 0,
+                        ["hit"] = 0,
+                    }, -- end of ["F/A-18C Lot 20"]
                     ["GBU-12"] = 
                     {
                         ["hit"] = 0,
@@ -10209,76 +9808,6 @@ stats =
             [1] = "Ronin 1-2 41SQN Patrick",
         }, -- end of ["names"]
     }, -- end of ["fc45bad20679f534e57f0f2005a880d2"]
-    ["c7bb99bb95435cc78bfcead6cc930a8a"] = 
-    {
-        ["times"] = 
-        {
-        }, -- end of ["times"]
-        ["joinDate"] = 1648012254,
-        ["lastJoin"] = 1648012254,
-        ["id"] = 134,
-        ["names"] = 
-        {
-            [1] = "Magnet",
-        }, -- end of ["names"]
-    }, -- end of ["c7bb99bb95435cc78bfcead6cc930a8a"]
-    ["610835940295c596a574f8c31c8d5e94"] = 
-    {
-        ["times"] = 
-        {
-            ["F-16C_50"] = 
-            {
-                ["total"] = 6492.219,
-                ["kills"] = 
-                {
-                    ["Planes"] = 
-                    {
-                        ["Fighters"] = 3,
-                        ["Bombers"] = 1,
-                        ["total"] = 4,
-                    }, -- end of ["Planes"]
-                }, -- end of ["kills"]
-                ["actions"] = 
-                {
-                    ["losses"] = 
-                    {
-                        ["pilotDeath"] = 2,
-                        ["crash"] = 0,
-                        ["eject"] = 0,
-                    }, -- end of ["losses"]
-                }, -- end of ["actions"]
-                ["inAir"] = 3001.218,
-                ["weapons"] = 
-                {
-                    ["AIM-120C"] = 
-                    {
-                        ["hit"] = 0,
-                        ["kills"] = 4,
-                        ["shot"] = 9,
-                        ["numHits"] = 4,
-                    }, -- end of ["AIM-120C"]
-                }, -- end of ["weapons"]
-                ["losses"] = 
-                {
-                    ["pilotDeath"] = 0,
-                    ["crash"] = 2,
-                    ["eject"] = 0,
-                }, -- end of ["losses"]
-                ["pvp"] = 
-                {
-                    ["losses"] = 2,
-                    ["kills"] = 4,
-                }, -- end of ["pvp"]
-            }, -- end of ["F-16C_50"]
-        }, -- end of ["times"]
-        ["joinDate"] = 1615057177,
-        ["lastJoin"] = 1615067165,
-        ["id"] = 93,
-        ["names"] = 
-        {
-            [1] = "JTFF | Wolf4Pm | 79th",
-        }, -- end of ["names"]
-    }, -- end of ["610835940295c596a574f8c31c8d5e94"]
     ["33088421d26097eef47da9a002488516"] = 
     {
         ["times"] = 
@@ -10367,6 +9896,76 @@ stats =
             [1] = "=JSW=Spanner",
         }, -- end of ["names"]
     }, -- end of ["33088421d26097eef47da9a002488516"]
+    ["610835940295c596a574f8c31c8d5e94"] = 
+    {
+        ["times"] = 
+        {
+            ["F-16C_50"] = 
+            {
+                ["total"] = 6492.219,
+                ["kills"] = 
+                {
+                    ["Planes"] = 
+                    {
+                        ["Fighters"] = 3,
+                        ["Bombers"] = 1,
+                        ["total"] = 4,
+                    }, -- end of ["Planes"]
+                }, -- end of ["kills"]
+                ["actions"] = 
+                {
+                    ["losses"] = 
+                    {
+                        ["pilotDeath"] = 2,
+                        ["crash"] = 0,
+                        ["eject"] = 0,
+                    }, -- end of ["losses"]
+                }, -- end of ["actions"]
+                ["inAir"] = 3001.218,
+                ["weapons"] = 
+                {
+                    ["AIM-120C"] = 
+                    {
+                        ["hit"] = 0,
+                        ["kills"] = 4,
+                        ["shot"] = 9,
+                        ["numHits"] = 4,
+                    }, -- end of ["AIM-120C"]
+                }, -- end of ["weapons"]
+                ["losses"] = 
+                {
+                    ["pilotDeath"] = 0,
+                    ["crash"] = 2,
+                    ["eject"] = 0,
+                }, -- end of ["losses"]
+                ["pvp"] = 
+                {
+                    ["losses"] = 2,
+                    ["kills"] = 4,
+                }, -- end of ["pvp"]
+            }, -- end of ["F-16C_50"]
+        }, -- end of ["times"]
+        ["joinDate"] = 1615057177,
+        ["lastJoin"] = 1615067165,
+        ["id"] = 93,
+        ["names"] = 
+        {
+            [1] = "JTFF | Wolf4Pm | 79th",
+        }, -- end of ["names"]
+    }, -- end of ["610835940295c596a574f8c31c8d5e94"]
+    ["c7bb99bb95435cc78bfcead6cc930a8a"] = 
+    {
+        ["times"] = 
+        {
+        }, -- end of ["times"]
+        ["joinDate"] = 1648012254,
+        ["lastJoin"] = 1648012254,
+        ["id"] = 134,
+        ["names"] = 
+        {
+            [1] = "Magnet",
+        }, -- end of ["names"]
+    }, -- end of ["c7bb99bb95435cc78bfcead6cc930a8a"]
     ["fd59b3086ac2fd73d0fcca08e5dd13a0"] = 
     {
         ["times"] = 
@@ -10383,34 +9982,6 @@ stats =
                         ["shot"] = 2,
                         ["hit"] = 0,
                     }, -- end of ["GBU-38"]
-                    ["AGM-65D"] = 
-                    {
-                        ["numHits"] = 0,
-                        ["kills"] = 0,
-                        ["shot"] = 6,
-                        ["hit"] = 0,
-                    }, -- end of ["AGM-65D"]
-                    ["GAU-8"] = 
-                    {
-                        ["numHits"] = 51,
-                        ["kills"] = 0,
-                        ["shot"] = 1644,
-                        ["hit"] = 0,
-                    }, -- end of ["GAU-8"]
-                    ["GBU-31(V)3/B"] = 
-                    {
-                        ["numHits"] = 0,
-                        ["kills"] = 0,
-                        ["shot"] = 4,
-                        ["hit"] = 0,
-                    }, -- end of ["GBU-31(V)3/B"]
-                    ["GBU-12"] = 
-                    {
-                        ["numHits"] = 1,
-                        ["kills"] = 1,
-                        ["shot"] = 2,
-                        ["hit"] = 0,
-                    }, -- end of ["GBU-12"]
                     ["CBU-87/CBU-103 CEM"] = 
                     {
                         ["numHits"] = 0,
@@ -10418,6 +9989,34 @@ stats =
                         ["shot"] = 4,
                         ["hit"] = 0,
                     }, -- end of ["CBU-87/CBU-103 CEM"]
+                    ["GAU-8"] = 
+                    {
+                        ["numHits"] = 51,
+                        ["kills"] = 0,
+                        ["shot"] = 1644,
+                        ["hit"] = 0,
+                    }, -- end of ["GAU-8"]
+                    ["GBU-12"] = 
+                    {
+                        ["numHits"] = 1,
+                        ["kills"] = 1,
+                        ["shot"] = 2,
+                        ["hit"] = 0,
+                    }, -- end of ["GBU-12"]
+                    ["GBU-31(V)3/B"] = 
+                    {
+                        ["numHits"] = 0,
+                        ["kills"] = 0,
+                        ["shot"] = 4,
+                        ["hit"] = 0,
+                    }, -- end of ["GBU-31(V)3/B"]
+                    ["AGM-65D"] = 
+                    {
+                        ["numHits"] = 0,
+                        ["kills"] = 0,
+                        ["shot"] = 6,
+                        ["hit"] = 0,
+                    }, -- end of ["AGM-65D"]
                     ["kamikaze"] = 
                     {
                         ["numHits"] = 0,
@@ -10448,11 +10047,6 @@ stats =
                     ["kills"] = 3,
                 }, -- end of ["pvp"]
             }, -- end of ["A-10C"]
-            ["Yak-52"] = 
-            {
-                ["inAir"] = 1060.465,
-                ["total"] = 2200.893,
-            }, -- end of ["Yak-52"]
             ["MiG-21Bis"] = 
             {
                 ["total"] = 1040.422,
@@ -10468,11 +10062,16 @@ stats =
                 }, -- end of ["weapons"]
                 ["inAir"] = 520.218,
             }, -- end of ["MiG-21Bis"]
-            ["F-14B RIO"] = 
+            ["Yak-52"] = 
             {
-                ["total"] = 10285.005,
-                ["inAir"] = 7463.746,
-            }, -- end of ["F-14B RIO"]
+                ["inAir"] = 1060.465,
+                ["total"] = 2200.893,
+            }, -- end of ["Yak-52"]
+            ["AV8BNA"] = 
+            {
+                ["total"] = 5162.445,
+                ["inAir"] = 3111.42,
+            }, -- end of ["AV8BNA"]
             ["FA-18C_hornet"] = 
             {
                 ["inAir"] = 590.271,
@@ -10480,7 +10079,6 @@ stats =
             }, -- end of ["FA-18C_hornet"]
             ["AJS37"] = 
             {
-                ["inAir"] = 340.173,
                 ["weapons"] = 
                 {
                     ["AKAN"] = 
@@ -10491,6 +10089,7 @@ stats =
                         ["hit"] = 0,
                     }, -- end of ["AKAN"]
                 }, -- end of ["weapons"]
+                ["total"] = 550.298,
                 ["actions"] = 
                 {
                     ["losses"] = 
@@ -10500,7 +10099,7 @@ stats =
                         ["eject"] = 1,
                     }, -- end of ["losses"]
                 }, -- end of ["actions"]
-                ["total"] = 550.298,
+                ["inAir"] = 340.173,
             }, -- end of ["AJS37"]
             ["F-14B"] = 
             {
@@ -10656,7 +10255,6 @@ stats =
             }, -- end of ["F-16C_50"]
             ["FW-190A8"] = 
             {
-                ["inAir"] = 810.45,
                 ["weapons"] = 
                 {
                     ["MG 131"] = 
@@ -10674,6 +10272,7 @@ stats =
                         ["hit"] = 0,
                     }, -- end of ["MG 151/20"]
                 }, -- end of ["weapons"]
+                ["total"] = 2080.992,
                 ["actions"] = 
                 {
                     ["losses"] = 
@@ -10683,13 +10282,13 @@ stats =
                         ["eject"] = 0,
                     }, -- end of ["losses"]
                 }, -- end of ["actions"]
-                ["total"] = 2080.992,
+                ["inAir"] = 810.45,
             }, -- end of ["FW-190A8"]
-            ["AV8BNA"] = 
+            ["F-14B RIO"] = 
             {
-                ["total"] = 5162.445,
-                ["inAir"] = 3111.42,
-            }, -- end of ["AV8BNA"]
+                ["total"] = 10285.005,
+                ["inAir"] = 7463.746,
+            }, -- end of ["F-14B RIO"]
         }, -- end of ["times"]
         ["joinDate"] = 1585426718,
         ["lastJoin"] = 1591474814,
@@ -10722,14 +10321,6 @@ stats =
                         ["Fighters"] = 1,
                     }, -- end of ["Planes"]
                 }, -- end of ["kills"]
-                ["inAir"] = 2092.331,
-                ["actions"] = 
-                {
-                    ["takeoff"] = 
-                    {
-                        ["airbase"] = 2,
-                    }, -- end of ["takeoff"]
-                }, -- end of ["actions"]
                 ["weapons"] = 
                 {
                     ["AIM-120C"] = 
@@ -10740,6 +10331,14 @@ stats =
                         ["numHits"] = 1,
                     }, -- end of ["AIM-120C"]
                 }, -- end of ["weapons"]
+                ["actions"] = 
+                {
+                    ["takeoff"] = 
+                    {
+                        ["airbase"] = 2,
+                    }, -- end of ["takeoff"]
+                }, -- end of ["actions"]
+                ["inAir"] = 2092.331,
             }, -- end of ["F-16C_50"]
         }, -- end of ["times"]
         ["joinDate"] = 1678565164,
@@ -10757,7 +10356,6 @@ stats =
             ["AH-64D_BLK_II"] = 
             {
                 ["total"] = 3915.668,
-                ["inAir"] = 2433.752,
                 ["weapons"] = 
                 {
                     ["M230_new"] = 
@@ -10777,6 +10375,7 @@ stats =
                         ["hit"] = 2,
                     }, -- end of ["Hydra 70 M282 MPP"]
                 }, -- end of ["weapons"]
+                ["inAir"] = 2433.752,
                 ["actions"] = 
                 {
                     ["landing"] = 
@@ -10829,6 +10428,7 @@ stats =
             ["AH-64D_BLK_II Copilot"] = 
             {
                 ["total"] = 980.524,
+                ["inAir"] = 980.524,
                 ["weapons"] = 
                 {
                     ["AGM-114K"] = 
@@ -10847,7 +10447,6 @@ stats =
                         ["hit"] = 0,
                     }, -- end of ["unknown"]
                 }, -- end of ["weapons"]
-                ["inAir"] = 980.524,
                 ["actions"] = 
                 {
                     ["losses"] = 
@@ -10878,7 +10477,6 @@ stats =
             }, -- end of ["AH-64D_BLK_II Copilot"]
             ["T-45"] = 
             {
-                ["total"] = 7848.689,
                 ["weapons"] = 
                 {
                     ["BDU-33"] = 
@@ -10889,6 +10487,7 @@ stats =
                         ["hit"] = 0,
                     }, -- end of ["BDU-33"]
                 }, -- end of ["weapons"]
+                ["inAir"] = 5816.413,
                 ["actions"] = 
                 {
                     ["landing"] = 
@@ -10900,11 +10499,11 @@ stats =
                         ["airbase"] = 4,
                     }, -- end of ["takeoff"]
                 }, -- end of ["actions"]
-                ["inAir"] = 5816.413,
+                ["total"] = 7848.689,
             }, -- end of ["T-45"]
         }, -- end of ["times"]
         ["joinDate"] = 1677098088,
-        ["lastJoin"] = 1701119826,
+        ["lastJoin"] = 1705351862,
         ["id"] = 167,
         ["names"] = 
         {
@@ -11073,16 +10672,7 @@ stats =
                         ["SAM"] = 1,
                     }, -- end of ["Ground Units"]
                 }, -- end of ["kills"]
-                ["weapons"] = 
-                {
-                    ["GBU-38"] = 
-                    {
-                        ["hit"] = 1,
-                        ["kills"] = 1,
-                        ["shot"] = 4,
-                        ["numHits"] = 1,
-                    }, -- end of ["GBU-38"]
-                }, -- end of ["weapons"]
+                ["inAir"] = 4264.3,
                 ["actions"] = 
                 {
                     ["landing"] = 
@@ -11094,7 +10684,16 @@ stats =
                         ["airbase"] = 2,
                     }, -- end of ["takeoff"]
                 }, -- end of ["actions"]
-                ["inAir"] = 4264.3,
+                ["weapons"] = 
+                {
+                    ["GBU-38"] = 
+                    {
+                        ["hit"] = 1,
+                        ["kills"] = 1,
+                        ["shot"] = 4,
+                        ["numHits"] = 1,
+                    }, -- end of ["GBU-38"]
+                }, -- end of ["weapons"]
             }, -- end of ["FA-18C_hornet"]
         }, -- end of ["times"]
         ["joinDate"] = 1670270446,
@@ -11144,6 +10743,15 @@ stats =
             }, -- end of ["T-45"]
             ["AH-64D_BLK_II Copilot"] = 
             {
+                ["inAir"] = 700.661,
+                ["total"] = 1381.362,
+                ["actions"] = 
+                {
+                    ["takeoff"] = 
+                    {
+                        ["airbase"] = 2,
+                    }, -- end of ["takeoff"]
+                }, -- end of ["actions"]
                 ["weapons"] = 
                 {
                     ["M230_new"] = 
@@ -11154,15 +10762,6 @@ stats =
                         ["hit"] = 0,
                     }, -- end of ["M230_new"]
                 }, -- end of ["weapons"]
-                ["inAir"] = 700.661,
-                ["actions"] = 
-                {
-                    ["takeoff"] = 
-                    {
-                        ["airbase"] = 2,
-                    }, -- end of ["takeoff"]
-                }, -- end of ["actions"]
-                ["total"] = 1381.362,
             }, -- end of ["AH-64D_BLK_II Copilot"]
             ["UH-1H"] = 
             {
@@ -11176,7 +10775,7 @@ stats =
             }, -- end of ["T-45 Copilot"]
         }, -- end of ["times"]
         ["joinDate"] = 1652971795,
-        ["lastJoin"] = 1700661353,
+        ["lastJoin"] = 1704902378,
         ["id"] = 137,
         ["names"] = 
         {
@@ -11299,10 +10898,10 @@ stats =
                 {
                     ["Ground Units"] = 
                     {
-                        ["SAM"] = 2,
                         ["total"] = 19,
-                        ["Unarmored"] = 10,
                         ["Infantry"] = 7,
+                        ["Unarmored"] = 10,
+                        ["SAM"] = 2,
                     }, -- end of ["Ground Units"]
                     ["Buildings"] = 
                     {
@@ -11319,20 +10918,6 @@ stats =
                         ["shot"] = 66,
                         ["hit"] = 0,
                     }, -- end of ["SNEB68_EAP"]
-                    ["GIAT_M621G"] = 
-                    {
-                        ["numHits"] = 344,
-                        ["kills"] = 16,
-                        ["shot"] = 1211,
-                        ["hit"] = 0,
-                    }, -- end of ["GIAT_M621G"]
-                    ["Mk-82"] = 
-                    {
-                        ["numHits"] = 7,
-                        ["kills"] = 0,
-                        ["shot"] = 0,
-                        ["hit"] = 0,
-                    }, -- end of ["Mk-82"]
                     ["SNEB68_WP"] = 
                     {
                         ["hit"] = 0,
@@ -11340,6 +10925,13 @@ stats =
                         ["shot"] = 14,
                         ["numHits"] = 0,
                     }, -- end of ["SNEB68_WP"]
+                    ["Mk-82"] = 
+                    {
+                        ["numHits"] = 7,
+                        ["kills"] = 0,
+                        ["shot"] = 0,
+                        ["hit"] = 0,
+                    }, -- end of ["Mk-82"]
                     ["kamikaze"] = 
                     {
                         ["numHits"] = 6,
@@ -11347,6 +10939,13 @@ stats =
                         ["shot"] = 0,
                         ["hit"] = 0,
                     }, -- end of ["kamikaze"]
+                    ["GIAT_M621G"] = 
+                    {
+                        ["numHits"] = 344,
+                        ["kills"] = 16,
+                        ["shot"] = 1211,
+                        ["hit"] = 0,
+                    }, -- end of ["GIAT_M621G"]
                 }, -- end of ["weapons"]
                 ["inAir"] = 25831.143,
                 ["actions"] = 
@@ -11451,13 +11050,13 @@ stats =
                         ["shot"] = 10,
                         ["numHits"] = 9,
                     }, -- end of ["Mk-20 Rockeye"]
-                    ["AGM-65L"] = 
+                    ["Mk-82AIR"] = 
                     {
                         ["numHits"] = 2,
                         ["kills"] = 0,
                         ["shot"] = 2,
                         ["hit"] = 0,
-                    }, -- end of ["AGM-65L"]
+                    }, -- end of ["Mk-82AIR"]
                     ["unknown"] = 
                     {
                         ["hit"] = 0,
@@ -11472,13 +11071,13 @@ stats =
                         ["shot"] = 49,
                         ["numHits"] = 0,
                     }, -- end of ["HYDRA-70 M257"]
-                    ["Mk-82AIR"] = 
+                    ["AGM-65L"] = 
                     {
                         ["numHits"] = 2,
                         ["kills"] = 0,
                         ["shot"] = 2,
                         ["hit"] = 0,
-                    }, -- end of ["Mk-82AIR"]
+                    }, -- end of ["AGM-65L"]
                     ["AGM-65G"] = 
                     {
                         ["hit"] = 0,
@@ -11514,13 +11113,13 @@ stats =
                         ["shot"] = 0,
                         ["numHits"] = 2,
                     }, -- end of ["kamikaze"]
-                    ["Hydra 70 M274 TP-SM"] = 
+                    ["Hydra 70 M151 HE"] = 
                     {
                         ["numHits"] = 0,
                         ["kills"] = 0,
-                        ["shot"] = 14,
+                        ["shot"] = 7,
                         ["hit"] = 0,
-                    }, -- end of ["Hydra 70 M274 TP-SM"]
+                    }, -- end of ["Hydra 70 M151 HE"]
                     ["BDU-33"] = 
                     {
                         ["hit"] = 0,
@@ -11550,13 +11149,13 @@ stats =
                         ["shot"] = 132,
                         ["numHits"] = 19,
                     }, -- end of ["Mk-82 SnakeEye"]
-                    ["Hydra 70 M151 HE"] = 
+                    ["ROCKEYE"] = 
                     {
-                        ["numHits"] = 0,
-                        ["kills"] = 0,
-                        ["shot"] = 7,
                         ["hit"] = 0,
-                    }, -- end of ["Hydra 70 M151 HE"]
+                        ["kills"] = 0,
+                        ["shot"] = 0,
+                        ["numHits"] = 1,
+                    }, -- end of ["ROCKEYE"]
                     ["HYDRA-70 MK5"] = 
                     {
                         ["kills"] = 15,
@@ -11615,13 +11214,13 @@ stats =
                         ["shot"] = 7,
                         ["numHits"] = 3,
                     }, -- end of ["HYDRA-70 MPP APKWS"]
-                    ["ROCKEYE"] = 
+                    ["Hydra 70 M274 TP-SM"] = 
                     {
-                        ["hit"] = 0,
+                        ["numHits"] = 0,
                         ["kills"] = 0,
-                        ["shot"] = 0,
-                        ["numHits"] = 1,
-                    }, -- end of ["ROCKEYE"]
+                        ["shot"] = 14,
+                        ["hit"] = 0,
+                    }, -- end of ["Hydra 70 M274 TP-SM"]
                     ["shot"] = 10,
                     ["AGM-65F"] = 
                     {
@@ -11705,8 +11304,25 @@ stats =
             }, -- end of ["T-45 Copilot"]
             ["AH-64D_BLK_II"] = 
             {
-                ["inAir"] = 3953.404,
                 ["total"] = 7736.917,
+                ["weapons"] = 
+                {
+                    ["M230_new"] = 
+                    {
+                        ["kills"] = 0,
+                        ["shot"] = 331,
+                        ["numHits"] = 18,
+                        ["assist"] = 1,
+                        ["hit"] = 0,
+                    }, -- end of ["M230_new"]
+                    ["AGM-114K"] = 
+                    {
+                        ["hit"] = 0,
+                        ["kills"] = 0,
+                        ["shot"] = 3,
+                        ["numHits"] = 0,
+                    }, -- end of ["AGM-114K"]
+                }, -- end of ["weapons"]
                 ["actions"] = 
                 {
                     ["landing"] = 
@@ -11726,24 +11342,7 @@ stats =
                         ["crashLanding"] = 1,
                     }, -- end of ["losses"]
                 }, -- end of ["actions"]
-                ["weapons"] = 
-                {
-                    ["M230_new"] = 
-                    {
-                        ["kills"] = 0,
-                        ["shot"] = 331,
-                        ["numHits"] = 18,
-                        ["assist"] = 1,
-                        ["hit"] = 0,
-                    }, -- end of ["M230_new"]
-                    ["AGM-114K"] = 
-                    {
-                        ["hit"] = 0,
-                        ["kills"] = 0,
-                        ["shot"] = 3,
-                        ["numHits"] = 0,
-                    }, -- end of ["AGM-114K"]
-                }, -- end of ["weapons"]
+                ["inAir"] = 3953.404,
             }, -- end of ["AH-64D_BLK_II"]
             ["SA342Mistral"] = 
             {
@@ -11759,6 +11358,33 @@ stats =
                 }, -- end of ["actions"]
                 ["inAir"] = 8713.576,
             }, -- end of ["SA342Mistral"]
+            ["AH-64D_BLK_II Copilot"] = 
+            {
+                ["total"] = 3511.936,
+                ["inAir"] = 1970.915,
+                ["actions"] = 
+                {
+                    ["landing"] = 
+                    {
+                        ["airbase"] = 2,
+                    }, -- end of ["landing"]
+                    ["takeoff"] = 
+                    {
+                        ["airbase"] = 4,
+                    }, -- end of ["takeoff"]
+                }, -- end of ["actions"]
+                ["weapons"] = 
+                {
+                    ["M230_new"] = 
+                    {
+                        ["kills"] = 0,
+                        ["shot"] = 8,
+                        ["hit"] = 0,
+                        ["gun"] = true,
+                        ["numHits"] = 0,
+                    }, -- end of ["M230_new"]
+                }, -- end of ["weapons"]
+            }, -- end of ["AH-64D_BLK_II Copilot"]
             ["Mi-8MT"] = 
             {
                 ["total"] = 41808.1,
@@ -11851,36 +11477,8 @@ stats =
                     ["kills"] = 4,
                 }, -- end of ["pvp"]
             }, -- end of ["Mi-8MT"]
-            ["AH-64D_BLK_II Copilot"] = 
-            {
-                ["weapons"] = 
-                {
-                    ["M230_new"] = 
-                    {
-                        ["kills"] = 0,
-                        ["shot"] = 8,
-                        ["hit"] = 0,
-                        ["gun"] = true,
-                        ["numHits"] = 0,
-                    }, -- end of ["M230_new"]
-                }, -- end of ["weapons"]
-                ["total"] = 3511.936,
-                ["actions"] = 
-                {
-                    ["landing"] = 
-                    {
-                        ["airbase"] = 2,
-                    }, -- end of ["landing"]
-                    ["takeoff"] = 
-                    {
-                        ["airbase"] = 4,
-                    }, -- end of ["takeoff"]
-                }, -- end of ["actions"]
-                ["inAir"] = 1970.915,
-            }, -- end of ["AH-64D_BLK_II Copilot"]
             ["T-45"] = 
             {
-                ["inAir"] = 7836.266,
                 ["weapons"] = 
                 {
                     ["HYDRA-70 M274"] = 
@@ -11898,6 +11496,7 @@ stats =
                         ["numHits"] = 0,
                     }, -- end of ["BDU-33"]
                 }, -- end of ["weapons"]
+                ["total"] = 14242.384,
                 ["actions"] = 
                 {
                     ["landing"] = 
@@ -11915,11 +11514,11 @@ stats =
                         ["eject"] = 0,
                     }, -- end of ["losses"]
                 }, -- end of ["actions"]
-                ["total"] = 14242.384,
+                ["inAir"] = 7836.266,
             }, -- end of ["T-45"]
         }, -- end of ["times"]
         ["joinDate"] = 1585536841,
-        ["lastJoin"] = 1704503625,
+        ["lastJoin"] = 1705353127,
         ["id"] = 17,
         ["names"] = 
         {
@@ -11944,12 +11543,13 @@ stats =
         {
         }, -- end of ["times"]
         ["joinDate"] = 1685994370,
-        ["lastJoin"] = 1703283930,
+        ["lastJoin"] = 1705353169,
         ["id"] = 219,
         ["names"] = 
         {
             [1] = "[BSD] DJ",
             [2] = "DJ",
+            [3] = "=JSW= DJ",
         }, -- end of ["names"]
     }, -- end of ["e698907134a269f5ee2c4155cb589540"]
     ["813759da956084866e9e72540e544b68"] = 
@@ -12011,6 +11611,28 @@ stats =
                         ["total"] = 20,
                     }, -- end of ["Ground Units"]
                 }, -- end of ["kills"]
+                ["inAir"] = 7225.347,
+                ["actions"] = 
+                {
+                    ["lostTo"] = 
+                    {
+                        ["Ground Units"] = 
+                        {
+                            ["IFVs"] = 3,
+                            ["AAA"] = 1,
+                        }, -- end of ["Ground Units"]
+                    }, -- end of ["lostTo"]
+                    ["takeoff"] = 
+                    {
+                        ["austere"] = 4,
+                    }, -- end of ["takeoff"]
+                    ["losses"] = 
+                    {
+                        ["pilotDeath"] = 3,
+                        ["crash"] = 4,
+                        ["eject"] = 0,
+                    }, -- end of ["losses"]
+                }, -- end of ["actions"]
                 ["weapons"] = 
                 {
                     ["2A42"] = 
@@ -12043,28 +11665,6 @@ stats =
                         ["numHits"] = 0,
                     }, -- end of ["S-8KOM"]
                 }, -- end of ["weapons"]
-                ["actions"] = 
-                {
-                    ["lostTo"] = 
-                    {
-                        ["Ground Units"] = 
-                        {
-                            ["IFVs"] = 3,
-                            ["AAA"] = 1,
-                        }, -- end of ["Ground Units"]
-                    }, -- end of ["lostTo"]
-                    ["takeoff"] = 
-                    {
-                        ["austere"] = 4,
-                    }, -- end of ["takeoff"]
-                    ["losses"] = 
-                    {
-                        ["pilotDeath"] = 3,
-                        ["crash"] = 4,
-                        ["eject"] = 0,
-                    }, -- end of ["losses"]
-                }, -- end of ["actions"]
-                ["inAir"] = 7225.347,
             }, -- end of ["Ka-50_3"]
             ["AH-64D_BLK_II"] = 
             {
@@ -12089,36 +11689,6 @@ stats =
                         ["Static"] = 7,
                     }, -- end of ["Buildings"]
                 }, -- end of ["kills"]
-                ["inAir"] = 30291.47,
-                ["actions"] = 
-                {
-                    ["landing"] = 
-                    {
-                        ["austere"] = 3,
-                        ["airbase"] = 5,
-                        ["FARP"] = 4,
-                        ["landedWhileDamaged"] = 1,
-                    }, -- end of ["landing"]
-                    ["takeoff"] = 
-                    {
-                        ["austere"] = 7,
-                        ["airbase"] = 18,
-                    }, -- end of ["takeoff"]
-                    ["losses"] = 
-                    {
-                        ["pilotDeath"] = 2,
-                        ["crash"] = 1,
-                        ["eject"] = 0,
-                        ["pilotError"] = 1,
-                    }, -- end of ["losses"]
-                    ["lostTo"] = 
-                    {
-                        ["Ground Units"] = 
-                        {
-                            ["Tanks"] = 1,
-                        }, -- end of ["Ground Units"]
-                    }, -- end of ["lostTo"]
-                }, -- end of ["actions"]
                 ["weapons"] = 
                 {
                     ["Hydra 70 M151 HE"] = 
@@ -12178,6 +11748,36 @@ stats =
                         ["numHits"] = 37,
                     }, -- end of ["M230_new"]
                 }, -- end of ["weapons"]
+                ["actions"] = 
+                {
+                    ["landing"] = 
+                    {
+                        ["austere"] = 3,
+                        ["airbase"] = 5,
+                        ["FARP"] = 4,
+                        ["landedWhileDamaged"] = 1,
+                    }, -- end of ["landing"]
+                    ["takeoff"] = 
+                    {
+                        ["austere"] = 7,
+                        ["airbase"] = 18,
+                    }, -- end of ["takeoff"]
+                    ["losses"] = 
+                    {
+                        ["pilotDeath"] = 2,
+                        ["crash"] = 1,
+                        ["eject"] = 0,
+                        ["pilotError"] = 1,
+                    }, -- end of ["losses"]
+                    ["lostTo"] = 
+                    {
+                        ["Ground Units"] = 
+                        {
+                            ["Tanks"] = 1,
+                        }, -- end of ["Ground Units"]
+                    }, -- end of ["lostTo"]
+                }, -- end of ["actions"]
+                ["inAir"] = 30291.47,
             }, -- end of ["AH-64D_BLK_II"]
             ["AV8BNA"] = 
             {
@@ -12231,13 +11831,6 @@ stats =
                         ["shot"] = 93,
                         ["hit"] = 0,
                     }, -- end of ["Mk-82 SnakeEye"]
-                    ["GBU-12"] = 
-                    {
-                        ["hit"] = 0,
-                        ["kills"] = 7,
-                        ["shot"] = 12,
-                        ["numHits"] = 7,
-                    }, -- end of ["GBU-12"]
                     ["GAU_12"] = 
                     {
                         ["hit"] = 0,
@@ -12245,6 +11838,13 @@ stats =
                         ["shot"] = 474,
                         ["numHits"] = 482,
                     }, -- end of ["GAU_12"]
+                    ["GBU-12"] = 
+                    {
+                        ["hit"] = 0,
+                        ["kills"] = 7,
+                        ["shot"] = 12,
+                        ["numHits"] = 7,
+                    }, -- end of ["GBU-12"]
                     ["AGM-65G"] = 
                     {
                         ["hit"] = 0,
@@ -12331,20 +11931,6 @@ stats =
                         ["Static"] = 2,
                     }, -- end of ["Buildings"]
                 }, -- end of ["kills"]
-                ["inAir"] = 15206.873,
-                ["actions"] = 
-                {
-                    ["landing"] = 
-                    {
-                        ["austere"] = 2,
-                        ["airbase"] = 2,
-                    }, -- end of ["landing"]
-                    ["takeoff"] = 
-                    {
-                        ["austere"] = 3,
-                        ["airbase"] = 8,
-                    }, -- end of ["takeoff"]
-                }, -- end of ["actions"]
                 ["weapons"] = 
                 {
                     ["Hydra 70 M151 HE"] = 
@@ -12377,6 +11963,20 @@ stats =
                         ["numHits"] = 6,
                     }, -- end of ["unknown"]
                 }, -- end of ["weapons"]
+                ["actions"] = 
+                {
+                    ["landing"] = 
+                    {
+                        ["austere"] = 2,
+                        ["airbase"] = 2,
+                    }, -- end of ["landing"]
+                    ["takeoff"] = 
+                    {
+                        ["austere"] = 3,
+                        ["airbase"] = 8,
+                    }, -- end of ["takeoff"]
+                }, -- end of ["actions"]
+                ["inAir"] = 15206.873,
             }, -- end of ["AH-64D_BLK_II Copilot"]
             ["F-14B"] = 
             {
@@ -12390,10 +11990,10 @@ stats =
                 {
                     ["Ground Units"] = 
                     {
-                        ["total"] = 11,
                         ["Infantry"] = 7,
-                        ["Unarmored"] = 3,
                         ["SAM"] = 1,
+                        ["Unarmored"] = 3,
+                        ["total"] = 11,
                     }, -- end of ["Ground Units"]
                     ["Planes"] = 
                     {
@@ -12435,20 +12035,6 @@ stats =
                         ["shot"] = 6,
                         ["hit"] = 0,
                     }, -- end of ["AGM-88C"]
-                    ["AGM-154A"] = 
-                    {
-                        ["hit"] = 0,
-                        ["kills"] = 0,
-                        ["shot"] = 4,
-                        ["numHits"] = 0,
-                    }, -- end of ["AGM-154A"]
-                    ["GBU-10"] = 
-                    {
-                        ["hit"] = 0,
-                        ["kills"] = 0,
-                        ["shot"] = 4,
-                        ["numHits"] = 6,
-                    }, -- end of ["GBU-10"]
                     ["AIM-9X"] = 
                     {
                         ["hit"] = 1,
@@ -12456,6 +12042,20 @@ stats =
                         ["shot"] = 11,
                         ["numHits"] = 8,
                     }, -- end of ["AIM-9X"]
+                    ["GBU-10"] = 
+                    {
+                        ["hit"] = 0,
+                        ["kills"] = 0,
+                        ["shot"] = 4,
+                        ["numHits"] = 6,
+                    }, -- end of ["GBU-10"]
+                    ["AGM-154A"] = 
+                    {
+                        ["hit"] = 0,
+                        ["kills"] = 0,
+                        ["shot"] = 4,
+                        ["numHits"] = 0,
+                    }, -- end of ["AGM-154A"]
                     ["Mk-82 SnakeEye"] = 
                     {
                         ["numHits"] = 34,
@@ -12575,7 +12175,7 @@ stats =
             }, -- end of ["T-45 Copilot"]
         }, -- end of ["times"]
         ["joinDate"] = 1585228899,
-        ["lastJoin"] = 1701467920,
+        ["lastJoin"] = 1705355243,
         ["id"] = 3,
         ["names"] = 
         {
@@ -12591,17 +12191,7 @@ stats =
         {
             ["F-16C_50"] = 
             {
-                ["total"] = 9304.238,
                 ["inAir"] = 3546.385,
-                ["actions"] = 
-                {
-                    ["losses"] = 
-                    {
-                        ["pilotDeath"] = 0,
-                        ["crash"] = 1,
-                        ["eject"] = 0,
-                    }, -- end of ["losses"]
-                }, -- end of ["actions"]
                 ["weapons"] = 
                 {
                     ["AIM-120C-5"] = 
@@ -12612,6 +12202,16 @@ stats =
                         ["numHits"] = 0,
                     }, -- end of ["AIM-120C-5"]
                 }, -- end of ["weapons"]
+                ["actions"] = 
+                {
+                    ["losses"] = 
+                    {
+                        ["pilotDeath"] = 0,
+                        ["crash"] = 1,
+                        ["eject"] = 0,
+                    }, -- end of ["losses"]
+                }, -- end of ["actions"]
+                ["total"] = 9304.238,
             }, -- end of ["F-16C_50"]
         }, -- end of ["times"]
         ["joinDate"] = 1621672067,
@@ -12893,7 +12493,7 @@ stats =
             }, -- end of ["T-45"]
         }, -- end of ["times"]
         ["joinDate"] = 1585427330,
-        ["lastJoin"] = 1700599867,
+        ["lastJoin"] = 1704836542,
         ["id"] = 13,
         ["names"] = 
         {
@@ -13016,19 +12616,6 @@ stats =
                         ["Static"] = 1,
                     }, -- end of ["Buildings"]
                 }, -- end of ["kills"]
-                ["inAir"] = 5585.621,
-                ["actions"] = 
-                {
-                    ["landing"] = 
-                    {
-                        ["airbase"] = 1,
-                        ["landedWhileDamaged"] = 1,
-                    }, -- end of ["landing"]
-                    ["takeoff"] = 
-                    {
-                        ["airbase"] = 2,
-                    }, -- end of ["takeoff"]
-                }, -- end of ["actions"]
                 ["weapons"] = 
                 {
                     ["GIAT_M621G"] = 
@@ -13046,6 +12633,19 @@ stats =
                         ["numHits"] = 11,
                     }, -- end of ["SNEB Type 257 H1 HE/Frag Lg Whd"]
                 }, -- end of ["weapons"]
+                ["actions"] = 
+                {
+                    ["landing"] = 
+                    {
+                        ["airbase"] = 1,
+                        ["landedWhileDamaged"] = 1,
+                    }, -- end of ["landing"]
+                    ["takeoff"] = 
+                    {
+                        ["airbase"] = 2,
+                    }, -- end of ["takeoff"]
+                }, -- end of ["actions"]
+                ["inAir"] = 5585.621,
             }, -- end of ["SA342L"]
             ["SA342Mistral"] = 
             {
@@ -13103,13 +12703,13 @@ stats =
                         ["shot"] = 2,
                         ["hit"] = 0,
                     }, -- end of ["AIM_54A_Mk60"]
-                    ["AIM-7MH"] = 
+                    ["Mk-82"] = 
                     {
-                        ["numHits"] = 1,
-                        ["kills"] = 0,
-                        ["shot"] = 4,
                         ["hit"] = 0,
-                    }, -- end of ["AIM-7MH"]
+                        ["kills"] = 0,
+                        ["shot"] = 8,
+                        ["numHits"] = 0,
+                    }, -- end of ["Mk-82"]
                     ["Mk-84"] = 
                     {
                         ["numHits"] = 2,
@@ -13131,13 +12731,13 @@ stats =
                         ["shot"] = 4,
                         ["hit"] = 0,
                     }, -- end of ["GBU-12"]
-                    ["Mk-82"] = 
+                    ["AIM-7MH"] = 
                     {
-                        ["hit"] = 0,
+                        ["numHits"] = 1,
                         ["kills"] = 0,
-                        ["shot"] = 8,
-                        ["numHits"] = 0,
-                    }, -- end of ["Mk-82"]
+                        ["shot"] = 4,
+                        ["hit"] = 0,
+                    }, -- end of ["AIM-7MH"]
                     ["kamikaze"] = 
                     {
                         ["numHits"] = 0,
@@ -13222,7 +12822,7 @@ stats =
             }, -- end of ["T-45"]
         }, -- end of ["times"]
         ["joinDate"] = 1585257413,
-        ["lastJoin"] = 1704486163,
+        ["lastJoin"] = 1705097676,
         ["id"] = 6,
         ["names"] = 
         {
@@ -13354,67 +12954,27 @@ stats =
             [1] = "evilivan",
         }, -- end of ["names"]
     }, -- end of ["4ee1120a7f1d2cb2da38f1b5d9864a82"]
-    ["23fb9576d399a1082fa7f4fb282f970b"] = 
+    ["0ed16e2fab622be7be70038750d3f3bf"] = 
     {
         ["times"] = 
         {
-            ["AV8BNA"] = 
-            {
-                ["total"] = 8342.663,
-                ["inAir"] = 4021.405,
-                ["weapons"] = 
-                {
-                    ["GAU_12"] = 
-                    {
-                        ["hit"] = 0,
-                        ["kills"] = 0,
-                        ["shot"] = 73,
-                        ["numHits"] = 0,
-                    }, -- end of ["GAU_12"]
-                    ["kamikaze"] = 
-                    {
-                        ["hit"] = 0,
-                        ["kills"] = 1,
-                        ["shot"] = 0,
-                        ["numHits"] = 4,
-                    }, -- end of ["kamikaze"]
-                    ["Mk-82 SnakeEye"] = 
-                    {
-                        ["hit"] = 0,
-                        ["kills"] = 0,
-                        ["shot"] = 10,
-                        ["numHits"] = 0,
-                    }, -- end of ["Mk-82 SnakeEye"]
-                }, -- end of ["weapons"]
-                ["kills"] = 
-                {
-                    ["Buildings"] = 
-                    {
-                        ["Static"] = 1,
-                        ["total"] = 1,
-                    }, -- end of ["Buildings"]
-                }, -- end of ["kills"]
-                ["pvp"] = 
-                {
-                    ["kills"] = 1,
-                }, -- end of ["pvp"]
-            }, -- end of ["AV8BNA"]
         }, -- end of ["times"]
-        ["joinDate"] = 1615057806,
-        ["lastJoin"] = 1615066768,
-        ["id"] = 95,
+        ["joinDate"] = 1699918699,
+        ["lastJoin"] = 1701985636,
+        ["id"] = 249,
         ["names"] = 
         {
-            [1] = "{TFT} LynxOfTheSky >>>*",
+            [1] = "Fisher",
+            [2] = "=JSW= Fisher",
         }, -- end of ["names"]
-    }, -- end of ["23fb9576d399a1082fa7f4fb282f970b"]
+    }, -- end of ["0ed16e2fab622be7be70038750d3f3bf"]
     ["8ee67d60c11aede8fed0bb82b90072ce"] = 
     {
         ["times"] = 
         {
         }, -- end of ["times"]
         ["joinDate"] = 1695303914,
-        ["lastJoin"] = 1704409089,
+        ["lastJoin"] = 1705272039,
         ["id"] = 245,
         ["names"] = 
         {
@@ -13561,7 +13121,6 @@ stats =
             ["F-16C_50"] = 
             {
                 ["total"] = 2962.045,
-                ["inAir"] = 1981.384,
                 ["weapons"] = 
                 {
                     ["AIM-9M"] = 
@@ -13572,6 +13131,7 @@ stats =
                         ["hit"] = 2,
                     }, -- end of ["AIM-9M"]
                 }, -- end of ["weapons"]
+                ["inAir"] = 1981.384,
                 ["actions"] = 
                 {
                     ["landing"] = 
@@ -13595,7 +13155,7 @@ stats =
         }, -- end of ["times"]
         ["joinDate"] = 1668941178,
         ["id"] = 151,
-        ["lastJoin"] = 1701465137,
+        ["lastJoin"] = 1704836837,
         ["pvp"] = 
         {
             ["F-16C_50"] = 
@@ -13617,6 +13177,26 @@ stats =
             [1] = "Hawk 3-4 VAF McN@$ty",
         }, -- end of ["names"]
     }, -- end of ["7a0b0f33d467c48a095ea9eac4f836d5"]
+    ["7430c2504ffedcacdfc682c32a3abd15"] = 
+    {
+        ["times"] = 
+        {
+            ["F-16C_50"] = 
+            {
+                ["inAir"] = 0,
+                ["total"] = 220.253,
+            }, -- end of ["F-16C_50"]
+        }, -- end of ["times"]
+        ["joinDate"] = 1678392944,
+        ["lastJoin"] = 1693081420,
+        ["id"] = 178,
+        ["names"] = 
+        {
+            [1] = "Claw 1-2 | [VAF]Piggler",
+            [2] = "Stroke 2 [VAF]Piggler",
+            [3] = "Tyrant 3-4 | [VAF]Piggler",
+        }, -- end of ["names"]
+    }, -- end of ["7430c2504ffedcacdfc682c32a3abd15"]
     ["2d65ee9349e5cd50088b83a75a26c53d"] = 
     {
         ["times"] = 
@@ -13646,190 +13226,66 @@ stats =
             [1] = "=JSW= Ripper66",
         }, -- end of ["names"]
     }, -- end of ["2d65ee9349e5cd50088b83a75a26c53d"]
-    ["7430c2504ffedcacdfc682c32a3abd15"] = 
+    ["a731686bbb69b87e11dff7b61b6f88c6"] = 
     {
-        ["times"] = 
-        {
-            ["F-16C_50"] = 
-            {
-                ["inAir"] = 0,
-                ["total"] = 220.253,
-            }, -- end of ["F-16C_50"]
-        }, -- end of ["times"]
-        ["joinDate"] = 1678392944,
-        ["lastJoin"] = 1693081420,
-        ["id"] = 178,
         ["names"] = 
         {
-            [1] = "Claw 1-2 | [VAF]Piggler",
-            [2] = "Stroke 2 [VAF]Piggler",
-            [3] = "Tyrant 3-4 | [VAF]Piggler",
+            [1] = "Gryphon",
         }, -- end of ["names"]
-    }, -- end of ["7430c2504ffedcacdfc682c32a3abd15"]
-    ["908e6e90e87d6f8fda2c2ff0f9002aa9"] = 
-    {
         ["times"] = 
         {
-            ["AH-64D_BLK_II"] = 
+            ["MiG-29S"] = 
             {
-                ["inAir"] = 2472.384,
-                ["total"] = 3693.724,
-                ["actions"] = 
-                {
-                    ["landing"] = 
-                    {
-                        ["airbase"] = 1,
-                    }, -- end of ["landing"]
-                    ["takeoff"] = 
-                    {
-                        ["airbase"] = 4,
-                    }, -- end of ["takeoff"]
-                    ["losses"] = 
-                    {
-                        ["pilotDeath"] = 0,
-                        ["crash"] = 1,
-                        ["eject"] = 0,
-                    }, -- end of ["losses"]
-                    ["lostTo"] = 
-                    {
-                        ["Helicopters"] = 
-                        {
-                            ["Attack"] = 1,
-                        }, -- end of ["Helicopters"]
-                    }, -- end of ["lostTo"]
-                }, -- end of ["actions"]
                 ["weapons"] = 
                 {
-                    ["M230_new"] = 
+                    ["R-60M (AA-8 Aphid-B)"] = 
+                    {
+                        ["numHits"] = 0,
+                        ["kills"] = 0,
+                        ["shot"] = 11,
+                        ["hit"] = 0,
+                    }, -- end of ["R-60M (AA-8 Aphid-B)"]
+                    ["GSh-30-1"] = 
                     {
                         ["kills"] = 0,
-                        ["shot"] = 198,
+                        ["shot"] = 4,
                         ["hit"] = 0,
                         ["gun"] = true,
                         ["numHits"] = 0,
-                    }, -- end of ["M230_new"]
+                    }, -- end of ["GSh-30-1"]
                 }, -- end of ["weapons"]
-            }, -- end of ["AH-64D_BLK_II"]
-            ["AH-64D_BLK_II Copilot"] = 
-            {
-                ["total"] = 25605.466,
-                ["kills"] = 
-                {
-                    ["Ground Units"] = 
-                    {
-                        ["AAA"] = 1,
-                        ["Tanks"] = 5,
-                        ["Unarmored"] = 11,
-                        ["IFVs"] = 7,
-                        ["APCs"] = 3,
-                        ["SAM"] = 8,
-                        ["total"] = 50,
-                        ["Infantry"] = 15,
-                    }, -- end of ["Ground Units"]
-                    ["Buildings"] = 
-                    {
-                        ["total"] = 3,
-                        ["Static"] = 3,
-                    }, -- end of ["Buildings"]
-                }, -- end of ["kills"]
-                ["weapons"] = 
-                {
-                    ["Hydra 70 M151 HE"] = 
-                    {
-                        ["hit"] = 0,
-                        ["kills"] = 0,
-                        ["shot"] = 6,
-                        ["numHits"] = 0,
-                    }, -- end of ["Hydra 70 M151 HE"]
-                    ["unknown"] = 
-                    {
-                        ["hit"] = 0,
-                        ["kills"] = 5,
-                        ["shot"] = 0,
-                        ["numHits"] = 5,
-                    }, -- end of ["unknown"]
-                    ["M230_new"] = 
-                    {
-                        ["kills"] = 0,
-                        ["shot"] = 54,
-                        ["hit"] = 0,
-                        ["gun"] = true,
-                        ["numHits"] = 0,
-                    }, -- end of ["M230_new"]
-                    ["AGM-114K"] = 
-                    {
-                        ["kills"] = 48,
-                        ["shot"] = 39,
-                        ["hit"] = 7,
-                        ["assist"] = 1,
-                        ["numHits"] = 59,
-                    }, -- end of ["AGM-114K"]
-                }, -- end of ["weapons"]
+                ["inAir"] = 1040.724,
                 ["actions"] = 
                 {
+                    ["losses"] = 
+                    {
+                        ["crash"] = 4,
+                        ["eject"] = 2,
+                        ["pilotError"] = 1,
+                    }, -- end of ["losses"]
                     ["lostTo"] = 
                     {
-                        ["Helicopters"] = 
+                        ["Planes"] = 
                         {
-                            ["Attack"] = 1,
-                        }, -- end of ["Helicopters"]
+                            ["Bombers"] = 1,
+                            ["Fighters"] = 1,
+                        }, -- end of ["Planes"]
                     }, -- end of ["lostTo"]
-                    ["takeoff"] = 
-                    {
-                        ["airbase"] = 24,
-                    }, -- end of ["takeoff"]
-                    ["bounced"] = 2,
-                    ["losses"] = 
-                    {
-                        ["pilotDeath"] = 0,
-                        ["crash"] = 1,
-                        ["eject"] = 0,
-                    }, -- end of ["losses"]
-                    ["landing"] = 
-                    {
-                        ["airbase"] = 8,
-                        ["landedWhileDamaged"] = 1,
-                    }, -- end of ["landing"]
                 }, -- end of ["actions"]
-                ["inAir"] = 19839.186,
-            }, -- end of ["AH-64D_BLK_II Copilot"]
-            ["T-45 Copilot"] = 
-            {
-                ["total"] = 3454.109,
-                ["inAir"] = 3454.109,
-            }, -- end of ["T-45 Copilot"]
-            ["T-45"] = 
-            {
-                ["inAir"] = 18240.93,
-                ["actions"] = 
-                {
-                    ["bounced"] = 3,
-                    ["takeoff"] = 
-                    {
-                        ["airbase"] = 14,
-                    }, -- end of ["takeoff"]
-                    ["losses"] = 
-                    {
-                        ["pilotDeath"] = 0,
-                        ["crash"] = 0,
-                        ["eject"] = 1,
-                    }, -- end of ["losses"]
-                    ["landing"] = 
-                    {
-                        ["airbase"] = 6,
-                    }, -- end of ["landing"]
-                }, -- end of ["actions"]
-                ["total"] = 25098.715,
-            }, -- end of ["T-45"]
+                ["total"] = 1040.724,
+            }, -- end of ["MiG-29S"]
         }, -- end of ["times"]
-        ["joinDate"] = 1670271458,
-        ["lastJoin"] = 1676666539,
-        ["id"] = 159,
-        ["names"] = 
+        ["joinDate"] = 1669667584,
+        ["id"] = 153,
+        ["lastJoin"] = 1669671718,
+        ["pvp"] = 
         {
-            [1] = "jester 2-2 | jester224",
-        }, -- end of ["names"]
-    }, -- end of ["908e6e90e87d6f8fda2c2ff0f9002aa9"]
+            ["MiG-29S"] = 
+            {
+                ["losses"] = 2,
+            }, -- end of ["MiG-29S"]
+        }, -- end of ["pvp"]
+    }, -- end of ["a731686bbb69b87e11dff7b61b6f88c6"]
     ["12b35388c4fe1fc68daa27a53ab1c8ea"] = 
     {
         ["times"] = 
@@ -13837,7 +13293,6 @@ stats =
             ["AH-64D_BLK_II"] = 
             {
                 ["total"] = 4252.966,
-                ["inAir"] = 3082.134,
                 ["weapons"] = 
                 {
                     ["AGM-114K"] = 
@@ -13863,6 +13318,7 @@ stats =
                         ["hit"] = 0,
                     }, -- end of ["Hydra 70 M282 MPP"]
                 }, -- end of ["weapons"]
+                ["inAir"] = 3082.134,
                 ["actions"] = 
                 {
                     ["bounced"] = 3,
@@ -13904,6 +13360,663 @@ stats =
             [1] = "[BSD] Shin",
         }, -- end of ["names"]
     }, -- end of ["12b35388c4fe1fc68daa27a53ab1c8ea"]
+    ["43535f8d847eee091f96d3d90cbdff11"] = 
+    {
+        ["times"] = 
+        {
+            ["JF-17"] = 
+            {
+                ["total"] = 6017.827,
+                ["kills"] = 
+                {
+                    ["Planes"] = 
+                    {
+                        ["total"] = 4,
+                        ["Fighters"] = 4,
+                    }, -- end of ["Planes"]
+                }, -- end of ["kills"]
+                ["losses"] = 
+                {
+                    ["pilotDeath"] = 0,
+                    ["crash"] = 1,
+                    ["eject"] = 0,
+                }, -- end of ["losses"]
+                ["weapons"] = 
+                {
+                    ["GSh-2-23"] = 
+                    {
+                        ["numHits"] = 0,
+                        ["kills"] = 0,
+                        ["shot"] = 137,
+                        ["hit"] = 0,
+                    }, -- end of ["GSh-2-23"]
+                    ["PL-5EII"] = 
+                    {
+                        ["numHits"] = 0,
+                        ["kills"] = 0,
+                        ["shot"] = 3,
+                        ["hit"] = 0,
+                    }, -- end of ["PL-5EII"]
+                    ["SD-10"] = 
+                    {
+                        ["numHits"] = 4,
+                        ["kills"] = 4,
+                        ["shot"] = 12,
+                        ["hit"] = 0,
+                    }, -- end of ["SD-10"]
+                }, -- end of ["weapons"]
+                ["inAir"] = 2944.286,
+                ["actions"] = 
+                {
+                    ["losses"] = 
+                    {
+                        ["pilotDeath"] = 1,
+                        ["crash"] = 1,
+                        ["eject"] = 0,
+                    }, -- end of ["losses"]
+                }, -- end of ["actions"]
+                ["pvp"] = 
+                {
+                    ["losses"] = 1,
+                    ["kills"] = 4,
+                }, -- end of ["pvp"]
+            }, -- end of ["JF-17"]
+        }, -- end of ["times"]
+        ["joinDate"] = 1601752483,
+        ["lastJoin"] = 1601759241,
+        ["id"] = 48,
+        ["names"] = 
+        {
+            [1] = "E-TF[007] Kingston",
+        }, -- end of ["names"]
+    }, -- end of ["43535f8d847eee091f96d3d90cbdff11"]
+    ["88fdb3444e57345f444412b038a51af1"] = 
+    {
+        ["times"] = 
+        {
+            ["F-16C_50"] = 
+            {
+                ["inAir"] = 20.054,
+                ["total"] = 2563.382,
+            }, -- end of ["F-16C_50"]
+            ["AV8BNA"] = 
+            {
+                ["total"] = 5651.99,
+                ["actions"] = 
+                {
+                    ["losses"] = 
+                    {
+                        ["pilotDeath"] = 1,
+                        ["crash"] = 1,
+                        ["eject"] = 1,
+                    }, -- end of ["losses"]
+                }, -- end of ["actions"]
+                ["inAir"] = 1780.821,
+                ["losses"] = 
+                {
+                    ["pilotDeath"] = 0,
+                    ["crash"] = 1,
+                    ["eject"] = 0,
+                }, -- end of ["losses"]
+                ["pvp"] = 
+                {
+                    ["losses"] = 1,
+                }, -- end of ["pvp"]
+            }, -- end of ["AV8BNA"]
+        }, -- end of ["times"]
+        ["joinDate"] = 1601752869,
+        ["lastJoin"] = 1615065778,
+        ["id"] = 61,
+        ["names"] = 
+        {
+            [1] = "{TFT} Rage ¦¦¦|○ Wi ♠",
+        }, -- end of ["names"]
+    }, -- end of ["88fdb3444e57345f444412b038a51af1"]
+    ["166d6b587aaf11c5fb9f7c00e24e26d2"] = 
+    {
+        ["times"] = 
+        {
+        }, -- end of ["times"]
+        ["joinDate"] = 1691866697,
+        ["lastJoin"] = 1691872665,
+        ["id"] = 227,
+        ["names"] = 
+        {
+            [1] = "Hawk 3-3 | ASourBean",
+        }, -- end of ["names"]
+    }, -- end of ["166d6b587aaf11c5fb9f7c00e24e26d2"]
+    ["fed881295d697325c92f133e1d0f92fd"] = 
+    {
+        ["times"] = 
+        {
+            ["AH-64D_BLK_II"] = 
+            {
+                ["total"] = 16617.438,
+                ["kills"] = 
+                {
+                    ["Buildings"] = 
+                    {
+                        ["total"] = 2,
+                        ["Static"] = 2,
+                    }, -- end of ["Buildings"]
+                    ["Ground Units"] = 
+                    {
+                        ["AAA"] = 1,
+                        ["SAM"] = 8,
+                        ["Unarmored"] = 12,
+                        ["APCs"] = 4,
+                        ["IFVs"] = 4,
+                        ["Tanks"] = 2,
+                        ["Infantry"] = 28,
+                        ["total"] = 59,
+                    }, -- end of ["Ground Units"]
+                }, -- end of ["kills"]
+                ["inAir"] = 11622.128,
+                ["actions"] = 
+                {
+                    ["lostTo"] = 
+                    {
+                        ["Helicopters"] = 
+                        {
+                            ["Attack"] = 1,
+                        }, -- end of ["Helicopters"]
+                    }, -- end of ["lostTo"]
+                    ["takeoff"] = 
+                    {
+                        ["airbase"] = 14,
+                        ["austere"] = 2,
+                    }, -- end of ["takeoff"]
+                    ["landing"] = 
+                    {
+                        ["airbase"] = 2,
+                        ["austere"] = 1,
+                    }, -- end of ["landing"]
+                    ["losses"] = 
+                    {
+                        ["pilotDeath"] = 2,
+                        ["crash"] = 1,
+                        ["eject"] = 0,
+                        ["pilotError"] = 1,
+                    }, -- end of ["losses"]
+                    ["bounced"] = 1,
+                }, -- end of ["actions"]
+                ["weapons"] = 
+                {
+                    ["Hydra 70 M229 HE"] = 
+                    {
+                        ["hit"] = 0,
+                        ["kills"] = 0,
+                        ["shot"] = 2,
+                        ["numHits"] = 0,
+                    }, -- end of ["Hydra 70 M229 HE"]
+                    ["shot"] = 73,
+                    ["Hydra 70 M151 HE"] = 
+                    {
+                        ["hit"] = 2,
+                        ["kills"] = 9,
+                        ["shot"] = 100,
+                        ["numHits"] = 12,
+                    }, -- end of ["Hydra 70 M151 HE"]
+                    ["AGM-114K"] = 
+                    {
+                        ["kills"] = 37,
+                        ["shot"] = 12,
+                        ["numHits"] = 48,
+                        ["assist"] = 1,
+                        ["hit"] = 0,
+                    }, -- end of ["AGM-114K"]
+                    ["M230_new"] = 
+                    {
+                        ["kills"] = 0,
+                        ["shot"] = 581,
+                        ["hit"] = 0,
+                        ["gun"] = true,
+                        ["numHits"] = 63,
+                    }, -- end of ["M230_new"]
+                    ["unknown"] = 
+                    {
+                        ["kills"] = 15,
+                        ["shot"] = 0,
+                        ["numHits"] = 30,
+                        ["assist"] = 1,
+                        ["hit"] = 0,
+                    }, -- end of ["unknown"]
+                }, -- end of ["weapons"]
+            }, -- end of ["AH-64D_BLK_II"]
+            ["AH-64D_BLK_II Copilot"] = 
+            {
+                ["total"] = 13176.03,
+                ["kills"] = 
+                {
+                    ["Ground Units"] = 
+                    {
+                        ["total"] = 18,
+                        ["Unarmored"] = 3,
+                        ["IFVs"] = 5,
+                        ["SAM"] = 4,
+                        ["Tanks"] = 6,
+                    }, -- end of ["Ground Units"]
+                }, -- end of ["kills"]
+                ["weapons"] = 
+                {
+                    ["M230_new"] = 
+                    {
+                        ["kills"] = 2,
+                        ["shot"] = 502,
+                        ["hit"] = 0,
+                        ["gun"] = true,
+                        ["numHits"] = 2,
+                    }, -- end of ["M230_new"]
+                    ["AGM-114K"] = 
+                    {
+                        ["kills"] = 16,
+                        ["shot"] = 11,
+                        ["numHits"] = 19,
+                        ["assist"] = 1,
+                        ["hit"] = 1,
+                    }, -- end of ["AGM-114K"]
+                }, -- end of ["weapons"]
+                ["actions"] = 
+                {
+                    ["landing"] = 
+                    {
+                        ["airbase"] = 2,
+                    }, -- end of ["landing"]
+                    ["takeoff"] = 
+                    {
+                        ["airbase"] = 8,
+                    }, -- end of ["takeoff"]
+                    ["losses"] = 
+                    {
+                        ["pilotDeath"] = 1,
+                        ["crash"] = 1,
+                        ["eject"] = 0,
+                    }, -- end of ["losses"]
+                    ["lostTo"] = 
+                    {
+                        ["Helicopters"] = 
+                        {
+                            ["Attack"] = 1,
+                        }, -- end of ["Helicopters"]
+                    }, -- end of ["lostTo"]
+                }, -- end of ["actions"]
+                ["inAir"] = 10432.712,
+            }, -- end of ["AH-64D_BLK_II Copilot"]
+            ["T-45"] = 
+            {
+                ["inAir"] = 8970.005,
+                ["actions"] = 
+                {
+                    ["landing"] = 
+                    {
+                        ["airbase"] = 5,
+                    }, -- end of ["landing"]
+                    ["takeoff"] = 
+                    {
+                        ["airbase"] = 16,
+                    }, -- end of ["takeoff"]
+                    ["bounced"] = 1,
+                }, -- end of ["actions"]
+                ["total"] = 13705.234,
+            }, -- end of ["T-45"]
+        }, -- end of ["times"]
+        ["joinDate"] = 1670271330,
+        ["lastJoin"] = 1696881667,
+        ["id"] = 158,
+        ["names"] = 
+        {
+            [1] = "SHAGGY 1-1 [RAFAIRUK] VR",
+            [2] = "=JSW= SHAGGY",
+        }, -- end of ["names"]
+    }, -- end of ["fed881295d697325c92f133e1d0f92fd"]
+    ["d8d245a78f5fb9d4a24d4c535903cf93"] = 
+    {
+        ["times"] = 
+        {
+            ["FA-18C_hornet"] = 
+            {
+                ["inAir"] = 1361.714,
+                ["actions"] = 
+                {
+                    ["lostTo"] = 
+                    {
+                        ["Ground Units"] = 
+                        {
+                            ["SAM"] = 1,
+                        }, -- end of ["Ground Units"]
+                    }, -- end of ["lostTo"]
+                    ["takeoff"] = 
+                    {
+                        ["CVN_71"] = 1,
+                    }, -- end of ["takeoff"]
+                    ["losses"] = 
+                    {
+                        ["pilotDeath"] = 1,
+                        ["crash"] = 1,
+                        ["eject"] = 0,
+                    }, -- end of ["losses"]
+                }, -- end of ["actions"]
+                ["total"] = 2423.029,
+            }, -- end of ["FA-18C_hornet"]
+        }, -- end of ["times"]
+        ["joinDate"] = 1678564994,
+        ["lastJoin"] = 1691871712,
+        ["id"] = 198,
+        ["names"] = 
+        {
+            [1] = "Hammer1-3 - [VAF] AyCee",
+            [2] = "Hawk3-1 - [VAF] AyCee",
+        }, -- end of ["names"]
+    }, -- end of ["d8d245a78f5fb9d4a24d4c535903cf93"]
+    ["908e6e90e87d6f8fda2c2ff0f9002aa9"] = 
+    {
+        ["times"] = 
+        {
+            ["AH-64D_BLK_II"] = 
+            {
+                ["total"] = 3693.724,
+                ["weapons"] = 
+                {
+                    ["M230_new"] = 
+                    {
+                        ["kills"] = 0,
+                        ["shot"] = 198,
+                        ["hit"] = 0,
+                        ["gun"] = true,
+                        ["numHits"] = 0,
+                    }, -- end of ["M230_new"]
+                }, -- end of ["weapons"]
+                ["actions"] = 
+                {
+                    ["landing"] = 
+                    {
+                        ["airbase"] = 1,
+                    }, -- end of ["landing"]
+                    ["takeoff"] = 
+                    {
+                        ["airbase"] = 4,
+                    }, -- end of ["takeoff"]
+                    ["losses"] = 
+                    {
+                        ["pilotDeath"] = 0,
+                        ["crash"] = 1,
+                        ["eject"] = 0,
+                    }, -- end of ["losses"]
+                    ["lostTo"] = 
+                    {
+                        ["Helicopters"] = 
+                        {
+                            ["Attack"] = 1,
+                        }, -- end of ["Helicopters"]
+                    }, -- end of ["lostTo"]
+                }, -- end of ["actions"]
+                ["inAir"] = 2472.384,
+            }, -- end of ["AH-64D_BLK_II"]
+            ["AH-64D_BLK_II Copilot"] = 
+            {
+                ["total"] = 25605.466,
+                ["kills"] = 
+                {
+                    ["Ground Units"] = 
+                    {
+                        ["AAA"] = 1,
+                        ["Tanks"] = 5,
+                        ["Unarmored"] = 11,
+                        ["APCs"] = 3,
+                        ["IFVs"] = 7,
+                        ["SAM"] = 8,
+                        ["total"] = 50,
+                        ["Infantry"] = 15,
+                    }, -- end of ["Ground Units"]
+                    ["Buildings"] = 
+                    {
+                        ["total"] = 3,
+                        ["Static"] = 3,
+                    }, -- end of ["Buildings"]
+                }, -- end of ["kills"]
+                ["inAir"] = 19839.186,
+                ["actions"] = 
+                {
+                    ["lostTo"] = 
+                    {
+                        ["Helicopters"] = 
+                        {
+                            ["Attack"] = 1,
+                        }, -- end of ["Helicopters"]
+                    }, -- end of ["lostTo"]
+                    ["takeoff"] = 
+                    {
+                        ["airbase"] = 24,
+                    }, -- end of ["takeoff"]
+                    ["bounced"] = 2,
+                    ["losses"] = 
+                    {
+                        ["pilotDeath"] = 0,
+                        ["crash"] = 1,
+                        ["eject"] = 0,
+                    }, -- end of ["losses"]
+                    ["landing"] = 
+                    {
+                        ["airbase"] = 8,
+                        ["landedWhileDamaged"] = 1,
+                    }, -- end of ["landing"]
+                }, -- end of ["actions"]
+                ["weapons"] = 
+                {
+                    ["Hydra 70 M151 HE"] = 
+                    {
+                        ["hit"] = 0,
+                        ["kills"] = 0,
+                        ["shot"] = 6,
+                        ["numHits"] = 0,
+                    }, -- end of ["Hydra 70 M151 HE"]
+                    ["unknown"] = 
+                    {
+                        ["hit"] = 0,
+                        ["kills"] = 5,
+                        ["shot"] = 0,
+                        ["numHits"] = 5,
+                    }, -- end of ["unknown"]
+                    ["M230_new"] = 
+                    {
+                        ["kills"] = 0,
+                        ["shot"] = 54,
+                        ["hit"] = 0,
+                        ["gun"] = true,
+                        ["numHits"] = 0,
+                    }, -- end of ["M230_new"]
+                    ["AGM-114K"] = 
+                    {
+                        ["kills"] = 48,
+                        ["shot"] = 39,
+                        ["hit"] = 7,
+                        ["assist"] = 1,
+                        ["numHits"] = 59,
+                    }, -- end of ["AGM-114K"]
+                }, -- end of ["weapons"]
+            }, -- end of ["AH-64D_BLK_II Copilot"]
+            ["T-45 Copilot"] = 
+            {
+                ["total"] = 3454.109,
+                ["inAir"] = 3454.109,
+            }, -- end of ["T-45 Copilot"]
+            ["T-45"] = 
+            {
+                ["inAir"] = 18240.93,
+                ["actions"] = 
+                {
+                    ["bounced"] = 3,
+                    ["takeoff"] = 
+                    {
+                        ["airbase"] = 14,
+                    }, -- end of ["takeoff"]
+                    ["losses"] = 
+                    {
+                        ["pilotDeath"] = 0,
+                        ["crash"] = 0,
+                        ["eject"] = 1,
+                    }, -- end of ["losses"]
+                    ["landing"] = 
+                    {
+                        ["airbase"] = 6,
+                    }, -- end of ["landing"]
+                }, -- end of ["actions"]
+                ["total"] = 25098.715,
+            }, -- end of ["T-45"]
+        }, -- end of ["times"]
+        ["joinDate"] = 1670271458,
+        ["lastJoin"] = 1676666539,
+        ["id"] = 159,
+        ["names"] = 
+        {
+            [1] = "jester 2-2 | jester224",
+        }, -- end of ["names"]
+    }, -- end of ["908e6e90e87d6f8fda2c2ff0f9002aa9"]
+    ["0a681faf4ca15c9cb2322f93fb618250"] = 
+    {
+        ["times"] = 
+        {
+        }, -- end of ["times"]
+        ["joinDate"] = 1684422927,
+        ["lastJoin"] = 1684875911,
+        ["id"] = 216,
+        ["names"] = 
+        {
+            [1] = "Connor",
+        }, -- end of ["names"]
+    }, -- end of ["0a681faf4ca15c9cb2322f93fb618250"]
+    ["f82335ebb8332649d25792dd6628fc8c"] = 
+    {
+        ["times"] = 
+        {
+        }, -- end of ["times"]
+        ["joinDate"] = 1678565192,
+        ["lastJoin"] = 1678567666,
+        ["id"] = 202,
+        ["names"] = 
+        {
+            [1] = "RAMPAGE12 ETF lasskii",
+        }, -- end of ["names"]
+    }, -- end of ["f82335ebb8332649d25792dd6628fc8c"]
+    ["f7fdb4e36ed9aa567f6de07d1eec5000"] = 
+    {
+        ["times"] = 
+        {
+            ["FA-18C_hornet"] = 
+            {
+                ["weapons"] = 
+                {
+                    ["Mk-82Y"] = 
+                    {
+                        ["hit"] = 0,
+                        ["kills"] = 0,
+                        ["shot"] = 6,
+                        ["numHits"] = 5,
+                    }, -- end of ["Mk-82Y"]
+                    ["AIM-120C"] = 
+                    {
+                        ["hit"] = 0,
+                        ["kills"] = 0,
+                        ["shot"] = 1,
+                        ["numHits"] = 0,
+                    }, -- end of ["AIM-120C"]
+                }, -- end of ["weapons"]
+                ["total"] = 20413.246,
+                ["actions"] = 
+                {
+                    ["losses"] = 
+                    {
+                        ["pilotDeath"] = 1,
+                        ["crash"] = 1,
+                        ["eject"] = 0,
+                    }, -- end of ["losses"]
+                }, -- end of ["actions"]
+                ["inAir"] = 13448.898,
+            }, -- end of ["FA-18C_hornet"]
+        }, -- end of ["times"]
+        ["joinDate"] = 1597259632,
+        ["lastJoin"] = 1600553484,
+        ["id"] = 37,
+        ["names"] = 
+        {
+            [1] = "Dutch",
+        }, -- end of ["names"]
+    }, -- end of ["f7fdb4e36ed9aa567f6de07d1eec5000"]
+    ["ab01369a205edd84d48b5079e4061e75"] = 
+    {
+        ["times"] = 
+        {
+            ["FA-18C_hornet"] = 
+            {
+                ["total"] = 10064.366,
+                ["inAir"] = 5987.35,
+                ["weapons"] = 
+                {
+                    ["M-61"] = 
+                    {
+                        ["hit"] = 0,
+                        ["kills"] = 2,
+                        ["shot"] = 454,
+                        ["numHits"] = 47,
+                    }, -- end of ["M-61"]
+                    ["AGM-88C"] = 
+                    {
+                        ["hit"] = 0,
+                        ["kills"] = 0,
+                        ["shot"] = 1,
+                        ["numHits"] = 0,
+                    }, -- end of ["AGM-88C"]
+                    ["AGM-65F"] = 
+                    {
+                        ["hit"] = 0,
+                        ["kills"] = 1,
+                        ["shot"] = 2,
+                        ["numHits"] = 1,
+                    }, -- end of ["AGM-65F"]
+                    ["AIM-120C-5"] = 
+                    {
+                        ["hit"] = 0,
+                        ["kills"] = 0,
+                        ["shot"] = 2,
+                        ["numHits"] = 0,
+                    }, -- end of ["AIM-120C-5"]
+                    ["AIM-9X"] = 
+                    {
+                        ["hit"] = 0,
+                        ["kills"] = 1,
+                        ["shot"] = 2,
+                        ["numHits"] = 1,
+                    }, -- end of ["AIM-9X"]
+                }, -- end of ["weapons"]
+                ["kills"] = 
+                {
+                    ["Ground Units"] = 
+                    {
+                        ["AAA"] = 1,
+                        ["total"] = 2,
+                        ["Unarmored"] = 1,
+                    }, -- end of ["Ground Units"]
+                    ["Planes"] = 
+                    {
+                        ["Fighters"] = 2,
+                        ["total"] = 2,
+                    }, -- end of ["Planes"]
+                }, -- end of ["kills"]
+                ["pvp"] = 
+                {
+                    ["kills"] = 4,
+                }, -- end of ["pvp"]
+            }, -- end of ["FA-18C_hornet"]
+        }, -- end of ["times"]
+        ["joinDate"] = 1621634002,
+        ["lastJoin"] = 1621710121,
+        ["id"] = 112,
+        ["names"] = 
+        {
+            [1] = "Theo22",
+            [2] = "Lancer 1",
+        }, -- end of ["names"]
+    }, -- end of ["ab01369a205edd84d48b5079e4061e75"]
     ["e2d4db8d51cd658e68efd2c36a4dc7e7"] = 
     {
         ["names"] = 
@@ -14065,554 +14178,6 @@ stats =
             }, -- end of ["F-16C_50"]
         }, -- end of ["pvp"]
     }, -- end of ["e2d4db8d51cd658e68efd2c36a4dc7e7"]
-    ["dedb9132c4529fe6e0b2911e49e82c3a"] = 
-    {
-        ["times"] = 
-        {
-            ["FA-18C_hornet"] = 
-            {
-                ["total"] = 8036.087,
-                ["weapons"] = 
-                {
-                    ["F/A-18C Lot 20"] = 
-                    {
-                        ["hit"] = 0,
-                        ["kills"] = 0,
-                        ["shot"] = 0,
-                        ["numHits"] = 0,
-                    }, -- end of ["F/A-18C Lot 20"]
-                }, -- end of ["weapons"]
-                ["actions"] = 
-                {
-                    ["losses"] = 
-                    {
-                        ["pilotDeath"] = 2,
-                        ["crash"] = 2,
-                        ["eject"] = 0,
-                    }, -- end of ["losses"]
-                }, -- end of ["actions"]
-                ["inAir"] = 3194.051,
-            }, -- end of ["FA-18C_hornet"]
-        }, -- end of ["times"]
-        ["joinDate"] = 1601752894,
-        ["lastJoin"] = 1615065091,
-        ["id"] = 62,
-        ["names"] = 
-        {
-            [1] = "{TFT} Busta",
-        }, -- end of ["names"]
-    }, -- end of ["dedb9132c4529fe6e0b2911e49e82c3a"]
-    ["166d6b587aaf11c5fb9f7c00e24e26d2"] = 
-    {
-        ["times"] = 
-        {
-        }, -- end of ["times"]
-        ["joinDate"] = 1691866697,
-        ["lastJoin"] = 1691872665,
-        ["id"] = 227,
-        ["names"] = 
-        {
-            [1] = "Hawk 3-3 | ASourBean",
-        }, -- end of ["names"]
-    }, -- end of ["166d6b587aaf11c5fb9f7c00e24e26d2"]
-    ["43535f8d847eee091f96d3d90cbdff11"] = 
-    {
-        ["times"] = 
-        {
-            ["JF-17"] = 
-            {
-                ["total"] = 6017.827,
-                ["kills"] = 
-                {
-                    ["Planes"] = 
-                    {
-                        ["total"] = 4,
-                        ["Fighters"] = 4,
-                    }, -- end of ["Planes"]
-                }, -- end of ["kills"]
-                ["losses"] = 
-                {
-                    ["pilotDeath"] = 0,
-                    ["crash"] = 1,
-                    ["eject"] = 0,
-                }, -- end of ["losses"]
-                ["weapons"] = 
-                {
-                    ["GSh-2-23"] = 
-                    {
-                        ["numHits"] = 0,
-                        ["kills"] = 0,
-                        ["shot"] = 137,
-                        ["hit"] = 0,
-                    }, -- end of ["GSh-2-23"]
-                    ["PL-5EII"] = 
-                    {
-                        ["numHits"] = 0,
-                        ["kills"] = 0,
-                        ["shot"] = 3,
-                        ["hit"] = 0,
-                    }, -- end of ["PL-5EII"]
-                    ["SD-10"] = 
-                    {
-                        ["numHits"] = 4,
-                        ["kills"] = 4,
-                        ["shot"] = 12,
-                        ["hit"] = 0,
-                    }, -- end of ["SD-10"]
-                }, -- end of ["weapons"]
-                ["inAir"] = 2944.286,
-                ["actions"] = 
-                {
-                    ["losses"] = 
-                    {
-                        ["pilotDeath"] = 1,
-                        ["crash"] = 1,
-                        ["eject"] = 0,
-                    }, -- end of ["losses"]
-                }, -- end of ["actions"]
-                ["pvp"] = 
-                {
-                    ["losses"] = 1,
-                    ["kills"] = 4,
-                }, -- end of ["pvp"]
-            }, -- end of ["JF-17"]
-        }, -- end of ["times"]
-        ["joinDate"] = 1601752483,
-        ["lastJoin"] = 1601759241,
-        ["id"] = 48,
-        ["names"] = 
-        {
-            [1] = "E-TF[007] Kingston",
-        }, -- end of ["names"]
-    }, -- end of ["43535f8d847eee091f96d3d90cbdff11"]
-    ["d8d245a78f5fb9d4a24d4c535903cf93"] = 
-    {
-        ["times"] = 
-        {
-            ["FA-18C_hornet"] = 
-            {
-                ["inAir"] = 1361.714,
-                ["actions"] = 
-                {
-                    ["lostTo"] = 
-                    {
-                        ["Ground Units"] = 
-                        {
-                            ["SAM"] = 1,
-                        }, -- end of ["Ground Units"]
-                    }, -- end of ["lostTo"]
-                    ["takeoff"] = 
-                    {
-                        ["CVN_71"] = 1,
-                    }, -- end of ["takeoff"]
-                    ["losses"] = 
-                    {
-                        ["pilotDeath"] = 1,
-                        ["crash"] = 1,
-                        ["eject"] = 0,
-                    }, -- end of ["losses"]
-                }, -- end of ["actions"]
-                ["total"] = 2423.029,
-            }, -- end of ["FA-18C_hornet"]
-        }, -- end of ["times"]
-        ["joinDate"] = 1678564994,
-        ["lastJoin"] = 1691871712,
-        ["id"] = 198,
-        ["names"] = 
-        {
-            [1] = "Hammer1-3 - [VAF] AyCee",
-            [2] = "Hawk3-1 - [VAF] AyCee",
-        }, -- end of ["names"]
-    }, -- end of ["d8d245a78f5fb9d4a24d4c535903cf93"]
-    ["a731686bbb69b87e11dff7b61b6f88c6"] = 
-    {
-        ["names"] = 
-        {
-            [1] = "Gryphon",
-        }, -- end of ["names"]
-        ["times"] = 
-        {
-            ["MiG-29S"] = 
-            {
-                ["total"] = 1040.724,
-                ["weapons"] = 
-                {
-                    ["R-60M (AA-8 Aphid-B)"] = 
-                    {
-                        ["numHits"] = 0,
-                        ["kills"] = 0,
-                        ["shot"] = 11,
-                        ["hit"] = 0,
-                    }, -- end of ["R-60M (AA-8 Aphid-B)"]
-                    ["GSh-30-1"] = 
-                    {
-                        ["kills"] = 0,
-                        ["shot"] = 4,
-                        ["hit"] = 0,
-                        ["gun"] = true,
-                        ["numHits"] = 0,
-                    }, -- end of ["GSh-30-1"]
-                }, -- end of ["weapons"]
-                ["actions"] = 
-                {
-                    ["losses"] = 
-                    {
-                        ["crash"] = 4,
-                        ["eject"] = 2,
-                        ["pilotError"] = 1,
-                    }, -- end of ["losses"]
-                    ["lostTo"] = 
-                    {
-                        ["Planes"] = 
-                        {
-                            ["Bombers"] = 1,
-                            ["Fighters"] = 1,
-                        }, -- end of ["Planes"]
-                    }, -- end of ["lostTo"]
-                }, -- end of ["actions"]
-                ["inAir"] = 1040.724,
-            }, -- end of ["MiG-29S"]
-        }, -- end of ["times"]
-        ["joinDate"] = 1669667584,
-        ["id"] = 153,
-        ["lastJoin"] = 1669671718,
-        ["pvp"] = 
-        {
-            ["MiG-29S"] = 
-            {
-                ["losses"] = 2,
-            }, -- end of ["MiG-29S"]
-        }, -- end of ["pvp"]
-    }, -- end of ["a731686bbb69b87e11dff7b61b6f88c6"]
-    ["0a681faf4ca15c9cb2322f93fb618250"] = 
-    {
-        ["times"] = 
-        {
-        }, -- end of ["times"]
-        ["joinDate"] = 1684422927,
-        ["lastJoin"] = 1684875911,
-        ["id"] = 216,
-        ["names"] = 
-        {
-            [1] = "Connor",
-        }, -- end of ["names"]
-    }, -- end of ["0a681faf4ca15c9cb2322f93fb618250"]
-    ["f7fdb4e36ed9aa567f6de07d1eec5000"] = 
-    {
-        ["times"] = 
-        {
-            ["FA-18C_hornet"] = 
-            {
-                ["inAir"] = 13448.898,
-                ["weapons"] = 
-                {
-                    ["Mk-82Y"] = 
-                    {
-                        ["hit"] = 0,
-                        ["kills"] = 0,
-                        ["shot"] = 6,
-                        ["numHits"] = 5,
-                    }, -- end of ["Mk-82Y"]
-                    ["AIM-120C"] = 
-                    {
-                        ["hit"] = 0,
-                        ["kills"] = 0,
-                        ["shot"] = 1,
-                        ["numHits"] = 0,
-                    }, -- end of ["AIM-120C"]
-                }, -- end of ["weapons"]
-                ["actions"] = 
-                {
-                    ["losses"] = 
-                    {
-                        ["pilotDeath"] = 1,
-                        ["crash"] = 1,
-                        ["eject"] = 0,
-                    }, -- end of ["losses"]
-                }, -- end of ["actions"]
-                ["total"] = 20413.246,
-            }, -- end of ["FA-18C_hornet"]
-        }, -- end of ["times"]
-        ["joinDate"] = 1597259632,
-        ["lastJoin"] = 1600553484,
-        ["id"] = 37,
-        ["names"] = 
-        {
-            [1] = "Dutch",
-        }, -- end of ["names"]
-    }, -- end of ["f7fdb4e36ed9aa567f6de07d1eec5000"]
-    ["f82335ebb8332649d25792dd6628fc8c"] = 
-    {
-        ["times"] = 
-        {
-        }, -- end of ["times"]
-        ["joinDate"] = 1678565192,
-        ["lastJoin"] = 1678567666,
-        ["id"] = 202,
-        ["names"] = 
-        {
-            [1] = "RAMPAGE12 ETF lasskii",
-        }, -- end of ["names"]
-    }, -- end of ["f82335ebb8332649d25792dd6628fc8c"]
-    ["ab01369a205edd84d48b5079e4061e75"] = 
-    {
-        ["times"] = 
-        {
-            ["FA-18C_hornet"] = 
-            {
-                ["total"] = 10064.366,
-                ["inAir"] = 5987.35,
-                ["weapons"] = 
-                {
-                    ["M-61"] = 
-                    {
-                        ["hit"] = 0,
-                        ["kills"] = 2,
-                        ["shot"] = 454,
-                        ["numHits"] = 47,
-                    }, -- end of ["M-61"]
-                    ["AGM-88C"] = 
-                    {
-                        ["hit"] = 0,
-                        ["kills"] = 0,
-                        ["shot"] = 1,
-                        ["numHits"] = 0,
-                    }, -- end of ["AGM-88C"]
-                    ["AGM-65F"] = 
-                    {
-                        ["hit"] = 0,
-                        ["kills"] = 1,
-                        ["shot"] = 2,
-                        ["numHits"] = 1,
-                    }, -- end of ["AGM-65F"]
-                    ["AIM-120C-5"] = 
-                    {
-                        ["hit"] = 0,
-                        ["kills"] = 0,
-                        ["shot"] = 2,
-                        ["numHits"] = 0,
-                    }, -- end of ["AIM-120C-5"]
-                    ["AIM-9X"] = 
-                    {
-                        ["hit"] = 0,
-                        ["kills"] = 1,
-                        ["shot"] = 2,
-                        ["numHits"] = 1,
-                    }, -- end of ["AIM-9X"]
-                }, -- end of ["weapons"]
-                ["kills"] = 
-                {
-                    ["Ground Units"] = 
-                    {
-                        ["AAA"] = 1,
-                        ["total"] = 2,
-                        ["Unarmored"] = 1,
-                    }, -- end of ["Ground Units"]
-                    ["Planes"] = 
-                    {
-                        ["Fighters"] = 2,
-                        ["total"] = 2,
-                    }, -- end of ["Planes"]
-                }, -- end of ["kills"]
-                ["pvp"] = 
-                {
-                    ["kills"] = 4,
-                }, -- end of ["pvp"]
-            }, -- end of ["FA-18C_hornet"]
-        }, -- end of ["times"]
-        ["joinDate"] = 1621634002,
-        ["lastJoin"] = 1621710121,
-        ["id"] = 112,
-        ["names"] = 
-        {
-            [1] = "Theo22",
-            [2] = "Lancer 1",
-        }, -- end of ["names"]
-    }, -- end of ["ab01369a205edd84d48b5079e4061e75"]
-    ["fed881295d697325c92f133e1d0f92fd"] = 
-    {
-        ["times"] = 
-        {
-            ["AH-64D_BLK_II"] = 
-            {
-                ["total"] = 16617.438,
-                ["kills"] = 
-                {
-                    ["Buildings"] = 
-                    {
-                        ["total"] = 2,
-                        ["Static"] = 2,
-                    }, -- end of ["Buildings"]
-                    ["Ground Units"] = 
-                    {
-                        ["AAA"] = 1,
-                        ["SAM"] = 8,
-                        ["Unarmored"] = 12,
-                        ["IFVs"] = 4,
-                        ["APCs"] = 4,
-                        ["Tanks"] = 2,
-                        ["Infantry"] = 28,
-                        ["total"] = 59,
-                    }, -- end of ["Ground Units"]
-                }, -- end of ["kills"]
-                ["weapons"] = 
-                {
-                    ["Hydra 70 M229 HE"] = 
-                    {
-                        ["hit"] = 0,
-                        ["kills"] = 0,
-                        ["shot"] = 2,
-                        ["numHits"] = 0,
-                    }, -- end of ["Hydra 70 M229 HE"]
-                    ["shot"] = 73,
-                    ["Hydra 70 M151 HE"] = 
-                    {
-                        ["hit"] = 2,
-                        ["kills"] = 9,
-                        ["shot"] = 100,
-                        ["numHits"] = 12,
-                    }, -- end of ["Hydra 70 M151 HE"]
-                    ["unknown"] = 
-                    {
-                        ["kills"] = 15,
-                        ["shot"] = 0,
-                        ["numHits"] = 30,
-                        ["assist"] = 1,
-                        ["hit"] = 0,
-                    }, -- end of ["unknown"]
-                    ["M230_new"] = 
-                    {
-                        ["kills"] = 0,
-                        ["shot"] = 581,
-                        ["hit"] = 0,
-                        ["gun"] = true,
-                        ["numHits"] = 63,
-                    }, -- end of ["M230_new"]
-                    ["AGM-114K"] = 
-                    {
-                        ["kills"] = 37,
-                        ["shot"] = 12,
-                        ["numHits"] = 48,
-                        ["assist"] = 1,
-                        ["hit"] = 0,
-                    }, -- end of ["AGM-114K"]
-                }, -- end of ["weapons"]
-                ["actions"] = 
-                {
-                    ["lostTo"] = 
-                    {
-                        ["Helicopters"] = 
-                        {
-                            ["Attack"] = 1,
-                        }, -- end of ["Helicopters"]
-                    }, -- end of ["lostTo"]
-                    ["takeoff"] = 
-                    {
-                        ["airbase"] = 14,
-                        ["austere"] = 2,
-                    }, -- end of ["takeoff"]
-                    ["landing"] = 
-                    {
-                        ["airbase"] = 2,
-                        ["austere"] = 1,
-                    }, -- end of ["landing"]
-                    ["losses"] = 
-                    {
-                        ["pilotDeath"] = 2,
-                        ["crash"] = 1,
-                        ["eject"] = 0,
-                        ["pilotError"] = 1,
-                    }, -- end of ["losses"]
-                    ["bounced"] = 1,
-                }, -- end of ["actions"]
-                ["inAir"] = 11622.128,
-            }, -- end of ["AH-64D_BLK_II"]
-            ["AH-64D_BLK_II Copilot"] = 
-            {
-                ["total"] = 13176.03,
-                ["kills"] = 
-                {
-                    ["Ground Units"] = 
-                    {
-                        ["total"] = 18,
-                        ["Unarmored"] = 3,
-                        ["IFVs"] = 5,
-                        ["SAM"] = 4,
-                        ["Tanks"] = 6,
-                    }, -- end of ["Ground Units"]
-                }, -- end of ["kills"]
-                ["inAir"] = 10432.712,
-                ["actions"] = 
-                {
-                    ["landing"] = 
-                    {
-                        ["airbase"] = 2,
-                    }, -- end of ["landing"]
-                    ["takeoff"] = 
-                    {
-                        ["airbase"] = 8,
-                    }, -- end of ["takeoff"]
-                    ["losses"] = 
-                    {
-                        ["pilotDeath"] = 1,
-                        ["crash"] = 1,
-                        ["eject"] = 0,
-                    }, -- end of ["losses"]
-                    ["lostTo"] = 
-                    {
-                        ["Helicopters"] = 
-                        {
-                            ["Attack"] = 1,
-                        }, -- end of ["Helicopters"]
-                    }, -- end of ["lostTo"]
-                }, -- end of ["actions"]
-                ["weapons"] = 
-                {
-                    ["M230_new"] = 
-                    {
-                        ["kills"] = 2,
-                        ["shot"] = 502,
-                        ["hit"] = 0,
-                        ["gun"] = true,
-                        ["numHits"] = 2,
-                    }, -- end of ["M230_new"]
-                    ["AGM-114K"] = 
-                    {
-                        ["kills"] = 16,
-                        ["shot"] = 11,
-                        ["numHits"] = 19,
-                        ["assist"] = 1,
-                        ["hit"] = 1,
-                    }, -- end of ["AGM-114K"]
-                }, -- end of ["weapons"]
-            }, -- end of ["AH-64D_BLK_II Copilot"]
-            ["T-45"] = 
-            {
-                ["inAir"] = 8970.005,
-                ["actions"] = 
-                {
-                    ["landing"] = 
-                    {
-                        ["airbase"] = 5,
-                    }, -- end of ["landing"]
-                    ["takeoff"] = 
-                    {
-                        ["airbase"] = 16,
-                    }, -- end of ["takeoff"]
-                    ["bounced"] = 1,
-                }, -- end of ["actions"]
-                ["total"] = 13705.234,
-            }, -- end of ["T-45"]
-        }, -- end of ["times"]
-        ["joinDate"] = 1670271330,
-        ["lastJoin"] = 1696881667,
-        ["id"] = 158,
-        ["names"] = 
-        {
-            [1] = "SHAGGY 1-1 [RAFAIRUK] VR",
-            [2] = "=JSW= SHAGGY",
-        }, -- end of ["names"]
-    }, -- end of ["fed881295d697325c92f133e1d0f92fd"]
     ["d4b520cd0d1f3cfcce78a9eb77bd5370"] = 
     {
         ["times"] = 
@@ -14760,13 +14325,6 @@ stats =
                         ["shot"] = 2,
                         ["hit"] = 0,
                     }, -- end of ["AGM-122"]
-                    ["GBU-12"] = 
-                    {
-                        ["hit"] = 0,
-                        ["kills"] = 2,
-                        ["shot"] = 5,
-                        ["numHits"] = 9,
-                    }, -- end of ["GBU-12"]
                     ["Mk-82AIR"] = 
                     {
                         ["hit"] = 0,
@@ -14774,6 +14332,13 @@ stats =
                         ["shot"] = 2,
                         ["numHits"] = 3,
                     }, -- end of ["Mk-82AIR"]
+                    ["GBU-12"] = 
+                    {
+                        ["hit"] = 0,
+                        ["kills"] = 2,
+                        ["shot"] = 5,
+                        ["numHits"] = 9,
+                    }, -- end of ["GBU-12"]
                     ["Mk-81"] = 
                     {
                         ["hit"] = 0,
@@ -14827,7 +14392,16 @@ stats =
                         ["total"] = 4,
                     }, -- end of ["Ground Units"]
                 }, -- end of ["kills"]
-                ["inAir"] = 6587.604,
+                ["weapons"] = 
+                {
+                    ["GBU-12"] = 
+                    {
+                        ["hit"] = 2,
+                        ["kills"] = 4,
+                        ["shot"] = 4,
+                        ["numHits"] = 7,
+                    }, -- end of ["GBU-12"]
+                }, -- end of ["weapons"]
                 ["actions"] = 
                 {
                     ["takeoff"] = 
@@ -14843,19 +14417,21 @@ stats =
                     }, -- end of ["losses"]
                     ["bolter"] = 1,
                 }, -- end of ["actions"]
-                ["weapons"] = 
-                {
-                    ["GBU-12"] = 
-                    {
-                        ["hit"] = 2,
-                        ["kills"] = 4,
-                        ["shot"] = 4,
-                        ["numHits"] = 7,
-                    }, -- end of ["GBU-12"]
-                }, -- end of ["weapons"]
+                ["inAir"] = 6587.604,
             }, -- end of ["FA-18C_hornet"]
             ["Mi-8MT"] = 
             {
+                ["total"] = 2111.399,
+                ["inAir"] = 1030.75,
+                ["actions"] = 
+                {
+                    ["losses"] = 
+                    {
+                        ["pilotDeath"] = 7,
+                        ["crash"] = 2,
+                        ["eject"] = 0,
+                    }, -- end of ["losses"]
+                }, -- end of ["actions"]
                 ["weapons"] = 
                 {
                     ["UPK-23-250"] = 
@@ -14887,17 +14463,6 @@ stats =
                         ["numHits"] = 0,
                     }, -- end of ["KORD-12.7"]
                 }, -- end of ["weapons"]
-                ["total"] = 2111.399,
-                ["actions"] = 
-                {
-                    ["losses"] = 
-                    {
-                        ["pilotDeath"] = 7,
-                        ["crash"] = 2,
-                        ["eject"] = 0,
-                    }, -- end of ["losses"]
-                }, -- end of ["actions"]
-                ["inAir"] = 1030.75,
             }, -- end of ["Mi-8MT"]
         }, -- end of ["times"]
         ["joinDate"] = 1596654179,
@@ -14911,48 +14476,43 @@ stats =
             [3] = "=AFI= Baron",
         }, -- end of ["names"]
     }, -- end of ["a13223be84828177475c055fbff8b0e1"]
-    ["88fdb3444e57345f444412b038a51af1"] = 
+    ["dedb9132c4529fe6e0b2911e49e82c3a"] = 
     {
         ["times"] = 
         {
-            ["F-16C_50"] = 
+            ["FA-18C_hornet"] = 
             {
-                ["inAir"] = 20.054,
-                ["total"] = 2563.382,
-            }, -- end of ["F-16C_50"]
-            ["AV8BNA"] = 
-            {
-                ["total"] = 5651.99,
+                ["weapons"] = 
+                {
+                    ["F/A-18C Lot 20"] = 
+                    {
+                        ["hit"] = 0,
+                        ["kills"] = 0,
+                        ["shot"] = 0,
+                        ["numHits"] = 0,
+                    }, -- end of ["F/A-18C Lot 20"]
+                }, -- end of ["weapons"]
+                ["inAir"] = 3194.051,
                 ["actions"] = 
                 {
                     ["losses"] = 
                     {
-                        ["pilotDeath"] = 1,
-                        ["crash"] = 1,
-                        ["eject"] = 1,
+                        ["pilotDeath"] = 2,
+                        ["crash"] = 2,
+                        ["eject"] = 0,
                     }, -- end of ["losses"]
                 }, -- end of ["actions"]
-                ["inAir"] = 1780.821,
-                ["losses"] = 
-                {
-                    ["pilotDeath"] = 0,
-                    ["crash"] = 1,
-                    ["eject"] = 0,
-                }, -- end of ["losses"]
-                ["pvp"] = 
-                {
-                    ["losses"] = 1,
-                }, -- end of ["pvp"]
-            }, -- end of ["AV8BNA"]
+                ["total"] = 8036.087,
+            }, -- end of ["FA-18C_hornet"]
         }, -- end of ["times"]
-        ["joinDate"] = 1601752869,
-        ["lastJoin"] = 1615065778,
-        ["id"] = 61,
+        ["joinDate"] = 1601752894,
+        ["lastJoin"] = 1615065091,
+        ["id"] = 62,
         ["names"] = 
         {
-            [1] = "{TFT} Rage ¦¦¦|○ Wi ♠",
+            [1] = "{TFT} Busta",
         }, -- end of ["names"]
-    }, -- end of ["88fdb3444e57345f444412b038a51af1"]
+    }, -- end of ["dedb9132c4529fe6e0b2911e49e82c3a"]
     ["f90f336e271214e5f4b8f3ecc8fb114c"] = 
     {
         ["times"] = 
@@ -15011,20 +14571,6 @@ stats =
                 ["inAir"] = 0,
                 ["total"] = 20.015,
             }, -- end of ["AJS37"]
-            ["P-51D"] = 
-            {
-                ["total"] = 690.406,
-                ["actions"] = 
-                {
-                    ["losses"] = 
-                    {
-                        ["pilotDeath"] = 1,
-                        ["crash"] = 1,
-                        ["eject"] = 0,
-                    }, -- end of ["losses"]
-                }, -- end of ["actions"]
-                ["inAir"] = 270.125,
-            }, -- end of ["P-51D"]
             ["FA-18C_hornet"] = 
             {
                 ["total"] = 31094.165,
@@ -15095,6 +14641,20 @@ stats =
                     ["kills"] = 4,
                 }, -- end of ["pvp"]
             }, -- end of ["FA-18C_hornet"]
+            ["P-51D"] = 
+            {
+                ["total"] = 690.406,
+                ["actions"] = 
+                {
+                    ["losses"] = 
+                    {
+                        ["pilotDeath"] = 1,
+                        ["crash"] = 1,
+                        ["eject"] = 0,
+                    }, -- end of ["losses"]
+                }, -- end of ["actions"]
+                ["inAir"] = 270.125,
+            }, -- end of ["P-51D"]
             ["Ka-50"] = 
             {
                 ["total"] = 4562.082,
@@ -15121,20 +14681,60 @@ stats =
             [3] = "Hevy",
         }, -- end of ["names"]
     }, -- end of ["6f510d38485d4c0836a0c53dcaa742df"]
-    ["0ed16e2fab622be7be70038750d3f3bf"] = 
+    ["23fb9576d399a1082fa7f4fb282f970b"] = 
     {
         ["times"] = 
         {
+            ["AV8BNA"] = 
+            {
+                ["total"] = 8342.663,
+                ["inAir"] = 4021.405,
+                ["weapons"] = 
+                {
+                    ["GAU_12"] = 
+                    {
+                        ["hit"] = 0,
+                        ["kills"] = 0,
+                        ["shot"] = 73,
+                        ["numHits"] = 0,
+                    }, -- end of ["GAU_12"]
+                    ["kamikaze"] = 
+                    {
+                        ["hit"] = 0,
+                        ["kills"] = 1,
+                        ["shot"] = 0,
+                        ["numHits"] = 4,
+                    }, -- end of ["kamikaze"]
+                    ["Mk-82 SnakeEye"] = 
+                    {
+                        ["hit"] = 0,
+                        ["kills"] = 0,
+                        ["shot"] = 10,
+                        ["numHits"] = 0,
+                    }, -- end of ["Mk-82 SnakeEye"]
+                }, -- end of ["weapons"]
+                ["kills"] = 
+                {
+                    ["Buildings"] = 
+                    {
+                        ["Static"] = 1,
+                        ["total"] = 1,
+                    }, -- end of ["Buildings"]
+                }, -- end of ["kills"]
+                ["pvp"] = 
+                {
+                    ["kills"] = 1,
+                }, -- end of ["pvp"]
+            }, -- end of ["AV8BNA"]
         }, -- end of ["times"]
-        ["joinDate"] = 1699918699,
-        ["lastJoin"] = 1701985636,
-        ["id"] = 249,
+        ["joinDate"] = 1615057806,
+        ["lastJoin"] = 1615066768,
+        ["id"] = 95,
         ["names"] = 
         {
-            [1] = "Fisher",
-            [2] = "=JSW= Fisher",
+            [1] = "{TFT} LynxOfTheSky >>>*",
         }, -- end of ["names"]
-    }, -- end of ["0ed16e2fab622be7be70038750d3f3bf"]
+    }, -- end of ["23fb9576d399a1082fa7f4fb282f970b"]
     ["02845c49dc803de6f40886c161033115"] = 
     {
         ["times"] = 
@@ -15159,17 +14759,7 @@ stats =
         {
             ["SA342M"] = 
             {
-                ["total"] = 2694.939,
                 ["inAir"] = 1893.499,
-                ["actions"] = 
-                {
-                    ["losses"] = 
-                    {
-                        ["pilotDeath"] = 1,
-                        ["crash"] = 1,
-                        ["eject"] = 0,
-                    }, -- end of ["losses"]
-                }, -- end of ["actions"]
                 ["weapons"] = 
                 {
                     ["HOT3"] = 
@@ -15180,6 +14770,16 @@ stats =
                         ["hit"] = 0,
                     }, -- end of ["HOT3"]
                 }, -- end of ["weapons"]
+                ["actions"] = 
+                {
+                    ["losses"] = 
+                    {
+                        ["pilotDeath"] = 1,
+                        ["crash"] = 1,
+                        ["eject"] = 0,
+                    }, -- end of ["losses"]
+                }, -- end of ["actions"]
+                ["total"] = 2694.939,
             }, -- end of ["SA342M"]
             ["AV8BNA"] = 
             {
@@ -15322,20 +14922,6 @@ stats =
                         ["shot"] = 13,
                         ["hit"] = 4,
                     }, -- end of ["AGM-65F"]
-                    ["Mk-82AIR"] = 
-                    {
-                        ["numHits"] = 2,
-                        ["kills"] = 0,
-                        ["shot"] = 8,
-                        ["hit"] = 2,
-                    }, -- end of ["Mk-82AIR"]
-                    ["unknown"] = 
-                    {
-                        ["numHits"] = 97,
-                        ["kills"] = 0,
-                        ["shot"] = 0,
-                        ["hit"] = 0,
-                    }, -- end of ["unknown"]
                     ["GBU-12"] = 
                     {
                         ["numHits"] = 22,
@@ -15343,6 +14929,20 @@ stats =
                         ["shot"] = 16,
                         ["hit"] = 4,
                     }, -- end of ["GBU-12"]
+                    ["unknown"] = 
+                    {
+                        ["numHits"] = 97,
+                        ["kills"] = 0,
+                        ["shot"] = 0,
+                        ["hit"] = 0,
+                    }, -- end of ["unknown"]
+                    ["Mk-82AIR"] = 
+                    {
+                        ["numHits"] = 2,
+                        ["kills"] = 0,
+                        ["shot"] = 8,
+                        ["hit"] = 2,
+                    }, -- end of ["Mk-82AIR"]
                     ["Mk-82 Snakeye"] = 
                     {
                         ["numHits"] = 5,
@@ -15392,6 +14992,22 @@ stats =
                         ["Tanks"] = 1,
                     }, -- end of ["Ground Units"]
                 }, -- end of ["kills"]
+                ["inAir"] = 28340.586,
+                ["actions"] = 
+                {
+                    ["landing"] = 
+                    {
+                        ["austere"] = 8,
+                        ["FARP"] = 4,
+                        ["airbase"] = 12,
+                    }, -- end of ["landing"]
+                    ["takeoff"] = 
+                    {
+                        ["austere"] = 13,
+                        ["airbase"] = 24,
+                    }, -- end of ["takeoff"]
+                    ["bounced"] = 2,
+                }, -- end of ["actions"]
                 ["weapons"] = 
                 {
                     ["Hydra 70 M151 HE"] = 
@@ -15432,22 +15048,6 @@ stats =
                         ["hit"] = 21,
                     }, -- end of ["Hydra 70 M282 MPP"]
                 }, -- end of ["weapons"]
-                ["actions"] = 
-                {
-                    ["landing"] = 
-                    {
-                        ["austere"] = 8,
-                        ["FARP"] = 4,
-                        ["airbase"] = 12,
-                    }, -- end of ["landing"]
-                    ["takeoff"] = 
-                    {
-                        ["austere"] = 13,
-                        ["airbase"] = 24,
-                    }, -- end of ["takeoff"]
-                    ["bounced"] = 2,
-                }, -- end of ["actions"]
-                ["inAir"] = 28340.586,
             }, -- end of ["AH-64D_BLK_II"]
             ["MiG-21Bis"] = 
             {
@@ -15468,7 +15068,6 @@ stats =
             }, -- end of ["Mi-8MT"]
             ["SA342L"] = 
             {
-                ["total"] = 4815.733,
                 ["weapons"] = 
                 {
                     ["GIAT_M621G"] = 
@@ -15486,6 +15085,7 @@ stats =
                         ["numHits"] = 0,
                     }, -- end of ["SNEB68_EAP"]
                 }, -- end of ["weapons"]
+                ["inAir"] = 3404.047,
                 ["actions"] = 
                 {
                     ["landing"] = 
@@ -15504,7 +15104,7 @@ stats =
                         ["pilotError"] = 2,
                     }, -- end of ["losses"]
                 }, -- end of ["actions"]
-                ["inAir"] = 3404.047,
+                ["total"] = 4815.733,
             }, -- end of ["SA342L"]
             ["T-45"] = 
             {
@@ -15869,8 +15469,17 @@ stats =
         {
             ["Mi-8MT"] = 
             {
-                ["inAir"] = 5315.403,
                 ["total"] = 7207.276,
+                ["weapons"] = 
+                {
+                    ["GShG-7.62"] = 
+                    {
+                        ["hit"] = 0,
+                        ["kills"] = 0,
+                        ["shot"] = 348,
+                        ["numHits"] = 0,
+                    }, -- end of ["GShG-7.62"]
+                }, -- end of ["weapons"]
                 ["actions"] = 
                 {
                     ["landing"] = 
@@ -15884,16 +15493,7 @@ stats =
                         ["austere"] = 1,
                     }, -- end of ["takeoff"]
                 }, -- end of ["actions"]
-                ["weapons"] = 
-                {
-                    ["GShG-7.62"] = 
-                    {
-                        ["hit"] = 0,
-                        ["kills"] = 0,
-                        ["shot"] = 348,
-                        ["numHits"] = 0,
-                    }, -- end of ["GShG-7.62"]
-                }, -- end of ["weapons"]
+                ["inAir"] = 5315.403,
             }, -- end of ["Mi-8MT"]
         }, -- end of ["times"]
         ["joinDate"] = 1679858872,
@@ -15983,7 +15583,6 @@ stats =
             ["AV8BNA"] = 
             {
                 ["total"] = 59392.857,
-                ["inAir"] = 37562.713,
                 ["weapons"] = 
                 {
                     ["AIM-9M"] = 
@@ -16053,6 +15652,7 @@ stats =
                         ["numHits"] = 4,
                     }, -- end of ["Mk-82 Snakeye"]
                 }, -- end of ["weapons"]
+                ["inAir"] = 37562.713,
                 ["actions"] = 
                 {
                     ["lostTo"] = 
@@ -16166,17 +15766,8 @@ stats =
             }, -- end of ["FA-18C_hornet"]
             ["T-45 Copilot"] = 
             {
-                ["weapons"] = 
-                {
-                    ["BDU-33"] = 
-                    {
-                        ["hit"] = 0,
-                        ["kills"] = 0,
-                        ["shot"] = 8,
-                        ["numHits"] = 0,
-                    }, -- end of ["BDU-33"]
-                }, -- end of ["weapons"]
                 ["inAir"] = 17098.151,
+                ["total"] = 22964.369,
                 ["actions"] = 
                 {
                     ["landing"] = 
@@ -16195,10 +15786,35 @@ stats =
                     }, -- end of ["losses"]
                     ["bounced"] = 3,
                 }, -- end of ["actions"]
-                ["total"] = 22964.369,
+                ["weapons"] = 
+                {
+                    ["BDU-33"] = 
+                    {
+                        ["hit"] = 0,
+                        ["kills"] = 0,
+                        ["shot"] = 8,
+                        ["numHits"] = 0,
+                    }, -- end of ["BDU-33"]
+                }, -- end of ["weapons"]
             }, -- end of ["T-45 Copilot"]
             ["F-5E-3"] = 
             {
+                ["inAir"] = 941.139,
+                ["total"] = 1862.212,
+                ["actions"] = 
+                {
+                    ["losses"] = 
+                    {
+                        ["pilotDeath"] = 1,
+                        ["crash"] = 0,
+                        ["eject"] = 0,
+                        ["pilotError"] = 1,
+                    }, -- end of ["losses"]
+                    ["takeoff"] = 
+                    {
+                        ["airbase"] = 2,
+                    }, -- end of ["takeoff"]
+                }, -- end of ["actions"]
                 ["weapons"] = 
                 {
                     ["AIM-9P5"] = 
@@ -16216,26 +15832,9 @@ stats =
                         ["numHits"] = 0,
                     }, -- end of ["M-39"]
                 }, -- end of ["weapons"]
-                ["inAir"] = 941.139,
-                ["actions"] = 
-                {
-                    ["losses"] = 
-                    {
-                        ["pilotDeath"] = 1,
-                        ["crash"] = 0,
-                        ["eject"] = 0,
-                        ["pilotError"] = 1,
-                    }, -- end of ["losses"]
-                    ["takeoff"] = 
-                    {
-                        ["airbase"] = 2,
-                    }, -- end of ["takeoff"]
-                }, -- end of ["actions"]
-                ["total"] = 1862.212,
             }, -- end of ["F-5E-3"]
             ["F-16C_50"] = 
             {
-                ["total"] = 8850.336,
                 ["weapons"] = 
                 {
                     ["Mk-82AIR"] = 
@@ -16260,6 +15859,7 @@ stats =
                         ["hit"] = 0,
                     }, -- end of ["Mk-82 Snakeye"]
                 }, -- end of ["weapons"]
+                ["inAir"] = 4845.723,
                 ["actions"] = 
                 {
                     ["losses"] = 
@@ -16274,11 +15874,10 @@ stats =
                         ["airbase"] = 4,
                     }, -- end of ["takeoff"]
                 }, -- end of ["actions"]
-                ["inAir"] = 4845.723,
+                ["total"] = 8850.336,
             }, -- end of ["F-16C_50"]
             ["MB-339A"] = 
             {
-                ["total"] = 3644.193,
                 ["weapons"] = 
                 {
                     ["BLU-107/B Durandal"] = 
@@ -16296,6 +15895,7 @@ stats =
                         ["hit"] = 0,
                     }, -- end of ["BAP-100"]
                 }, -- end of ["weapons"]
+                ["inAir"] = 2362.689,
                 ["actions"] = 
                 {
                     ["bounced"] = 4,
@@ -16310,12 +15910,28 @@ stats =
                         ["eject"] = 1,
                     }, -- end of ["losses"]
                 }, -- end of ["actions"]
-                ["inAir"] = 2362.689,
+                ["total"] = 3644.193,
             }, -- end of ["MB-339A"]
             ["T-45"] = 
             {
-                ["total"] = 65679.327,
                 ["inAir"] = 45037.565,
+                ["weapons"] = 
+                {
+                    ["BDU-33"] = 
+                    {
+                        ["numHits"] = 0,
+                        ["kills"] = 0,
+                        ["shot"] = 54,
+                        ["hit"] = 0,
+                    }, -- end of ["BDU-33"]
+                    ["HYDRA-70 WTU-1/B"] = 
+                    {
+                        ["numHits"] = 0,
+                        ["kills"] = 0,
+                        ["shot"] = 7,
+                        ["hit"] = 0,
+                    }, -- end of ["HYDRA-70 WTU-1/B"]
+                }, -- end of ["weapons"]
                 ["actions"] = 
                 {
                     ["lostTo"] = 
@@ -16344,28 +15960,12 @@ stats =
                     }, -- end of ["losses"]
                     ["bounced"] = 10,
                 }, -- end of ["actions"]
-                ["weapons"] = 
-                {
-                    ["BDU-33"] = 
-                    {
-                        ["numHits"] = 0,
-                        ["kills"] = 0,
-                        ["shot"] = 54,
-                        ["hit"] = 0,
-                    }, -- end of ["BDU-33"]
-                    ["HYDRA-70 WTU-1/B"] = 
-                    {
-                        ["numHits"] = 0,
-                        ["kills"] = 0,
-                        ["shot"] = 7,
-                        ["hit"] = 0,
-                    }, -- end of ["HYDRA-70 WTU-1/B"]
-                }, -- end of ["weapons"]
+                ["total"] = 65679.327,
             }, -- end of ["T-45"]
         }, -- end of ["times"]
         ["joinDate"] = 1621681444,
         ["id"] = 114,
-        ["lastJoin"] = 1704398863,
+        ["lastJoin"] = 1705094528,
         ["pvp"] = 
         {
             ["AV8BNA"] = 
@@ -16544,48 +16144,47 @@ stats =
             [1] = "E-TF[103] Super",
         }, -- end of ["names"]
     }, -- end of ["88f7ee5fae7ba4b2857fb0f2de584378"]
-    ["244dfcf57cb994fe09ce8fd1140391aa"] = 
+    ["6b9bef9868635c06f8c089d212d5ca32"] = 
     {
         ["times"] = 
         {
-            ["F-14B"] = 
+            ["AV8BNA"] = 
             {
-                ["total"] = 5490.304,
-                ["inAir"] = 2939.216,
-            }, -- end of ["F-14B"]
-            ["FA-18C_hornet"] = 
-            {
-                ["weapons"] = 
-                {
-                    ["GBU-31(V)4/B"] = 
-                    {
-                        ["hit"] = 0,
-                        ["kills"] = 0,
-                        ["shot"] = 2,
-                        ["numHits"] = 0,
-                    }, -- end of ["GBU-31(V)4/B"]
-                }, -- end of ["weapons"]
-                ["inAir"] = 2202.479,
+                ["inAir"] = 1291.276,
+                ["total"] = 3573.98,
                 ["actions"] = 
                 {
                     ["takeoff"] = 
                     {
-                        ["CVN_71"] = 1,
+                        ["austere"] = 1,
                     }, -- end of ["takeoff"]
                 }, -- end of ["actions"]
-                ["total"] = 3493.904,
-            }, -- end of ["FA-18C_hornet"]
+                ["weapons"] = 
+                {
+                    ["Mk-82 Snakeye"] = 
+                    {
+                        ["hit"] = 0,
+                        ["kills"] = 0,
+                        ["shot"] = 4,
+                        ["numHits"] = 0,
+                    }, -- end of ["Mk-82 Snakeye"]
+                }, -- end of ["weapons"]
+            }, -- end of ["AV8BNA"]
+            ["T-45"] = 
+            {
+                ["total"] = 240.299,
+                ["inAir"] = 0,
+            }, -- end of ["T-45"]
         }, -- end of ["times"]
-        ["joinDate"] = 1621702957,
-        ["lastJoin"] = 1678568478,
-        ["id"] = 119,
+        ["joinDate"] = 1678547569,
+        ["lastJoin"] = 1678568789,
+        ["id"] = 185,
         ["names"] = 
         {
-            [1] = "Fantastic",
-            [2] = "BALDRICK 2 Fantastic",
-            [3] = "HAMMER 1-2 [VAF]FANTASTIC",
+            [1] = "Red 1-1 \"Winkle\"",
+            [2] = "SAXON 1 Red Sqn \"Winkle\"",
         }, -- end of ["names"]
-    }, -- end of ["244dfcf57cb994fe09ce8fd1140391aa"]
+    }, -- end of ["6b9bef9868635c06f8c089d212d5ca32"]
     ["eaeccb1a173bdf46c012a7dd5af89727"] = 
     {
         ["times"] = 
@@ -16762,16 +16361,19 @@ stats =
             }, -- end of ["SA342Minigun"]
             ["SA342L"] = 
             {
+                ["inAir"] = 5534.343,
+                ["total"] = 7736.052,
+                ["actions"] = 
+                {
+                    ["losses"] = 
+                    {
+                        ["pilotDeath"] = 8,
+                        ["crash"] = 6,
+                        ["eject"] = 0,
+                    }, -- end of ["losses"]
+                }, -- end of ["actions"]
                 ["weapons"] = 
                 {
-                    ["shot"] = 76,
-                    ["unknown"] = 
-                    {
-                        ["hit"] = 0,
-                        ["kills"] = 0,
-                        ["shot"] = 0,
-                        ["numHits"] = 29,
-                    }, -- end of ["unknown"]
                     ["GIAT_M621G"] = 
                     {
                         ["hit"] = 0,
@@ -16786,22 +16388,18 @@ stats =
                         ["shot"] = 16,
                         ["numHits"] = 0,
                     }, -- end of ["SNEB68_EAP"]
-                }, -- end of ["weapons"]
-                ["inAir"] = 5534.343,
-                ["actions"] = 
-                {
-                    ["losses"] = 
+                    ["shot"] = 76,
+                    ["unknown"] = 
                     {
-                        ["pilotDeath"] = 8,
-                        ["crash"] = 6,
-                        ["eject"] = 0,
-                    }, -- end of ["losses"]
-                }, -- end of ["actions"]
-                ["total"] = 7736.052,
+                        ["hit"] = 0,
+                        ["kills"] = 0,
+                        ["shot"] = 0,
+                        ["numHits"] = 29,
+                    }, -- end of ["unknown"]
+                }, -- end of ["weapons"]
             }, -- end of ["SA342L"]
             ["SpitfireLFMkIX"] = 
             {
-                ["inAir"] = 5303.059,
                 ["weapons"] = 
                 {
                     ["Hispano Mk. II"] = 
@@ -16828,6 +16426,7 @@ stats =
                         ["numHits"] = 0,
                     }, -- end of ["Browning .303 Mk. II"]
                 }, -- end of ["weapons"]
+                ["total"] = 6403.76,
                 ["actions"] = 
                 {
                     ["losses"] = 
@@ -16837,10 +16436,21 @@ stats =
                         ["eject"] = 0,
                     }, -- end of ["losses"]
                 }, -- end of ["actions"]
-                ["total"] = 6403.76,
+                ["inAir"] = 5303.059,
             }, -- end of ["SpitfireLFMkIX"]
             ["SA342M"] = 
             {
+                ["total"] = 16890.22,
+                ["inAir"] = 9936.169,
+                ["actions"] = 
+                {
+                    ["losses"] = 
+                    {
+                        ["pilotDeath"] = 1,
+                        ["crash"] = 3,
+                        ["eject"] = 0,
+                    }, -- end of ["losses"]
+                }, -- end of ["actions"]
                 ["weapons"] = 
                 {
                     ["kamikaze"] = 
@@ -16858,17 +16468,6 @@ stats =
                         ["numHits"] = 4,
                     }, -- end of ["HOT3"]
                 }, -- end of ["weapons"]
-                ["total"] = 16890.22,
-                ["actions"] = 
-                {
-                    ["losses"] = 
-                    {
-                        ["pilotDeath"] = 1,
-                        ["crash"] = 3,
-                        ["eject"] = 0,
-                    }, -- end of ["losses"]
-                }, -- end of ["actions"]
-                ["inAir"] = 9936.169,
             }, -- end of ["SA342M"]
             ["AV8BNA"] = 
             {
@@ -17137,6 +16736,13 @@ stats =
                         ["shot"] = 0,
                         ["numHits"] = 3,
                     }, -- end of ["F-16CM bl.50"]
+                    ["AIM-9L"] = 
+                    {
+                        ["hit"] = 0,
+                        ["kills"] = 0,
+                        ["shot"] = 2,
+                        ["numHits"] = 0,
+                    }, -- end of ["AIM-9L"]
                     ["GBU-12"] = 
                     {
                         ["kills"] = 0,
@@ -17145,13 +16751,6 @@ stats =
                         ["assist"] = 1,
                         ["numHits"] = 12,
                     }, -- end of ["GBU-12"]
-                    ["AIM-9L"] = 
-                    {
-                        ["hit"] = 0,
-                        ["kills"] = 0,
-                        ["shot"] = 2,
-                        ["numHits"] = 0,
-                    }, -- end of ["AIM-9L"]
                     ["GBU-38"] = 
                     {
                         ["numHits"] = 3,
@@ -17189,6 +16788,7 @@ stats =
             ["AH-64D_BLK_II"] = 
             {
                 ["total"] = 30827.484,
+                ["inAir"] = 21088.878,
                 ["weapons"] = 
                 {
                     ["Hydra-70 M229 HEDP"] = 
@@ -17220,13 +16820,6 @@ stats =
                         ["assist"] = 2,
                         ["numHits"] = 21,
                     }, -- end of ["AGM-114K"]
-                    ["HYDRA-70 M151"] = 
-                    {
-                        ["numHits"] = 0,
-                        ["kills"] = 0,
-                        ["shot"] = 14,
-                        ["hit"] = 0,
-                    }, -- end of ["HYDRA-70 M151"]
                     ["M230_new"] = 
                     {
                         ["kills"] = 11,
@@ -17236,8 +16829,14 @@ stats =
                         ["gun"] = true,
                         ["numHits"] = 272,
                     }, -- end of ["M230_new"]
+                    ["HYDRA-70 M151"] = 
+                    {
+                        ["numHits"] = 0,
+                        ["kills"] = 0,
+                        ["shot"] = 14,
+                        ["hit"] = 0,
+                    }, -- end of ["HYDRA-70 M151"]
                 }, -- end of ["weapons"]
-                ["inAir"] = 21088.878,
                 ["actions"] = 
                 {
                     ["landing"] = 
@@ -17303,17 +16902,8 @@ stats =
         {
             ["FA-18C_hornet"] = 
             {
-                ["weapons"] = 
-                {
-                    ["GBU-31(V)4/B"] = 
-                    {
-                        ["hit"] = 0,
-                        ["kills"] = 0,
-                        ["shot"] = 2,
-                        ["numHits"] = 0,
-                    }, -- end of ["GBU-31(V)4/B"]
-                }, -- end of ["weapons"]
                 ["total"] = 4445.191,
+                ["inAir"] = 2623.103,
                 ["actions"] = 
                 {
                     ["lostTo"] = 
@@ -17350,7 +16940,16 @@ stats =
                     }, -- end of ["losses"]
                     ["bolter"] = 2,
                 }, -- end of ["actions"]
-                ["inAir"] = 2623.103,
+                ["weapons"] = 
+                {
+                    ["GBU-31(V)4/B"] = 
+                    {
+                        ["hit"] = 0,
+                        ["kills"] = 0,
+                        ["shot"] = 2,
+                        ["numHits"] = 0,
+                    }, -- end of ["GBU-31(V)4/B"]
+                }, -- end of ["weapons"]
             }, -- end of ["FA-18C_hornet"]
         }, -- end of ["times"]
         ["joinDate"] = 1678281894,
@@ -17363,119 +16962,21 @@ stats =
             [3] = "Hawk 3-1|foltrever",
         }, -- end of ["names"]
     }, -- end of ["fad102679a18ac9ce987dc94c35ecb77"]
-    ["e78d9437dbba3a8bc254fba991dbb3c8"] = 
+    ["625e2b83a3111e6a948b89a0daab3696"] = 
     {
         ["times"] = 
         {
-            ["AH-64D_BLK_II"] = 
-            {
-                ["total"] = 3493.851,
-                ["kills"] = 
-                {
-                    ["Ground Units"] = 
-                    {
-                        ["AAA"] = 1,
-                        ["total"] = 2,
-                        ["Unarmored"] = 1,
-                    }, -- end of ["Ground Units"]
-                }, -- end of ["kills"]
-                ["weapons"] = 
-                {
-                    ["Hydra 70 M151 HE"] = 
-                    {
-                        ["hit"] = 0,
-                        ["kills"] = 0,
-                        ["shot"] = 6,
-                        ["numHits"] = 0,
-                    }, -- end of ["Hydra 70 M151 HE"]
-                    ["AGM-114K"] = 
-                    {
-                        ["kills"] = 2,
-                        ["shot"] = 1,
-                        ["numHits"] = 5,
-                        ["assist"] = 3,
-                        ["hit"] = 0,
-                    }, -- end of ["AGM-114K"]
-                    ["M230_new"] = 
-                    {
-                        ["kills"] = 0,
-                        ["shot"] = 94,
-                        ["hit"] = 0,
-                        ["gun"] = true,
-                        ["numHits"] = 0,
-                    }, -- end of ["M230_new"]
-                }, -- end of ["weapons"]
-                ["actions"] = 
-                {
-                    ["landing"] = 
-                    {
-                        ["airbase"] = 3,
-                    }, -- end of ["landing"]
-                    ["takeoff"] = 
-                    {
-                        ["airbase"] = 10,
-                    }, -- end of ["takeoff"]
-                }, -- end of ["actions"]
-                ["inAir"] = 2252.39,
-            }, -- end of ["AH-64D_BLK_II"]
-            ["AH-64D_BLK_II Copilot"] = 
-            {
-                ["total"] = 12119.144,
-                ["kills"] = 
-                {
-                    ["Ground Units"] = 
-                    {
-                        ["Arty/MLRS"] = 2,
-                        ["Infantry"] = 4,
-                        ["Unarmored"] = 3,
-                        ["APCs"] = 3,
-                        ["total"] = 12,
-                    }, -- end of ["Ground Units"]
-                    ["Buildings"] = 
-                    {
-                        ["total"] = 1,
-                        ["Static"] = 1,
-                    }, -- end of ["Buildings"]
-                }, -- end of ["kills"]
-                ["weapons"] = 
-                {
-                    ["unknown"] = 
-                    {
-                        ["hit"] = 0,
-                        ["kills"] = 2,
-                        ["shot"] = 0,
-                        ["numHits"] = 2,
-                    }, -- end of ["unknown"]
-                    ["AGM-114K"] = 
-                    {
-                        ["numHits"] = 18,
-                        ["kills"] = 11,
-                        ["shot"] = 5,
-                        ["hit"] = 0,
-                    }, -- end of ["AGM-114K"]
-                }, -- end of ["weapons"]
-                ["actions"] = 
-                {
-                    ["landing"] = 
-                    {
-                        ["airbase"] = 1,
-                    }, -- end of ["landing"]
-                    ["takeoff"] = 
-                    {
-                        ["airbase"] = 6,
-                    }, -- end of ["takeoff"]
-                }, -- end of ["actions"]
-                ["inAir"] = 9386.569,
-            }, -- end of ["AH-64D_BLK_II Copilot"]
         }, -- end of ["times"]
-        ["joinDate"] = 1670876863,
-        ["lastJoin"] = 1671487130,
-        ["id"] = 162,
+        ["joinDate"] = 1704437514,
+        ["lastJoin"] = 1705071487,
+        ["id"] = 254,
         ["names"] = 
         {
-            [1] = "Catchey",
+            [1] = "THUNDER 5-3 | Gideon",
+            [2] = "MACHETE 10 | Gideon",
+            [3] = "Gideon",
         }, -- end of ["names"]
-    }, -- end of ["e78d9437dbba3a8bc254fba991dbb3c8"]
+    }, -- end of ["625e2b83a3111e6a948b89a0daab3696"]
     ["731654a98eda9f63a67c2411de4fd939"] = 
     {
         ["times"] = 
@@ -17564,359 +17065,364 @@ stats =
             [1] = "E-TF[115] Gann \"Mayhem\"",
         }, -- end of ["names"]
     }, -- end of ["4da948707c81803c50df197d916343d9"]
-    ["18f0d336392715972e3a1f0f63ef9654"] = 
+    ["c153e49b73efbf650cd11ac76f3831df"] = 
     {
-        ["times"] = 
-        {
-            ["JF-17"] = 
-            {
-                ["total"] = 13210.574,
-                ["kills"] = 
-                {
-                    ["Planes"] = 
-                    {
-                        ["Fighters"] = 1,
-                        ["total"] = 1,
-                    }, -- end of ["Planes"]
-                }, -- end of ["kills"]
-                ["losses"] = 
-                {
-                    ["pilotDeath"] = 0,
-                    ["crash"] = 3,
-                    ["eject"] = 0,
-                }, -- end of ["losses"]
-                ["weapons"] = 
-                {
-                    ["kamikaze"] = 
-                    {
-                        ["hit"] = 0,
-                        ["kills"] = 0,
-                        ["shot"] = 0,
-                        ["numHits"] = 0,
-                    }, -- end of ["kamikaze"]
-                    ["SD-10"] = 
-                    {
-                        ["numHits"] = 2,
-                        ["kills"] = 1,
-                        ["shot"] = 15,
-                        ["hit"] = 0,
-                    }, -- end of ["SD-10"]
-                }, -- end of ["weapons"]
-                ["inAir"] = 6305.665,
-                ["actions"] = 
-                {
-                    ["losses"] = 
-                    {
-                        ["pilotDeath"] = 3,
-                        ["crash"] = 0,
-                        ["eject"] = 0,
-                    }, -- end of ["losses"]
-                }, -- end of ["actions"]
-                ["pvp"] = 
-                {
-                    ["losses"] = 3,
-                    ["kills"] = 1,
-                }, -- end of ["pvp"]
-            }, -- end of ["JF-17"]
-            ["F-16C_50"] = 
-            {
-                ["total"] = 20.001,
-                ["inAir"] = 0,
-            }, -- end of ["F-16C_50"]
-        }, -- end of ["times"]
-        ["joinDate"] = 1601752483,
-        ["lastJoin"] = 1678567508,
-        ["id"] = 47,
         ["names"] = 
         {
-            [1] = "E-TF[119] Riker",
-            [2] = "E-TF[102] Riker",
-            [3] = "SHARK 1-1 E-TF[102] Riker",
+            [7] = "Chaos 3-1=JSW= RJF",
+            [1] = "RJF",
+            [2] = "CHAOS 4 (=JSW= RJF)",
+            [4] = "Bounce 2",
+            [8] = "DOMINO71 | RJF",
+            [9] = "=JSW= RJF",
+            [5] = "Lance 7-2 RJF",
+            [3] = "=JSW=RJF",
+            [6] = "ANVIL 2-4 | RJF",
         }, -- end of ["names"]
-    }, -- end of ["18f0d336392715972e3a1f0f63ef9654"]
-    ["6c9eccd7ed6b35bdf36bd4dae5223a9e"] = 
-    {
         ["times"] = 
         {
-            ["SA342Minigun"] = 
+            ["MB-339A"] = 
             {
-                ["total"] = 60.046000000002,
-                ["inAir"] = 0,
-            }, -- end of ["SA342Minigun"]
-            ["M-2000C"] = 
-            {
-                ["total"] = 3071.312,
-                ["weapons"] = 
-                {
-                    ["BLG-66 Belouga"] = 
-                    {
-                        ["numHits"] = 0,
-                        ["kills"] = 0,
-                        ["shot"] = 8,
-                        ["hit"] = 0,
-                    }, -- end of ["BLG-66 Belouga"]
-                }, -- end of ["weapons"]
-                ["inAir"] = 2020.875,
-            }, -- end of ["M-2000C"]
-            ["SA342L"] = 
-            {
-                ["inAir"] = 780.30799999999,
-                ["total"] = 1100.392,
                 ["actions"] = 
                 {
-                    ["losses"] = 
+                    ["landing"] = 
                     {
-                        ["pilotDeath"] = 1,
-                        ["crash"] = 1,
-                        ["eject"] = 0,
-                    }, -- end of ["losses"]
+                        ["airbase"] = 1,
+                    }, -- end of ["landing"]
                 }, -- end of ["actions"]
-                ["weapons"] = 
-                {
-                    ["SNEB68_EAP"] = 
-                    {
-                        ["hit"] = 0,
-                        ["kills"] = 0,
-                        ["shot"] = 8,
-                        ["numHits"] = 0,
-                    }, -- end of ["SNEB68_EAP"]
-                    ["GIAT_M621G"] = 
-                    {
-                        ["kills"] = 0,
-                        ["shot"] = 531,
-                        ["hit"] = 0,
-                        ["gun"] = true,
-                        ["numHits"] = 0,
-                    }, -- end of ["GIAT_M621G"]
-                    ["kamikaze"] = 
-                    {
-                        ["hit"] = 0,
-                        ["kills"] = 0,
-                        ["shot"] = 0,
-                        ["numHits"] = 0,
-                    }, -- end of ["kamikaze"]
-                }, -- end of ["weapons"]
-            }, -- end of ["SA342L"]
-            ["Ka-50"] = 
-            {
-                ["inAir"] = 30.014999999999,
-                ["total"] = 30.014999999999,
-            }, -- end of ["Ka-50"]
-            ["SpitfireLFMkIX"] = 
-            {
-                ["inAir"] = 2461.469,
-                ["total"] = 2721.661,
-            }, -- end of ["SpitfireLFMkIX"]
-            ["P-51D"] = 
-            {
-                ["inAir"] = 2101.196,
-                ["total"] = 2281.326,
-            }, -- end of ["P-51D"]
-            ["FW-190A8"] = 
-            {
-                ["inAir"] = 2541.553,
-                ["total"] = 3071.895,
-                ["weapons"] = 
-                {
-                    ["MG 131"] = 
-                    {
-                        ["numHits"] = 0,
-                        ["kills"] = 0,
-                        ["shot"] = 9,
-                        ["hit"] = 0,
-                    }, -- end of ["MG 131"]
-                    ["MG 151/20"] = 
-                    {
-                        ["numHits"] = 0,
-                        ["kills"] = 0,
-                        ["shot"] = 10,
-                        ["hit"] = 0,
-                    }, -- end of ["MG 151/20"]
-                }, -- end of ["weapons"]
-            }, -- end of ["FW-190A8"]
-            ["Yak-52"] = 
-            {
-                ["total"] = 620.31299999999,
-                ["inAir"] = 440.234,
-            }, -- end of ["Yak-52"]
+            }, -- end of ["MB-339A"]
             ["AV8BNA"] = 
             {
-                ["weapons"] = 
-                {
-                    ["AGM-65E"] = 
-                    {
-                        ["numHits"] = 0,
-                        ["kills"] = 0,
-                        ["shot"] = 4,
-                        ["hit"] = 0,
-                    }, -- end of ["AGM-65E"]
-                    ["FFAR M156 WP"] = 
-                    {
-                        ["hit"] = 0,
-                        ["kills"] = 0,
-                        ["shot"] = 19,
-                        ["numHits"] = 0,
-                    }, -- end of ["FFAR M156 WP"]
-                    ["FFAR Mk1 HE"] = 
-                    {
-                        ["hit"] = 0,
-                        ["kills"] = 0,
-                        ["shot"] = 57,
-                        ["numHits"] = 0,
-                    }, -- end of ["FFAR Mk1 HE"]
-                }, -- end of ["weapons"]
-                ["total"] = 3461.257,
+                ["total"] = 4884.668,
                 ["actions"] = 
                 {
-                    ["losses"] = 
+                    ["landing"] = 
                     {
-                        ["pilotDeath"] = 3,
-                        ["crash"] = 3,
-                        ["eject"] = 0,
-                    }, -- end of ["losses"]
+                        ["airbase"] = 1,
+                    }, -- end of ["landing"]
+                    ["takeoff"] = 
+                    {
+                        ["airbase"] = 2,
+                    }, -- end of ["takeoff"]
                 }, -- end of ["actions"]
-                ["inAir"] = 2430.942,
+                ["inAir"] = 2392.689,
             }, -- end of ["AV8BNA"]
             ["FA-18C_hornet"] = 
             {
-                ["total"] = 81407.251,
-                ["inAir"] = 59847.481,
+                ["inAir"] = 6584.269,
                 ["weapons"] = 
                 {
-                    ["AGM-84E SLAM"] = 
-                    {
-                        ["numHits"] = 1,
-                        ["kills"] = 1,
-                        ["shot"] = 3,
-                        ["hit"] = 0,
-                    }, -- end of ["AGM-84E SLAM"]
-                    ["AGM-154C"] = 
+                    ["F/A-18C Lot 20"] = 
                     {
                         ["numHits"] = 0,
                         ["kills"] = 0,
-                        ["shot"] = 4,
+                        ["shot"] = 0,
                         ["hit"] = 0,
-                    }, -- end of ["AGM-154C"]
+                    }, -- end of ["F/A-18C Lot 20"]
+                }, -- end of ["weapons"]
+                ["total"] = 10336.037,
+            }, -- end of ["FA-18C_hornet"]
+            ["T-45"] = 
+            {
+                ["total"] = 112244.448,
+                ["actions"] = 
+                {
+                    ["landing"] = 
+                    {
+                        ["airbase"] = 26,
+                    }, -- end of ["landing"]
+                    ["takeoff"] = 
+                    {
+                        ["airbase"] = 62,
+                    }, -- end of ["takeoff"]
+                    ["losses"] = 
+                    {
+                        ["pilotDeath"] = 0,
+                        ["crash"] = 0,
+                        ["eject"] = 3,
+                    }, -- end of ["losses"]
+                    ["bounced"] = 10,
+                }, -- end of ["actions"]
+                ["inAir"] = 81568.765999998,
+            }, -- end of ["T-45"]
+            ["F-14B"] = 
+            {
+                ["inAir"] = 0,
+                ["total"] = 310.299,
+            }, -- end of ["F-14B"]
+            ["F-16C_50"] = 
+            {
+                ["total"] = 175795.93300001,
+                ["kills"] = 
+                {
+                    ["Ground Units"] = 
+                    {
+                        ["AAA"] = 1,
+                        ["total"] = 15,
+                        ["Arty/MLRS"] = 1,
+                        ["Forts"] = 2,
+                        ["Infantry"] = 11,
+                    }, -- end of ["Ground Units"]
+                    ["Planes"] = 
+                    {
+                        ["total"] = 21,
+                        ["Fighters"] = 21,
+                    }, -- end of ["Planes"]
+                }, -- end of ["kills"]
+                ["inAir"] = 117057.298,
+                ["actions"] = 
+                {
+                    ["landing"] = 
+                    {
+                        ["airbase"] = 21,
+                    }, -- end of ["landing"]
+                    ["takeoff"] = 
+                    {
+                        ["airbase"] = 54,
+                    }, -- end of ["takeoff"]
+                    ["losses"] = 
+                    {
+                        ["pilotDeath"] = 20,
+                        ["crash"] = 32,
+                        ["eject"] = 4,
+                        ["pilotError"] = 10,
+                    }, -- end of ["losses"]
+                    ["lostTo"] = 
+                    {
+                        ["Planes"] = 
+                        {
+                            ["Fighters"] = 16,
+                        }, -- end of ["Planes"]
+                    }, -- end of ["lostTo"]
+                }, -- end of ["actions"]
+                ["weapons"] = 
+                {
+                    ["AIM-9M"] = 
+                    {
+                        ["hit"] = 9,
+                        ["kills"] = 9,
+                        ["shot"] = 15,
+                        ["numHits"] = 14,
+                    }, -- end of ["AIM-9M"]
+                    ["M-61"] = 
+                    {
+                        ["kills"] = 4,
+                        ["shot"] = 2650,
+                        ["hit"] = 0,
+                        ["gun"] = true,
+                        ["numHits"] = 229,
+                    }, -- end of ["M-61"]
+                    ["AGM-88C"] = 
+                    {
+                        ["numHits"] = 4,
+                        ["kills"] = 0,
+                        ["shot"] = 6,
+                        ["hit"] = 0,
+                    }, -- end of ["AGM-88C"]
+                    ["Mk-82 Snakeye"] = 
+                    {
+                        ["hit"] = 2,
+                        ["kills"] = 1,
+                        ["shot"] = 4,
+                        ["numHits"] = 2,
+                    }, -- end of ["Mk-82 Snakeye"]
+                    ["GBU-38"] = 
+                    {
+                        ["hit"] = 4,
+                        ["kills"] = 10,
+                        ["shot"] = 4,
+                        ["numHits"] = 16,
+                    }, -- end of ["GBU-38"]
+                    ["AIM-120C-5"] = 
+                    {
+                        ["numHits"] = 5,
+                        ["kills"] = 5,
+                        ["shot"] = 13,
+                        ["hit"] = 1,
+                    }, -- end of ["AIM-120C-5"]
                     ["AIM-9X"] = 
                     {
                         ["numHits"] = 1,
                         ["kills"] = 1,
                         ["shot"] = 2,
-                        ["hit"] = 0,
+                        ["hit"] = 1,
                     }, -- end of ["AIM-9X"]
-                    ["AGM-65E"] = 
-                    {
-                        ["numHits"] = 3,
-                        ["kills"] = 3,
-                        ["shot"] = 8,
-                        ["hit"] = 0,
-                    }, -- end of ["AGM-65E"]
-                    ["HOT3"] = 
-                    {
-                        ["numHits"] = 2,
-                        ["kills"] = 2,
-                        ["shot"] = 0,
-                        ["hit"] = 0,
-                    }, -- end of ["HOT3"]
                     ["Mk-82 SnakeEye"] = 
                     {
-                        ["numHits"] = 12,
-                        ["kills"] = 4,
-                        ["shot"] = 24,
                         ["hit"] = 0,
-                    }, -- end of ["Mk-82 SnakeEye"]
-                    ["AGM-65F"] = 
-                    {
-                        ["numHits"] = 0,
                         ["kills"] = 0,
                         ["shot"] = 6,
+                        ["numHits"] = 6,
+                    }, -- end of ["Mk-82 SnakeEye"]
+                    ["AIM-9L"] = 
+                    {
                         ["hit"] = 0,
-                    }, -- end of ["AGM-65F"]
+                        ["kills"] = 0,
+                        ["shot"] = 2,
+                        ["numHits"] = 0,
+                    }, -- end of ["AIM-9L"]
                     ["GBU-12"] = 
                     {
-                        ["numHits"] = 1,
+                        ["hit"] = 0,
                         ["kills"] = 1,
-                        ["shot"] = 8,
-                        ["hit"] = 0,
-                    }, -- end of ["GBU-12"]
-                    ["Mk-82"] = 
-                    {
-                        ["hit"] = 0,
-                        ["kills"] = 0,
                         ["shot"] = 6,
-                        ["numHits"] = 4,
-                    }, -- end of ["Mk-82"]
+                        ["numHits"] = 2,
+                    }, -- end of ["GBU-12"]
+                    ["shot"] = 4,
                     ["AIM-120C"] = 
                     {
-                        ["numHits"] = 1,
-                        ["kills"] = 1,
-                        ["shot"] = 2,
-                        ["hit"] = 0,
+                        ["hit"] = 1,
+                        ["kills"] = 4,
+                        ["shot"] = 20,
+                        ["numHits"] = 4,
                     }, -- end of ["AIM-120C"]
-                    ["Mk-20 Rockeye"] = 
+                    ["Mk-82AIR"] = 
+                    {
+                        ["hit"] = 1,
+                        ["kills"] = 0,
+                        ["shot"] = 11,
+                        ["numHits"] = 4,
+                    }, -- end of ["Mk-82AIR"]
+                    ["Mk-82"] = 
                     {
                         ["numHits"] = 0,
                         ["kills"] = 0,
-                        ["shot"] = 2,
+                        ["shot"] = 4,
                         ["hit"] = 0,
-                    }, -- end of ["Mk-20 Rockeye"]
+                    }, -- end of ["Mk-82"]
+                    ["Mk-84"] = 
+                    {
+                        ["kills"] = 1,
+                        ["shot"] = 2,
+                        ["numHits"] = 2,
+                        ["assist"] = 1,
+                        ["hit"] = 0,
+                    }, -- end of ["Mk-84"]
+                    ["F-16CM bl.50"] = 
+                    {
+                        ["hit"] = 0,
+                        ["kills"] = 0,
+                        ["shot"] = 0,
+                        ["numHits"] = 0,
+                    }, -- end of ["F-16CM bl.50"]
                 }, -- end of ["weapons"]
+            }, -- end of ["F-16C_50"]
+            ["Su-27"] = 
+            {
                 ["kills"] = 
                 {
-                    ["Ground Units"] = 
-                    {
-                        ["Tanks"] = 5,
-                        ["total"] = 11,
-                        ["Unarmored"] = 1,
-                        ["SAM"] = 5,
-                    }, -- end of ["Ground Units"]
                     ["Planes"] = 
                     {
                         ["total"] = 2,
                         ["Fighters"] = 2,
                     }, -- end of ["Planes"]
                 }, -- end of ["kills"]
-                ["pvp"] = 
+                ["inAir"] = 570.645,
+                ["weapons"] = 
                 {
-                    ["kills"] = 13,
-                }, -- end of ["pvp"]
-            }, -- end of ["FA-18C_hornet"]
-            ["Mi-8MT"] = 
+                    ["R-27ET (AA-10 Alamo D)"] = 
+                    {
+                        ["hit"] = 2,
+                        ["kills"] = 2,
+                        ["shot"] = 2,
+                        ["numHits"] = 3,
+                    }, -- end of ["R-27ET (AA-10 Alamo D)"]
+                    ["R-27ER (AA-10 Alamo C)"] = 
+                    {
+                        ["hit"] = 0,
+                        ["kills"] = 0,
+                        ["shot"] = 2,
+                        ["numHits"] = 0,
+                    }, -- end of ["R-27ER (AA-10 Alamo C)"]
+                }, -- end of ["weapons"]
+                ["total"] = 570.645,
+            }, -- end of ["Su-27"]
+            ["T-45 Copilot"] = 
             {
-                ["total"] = 10679.76,
+                ["inAir"] = 22346.009,
+                ["actions"] = 
+                {
+                    ["lostTo"] = 
+                    {
+                        ["Planes"] = 
+                        {
+                            ["Fighters"] = 1,
+                        }, -- end of ["Planes"]
+                    }, -- end of ["lostTo"]
+                    ["takeoff"] = 
+                    {
+                        ["airbase"] = 16,
+                    }, -- end of ["takeoff"]
+                    ["landing"] = 
+                    {
+                        ["airbase"] = 5,
+                    }, -- end of ["landing"]
+                    ["losses"] = 
+                    {
+                        ["pilotDeath"] = 1,
+                        ["crash"] = 1,
+                        ["eject"] = 0,
+                    }, -- end of ["losses"]
+                    ["bounced"] = 1,
+                }, -- end of ["actions"]
+                ["total"] = 28012.442,
+            }, -- end of ["T-45 Copilot"]
+        }, -- end of ["times"]
+        ["joinDate"] = 1600544226,
+        ["id"] = 39,
+        ["lastJoin"] = 1704751953,
+        ["pvp"] = 
+        {
+            ["Su-27"] = 
+            {
+                ["kills"] = 2,
+            }, -- end of ["Su-27"]
+            ["F-16C_50"] = 
+            {
+                ["losses"] = 14,
+                ["kills"] = 11,
+            }, -- end of ["F-16C_50"]
+        }, -- end of ["pvp"]
+    }, -- end of ["c153e49b73efbf650cd11ac76f3831df"]
+    ["0992572bff0fa0f359389e4bafde8c63"] = 
+    {
+        ["names"] = 
+        {
+            [1] = "[GR] Ventura1980",
+            [2] = "Ventura 60kts",
+        }, -- end of ["names"]
+        ["times"] = 
+        {
+            ["AV8BNA"] = 
+            {
+                ["total"] = 8835.874,
+                ["weapons"] = 
+                {
+                    ["GBU-12"] = 
+                    {
+                        ["hit"] = 0,
+                        ["kills"] = 3,
+                        ["shot"] = 3,
+                        ["numHits"] = 3,
+                    }, -- end of ["GBU-12"]
+                }, -- end of ["weapons"]
+                ["inAir"] = 6374.264,
                 ["kills"] = 
                 {
                     ["Ground Units"] = 
                     {
-                        ["Unarmored"] = 1,
-                        ["total"] = 1,
+                        ["APCs"] = 3,
+                        ["total"] = 3,
                     }, -- end of ["Ground Units"]
                 }, -- end of ["kills"]
-                ["inAir"] = 7737.498,
-                ["weapons"] = 
+                ["pvp"] = 
                 {
-                    ["UPK-23-250"] = 
-                    {
-                        ["hit"] = 0,
-                        ["kills"] = 1,
-                        ["shot"] = 1378,
-                        ["numHits"] = 4,
-                    }, -- end of ["UPK-23-250"]
-                    ["S-8KOM"] = 
-                    {
-                        ["hit"] = 0,
-                        ["kills"] = 0,
-                        ["shot"] = 120,
-                        ["numHits"] = 0,
-                    }, -- end of ["S-8KOM"]
-                    ["YakB-12.7"] = 
-                    {
-                        ["hit"] = 0,
-                        ["kills"] = 0,
-                        ["shot"] = 526,
-                        ["numHits"] = 0,
-                    }, -- end of ["YakB-12.7"]
-                }, -- end of ["weapons"]
+                    ["kills"] = 3,
+                }, -- end of ["pvp"]
+            }, -- end of ["AV8BNA"]
+            ["FA-18C_hornet"] = 
+            {
+                ["inAir"] = 240.192,
                 ["actions"] = 
                 {
                     ["losses"] = 
@@ -17924,187 +17430,99 @@ stats =
                         ["pilotDeath"] = 1,
                         ["crash"] = 0,
                         ["eject"] = 0,
+                        ["pilotError"] = 1,
                     }, -- end of ["losses"]
                 }, -- end of ["actions"]
-                ["pvp"] = 
-                {
-                    ["kills"] = 1,
-                }, -- end of ["pvp"]
-            }, -- end of ["Mi-8MT"]
-            ["F-14B"] = 
-            {
-                ["total"] = 4072.136,
-                ["inAir"] = 2911.544,
-                ["weapons"] = 
-                {
-                    ["AIM_54A_Mk60"] = 
-                    {
-                        ["hit"] = 0,
-                        ["kills"] = 1,
-                        ["shot"] = 1,
-                        ["numHits"] = 1,
-                    }, -- end of ["AIM_54A_Mk60"]
-                }, -- end of ["weapons"]
-                ["kills"] = 
-                {
-                    ["Planes"] = 
-                    {
-                        ["Attack"] = 1,
-                        ["total"] = 1,
-                    }, -- end of ["Planes"]
-                }, -- end of ["kills"]
-                ["pvp"] = 
-                {
-                    ["kills"] = 1,
-                }, -- end of ["pvp"]
-            }, -- end of ["F-14B"]
+                ["total"] = 240.192,
+            }, -- end of ["FA-18C_hornet"]
             ["F-16C_50"] = 
             {
-                ["total"] = 5992.633,
-                ["kills"] = 
-                {
-                    ["Ground Units"] = 
-                    {
-                        ["Tanks"] = 6,
-                        ["Unarmored"] = 1,
-                        ["total"] = 7,
-                    }, -- end of ["Ground Units"]
-                }, -- end of ["kills"]
                 ["weapons"] = 
                 {
-                    ["CBU-97/CBU-105 SFW"] = 
+                    ["AIM-9M"] = 
                     {
-                        ["numHits"] = 13,
-                        ["kills"] = 7,
-                        ["shot"] = 14,
-                        ["hit"] = 0,
-                    }, -- end of ["CBU-97/CBU-105 SFW"]
-                }, -- end of ["weapons"]
-                ["inAir"] = 2911.145,
-                ["actions"] = 
-                {
-                    ["losses"] = 
-                    {
-                        ["pilotDeath"] = 1,
-                        ["crash"] = 1,
-                        ["eject"] = 0,
-                    }, -- end of ["losses"]
-                }, -- end of ["actions"]
-                ["pvp"] = 
-                {
-                    ["kills"] = 7,
-                }, -- end of ["pvp"]
-            }, -- end of ["F-16C_50"]
-            ["UH-1H"] = 
-            {
-                ["weapons"] = 
-                {
-                    ["HYDRA-70 M151"] = 
-                    {
-                        ["hit"] = 0,
-                        ["kills"] = 0,
-                        ["shot"] = 38,
                         ["numHits"] = 0,
-                    }, -- end of ["HYDRA-70 M151"]
-                    ["M134 Minigun"] = 
-                    {
-                        ["hit"] = 0,
                         ["kills"] = 0,
-                        ["shot"] = 4312,
+                        ["shot"] = 5,
+                        ["hit"] = 0,
+                    }, -- end of ["AIM-9M"]
+                    ["M-61"] = 
+                    {
+                        ["kills"] = 0,
+                        ["shot"] = 6,
+                        ["hit"] = 0,
+                        ["gun"] = true,
                         ["numHits"] = 0,
-                    }, -- end of ["M134 Minigun"]
+                    }, -- end of ["M-61"]
                 }, -- end of ["weapons"]
-                ["total"] = 8765.64,
+                ["inAir"] = 760.527,
                 ["actions"] = 
                 {
                     ["losses"] = 
                     {
                         ["pilotDeath"] = 5,
-                        ["crash"] = 4,
+                        ["crash"] = 10,
                         ["eject"] = 0,
+                        ["pilotError"] = 3,
                     }, -- end of ["losses"]
-                }, -- end of ["actions"]
-                ["inAir"] = 5823.627,
-            }, -- end of ["UH-1H"]
-            ["SA342M"] = 
-            {
-                ["total"] = 1260.593,
-                ["inAir"] = 780.376,
-                ["weapons"] = 
-                {
-                    ["HOT3"] = 
+                    ["lostTo"] = 
                     {
-                        ["hit"] = 0,
-                        ["kills"] = 0,
-                        ["shot"] = 4,
-                        ["numHits"] = 0,
-                    }, -- end of ["HOT3"]
-                }, -- end of ["weapons"]
-            }, -- end of ["SA342M"]
+                        ["Planes"] = 
+                        {
+                            ["Bombers"] = 3,
+                            ["Fighters"] = 2,
+                        }, -- end of ["Planes"]
+                    }, -- end of ["lostTo"]
+                }, -- end of ["actions"]
+                ["total"] = 760.527,
+            }, -- end of ["F-16C_50"]
         }, -- end of ["times"]
-        ["joinDate"] = 1589917357,
-        ["lastJoin"] = 1601758553,
-        ["id"] = 29,
-        ["names"] = 
+        ["joinDate"] = 1602258547,
+        ["id"] = 70,
+        ["lastJoin"] = 1669671569,
+        ["pvp"] = 
         {
-            [1] = "Sukebe",
-        }, -- end of ["names"]
-    }, -- end of ["6c9eccd7ed6b35bdf36bd4dae5223a9e"]
-    ["6a58a95719d22d4eb14e1544da092cea"] = 
+            ["F-16C_50"] = 
+            {
+                ["losses"] = 5,
+            }, -- end of ["F-16C_50"]
+        }, -- end of ["pvp"]
+    }, -- end of ["0992572bff0fa0f359389e4bafde8c63"]
+    ["2d4687a1e8563df17d6e7ba5abb0aeeb"] = 
     {
         ["times"] = 
         {
-            ["F-14B"] = 
+            ["F-16C_50"] = 
             {
-                ["total"] = 8605.711,
-                ["inAir"] = 2745.867,
-                ["weapons"] = 
-                {
-                    ["AIM-9M"] = 
-                    {
-                        ["hit"] = 0,
-                        ["kills"] = 1,
-                        ["shot"] = 2,
-                        ["numHits"] = 1,
-                    }, -- end of ["AIM-9M"]
-                    ["AIM-54C-Mk47"] = 
-                    {
-                        ["hit"] = 0,
-                        ["kills"] = 0,
-                        ["shot"] = 1,
-                        ["numHits"] = 0,
-                    }, -- end of ["AIM-54C-Mk47"]
-                    ["M-61A1"] = 
-                    {
-                        ["hit"] = 0,
-                        ["kills"] = 0,
-                        ["shot"] = 150,
-                        ["numHits"] = 0,
-                    }, -- end of ["M-61A1"]
-                }, -- end of ["weapons"]
-                ["kills"] = 
-                {
-                    ["Planes"] = 
-                    {
-                        ["Fighters"] = 1,
-                        ["total"] = 1,
-                    }, -- end of ["Planes"]
-                }, -- end of ["kills"]
-                ["pvp"] = 
-                {
-                    ["kills"] = 1,
-                }, -- end of ["pvp"]
-            }, -- end of ["F-14B"]
+                ["inAir"] = 0,
+                ["total"] = 90.043000000001,
+            }, -- end of ["F-16C_50"]
+            ["AV8BNA"] = 
+            {
+                ["inAir"] = 0,
+                ["total"] = 60.019,
+            }, -- end of ["AV8BNA"]
+            ["Mi-8MT"] = 
+            {
+                ["inAir"] = 0,
+                ["total"] = 50.02,
+            }, -- end of ["Mi-8MT"]
+            ["T-45"] = 
+            {
+                ["inAir"] = 0,
+                ["total"] = 120.04,
+            }, -- end of ["T-45"]
         }, -- end of ["times"]
-        ["joinDate"] = 1621599364,
-        ["lastJoin"] = 1621712397,
-        ["id"] = 110,
+        ["joinDate"] = 1631835313,
+        ["lastJoin"] = 1703801062,
+        ["id"] = 127,
         ["names"] = 
         {
-            [1] = "MoshyP",
-            [2] = "MoshyP (Baldrick - 3)",
+            [1] = "Yeti | Guest",
+            [2] = "Jethro |",
+            [3] = "Jethro",
         }, -- end of ["names"]
-    }, -- end of ["6a58a95719d22d4eb14e1544da092cea"]
+    }, -- end of ["2d4687a1e8563df17d6e7ba5abb0aeeb"]
     ["319669643b6e034aea963578caa8bbad"] = 
     {
         ["times"] = 
@@ -18164,6 +17582,26 @@ stats =
                         ["Fighters"] = 22,
                     }, -- end of ["Planes"]
                 }, -- end of ["kills"]
+                ["inAir"] = 22583.773,
+                ["actions"] = 
+                {
+                    ["landing"] = 
+                    {
+                        ["airbase"] = 10,
+                    }, -- end of ["landing"]
+                    ["takeoff"] = 
+                    {
+                        ["airbase"] = 24,
+                    }, -- end of ["takeoff"]
+                    ["losses"] = 
+                    {
+                        ["pilotDeath"] = 0,
+                        ["crashLanding"] = 1,
+                        ["crash"] = 0,
+                        ["eject"] = 1,
+                        ["pilotError"] = 1,
+                    }, -- end of ["losses"]
+                }, -- end of ["actions"]
                 ["weapons"] = 
                 {
                     ["M-61"] = 
@@ -18210,26 +17648,6 @@ stats =
                         ["numHits"] = 1,
                     }, -- end of ["AGM-65D"]
                 }, -- end of ["weapons"]
-                ["actions"] = 
-                {
-                    ["landing"] = 
-                    {
-                        ["airbase"] = 10,
-                    }, -- end of ["landing"]
-                    ["takeoff"] = 
-                    {
-                        ["airbase"] = 24,
-                    }, -- end of ["takeoff"]
-                    ["losses"] = 
-                    {
-                        ["pilotDeath"] = 0,
-                        ["crashLanding"] = 1,
-                        ["crash"] = 0,
-                        ["eject"] = 1,
-                        ["pilotError"] = 1,
-                    }, -- end of ["losses"]
-                }, -- end of ["actions"]
-                ["inAir"] = 22583.773,
             }, -- end of ["F-16C_50"]
         }, -- end of ["times"]
         ["joinDate"] = 1656526702,
@@ -18254,62 +17672,186 @@ stats =
             [1] = "GRIM 1-2 E-TF[819] Smooth",
         }, -- end of ["names"]
     }, -- end of ["c84b48621fba4484def31df8908cb298"]
-    ["3b098502440fbc185006a2c60838a9c8"] = 
+    ["f95a3a2e6e9d498670f654d6b2e7e951"] = 
     {
+        ["names"] = 
+        {
+            [1] = "Dobbie",
+            [2] = "=JSW= Dobbie",
+        }, -- end of ["names"]
         ["times"] = 
         {
-            ["AV8BNA"] = 
+            ["AH-64D_BLK_II"] = 
             {
-                ["total"] = 9836.243,
+                ["inAir"] = 4014.554,
+                ["total"] = 4414.977,
+                ["actions"] = 
+                {
+                    ["landing"] = 
+                    {
+                        ["austere"] = 2,
+                    }, -- end of ["landing"]
+                    ["takeoff"] = 
+                    {
+                        ["austere"] = 2,
+                    }, -- end of ["takeoff"]
+                }, -- end of ["actions"]
                 ["weapons"] = 
                 {
-                    ["GAU_12"] = 
+                    ["AGM-114K"] = 
                     {
-                        ["hit"] = 0,
-                        ["kills"] = 3,
-                        ["shot"] = 320,
-                        ["numHits"] = 3,
-                    }, -- end of ["GAU_12"]
-                    ["GBU-12"] = 
-                    {
-                        ["hit"] = 0,
-                        ["kills"] = 2,
-                        ["shot"] = 2,
                         ["numHits"] = 2,
-                    }, -- end of ["GBU-12"]
-                    ["FFAR Mk1 HE"] = 
-                    {
-                        ["hit"] = 0,
-                        ["kills"] = 3,
-                        ["shot"] = 38,
-                        ["numHits"] = 3,
-                    }, -- end of ["FFAR Mk1 HE"]
+                        ["kills"] = 0,
+                        ["shot"] = 2,
+                        ["hit"] = 2,
+                    }, -- end of ["AGM-114K"]
                 }, -- end of ["weapons"]
-                ["inAir"] = 7034.4,
+            }, -- end of ["AH-64D_BLK_II"]
+            ["F-16C_50"] = 
+            {
+                ["total"] = 72275.59,
                 ["kills"] = 
                 {
                     ["Ground Units"] = 
                     {
-                        ["Arty/MLRS"] = 7,
-                        ["total"] = 8,
-                        ["Infantry"] = 1,
+                        ["Arty/MLRS"] = 2,
+                        ["total"] = 9,
+                        ["IFVs"] = 1,
+                        ["APCs"] = 2,
+                        ["AAA"] = 2,
+                        ["Forts"] = 1,
+                        ["Tanks"] = 1,
                     }, -- end of ["Ground Units"]
+                    ["Planes"] = 
+                    {
+                        ["total"] = 15,
+                        ["Fighters"] = 15,
+                    }, -- end of ["Planes"]
                 }, -- end of ["kills"]
-                ["pvp"] = 
+                ["weapons"] = 
                 {
-                    ["kills"] = 8,
-                }, -- end of ["pvp"]
-            }, -- end of ["AV8BNA"]
+                    ["AIM-9M"] = 
+                    {
+                        ["hit"] = 9,
+                        ["kills"] = 10,
+                        ["shot"] = 12,
+                        ["numHits"] = 11,
+                    }, -- end of ["AIM-9M"]
+                    ["M-61"] = 
+                    {
+                        ["hit"] = 0,
+                        ["kills"] = 2,
+                        ["shot"] = 1076,
+                        ["numHits"] = 2,
+                    }, -- end of ["M-61"]
+                    ["AGM-65H"] = 
+                    {
+                        ["numHits"] = 2,
+                        ["kills"] = 0,
+                        ["shot"] = 2,
+                        ["hit"] = 0,
+                    }, -- end of ["AGM-65H"]
+                    ["AGM-65D"] = 
+                    {
+                        ["numHits"] = 2,
+                        ["kills"] = 0,
+                        ["shot"] = 2,
+                        ["hit"] = 1,
+                    }, -- end of ["AGM-65D"]
+                    ["AIM-120C"] = 
+                    {
+                        ["hit"] = 1,
+                        ["kills"] = 3,
+                        ["shot"] = 6,
+                        ["numHits"] = 3,
+                    }, -- end of ["AIM-120C"]
+                    ["GBU-12"] = 
+                    {
+                        ["numHits"] = 11,
+                        ["kills"] = 6,
+                        ["shot"] = 13,
+                        ["hit"] = 6,
+                    }, -- end of ["GBU-12"]
+                    ["AIM-9L"] = 
+                    {
+                        ["hit"] = 0,
+                        ["kills"] = 0,
+                        ["shot"] = 4,
+                        ["numHits"] = 0,
+                    }, -- end of ["AIM-9L"]
+                    ["GBU-38"] = 
+                    {
+                        ["kills"] = 1,
+                        ["shot"] = 7,
+                        ["hit"] = 3,
+                        ["assist"] = 1,
+                        ["numHits"] = 7,
+                    }, -- end of ["GBU-38"]
+                    ["Mk-82 Snakeye"] = 
+                    {
+                        ["kills"] = 2,
+                        ["shot"] = 4,
+                        ["numHits"] = 4,
+                        ["assist"] = 1,
+                        ["hit"] = 2,
+                    }, -- end of ["Mk-82 Snakeye"]
+                }, -- end of ["weapons"]
+                ["actions"] = 
+                {
+                    ["landing"] = 
+                    {
+                        ["airbase"] = 12,
+                    }, -- end of ["landing"]
+                    ["takeoff"] = 
+                    {
+                        ["airbase"] = 40,
+                    }, -- end of ["takeoff"]
+                    ["losses"] = 
+                    {
+                        ["pilotDeath"] = 3,
+                        ["crash"] = 9,
+                        ["eject"] = 2,
+                        ["pilotError"] = 3,
+                    }, -- end of ["losses"]
+                    ["lostTo"] = 
+                    {
+                        ["Planes"] = 
+                        {
+                            ["Fighters"] = 5,
+                        }, -- end of ["Planes"]
+                    }, -- end of ["lostTo"]
+                }, -- end of ["actions"]
+                ["inAir"] = 53935.966,
+            }, -- end of ["F-16C_50"]
+            ["T-45"] = 
+            {
+                ["total"] = 4485.124,
+                ["actions"] = 
+                {
+                    ["landing"] = 
+                    {
+                        ["airbase"] = 1,
+                    }, -- end of ["landing"]
+                    ["takeoff"] = 
+                    {
+                        ["airbase"] = 2,
+                    }, -- end of ["takeoff"]
+                }, -- end of ["actions"]
+                ["inAir"] = 2663.116,
+            }, -- end of ["T-45"]
         }, -- end of ["times"]
-        ["joinDate"] = 1601666188,
-        ["lastJoin"] = 1602369236,
-        ["id"] = 40,
-        ["names"] = 
+        ["joinDate"] = 1658773738,
+        ["id"] = 139,
+        ["lastJoin"] = 1687690755,
+        ["pvp"] = 
         {
-            [1] = "JoePineapples",
-            [2] = "=JSW=Pineapples",
-        }, -- end of ["names"]
-    }, -- end of ["3b098502440fbc185006a2c60838a9c8"]
+            ["F-16C_50"] = 
+            {
+                ["losses"] = 4,
+                ["kills"] = 13,
+            }, -- end of ["F-16C_50"]
+        }, -- end of ["pvp"]
+    }, -- end of ["f95a3a2e6e9d498670f654d6b2e7e951"]
     ["e2e6a43c642e810f36766e23d81a23bf"] = 
     {
         ["times"] = 
@@ -18323,94 +17865,62 @@ stats =
             [1] = "210 Dump",
         }, -- end of ["names"]
     }, -- end of ["e2e6a43c642e810f36766e23d81a23bf"]
-    ["1819ac6376d2289564f5960fb0c88c8d"] = 
+    ["0d091545902a7878ce1f90e114390dd1"] = 
     {
         ["times"] = 
         {
-            ["SA342L"] = 
-            {
-                ["total"] = 4245.056,
-                ["weapons"] = 
-                {
-                    ["GIAT_M621G"] = 
-                    {
-                        ["kills"] = 0,
-                        ["shot"] = 106,
-                        ["hit"] = 0,
-                        ["gun"] = true,
-                        ["numHits"] = 0,
-                    }, -- end of ["GIAT_M621G"]
-                    ["SNEB68_EAP"] = 
-                    {
-                        ["hit"] = 0,
-                        ["kills"] = 0,
-                        ["shot"] = 13,
-                        ["numHits"] = 0,
-                    }, -- end of ["SNEB68_EAP"]
-                }, -- end of ["weapons"]
-                ["actions"] = 
-                {
-                    ["losses"] = 
-                    {
-                        ["pilotDeath"] = 3,
-                        ["crash"] = 0,
-                        ["eject"] = 0,
-                        ["pilotError"] = 3,
-                    }, -- end of ["losses"]
-                    ["takeoff"] = 
-                    {
-                        ["austere"] = 3,
-                    }, -- end of ["takeoff"]
-                }, -- end of ["actions"]
-                ["inAir"] = 3464.147,
-            }, -- end of ["SA342L"]
             ["AV8BNA"] = 
             {
-                ["inAir"] = 2512.76,
+                ["inAir"] = 15955.398,
+                ["total"] = 38113.869,
                 ["actions"] = 
                 {
-                    ["landing"] = 
-                    {
-                        ["airbase"] = 1,
-                    }, -- end of ["landing"]
-                    ["takeoff"] = 
-                    {
-                        ["airbase"] = 2,
-                    }, -- end of ["takeoff"]
-                }, -- end of ["actions"]
-                ["total"] = 3884.812,
-            }, -- end of ["AV8BNA"]
-            ["T-45"] = 
-            {
-                ["inAir"] = 2110.77,
-                ["actions"] = 
-                {
-                    ["landing"] = 
-                    {
-                        ["airbase"] = 1,
-                    }, -- end of ["landing"]
-                    ["takeoff"] = 
-                    {
-                        ["airbase"] = 2,
-                    }, -- end of ["takeoff"]
                     ["losses"] = 
                     {
-                        ["pilotDeath"] = 0,
-                        ["crash"] = 0,
-                        ["eject"] = 2,
+                        ["crash"] = 4,
                     }, -- end of ["losses"]
                 }, -- end of ["actions"]
-                ["total"] = 4191.533,
-            }, -- end of ["T-45"]
+                ["weapons"] = 
+                {
+                    ["AGM-62 Walleye II"] = 
+                    {
+                        ["numHits"] = 1,
+                        ["kills"] = 0,
+                        ["shot"] = 0,
+                        ["hit"] = 0,
+                    }, -- end of ["AGM-62 Walleye II"]
+                    ["AGM-84D"] = 
+                    {
+                        ["numHits"] = 1,
+                        ["kills"] = 0,
+                        ["shot"] = 0,
+                        ["hit"] = 0,
+                    }, -- end of ["AGM-84D"]
+                    ["kamikaze"] = 
+                    {
+                        ["hit"] = 0,
+                        ["kills"] = 0,
+                        ["shot"] = 0,
+                        ["numHits"] = 0,
+                    }, -- end of ["kamikaze"]
+                    ["Mk-82 SnakeEye"] = 
+                    {
+                        ["hit"] = 0,
+                        ["kills"] = 0,
+                        ["shot"] = 15,
+                        ["numHits"] = 3,
+                    }, -- end of ["Mk-82 SnakeEye"]
+                }, -- end of ["weapons"]
+            }, -- end of ["AV8BNA"]
         }, -- end of ["times"]
-        ["joinDate"] = 1648410242,
-        ["lastJoin"] = 1659816474,
-        ["id"] = 135,
+        ["joinDate"] = 1586625535,
+        ["lastJoin"] = 1591278597,
+        ["id"] = 21,
         ["names"] = 
         {
-            [1] = "AnuttySquirrel",
+            [1] = "Goose4291",
         }, -- end of ["names"]
-    }, -- end of ["1819ac6376d2289564f5960fb0c88c8d"]
+    }, -- end of ["0d091545902a7878ce1f90e114390dd1"]
     ["1567ed3f9c5512f4160f0f1235b49a6f"] = 
     {
         ["times"] = 
@@ -18523,18 +18033,6 @@ stats =
                         ["Static"] = 5,
                     }, -- end of ["Buildings"]
                 }, -- end of ["kills"]
-                ["inAir"] = 5735.778,
-                ["actions"] = 
-                {
-                    ["landing"] = 
-                    {
-                        ["airbase"] = 2,
-                    }, -- end of ["landing"]
-                    ["takeoff"] = 
-                    {
-                        ["airbase"] = 4,
-                    }, -- end of ["takeoff"]
-                }, -- end of ["actions"]
                 ["weapons"] = 
                 {
                     ["unknown"] = 
@@ -18560,6 +18058,18 @@ stats =
                         ["numHits"] = 1,
                     }, -- end of ["AGM-114K"]
                 }, -- end of ["weapons"]
+                ["actions"] = 
+                {
+                    ["landing"] = 
+                    {
+                        ["airbase"] = 2,
+                    }, -- end of ["landing"]
+                    ["takeoff"] = 
+                    {
+                        ["airbase"] = 4,
+                    }, -- end of ["takeoff"]
+                }, -- end of ["actions"]
+                ["inAir"] = 5735.778,
             }, -- end of ["AH-64D_BLK_II"]
         }, -- end of ["times"]
         ["joinDate"] = 1679858958,
@@ -18594,21 +18104,6 @@ stats =
                         ["total"] = 1,
                     }, -- end of ["Ships"]
                 }, -- end of ["kills"]
-                ["inAir"] = 24472.882,
-                ["actions"] = 
-                {
-                    ["landing"] = 
-                    {
-                        ["austere"] = 5,
-                        ["FARP"] = 7,
-                        ["airbase"] = 9,
-                    }, -- end of ["landing"]
-                    ["takeoff"] = 
-                    {
-                        ["austere"] = 16,
-                        ["airbase"] = 22,
-                    }, -- end of ["takeoff"]
-                }, -- end of ["actions"]
                 ["weapons"] = 
                 {
                     ["Hydra-70 M229 HEDP"] = 
@@ -18650,6 +18145,21 @@ stats =
                         ["hit"] = 1,
                     }, -- end of ["Hydra 70 M282 MPP"]
                 }, -- end of ["weapons"]
+                ["actions"] = 
+                {
+                    ["landing"] = 
+                    {
+                        ["austere"] = 5,
+                        ["FARP"] = 7,
+                        ["airbase"] = 9,
+                    }, -- end of ["landing"]
+                    ["takeoff"] = 
+                    {
+                        ["austere"] = 16,
+                        ["airbase"] = 22,
+                    }, -- end of ["takeoff"]
+                }, -- end of ["actions"]
+                ["inAir"] = 24472.882,
             }, -- end of ["AH-64D_BLK_II"]
             ["M-2000C"] = 
             {
@@ -18755,53 +18265,6 @@ stats =
                 ["total"] = 16805.701,
                 ["inAir"] = 6772.483,
             }, -- end of ["F-14B"]
-            ["AH-64D_BLK_II Copilot"] = 
-            {
-                ["total"] = 7527.505,
-                ["weapons"] = 
-                {
-                    ["kills"] = 0,
-                    ["shot"] = 12,
-                    ["hit"] = 0,
-                    ["numHits"] = 0,
-                    ["AGM-114K"] = 
-                    {
-                        ["hit"] = 4,
-                        ["kills"] = 0,
-                        ["shot"] = 17,
-                        ["numHits"] = 8,
-                    }, -- end of ["AGM-114K"]
-                    ["M230_new"] = 
-                    {
-                        ["kills"] = 0,
-                        ["shot"] = 278,
-                        ["hit"] = 0,
-                        ["gun"] = true,
-                        ["numHits"] = 19,
-                    }, -- end of ["M230_new"]
-                    ["Hydra-70 M229 HEDP"] = 
-                    {
-                        ["hit"] = 0,
-                        ["kills"] = 0,
-                        ["shot"] = 38,
-                        ["numHits"] = 2,
-                    }, -- end of ["Hydra-70 M229 HEDP"]
-                }, -- end of ["weapons"]
-                ["actions"] = 
-                {
-                    ["landing"] = 
-                    {
-                        ["FARP"] = 1,
-                        ["airbase"] = 1,
-                    }, -- end of ["landing"]
-                    ["takeoff"] = 
-                    {
-                        ["austere"] = 2,
-                        ["airbase"] = 2,
-                    }, -- end of ["takeoff"]
-                }, -- end of ["actions"]
-                ["inAir"] = 5995.934,
-            }, -- end of ["AH-64D_BLK_II Copilot"]
             ["F-16C_50"] = 
             {
                 ["total"] = 77710.641999999,
@@ -18885,20 +18348,6 @@ stats =
                         ["shot"] = 6,
                         ["numHits"] = 0,
                     }, -- end of ["AIM-120C"]
-                    ["AIM-9L"] = 
-                    {
-                        ["hit"] = 0,
-                        ["kills"] = 0,
-                        ["shot"] = 5,
-                        ["numHits"] = 0,
-                    }, -- end of ["AIM-9L"]
-                    ["unknown"] = 
-                    {
-                        ["numHits"] = 228,
-                        ["kills"] = 0,
-                        ["shot"] = 0,
-                        ["hit"] = 0,
-                    }, -- end of ["unknown"]
                     ["GBU-12"] = 
                     {
                         ["hit"] = 0,
@@ -18906,6 +18355,20 @@ stats =
                         ["shot"] = 12,
                         ["numHits"] = 0,
                     }, -- end of ["GBU-12"]
+                    ["unknown"] = 
+                    {
+                        ["numHits"] = 228,
+                        ["kills"] = 0,
+                        ["shot"] = 0,
+                        ["hit"] = 0,
+                    }, -- end of ["unknown"]
+                    ["AIM-9L"] = 
+                    {
+                        ["hit"] = 0,
+                        ["kills"] = 0,
+                        ["shot"] = 5,
+                        ["numHits"] = 0,
+                    }, -- end of ["AIM-9L"]
                     ["Mk-82 Snakeye"] = 
                     {
                         ["numHits"] = 2,
@@ -18936,6 +18399,53 @@ stats =
                     ["kills"] = 2,
                 }, -- end of ["pvp"]
             }, -- end of ["F-16C_50"]
+            ["AH-64D_BLK_II Copilot"] = 
+            {
+                ["weapons"] = 
+                {
+                    ["kills"] = 0,
+                    ["shot"] = 12,
+                    ["hit"] = 0,
+                    ["numHits"] = 0,
+                    ["AGM-114K"] = 
+                    {
+                        ["hit"] = 4,
+                        ["kills"] = 0,
+                        ["shot"] = 17,
+                        ["numHits"] = 8,
+                    }, -- end of ["AGM-114K"]
+                    ["M230_new"] = 
+                    {
+                        ["kills"] = 0,
+                        ["shot"] = 278,
+                        ["hit"] = 0,
+                        ["gun"] = true,
+                        ["numHits"] = 19,
+                    }, -- end of ["M230_new"]
+                    ["Hydra-70 M229 HEDP"] = 
+                    {
+                        ["hit"] = 0,
+                        ["kills"] = 0,
+                        ["shot"] = 38,
+                        ["numHits"] = 2,
+                    }, -- end of ["Hydra-70 M229 HEDP"]
+                }, -- end of ["weapons"]
+                ["inAir"] = 5995.934,
+                ["actions"] = 
+                {
+                    ["landing"] = 
+                    {
+                        ["FARP"] = 1,
+                        ["airbase"] = 1,
+                    }, -- end of ["landing"]
+                    ["takeoff"] = 
+                    {
+                        ["austere"] = 2,
+                        ["airbase"] = 2,
+                    }, -- end of ["takeoff"]
+                }, -- end of ["actions"]
+                ["total"] = 7527.505,
+            }, -- end of ["AH-64D_BLK_II Copilot"]
             ["T-45 Copilot"] = 
             {
                 ["inAir"] = 1812.085,
@@ -18955,7 +18465,7 @@ stats =
             }, -- end of ["T-45 Copilot"]
         }, -- end of ["times"]
         ["joinDate"] = 1585323560,
-        ["lastJoin"] = 1703175270,
+        ["lastJoin"] = 1705355237,
         ["id"] = 8,
         ["names"] = 
         {
@@ -19088,160 +18598,188 @@ stats =
             [2] = "Hammer 1-4| [VAF]Biscuit",
         }, -- end of ["names"]
     }, -- end of ["115fed4a1dd290176f772ab21afc88e0"]
-    ["d6975c2ce812d0e8fdcfe728c5e20f34"] = 
+    ["c8b5270f6f9955945d0ea51a44cb7bd1"] = 
     {
+        ["names"] = 
+        {
+            [1] = "Jake-m1900",
+        }, -- end of ["names"]
         ["times"] = 
         {
-            ["M-2000C"] = 
+            ["AH-64D_BLK_II"] = 
             {
-                ["total"] = 2211.262,
-                ["inAir"] = 610.327,
-            }, -- end of ["M-2000C"]
-            ["F-14B"] = 
+                ["inAir"] = 0,
+                ["total"] = 170.185,
+            }, -- end of ["AH-64D_BLK_II"]
+            ["AV8BNA"] = 
             {
-                ["total"] = 81066.125000002,
+                ["total"] = 23823.997,
                 ["kills"] = 
                 {
-                    ["Planes"] = 
-                    {
-                        ["total"] = 1,
-                        ["Fighters"] = 1,
-                    }, -- end of ["Planes"]
                     ["Ground Units"] = 
                     {
-                        ["Tanks"] = 1,
-                        ["total"] = 1,
+                        ["IFVs"] = 1,
+                        ["total"] = 4,
+                        ["Unarmored"] = 2,
+                        ["Arty/MLRS"] = 1,
                     }, -- end of ["Ground Units"]
-                    ["Buildings"] = 
+                    ["Planes"] = 
                     {
-                        ["Static"] = 1,
-                        ["total"] = 1,
-                    }, -- end of ["Buildings"]
+                        ["Fighters"] = 2,
+                        ["total"] = 2,
+                    }, -- end of ["Planes"]
                 }, -- end of ["kills"]
-                ["inAir"] = 44769.317999999,
-                ["weapons"] = 
-                {
-                    ["AIM-9M"] = 
-                    {
-                        ["numHits"] = 0,
-                        ["kills"] = 0,
-                        ["shot"] = 2,
-                        ["hit"] = 0,
-                    }, -- end of ["AIM-9M"]
-                    ["M-61A1"] = 
-                    {
-                        ["hit"] = 0,
-                        ["kills"] = 0,
-                        ["shot"] = 326,
-                        ["numHits"] = 0,
-                    }, -- end of ["M-61A1"]
-                    ["AIM_54A_Mk60"] = 
-                    {
-                        ["numHits"] = 1,
-                        ["kills"] = 1,
-                        ["shot"] = 5,
-                        ["hit"] = 0,
-                    }, -- end of ["AIM_54A_Mk60"]
-                    ["AIM-7M"] = 
-                    {
-                        ["numHits"] = 0,
-                        ["kills"] = 0,
-                        ["shot"] = 3,
-                        ["hit"] = 0,
-                    }, -- end of ["AIM-7M"]
-                    ["kamikaze"] = 
-                    {
-                        ["hit"] = 0,
-                        ["kills"] = 1,
-                        ["shot"] = 0,
-                        ["numHits"] = 1,
-                    }, -- end of ["kamikaze"]
-                    ["Mk-82 SnakeEye"] = 
-                    {
-                        ["hit"] = 0,
-                        ["kills"] = 1,
-                        ["shot"] = 70,
-                        ["numHits"] = 4,
-                    }, -- end of ["Mk-82 SnakeEye"]
-                }, -- end of ["weapons"]
+                ["inAir"] = 16646.812,
                 ["actions"] = 
                 {
+                    ["bounced"] = 3,
+                    ["takeoff"] = 
+                    {
+                        ["austere"] = 2,
+                        ["airbase"] = 10,
+                        ["hms_invincible"] = 1,
+                    }, -- end of ["takeoff"]
+                    ["landing"] = 
+                    {
+                        ["AM2_4"] = 1,
+                        ["airbase"] = 3,
+                    }, -- end of ["landing"]
+                }, -- end of ["actions"]
+                ["weapons"] = 
+                {
+                    ["GBU-12"] = 
+                    {
+                        ["hit"] = 0,
+                        ["kills"] = 1,
+                        ["shot"] = 10,
+                        ["numHits"] = 1,
+                    }, -- end of ["GBU-12"]
+                    ["GBU-54B"] = 
+                    {
+                        ["hit"] = 0,
+                        ["kills"] = 1,
+                        ["shot"] = 1,
+                        ["numHits"] = 1,
+                    }, -- end of ["GBU-54B"]
+                    ["GBU-38"] = 
+                    {
+                        ["kills"] = 2,
+                        ["shot"] = 4,
+                        ["numHits"] = 4,
+                        ["assist"] = 1,
+                        ["hit"] = 1,
+                    }, -- end of ["GBU-38"]
+                    ["AIM-9M"] = 
+                    {
+                        ["numHits"] = 2,
+                        ["kills"] = 2,
+                        ["shot"] = 4,
+                        ["hit"] = 2,
+                    }, -- end of ["AIM-9M"]
+                }, -- end of ["weapons"]
+            }, -- end of ["AV8BNA"]
+            ["T-45"] = 
+            {
+                ["inAir"] = 16337.179,
+                ["total"] = 21642.984,
+                ["actions"] = 
+                {
+                    ["lostTo"] = 
+                    {
+                        ["Planes"] = 
+                        {
+                            ["Fighters"] = 3,
+                        }, -- end of ["Planes"]
+                    }, -- end of ["lostTo"]
+                    ["takeoff"] = 
+                    {
+                        ["airbase"] = 20,
+                    }, -- end of ["takeoff"]
+                    ["bounced"] = 11,
                     ["losses"] = 
                     {
                         ["pilotDeath"] = 0,
-                        ["crash"] = 2,
-                        ["eject"] = 0,
+                        ["crash"] = 3,
+                        ["eject"] = 4,
+                        ["pilotError"] = 1,
                     }, -- end of ["losses"]
+                    ["landing"] = 
+                    {
+                        ["airbase"] = 5,
+                    }, -- end of ["landing"]
                 }, -- end of ["actions"]
-                ["pvp"] = 
-                {
-                    ["kills"] = 3,
-                }, -- end of ["pvp"]
-            }, -- end of ["F-14B"]
-            ["F-16C_50"] = 
-            {
-                ["total"] = 13556.871,
-                ["inAir"] = 7263.612,
                 ["weapons"] = 
                 {
-                    ["Mk-82 SnakeEye"] = 
-                    {
-                        ["hit"] = 0,
-                        ["kills"] = 1,
-                        ["shot"] = 18,
-                        ["numHits"] = 3,
-                    }, -- end of ["Mk-82 SnakeEye"]
-                    ["M-61"] = 
+                    ["BDU-33"] = 
                     {
                         ["hit"] = 0,
                         ["kills"] = 0,
-                        ["shot"] = 403,
-                        ["numHits"] = 326,
-                    }, -- end of ["M-61"]
+                        ["shot"] = 12,
+                        ["numHits"] = 0,
+                    }, -- end of ["BDU-33"]
                 }, -- end of ["weapons"]
-                ["kills"] = 
+            }, -- end of ["T-45"]
+            ["UH-1H"] = 
+            {
+                ["inAir"] = 170.16,
+                ["actions"] = 
                 {
-                    ["Ground Units"] = 
+                    ["landing"] = 
                     {
-                        ["Tanks"] = 1,
-                        ["total"] = 1,
-                    }, -- end of ["Ground Units"]
-                }, -- end of ["kills"]
-                ["pvp"] = 
+                        ["austere"] = 1,
+                    }, -- end of ["landing"]
+                    ["takeoff"] = 
+                    {
+                        ["austere"] = 1,
+                    }, -- end of ["takeoff"]
+                }, -- end of ["actions"]
+                ["total"] = 520.589,
+            }, -- end of ["UH-1H"]
+            ["T-45 Copilot"] = 
+            {
+                ["total"] = 4695.457,
+                ["weapons"] = 
                 {
-                    ["kills"] = 1,
-                }, -- end of ["pvp"]
-            }, -- end of ["F-16C_50"]
+                    ["BDU-33"] = 
+                    {
+                        ["numHits"] = 0,
+                        ["kills"] = 0,
+                        ["shot"] = 12,
+                        ["hit"] = 0,
+                    }, -- end of ["BDU-33"]
+                }, -- end of ["weapons"]
+                ["actions"] = 
+                {
+                    ["bounced"] = 2,
+                    ["takeoff"] = 
+                    {
+                        ["airbase"] = 4,
+                    }, -- end of ["takeoff"]
+                    ["losses"] = 
+                    {
+                        ["pilotDeath"] = 0,
+                        ["crash"] = 0,
+                        ["eject"] = 2,
+                    }, -- end of ["losses"]
+                    ["landing"] = 
+                    {
+                        ["airbase"] = 1,
+                    }, -- end of ["landing"]
+                }, -- end of ["actions"]
+                ["inAir"] = 3954.593,
+            }, -- end of ["T-45 Copilot"]
+        }, -- end of ["times"]
+        ["joinDate"] = 1661203252,
+        ["id"] = 142,
+        ["lastJoin"] = 1692137229,
+        ["pvp"] = 
+        {
             ["AV8BNA"] = 
             {
-                ["total"] = 8363.816,
-                ["inAir"] = 5342.522,
-                ["weapons"] = 
-                {
-                    ["Mk-82 SnakeEye"] = 
-                    {
-                        ["hit"] = 0,
-                        ["kills"] = 0,
-                        ["shot"] = 4,
-                        ["numHits"] = 0,
-                    }, -- end of ["Mk-82 SnakeEye"]
-                }, -- end of ["weapons"]
+                ["kills"] = 2,
             }, -- end of ["AV8BNA"]
-            ["F-14B RIO"] = 
-            {
-                ["total"] = 23999.038,
-                ["inAir"] = 12724.716,
-            }, -- end of ["F-14B RIO"]
-        }, -- end of ["times"]
-        ["joinDate"] = 1585321816,
-        ["lastJoin"] = 1591477298,
-        ["id"] = 7,
-        ["names"] = 
-        {
-            [1] = "=JSW CLAW",
-            [2] = "=JSW=CLAW",
-        }, -- end of ["names"]
-    }, -- end of ["d6975c2ce812d0e8fdcfe728c5e20f34"]
+        }, -- end of ["pvp"]
+    }, -- end of ["c8b5270f6f9955945d0ea51a44cb7bd1"]
     ["aeb76c3772ad285fa46de2f6ca9e68f7"] = 
     {
         ["times"] = 
@@ -19311,74 +18849,193 @@ stats =
             [1] = "NightGarter",
         }, -- end of ["names"]
     }, -- end of ["63620908d21196f4a0fc3d1229e8f80a"]
-    ["host"] = 
+    ["21cf500349c9d53fb5998e043676b215"] = 
     {
-        ["id"] = 1,
         ["times"] = 
         {
         }, -- end of ["times"]
-        ["joinDate"] = 1585221247,
+        ["joinDate"] = 1691866703,
+        ["lastJoin"] = 1691871671,
+        ["id"] = 229,
         ["names"] = 
         {
-            [1] = "host",
+            [1] = "Dagger 2-2 Headless",
         }, -- end of ["names"]
-    }, -- end of ["host"]
-    ["0cacbc19770e7c15606c928774a4d691"] = 
+    }, -- end of ["21cf500349c9d53fb5998e043676b215"]
+    ["b90884d0bb68395f9d208aef54f2a841"] = 
     {
         ["times"] = 
         {
-            ["FA-18C_hornet"] = 
+            ["T-45"] = 
             {
-                ["total"] = 3395.389,
+                ["inAir"] = 0,
+                ["total"] = 50.022000000001,
+            }, -- end of ["T-45"]
+            ["AV8BNA"] = 
+            {
+                ["total"] = 75753.061,
                 ["kills"] = 
                 {
                     ["Ground Units"] = 
                     {
-                        ["total"] = 1,
-                        ["SAM"] = 1,
+                        ["total"] = 4,
+                        ["SAM"] = 4,
                     }, -- end of ["Ground Units"]
                 }, -- end of ["kills"]
+                ["actions"] = 
+                {
+                    ["losses"] = 
+                    {
+                        ["pilotDeath"] = 4,
+                        ["crash"] = 3,
+                        ["eject"] = 1,
+                    }, -- end of ["losses"]
+                    ["takeoff"] = 
+                    {
+                        ["airbase"] = 2,
+                    }, -- end of ["takeoff"]
+                }, -- end of ["actions"]
+                ["inAir"] = 47762.871,
+                ["weapons"] = 
+                {
+                    ["Zuni-127"] = 
+                    {
+                        ["numHits"] = 24,
+                        ["kills"] = 0,
+                        ["shot"] = 31,
+                        ["hit"] = 7,
+                    }, -- end of ["Zuni-127"]
+                    ["Mk-82"] = 
+                    {
+                        ["numHits"] = 15,
+                        ["kills"] = 2,
+                        ["shot"] = 21,
+                        ["hit"] = 6,
+                    }, -- end of ["Mk-82"]
+                    ["Mk-81"] = 
+                    {
+                        ["hit"] = 0,
+                        ["kills"] = 0,
+                        ["shot"] = 2,
+                        ["numHits"] = 4,
+                    }, -- end of ["Mk-81"]
+                    ["GBU-38"] = 
+                    {
+                        ["kills"] = 0,
+                        ["shot"] = 1,
+                        ["numHits"] = 2,
+                        ["assist"] = 1,
+                        ["hit"] = 0,
+                    }, -- end of ["GBU-38"]
+                    ["GBU-54(V)1/B"] = 
+                    {
+                        ["hit"] = 0,
+                        ["kills"] = 0,
+                        ["shot"] = 4,
+                        ["numHits"] = 0,
+                    }, -- end of ["GBU-54(V)1/B"]
+                    ["GBU-12"] = 
+                    {
+                        ["hit"] = 0,
+                        ["kills"] = 0,
+                        ["shot"] = 2,
+                        ["numHits"] = 0,
+                    }, -- end of ["GBU-12"]
+                    ["Mk-83"] = 
+                    {
+                        ["numHits"] = 2,
+                        ["kills"] = 0,
+                        ["shot"] = 2,
+                        ["hit"] = 2,
+                    }, -- end of ["Mk-83"]
+                    ["HYDRA-70 M151"] = 
+                    {
+                        ["numHits"] = 0,
+                        ["kills"] = 0,
+                        ["shot"] = 10,
+                        ["hit"] = 0,
+                    }, -- end of ["HYDRA-70 M151"]
+                    ["Mk-82 SnakeEye"] = 
+                    {
+                        ["hit"] = 0,
+                        ["kills"] = 0,
+                        ["shot"] = 2,
+                        ["numHits"] = 2,
+                    }, -- end of ["Mk-82 SnakeEye"]
+                    ["BDU-33"] = 
+                    {
+                        ["hit"] = 0,
+                        ["kills"] = 0,
+                        ["shot"] = 2,
+                        ["numHits"] = 0,
+                    }, -- end of ["BDU-33"]
+                    ["Mk-82AIR"] = 
+                    {
+                        ["hit"] = 0,
+                        ["kills"] = 0,
+                        ["shot"] = 0,
+                        ["numHits"] = 1,
+                    }, -- end of ["Mk-82AIR"]
+                    ["shot"] = 17,
+                    ["AGM-65F"] = 
+                    {
+                        ["hit"] = 0,
+                        ["kills"] = 0,
+                        ["shot"] = 1,
+                        ["numHits"] = 2,
+                    }, -- end of ["AGM-65F"]
+                    ["GAU_12"] = 
+                    {
+                        ["kills"] = 0,
+                        ["shot"] = 194,
+                        ["numHits"] = 71,
+                        ["assist"] = 1,
+                        ["hit"] = 0,
+                    }, -- end of ["GAU_12"]
+                    ["GBU-54B"] = 
+                    {
+                        ["kills"] = 0,
+                        ["shot"] = 2,
+                        ["numHits"] = 4,
+                        ["assist"] = 1,
+                        ["hit"] = 2,
+                    }, -- end of ["GBU-54B"]
+                    ["unknown"] = 
+                    {
+                        ["numHits"] = 147,
+                        ["kills"] = 0,
+                        ["shot"] = 0,
+                        ["hit"] = 0,
+                    }, -- end of ["unknown"]
+                    ["Mk-20 Rockeye"] = 
+                    {
+                        ["numHits"] = 4,
+                        ["kills"] = 2,
+                        ["shot"] = 4,
+                        ["hit"] = 0,
+                    }, -- end of ["Mk-20 Rockeye"]
+                }, -- end of ["weapons"]
                 ["losses"] = 
                 {
                     ["pilotDeath"] = 0,
                     ["crash"] = 1,
                     ["eject"] = 0,
                 }, -- end of ["losses"]
-                ["weapons"] = 
-                {
-                    ["AGM-88C"] = 
-                    {
-                        ["numHits"] = 1,
-                        ["kills"] = 1,
-                        ["shot"] = 2,
-                        ["hit"] = 0,
-                    }, -- end of ["AGM-88C"]
-                }, -- end of ["weapons"]
-                ["inAir"] = 2003.516,
-                ["actions"] = 
-                {
-                    ["losses"] = 
-                    {
-                        ["pilotDeath"] = 1,
-                        ["crash"] = 0,
-                        ["eject"] = 0,
-                    }, -- end of ["losses"]
-                }, -- end of ["actions"]
                 ["pvp"] = 
                 {
                     ["losses"] = 1,
-                    ["kills"] = 1,
+                    ["kills"] = 4,
                 }, -- end of ["pvp"]
-            }, -- end of ["FA-18C_hornet"]
+            }, -- end of ["AV8BNA"]
         }, -- end of ["times"]
-        ["joinDate"] = 1601752747,
-        ["lastJoin"] = 1602011749,
-        ["id"] = 55,
+        ["joinDate"] = 1612794517,
+        ["lastJoin"] = 1652057016,
+        ["id"] = 77,
         ["names"] = 
         {
-            [1] = "sollymans",
+            [1] = "SeeBread",
         }, -- end of ["names"]
-    }, -- end of ["0cacbc19770e7c15606c928774a4d691"]
+    }, -- end of ["b90884d0bb68395f9d208aef54f2a841"]
     ["44187430fcb187ce1b5fc3fd0e5019f0"] = 
     {
         ["times"] = 
@@ -19468,7 +19125,7 @@ stats =
         {
         }, -- end of ["times"]
         ["joinDate"] = 1682794697,
-        ["lastJoin"] = 1703331215,
+        ["lastJoin"] = 1705353132,
         ["id"] = 213,
         ["names"] = 
         {
@@ -19478,155 +19135,166 @@ stats =
             [3] = "Torchy",
         }, -- end of ["names"]
     }, -- end of ["1a1cba06dd0066c82910007ab36a3c1f"]
-    ["7cdda24c9dff09ebf8f2341545cbab22"] = 
+    ["f2babbbe46d996465a90be1aa25148f5"] = 
     {
         ["times"] = 
         {
-            ["FA-18C_hornet"] = 
+            ["M-2000C"] = 
             {
-                ["inAir"] = 4894.702,
-                ["total"] = 9855.931,
-                ["weapons"] = 
-                {
-                    ["Mk-84"] = 
-                    {
-                        ["hit"] = 0,
-                        ["kills"] = 0,
-                        ["shot"] = 8,
-                        ["numHits"] = 0,
-                    }, -- end of ["Mk-84"]
-                }, -- end of ["weapons"]
-            }, -- end of ["FA-18C_hornet"]
-            ["F-16C_50"] = 
-            {
-                ["total"] = 106041.589,
-                ["inAir"] = 70237.438999999,
-                ["weapons"] = 
-                {
-                    ["AIM-9M"] = 
-                    {
-                        ["numHits"] = 0,
-                        ["kills"] = 0,
-                        ["shot"] = 3,
-                        ["hit"] = 0,
-                    }, -- end of ["AIM-9M"]
-                    ["M-61"] = 
-                    {
-                        ["numHits"] = 181,
-                        ["kills"] = 0,
-                        ["shot"] = 493,
-                        ["hit"] = 0,
-                    }, -- end of ["M-61"]
-                    ["AGM-65H"] = 
-                    {
-                        ["kills"] = 4,
-                        ["shot"] = 9,
-                        ["numHits"] = 17,
-                        ["assist"] = 1,
-                        ["hit"] = 0,
-                    }, -- end of ["AGM-65H"]
-                    ["AGM-65D"] = 
-                    {
-                        ["kills"] = 2,
-                        ["shot"] = 9,
-                        ["numHits"] = 16,
-                        ["assist"] = 3,
-                        ["hit"] = 0,
-                    }, -- end of ["AGM-65D"]
-                    ["AIM-120C-5"] = 
-                    {
-                        ["numHits"] = 2,
-                        ["kills"] = 1,
-                        ["shot"] = 6,
-                        ["hit"] = 1,
-                    }, -- end of ["AIM-120C-5"]
-                    ["shot"] = 1,
-                    ["AIM-120C"] = 
-                    {
-                        ["hit"] = 1,
-                        ["kills"] = 1,
-                        ["shot"] = 2,
-                        ["numHits"] = 1,
-                    }, -- end of ["AIM-120C"]
-                    ["GBU-12"] = 
-                    {
-                        ["kills"] = 0,
-                        ["shot"] = 15,
-                        ["hit"] = 7,
-                        ["assist"] = 1,
-                        ["numHits"] = 12,
-                    }, -- end of ["GBU-12"]
-                    ["Mk-82"] = 
-                    {
-                        ["numHits"] = 7,
-                        ["kills"] = 0,
-                        ["shot"] = 17,
-                        ["hit"] = 2,
-                    }, -- end of ["Mk-82"]
-                    ["GBU-38"] = 
-                    {
-                        ["numHits"] = 8,
-                        ["kills"] = 2,
-                        ["shot"] = 8,
-                        ["hit"] = 3,
-                    }, -- end of ["GBU-38"]
-                    ["Mk-82 Snakeye"] = 
-                    {
-                        ["numHits"] = 7,
-                        ["kills"] = 0,
-                        ["shot"] = 18,
-                        ["hit"] = 4,
-                    }, -- end of ["Mk-82 Snakeye"]
-                }, -- end of ["weapons"]
+                ["total"] = 2641.464,
                 ["actions"] = 
                 {
-                    ["landing"] = 
-                    {
-                        ["airbase"] = 14,
-                    }, -- end of ["landing"]
-                    ["takeoff"] = 
-                    {
-                        ["airbase"] = 36,
-                    }, -- end of ["takeoff"]
                     ["losses"] = 
                     {
-                        ["pilotDeath"] = 2,
-                        ["crash"] = 1,
+                        ["pilotDeath"] = 1,
+                        ["crash"] = 0,
                         ["eject"] = 0,
-                        ["pilotError"] = 1,
                     }, -- end of ["losses"]
                 }, -- end of ["actions"]
+                ["inAir"] = 600.39,
+            }, -- end of ["M-2000C"]
+            ["FA-18C_hornet"] = 
+            {
+                ["total"] = 97934.953000001,
                 ["kills"] = 
                 {
-                    ["Planes"] = 
-                    {
-                        ["Fighters"] = 2,
-                        ["total"] = 2,
-                    }, -- end of ["Planes"]
-                    ["Helicopters"] = 
-                    {
-                        ["Utility"] = 5,
-                        ["total"] = 5,
-                    }, -- end of ["Helicopters"]
                     ["Ground Units"] = 
                     {
-                        ["Forts"] = 3,
-                        ["total"] = 3,
+                        ["SAM"] = 3,
+                        ["Unarmored"] = 1,
+                        ["total"] = 4,
                     }, -- end of ["Ground Units"]
                 }, -- end of ["kills"]
+                ["losses"] = 
+                {
+                    ["pilotDeath"] = 0,
+                    ["crash"] = 1,
+                    ["eject"] = 0,
+                }, -- end of ["losses"]
+                ["weapons"] = 
+                {
+                    ["M-61"] = 
+                    {
+                        ["kills"] = 0,
+                        ["shot"] = 76,
+                        ["hit"] = 0,
+                        ["gun"] = true,
+                        ["numHits"] = 64,
+                    }, -- end of ["M-61"]
+                    ["AGM-88C"] = 
+                    {
+                        ["numHits"] = 7,
+                        ["kills"] = 3,
+                        ["shot"] = 12,
+                        ["hit"] = 0,
+                    }, -- end of ["AGM-88C"]
+                    ["F/A-18C Lot 20"] = 
+                    {
+                        ["numHits"] = 0,
+                        ["kills"] = 0,
+                        ["shot"] = 0,
+                        ["hit"] = 0,
+                    }, -- end of ["F/A-18C Lot 20"]
+                    ["GBU-12"] = 
+                    {
+                        ["hit"] = 0,
+                        ["kills"] = 0,
+                        ["shot"] = 8,
+                        ["numHits"] = 10,
+                    }, -- end of ["GBU-12"]
+                    ["AIM-120C"] = 
+                    {
+                        ["hit"] = 0,
+                        ["kills"] = 0,
+                        ["shot"] = 3,
+                        ["numHits"] = 0,
+                    }, -- end of ["AIM-120C"]
+                    ["Mk-82 SnakeEye"] = 
+                    {
+                        ["hit"] = 0,
+                        ["kills"] = 1,
+                        ["shot"] = 8,
+                        ["numHits"] = 1,
+                    }, -- end of ["Mk-82 SnakeEye"]
+                }, -- end of ["weapons"]
+                ["inAir"] = 67275.991,
+                ["actions"] = 
+                {
+                    ["losses"] = 
+                    {
+                        ["pilotDeath"] = 3,
+                        ["crash"] = 3,
+                        ["eject"] = 5,
+                    }, -- end of ["losses"]
+                }, -- end of ["actions"]
+                ["pvp"] = 
+                {
+                    ["losses"] = 1,
+                    ["kills"] = 4,
+                }, -- end of ["pvp"]
+            }, -- end of ["FA-18C_hornet"]
+            ["A-10C"] = 
+            {
+                ["inAir"] = 0,
+                ["total"] = 150.093,
+            }, -- end of ["A-10C"]
+            ["F-16C_50"] = 
+            {
+                ["total"] = 7353.433,
+                ["weapons"] = 
+                {
+                    ["AGM-88C"] = 
+                    {
+                        ["numHits"] = 2,
+                        ["kills"] = 0,
+                        ["shot"] = 2,
+                        ["hit"] = 0,
+                    }, -- end of ["AGM-88C"]
+                    ["Mk-82 SnakeEye"] = 
+                    {
+                        ["numHits"] = 8,
+                        ["kills"] = 0,
+                        ["shot"] = 6,
+                        ["hit"] = 0,
+                    }, -- end of ["Mk-82 SnakeEye"]
+                }, -- end of ["weapons"]
+                ["inAir"] = 6092.645,
             }, -- end of ["F-16C_50"]
+            ["Mi-8MT"] = 
+            {
+                ["total"] = 5583.352,
+                ["weapons"] = 
+                {
+                    ["Mi-8MTV2"] = 
+                    {
+                        ["numHits"] = 0,
+                        ["kills"] = 0,
+                        ["shot"] = 0,
+                        ["hit"] = 0,
+                    }, -- end of ["Mi-8MTV2"]
+                }, -- end of ["weapons"]
+                ["inAir"] = 3232.047,
+            }, -- end of ["Mi-8MT"]
+            ["UH-1H"] = 
+            {
+                ["inAir"] = 810.422,
+                ["total"] = 1260.674,
+            }, -- end of ["UH-1H"]
+            ["AV8BNA"] = 
+            {
+                ["total"] = 1460.457,
+                ["inAir"] = 370.101,
+            }, -- end of ["AV8BNA"]
         }, -- end of ["times"]
-        ["joinDate"] = 1621521189,
-        ["lastJoin"] = 1664399277,
-        ["id"] = 104,
+        ["joinDate"] = 1586030476,
+        ["lastJoin"] = 1641927652,
+        ["id"] = 20,
         ["names"] = 
         {
-            [1] = "TIGER 2",
-            [2] = "Ben",
-            [4] = "BENj1sc",
-            [3] = "=JSW=BENj1sc",
+            [1] = "=JSW006=Badger",
+            [2] = "Badger",
         }, -- end of ["names"]
-    }, -- end of ["7cdda24c9dff09ebf8f2341545cbab22"]
+    }, -- end of ["f2babbbe46d996465a90be1aa25148f5"]
     ["fa60e6de2b1e6b3dca7e0dd8475c840f"] = 
     {
         ["times"] = 
@@ -19661,21 +19329,6 @@ stats =
                         ["total"] = 2,
                     }, -- end of ["Ground Units"]
                 }, -- end of ["kills"]
-                ["inAir"] = 31363.096,
-                ["actions"] = 
-                {
-                    ["landing"] = 
-                    {
-                        ["airbase"] = 17,
-                        ["austere"] = 3,
-                    }, -- end of ["landing"]
-                    ["takeoff"] = 
-                    {
-                        ["airbase"] = 36,
-                        ["austere"] = 4,
-                    }, -- end of ["takeoff"]
-                    ["bounced"] = 2,
-                }, -- end of ["actions"]
                 ["weapons"] = 
                 {
                     ["Hydra-70 M229 HEDP"] = 
@@ -19717,6 +19370,21 @@ stats =
                         ["hit"] = 20,
                     }, -- end of ["Hydra 70 M282 MPP"]
                 }, -- end of ["weapons"]
+                ["actions"] = 
+                {
+                    ["landing"] = 
+                    {
+                        ["airbase"] = 17,
+                        ["austere"] = 3,
+                    }, -- end of ["landing"]
+                    ["takeoff"] = 
+                    {
+                        ["airbase"] = 36,
+                        ["austere"] = 4,
+                    }, -- end of ["takeoff"]
+                    ["bounced"] = 2,
+                }, -- end of ["actions"]
+                ["inAir"] = 31363.096,
             }, -- end of ["AH-64D_BLK_II"]
             ["AV8BNA"] = 
             {
@@ -19725,18 +19393,25 @@ stats =
             }, -- end of ["AV8BNA"]
             ["FA-18C_hornet"] = 
             {
-                ["inAir"] = 46946.958999999,
                 ["total"] = 64694.892999999,
+                ["kills"] = 
+                {
+                    ["Planes"] = 
+                    {
+                        ["Fighters"] = 10,
+                        ["total"] = 10,
+                    }, -- end of ["Planes"]
+                }, -- end of ["kills"]
                 ["weapons"] = 
                 {
                     ["shot"] = 30,
-                    ["Mk-82"] = 
+                    ["AIM-120C-5"] = 
                     {
-                        ["hit"] = 0,
-                        ["kills"] = 0,
-                        ["shot"] = 4,
-                        ["numHits"] = 4,
-                    }, -- end of ["Mk-82"]
+                        ["hit"] = 1,
+                        ["kills"] = 1,
+                        ["shot"] = 2,
+                        ["numHits"] = 1,
+                    }, -- end of ["AIM-120C-5"]
                     ["GBU-38"] = 
                     {
                         ["hit"] = 0,
@@ -19751,6 +19426,13 @@ stats =
                         ["shot"] = 7,
                         ["hit"] = 0,
                     }, -- end of ["AGM-65F"]
+                    ["Mk-82"] = 
+                    {
+                        ["hit"] = 0,
+                        ["kills"] = 0,
+                        ["shot"] = 4,
+                        ["numHits"] = 4,
+                    }, -- end of ["Mk-82"]
                     ["unknown"] = 
                     {
                         ["numHits"] = 18,
@@ -19758,13 +19440,6 @@ stats =
                         ["shot"] = 0,
                         ["hit"] = 0,
                     }, -- end of ["unknown"]
-                    ["AIM-120C-5"] = 
-                    {
-                        ["hit"] = 1,
-                        ["kills"] = 1,
-                        ["shot"] = 2,
-                        ["numHits"] = 1,
-                    }, -- end of ["AIM-120C-5"]
                     ["AIM-9X"] = 
                     {
                         ["hit"] = 8,
@@ -19780,14 +19455,7 @@ stats =
                         ["hit"] = 1,
                     }, -- end of ["AGM-65E"]
                 }, -- end of ["weapons"]
-                ["kills"] = 
-                {
-                    ["Planes"] = 
-                    {
-                        ["Fighters"] = 10,
-                        ["total"] = 10,
-                    }, -- end of ["Planes"]
-                }, -- end of ["kills"]
+                ["inAir"] = 46946.958999999,
             }, -- end of ["FA-18C_hornet"]
             ["Ka-50_3"] = 
             {
@@ -19798,37 +19466,14 @@ stats =
                     {
                         ["AAA"] = 1,
                         ["Tanks"] = 4,
-                        ["APCs"] = 8,
                         ["IFVs"] = 1,
+                        ["APCs"] = 8,
                         ["Arty/MLRS"] = 3,
                         ["total"] = 19,
                         ["SAM"] = 2,
                     }, -- end of ["Ground Units"]
                 }, -- end of ["kills"]
-                ["weapons"] = 
-                {
-                    ["2A42"] = 
-                    {
-                        ["hit"] = 0,
-                        ["kills"] = 3,
-                        ["shot"] = 174,
-                        ["numHits"] = 10,
-                    }, -- end of ["2A42"]
-                    ["9M127-1 Vikhr-M"] = 
-                    {
-                        ["hit"] = 15,
-                        ["kills"] = 16,
-                        ["shot"] = 17,
-                        ["numHits"] = 17,
-                    }, -- end of ["9M127-1 Vikhr-M"]
-                    ["S-8KOM"] = 
-                    {
-                        ["hit"] = 0,
-                        ["kills"] = 0,
-                        ["shot"] = 4,
-                        ["numHits"] = 0,
-                    }, -- end of ["S-8KOM"]
-                }, -- end of ["weapons"]
+                ["inAir"] = 3881.764,
                 ["actions"] = 
                 {
                     ["landing"] = 
@@ -19854,79 +19499,31 @@ stats =
                         }, -- end of ["Ground Units"]
                     }, -- end of ["lostTo"]
                 }, -- end of ["actions"]
-                ["inAir"] = 3881.764,
-            }, -- end of ["Ka-50_3"]
-            ["F-16C_50"] = 
-            {
-                ["inAir"] = 13925.361,
-                ["kills"] = 
-                {
-                    ["Planes"] = 
-                    {
-                        ["Fighters"] = 5,
-                        ["total"] = 5,
-                    }, -- end of ["Planes"]
-                }, -- end of ["kills"]
                 ["weapons"] = 
                 {
-                    ["unknown"] = 
+                    ["2A42"] = 
                     {
-                        ["numHits"] = 15,
-                        ["kills"] = 2,
-                        ["shot"] = 0,
                         ["hit"] = 0,
-                    }, -- end of ["unknown"]
-                    ["AGM-65D"] = 
+                        ["kills"] = 3,
+                        ["shot"] = 174,
+                        ["numHits"] = 10,
+                    }, -- end of ["2A42"]
+                    ["9M127-1 Vikhr-M"] = 
                     {
-                        ["numHits"] = 4,
-                        ["kills"] = 0,
-                        ["shot"] = 6,
-                        ["hit"] = 0,
-                    }, -- end of ["AGM-65D"]
-                    ["shot"] = 18,
-                    ["AIM-120C-5"] = 
-                    {
-                        ["numHits"] = 2,
-                        ["kills"] = 2,
-                        ["shot"] = 2,
-                        ["hit"] = 1,
-                    }, -- end of ["AIM-120C-5"]
-                    ["Mk-82AIR"] = 
+                        ["hit"] = 15,
+                        ["kills"] = 16,
+                        ["shot"] = 17,
+                        ["numHits"] = 17,
+                    }, -- end of ["9M127-1 Vikhr-M"]
+                    ["S-8KOM"] = 
                     {
                         ["hit"] = 0,
                         ["kills"] = 0,
                         ["shot"] = 4,
                         ["numHits"] = 0,
-                    }, -- end of ["Mk-82AIR"]
-                    ["Mk-82"] = 
-                    {
-                        ["hit"] = 0,
-                        ["kills"] = 0,
-                        ["shot"] = 4,
-                        ["numHits"] = 0,
-                    }, -- end of ["Mk-82"]
-                    ["AIM-9X"] = 
-                    {
-                        ["numHits"] = 1,
-                        ["kills"] = 1,
-                        ["shot"] = 2,
-                        ["hit"] = 1,
-                    }, -- end of ["AIM-9X"]
-                    ["Mk-82 Snakeye"] = 
-                    {
-                        ["numHits"] = 0,
-                        ["kills"] = 0,
-                        ["shot"] = 6,
-                        ["hit"] = 0,
-                    }, -- end of ["Mk-82 Snakeye"]
+                    }, -- end of ["S-8KOM"]
                 }, -- end of ["weapons"]
-                ["total"] = 26178.702,
-            }, -- end of ["F-16C_50"]
-            ["UH-1H"] = 
-            {
-                ["inAir"] = 1051.023,
-                ["total"] = 1521.458,
-            }, -- end of ["UH-1H"]
+            }, -- end of ["Ka-50_3"]
             ["AH-64D_BLK_II Copilot"] = 
             {
                 ["total"] = 19869.285,
@@ -19941,38 +19538,7 @@ stats =
                         ["total"] = 12,
                     }, -- end of ["Ground Units"]
                 }, -- end of ["kills"]
-                ["weapons"] = 
-                {
-                    ["shot"] = 28,
-                    ["AGM-114K"] = 
-                    {
-                        ["numHits"] = 13,
-                        ["kills"] = 7,
-                        ["shot"] = 25,
-                        ["hit"] = 8,
-                    }, -- end of ["AGM-114K"]
-                    ["unknown"] = 
-                    {
-                        ["hit"] = 0,
-                        ["kills"] = 5,
-                        ["shot"] = 0,
-                        ["numHits"] = 8,
-                    }, -- end of ["unknown"]
-                    ["M230_new"] = 
-                    {
-                        ["numHits"] = 50,
-                        ["kills"] = 0,
-                        ["shot"] = 345,
-                        ["hit"] = 0,
-                    }, -- end of ["M230_new"]
-                    ["Hydra-70 M229 HEDP"] = 
-                    {
-                        ["numHits"] = 7,
-                        ["kills"] = 0,
-                        ["shot"] = 38,
-                        ["hit"] = 2,
-                    }, -- end of ["Hydra-70 M229 HEDP"]
-                }, -- end of ["weapons"]
+                ["inAir"] = 14794.186,
                 ["actions"] = 
                 {
                     ["landing"] = 
@@ -19988,8 +19554,110 @@ stats =
                     }, -- end of ["takeoff"]
                     ["bounced"] = 1,
                 }, -- end of ["actions"]
-                ["inAir"] = 14794.186,
+                ["weapons"] = 
+                {
+                    ["shot"] = 28,
+                    ["unknown"] = 
+                    {
+                        ["hit"] = 0,
+                        ["kills"] = 5,
+                        ["shot"] = 0,
+                        ["numHits"] = 8,
+                    }, -- end of ["unknown"]
+                    ["AGM-114K"] = 
+                    {
+                        ["numHits"] = 13,
+                        ["kills"] = 7,
+                        ["shot"] = 25,
+                        ["hit"] = 8,
+                    }, -- end of ["AGM-114K"]
+                    ["M230_new"] = 
+                    {
+                        ["numHits"] = 50,
+                        ["kills"] = 0,
+                        ["shot"] = 345,
+                        ["hit"] = 0,
+                    }, -- end of ["M230_new"]
+                    ["Hydra-70 M229 HEDP"] = 
+                    {
+                        ["numHits"] = 7,
+                        ["kills"] = 0,
+                        ["shot"] = 38,
+                        ["hit"] = 2,
+                    }, -- end of ["Hydra-70 M229 HEDP"]
+                }, -- end of ["weapons"]
             }, -- end of ["AH-64D_BLK_II Copilot"]
+            ["UH-1H"] = 
+            {
+                ["inAir"] = 1051.023,
+                ["total"] = 1521.458,
+            }, -- end of ["UH-1H"]
+            ["F-16C_50"] = 
+            {
+                ["kills"] = 
+                {
+                    ["Planes"] = 
+                    {
+                        ["Fighters"] = 5,
+                        ["total"] = 5,
+                    }, -- end of ["Planes"]
+                }, -- end of ["kills"]
+                ["total"] = 26178.702,
+                ["weapons"] = 
+                {
+                    ["Mk-82"] = 
+                    {
+                        ["hit"] = 0,
+                        ["kills"] = 0,
+                        ["shot"] = 4,
+                        ["numHits"] = 0,
+                    }, -- end of ["Mk-82"]
+                    ["AGM-65D"] = 
+                    {
+                        ["numHits"] = 4,
+                        ["kills"] = 0,
+                        ["shot"] = 6,
+                        ["hit"] = 0,
+                    }, -- end of ["AGM-65D"]
+                    ["shot"] = 18,
+                    ["unknown"] = 
+                    {
+                        ["numHits"] = 15,
+                        ["kills"] = 2,
+                        ["shot"] = 0,
+                        ["hit"] = 0,
+                    }, -- end of ["unknown"]
+                    ["Mk-82AIR"] = 
+                    {
+                        ["hit"] = 0,
+                        ["kills"] = 0,
+                        ["shot"] = 4,
+                        ["numHits"] = 0,
+                    }, -- end of ["Mk-82AIR"]
+                    ["AIM-120C-5"] = 
+                    {
+                        ["numHits"] = 2,
+                        ["kills"] = 2,
+                        ["shot"] = 2,
+                        ["hit"] = 1,
+                    }, -- end of ["AIM-120C-5"]
+                    ["AIM-9X"] = 
+                    {
+                        ["numHits"] = 1,
+                        ["kills"] = 1,
+                        ["shot"] = 2,
+                        ["hit"] = 1,
+                    }, -- end of ["AIM-9X"]
+                    ["Mk-82 Snakeye"] = 
+                    {
+                        ["numHits"] = 0,
+                        ["kills"] = 0,
+                        ["shot"] = 6,
+                        ["hit"] = 0,
+                    }, -- end of ["Mk-82 Snakeye"]
+                }, -- end of ["weapons"]
+                ["inAir"] = 13925.361,
+            }, -- end of ["F-16C_50"]
         }, -- end of ["times"]
         ["joinDate"] = 1622639388,
         ["lastJoin"] = 1698411223,
@@ -20001,19 +19669,252 @@ stats =
             [3] = "[BSD] Monkey Vomit",
         }, -- end of ["names"]
     }, -- end of ["269afd7b2f4120a1580230699c6741d3"]
-    ["adced234c71461042b6824d96cc37224"] = 
+    ["05be445e57c28e2e19b5b90487252fd1"] = 
     {
         ["times"] = 
         {
         }, -- end of ["times"]
-        ["joinDate"] = 1601753623,
-        ["lastJoin"] = 1601753623,
-        ["id"] = 66,
+        ["joinDate"] = 1693767295,
+        ["lastJoin"] = 1705352929,
+        ["id"] = 243,
         ["names"] = 
         {
-            [1] = "№20 | Freaky",
+            [1] = "[BSD] Solex",
+            [2] = "Solex",
+            [3] = "=JSW= Solex",
         }, -- end of ["names"]
-    }, -- end of ["adced234c71461042b6824d96cc37224"]
+    }, -- end of ["05be445e57c28e2e19b5b90487252fd1"]
+    ["dacaba8cb4b14d78ed84e897ed653eb3"] = 
+    {
+        ["times"] = 
+        {
+        }, -- end of ["times"]
+        ["joinDate"] = 1692730673,
+        ["lastJoin"] = 1705349123,
+        ["id"] = 234,
+        ["names"] = 
+        {
+            [1] = "4 REG = Varry",
+            [2] = "=JSW= Varry",
+        }, -- end of ["names"]
+    }, -- end of ["dacaba8cb4b14d78ed84e897ed653eb3"]
+    ["e7b92d0f806ff616c4b27b06fe2234d9"] = 
+    {
+        ["times"] = 
+        {
+            ["FA-18C_hornet"] = 
+            {
+                ["inAir"] = 1481.509,
+                ["actions"] = 
+                {
+                    ["lostTo"] = 
+                    {
+                        ["Planes"] = 
+                        {
+                            ["Fighters"] = 1,
+                        }, -- end of ["Planes"]
+                    }, -- end of ["lostTo"]
+                    ["takeoff"] = 
+                    {
+                        ["CVN_72"] = 1,
+                    }, -- end of ["takeoff"]
+                    ["losses"] = 
+                    {
+                        ["pilotDeath"] = 1,
+                        ["crash"] = 1,
+                        ["eject"] = 0,
+                    }, -- end of ["losses"]
+                }, -- end of ["actions"]
+                ["total"] = 3383.858,
+            }, -- end of ["FA-18C_hornet"]
+        }, -- end of ["times"]
+        ["joinDate"] = 1678563140,
+        ["lastJoin"] = 1678568348,
+        ["id"] = 188,
+        ["names"] = 
+        {
+            [1] = "Kaiser 1-2 41Sqn Russ",
+        }, -- end of ["names"]
+    }, -- end of ["e7b92d0f806ff616c4b27b06fe2234d9"]
+    ["06c7c2453832a44216a46cc4accb532d"] = 
+    {
+        ["times"] = 
+        {
+            ["FA-18C_hornet"] = 
+            {
+                ["total"] = 4408.844,
+                ["inAir"] = 2934.854,
+                ["weapons"] = 
+                {
+                    ["AIM-120C-5"] = 
+                    {
+                        ["hit"] = 0,
+                        ["kills"] = 0,
+                        ["shot"] = 1,
+                        ["numHits"] = 0,
+                    }, -- end of ["AIM-120C-5"]
+                }, -- end of ["weapons"]
+            }, -- end of ["FA-18C_hornet"]
+        }, -- end of ["times"]
+        ["joinDate"] = 1621702413,
+        ["lastJoin"] = 1621709990,
+        ["id"] = 118,
+        ["names"] = 
+        {
+            [1] = "Baby_Face",
+            [2] = "Lancer 3 [Baby_Face]",
+        }, -- end of ["names"]
+    }, -- end of ["06c7c2453832a44216a46cc4accb532d"]
+    ["fc0f968231ecb0c7eaa0228b1c7a5150"] = 
+    {
+        ["times"] = 
+        {
+            ["F-16C_50"] = 
+            {
+                ["total"] = 33914.914,
+                ["kills"] = 
+                {
+                    ["Planes"] = 
+                    {
+                        ["total"] = 1,
+                        ["Fighters"] = 1,
+                    }, -- end of ["Planes"]
+                }, -- end of ["kills"]
+                ["weapons"] = 
+                {
+                    ["Mk-82AIR"] = 
+                    {
+                        ["numHits"] = 0,
+                        ["kills"] = 0,
+                        ["shot"] = 4,
+                        ["hit"] = 0,
+                    }, -- end of ["Mk-82AIR"]
+                    ["Mk-82"] = 
+                    {
+                        ["numHits"] = 0,
+                        ["kills"] = 0,
+                        ["shot"] = 4,
+                        ["hit"] = 0,
+                    }, -- end of ["Mk-82"]
+                    ["AIM-9M"] = 
+                    {
+                        ["hit"] = 0,
+                        ["kills"] = 0,
+                        ["shot"] = 1,
+                        ["numHits"] = 0,
+                    }, -- end of ["AIM-9M"]
+                    ["AIM-120C-5"] = 
+                    {
+                        ["hit"] = 0,
+                        ["kills"] = 1,
+                        ["shot"] = 3,
+                        ["numHits"] = 1,
+                    }, -- end of ["AIM-120C-5"]
+                }, -- end of ["weapons"]
+                ["actions"] = 
+                {
+                    ["landing"] = 
+                    {
+                        ["airbase"] = 4,
+                    }, -- end of ["landing"]
+                    ["takeoff"] = 
+                    {
+                        ["airbase"] = 10,
+                    }, -- end of ["takeoff"]
+                    ["losses"] = 
+                    {
+                        ["pilotDeath"] = 1,
+                        ["crash"] = 0,
+                        ["eject"] = 0,
+                        ["pilotError"] = 1,
+                    }, -- end of ["losses"]
+                }, -- end of ["actions"]
+                ["inAir"] = 20154.233,
+            }, -- end of ["F-16C_50"]
+        }, -- end of ["times"]
+        ["joinDate"] = 1644435854,
+        ["lastJoin"] = 1653922553,
+        ["id"] = 130,
+        ["names"] = 
+        {
+            [1] = "[VAF] Vandal 1-1 | Bull",
+            [2] = "[VAF] | Vandal 1-1 | Bull",
+            [4] = "=JSW= | Bull",
+            [3] = "Vandal 1-1 | [VAF] Bull",
+        }, -- end of ["names"]
+    }, -- end of ["fc0f968231ecb0c7eaa0228b1c7a5150"]
+    ["d167552c2c6466e4ce1ce8e156a2b5fc"] = 
+    {
+        ["names"] = 
+        {
+            [1] = "WidowMaker",
+        }, -- end of ["names"]
+        ["times"] = 
+        {
+            ["MiG-19P"] = 
+            {
+                ["weapons"] = 
+                {
+                    ["R-3S - AAM, IR guided"] = 
+                    {
+                        ["numHits"] = 0,
+                        ["kills"] = 0,
+                        ["shot"] = 2,
+                        ["hit"] = 0,
+                    }, -- end of ["R-3S - AAM, IR guided"]
+                }, -- end of ["weapons"]
+                ["inAir"] = 890.639,
+                ["actions"] = 
+                {
+                    ["losses"] = 
+                    {
+                        ["pilotDeath"] = 2,
+                        ["crash"] = 4,
+                        ["eject"] = 1,
+                        ["pilotError"] = 1,
+                    }, -- end of ["losses"]
+                    ["lostTo"] = 
+                    {
+                        ["Planes"] = 
+                        {
+                            ["Fighters"] = 2,
+                        }, -- end of ["Planes"]
+                    }, -- end of ["lostTo"]
+                }, -- end of ["actions"]
+                ["total"] = 890.639,
+            }, -- end of ["MiG-19P"]
+            ["F-16C_50"] = 
+            {
+                ["inAir"] = 90.067,
+                ["actions"] = 
+                {
+                    ["losses"] = 
+                    {
+                        ["pilotDeath"] = 1,
+                        ["crash"] = 0,
+                        ["eject"] = 0,
+                        ["pilotError"] = 1,
+                    }, -- end of ["losses"]
+                }, -- end of ["actions"]
+                ["total"] = 90.067,
+            }, -- end of ["F-16C_50"]
+            ["MiG-29S"] = 
+            {
+                ["inAir"] = 50.007,
+                ["total"] = 50.007,
+            }, -- end of ["MiG-29S"]
+        }, -- end of ["times"]
+        ["joinDate"] = 1669667558,
+        ["id"] = 152,
+        ["lastJoin"] = 1669671507,
+        ["pvp"] = 
+        {
+            ["MiG-19P"] = 
+            {
+                ["losses"] = 2,
+            }, -- end of ["MiG-19P"]
+        }, -- end of ["pvp"]
+    }, -- end of ["d167552c2c6466e4ce1ce8e156a2b5fc"]
     ["534894c6525946fcf1ba1b7f55233590"] = 
     {
         ["names"] = 
@@ -20028,17 +19929,8 @@ stats =
         {
             ["T-45"] = 
             {
-                ["weapons"] = 
-                {
-                    ["BDU-33"] = 
-                    {
-                        ["hit"] = 0,
-                        ["kills"] = 0,
-                        ["shot"] = 12,
-                        ["numHits"] = 0,
-                    }, -- end of ["BDU-33"]
-                }, -- end of ["weapons"]
                 ["inAir"] = 56910.828,
+                ["total"] = 76521.215,
                 ["actions"] = 
                 {
                     ["landing"] = 
@@ -20058,12 +19950,20 @@ stats =
                     }, -- end of ["losses"]
                     ["bounced"] = 13,
                 }, -- end of ["actions"]
-                ["total"] = 76521.215,
+                ["weapons"] = 
+                {
+                    ["BDU-33"] = 
+                    {
+                        ["hit"] = 0,
+                        ["kills"] = 0,
+                        ["shot"] = 12,
+                        ["numHits"] = 0,
+                    }, -- end of ["BDU-33"]
+                }, -- end of ["weapons"]
             }, -- end of ["T-45"]
             ["F-16C_50"] = 
             {
                 ["total"] = 221272.84900002,
-                ["inAir"] = 156540.593,
                 ["weapons"] = 
                 {
                     ["AIM-9M"] = 
@@ -20126,13 +20026,14 @@ stats =
                         ["shot"] = 2,
                         ["numHits"] = 0,
                     }, -- end of ["AGM-88C"]
-                    ["GBU-24A/B Paveway III"] = 
+                    ["GBU-12"] = 
                     {
+                        ["kills"] = 6,
+                        ["shot"] = 16,
+                        ["hit"] = 6,
+                        ["assist"] = 3,
                         ["numHits"] = 14,
-                        ["kills"] = 0,
-                        ["shot"] = 4,
-                        ["hit"] = 3,
-                    }, -- end of ["GBU-24A/B Paveway III"]
+                    }, -- end of ["GBU-12"]
                     ["AGM-65D"] = 
                     {
                         ["numHits"] = 2,
@@ -20154,30 +20055,6 @@ stats =
                         ["shot"] = 2,
                         ["hit"] = 0,
                     }, -- end of ["BDU-50HD"]
-                    ["Mk-82AIR"] = 
-                    {
-                        ["numHits"] = 4,
-                        ["kills"] = 1,
-                        ["shot"] = 7,
-                        ["hit"] = 1,
-                    }, -- end of ["Mk-82AIR"]
-                    ["BDU-33"] = 
-                    {
-                        ["numHits"] = 0,
-                        ["kills"] = 0,
-                        ["shot"] = 6,
-                        ["hit"] = 0,
-                    }, -- end of ["BDU-33"]
-                    ["GBU-12"] = 
-                    {
-                        ["kills"] = 6,
-                        ["shot"] = 16,
-                        ["hit"] = 6,
-                        ["assist"] = 3,
-                        ["numHits"] = 14,
-                    }, -- end of ["GBU-12"]
-                    ["shot"] = 3,
-                    ["hit"] = 0,
                     ["AIM-9L"] = 
                     {
                         ["numHits"] = 6,
@@ -20185,6 +20062,29 @@ stats =
                         ["shot"] = 11,
                         ["hit"] = 5,
                     }, -- end of ["AIM-9L"]
+                    ["BDU-33"] = 
+                    {
+                        ["numHits"] = 0,
+                        ["kills"] = 0,
+                        ["shot"] = 6,
+                        ["hit"] = 0,
+                    }, -- end of ["BDU-33"]
+                    ["GBU-24A/B Paveway III"] = 
+                    {
+                        ["numHits"] = 14,
+                        ["kills"] = 0,
+                        ["shot"] = 4,
+                        ["hit"] = 3,
+                    }, -- end of ["GBU-24A/B Paveway III"]
+                    ["shot"] = 3,
+                    ["hit"] = 0,
+                    ["Mk-82AIR"] = 
+                    {
+                        ["numHits"] = 4,
+                        ["kills"] = 1,
+                        ["shot"] = 7,
+                        ["hit"] = 1,
+                    }, -- end of ["Mk-82AIR"]
                     ["unknown"] = 
                     {
                         ["hit"] = 0,
@@ -20209,6 +20109,7 @@ stats =
                         ["numHits"] = 27,
                     }, -- end of ["Mk-82 Snakeye"]
                 }, -- end of ["weapons"]
+                ["inAir"] = 156540.593,
                 ["actions"] = 
                 {
                     ["lostTo"] = 
@@ -20258,6 +20159,21 @@ stats =
             }, -- end of ["F-16C_50"]
             ["AH-64D_BLK_II Copilot"] = 
             {
+                ["total"] = 5675.76,
+                ["inAir"] = 4234.213,
+                ["actions"] = 
+                {
+                    ["landing"] = 
+                    {
+                        ["austere"] = 1,
+                        ["airbase"] = 1,
+                    }, -- end of ["landing"]
+                    ["takeoff"] = 
+                    {
+                        ["airbase"] = 2,
+                        ["austere"] = 1,
+                    }, -- end of ["takeoff"]
+                }, -- end of ["actions"]
                 ["weapons"] = 
                 {
                     ["AGM-114K"] = 
@@ -20283,35 +20199,11 @@ stats =
                         ["numHits"] = 0,
                     }, -- end of ["Hydra-70 M229 HEDP"]
                 }, -- end of ["weapons"]
-                ["total"] = 5675.76,
-                ["actions"] = 
-                {
-                    ["landing"] = 
-                    {
-                        ["austere"] = 1,
-                        ["airbase"] = 1,
-                    }, -- end of ["landing"]
-                    ["takeoff"] = 
-                    {
-                        ["airbase"] = 2,
-                        ["austere"] = 1,
-                    }, -- end of ["takeoff"]
-                }, -- end of ["actions"]
-                ["inAir"] = 4234.213,
             }, -- end of ["AH-64D_BLK_II Copilot"]
             ["T-45 Copilot"] = 
             {
-                ["weapons"] = 
-                {
-                    ["BDU-33"] = 
-                    {
-                        ["hit"] = 0,
-                        ["kills"] = 0,
-                        ["shot"] = 24,
-                        ["numHits"] = 0,
-                    }, -- end of ["BDU-33"]
-                }, -- end of ["weapons"]
                 ["inAir"] = 20901.736,
+                ["total"] = 27829.548,
                 ["actions"] = 
                 {
                     ["landing"] = 
@@ -20331,12 +20223,21 @@ stats =
                     }, -- end of ["losses"]
                     ["bounced"] = 3,
                 }, -- end of ["actions"]
-                ["total"] = 27829.548,
+                ["weapons"] = 
+                {
+                    ["BDU-33"] = 
+                    {
+                        ["hit"] = 0,
+                        ["kills"] = 0,
+                        ["shot"] = 24,
+                        ["numHits"] = 0,
+                    }, -- end of ["BDU-33"]
+                }, -- end of ["weapons"]
             }, -- end of ["T-45 Copilot"]
         }, -- end of ["times"]
         ["joinDate"] = 1642772373,
         ["id"] = 129,
-        ["lastJoin"] = 1704046687,
+        ["lastJoin"] = 1704835625,
         ["pvp"] = 
         {
             ["F-16C_50"] = 
@@ -20346,222 +20247,6 @@ stats =
             }, -- end of ["F-16C_50"]
         }, -- end of ["pvp"]
     }, -- end of ["534894c6525946fcf1ba1b7f55233590"]
-    ["fc7eaf2e8fdf3fdf85fd150d8d31117a"] = 
-    {
-        ["times"] = 
-        {
-        }, -- end of ["times"]
-        ["joinDate"] = 1703263619,
-        ["lastJoin"] = 1704470920,
-        ["id"] = 253,
-        ["names"] = 
-        {
-            [1] = "CasperStu",
-            [2] = "\"Machete 1\" Casper",
-        }, -- end of ["names"]
-    }, -- end of ["fc7eaf2e8fdf3fdf85fd150d8d31117a"]
-    ["06c7c2453832a44216a46cc4accb532d"] = 
-    {
-        ["times"] = 
-        {
-            ["FA-18C_hornet"] = 
-            {
-                ["total"] = 4408.844,
-                ["inAir"] = 2934.854,
-                ["weapons"] = 
-                {
-                    ["AIM-120C-5"] = 
-                    {
-                        ["hit"] = 0,
-                        ["kills"] = 0,
-                        ["shot"] = 1,
-                        ["numHits"] = 0,
-                    }, -- end of ["AIM-120C-5"]
-                }, -- end of ["weapons"]
-            }, -- end of ["FA-18C_hornet"]
-        }, -- end of ["times"]
-        ["joinDate"] = 1621702413,
-        ["lastJoin"] = 1621709990,
-        ["id"] = 118,
-        ["names"] = 
-        {
-            [1] = "Baby_Face",
-            [2] = "Lancer 3 [Baby_Face]",
-        }, -- end of ["names"]
-    }, -- end of ["06c7c2453832a44216a46cc4accb532d"]
-    ["fc0f968231ecb0c7eaa0228b1c7a5150"] = 
-    {
-        ["times"] = 
-        {
-            ["F-16C_50"] = 
-            {
-                ["total"] = 33914.914,
-                ["kills"] = 
-                {
-                    ["Planes"] = 
-                    {
-                        ["total"] = 1,
-                        ["Fighters"] = 1,
-                    }, -- end of ["Planes"]
-                }, -- end of ["kills"]
-                ["inAir"] = 20154.233,
-                ["actions"] = 
-                {
-                    ["landing"] = 
-                    {
-                        ["airbase"] = 4,
-                    }, -- end of ["landing"]
-                    ["takeoff"] = 
-                    {
-                        ["airbase"] = 10,
-                    }, -- end of ["takeoff"]
-                    ["losses"] = 
-                    {
-                        ["pilotDeath"] = 1,
-                        ["crash"] = 0,
-                        ["eject"] = 0,
-                        ["pilotError"] = 1,
-                    }, -- end of ["losses"]
-                }, -- end of ["actions"]
-                ["weapons"] = 
-                {
-                    ["Mk-82AIR"] = 
-                    {
-                        ["numHits"] = 0,
-                        ["kills"] = 0,
-                        ["shot"] = 4,
-                        ["hit"] = 0,
-                    }, -- end of ["Mk-82AIR"]
-                    ["Mk-82"] = 
-                    {
-                        ["numHits"] = 0,
-                        ["kills"] = 0,
-                        ["shot"] = 4,
-                        ["hit"] = 0,
-                    }, -- end of ["Mk-82"]
-                    ["AIM-9M"] = 
-                    {
-                        ["hit"] = 0,
-                        ["kills"] = 0,
-                        ["shot"] = 1,
-                        ["numHits"] = 0,
-                    }, -- end of ["AIM-9M"]
-                    ["AIM-120C-5"] = 
-                    {
-                        ["hit"] = 0,
-                        ["kills"] = 1,
-                        ["shot"] = 3,
-                        ["numHits"] = 1,
-                    }, -- end of ["AIM-120C-5"]
-                }, -- end of ["weapons"]
-            }, -- end of ["F-16C_50"]
-        }, -- end of ["times"]
-        ["joinDate"] = 1644435854,
-        ["lastJoin"] = 1653922553,
-        ["id"] = 130,
-        ["names"] = 
-        {
-            [1] = "[VAF] Vandal 1-1 | Bull",
-            [2] = "[VAF] | Vandal 1-1 | Bull",
-            [4] = "=JSW= | Bull",
-            [3] = "Vandal 1-1 | [VAF] Bull",
-        }, -- end of ["names"]
-    }, -- end of ["fc0f968231ecb0c7eaa0228b1c7a5150"]
-    ["dacaba8cb4b14d78ed84e897ed653eb3"] = 
-    {
-        ["times"] = 
-        {
-        }, -- end of ["times"]
-        ["joinDate"] = 1692730673,
-        ["lastJoin"] = 1698175677,
-        ["id"] = 234,
-        ["names"] = 
-        {
-            [1] = "4 REG = Varry",
-            [2] = "=JSW= Varry",
-        }, -- end of ["names"]
-    }, -- end of ["dacaba8cb4b14d78ed84e897ed653eb3"]
-    ["4d6db87376ebe62974f357ba3681773c"] = 
-    {
-        ["times"] = 
-        {
-            ["FA-18C_hornet"] = 
-            {
-                ["total"] = 1962.208,
-                ["weapons"] = 
-                {
-                    ["AIM-120C"] = 
-                    {
-                        ["numHits"] = 0,
-                        ["kills"] = 0,
-                        ["shot"] = 6,
-                        ["hit"] = 0,
-                    }, -- end of ["AIM-120C"]
-                }, -- end of ["weapons"]
-                ["losses"] = 
-                {
-                    ["pilotDeath"] = 0,
-                    ["crash"] = 1,
-                    ["eject"] = 0,
-                }, -- end of ["losses"]
-                ["inAir"] = 1361.474,
-                ["actions"] = 
-                {
-                    ["losses"] = 
-                    {
-                        ["pilotDeath"] = 3,
-                        ["crash"] = 2,
-                        ["eject"] = 0,
-                    }, -- end of ["losses"]
-                }, -- end of ["actions"]
-                ["pvp"] = 
-                {
-                    ["losses"] = 1,
-                }, -- end of ["pvp"]
-            }, -- end of ["FA-18C_hornet"]
-            ["F-16C_50"] = 
-            {
-                ["total"] = 3415.423,
-                ["weapons"] = 
-                {
-                    ["AIM-120C"] = 
-                    {
-                        ["numHits"] = 0,
-                        ["kills"] = 0,
-                        ["shot"] = 4,
-                        ["hit"] = 0,
-                    }, -- end of ["AIM-120C"]
-                }, -- end of ["weapons"]
-                ["losses"] = 
-                {
-                    ["pilotDeath"] = 0,
-                    ["crash"] = 1,
-                    ["eject"] = 0,
-                }, -- end of ["losses"]
-                ["inAir"] = 1082.362,
-                ["actions"] = 
-                {
-                    ["losses"] = 
-                    {
-                        ["pilotDeath"] = 1,
-                        ["crash"] = 0,
-                        ["eject"] = 0,
-                    }, -- end of ["losses"]
-                }, -- end of ["actions"]
-                ["pvp"] = 
-                {
-                    ["losses"] = 1,
-                }, -- end of ["pvp"]
-            }, -- end of ["F-16C_50"]
-        }, -- end of ["times"]
-        ["joinDate"] = 1601752813,
-        ["lastJoin"] = 1601758298,
-        ["id"] = 58,
-        ["names"] = 
-        {
-            [1] = "{TFT} PlagueDoctor",
-        }, -- end of ["names"]
-    }, -- end of ["4d6db87376ebe62974f357ba3681773c"]
     ["e3cf472d11adb00506ffe558aebbf856"] = 
     {
         ["times"] = 
@@ -20602,75 +20287,396 @@ stats =
             [1] = "№15 | Beaver",
         }, -- end of ["names"]
     }, -- end of ["e3cf472d11adb00506ffe558aebbf856"]
-    ["3990a8e1621a043f257d8f978c11124c"] = 
+    ["1ae5c656623ee0792397970e46ed00ad"] = 
     {
         ["times"] = 
         {
-            ["FA-18C_hornet"] = 
+            ["T-45"] = 
             {
-                ["total"] = 6282.192,
+                ["inAir"] = 3653.472,
+                ["actions"] = 
+                {
+                    ["bounced"] = 1,
+                    ["takeoff"] = 
+                    {
+                        ["airbase"] = 2,
+                    }, -- end of ["takeoff"]
+                    ["landing"] = 
+                    {
+                        ["airbase"] = 1,
+                    }, -- end of ["landing"]
+                }, -- end of ["actions"]
+                ["total"] = 6406.347,
+            }, -- end of ["T-45"]
+        }, -- end of ["times"]
+        ["joinDate"] = 1680460010,
+        ["lastJoin"] = 1702677966,
+        ["id"] = 208,
+        ["names"] = 
+        {
+            [1] = "Hawk",
+            [2] = "Vader 3-3 | Mk_IX_Hawk",
+            [4] = "Mk_IX_Hawk",
+            [3] = "Vader 4-3 | Mk_IX_Hawk",
+        }, -- end of ["names"]
+    }, -- end of ["1ae5c656623ee0792397970e46ed00ad"]
+    ["e5d4c5716cacd4092a1cbfd45b1c0268"] = 
+    {
+        ["times"] = 
+        {
+            ["AV8BNA"] = 
+            {
+                ["total"] = 209061.75999999,
                 ["kills"] = 
                 {
                     ["Ground Units"] = 
                     {
-                        ["SAM"] = 1,
-                        ["total"] = 1,
+                        ["SAM"] = 3,
+                        ["Unarmored"] = 1,
+                        ["APCs"] = 1,
+                        ["total"] = 13,
+                        ["Tanks"] = 8,
                     }, -- end of ["Ground Units"]
+                    ["Buildings"] = 
+                    {
+                        ["total"] = 3,
+                        ["Static"] = 3,
+                    }, -- end of ["Buildings"]
                 }, -- end of ["kills"]
-                ["inAir"] = 2321.016,
+                ["actions"] = 
+                {
+                    ["takeoff"] = 
+                    {
+                        ["austere"] = 5,
+                        ["airbase"] = 8,
+                        ["hms_invincible"] = 2,
+                    }, -- end of ["takeoff"]
+                    ["bounced"] = 2,
+                    ["landing"] = 
+                    {
+                        ["austere"] = 2,
+                        ["AM2_4"] = 1,
+                        ["airbase"] = 5,
+                        ["hms_invincible"] = 1,
+                    }, -- end of ["landing"]
+                    ["losses"] = 
+                    {
+                        ["pilotDeath"] = 14,
+                        ["crash"] = 16,
+                        ["eject"] = 5,
+                        ["crashLanding"] = 1,
+                    }, -- end of ["losses"]
+                    ["bolter"] = 1,
+                }, -- end of ["actions"]
                 ["weapons"] = 
                 {
-                    ["AGM-88C"] = 
+                    ["AIM-9M"] = 
+                    {
+                        ["numHits"] = 1,
+                        ["kills"] = 0,
+                        ["shot"] = 3,
+                        ["hit"] = 0,
+                    }, -- end of ["AIM-9M"]
+                    ["AGM-65G"] = 
+                    {
+                        ["numHits"] = 0,
+                        ["kills"] = 0,
+                        ["shot"] = 5,
+                        ["hit"] = 0,
+                    }, -- end of ["AGM-65G"]
+                    ["GAU_12"] = 
+                    {
+                        ["kills"] = 0,
+                        ["shot"] = 1597,
+                        ["hit"] = 0,
+                        ["gun"] = true,
+                        ["numHits"] = 311,
+                    }, -- end of ["GAU_12"]
+                    ["Mk-82"] = 
                     {
                         ["hit"] = 0,
-                        ["kills"] = 1,
+                        ["kills"] = 0,
+                        ["shot"] = 37,
+                        ["numHits"] = 0,
+                    }, -- end of ["Mk-82"]
+                    ["kamikaze"] = 
+                    {
+                        ["hit"] = 0,
+                        ["kills"] = 3,
+                        ["shot"] = 0,
+                        ["numHits"] = 7,
+                    }, -- end of ["kamikaze"]
+                    ["Mk-82 SnakeEye"] = 
+                    {
+                        ["hit"] = 0,
+                        ["kills"] = 0,
+                        ["shot"] = 28,
+                        ["numHits"] = 5,
+                    }, -- end of ["Mk-82 SnakeEye"]
+                    ["GBU-32(V)2/B"] = 
+                    {
+                        ["hit"] = 0,
+                        ["kills"] = 0,
                         ["shot"] = 2,
                         ["numHits"] = 2,
-                    }, -- end of ["AGM-88C"]
-                    ["F/A-18C Lot 20"] = 
+                    }, -- end of ["GBU-32(V)2/B"]
+                    ["AGM-65L"] = 
+                    {
+                        ["numHits"] = 6,
+                        ["kills"] = 0,
+                        ["shot"] = 6,
+                        ["hit"] = 0,
+                    }, -- end of ["AGM-65L"]
+                    ["GBU-38"] = 
+                    {
+                        ["hit"] = 0,
+                        ["kills"] = 3,
+                        ["shot"] = 14,
+                        ["numHits"] = 6,
+                    }, -- end of ["GBU-38"]
+                    ["AGM-122"] = 
+                    {
+                        ["numHits"] = 1,
+                        ["kills"] = 1,
+                        ["shot"] = 1,
+                        ["hit"] = 0,
+                    }, -- end of ["AGM-122"]
+                    ["HYDRA-70 HE APKWS"] = 
+                    {
+                        ["hit"] = 0,
+                        ["kills"] = 0,
+                        ["shot"] = 26,
+                        ["numHits"] = 5,
+                    }, -- end of ["HYDRA-70 HE APKWS"]
+                    ["Mk-83"] = 
+                    {
+                        ["hit"] = 0,
+                        ["kills"] = 0,
+                        ["shot"] = 16,
+                        ["numHits"] = 0,
+                    }, -- end of ["Mk-83"]
+                    ["HYDRA-70 M151"] = 
+                    {
+                        ["hit"] = 0,
+                        ["kills"] = 0,
+                        ["shot"] = 14,
+                        ["numHits"] = 10,
+                    }, -- end of ["HYDRA-70 M151"]
+                    ["AGM-65E"] = 
+                    {
+                        ["numHits"] = 7,
+                        ["kills"] = 7,
+                        ["shot"] = 29,
+                        ["hit"] = 0,
+                    }, -- end of ["AGM-65E"]
+                    ["HYDRA-70 MPP APKWS"] = 
+                    {
+                        ["numHits"] = 3,
+                        ["kills"] = 0,
+                        ["shot"] = 14,
+                        ["hit"] = 0,
+                    }, -- end of ["HYDRA-70 MPP APKWS"]
+                    ["AGM-65F"] = 
+                    {
+                        ["hit"] = 0,
+                        ["kills"] = 0,
+                        ["shot"] = 10,
+                        ["numHits"] = 10,
+                    }, -- end of ["AGM-65F"]
+                    ["shot"] = 4,
+                    ["HYDRA-70 M156 WP"] = 
+                    {
+                        ["hit"] = 0,
+                        ["kills"] = 0,
+                        ["shot"] = 84,
+                        ["numHits"] = 0,
+                    }, -- end of ["HYDRA-70 M156 WP"]
+                    ["Mk-82AIR"] = 
+                    {
+                        ["hit"] = 0,
+                        ["kills"] = 0,
+                        ["shot"] = 6,
+                        ["numHits"] = 0,
+                    }, -- end of ["Mk-82AIR"]
+                    ["unknown"] = 
                     {
                         ["hit"] = 0,
                         ["kills"] = 0,
                         ["shot"] = 0,
-                        ["numHits"] = 0,
-                    }, -- end of ["F/A-18C Lot 20"]
+                        ["numHits"] = 30,
+                    }, -- end of ["unknown"]
+                    ["GBU-12"] = 
+                    {
+                        ["numHits"] = 8,
+                        ["kills"] = 2,
+                        ["shot"] = 4,
+                        ["hit"] = 0,
+                    }, -- end of ["GBU-12"]
+                    ["Mk-82 Snakeye"] = 
+                    {
+                        ["numHits"] = 4,
+                        ["kills"] = 0,
+                        ["shot"] = 4,
+                        ["hit"] = 3,
+                    }, -- end of ["Mk-82 Snakeye"]
                 }, -- end of ["weapons"]
+                ["inAir"] = 131220.673,
+                ["losses"] = 
+                {
+                    ["pilotDeath"] = 0,
+                    ["crash"] = 1,
+                    ["eject"] = 0,
+                }, -- end of ["losses"]
+                ["pvp"] = 
+                {
+                    ["losses"] = 1,
+                    ["kills"] = 16,
+                }, -- end of ["pvp"]
+            }, -- end of ["AV8BNA"]
+            ["SpitfireLFMkIXCW"] = 
+            {
+                ["weapons"] = 
+                {
+                    ["Browning .303 Mk. II"] = 
+                    {
+                        ["kills"] = 0,
+                        ["shot"] = 73,
+                        ["hit"] = 0,
+                        ["gun"] = true,
+                        ["numHits"] = 0,
+                    }, -- end of ["Browning .303 Mk. II"]
+                }, -- end of ["weapons"]
+                ["total"] = 1110.592,
                 ["actions"] = 
                 {
                     ["losses"] = 
                     {
                         ["pilotDeath"] = 1,
-                        ["crash"] = 0,
+                        ["crash"] = 1,
                         ["eject"] = 0,
+                    }, -- end of ["losses"]
+                }, -- end of ["actions"]
+                ["inAir"] = 760.44,
+            }, -- end of ["SpitfireLFMkIXCW"]
+            ["SpitfireLFMkIX"] = 
+            {
+                ["total"] = 10277.312,
+                ["kills"] = 
+                {
+                    ["Ground Units"] = 
+                    {
+                        ["AAA"] = 1,
+                        ["total"] = 1,
+                    }, -- end of ["Ground Units"]
+                    ["Planes"] = 
+                    {
+                        ["Bombers"] = 1,
+                        ["total"] = 1,
+                    }, -- end of ["Planes"]
+                }, -- end of ["kills"]
+                ["weapons"] = 
+                {
+                    ["kamikaze"] = 
+                    {
+                        ["numHits"] = 0,
+                        ["kills"] = 0,
+                        ["shot"] = 0,
+                        ["hit"] = 0,
+                    }, -- end of ["kamikaze"]
+                    ["Hispano Mk. II"] = 
+                    {
+                        ["numHits"] = 12,
+                        ["kills"] = 2,
+                        ["shot"] = 296,
+                        ["hit"] = 0,
+                    }, -- end of ["Hispano Mk. II"]
+                    ["Browning .303 Mk. II"] = 
+                    {
+                        ["numHits"] = 0,
+                        ["kills"] = 0,
+                        ["shot"] = 37,
+                        ["hit"] = 0,
+                    }, -- end of ["Browning .303 Mk. II"]
+                }, -- end of ["weapons"]
+                ["inAir"] = 8575.779,
+                ["actions"] = 
+                {
+                    ["losses"] = 
+                    {
+                        ["pilotDeath"] = 2,
+                        ["crash"] = 2,
+                        ["eject"] = 1,
                     }, -- end of ["losses"]
                 }, -- end of ["actions"]
                 ["pvp"] = 
                 {
-                    ["kills"] = 1,
+                    ["kills"] = 2,
                 }, -- end of ["pvp"]
-            }, -- end of ["FA-18C_hornet"]
+            }, -- end of ["SpitfireLFMkIX"]
+            ["UH-1H"] = 
+            {
+                ["total"] = 19853.857,
+                ["inAir"] = 11808.765,
+                ["actions"] = 
+                {
+                    ["landing"] = 
+                    {
+                        ["airbase"] = 4,
+                        ["austere"] = 2,
+                    }, -- end of ["landing"]
+                    ["takeoff"] = 
+                    {
+                        ["austere"] = 3,
+                        ["airbase"] = 6,
+                    }, -- end of ["takeoff"]
+                    ["losses"] = 
+                    {
+                        ["pilotDeath"] = 7,
+                        ["crash"] = 5,
+                        ["eject"] = 0,
+                    }, -- end of ["losses"]
+                }, -- end of ["actions"]
+                ["weapons"] = 
+                {
+                    ["M134 Minigun"] = 
+                    {
+                        ["kills"] = 0,
+                        ["shot"] = 4741,
+                        ["hit"] = 0,
+                        ["gun"] = true,
+                        ["numHits"] = 0,
+                    }, -- end of ["M134 Minigun"]
+                    ["kamikaze"] = 
+                    {
+                        ["hit"] = 0,
+                        ["kills"] = 0,
+                        ["shot"] = 0,
+                        ["numHits"] = 0,
+                    }, -- end of ["kamikaze"]
+                    ["HYDRA-70 MK5"] = 
+                    {
+                        ["numHits"] = 0,
+                        ["kills"] = 0,
+                        ["shot"] = 14,
+                        ["hit"] = 0,
+                    }, -- end of ["HYDRA-70 MK5"]
+                }, -- end of ["weapons"]
+            }, -- end of ["UH-1H"]
+            ["T-45"] = 
+            {
+                ["total"] = 3321.738,
+                ["inAir"] = 1140.417,
+            }, -- end of ["T-45"]
         }, -- end of ["times"]
-        ["joinDate"] = 1615058164,
-        ["lastJoin"] = 1615065296,
-        ["id"] = 99,
+        ["joinDate"] = 1588241248,
+        ["lastJoin"] = 1667639131,
+        ["id"] = 27,
         ["names"] = 
         {
-            [1] = "{TFT} Animal",
+            [1] = "C_Dub73",
+            [2] = "C_Dub",
         }, -- end of ["names"]
-    }, -- end of ["3990a8e1621a043f257d8f978c11124c"]
-    ["ce5daf7b948f6e509678cbad75a57b60"] = 
-    {
-        ["times"] = 
-        {
-        }, -- end of ["times"]
-        ["joinDate"] = 1684532071,
-        ["lastJoin"] = 1689800635,
-        ["id"] = 217,
-        ["names"] = 
-        {
-            [1] = "Nightmare",
-        }, -- end of ["names"]
-    }, -- end of ["ce5daf7b948f6e509678cbad75a57b60"]
+    }, -- end of ["e5d4c5716cacd4092a1cbfd45b1c0268"]
     ["249a6b4dac329e1e2749d2310e69b2d7"] = 
     {
         ["times"] = 
@@ -20790,32 +20796,3 @@ stats =
     }, -- end of ["249a6b4dac329e1e2749d2310e69b2d7"]
 } -- end of stats
 
-stats["625e2b83a3111e6a948b89a0daab3696"]["names"] = { [1] = "MACHETE 10 | Gideon", [2] = "THUNDER 5-3 | Gideon", }
-stats["625e2b83a3111e6a948b89a0daab3696"]["lastJoin"] = 1704520821
-stats["625e2b83a3111e6a948b89a0daab3696"]["lastJoin"] = 1704520846
-stats["625e2b83a3111e6a948b89a0daab3696"]["names"] = { [1] = "THUNDER 5-3 | Gideon", [2] = "MACHETE 10 | Gideon", }
-stats["625e2b83a3111e6a948b89a0daab3696"]["lastJoin"] = 1704520891
-stats["625e2b83a3111e6a948b89a0daab3696"]["lastJoin"] = 1704524588
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["lastJoin"] = 1704526106
-stats["625e2b83a3111e6a948b89a0daab3696"]["lastJoin"] = 1704526119
-stats["c82a053e0cc44ca3fafbcd435609b6e9"]["lastJoin"] = 1704528036
-stats["3316bca529c797f031d8c54c14a0f5d3"]["lastJoin"] = 1704555865
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["lastJoin"] = 1704555885
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["lastJoin"] = 1704556103
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["lastJoin"] = 1704556115
-stats["3316bca529c797f031d8c54c14a0f5d3"]["lastJoin"] = 1704558525
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["lastJoin"] = 1704558525
-stats["1a1cba06dd0066c82910007ab36a3c1f"]["lastJoin"] = 1704559036
-stats["21092747ed0e2cc51a09da192333f059"]["names"][3] = "=JSW= Sly"
-stats["21092747ed0e2cc51a09da192333f059"]["lastJoin"] = 1704573191
-stats["21092747ed0e2cc51a09da192333f059"]["lastJoin"] = 1704573357
-stats["21092747ed0e2cc51a09da192333f059"]["lastJoin"] = 1704573538
-stats["625e2b83a3111e6a948b89a0daab3696"]["names"][3] = "Gideon"
-stats["625e2b83a3111e6a948b89a0daab3696"]["lastJoin"] = 1704573697
-stats["e698907134a269f5ee2c4155cb589540"]["names"][3] = "=JSW= DJ"
-stats["e698907134a269f5ee2c4155cb589540"]["lastJoin"] = 1704573932
-stats["e698907134a269f5ee2c4155cb589540"]["lastJoin"] = 1704577497
-stats["e698907134a269f5ee2c4155cb589540"]["lastJoin"] = 1704580220
-stats["625e2b83a3111e6a948b89a0daab3696"]["lastJoin"] = 1704580692
-stats["21092747ed0e2cc51a09da192333f059"]["lastJoin"] = 1704583218
-stats["625e2b83a3111e6a948b89a0daab3696"]["lastJoin"] = 1704605365

@@ -3,6 +3,22 @@ import datetime
 from utils.time_management import seconds_to_hours, days_from_epoch
 from database.db_crud import get_pilot_full_name
 
+# Get the absolute path of the project root directory
+project_root = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+
+# Log file path
+log_filename = os.path.join(project_root, "data/logs/mayfly.log")
+
+# Ensure the log directory exists
+os.makedirs(os.path.dirname(log_filename), exist_ok=True)
+
+# Configure a separate logger for your bot
+logger = logging.getLogger('stats_processor')
+logger.setLevel(logging.DEBUG)
+file_handler = logging.FileHandler(filename=log_filename)
+file_handler.setFormatter(logging.Formatter('%(asctime)s - %(levelname)s - %(message)s'))
+logger.addHandler(file_handler)
+
 def load_combined_stats(json_file_path):
     with open(json_file_path, 'r') as file:
         return json.load(file)
@@ -42,11 +58,11 @@ def get_pilot_details(db_path, pilot_id, combined_stats):
             for aircraft_stats in times.values():
                 if isinstance(aircraft_stats, dict):
                     total_hours += seconds_to_hours(aircraft_stats.get('total', 0))
+                    logger.info(f"Seconds: {aircraft_stats.get('total')}, total: {total_hours}")
                 # Skip if aircraft_stats is an empty list or any other type
 
-        # Empty list or unexpected formats will result in total_hours remaining 0
     except Exception as e:
-        logging.error(f"Error processing 'times' data for pilot_id {pilot_id}: {e}")
+        logger.error(f"Error processing 'times' data for pilot_id {pilot_id}: {e}")
         total_hours = 0
 
     total_hours = round(total_hours,1)
@@ -101,6 +117,7 @@ def generate_squadron_pilot_rows(DB_PATH, squadron_id, squadron_aircraft_type, c
             total_hours = sum(seconds_to_hours(aircraft_stats.get('total', 0))
                               for aircraft_type, aircraft_stats in times_data.items()
                               if isinstance(aircraft_stats, dict))
+            logger.info(f"{pilot_id} total hours: {total_hours}")
         else:
             total_hours = 0
         pilot_hours.append((pilot_id, total_hours))
