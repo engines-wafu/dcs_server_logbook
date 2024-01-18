@@ -880,6 +880,7 @@ discord.ext.commands.errors.MissingRequiredArgument: pilot_name is a required ar
 2024-01-15 14:51:58,354 - INFO - Shard ID None has successfully RESUMED session 90e64bc8552c7c948237e502c9a578d1.
 2024-01-15 15:37:20,794 - INFO - Shard ID None has successfully RESUMED session 90e64bc8552c7c948237e502c9a578d1.
 2024-01-15 16:24:18,321 - INFO - Shard ID None has successfully RESUMED session 90e64bc8552c7c948237e502c9a578d1.
+<<<<<<< HEAD
 2024-01-15 18:11:43,538 - INFO - Shard ID None has successfully RESUMED session 90e64bc8552c7c948237e502c9a578d1.
 2024-01-15 18:39:57,364 - INFO - Total hours: 357.2
 2024-01-15 18:39:57,364 - INFO - Total hours: 21.7
@@ -1435,3 +1436,5 @@ discord.ext.commands.errors.MissingRequiredArgument: pilot_name is a required ar
 2024-01-16 16:37:45,198 - INFO - 6f784cb7b82e58ea996432664a6d9ba8 total hours: 33.1
 2024-01-16 16:37:45,198 - INFO - 1ae5c656623ee0792397970e46ed00ad total hours: 3.8
 2024-01-16 18:41:13,280 - INFO - Shard ID None has successfully RESUMED session b11888205a2a839256156d97bd0a94d9.
+=======
+>>>>>>> cd9b18f0ab8822a7d6e9f4ba46673e31b187d6d3

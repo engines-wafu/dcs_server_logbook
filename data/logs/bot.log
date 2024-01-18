@@ -241,5 +241,8 @@
 2024-01-15 11:46:19,494 - INFO - Looking for role ID: 939955938486538250.  Corresponsing role name: Controllers
 2024-01-15 11:46:19,494 - INFO - Found role: Controllers
 2024-01-15 14:23:19,277 - DEBUG - Attempting to give awards
+<<<<<<< HEAD
 2024-01-16 16:26:26,231 - DEBUG - Bot script started.
 2024-01-16 16:27:20,506 - DEBUG - Bot script started.
+=======
+>>>>>>> cd9b18f0ab8822a7d6e9f4ba46673e31b187d6d3
