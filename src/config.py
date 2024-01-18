@@ -24,4 +24,4 @@ STATS_FILES = [
     'data/stats/SlmodStats_server2.lua',
     # Add more files as needed
 ]
-TOKEN = ''
+TOKEN = 'MTE5MTAwMDgxOTgwNjUwMzA2Mg.GlyfGY.hUHcks8tl9CjGRjsW5QpHCQ6n-XEM7pbgynkVk'

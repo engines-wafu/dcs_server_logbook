@@ -1438,3 +1438,10 @@ discord.ext.commands.errors.MissingRequiredArgument: pilot_name is a required ar
 2024-01-16 18:41:13,280 - INFO - Shard ID None has successfully RESUMED session b11888205a2a839256156d97bd0a94d9.
 =======
 >>>>>>> cd9b18f0ab8822a7d6e9f4ba46673e31b187d6d3
+2024-01-18 11:51:15,590 - DEBUG - Bot script started.
+2024-01-18 11:51:15,729 - DEBUG - Bot script started.
+2024-01-18 11:51:15,734 - INFO - logging in using static token
+2024-01-18 11:51:18,257 - DEBUG - Bot script started.
+2024-01-18 11:51:18,269 - DEBUG - Bot script started.
+2024-01-18 11:51:18,274 - INFO - logging in using static token
+2024-01-18 11:51:19,324 - INFO - Shard ID None has connected to Gateway (Session ID: 4f8e0a2de3ac0f9de3f13409cea8a811).
