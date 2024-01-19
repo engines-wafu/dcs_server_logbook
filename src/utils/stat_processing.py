@@ -24,7 +24,7 @@ def load_combined_stats(json_file_path):
         return json.load(file)
 
 def ribbon_image_exists(award_name):
-    image_path = f"web/img/ribbons/{award_name}.png"
+    image_path = f"html/img/ribbons/{award_name}.png"
     return os.path.exists(image_path)
 
 def format_epoch_to_date(epoch_time):
