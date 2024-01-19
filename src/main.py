@@ -56,15 +56,15 @@ def update_logbook_report():
     else:
         logging.error("combinedStats.json not found or merge.lua script failed")
 
-    generate_index_html(DB_PATH, 'web/index.html', JSON_PATH)
-    generate_mayfly_html(DB_PATH, 'web/mayfly.html')
-    generate_awards_qualifications_page(DB_PATH, 'web/awards.html')
+    generate_index_html(DB_PATH, 'html/index.html', JSON_PATH)
+    generate_mayfly_html(DB_PATH, 'html/mayfly.html')
+    generate_awards_qualifications_page(DB_PATH, 'html/awards.html')
 
-    generate_flight_plans_page(DB_PATH, 'web/flights.html')
+    generate_flight_plans_page(DB_PATH, 'html/flights.html')
     logging.info("Created html output")
 
     logging.info("Generating pilot pages")
-    output_dir = 'web/pilot'
+    output_dir = 'html/pilot'
 
     for pilot_id in combined_stats.keys():
         pilot_specific_stats = combined_stats.get(pilot_id)

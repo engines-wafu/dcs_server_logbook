@@ -1445,3 +1445,4 @@ discord.ext.commands.errors.MissingRequiredArgument: pilot_name is a required ar
 2024-01-18 11:51:18,269 - DEBUG - Bot script started.
 2024-01-18 11:51:18,274 - INFO - logging in using static token
 2024-01-18 11:51:19,324 - INFO - Shard ID None has connected to Gateway (Session ID: 4f8e0a2de3ac0f9de3f13409cea8a811).
+2024-01-18 12:00:06,133 - INFO - Shard ID None session has been invalidated.

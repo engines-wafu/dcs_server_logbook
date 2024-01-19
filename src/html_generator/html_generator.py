@@ -62,7 +62,7 @@ def generate_index_html(db_path, output_path, json_file_path):
     combined_stats = load_combined_stats(json_file_path)
 
     # Read the navbar HTML content
-    navbar_path = 'web/navbar.html'
+    navbar_path = 'html/navbar.html'
     with open(navbar_path, 'r') as file:
         navbar_html = file.read()
 
@@ -143,7 +143,7 @@ def generate_awards_qualifications_page(db_path, output_path):
     awards = get_all_awards(db_path)
 
     # Read the navbar HTML content
-    navbar_path = 'web/navbar.html'
+    navbar_path = 'html/navbar.html'
     with open(navbar_path, 'r') as file:
         navbar_html = file.read()
 
@@ -175,7 +175,7 @@ def generate_awards_qualifications_page(db_path, output_path):
     '''
     for aid, aname, adesc in awards:
         ribbon_path = f"img/ribbons/{aname}.png"
-        ribbon_img = f"<img src='{ribbon_path}' style='height:20px;'>" if os.path.exists('web/' + ribbon_path) else "No ribbon"
+        ribbon_img = f"<img src='{ribbon_path}' style='height:20px;'>" if os.path.exists('html/' + ribbon_path) else "No ribbon"
         html_content += f"<tr><td>{aid}</td><td>{aname}</td><td>{adesc}</td><td>{ribbon_img}</td></tr>"
 
     html_content += '''
@@ -198,7 +198,7 @@ def generate_flight_plans_page(db_path, output_path):
     conn.close()
 
     # Read the navbar HTML content
-    navbar_path = 'web/navbar.html'
+    navbar_path = 'html/navbar.html'
     with open(navbar_path, 'r') as file:
         navbar_html = file.read()
 
@@ -242,7 +242,7 @@ def generate_mayfly_html(db_path, output_file_path):
     assigned_aircraft, unassigned_aircraft = fetch_aircraft_by_squadron(db_path)
 
     # Read the navbar HTML content
-    navbar_path = 'web/navbar.html'
+    navbar_path = 'html/navbar.html'
     with open(navbar_path, 'r') as file:
         navbar_html = file.read()
 

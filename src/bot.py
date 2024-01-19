@@ -31,7 +31,7 @@ logger.debug("Bot script started.")
 
 tracemalloc.start()
 
-output_path = 'web/index.html'
+output_path = 'html/index.html'
 json_path = 'data/stats/combinedStats.json'
 award_messages = {}
 bot = commands.Bot(command_prefix='!', intents=discord.Intents.all())
@@ -584,7 +584,7 @@ async def pilot_info(ctx, *, pilot_name):
     create_award_quilt(DB_PATH, pilot_id)  # Generate the quilt image
 
     # Generate ribbon quilt image and prepare the image file to be sent if it exists
-    image_path = f'web/img/fruit_salad/{pilot_id}.png'
+    image_path = f'html/img/fruit_salad/{pilot_id}.png'
     if os.path.exists(image_path):
         with open(image_path, 'rb') as img:
             image_file = discord.File(img, filename='fruit_salad.png')
@@ -648,7 +648,7 @@ async def create_award(ctx):
     
     # Make the ribbon
     try:
-        ribbon_path = 'web/img/ribbons/' + award_name.replace(" ", "_") + '.png'
+        ribbon_path = 'html/img/ribbons/' + award_name.replace(" ", "_") + '.png'
         # Here you can also pass different min and max width percentages if needed
         generate_single_ribbon(award_name, ribbon_path)
         await ctx.send(f"Ribbon for '{award_name}' created successfully.")
@@ -1244,7 +1244,7 @@ async def file_flight_plan(ctx):
 
     if insert_success:
         # Generate the updated flights.html page
-        generate_flight_plans_page(DB_PATH, 'web/flights.html')  # Adjust the path as needed
+        generate_flight_plans_page(DB_PATH, 'html/flights.html')  # Adjust the path as needed
 
         # Send an embedded confirmation message
         embed = discord.Embed(title="JSW Flight Filing System", color=0xd62828)

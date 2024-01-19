@@ -1,0 +1,76 @@
+{"id": 1, "node": "ns3026360", "event": "Discord Bot started.", "server_name": null, "discord_id": null, "ucid": null, "time": "2024-01-17T16:24:43.651711"}
+{"id": 2, "node": "ns3026360", "event": "Discord Bot started.", "server_name": null, "discord_id": null, "ucid": null, "time": "2024-01-17T16:25:45.774109"}
+{"id": 3, "node": "ns3026360", "event": "Discord Bot started.", "server_name": null, "discord_id": null, "ucid": null, "time": "2024-01-17T16:41:08.573535"}
+{"id": 4, "node": "ns3026360", "event": "Server killed due to a hung state.", "server_name": "JSW Server 1 - Modern", "discord_id": null, "ucid": null, "time": "2024-01-17T17:28:05.330605"}
+{"id": 5, "node": "ns3026360", "event": "Server killed due to a hung state.", "server_name": "JSW Server 2 - Cold War", "discord_id": null, "ucid": null, "time": "2024-01-17T17:28:05.753134"}
+{"id": 6, "node": "ns3026360", "event": "Server killed due to a hung state.", "server_name": "JSW Server 3 - WWII", "discord_id": null, "ucid": null, "time": "2024-01-17T17:28:07.276476"}
+{"id": 7, "node": "ns3026360", "event": "Server killed due to a hung state.", "server_name": "JSW Server 1 - Modern", "discord_id": null, "ucid": null, "time": "2024-01-17T17:33:04.941098"}
+{"id": 8, "node": "ns3026360", "event": "Server killed due to a hung state.", "server_name": "JSW Server 2 - Cold War", "discord_id": null, "ucid": null, "time": "2024-01-17T17:33:06.461172"}
+{"id": 9, "node": "ns3026360", "event": "Server killed due to a hung state.", "server_name": "JSW Server 3 - WWII", "discord_id": null, "ucid": null, "time": "2024-01-17T17:33:07.894726"}
+{"id": 10, "node": "ns3026360", "event": "Discord Bot started.", "server_name": null, "discord_id": null, "ucid": null, "time": "2024-01-17T17:35:47.331275"}
+{"id": 11, "node": "ns3026360", "event": "Discord Bot started.", "server_name": null, "discord_id": null, "ucid": null, "time": "2024-01-17T17:42:48.093997"}
+{"id": 12, "node": "ns3026360", "event": "Discord Bot started.", "server_name": null, "discord_id": null, "ucid": null, "time": "2024-01-17T17:50:07.050381"}
+{"id": 13, "node": "ns3026360", "event": "Discord Bot started.", "server_name": null, "discord_id": null, "ucid": null, "time": "2024-01-17T17:51:24.264116"}
+{"id": 14, "node": "ns3026360", "event": "Server killed due to a hung state.", "server_name": "JSW Server 1 - Modern", "discord_id": null, "ucid": null, "time": "2024-01-17T17:55:20.625358"}
+{"id": 15, "node": "ns3026360", "event": "Discord Bot started.", "server_name": null, "discord_id": null, "ucid": null, "time": "2024-01-17T17:59:50.768282"}
+{"id": 16, "node": "ns3026360", "event": "started DCS server", "server_name": "JSW Server 1 - Modern", "discord_id": 458380102883868723, "ucid": null, "time": "2024-01-17T18:01:13.198066"}
+{"id": 17, "node": "ns3026360", "event": "started DCS server", "server_name": "JSW Server 2 - Cold War", "discord_id": 458380102883868723, "ucid": null, "time": "2024-01-17T18:02:57.097878"}
+{"id": 18, "node": "ns3026360", "event": "cleared maintenance flag", "server_name": "JSW Server 2 - Cold War", "discord_id": 458380102883868723, "ucid": null, "time": "2024-01-17T18:03:12.455089"}
+{"id": 19, "node": "ns3026360", "event": "cleared maintenance flag", "server_name": "JSW Server 1 - Modern", "discord_id": 458380102883868723, "ucid": null, "time": "2024-01-17T18:03:25.897519"}
+{"id": 20, "node": "ns3026360", "event": "Server killed due to a popup with title \"DCS Login\".", "server_name": "JSW Server 3 - WWII", "discord_id": null, "ucid": null, "time": "2024-01-17T18:03:46.838324"}
+{"id": 21, "node": "ns3026360", "event": "started DCS server", "server_name": "JSW Server 3 - WWII", "discord_id": 458380102883868723, "ucid": null, "time": "2024-01-17T18:05:14.850911"}
+{"id": 22, "node": "ns3026360", "event": "started DCS server", "server_name": "JSW Server 3 - WWII", "discord_id": 458380102883868723, "ucid": null, "time": "2024-01-17T18:05:14.860489"}
+{"id": 23, "node": "ns3026360", "event": "cleared maintenance flag", "server_name": "JSW Server 3 - WWII", "discord_id": 458380102883868723, "ucid": null, "time": "2024-01-17T18:06:34.567788"}
+{"id": 24, "node": "ns3026360", "event": "Discord Bot started.", "server_name": null, "discord_id": null, "ucid": null, "time": "2024-01-17T22:14:31.166868"}
+{"id": 25, "node": "ns3026360", "event": "Discord Bot started.", "server_name": null, "discord_id": null, "ucid": null, "time": "2024-01-17T22:18:36.827499"}
+{"id": 26, "node": "ns3026360", "event": "Discord Bot started.", "server_name": null, "discord_id": null, "ucid": null, "time": "2024-01-17T22:34:23.847245"}
+{"id": 27, "node": "ns3026360", "event": "Discord Bot started.", "server_name": null, "discord_id": null, "ucid": null, "time": "2024-01-18T12:38:24.321507"}
+{"id": 28, "node": "ns3026360", "event": "Discord Bot started.", "server_name": null, "discord_id": null, "ucid": null, "time": "2024-01-18T12:41:47.019455"}
+{"id": 29, "node": "ns3026360", "event": "Discord Bot started.", "server_name": null, "discord_id": null, "ucid": null, "time": "2024-01-18T12:43:26.810935"}
+{"id": 30, "node": "ns3026360", "event": "Discord Bot started.", "server_name": null, "discord_id": null, "ucid": null, "time": "2024-01-18T12:45:59.717869"}
+{"id": 31, "node": "ns3026360", "event": "Discord Bot started.", "server_name": null, "discord_id": null, "ucid": null, "time": "2024-01-18T12:51:17.149712"}
+{"id": 32, "node": "ns3026360", "event": "Discord Bot started.", "server_name": null, "discord_id": null, "ucid": null, "time": "2024-01-18T13:04:26.461386"}
+{"id": 33, "node": "ns3026360", "event": "Discord Bot started.", "server_name": null, "discord_id": null, "ucid": null, "time": "2024-01-18T13:12:17.610111"}
+{"id": 34, "node": "ns3026360", "event": "Discord Bot started.", "server_name": null, "discord_id": null, "ucid": null, "time": "2024-01-18T13:37:26.138027"}
+{"id": 35, "node": "ns3026360", "event": "Discord Bot started.", "server_name": null, "discord_id": null, "ucid": null, "time": "2024-01-18T13:47:43.913403"}
+{"id": 36, "node": "ns3026360", "event": "Discord Bot started.", "server_name": null, "discord_id": null, "ucid": null, "time": "2024-01-18T14:15:47.853939"}
+{"id": 37, "node": "ns3026360", "event": "loaded mission JSW WWII", "server_name": "JSW Server 3 - WWII", "discord_id": 458380102883868723, "ucid": null, "time": "2024-01-18T14:27:39.335917"}
+{"id": 38, "node": "ns3026360", "event": "loaded mission JSW WWII Normandy", "server_name": "JSW Server 3 - WWII", "discord_id": 458380102883868723, "ucid": null, "time": "2024-01-18T14:28:29.272733"}
+{"id": 39, "node": "ns3026360", "event": "Discord Bot started.", "server_name": null, "discord_id": null, "ucid": null, "time": "2024-01-18T14:34:13.099161"}
+{"id": 40, "node": "ns3026360", "event": "Discord Bot started.", "server_name": null, "discord_id": null, "ucid": null, "time": "2024-01-18T14:43:55.640901"}
+{"id": 41, "node": "ns3026360", "event": "linked member Wing Cdr Razor to ucid None.", "server_name": null, "discord_id": 458380102883868723, "ucid": null, "time": "2024-01-18T15:11:37.561599"}
+{"id": 42, "node": "ns3026360", "event": "uploaded mission \"F-15E\\_Wpn\\_Test\"", "server_name": "JSW Server 3 - WWII", "discord_id": 458380102883868723, "ucid": null, "time": "2024-01-18T15:19:07.218402"}
+{"id": 43, "node": "ns3026360", "event": "Discord Bot started.", "server_name": null, "discord_id": null, "ucid": null, "time": "2024-01-18T15:22:21.519129"}
+{"id": 44, "node": "ns3026360", "event": "Discord Bot started.", "server_name": null, "discord_id": null, "ucid": null, "time": "2024-01-18T15:42:45.012809"}
+{"id": 45, "node": "ns3026360", "event": "Discord Bot started.", "server_name": null, "discord_id": null, "ucid": null, "time": "2024-01-18T15:53:51.302889"}
+{"id": 46, "node": "ns3026360", "event": "Discord Bot started.", "server_name": null, "discord_id": null, "ucid": null, "time": "2024-01-18T15:54:56.338088"}
+{"id": 47, "node": "ns3026360", "event": "Discord Bot started.", "server_name": null, "discord_id": null, "ucid": null, "time": "2024-01-18T15:56:03.024268"}
+{"id": 48, "node": "ns3026360", "event": "Discord Bot started.", "server_name": null, "discord_id": null, "ucid": null, "time": "2024-01-18T15:58:05.239356"}
+{"id": 49, "node": "ns3026360", "event": "Discord Bot started.", "server_name": null, "discord_id": null, "ucid": null, "time": "2024-01-18T16:55:37.846872"}
+{"id": 50, "node": "ns3026360", "event": "Discord Bot started.", "server_name": null, "discord_id": null, "ucid": null, "time": "2024-01-18T17:02:54.117935"}
+{"id": 51, "node": "ns3026360", "event": "Discord Bot started.", "server_name": null, "discord_id": null, "ucid": null, "time": "2024-01-18T17:04:24.8028"}
+{"id": 52, "node": "ns3026360", "event": "Discord Bot started.", "server_name": null, "discord_id": null, "ucid": null, "time": "2024-01-18T17:07:16.962773"}
+{"id": 53, "node": "ns3026360", "event": "Discord Bot started.", "server_name": null, "discord_id": null, "ucid": null, "time": "2024-01-18T17:32:39.416355"}
+{"id": 54, "node": "ns3026360", "event": "Discord Bot started.", "server_name": null, "discord_id": null, "ucid": null, "time": "2024-01-18T17:33:51.022062"}
+{"id": 55, "node": "ns3026360", "event": "Discord Bot started.", "server_name": null, "discord_id": null, "ucid": null, "time": "2024-01-18T17:38:59.700351"}
+{"id": 56, "node": "ns3026360", "event": "uploaded mission \"F-15E\\_Wpn\\_Test\"", "server_name": "JSW Server 3 - WWII", "discord_id": 458380102883868723, "ucid": null, "time": "2024-01-18T17:39:23.006051"}
+{"id": 57, "node": "ns3026360", "event": "Discord Bot started.", "server_name": null, "discord_id": null, "ucid": null, "time": "2024-01-18T17:46:39.115376"}
+{"id": 58, "node": "ns3026360", "event": "Discord Bot started.", "server_name": null, "discord_id": null, "ucid": null, "time": "2024-01-18T17:57:32.866526"}
+{"id": 59, "node": "ns3026360", "event": "Discord Bot started.", "server_name": null, "discord_id": null, "ucid": null, "time": "2024-01-18T18:00:20.971577"}
+{"id": 60, "node": "ns3026360", "event": "Discord Bot started.", "server_name": null, "discord_id": null, "ucid": null, "time": "2024-01-18T18:08:17.120936"}
+{"id": 61, "node": "ns3026360", "event": "Discord Bot started.", "server_name": null, "discord_id": null, "ucid": null, "time": "2024-01-18T18:10:28.237559"}
+{"id": 62, "node": "ns3026360", "event": "Discord Bot started.", "server_name": null, "discord_id": null, "ucid": null, "time": "2024-01-18T18:16:47.784362"}
+{"id": 63, "node": "ns3026360", "event": "Discord Bot started.", "server_name": null, "discord_id": null, "ucid": null, "time": "2024-01-18T18:22:50.673073"}
+{"id": 64, "node": "ns3026360", "event": "Discord Bot started.", "server_name": null, "discord_id": null, "ucid": null, "time": "2024-01-18T20:38:21.945555"}
+{"id": 65, "node": "ns3026360", "event": "Discord Bot started.", "server_name": null, "discord_id": null, "ucid": null, "time": "2024-01-18T21:14:32.104897"}
+{"id": 66, "node": "ns3026360", "event": "Discord Bot started.", "server_name": null, "discord_id": null, "ucid": null, "time": "2024-01-18T21:15:52.585053"}
+{"id": 67, "node": "ns3026360", "event": "Discord Bot started.", "server_name": null, "discord_id": null, "ucid": null, "time": "2024-01-18T21:17:48.192601"}
+{"id": 68, "node": "ns3026360", "event": "Discord Bot started.", "server_name": null, "discord_id": null, "ucid": null, "time": "2024-01-18T21:25:20.850424"}
+{"id": 69, "node": "ns3026360", "event": "Discord Bot started.", "server_name": null, "discord_id": null, "ucid": null, "time": "2024-01-18T21:33:50.79627"}
+{"id": 70, "node": "ns3026360", "event": "Discord Bot started.", "server_name": null, "discord_id": null, "ucid": null, "time": "2024-01-18T21:36:27.296988"}
+{"id": 71, "node": "ns3026360", "event": "Discord Bot started.", "server_name": null, "discord_id": null, "ucid": null, "time": "2024-01-18T21:45:33.623668"}
+{"id": 72, "node": "ns3026360", "event": "Discord Bot started.", "server_name": null, "discord_id": null, "ucid": null, "time": "2024-01-18T21:54:35.734083"}
+{"id": 73, "node": "ns3026360", "event": "Discord Bot started.", "server_name": null, "discord_id": null, "ucid": null, "time": "2024-01-18T22:05:19.413375"}
+{"id": 74, "node": "ns3026360", "event": "Discord Bot started.", "server_name": null, "discord_id": null, "ucid": null, "time": "2024-01-18T22:13:09.739574"}
+{"id": 75, "node": "ns3026360", "event": "uploaded mission \"F-15E\\_JDAM\\_Test\"", "server_name": "JSW Server 3 - WWII", "discord_id": 458380102883868723, "ucid": null, "time": "2024-01-18T22:14:40.820008"}
+{"id": 76, "node": "ns3026360", "event": "uploaded mission \"F-15E\\_Test\"", "server_name": "JSW Server 3 - WWII", "discord_id": 458380102883868723, "ucid": null, "time": "2024-01-18T22:46:20.883759"}
