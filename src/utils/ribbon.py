@@ -117,7 +117,7 @@ def create_award_quilt(db_path, pilot_id):
     ribbons = []
     for award_name in award_names:
         try:
-            ribbon_path = f'web/img/ribbons/{award_name[0]}.png'
+            ribbon_path = f'html/img/ribbons/{award_name[0]}.png'
             ribbon = Image.open(ribbon_path)
 
             # Add a black border around the ribbon
@@ -168,7 +168,7 @@ def create_award_quilt(db_path, pilot_id):
     quilt = quilt.resize(new_size, Image.Resampling.LANCZOS)
 
     # Save the quilt
-    filename = f'web/img/fruit_salad/{pilot_id}.png'
+    filename = f'html/img/fruit_salad/{pilot_id}.png'
     quilt.save(filename)
 
     # Close the database connection
@@ -182,6 +182,6 @@ award_names = pattern_generator.fetch_award_names(db_path)
 
 for award_name in award_names:
     input_string = award_name
-    file_path = 'web/img/ribbons/' + input_string.replace(" ", "_") + '.png'  # Replace spaces with underscores in file names
+    file_path = 'html/img/ribbons/' + input_string.replace(" ", "_") + '.png'  # Replace spaces with underscores in file names
     pattern_generator.input_string = input_string  # Update the input string for the pattern generator
     pattern_generator.save_pattern_as_png(file_path)
