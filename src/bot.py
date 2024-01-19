@@ -39,12 +39,12 @@ predefined_colors = PREDEFINED_COLORS
 
 def is_commanding_officer():
     async def predicate(ctx):
-        return any(role.name == 'Squadron Commanders' for role in ctx.author.roles)
+        return any(role.name == COMMANDING_OFFICER for role in ctx.author.roles)
     return commands.check(predicate)
 
 def is_server_admin():
     async def predicate(ctx):
-        return any(role.name == 'Server admin' for role in ctx.author.roles)
+        return any(role.name == SERVER_ADMIN for role in ctx.author.roles)
     return commands.check(predicate)
 
 @bot.event
