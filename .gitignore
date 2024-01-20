@@ -1,4 +1,6 @@
 src/config.py
 data/base/*
 data/db/*
+html/*
+data/stats*
 *.bat
