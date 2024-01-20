@@ -1,5 +1,6 @@
-import os, json, sqlite3, logging
+import os, json, sqlite3, logging, re
 import datetime
+import pandas as pd
 from utils.time_management import seconds_to_hours, days_from_epoch
 from database.db_crud import get_pilot_full_name
 
@@ -262,3 +263,39 @@ def generate_pilot_info_page(DB_PATH, pilot_id, pilot_specific_stats, output_dir
         file.write(pilot_html)
 
     conn.close()
+
+def combine_pilot_stats_and_output(file_paths, output_file_path):
+    combined_stats = {}
+
+    # Function to update the combined stats with data from a file
+    def update_combined_stats(data):
+        for pilot_id, stats in data.items():
+            if pilot_id == "host":
+                continue  # Skip the "host" entry
+
+            if pilot_id not in combined_stats:
+                combined_stats[pilot_id] = {"times": {}, "lastJoin": 0}
+
+            # Update lastJoin
+            combined_stats[pilot_id]["lastJoin"] = max(combined_stats[pilot_id]["lastJoin"], stats.get("lastJoin", 0))
+
+            # Aggregate times and kills for each aircraft
+            for aircraft, aircraft_stats in stats.get("times", {}).items():
+                if aircraft not in combined_stats[pilot_id]["times"]:
+                    combined_stats[pilot_id]["times"][aircraft] = {"total": 0, "inAir": 0}
+                combined_stats[pilot_id]["times"][aircraft]["total"] += aircraft_stats.get("total", 0)
+                combined_stats[pilot_id]["times"][aircraft]["inAir"] += aircraft_stats.get("inAir", 0)
+                if "kills" in aircraft_stats:
+                    combined_stats[pilot_id]["times"][aircraft]["kills"] = aircraft_stats["kills"]
+
+    # Process each file
+    for file_path in file_paths:
+        with open(file_path, 'r') as file:
+            data = json.load(file)
+        update_combined_stats(data)
+
+    # Write the combined data to a new JSON file
+    with open(output_file_path, 'w') as file:
+        json.dump(combined_stats, file, indent=4)
+
+    print(f"Combined stats written to {output_file_path}")

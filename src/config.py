@@ -22,8 +22,8 @@ PREDEFINED_COLORS = [
 ]
 SERVER_ADMIN = 'Server Admin'
 STATS_FILES = [
-    'data/stats/SlmodStats_server1.lua', 
-    'data/stats/SlmodStats_server2.lua',
-    # Add more files as needed
+    'data/stats/SlmodStats_server1.json', 
+    'data/stats/SlmodStats_server2.json',
+    'data/stats/SlmodStats_server3.json'
 ]
 TOKEN = ''

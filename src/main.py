@@ -4,8 +4,8 @@ import subprocess
 import json
 from datetime import datetime
 from html_generator.html_generator import *
-from utils.stat_processing import load_combined_stats, generate_pilot_info_page
-from config import DB_PATH, JSON_PATH, STATS_FILES
+from utils.stat_processing import *
+from config import *
 
 # Configure logging
 log_filename = "data/logs/mayfly.log"
@@ -20,39 +20,13 @@ def run_lua_script(script_path):
         return None
     return result.stdout.strip()  # This should now be the path to the JSON file
 
-def process_combined_data(combined_data_json):
-    try:
-        combined_data = json.loads(combined_data_json)
-        # Process combined data...
-        # Placeholder for processing logic
-    except json.JSONDecodeError as e:
-        logging.error(f"Error parsing JSON data: {e}")
-
-def process_combined_data(file_path):
-    try:
-        with open(file_path, 'r') as file:
-            data = file.read()
-
-        combined_data = json.loads(data)
-        # Process combined data...
-        # Placeholder for processing logic
-
-    except json.JSONDecodeError as e:
-        logging.error(f"Error parsing JSON data: {e}")
-    except Exception as e:
-        logging.error(f"Error reading file: {e}")
-
 def update_logbook_report():
-    lua_script_path = 'src/lua/merge.lua'
-
-    logging.info("Running merge.lua script")
-    run_lua_script(lua_script_path)
+    logging.info("Combining stats files.")
+    combine_pilot_stats_and_output(STATS_FILES, JSON_PATH)
 
     if os.path.exists(JSON_PATH):
         logging.info("Processing combined data")
         combined_stats = load_combined_stats(JSON_PATH)
-        process_combined_data(JSON_PATH)
-        # Further processing...
     else:
         logging.error("combinedStats.json not found or merge.lua script failed")
 
