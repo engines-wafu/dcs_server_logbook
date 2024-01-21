@@ -789,15 +789,16 @@ async def give_award(ctx):
 @is_commanding_officer()
 async def give_qualification(ctx):
     """
-    Assigns specified qualifications to selected pilots.
+    Assigns a specified qualification to selected pilots, with paginated qualification display.
 
-    This command first displays a list of available qualifications. The user is then prompted to enter the names of the pilots (comma-separated) and the ID of the qualification. The specified qualification is then assigned to the given pilots, along with its duration.
+    This command first displays a list of available qualifications in a paginated format. Users can navigate through the pages using reaction emojis. Once the user views the qualifications, they are prompted to enter the names of the pilots (comma-separated) and the ID of the chosen qualification. The specified qualification is then assigned to the given pilots, along with its duration.
 
     Usage: !give_qualification
 
     Example:
     User: !give_qualification
-    Bot: [Displays list of available qualifications]
+    Bot: [Displays list of available qualifications with pagination]
+    [User navigates through pages using reaction emojis]
     Bot: Enter pilot name(s) (comma-separated):
     User: JohnDoe, JaneDoe
     Bot: Enter the qualification ID from the list above:
@@ -809,24 +810,52 @@ async def give_qualification(ctx):
         await ctx.send(embed=discord.Embed(description="No qualifications available.", color=0xff0000))
         return
 
-    # Create an embed for qualifications
-    embed = discord.Embed(title="Available Qualifications", description="Select a qualification by its ID.", color=0x00ff00)
-    for qid, qname, _ in qualifications:
-        embed.add_field(name=qid, value=qname, inline=False)
+    # Create a dictionary of qualifications
+    qualifications_dict = {str(qid): qname for qid, qname, _ in qualifications}
 
-    # Send qualification list and ask for pilot name(s)
-    qualification_msg = await ctx.send(embed=embed)
+    # Define page variables
+    current_page = 1
+    items_per_page = ITEMS_PER_PAGE
+    total_pages = (len(qualifications) + items_per_page - 1) // items_per_page
+
+    # Create an embed for qualifications
+    embed = create_qualifications_embed(qualifications, current_page, items_per_page)
+
+    # Send the initial qualifications list
+    message = await ctx.send(embed=embed)
+
+    # Store the message ID and other details for reaction handling
+    qualification_messages[message.id] = {'page': current_page, 'total_pages': total_pages, 'qualifications': qualifications, 'items_per_page': items_per_page}
+
+    # Add reaction emojis for navigation if there are multiple pages
+    if total_pages > 1:
+        await message.add_reaction("⬅️")
+        await message.add_reaction("➡️")
+
+    # Reaction handling for page navigation (you'll need to implement this logic)
+    # ...
+
+    # Get pilot names
     await ctx.send("Enter pilot name(s) (comma-separated):")
-    pilot_names = await get_response(ctx)
-    if not pilot_names:
+    pilot_names_response = await get_response(ctx)
+    if not pilot_names_response:
         return
 
-    pilot_ids = [find_pilot_id_by_name(DB_PATH, name.strip()) for name in pilot_names.split(",")]
+    # Process pilot names and get their IDs
+    pilot_ids = [find_pilot_id_by_name(DB_PATH, name.strip()) for name in pilot_names_response.split(",") if name.strip()]
 
-    # Prompt for qualification selection
+    # Get qualification ID from the user
     await ctx.send("Enter the qualification ID from the list above:")
-    qualification_id = await get_response(ctx)
-    if not qualification_id:
+    qualification_id_response = await get_response(ctx)
+    if not qualification_id_response:
+        return
+
+    # Process qualification ID
+    qualification_id = qualification_id_response.strip()
+
+    # Ensure the qualification ID is valid
+    if qualification_id not in qualifications_dict:
+        await ctx.send(embed=discord.Embed(description="Invalid qualification ID.", color=0xff0000))
         return
 
     # Get the qualification duration

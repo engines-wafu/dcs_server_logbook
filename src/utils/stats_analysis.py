@@ -209,7 +209,7 @@ def print_pilot_hour_report(file_path, db_path, thresholds=[50, 100, 250, 500]):
 
 # Example usage
 file_paths = ['data/stats/SlmodStats_server1.json','data/stats/SlmodStats_server2.json','data/stats/SlmodStats_server3.json']  # Replace with your actual file path
-output_file_path = 'data/stats/combinedStatsNew.json'
+output_file_path = 'data/stats/combinedStats.json'
 db_path = 'data/db/mayfly.db'
 
 # combine_pilot_stats_and_output(file_paths, output_file_path)
