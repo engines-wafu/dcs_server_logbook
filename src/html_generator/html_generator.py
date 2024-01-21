@@ -234,8 +234,6 @@ def generate_flight_plans_page(db_path, output_path):
     with open(output_file_path, 'w') as file:
         file.write(html_content)
 
-    print("Flight plans page generated successfully.")
-
 def generate_mayfly_html(db_path, output_file_path):
     # Fetch data from the database
     squadrons = get_squadron_ids(db_path)
