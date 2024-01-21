@@ -799,6 +799,9 @@ async def give_award(ctx):
         await ctx.send(embed=discord.Embed(description="No awards available.", color=0xff0000))
         return
 
+    # Correctly create a dictionary from the list of tuples
+    awards_dict = {str(award[0]): award[1] for award in awards}
+
     await display_awards(ctx, awards)
     pilot_names_response = await get_and_process_user_input(ctx, "Enter pilot name(s) (comma-separated):")
     if not pilot_names_response:
@@ -812,7 +815,7 @@ async def give_award(ctx):
     award_ids = process_award_ids(award_ids_response)
 
     for pilot_id in pilot_ids:
-        await process_pilot_award(ctx, pilot_id, award_ids)
+        await process_pilot_award(ctx, pilot_id, award_ids, awards_dict)
 
     await ctx.send(embed=discord.Embed(description="Award(s) assigned to selected pilot(s).", color=0x00ff00))
 
@@ -826,12 +829,15 @@ def process_pilot_names(pilot_names_response):
 def process_award_ids(award_ids_response):
     return [int(award_id.strip()) for award_id in award_ids_response.split(",") if award_id.strip()]
 
-async def process_pilot_award(ctx, pilot_id, award_ids):
+async def process_pilot_award(ctx, pilot_id, award_ids, awards_dict):
     pilot_name = get_pilot_name(DB_PATH, pilot_id)
     squadron_details = get_squadron_details(DB_PATH, get_pilot_squadron_id(DB_PATH, pilot_id))
 
+    if squadron_details is None:
+        logging.error(f"No squadron details found for pilot ID {pilot_id}")
+        return
+
     for award_id in award_ids:
-        award_id = int(award_id.strip())
         if award_id == squadron_details.get("squadron_cr_award"):
             await handle_cr_award(ctx, pilot_id, pilot_name, squadron_details)
         elif award_id == LCR_AWARD:

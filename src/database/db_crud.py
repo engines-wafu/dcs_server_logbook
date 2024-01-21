@@ -73,10 +73,11 @@ def get_squadron_details(db_path, squadron_id):
             }
             return details
         else:
-            return None
+            return {}  # Return an empty dictionary instead of None
+
     except sqlite3.Error as e:
         print(f"Database error: {e}")
-        return None
+        return {}
     finally:
         conn.close()
 
