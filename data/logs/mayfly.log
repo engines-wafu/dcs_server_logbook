@@ -2037,3 +2037,1827 @@ discord.ext.commands.errors.MissingRequiredArgument: pilot_name is a required ar
 2024-01-20 00:38:36,581 - INFO - 6f784cb7b82e58ea996432664a6d9ba8 total hours: 42.800000000000004
 2024-01-20 00:38:36,581 - INFO - 1ae5c656623ee0792397970e46ed00ad total hours: 11.399999999999999
 2024-01-20 00:38:36,581 - INFO - 7a42b9d3472eea06d42ba54ed7f4c4a9 total hours: 5.8
+2024-01-20 17:33:49,009 - DEBUG - Bot script started.
+2024-01-20 17:33:49,122 - DEBUG - Bot script started.
+2024-01-20 17:33:49,127 - INFO - logging in using static token
+2024-01-20 17:34:15,819 - DEBUG - Bot script started.
+2024-01-20 17:34:15,928 - DEBUG - Bot script started.
+2024-01-20 17:34:15,945 - INFO - logging in using static token
+2024-01-20 17:34:16,786 - INFO - Shard ID None has connected to Gateway (Session ID: c1cda7034743ac5225f41a76a2e6f277).
+2024-01-20 17:34:48,522 - ERROR - Ignoring exception in on_command_error
+Traceback (most recent call last):
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\discord\ext\commands\core.py", line 235, in wrapped
+    ret = await coro(*args, **kwargs)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\src\bot.py", line 1406, in audit_logbook
+    report = generate_pilot_hour_report(json_file_path, db_file_path)
+                                        ^^^^^^^^^^^^^^
+NameError: name 'json_file_path' is not defined
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\discord\client.py", line 441, in _run_event
+    await coro(*args, **kwargs)
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\src\bot.py", line 56, in on_command_error
+    raise error  # Re-raise other errors so you can notice them
+    ^^^^^^^^^^^
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\discord\ext\commands\bot.py", line 1350, in invoke
+    await ctx.command.invoke(ctx)
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\discord\ext\commands\core.py", line 1029, in invoke
+    await injected(*ctx.args, **ctx.kwargs)  # type: ignore
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\discord\ext\commands\core.py", line 244, in wrapped
+    raise CommandInvokeError(exc) from exc
+discord.ext.commands.errors.CommandInvokeError: Command raised an exception: NameError: name 'json_file_path' is not defined
+2024-01-20 17:35:57,760 - DEBUG - Bot script started.
+2024-01-20 17:35:57,869 - DEBUG - Bot script started.
+2024-01-20 17:35:57,869 - INFO - logging in using static token
+2024-01-20 17:35:58,830 - INFO - Shard ID None has connected to Gateway (Session ID: 127f2dbb4bc7709fdce9267c427c6960).
+2024-01-20 17:36:08,062 - ERROR - Ignoring exception in on_command_error
+Traceback (most recent call last):
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\discord\ext\commands\core.py", line 235, in wrapped
+    ret = await coro(*args, **kwargs)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\src\bot.py", line 1435, in audit_logbook
+    await message.edit(embed=create_embed(report_pages[current_page]))
+                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\src\bot.py", line 1414, in create_embed
+    title, value = line.split('\n', 1)
+    ^^^^^^^^^^^^
+ValueError: not enough values to unpack (expected 2, got 1)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\discord\client.py", line 441, in _run_event
+    await coro(*args, **kwargs)
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\src\bot.py", line 56, in on_command_error
+    raise error  # Re-raise other errors so you can notice them
+    ^^^^^^^^^^^
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\discord\ext\commands\bot.py", line 1350, in invoke
+    await ctx.command.invoke(ctx)
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\discord\ext\commands\core.py", line 1029, in invoke
+    await injected(*ctx.args, **ctx.kwargs)  # type: ignore
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\discord\ext\commands\core.py", line 244, in wrapped
+    raise CommandInvokeError(exc) from exc
+discord.ext.commands.errors.CommandInvokeError: Command raised an exception: ValueError: not enough values to unpack (expected 2, got 1)
+2024-01-20 17:37:46,343 - DEBUG - Bot script started.
+2024-01-20 17:37:46,458 - DEBUG - Bot script started.
+2024-01-20 17:37:46,458 - INFO - logging in using static token
+2024-01-20 17:37:47,284 - INFO - Shard ID None has connected to Gateway (Session ID: 38b960e30b4277f3c105ffa1bf5d52f3).
+2024-01-20 17:37:58,340 - ERROR - Ignoring exception in on_command_error
+Traceback (most recent call last):
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\discord\ext\commands\core.py", line 235, in wrapped
+    ret = await coro(*args, **kwargs)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\src\bot.py", line 1441, in audit_logbook
+    await message.remove_reaction(reaction, user)
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\discord\message.py", line 1159, in remove_reaction
+    await self._state.http.remove_reaction(self.channel.id, self.id, emoji, member.id)
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\discord\http.py", line 739, in request
+    raise Forbidden(response, data)
+discord.errors.Forbidden: 403 Forbidden (error code: 50003): Cannot execute action on a DM channel
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\discord\client.py", line 441, in _run_event
+    await coro(*args, **kwargs)
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\src\bot.py", line 56, in on_command_error
+    raise error  # Re-raise other errors so you can notice them
+    ^^^^^^^^^^^
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\discord\ext\commands\bot.py", line 1350, in invoke
+    await ctx.command.invoke(ctx)
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\discord\ext\commands\core.py", line 1029, in invoke
+    await injected(*ctx.args, **ctx.kwargs)  # type: ignore
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\discord\ext\commands\core.py", line 244, in wrapped
+    raise CommandInvokeError(exc) from exc
+discord.ext.commands.errors.CommandInvokeError: Command raised an exception: Forbidden: 403 Forbidden (error code: 50003): Cannot execute action on a DM channel
+2024-01-20 17:40:04,824 - DEBUG - Bot script started.
+2024-01-20 17:40:04,935 - DEBUG - Bot script started.
+2024-01-20 17:40:04,935 - INFO - logging in using static token
+2024-01-20 17:40:05,751 - INFO - Shard ID None has connected to Gateway (Session ID: 1db6e3bb6f1d41c88674dd55bb10b814).
+2024-01-20 17:40:14,842 - ERROR - Ignoring exception in on_command_error
+Traceback (most recent call last):
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\discord\ext\commands\core.py", line 235, in wrapped
+    ret = await coro(*args, **kwargs)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\src\bot.py", line 1406, in audit_logbook
+    report = generate_pilot_hour_report(json_file_path, db_file_path)
+                                        ^^^^^^^^^^^^^^
+NameError: name 'json_file_path' is not defined
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\discord\client.py", line 441, in _run_event
+    await coro(*args, **kwargs)
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\src\bot.py", line 56, in on_command_error
+    raise error  # Re-raise other errors so you can notice them
+    ^^^^^^^^^^^
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\discord\ext\commands\bot.py", line 1350, in invoke
+    await ctx.command.invoke(ctx)
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\discord\ext\commands\core.py", line 1029, in invoke
+    await injected(*ctx.args, **ctx.kwargs)  # type: ignore
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\discord\ext\commands\core.py", line 244, in wrapped
+    raise CommandInvokeError(exc) from exc
+discord.ext.commands.errors.CommandInvokeError: Command raised an exception: NameError: name 'json_file_path' is not defined
+2024-01-20 17:40:42,863 - DEBUG - Bot script started.
+2024-01-20 17:40:42,979 - DEBUG - Bot script started.
+2024-01-20 17:40:42,984 - INFO - logging in using static token
+2024-01-20 17:40:43,852 - INFO - Shard ID None has connected to Gateway (Session ID: 223090f0d78576b71acf9c32ffdaa74d).
+2024-01-20 17:45:07,141 - DEBUG - Bot script started.
+2024-01-20 17:45:07,247 - DEBUG - Bot script started.
+2024-01-20 17:45:07,253 - INFO - logging in using static token
+2024-01-20 17:45:08,242 - INFO - Shard ID None has connected to Gateway (Session ID: 5e736b6d95f6c53d6b0f7fe151971600).
+2024-01-20 17:45:11,625 - ERROR - Ignoring exception in on_command_error
+Traceback (most recent call last):
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\discord\ext\commands\core.py", line 235, in wrapped
+    ret = await coro(*args, **kwargs)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\src\bot.py", line 1414, in audit_logbook
+    report_data = generate_pilot_hour_report(json_file_path, db_file_path)
+                                             ^^^^^^^^^^^^^^
+NameError: name 'json_file_path' is not defined
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\discord\client.py", line 441, in _run_event
+    await coro(*args, **kwargs)
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\src\bot.py", line 56, in on_command_error
+    raise error  # Re-raise other errors so you can notice them
+    ^^^^^^^^^^^
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\discord\ext\commands\bot.py", line 1350, in invoke
+    await ctx.command.invoke(ctx)
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\discord\ext\commands\core.py", line 1029, in invoke
+    await injected(*ctx.args, **ctx.kwargs)  # type: ignore
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\discord\ext\commands\core.py", line 244, in wrapped
+    raise CommandInvokeError(exc) from exc
+discord.ext.commands.errors.CommandInvokeError: Command raised an exception: NameError: name 'json_file_path' is not defined
+2024-01-20 17:45:29,168 - DEBUG - Bot script started.
+2024-01-20 17:45:29,275 - DEBUG - Bot script started.
+2024-01-20 17:45:29,275 - INFO - logging in using static token
+2024-01-20 17:45:30,101 - INFO - Shard ID None has connected to Gateway (Session ID: 60d4c79168944383671a63ea0cc22fa8).
+2024-01-20 17:45:33,382 - ERROR - Ignoring exception in on_command_error
+Traceback (most recent call last):
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\discord\ext\commands\core.py", line 235, in wrapped
+    ret = await coro(*args, **kwargs)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\src\bot.py", line 1418, in audit_logbook
+    message = await ctx.send(embed=create_embed(report_pages[current_page], "Pilot Hour Audit Report", current_page + 1))
+                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\src\bot.py", line 1405, in create_embed
+    for threshold, pilot_list in pilot_data.items():
+                                 ^^^^^^^^^^^^^^^^
+AttributeError: 'str' object has no attribute 'items'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\discord\client.py", line 441, in _run_event
+    await coro(*args, **kwargs)
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\src\bot.py", line 56, in on_command_error
+    raise error  # Re-raise other errors so you can notice them
+    ^^^^^^^^^^^
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\discord\ext\commands\bot.py", line 1350, in invoke
+    await ctx.command.invoke(ctx)
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\discord\ext\commands\core.py", line 1029, in invoke
+    await injected(*ctx.args, **ctx.kwargs)  # type: ignore
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\discord\ext\commands\core.py", line 244, in wrapped
+    raise CommandInvokeError(exc) from exc
+discord.ext.commands.errors.CommandInvokeError: Command raised an exception: AttributeError: 'str' object has no attribute 'items'
+2024-01-20 17:47:02,277 - DEBUG - Bot script started.
+2024-01-20 17:47:02,394 - DEBUG - Bot script started.
+2024-01-20 17:47:02,402 - INFO - logging in using static token
+2024-01-20 17:47:03,379 - INFO - Shard ID None has connected to Gateway (Session ID: 24ca823902572d726456b88a96380987).
+2024-01-20 17:47:06,317 - ERROR - Ignoring exception in on_command_error
+Traceback (most recent call last):
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\discord\ext\commands\core.py", line 235, in wrapped
+    ret = await coro(*args, **kwargs)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\src\bot.py", line 1415, in audit_logbook
+    report_pages = chunk_report(report_data)  # Assume chunk_report divides report_data into pages
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\src\bot.py", line 91, in chunk_report
+    return [report[i:i + chunk_size] for i in range(0, len(report), chunk_size)]
+            ~~~~~~^^^^^^^^^^^^^^^^^^
+KeyError: slice(0, 1024, None)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\discord\client.py", line 441, in _run_event
+    await coro(*args, **kwargs)
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\src\bot.py", line 56, in on_command_error
+    raise error  # Re-raise other errors so you can notice them
+    ^^^^^^^^^^^
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\discord\ext\commands\bot.py", line 1350, in invoke
+    await ctx.command.invoke(ctx)
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\discord\ext\commands\core.py", line 1029, in invoke
+    await injected(*ctx.args, **ctx.kwargs)  # type: ignore
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\discord\ext\commands\core.py", line 244, in wrapped
+    raise CommandInvokeError(exc) from exc
+discord.ext.commands.errors.CommandInvokeError: Command raised an exception: KeyError: slice(0, 1024, None)
+2024-01-20 17:48:03,480 - DEBUG - Bot script started.
+2024-01-20 17:48:03,586 - DEBUG - Bot script started.
+2024-01-20 17:48:03,591 - INFO - logging in using static token
+2024-01-20 17:48:04,689 - INFO - Shard ID None has connected to Gateway (Session ID: bc722701a3dab173cd9496240fa532b2).
+2024-01-20 17:48:07,080 - ERROR - Ignoring exception in on_command_error
+Traceback (most recent call last):
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\discord\ext\commands\core.py", line 235, in wrapped
+    ret = await coro(*args, **kwargs)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\src\bot.py", line 1437, in audit_logbook
+    message = await ctx.send(embed=create_embed(report_pages[current_page], "Pilot Hour Audit Report", current_page + 1))
+                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\src\bot.py", line 1424, in create_embed
+    for threshold, pilot_list in pilot_data.items():
+                                 ^^^^^^^^^^^^^^^^
+AttributeError: 'str' object has no attribute 'items'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\discord\client.py", line 441, in _run_event
+    await coro(*args, **kwargs)
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\src\bot.py", line 56, in on_command_error
+    raise error  # Re-raise other errors so you can notice them
+    ^^^^^^^^^^^
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\discord\ext\commands\bot.py", line 1350, in invoke
+    await ctx.command.invoke(ctx)
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\discord\ext\commands\core.py", line 1029, in invoke
+    await injected(*ctx.args, **ctx.kwargs)  # type: ignore
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\discord\ext\commands\core.py", line 244, in wrapped
+    raise CommandInvokeError(exc) from exc
+discord.ext.commands.errors.CommandInvokeError: Command raised an exception: AttributeError: 'str' object has no attribute 'items'
+2024-01-20 17:49:05,977 - DEBUG - Bot script started.
+2024-01-20 17:49:06,086 - DEBUG - Bot script started.
+2024-01-20 17:49:06,093 - INFO - logging in using static token
+2024-01-20 17:49:06,891 - INFO - Shard ID None has connected to Gateway (Session ID: 0327d7f572e7d086e2d2bbd3598c0ebf).
+2024-01-20 17:53:42,693 - DEBUG - Bot script started.
+2024-01-20 17:53:42,804 - DEBUG - Bot script started.
+2024-01-20 17:53:42,804 - INFO - logging in using static token
+2024-01-20 17:53:43,832 - INFO - Shard ID None has connected to Gateway (Session ID: f1feca94133f65838a7a63597c92dfc1).
+2024-01-20 18:29:10,049 - DEBUG - Bot script started.
+2024-01-20 18:29:10,156 - DEBUG - Bot script started.
+2024-01-20 18:29:10,161 - INFO - logging in using static token
+2024-01-20 18:29:11,003 - INFO - Shard ID None has connected to Gateway (Session ID: 02ff8c3c87fc875b34cbb3fe70fac938).
+2024-01-20 18:29:43,950 - DEBUG - Bot script started.
+2024-01-20 18:29:44,062 - DEBUG - Bot script started.
+2024-01-20 18:29:44,067 - INFO - logging in using static token
+2024-01-20 18:29:44,901 - INFO - Shard ID None has connected to Gateway (Session ID: 2c581e2c65ac21598b360cfa49ddb82c).
+2024-01-20 18:32:57,544 - DEBUG - Bot script started.
+2024-01-20 18:32:57,652 - DEBUG - Bot script started.
+2024-01-20 18:32:57,652 - INFO - logging in using static token
+2024-01-20 18:32:58,507 - INFO - Shard ID None has connected to Gateway (Session ID: 1eeaa333d4c041a8203c9bd47f0fbc8f).
+2024-01-20 18:46:18,376 - DEBUG - Bot script started.
+2024-01-20 18:46:18,491 - DEBUG - Bot script started.
+2024-01-20 18:46:18,496 - INFO - logging in using static token
+2024-01-20 18:46:19,429 - INFO - Shard ID None has connected to Gateway (Session ID: df53dcd8bb8ed888cce1936e6f2b81d9).
+2024-01-20 18:47:23,499 - DEBUG - Bot script started.
+2024-01-20 18:47:23,608 - DEBUG - Bot script started.
+2024-01-20 18:47:23,617 - INFO - logging in using static token
+2024-01-20 18:47:24,399 - INFO - Shard ID None has connected to Gateway (Session ID: 0ecfd9a71b495dd4c2f22fe0ff3cdde6).
+2024-01-20 18:50:11,535 - DEBUG - Bot script started.
+2024-01-20 18:50:11,654 - DEBUG - Bot script started.
+2024-01-20 18:50:11,654 - INFO - logging in using static token
+2024-01-20 18:50:12,441 - INFO - Shard ID None has connected to Gateway (Session ID: 29d9e929b8505bfb86252b65ebb973e0).
+2024-01-20 18:51:33,910 - DEBUG - Bot script started.
+2024-01-20 18:51:34,026 - DEBUG - Bot script started.
+2024-01-20 18:51:34,034 - INFO - logging in using static token
+2024-01-20 18:51:34,912 - INFO - Shard ID None has connected to Gateway (Session ID: 2a27e0f135098eb18e1aa4c44262910c).
+2024-01-20 19:46:32,458 - DEBUG - Bot script started.
+2024-01-20 19:46:32,566 - DEBUG - Bot script started.
+2024-01-20 19:46:32,566 - INFO - logging in using static token
+2024-01-20 19:46:33,377 - INFO - Shard ID None has connected to Gateway (Session ID: b07181b943d4d2cdc4287b23503b79bf).
+2024-01-20 19:46:45,183 - DEBUG - Attempting to give awards
+2024-01-20 19:47:08,457 - DEBUG - Assigning award: 42 to pilot: Lt Cdr Engines
+2024-01-20 19:47:08,457 - DEBUG - Attempting to assign LCR role for award ID 42
+2024-01-20 19:47:08,457 - DEBUG - Assigning role id: 1196287080184152064
+2024-01-20 19:47:08,457 - DEBUG - Attempting to assign role ID 1196287080184152064 to pilot: Lt Cdr Engines
+2024-01-20 19:47:08,457 - DEBUG - Guild ID: 1190999875609968690, Guild Name: ETDS
+2024-01-20 19:47:08,458 - DEBUG - Role ID: 1190999875609968690, Role Name: @everyone
+2024-01-20 19:47:08,458 - DEBUG - Role ID: 1196287277001871481, Role Name: CR
+2024-01-20 19:47:08,458 - DEBUG - Role ID: 1196287080184152064, Role Name: LCR
+2024-01-20 19:47:08,458 - DEBUG - Role ID: 1195908014746640434, Role Name: Squadron Commanders
+2024-01-20 19:47:08,458 - DEBUG - Role ID: 1195900618225758229, Role Name: Server admin
+2024-01-20 19:47:08,458 - DEBUG - Role ID: 1195557831223545888, Role Name: Controllers
+2024-01-20 19:47:08,458 - DEBUG - Role ID: 1196303166854140006, Role Name: logso
+2024-01-20 19:47:08,651 - INFO - Assigned role LCR to user Engines
+2024-01-20 19:47:08,651 - ERROR - Ignoring exception in on_command_error
+Traceback (most recent call last):
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\discord\ext\commands\core.py", line 235, in wrapped
+    ret = await coro(*args, **kwargs)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\src\bot.py", line 814, in give_award
+    squadron_id = get_pilot_squadron_id(DB_PATH, pilot_id)
+                  ^^^^^^^^^^^^^^^^^^^^^
+NameError: name 'get_pilot_squadron_id' is not defined
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\discord\client.py", line 441, in _run_event
+    await coro(*args, **kwargs)
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\src\bot.py", line 56, in on_command_error
+    raise error  # Re-raise other errors so you can notice them
+    ^^^^^^^^^^^
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\discord\ext\commands\bot.py", line 1350, in invoke
+    await ctx.command.invoke(ctx)
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\discord\ext\commands\core.py", line 1029, in invoke
+    await injected(*ctx.args, **ctx.kwargs)  # type: ignore
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\discord\ext\commands\core.py", line 244, in wrapped
+    raise CommandInvokeError(exc) from exc
+discord.ext.commands.errors.CommandInvokeError: Command raised an exception: NameError: name 'get_pilot_squadron_id' is not defined
+2024-01-20 19:49:23,250 - DEBUG - Bot script started.
+2024-01-20 19:49:23,353 - DEBUG - Bot script started.
+2024-01-20 19:49:23,361 - INFO - logging in using static token
+2024-01-20 19:49:24,294 - INFO - Shard ID None has connected to Gateway (Session ID: 9b329bd155a5e9e64fa36a0b938f16b5).
+2024-01-20 19:49:28,688 - DEBUG - Attempting to give awards
+2024-01-20 19:49:33,383 - DEBUG - Assigning award: 42 to pilot: Lt Cdr Engines
+2024-01-20 19:49:33,384 - DEBUG - Attempting to assign LCR role for award ID 42
+2024-01-20 19:49:33,384 - DEBUG - Assigning role id: 1196287080184152064
+2024-01-20 19:49:33,384 - DEBUG - Attempting to assign role ID 1196287080184152064 to pilot: Lt Cdr Engines
+2024-01-20 19:49:33,384 - DEBUG - Guild ID: 1190999875609968690, Guild Name: ETDS
+2024-01-20 19:49:33,384 - DEBUG - Role ID: 1190999875609968690, Role Name: @everyone
+2024-01-20 19:49:33,384 - DEBUG - Role ID: 1196287277001871481, Role Name: CR
+2024-01-20 19:49:33,385 - DEBUG - Role ID: 1196287080184152064, Role Name: LCR
+2024-01-20 19:49:33,385 - DEBUG - Role ID: 1195908014746640434, Role Name: Squadron Commanders
+2024-01-20 19:49:33,385 - DEBUG - Role ID: 1195900618225758229, Role Name: Server admin
+2024-01-20 19:49:33,385 - DEBUG - Role ID: 1195557831223545888, Role Name: Controllers
+2024-01-20 19:49:33,385 - DEBUG - Role ID: 1196303166854140006, Role Name: logso
+2024-01-20 19:49:33,604 - INFO - Assigned role LCR to user Engines
+2024-01-20 19:49:33,606 - DEBUG - No specific LCR role found for squadron 801 NAS
+2024-01-20 20:23:24,474 - DEBUG - Bot script started.
+2024-01-20 20:23:24,576 - DEBUG - Bot script started.
+2024-01-20 20:23:24,584 - INFO - logging in using static token
+2024-01-20 20:23:25,454 - INFO - Shard ID None has connected to Gateway (Session ID: 1378568f07e5cc5647797da9fdc66730).
+2024-01-20 20:23:29,870 - DEBUG - Attempting to give awards
+2024-01-20 20:23:36,459 - DEBUG - Assigning award: 42 to pilot: Lt Cdr Engines
+2024-01-20 20:23:36,459 - DEBUG - Attempting to assign LCR role for award ID 42
+2024-01-20 20:23:36,460 - DEBUG - Assigning role id: 1196287080184152064
+2024-01-20 20:23:36,460 - DEBUG - Attempting to assign role ID 1196287080184152064 to pilot: Lt Cdr Engines
+2024-01-20 20:23:36,460 - DEBUG - Guild ID: 1190999875609968690, Guild Name: ETDS
+2024-01-20 20:23:36,460 - DEBUG - Role ID: 1190999875609968690, Role Name: @everyone
+2024-01-20 20:23:36,460 - DEBUG - Role ID: 1196287277001871481, Role Name: CR
+2024-01-20 20:23:36,460 - DEBUG - Role ID: 1196287080184152064, Role Name: LCR
+2024-01-20 20:23:36,460 - DEBUG - Role ID: 1195908014746640434, Role Name: Squadron Commanders
+2024-01-20 20:23:36,460 - DEBUG - Role ID: 1195900618225758229, Role Name: Server admin
+2024-01-20 20:23:36,461 - DEBUG - Role ID: 1195557831223545888, Role Name: Controllers
+2024-01-20 20:23:36,461 - DEBUG - Role ID: 1196303166854140006, Role Name: logso
+2024-01-20 20:23:36,639 - INFO - Assigned role LCR to user Engines
+2024-01-20 20:23:36,640 - ERROR - Ignoring exception in on_command_error
+Traceback (most recent call last):
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\src\database\db_crud.py", line 777, in get_squadron_lcr_role_id
+    cursor.execute(query, (squadron_id,))
+sqlite3.OperationalError: no such table: Squadron_LCR_Roles
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\discord\ext\commands\core.py", line 235, in wrapped
+    ret = await coro(*args, **kwargs)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\src\bot.py", line 815, in give_award
+    lcr_role_id = get_squadron_lcr_role_id(DB_PATH, squadron_id)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\src\database\db_crud.py", line 784, in get_squadron_lcr_role_id
+    logger.error(f"Database error: {e}")
+    ^^^^^^
+NameError: name 'logger' is not defined
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\discord\client.py", line 441, in _run_event
+    await coro(*args, **kwargs)
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\src\bot.py", line 56, in on_command_error
+    raise error  # Re-raise other errors so you can notice them
+    ^^^^^^^^^^^
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\discord\ext\commands\bot.py", line 1350, in invoke
+    await ctx.command.invoke(ctx)
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\discord\ext\commands\core.py", line 1029, in invoke
+    await injected(*ctx.args, **ctx.kwargs)  # type: ignore
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\discord\ext\commands\core.py", line 244, in wrapped
+    raise CommandInvokeError(exc) from exc
+discord.ext.commands.errors.CommandInvokeError: Command raised an exception: NameError: name 'logger' is not defined
+2024-01-20 20:29:57,846 - DEBUG - Bot script started.
+2024-01-20 20:29:57,947 - DEBUG - Bot script started.
+2024-01-20 20:29:57,947 - INFO - logging in using static token
+2024-01-20 20:29:58,899 - INFO - Shard ID None has connected to Gateway (Session ID: 191e636e2456043c0c8f4031fc8a781a).
+2024-01-20 20:30:05,918 - DEBUG - Attempting to give awards
+2024-01-20 20:30:10,691 - DEBUG - Assigning award: 42 to pilot: Lt Cdr Engines
+2024-01-20 20:30:10,691 - DEBUG - Attempting to assign LCR role for award ID 42
+2024-01-20 20:30:10,692 - DEBUG - Assigning role id: 1196287080184152064
+2024-01-20 20:30:10,692 - DEBUG - Attempting to assign role ID 1196287080184152064 to pilot: Lt Cdr Engines
+2024-01-20 20:30:10,692 - DEBUG - Guild ID: 1190999875609968690, Guild Name: ETDS
+2024-01-20 20:30:10,692 - DEBUG - Role ID: 1190999875609968690, Role Name: @everyone
+2024-01-20 20:30:10,692 - DEBUG - Role ID: 1196287277001871481, Role Name: CR
+2024-01-20 20:30:10,692 - DEBUG - Role ID: 1196287080184152064, Role Name: LCR
+2024-01-20 20:30:10,693 - DEBUG - Role ID: 1195908014746640434, Role Name: Squadron Commanders
+2024-01-20 20:30:10,693 - DEBUG - Role ID: 1195900618225758229, Role Name: Server admin
+2024-01-20 20:30:10,693 - DEBUG - Role ID: 1195557831223545888, Role Name: Controllers
+2024-01-20 20:30:10,693 - DEBUG - Role ID: 1196303166854140006, Role Name: logso
+2024-01-20 20:30:10,861 - INFO - Assigned role LCR to user Engines
+2024-01-20 20:30:10,862 - ERROR - Database error: no such table: Squadron_LCR_Roles
+2024-01-20 20:30:10,864 - DEBUG - No specific LCR role found for squadron 801 NAS
+2024-01-20 20:31:24,485 - DEBUG - Attempting to give awards
+2024-01-20 20:31:28,563 - DEBUG - Assigning award: 42 to pilot: Lt Cdr Engines
+2024-01-20 20:31:28,563 - DEBUG - Attempting to assign LCR role for award ID 42
+2024-01-20 20:31:28,563 - DEBUG - Assigning role id: 1196287080184152064
+2024-01-20 20:31:28,563 - DEBUG - Attempting to assign role ID 1196287080184152064 to pilot: Lt Cdr Engines
+2024-01-20 20:31:28,563 - DEBUG - Guild ID: 1190999875609968690, Guild Name: ETDS
+2024-01-20 20:31:28,564 - DEBUG - Role ID: 1190999875609968690, Role Name: @everyone
+2024-01-20 20:31:28,564 - DEBUG - Role ID: 1196287277001871481, Role Name: CR
+2024-01-20 20:31:28,564 - DEBUG - Role ID: 1196287080184152064, Role Name: LCR
+2024-01-20 20:31:28,564 - DEBUG - Role ID: 1195908014746640434, Role Name: Squadron Commanders
+2024-01-20 20:31:28,564 - DEBUG - Role ID: 1195900618225758229, Role Name: Server admin
+2024-01-20 20:31:28,564 - DEBUG - Role ID: 1195557831223545888, Role Name: Controllers
+2024-01-20 20:31:28,564 - DEBUG - Role ID: 1196303166854140006, Role Name: logso
+2024-01-20 20:31:29,251 - INFO - Assigned role LCR to user Engines
+2024-01-20 20:31:29,252 - ERROR - Database error: no such table: Squadron_LCR_Roles
+2024-01-20 20:31:29,253 - DEBUG - No specific LCR role found for squadron 801 NAS
+2024-01-20 20:32:01,153 - DEBUG - Bot script started.
+2024-01-20 20:32:01,258 - DEBUG - Bot script started.
+2024-01-20 20:32:01,263 - INFO - logging in using static token
+2024-01-20 20:32:01,980 - INFO - Shard ID None has connected to Gateway (Session ID: 2fbf775db33a8476ab5a642e2f1321f9).
+2024-01-20 20:32:12,976 - DEBUG - Attempting to give awards
+2024-01-20 20:32:18,463 - DEBUG - Assigning award: 42 to pilot: Lt Cdr Engines
+2024-01-20 20:32:18,463 - DEBUG - Attempting to assign LCR role for award ID 42
+2024-01-20 20:32:18,463 - DEBUG - Assigning role id: 1196287080184152064
+2024-01-20 20:32:18,463 - DEBUG - Attempting to assign role ID 1196287080184152064 to pilot: Lt Cdr Engines
+2024-01-20 20:32:18,464 - DEBUG - Guild ID: 1190999875609968690, Guild Name: ETDS
+2024-01-20 20:32:18,464 - DEBUG - Role ID: 1190999875609968690, Role Name: @everyone
+2024-01-20 20:32:18,464 - DEBUG - Role ID: 1196287277001871481, Role Name: CR
+2024-01-20 20:32:18,464 - DEBUG - Role ID: 1196287080184152064, Role Name: LCR
+2024-01-20 20:32:18,464 - DEBUG - Role ID: 1195908014746640434, Role Name: Squadron Commanders
+2024-01-20 20:32:18,464 - DEBUG - Role ID: 1195900618225758229, Role Name: Server admin
+2024-01-20 20:32:18,464 - DEBUG - Role ID: 1195557831223545888, Role Name: Controllers
+2024-01-20 20:32:18,465 - DEBUG - Role ID: 1196303166854140006, Role Name: logso
+2024-01-20 20:32:18,680 - INFO - Assigned role LCR to user Engines
+2024-01-20 20:32:18,681 - ERROR - Database error: no such table: Squadron_LCR_Roles
+2024-01-20 20:32:18,681 - ERROR - Database error: no such table: Squadron_LCR_Roles
+2024-01-20 20:32:18,681 - DEBUG - No specific LCR role found for squadron 801 NAS
+2024-01-20 21:03:44,569 - DEBUG - Bot script started.
+2024-01-20 21:03:44,679 - DEBUG - Bot script started.
+2024-01-20 21:03:44,685 - INFO - logging in using static token
+2024-01-20 21:03:45,582 - INFO - Shard ID None has connected to Gateway (Session ID: d7b55341373de1557292fa820aa7e1ea).
+2024-01-20 21:03:53,086 - ERROR - Ignoring exception in on_command_error
+Traceback (most recent call last):
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\discord\client.py", line 441, in _run_event
+    await coro(*args, **kwargs)
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\src\bot.py", line 56, in on_command_error
+    raise error  # Re-raise other errors so you can notice them
+    ^^^^^^^^^^^
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\discord\ext\commands\bot.py", line 1350, in invoke
+    await ctx.command.invoke(ctx)
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\discord\ext\commands\core.py", line 1021, in invoke
+    await self.prepare(ctx)
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\discord\ext\commands\core.py", line 938, in prepare
+    await self._parse_arguments(ctx)
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\discord\ext\commands\core.py", line 853, in _parse_arguments
+    kwargs[name] = await self.transform(ctx, param, attachments)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\discord\ext\commands\core.py", line 697, in transform
+    raise MissingRequiredArgument(param)
+discord.ext.commands.errors.MissingRequiredArgument: pilot_name is a required argument that is missing.
+2024-01-20 21:04:38,916 - DEBUG - Attempting to give awards
+2024-01-20 21:04:43,834 - DEBUG - Assigning award: 42 to pilot: Lt Cdr Engines
+2024-01-20 21:04:59,970 - INFO - Seconds: 42386.873999999996, total: 11.8
+2024-01-20 21:04:59,970 - INFO - Seconds: 42386.873999999996, total: 11.8
+2024-01-20 21:04:59,970 - INFO - Seconds: 87618.4, total: 36.1
+2024-01-20 21:04:59,970 - INFO - Seconds: 87618.4, total: 36.1
+2024-01-20 21:04:59,970 - INFO - Seconds: 210.048, total: 36.2
+2024-01-20 21:04:59,970 - INFO - Seconds: 210.048, total: 36.2
+2024-01-20 21:04:59,970 - INFO - Seconds: 54946.247, total: 51.5
+2024-01-20 21:04:59,970 - INFO - Seconds: 54946.247, total: 51.5
+2024-01-20 21:04:59,970 - INFO - Seconds: 1435465.4490002, total: 450.2
+2024-01-20 21:04:59,970 - INFO - Seconds: 1435465.4490002, total: 450.2
+2024-01-20 21:04:59,971 - INFO - Seconds: 7759.34, total: 452.4
+2024-01-20 21:04:59,971 - INFO - Seconds: 7759.34, total: 452.4
+2024-01-20 21:04:59,971 - INFO - Seconds: 20087.396, total: 458.0
+2024-01-20 21:04:59,971 - INFO - Seconds: 20087.396, total: 458.0
+2024-01-20 21:04:59,971 - INFO - Seconds: 31332.528, total: 466.7
+2024-01-20 21:04:59,971 - INFO - Seconds: 31332.528, total: 466.7
+2024-01-20 21:04:59,971 - INFO - Seconds: 130362.03, total: 502.9
+2024-01-20 21:04:59,971 - INFO - Seconds: 130362.03, total: 502.9
+2024-01-20 21:04:59,971 - INFO - Seconds: 3511.936, total: 503.9
+2024-01-20 21:04:59,971 - INFO - Seconds: 3511.936, total: 503.9
+2024-01-20 21:04:59,971 - INFO - Seconds: 15894.205, total: 508.29999999999995
+2024-01-20 21:04:59,971 - INFO - Seconds: 15894.205, total: 508.29999999999995
+2024-01-20 21:04:59,972 - INFO - Seconds: 21477.569, total: 514.3
+2024-01-20 21:04:59,972 - INFO - Seconds: 21477.569, total: 514.3
+2024-01-20 21:04:59,972 - INFO - Seconds: 5183.677, total: 515.6999999999999
+2024-01-20 21:04:59,972 - INFO - Seconds: 5183.677, total: 515.6999999999999
+2024-01-20 21:04:59,972 - INFO - Seconds: 10011.462, total: 518.4999999999999
+2024-01-20 21:04:59,972 - INFO - Seconds: 10011.462, total: 518.4999999999999
+2024-01-20 21:04:59,972 - INFO - Seconds: 1091.084, total: 518.7999999999998
+2024-01-20 21:04:59,972 - INFO - Seconds: 1091.084, total: 518.7999999999998
+2024-01-20 21:04:59,972 - INFO - Seconds: 8689.942, total: 521.1999999999998
+2024-01-20 21:04:59,972 - INFO - Seconds: 8689.942, total: 521.1999999999998
+2024-01-20 21:04:59,972 - INFO - Seconds: 13511.256, total: 524.9999999999998
+2024-01-20 21:04:59,972 - INFO - Seconds: 13511.256, total: 524.9999999999998
+2024-01-20 21:04:59,972 - INFO - Seconds: 7087.85, total: 526.9999999999998
+2024-01-20 21:04:59,972 - INFO - Seconds: 7087.85, total: 526.9999999999998
+2024-01-20 21:05:27,834 - INFO - Seconds: 42386.873999999996, total: 11.8
+2024-01-20 21:05:27,834 - INFO - Seconds: 42386.873999999996, total: 11.8
+2024-01-20 21:05:27,834 - INFO - Seconds: 87618.4, total: 36.1
+2024-01-20 21:05:27,834 - INFO - Seconds: 87618.4, total: 36.1
+2024-01-20 21:05:27,834 - INFO - Seconds: 210.048, total: 36.2
+2024-01-20 21:05:27,834 - INFO - Seconds: 210.048, total: 36.2
+2024-01-20 21:05:27,835 - INFO - Seconds: 54946.247, total: 51.5
+2024-01-20 21:05:27,835 - INFO - Seconds: 54946.247, total: 51.5
+2024-01-20 21:05:27,835 - INFO - Seconds: 1435465.4490002, total: 450.2
+2024-01-20 21:05:27,835 - INFO - Seconds: 1435465.4490002, total: 450.2
+2024-01-20 21:05:27,835 - INFO - Seconds: 7759.34, total: 452.4
+2024-01-20 21:05:27,835 - INFO - Seconds: 7759.34, total: 452.4
+2024-01-20 21:05:27,835 - INFO - Seconds: 20087.396, total: 458.0
+2024-01-20 21:05:27,835 - INFO - Seconds: 20087.396, total: 458.0
+2024-01-20 21:05:27,835 - INFO - Seconds: 31332.528, total: 466.7
+2024-01-20 21:05:27,835 - INFO - Seconds: 31332.528, total: 466.7
+2024-01-20 21:05:27,835 - INFO - Seconds: 130362.03, total: 502.9
+2024-01-20 21:05:27,835 - INFO - Seconds: 130362.03, total: 502.9
+2024-01-20 21:05:27,836 - INFO - Seconds: 3511.936, total: 503.9
+2024-01-20 21:05:27,836 - INFO - Seconds: 3511.936, total: 503.9
+2024-01-20 21:05:27,836 - INFO - Seconds: 15894.205, total: 508.29999999999995
+2024-01-20 21:05:27,836 - INFO - Seconds: 15894.205, total: 508.29999999999995
+2024-01-20 21:05:27,836 - INFO - Seconds: 21477.569, total: 514.3
+2024-01-20 21:05:27,836 - INFO - Seconds: 21477.569, total: 514.3
+2024-01-20 21:05:27,836 - INFO - Seconds: 5183.677, total: 515.6999999999999
+2024-01-20 21:05:27,836 - INFO - Seconds: 5183.677, total: 515.6999999999999
+2024-01-20 21:05:27,836 - INFO - Seconds: 10011.462, total: 518.4999999999999
+2024-01-20 21:05:27,836 - INFO - Seconds: 10011.462, total: 518.4999999999999
+2024-01-20 21:05:27,836 - INFO - Seconds: 1091.084, total: 518.7999999999998
+2024-01-20 21:05:27,836 - INFO - Seconds: 1091.084, total: 518.7999999999998
+2024-01-20 21:05:27,837 - INFO - Seconds: 8689.942, total: 521.1999999999998
+2024-01-20 21:05:27,837 - INFO - Seconds: 8689.942, total: 521.1999999999998
+2024-01-20 21:05:27,837 - INFO - Seconds: 13511.256, total: 524.9999999999998
+2024-01-20 21:05:27,837 - INFO - Seconds: 13511.256, total: 524.9999999999998
+2024-01-20 21:05:27,837 - INFO - Seconds: 7087.85, total: 526.9999999999998
+2024-01-20 21:05:27,837 - INFO - Seconds: 7087.85, total: 526.9999999999998
+2024-01-20 21:17:02,242 - DEBUG - Bot script started.
+2024-01-20 21:17:02,348 - DEBUG - Bot script started.
+2024-01-20 21:17:02,353 - INFO - logging in using static token
+2024-01-20 21:17:03,336 - INFO - Shard ID None has connected to Gateway (Session ID: 53a9ed4170bcabf435932c924e067f1c).
+2024-01-20 21:17:33,634 - ERROR - Ignoring exception in on_command_error
+Traceback (most recent call last):
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\discord\client.py", line 441, in _run_event
+    await coro(*args, **kwargs)
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\src\bot.py", line 56, in on_command_error
+    raise error  # Re-raise other errors so you can notice them
+    ^^^^^^^^^^^
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\discord\ext\commands\bot.py", line 1350, in invoke
+    await ctx.command.invoke(ctx)
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\discord\ext\commands\core.py", line 1021, in invoke
+    await self.prepare(ctx)
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\discord\ext\commands\core.py", line 938, in prepare
+    await self._parse_arguments(ctx)
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\discord\ext\commands\core.py", line 853, in _parse_arguments
+    kwargs[name] = await self.transform(ctx, param, attachments)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\discord\ext\commands\core.py", line 697, in transform
+    raise MissingRequiredArgument(param)
+discord.ext.commands.errors.MissingRequiredArgument: pilot_name is a required argument that is missing.
+2024-01-20 21:17:39,506 - INFO - Seconds: 42386.873999999996, total: 11.8
+2024-01-20 21:17:39,506 - INFO - Seconds: 42386.873999999996, total: 11.8
+2024-01-20 21:17:39,506 - INFO - Seconds: 87618.4, total: 36.1
+2024-01-20 21:17:39,506 - INFO - Seconds: 87618.4, total: 36.1
+2024-01-20 21:17:39,507 - INFO - Seconds: 210.048, total: 36.2
+2024-01-20 21:17:39,507 - INFO - Seconds: 210.048, total: 36.2
+2024-01-20 21:17:39,507 - INFO - Seconds: 54946.247, total: 51.5
+2024-01-20 21:17:39,507 - INFO - Seconds: 54946.247, total: 51.5
+2024-01-20 21:17:39,507 - INFO - Seconds: 1435465.4490002, total: 450.2
+2024-01-20 21:17:39,507 - INFO - Seconds: 1435465.4490002, total: 450.2
+2024-01-20 21:17:39,507 - INFO - Seconds: 7759.34, total: 452.4
+2024-01-20 21:17:39,507 - INFO - Seconds: 7759.34, total: 452.4
+2024-01-20 21:17:39,507 - INFO - Seconds: 20087.396, total: 458.0
+2024-01-20 21:17:39,507 - INFO - Seconds: 20087.396, total: 458.0
+2024-01-20 21:17:39,507 - INFO - Seconds: 31332.528, total: 466.7
+2024-01-20 21:17:39,507 - INFO - Seconds: 31332.528, total: 466.7
+2024-01-20 21:17:39,508 - INFO - Seconds: 130362.03, total: 502.9
+2024-01-20 21:17:39,508 - INFO - Seconds: 130362.03, total: 502.9
+2024-01-20 21:17:39,508 - INFO - Seconds: 3511.936, total: 503.9
+2024-01-20 21:17:39,508 - INFO - Seconds: 3511.936, total: 503.9
+2024-01-20 21:17:39,508 - INFO - Seconds: 15894.205, total: 508.29999999999995
+2024-01-20 21:17:39,508 - INFO - Seconds: 15894.205, total: 508.29999999999995
+2024-01-20 21:17:39,508 - INFO - Seconds: 21477.569, total: 514.3
+2024-01-20 21:17:39,508 - INFO - Seconds: 21477.569, total: 514.3
+2024-01-20 21:17:39,508 - INFO - Seconds: 5183.677, total: 515.6999999999999
+2024-01-20 21:17:39,508 - INFO - Seconds: 5183.677, total: 515.6999999999999
+2024-01-20 21:17:39,508 - INFO - Seconds: 10011.462, total: 518.4999999999999
+2024-01-20 21:17:39,508 - INFO - Seconds: 10011.462, total: 518.4999999999999
+2024-01-20 21:17:39,508 - INFO - Seconds: 1091.084, total: 518.7999999999998
+2024-01-20 21:17:39,508 - INFO - Seconds: 1091.084, total: 518.7999999999998
+2024-01-20 21:17:39,509 - INFO - Seconds: 8689.942, total: 521.1999999999998
+2024-01-20 21:17:39,509 - INFO - Seconds: 8689.942, total: 521.1999999999998
+2024-01-20 21:17:39,509 - INFO - Seconds: 13511.256, total: 524.9999999999998
+2024-01-20 21:17:39,509 - INFO - Seconds: 13511.256, total: 524.9999999999998
+2024-01-20 21:17:39,509 - INFO - Seconds: 7087.85, total: 526.9999999999998
+2024-01-20 21:17:39,509 - INFO - Seconds: 7087.85, total: 526.9999999999998
+2024-01-20 21:17:48,384 - DEBUG - Attempting to give awards
+2024-01-20 21:20:46,378 - INFO - Seconds: 42386.873999999996, total: 11.8
+2024-01-20 21:20:46,378 - INFO - Seconds: 42386.873999999996, total: 11.8
+2024-01-20 21:20:46,378 - INFO - Seconds: 87618.4, total: 36.1
+2024-01-20 21:20:46,378 - INFO - Seconds: 87618.4, total: 36.1
+2024-01-20 21:20:46,378 - INFO - Seconds: 210.048, total: 36.2
+2024-01-20 21:20:46,378 - INFO - Seconds: 210.048, total: 36.2
+2024-01-20 21:20:46,378 - INFO - Seconds: 54946.247, total: 51.5
+2024-01-20 21:20:46,378 - INFO - Seconds: 54946.247, total: 51.5
+2024-01-20 21:20:46,378 - INFO - Seconds: 1435465.4490002, total: 450.2
+2024-01-20 21:20:46,378 - INFO - Seconds: 1435465.4490002, total: 450.2
+2024-01-20 21:20:46,379 - INFO - Seconds: 7759.34, total: 452.4
+2024-01-20 21:20:46,379 - INFO - Seconds: 7759.34, total: 452.4
+2024-01-20 21:20:46,379 - INFO - Seconds: 20087.396, total: 458.0
+2024-01-20 21:20:46,379 - INFO - Seconds: 20087.396, total: 458.0
+2024-01-20 21:20:46,379 - INFO - Seconds: 31332.528, total: 466.7
+2024-01-20 21:20:46,379 - INFO - Seconds: 31332.528, total: 466.7
+2024-01-20 21:20:46,379 - INFO - Seconds: 130362.03, total: 502.9
+2024-01-20 21:20:46,379 - INFO - Seconds: 130362.03, total: 502.9
+2024-01-20 21:20:46,379 - INFO - Seconds: 3511.936, total: 503.9
+2024-01-20 21:20:46,379 - INFO - Seconds: 3511.936, total: 503.9
+2024-01-20 21:20:46,379 - INFO - Seconds: 15894.205, total: 508.29999999999995
+2024-01-20 21:20:46,379 - INFO - Seconds: 15894.205, total: 508.29999999999995
+2024-01-20 21:20:46,380 - INFO - Seconds: 21477.569, total: 514.3
+2024-01-20 21:20:46,380 - INFO - Seconds: 21477.569, total: 514.3
+2024-01-20 21:20:46,380 - INFO - Seconds: 5183.677, total: 515.6999999999999
+2024-01-20 21:20:46,380 - INFO - Seconds: 5183.677, total: 515.6999999999999
+2024-01-20 21:20:46,380 - INFO - Seconds: 10011.462, total: 518.4999999999999
+2024-01-20 21:20:46,380 - INFO - Seconds: 10011.462, total: 518.4999999999999
+2024-01-20 21:20:46,380 - INFO - Seconds: 1091.084, total: 518.7999999999998
+2024-01-20 21:20:46,380 - INFO - Seconds: 1091.084, total: 518.7999999999998
+2024-01-20 21:20:46,380 - INFO - Seconds: 8689.942, total: 521.1999999999998
+2024-01-20 21:20:46,380 - INFO - Seconds: 8689.942, total: 521.1999999999998
+2024-01-20 21:20:46,380 - INFO - Seconds: 13511.256, total: 524.9999999999998
+2024-01-20 21:20:46,380 - INFO - Seconds: 13511.256, total: 524.9999999999998
+2024-01-20 21:20:46,381 - INFO - Seconds: 7087.85, total: 526.9999999999998
+2024-01-20 21:20:46,381 - INFO - Seconds: 7087.85, total: 526.9999999999998
+2024-01-20 21:21:03,643 - DEBUG - Attempting to give awards
+2024-01-20 21:23:53,469 - DEBUG - Bot script started.
+2024-01-20 21:23:53,575 - DEBUG - Bot script started.
+2024-01-20 21:23:53,580 - INFO - logging in using static token
+2024-01-20 21:23:54,447 - INFO - Shard ID None has connected to Gateway (Session ID: 959ac8b53ba1cc76e6e82457d4e281cf).
+2024-01-20 21:24:09,055 - DEBUG - Attempting to give awards
+2024-01-20 21:24:14,389 - DEBUG - Looking for pilot_id: ea2dca05dc204673da916448f77f00f1
+2024-01-20 21:24:14,389 - DEBUG -   - award_id: 42
+2024-01-20 21:26:00,094 - DEBUG - Attempting to give awards
+2024-01-20 21:26:03,432 - DEBUG - Looking for pilot_id: ea2dca05dc204673da916448f77f00f1
+2024-01-20 21:26:03,432 - DEBUG -   - award_id: 42
+2024-01-20 21:26:46,234 - DEBUG - Bot script started.
+2024-01-20 21:26:46,340 - DEBUG - Bot script started.
+2024-01-20 21:26:46,345 - INFO - logging in using static token
+2024-01-20 21:26:47,239 - INFO - Shard ID None has connected to Gateway (Session ID: 06ba3a6bb3980344321e814bf9497bc9).
+2024-01-20 21:26:57,337 - DEBUG - Attempting to give awards
+2024-01-20 21:27:02,643 - DEBUG - Looking for pilot_id: ea2dca05dc204673da916448f77f00f1
+2024-01-20 21:27:02,643 - DEBUG -   - award_id: 42
+2024-01-20 21:34:56,293 - DEBUG - Bot script started.
+2024-01-20 21:34:56,390 - DEBUG - Bot script started.
+2024-01-20 21:34:56,390 - INFO - logging in using static token
+2024-01-20 21:34:57,303 - INFO - Shard ID None has connected to Gateway (Session ID: ca26c6074aa6ae4d9d662df45071b9d0).
+2024-01-20 21:35:10,767 - DEBUG - Attempting to give awards
+2024-01-20 21:35:14,436 - ERROR - Ignoring exception in on_command_error
+Traceback (most recent call last):
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\discord\ext\commands\core.py", line 235, in wrapped
+    ret = await coro(*args, **kwargs)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\src\bot.py", line 790, in give_award
+    squadron_id = get_squadron_of_pilot(DB_PATH, pilot_id)
+                  ^^^^^^^^^^^^^^^^^^^^^
+NameError: name 'get_squadron_of_pilot' is not defined. Did you mean: 'get_squadron_details'?
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\discord\client.py", line 441, in _run_event
+    await coro(*args, **kwargs)
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\src\bot.py", line 56, in on_command_error
+    raise error  # Re-raise other errors so you can notice them
+    ^^^^^^^^^^^
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\discord\ext\commands\bot.py", line 1350, in invoke
+    await ctx.command.invoke(ctx)
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\discord\ext\commands\core.py", line 1029, in invoke
+    await injected(*ctx.args, **ctx.kwargs)  # type: ignore
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\discord\ext\commands\core.py", line 244, in wrapped
+    raise CommandInvokeError(exc) from exc
+discord.ext.commands.errors.CommandInvokeError: Command raised an exception: NameError: name 'get_squadron_of_pilot' is not defined
+2024-01-20 21:38:33,067 - DEBUG - Bot script started.
+2024-01-20 21:38:33,172 - DEBUG - Bot script started.
+2024-01-20 21:38:33,177 - INFO - logging in using static token
+2024-01-20 21:38:34,123 - INFO - Shard ID None has connected to Gateway (Session ID: 58258e1beb7eeaa98a60a6bff415fddd).
+2024-01-20 21:38:45,948 - DEBUG - Attempting to give awards
+2024-01-20 21:38:51,818 - DEBUG - Looking for pilot_id: ea2dca05dc204673da916448f77f00f1, who is assigned to None
+2024-01-20 21:38:51,818 - DEBUG -   - award_id: 42
+2024-01-20 21:39:30,758 - DEBUG - Bot script started.
+2024-01-20 21:39:30,869 - DEBUG - Bot script started.
+2024-01-20 21:39:30,874 - INFO - logging in using static token
+2024-01-20 21:39:31,961 - INFO - Shard ID None has connected to Gateway (Session ID: 4aa2b0e03ae6f4815b04d8fae04b73d5).
+2024-01-20 21:39:35,959 - ERROR - Ignoring exception in on_command_error
+Traceback (most recent call last):
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\discord\client.py", line 441, in _run_event
+    await coro(*args, **kwargs)
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\src\bot.py", line 56, in on_command_error
+    raise error  # Re-raise other errors so you can notice them
+    ^^^^^^^^^^^
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\discord\ext\commands\bot.py", line 1350, in invoke
+    await ctx.command.invoke(ctx)
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\discord\ext\commands\core.py", line 1021, in invoke
+    await self.prepare(ctx)
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\discord\ext\commands\core.py", line 938, in prepare
+    await self._parse_arguments(ctx)
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\discord\ext\commands\core.py", line 853, in _parse_arguments
+    kwargs[name] = await self.transform(ctx, param, attachments)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\discord\ext\commands\core.py", line 697, in transform
+    raise MissingRequiredArgument(param)
+discord.ext.commands.errors.MissingRequiredArgument: pilot_name is a required argument that is missing.
+2024-01-20 21:39:47,554 - DEBUG - Attempting to give awards
+2024-01-20 21:39:51,997 - DEBUG - Looking for pilot_id: ea2dca05dc204673da916448f77f00f1, who is assigned to 801 NAS
+2024-01-20 21:39:51,997 - DEBUG -   - award_id: 42
+2024-01-20 21:44:43,601 - DEBUG - Bot script started.
+2024-01-20 21:44:43,706 - DEBUG - Bot script started.
+2024-01-20 21:44:43,712 - INFO - logging in using static token
+2024-01-20 21:44:44,505 - INFO - Shard ID None has connected to Gateway (Session ID: 4c9ebf8ba70b8e6f107f0fe7de17b6d0).
+2024-01-20 21:44:54,347 - DEBUG - Attempting to give awards
+2024-01-20 21:45:03,601 - DEBUG - Attempting to give awards
+2024-01-20 21:45:03,603 - ERROR - Ignoring exception in on_command_error
+Traceback (most recent call last):
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\discord\ext\commands\core.py", line 235, in wrapped
+    ret = await coro(*args, **kwargs)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\src\bot.py", line 813, in give_award
+    if int(award_id.strip()) in LCR_AWARDS:
+       ^^^^^^^^^^^^^^^^^^^^^
+ValueError: invalid literal for int() with base 10: '!give_award'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\discord\client.py", line 441, in _run_event
+    await coro(*args, **kwargs)
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\src\bot.py", line 56, in on_command_error
+    raise error  # Re-raise other errors so you can notice them
+    ^^^^^^^^^^^
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\discord\ext\commands\bot.py", line 1350, in invoke
+    await ctx.command.invoke(ctx)
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\discord\ext\commands\core.py", line 1029, in invoke
+    await injected(*ctx.args, **ctx.kwargs)  # type: ignore
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\discord\ext\commands\core.py", line 244, in wrapped
+    raise CommandInvokeError(exc) from exc
+discord.ext.commands.errors.CommandInvokeError: Command raised an exception: ValueError: invalid literal for int() with base 10: '!give_award'
+2024-01-20 21:45:08,561 - DEBUG - Assigning award: 42 to pilot: Lt Cdr Engines
+2024-01-20 21:45:08,561 - DEBUG - Attempting to assign LCR role for award ID 42
+2024-01-20 21:45:08,561 - DEBUG - Assigning role id: 1196287080184152064
+2024-01-20 21:45:08,561 - DEBUG - Attempting to assign role ID 1196287080184152064 to pilot: Lt Cdr Engines
+2024-01-20 21:45:08,562 - DEBUG - Guild ID: 1190999875609968690, Guild Name: ETDS
+2024-01-20 21:45:08,562 - DEBUG - Role ID: 1190999875609968690, Role Name: @everyone
+2024-01-20 21:45:08,562 - DEBUG - Role ID: 1196287277001871481, Role Name: CR
+2024-01-20 21:45:08,562 - DEBUG - Role ID: 1196287080184152064, Role Name: LCR
+2024-01-20 21:45:08,562 - DEBUG - Role ID: 1195908014746640434, Role Name: Squadron Commanders
+2024-01-20 21:45:08,562 - DEBUG - Role ID: 1195900618225758229, Role Name: Server admin
+2024-01-20 21:45:08,562 - DEBUG - Role ID: 1195557831223545888, Role Name: Controllers
+2024-01-20 21:45:08,562 - DEBUG - Role ID: 1196303166854140006, Role Name: logso
+2024-01-20 21:45:08,723 - INFO - Assigned role LCR to user Engines
+2024-01-20 21:45:08,724 - ERROR - Ignoring exception in on_command_error
+Traceback (most recent call last):
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\discord\ext\commands\core.py", line 235, in wrapped
+    ret = await coro(*args, **kwargs)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\src\bot.py", line 815, in give_award
+    lcr_role_id = get_squadron_lcr_role_id(DB_PATH, squadron_id)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^
+NameError: name 'get_squadron_lcr_role_id' is not defined. Did you mean: 'get_squadron_role_id'?
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\discord\client.py", line 441, in _run_event
+    await coro(*args, **kwargs)
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\src\bot.py", line 56, in on_command_error
+    raise error  # Re-raise other errors so you can notice them
+    ^^^^^^^^^^^
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\discord\ext\commands\bot.py", line 1350, in invoke
+    await ctx.command.invoke(ctx)
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\discord\ext\commands\core.py", line 1029, in invoke
+    await injected(*ctx.args, **ctx.kwargs)  # type: ignore
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\discord\ext\commands\core.py", line 244, in wrapped
+    raise CommandInvokeError(exc) from exc
+discord.ext.commands.errors.CommandInvokeError: Command raised an exception: NameError: name 'get_squadron_lcr_role_id' is not defined
+2024-01-20 21:45:40,523 - DEBUG - Bot script started.
+2024-01-20 21:45:40,630 - DEBUG - Bot script started.
+2024-01-20 21:45:40,635 - INFO - logging in using static token
+2024-01-20 21:45:41,390 - INFO - Shard ID None has connected to Gateway (Session ID: 5f31a1d3fc7f8953b8223d1f2b67effd).
+2024-01-20 21:45:51,071 - ERROR - Ignoring exception in on_command_error
+Traceback (most recent call last):
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\discord\client.py", line 441, in _run_event
+    await coro(*args, **kwargs)
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\src\bot.py", line 56, in on_command_error
+    raise error  # Re-raise other errors so you can notice them
+    ^^^^^^^^^^^
+discord.ext.commands.errors.CommandNotFound: Command "give_awards" is not found
+2024-01-20 21:45:57,396 - DEBUG - Attempting to give awards
+2024-01-20 21:46:04,846 - DEBUG - Assigning award: 42 to pilot: Lt Cdr Engines
+2024-01-20 21:46:13,444 - INFO - Seconds: 42386.873999999996, total: 11.8
+2024-01-20 21:46:13,444 - INFO - Seconds: 42386.873999999996, total: 11.8
+2024-01-20 21:46:13,444 - INFO - Seconds: 87618.4, total: 36.1
+2024-01-20 21:46:13,444 - INFO - Seconds: 87618.4, total: 36.1
+2024-01-20 21:46:13,444 - INFO - Seconds: 210.048, total: 36.2
+2024-01-20 21:46:13,444 - INFO - Seconds: 210.048, total: 36.2
+2024-01-20 21:46:13,444 - INFO - Seconds: 54946.247, total: 51.5
+2024-01-20 21:46:13,444 - INFO - Seconds: 54946.247, total: 51.5
+2024-01-20 21:46:13,444 - INFO - Seconds: 1435465.4490002, total: 450.2
+2024-01-20 21:46:13,444 - INFO - Seconds: 1435465.4490002, total: 450.2
+2024-01-20 21:46:13,444 - INFO - Seconds: 7759.34, total: 452.4
+2024-01-20 21:46:13,444 - INFO - Seconds: 7759.34, total: 452.4
+2024-01-20 21:46:13,445 - INFO - Seconds: 20087.396, total: 458.0
+2024-01-20 21:46:13,445 - INFO - Seconds: 20087.396, total: 458.0
+2024-01-20 21:46:13,445 - INFO - Seconds: 31332.528, total: 466.7
+2024-01-20 21:46:13,445 - INFO - Seconds: 31332.528, total: 466.7
+2024-01-20 21:46:13,445 - INFO - Seconds: 130362.03, total: 502.9
+2024-01-20 21:46:13,445 - INFO - Seconds: 130362.03, total: 502.9
+2024-01-20 21:46:13,445 - INFO - Seconds: 3511.936, total: 503.9
+2024-01-20 21:46:13,445 - INFO - Seconds: 3511.936, total: 503.9
+2024-01-20 21:46:13,445 - INFO - Seconds: 15894.205, total: 508.29999999999995
+2024-01-20 21:46:13,445 - INFO - Seconds: 15894.205, total: 508.29999999999995
+2024-01-20 21:46:13,445 - INFO - Seconds: 21477.569, total: 514.3
+2024-01-20 21:46:13,445 - INFO - Seconds: 21477.569, total: 514.3
+2024-01-20 21:46:13,446 - INFO - Seconds: 5183.677, total: 515.6999999999999
+2024-01-20 21:46:13,446 - INFO - Seconds: 5183.677, total: 515.6999999999999
+2024-01-20 21:46:13,446 - INFO - Seconds: 10011.462, total: 518.4999999999999
+2024-01-20 21:46:13,446 - INFO - Seconds: 10011.462, total: 518.4999999999999
+2024-01-20 21:46:13,446 - INFO - Seconds: 1091.084, total: 518.7999999999998
+2024-01-20 21:46:13,446 - INFO - Seconds: 1091.084, total: 518.7999999999998
+2024-01-20 21:46:13,446 - INFO - Seconds: 8689.942, total: 521.1999999999998
+2024-01-20 21:46:13,446 - INFO - Seconds: 8689.942, total: 521.1999999999998
+2024-01-20 21:46:13,446 - INFO - Seconds: 13511.256, total: 524.9999999999998
+2024-01-20 21:46:13,446 - INFO - Seconds: 13511.256, total: 524.9999999999998
+2024-01-20 21:46:13,447 - INFO - Seconds: 7087.85, total: 526.9999999999998
+2024-01-20 21:46:13,447 - INFO - Seconds: 7087.85, total: 526.9999999999998
+2024-01-20 21:47:24,500 - DEBUG - Bot script started.
+2024-01-20 21:47:24,607 - DEBUG - Bot script started.
+2024-01-20 21:47:24,607 - INFO - logging in using static token
+2024-01-20 21:47:25,446 - INFO - Shard ID None has connected to Gateway (Session ID: be64ebaf07c0506fcd189186a4567fc7).
+2024-01-20 21:47:43,998 - DEBUG - Attempting to give awards
+2024-01-20 21:47:57,563 - DEBUG - Assigning award: 42 to pilot: Lt Cdr Engines
+2024-01-20 21:50:06,215 - DEBUG - Bot script started.
+2024-01-20 21:50:06,329 - DEBUG - Bot script started.
+2024-01-20 21:50:06,329 - INFO - logging in using static token
+2024-01-20 21:50:07,442 - INFO - Shard ID None has connected to Gateway (Session ID: bd4ea069d41d2ffe6680f09153f61048).
+2024-01-20 21:52:07,244 - DEBUG - Bot script started.
+2024-01-20 21:52:07,353 - DEBUG - Bot script started.
+2024-01-20 21:52:07,358 - INFO - logging in using static token
+2024-01-20 21:52:08,185 - INFO - Shard ID None has connected to Gateway (Session ID: 7ae17b4b5673b8e974ef8dee44aa9ee0).
+2024-01-20 21:52:20,808 - DEBUG - Attempting to give awards
+2024-01-20 21:52:25,735 - ERROR - Ignoring exception in on_command_error
+Traceback (most recent call last):
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\discord\ext\commands\core.py", line 235, in wrapped
+    ret = await coro(*args, **kwargs)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\src\bot.py", line 790, in give_award
+    squadron_id = get_squadron_pilot_id(DB_PATH, pilot_id)
+                  ^^^^^^^^^^^^^^^^^^^^^
+NameError: name 'get_squadron_pilot_id' is not defined. Did you mean: 'get_squadron_details'?
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\discord\client.py", line 441, in _run_event
+    await coro(*args, **kwargs)
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\src\bot.py", line 56, in on_command_error
+    raise error  # Re-raise other errors so you can notice them
+    ^^^^^^^^^^^
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\discord\ext\commands\bot.py", line 1350, in invoke
+    await ctx.command.invoke(ctx)
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\discord\ext\commands\core.py", line 1029, in invoke
+    await injected(*ctx.args, **ctx.kwargs)  # type: ignore
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\discord\ext\commands\core.py", line 244, in wrapped
+    raise CommandInvokeError(exc) from exc
+discord.ext.commands.errors.CommandInvokeError: Command raised an exception: NameError: name 'get_squadron_pilot_id' is not defined
+2024-01-20 21:52:55,038 - DEBUG - Bot script started.
+2024-01-20 21:52:55,138 - DEBUG - Bot script started.
+2024-01-20 21:52:55,151 - INFO - logging in using static token
+2024-01-20 21:52:55,894 - INFO - Shard ID None has connected to Gateway (Session ID: cdd15add8b6dafc07f3636a2faa80e39).
+2024-01-20 21:53:24,125 - DEBUG - Bot script started.
+2024-01-20 21:53:24,239 - DEBUG - Bot script started.
+2024-01-20 21:53:24,239 - INFO - logging in using static token
+2024-01-20 21:53:25,073 - INFO - Shard ID None has connected to Gateway (Session ID: 08aede182394eadafe96c3200d3bee24).
+2024-01-20 21:53:41,257 - DEBUG - Attempting to give awards
+2024-01-20 21:53:46,686 - DEBUG - Pilot id: ea2dca05dc204673da916448f77f00f1 is assigned to 801 NAS
+2024-01-20 21:53:46,687 - ERROR - Ignoring exception in on_command_error
+Traceback (most recent call last):
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\discord\ext\commands\core.py", line 235, in wrapped
+    ret = await coro(*args, **kwargs)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\src\bot.py", line 794, in give_award
+    if award_id_strip() == LCR_AWARD:
+       ^^^^^^^^^^^^^^
+NameError: name 'award_id_strip' is not defined
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\discord\client.py", line 441, in _run_event
+    await coro(*args, **kwargs)
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\src\bot.py", line 56, in on_command_error
+    raise error  # Re-raise other errors so you can notice them
+    ^^^^^^^^^^^
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\discord\ext\commands\bot.py", line 1350, in invoke
+    await ctx.command.invoke(ctx)
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\discord\ext\commands\core.py", line 1029, in invoke
+    await injected(*ctx.args, **ctx.kwargs)  # type: ignore
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\discord\ext\commands\core.py", line 244, in wrapped
+    raise CommandInvokeError(exc) from exc
+discord.ext.commands.errors.CommandInvokeError: Command raised an exception: NameError: name 'award_id_strip' is not defined
+2024-01-20 21:55:26,929 - DEBUG - Bot script started.
+2024-01-20 21:55:27,036 - DEBUG - Bot script started.
+2024-01-20 21:55:27,041 - INFO - logging in using static token
+2024-01-20 21:55:27,909 - INFO - Shard ID None has connected to Gateway (Session ID: cbdb293c0648836ca26a137a61d43f0b).
+2024-01-20 21:55:42,162 - DEBUG - Attempting to give awards
+2024-01-20 21:55:45,922 - DEBUG - Pilot id: ea2dca05dc204673da916448f77f00f1 is assigned to 801 NAS
+2024-01-20 21:55:45,934 - DEBUG - Assigning award: 42 to pilot: Lt Cdr Engines
+2024-01-20 21:58:33,941 - DEBUG - Attempting to give awards
+2024-01-20 21:58:38,475 - DEBUG - Pilot id: ea2dca05dc204673da916448f77f00f1 is assigned to IV Sqn
+2024-01-20 21:58:38,488 - DEBUG - Assigning award: 42 to pilot: Lt Cdr Engines
+2024-01-20 22:03:58,516 - DEBUG - Bot script started.
+2024-01-20 22:03:58,622 - DEBUG - Bot script started.
+2024-01-20 22:03:58,627 - INFO - logging in using static token
+2024-01-20 22:03:59,463 - INFO - Shard ID None has connected to Gateway (Session ID: ffffe24a338266edaf7253cbf228dd14).
+2024-01-20 22:04:10,392 - DEBUG - Attempting to give awards
+2024-01-20 22:04:15,772 - DEBUG - Pilot id: ea2dca05dc204673da916448f77f00f1 is assigned to IV Sqn
+2024-01-20 22:04:15,784 - DEBUG - Assigning award: 42 to pilot: Lt Cdr Engines
+2024-01-20 22:05:23,182 - DEBUG - Bot script started.
+2024-01-20 22:05:23,295 - DEBUG - Bot script started.
+2024-01-20 22:05:23,295 - INFO - logging in using static token
+2024-01-20 22:05:24,220 - INFO - Shard ID None has connected to Gateway (Session ID: 3720a6dbb49303779dae509fa594f247).
+2024-01-20 22:05:31,956 - DEBUG - Attempting to give awards
+2024-01-20 22:05:36,993 - DEBUG - Pilot id: ea2dca05dc204673da916448f77f00f1 is assigned to IV Sqn
+2024-01-20 22:05:36,993 - DEBUG - Looking into award id: 42
+2024-01-20 22:05:37,005 - DEBUG - Assigning award: 42 to pilot: Lt Cdr Engines
+2024-01-20 22:06:25,839 - DEBUG - Bot script started.
+2024-01-20 22:06:25,937 - DEBUG - Bot script started.
+2024-01-20 22:06:25,937 - INFO - logging in using static token
+2024-01-20 22:06:26,882 - INFO - Shard ID None has connected to Gateway (Session ID: 881a4f0eb342a9888be5400269549c57).
+2024-01-20 22:06:33,091 - ERROR - Ignoring exception in on_command_error
+Traceback (most recent call last):
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\discord\client.py", line 441, in _run_event
+    await coro(*args, **kwargs)
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\src\bot.py", line 56, in on_command_error
+    raise error  # Re-raise other errors so you can notice them
+    ^^^^^^^^^^^
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\discord\ext\commands\bot.py", line 1350, in invoke
+    await ctx.command.invoke(ctx)
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\discord\ext\commands\core.py", line 1021, in invoke
+    await self.prepare(ctx)
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\discord\ext\commands\core.py", line 938, in prepare
+    await self._parse_arguments(ctx)
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\discord\ext\commands\core.py", line 853, in _parse_arguments
+    kwargs[name] = await self.transform(ctx, param, attachments)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\discord\ext\commands\core.py", line 697, in transform
+    raise MissingRequiredArgument(param)
+discord.ext.commands.errors.MissingRequiredArgument: pilot_name is a required argument that is missing.
+2024-01-20 22:06:47,230 - DEBUG - Attempting to give awards
+2024-01-20 22:06:53,556 - DEBUG - Pilot id: ea2dca05dc204673da916448f77f00f1 is assigned to IV Sqn
+2024-01-20 22:06:53,556 - DEBUG - Looking into award id 42 and checking if it matches the LCR award (42).
+2024-01-20 22:06:53,568 - DEBUG - Assigning award: 42 to pilot: Lt Cdr Engines
+2024-01-20 22:08:54,323 - DEBUG - Bot script started.
+2024-01-20 22:08:54,420 - DEBUG - Bot script started.
+2024-01-20 22:08:54,435 - INFO - logging in using static token
+2024-01-20 22:08:55,430 - INFO - Shard ID None has connected to Gateway (Session ID: f8de7ea3dc4410c47ea598e437a4fa8e).
+2024-01-20 22:09:05,556 - DEBUG - Attempting to give awards
+2024-01-20 22:09:15,128 - DEBUG - Pilot id: None is assigned to None
+2024-01-20 22:09:15,129 - DEBUG - Attempting to give awards
+2024-01-20 22:09:15,131 - ERROR - Ignoring exception in on_command_error
+Traceback (most recent call last):
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\discord\ext\commands\core.py", line 235, in wrapped
+    ret = await coro(*args, **kwargs)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\src\bot.py", line 793, in give_award
+    award_id = int(award_id.strip())
+               ^^^^^^^^^^^^^^^^^^^^^
+ValueError: invalid literal for int() with base 10: '!give_award'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\discord\client.py", line 441, in _run_event
+    await coro(*args, **kwargs)
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\src\bot.py", line 56, in on_command_error
+    raise error  # Re-raise other errors so you can notice them
+    ^^^^^^^^^^^
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\discord\ext\commands\bot.py", line 1350, in invoke
+    await ctx.command.invoke(ctx)
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\discord\ext\commands\core.py", line 1029, in invoke
+    await injected(*ctx.args, **ctx.kwargs)  # type: ignore
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\discord\ext\commands\core.py", line 244, in wrapped
+    raise CommandInvokeError(exc) from exc
+discord.ext.commands.errors.CommandInvokeError: Command raised an exception: ValueError: invalid literal for int() with base 10: '!give_award'
+2024-01-20 22:09:21,445 - DEBUG - Pilot id: ea2dca05dc204673da916448f77f00f1 is assigned to IV Sqn
+2024-01-20 22:09:21,445 - DEBUG - Looking into award id 42 and checking if it matches the LCR award (42).
+2024-01-20 22:09:21,445 - DEBUG - This is the LCR award!!!
+2024-01-20 22:09:21,445 - DEBUG - This pilot is still in the OCU!
+2024-01-20 22:09:50,211 - DEBUG - Bot script started.
+2024-01-20 22:09:50,321 - DEBUG - Bot script started.
+2024-01-20 22:09:50,326 - INFO - logging in using static token
+2024-01-20 22:09:51,208 - INFO - Shard ID None has connected to Gateway (Session ID: 1863ab6546a0272fc73f4b702842fdfe).
+2024-01-20 22:10:07,432 - DEBUG - Attempting to give awards
+2024-01-20 22:10:11,516 - DEBUG - Pilot id: ea2dca05dc204673da916448f77f00f1 is assigned to IV Sqn
+2024-01-20 22:10:11,516 - DEBUG - Looking into award id 42 and checking if it matches the LCR award (42).
+2024-01-20 22:10:11,517 - DEBUG - This is the LCR award!!!
+2024-01-20 22:10:11,517 - DEBUG - This pilot is still in the OCU!
+2024-01-20 22:24:40,985 - DEBUG - Bot script started.
+2024-01-20 22:24:41,101 - DEBUG - Bot script started.
+2024-01-20 22:24:41,101 - INFO - logging in using static token
+2024-01-20 22:24:42,062 - INFO - Shard ID None has connected to Gateway (Session ID: eabc0a7dd25616d1152ebda712126bce).
+2024-01-20 22:25:00,905 - DEBUG - Attempting to give awards
+2024-01-20 22:25:08,439 - DEBUG - Pilot id: ea2dca05dc204673da916448f77f00f1 is assigned to 801 NAS
+2024-01-20 22:25:08,439 - DEBUG - Looking into award id 42 and checking if it matches the LCR award (42).
+2024-01-20 22:25:08,439 - DEBUG - This is the LCR award!!!
+2024-01-20 22:25:08,439 - DEBUG - This pilot is ready for their LCR role.
+2024-01-20 22:25:08,440 - ERROR - Ignoring exception in on_command_error
+Traceback (most recent call last):
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\discord\ext\commands\core.py", line 235, in wrapped
+    ret = await coro(*args, **kwargs)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\src\bot.py", line 805, in give_award
+    if squadron_details[7]:
+       ~~~~~~~~~~~~~~~~^^^
+KeyError: 7
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\discord\client.py", line 441, in _run_event
+    await coro(*args, **kwargs)
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\src\bot.py", line 56, in on_command_error
+    raise error  # Re-raise other errors so you can notice them
+    ^^^^^^^^^^^
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\discord\ext\commands\bot.py", line 1350, in invoke
+    await ctx.command.invoke(ctx)
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\discord\ext\commands\core.py", line 1029, in invoke
+    await injected(*ctx.args, **ctx.kwargs)  # type: ignore
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\discord\ext\commands\core.py", line 244, in wrapped
+    raise CommandInvokeError(exc) from exc
+discord.ext.commands.errors.CommandInvokeError: Command raised an exception: KeyError: 7
+2024-01-20 22:28:38,572 - DEBUG - Bot script started.
+2024-01-20 22:28:38,689 - DEBUG - Bot script started.
+2024-01-20 22:28:38,694 - INFO - logging in using static token
+2024-01-20 22:28:39,559 - INFO - Shard ID None has connected to Gateway (Session ID: 0f54240cf16561577cbd1b284c9d593e).
+2024-01-20 22:28:55,341 - DEBUG - Attempting to give awards
+2024-01-20 22:29:03,097 - DEBUG - Pilot id: ea2dca05dc204673da916448f77f00f1 is assigned to 801 NAS
+2024-01-20 22:29:03,097 - DEBUG - Looking into award id 42 and checking if it matches the LCR award (42).
+2024-01-20 22:29:03,097 - DEBUG - This is the LCR award!!!
+2024-01-20 22:29:03,097 - DEBUG - This pilot is ready for their LCR role.
+2024-01-20 22:29:03,097 - ERROR - Squadron does not have an LCR role specified.
+2024-01-20 22:30:23,150 - ERROR - Ignoring exception in on_command_error
+Traceback (most recent call last):
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\discord\client.py", line 441, in _run_event
+    await coro(*args, **kwargs)
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\src\bot.py", line 56, in on_command_error
+    raise error  # Re-raise other errors so you can notice them
+    ^^^^^^^^^^^
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\discord\ext\commands\bot.py", line 1350, in invoke
+    await ctx.command.invoke(ctx)
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\discord\ext\commands\core.py", line 1021, in invoke
+    await self.prepare(ctx)
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\discord\ext\commands\core.py", line 938, in prepare
+    await self._parse_arguments(ctx)
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\discord\ext\commands\core.py", line 853, in _parse_arguments
+    kwargs[name] = await self.transform(ctx, param, attachments)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\discord\ext\commands\core.py", line 697, in transform
+    raise MissingRequiredArgument(param)
+discord.ext.commands.errors.MissingRequiredArgument: pilot_name is a required argument that is missing.
+2024-01-20 22:30:28,088 - ERROR - Ignoring exception in on_command_error
+Traceback (most recent call last):
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\discord\client.py", line 441, in _run_event
+    await coro(*args, **kwargs)
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\src\bot.py", line 56, in on_command_error
+    raise error  # Re-raise other errors so you can notice them
+    ^^^^^^^^^^^
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\discord\ext\commands\bot.py", line 1350, in invoke
+    await ctx.command.invoke(ctx)
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\discord\ext\commands\core.py", line 1021, in invoke
+    await self.prepare(ctx)
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\discord\ext\commands\core.py", line 938, in prepare
+    await self._parse_arguments(ctx)
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\discord\ext\commands\core.py", line 853, in _parse_arguments
+    kwargs[name] = await self.transform(ctx, param, attachments)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\discord\ext\commands\core.py", line 697, in transform
+    raise MissingRequiredArgument(param)
+discord.ext.commands.errors.MissingRequiredArgument: pilot_name is a required argument that is missing.
+2024-01-20 22:30:34,511 - DEBUG - Attempting to give awards
+2024-01-20 22:30:39,560 - DEBUG - Pilot id: ea2dca05dc204673da916448f77f00f1 is assigned to 801 NAS
+2024-01-20 22:30:39,560 - DEBUG - Looking into award id 42 and checking if it matches the LCR award (42).
+2024-01-20 22:30:39,560 - DEBUG - This is the LCR award!!!
+2024-01-20 22:30:39,561 - DEBUG - This pilot is ready for their LCR role.
+2024-01-20 22:30:39,561 - DEBUG - Squadron has an LCR role specified: 801 NAS [LCR]
+2024-01-20 22:32:18,220 - DEBUG - Bot script started.
+2024-01-20 22:32:18,236 - DEBUG - Bot script started.
+2024-01-20 22:32:18,236 - INFO - logging in using static token
+2024-01-20 22:32:19,153 - INFO - Shard ID None has connected to Gateway (Session ID: 51cc427368145ee794c584ff3facaf42).
+2024-01-20 22:41:21,159 - DEBUG - Bot script started.
+2024-01-20 22:41:21,169 - DEBUG - Bot script started.
+2024-01-20 22:41:21,178 - INFO - logging in using static token
+2024-01-20 22:41:22,078 - INFO - Shard ID None has connected to Gateway (Session ID: d468654f7a9ca17566b8d5601b7c114d).
+2024-01-20 22:41:53,549 - DEBUG - Bot script started.
+2024-01-20 22:41:53,565 - DEBUG - Bot script started.
+2024-01-20 22:41:53,571 - INFO - logging in using static token
+2024-01-20 22:41:54,346 - INFO - Shard ID None has connected to Gateway (Session ID: 338e4ca38825e5a5849f0317262aa680).
+2024-01-20 22:42:07,726 - DEBUG - Attempting to give awards
+2024-01-20 22:42:11,628 - DEBUG - Pilot id: ea2dca05dc204673da916448f77f00f1 is assigned to 801 NAS
+2024-01-20 22:42:11,628 - DEBUG - Looking into award id 42 and checking if it matches the LCR award (42).
+2024-01-20 22:42:11,629 - DEBUG - This is the LCR award!!!
+2024-01-20 22:42:11,629 - DEBUG - This pilot is ready for their LCR role.
+2024-01-20 22:42:11,629 - DEBUG - Squadron has an LCR role specified: 801 NAS [LCR]
+2024-01-20 22:42:11,629 - ERROR - Member with ID ea2dca05dc204673da916448f77f00f1 not found.
+2024-01-20 22:51:56,233 - DEBUG - Bot script started.
+2024-01-20 22:51:56,246 - DEBUG - Bot script started.
+2024-01-20 22:51:56,251 - INFO - logging in using static token
+2024-01-20 22:51:57,101 - INFO - Shard ID None has connected to Gateway (Session ID: 9bc6fd17ed5ac4550124d224e9536b38).
+2024-01-20 22:52:01,963 - DEBUG - Attempting to give awards
+2024-01-20 22:52:09,508 - DEBUG - Pilot id: ea2dca05dc204673da916448f77f00f1 is assigned to 801 NAS
+2024-01-20 22:52:09,508 - DEBUG - Looking into award id 42 and checking if it matches the LCR award (42).
+2024-01-20 22:52:09,508 - DEBUG - This is the LCR award!!!
+2024-01-20 22:52:09,508 - DEBUG - This pilot is ready for their LCR role.
+2024-01-20 22:52:09,509 - DEBUG - Squadron has an LCR role specified: 801 NAS [LCR]
+2024-01-20 22:52:09,509 - ERROR - Ignoring exception in on_command_error
+Traceback (most recent call last):
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\discord\ext\commands\core.py", line 235, in wrapped
+    ret = await coro(*args, **kwargs)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\src\bot.py", line 828, in give_award
+    discord_user_id = fuzzy_match_pilot_to_discord_user(pilot_id)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\src\bot.py", line 61, in fuzzy_match_pilot_to_discord_user
+    all_discord_users = get_all_discord_users()  # This function needs to be defined
+                        ^^^^^^^^^^^^^^^^^^^^^
+NameError: name 'get_all_discord_users' is not defined
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\discord\client.py", line 441, in _run_event
+    await coro(*args, **kwargs)
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\src\bot.py", line 75, in on_command_error
+    raise error  # Re-raise other errors so you can notice them
+    ^^^^^^^^^^^
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\discord\ext\commands\bot.py", line 1350, in invoke
+    await ctx.command.invoke(ctx)
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\discord\ext\commands\core.py", line 1029, in invoke
+    await injected(*ctx.args, **ctx.kwargs)  # type: ignore
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\discord\ext\commands\core.py", line 244, in wrapped
+    raise CommandInvokeError(exc) from exc
+discord.ext.commands.errors.CommandInvokeError: Command raised an exception: NameError: name 'get_all_discord_users' is not defined
+2024-01-20 22:53:44,734 - DEBUG - Bot script started.
+2024-01-20 22:53:44,747 - DEBUG - Bot script started.
+2024-01-20 22:53:44,752 - INFO - logging in using static token
+2024-01-20 22:53:45,714 - INFO - Shard ID None has connected to Gateway (Session ID: a3656f36fc85dcb95f7e7038253648d4).
+2024-01-20 22:53:58,198 - DEBUG - Attempting to give awards
+2024-01-20 22:54:05,302 - DEBUG - Pilot id: ea2dca05dc204673da916448f77f00f1 is assigned to 801 NAS
+2024-01-20 22:54:05,302 - DEBUG - Looking into award id 42 and checking if it matches the LCR award (42).
+2024-01-20 22:54:05,302 - DEBUG - This is the LCR award!!!
+2024-01-20 22:54:05,302 - DEBUG - This pilot is ready for their LCR role.
+2024-01-20 22:54:05,302 - DEBUG - Squadron has an LCR role specified: 801 NAS [LCR]
+2024-01-20 22:54:05,302 - ERROR - Ignoring exception in on_command_error
+Traceback (most recent call last):
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\discord\ext\commands\core.py", line 235, in wrapped
+    ret = await coro(*args, **kwargs)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\src\bot.py", line 838, in give_award
+    discord_user_id = fuzzy_match_pilot_to_discord_user(pilot_id)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\src\bot.py", line 61, in fuzzy_match_pilot_to_discord_user
+    all_discord_users = get_all_discord_users()  # This function needs to be defined
+                        ^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: get_all_discord_users() missing 1 required positional argument: 'guild'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\discord\client.py", line 441, in _run_event
+    await coro(*args, **kwargs)
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\src\bot.py", line 85, in on_command_error
+    raise error  # Re-raise other errors so you can notice them
+    ^^^^^^^^^^^
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\discord\ext\commands\bot.py", line 1350, in invoke
+    await ctx.command.invoke(ctx)
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\discord\ext\commands\core.py", line 1029, in invoke
+    await injected(*ctx.args, **ctx.kwargs)  # type: ignore
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\discord\ext\commands\core.py", line 244, in wrapped
+    raise CommandInvokeError(exc) from exc
+discord.ext.commands.errors.CommandInvokeError: Command raised an exception: TypeError: get_all_discord_users() missing 1 required positional argument: 'guild'
+2024-01-20 22:56:48,543 - DEBUG - Bot script started.
+2024-01-20 22:56:48,557 - DEBUG - Bot script started.
+2024-01-20 22:56:48,562 - INFO - logging in using static token
+2024-01-20 22:56:49,604 - INFO - Shard ID None has connected to Gateway (Session ID: 05d6c40357aa16e874ad43fac24b8af0).
+2024-01-20 22:56:53,524 - DEBUG - Attempting to give awards
+2024-01-20 22:56:58,067 - DEBUG - Pilot id: ea2dca05dc204673da916448f77f00f1 is assigned to 801 NAS
+2024-01-20 22:56:58,067 - DEBUG - Looking into award id 42 and checking if it matches the LCR award (42).
+2024-01-20 22:56:58,067 - DEBUG - This is the LCR award!!!
+2024-01-20 22:56:58,068 - DEBUG - This pilot is ready for their LCR role.
+2024-01-20 22:56:58,068 - DEBUG - Squadron has an LCR role specified: 801 NAS [LCR]
+2024-01-20 22:56:58,069 - ERROR - Ignoring exception in on_command_error
+Traceback (most recent call last):
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\discord\ext\commands\core.py", line 235, in wrapped
+    ret = await coro(*args, **kwargs)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\src\bot.py", line 838, in give_award
+    discord_user_id = await fuzzy_match_pilot_to_discord_user(ctx, pilot_id)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\src\bot.py", line 61, in fuzzy_match_pilot_to_discord_user
+    all_discord_users = await get_all_discord_users(ctx.guild)
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\src\bot.py", line 77, in get_all_discord_users
+    members = await guild.fetch_members(limit=None).flatten()
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'async_generator' object has no attribute 'flatten'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\discord\client.py", line 441, in _run_event
+    await coro(*args, **kwargs)
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\src\bot.py", line 85, in on_command_error
+    raise error  # Re-raise other errors so you can notice them
+    ^^^^^^^^^^^
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\discord\ext\commands\bot.py", line 1350, in invoke
+    await ctx.command.invoke(ctx)
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\discord\ext\commands\core.py", line 1029, in invoke
+    await injected(*ctx.args, **ctx.kwargs)  # type: ignore
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\discord\ext\commands\core.py", line 244, in wrapped
+    raise CommandInvokeError(exc) from exc
+discord.ext.commands.errors.CommandInvokeError: Command raised an exception: AttributeError: 'async_generator' object has no attribute 'flatten'
+2024-01-20 22:57:57,841 - DEBUG - Bot script started.
+2024-01-20 22:57:57,853 - DEBUG - Bot script started.
+2024-01-20 22:57:57,858 - INFO - logging in using static token
+2024-01-20 22:57:58,880 - INFO - Shard ID None has connected to Gateway (Session ID: b48c6b3a4b688d5b217b4611894e9a7e).
+2024-01-20 22:58:07,788 - DEBUG - Attempting to give awards
+2024-01-20 22:58:14,186 - DEBUG - Pilot id: ea2dca05dc204673da916448f77f00f1 is assigned to 801 NAS
+2024-01-20 22:58:14,186 - DEBUG - Looking into award id 42 and checking if it matches the LCR award (42).
+2024-01-20 22:58:14,186 - DEBUG - This is the LCR award!!!
+2024-01-20 22:58:14,186 - DEBUG - This pilot is ready for their LCR role.
+2024-01-20 22:58:14,187 - DEBUG - Squadron has an LCR role specified: 801 NAS [LCR]
+2024-01-20 22:58:14,403 - ERROR - Unable to find matching Discord user.
+2024-01-20 22:59:17,372 - DEBUG - Bot script started.
+2024-01-20 22:59:17,388 - DEBUG - Bot script started.
+2024-01-20 22:59:17,389 - INFO - logging in using static token
+2024-01-20 22:59:18,336 - INFO - Shard ID None has connected to Gateway (Session ID: 1374c8ebaa5e95ee4b6b134fe6babb8f).
+2024-01-20 22:59:23,056 - ERROR - Ignoring exception in on_command_error
+Traceback (most recent call last):
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\discord\client.py", line 441, in _run_event
+    await coro(*args, **kwargs)
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\src\bot.py", line 87, in on_command_error
+    raise error  # Re-raise other errors so you can notice them
+    ^^^^^^^^^^^
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\discord\ext\commands\bot.py", line 1350, in invoke
+    await ctx.command.invoke(ctx)
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\discord\ext\commands\core.py", line 1021, in invoke
+    await self.prepare(ctx)
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\discord\ext\commands\core.py", line 938, in prepare
+    await self._parse_arguments(ctx)
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\discord\ext\commands\core.py", line 853, in _parse_arguments
+    kwargs[name] = await self.transform(ctx, param, attachments)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\discord\ext\commands\core.py", line 697, in transform
+    raise MissingRequiredArgument(param)
+discord.ext.commands.errors.MissingRequiredArgument: pilot_name is a required argument that is missing.
+2024-01-20 22:59:26,797 - ERROR - Ignoring exception in on_command_error
+Traceback (most recent call last):
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\discord\client.py", line 441, in _run_event
+    await coro(*args, **kwargs)
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\src\bot.py", line 87, in on_command_error
+    raise error  # Re-raise other errors so you can notice them
+    ^^^^^^^^^^^
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\discord\ext\commands\bot.py", line 1350, in invoke
+    await ctx.command.invoke(ctx)
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\discord\ext\commands\core.py", line 1021, in invoke
+    await self.prepare(ctx)
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\discord\ext\commands\core.py", line 938, in prepare
+    await self._parse_arguments(ctx)
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\discord\ext\commands\core.py", line 853, in _parse_arguments
+    kwargs[name] = await self.transform(ctx, param, attachments)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\discord\ext\commands\core.py", line 697, in transform
+    raise MissingRequiredArgument(param)
+discord.ext.commands.errors.MissingRequiredArgument: pilot_name is a required argument that is missing.
+2024-01-20 22:59:34,305 - DEBUG - Attempting to give awards
+2024-01-20 22:59:43,377 - DEBUG - Pilot id: ea2dca05dc204673da916448f77f00f1 is assigned to 801 NAS
+2024-01-20 22:59:43,377 - DEBUG - Looking into award id 42 and checking if it matches the LCR award (42).
+2024-01-20 22:59:43,377 - DEBUG - This is the LCR award!!!
+2024-01-20 22:59:43,377 - DEBUG - This pilot is ready for their LCR role.
+2024-01-20 22:59:43,378 - DEBUG - Squadron has an LCR role specified: 801 NAS [LCR]
+2024-01-20 22:59:43,378 - ERROR - Ignoring exception in on_command_error
+Traceback (most recent call last):
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\discord\ext\commands\core.py", line 235, in wrapped
+    ret = await coro(*args, **kwargs)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\src\bot.py", line 840, in give_award
+    discord_user_id = await fuzzy_match_pilot_to_discord_user(ctx, pilot_name)
+                                                                   ^^^^^^^^^^
+UnboundLocalError: cannot access local variable 'pilot_name' where it is not associated with a value
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\discord\client.py", line 441, in _run_event
+    await coro(*args, **kwargs)
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\src\bot.py", line 87, in on_command_error
+    raise error  # Re-raise other errors so you can notice them
+    ^^^^^^^^^^^
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\discord\ext\commands\bot.py", line 1350, in invoke
+    await ctx.command.invoke(ctx)
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\discord\ext\commands\core.py", line 1029, in invoke
+    await injected(*ctx.args, **ctx.kwargs)  # type: ignore
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\discord\ext\commands\core.py", line 244, in wrapped
+    raise CommandInvokeError(exc) from exc
+discord.ext.commands.errors.CommandInvokeError: Command raised an exception: UnboundLocalError: cannot access local variable 'pilot_name' where it is not associated with a value
+2024-01-20 23:00:24,712 - DEBUG - Bot script started.
+2024-01-20 23:00:24,729 - DEBUG - Bot script started.
+2024-01-20 23:00:24,729 - INFO - logging in using static token
+2024-01-20 23:00:25,570 - INFO - Shard ID None has connected to Gateway (Session ID: 3368a76e9e9b216a717f30e80d5f188a).
+2024-01-20 23:00:28,429 - DEBUG - Attempting to give awards
+2024-01-20 23:00:32,727 - DEBUG - Pilot id: ea2dca05dc204673da916448f77f00f1 is assigned to 801 NAS
+2024-01-20 23:00:32,727 - DEBUG - Looking into award id 42 and checking if it matches the LCR award (42).
+2024-01-20 23:00:32,728 - DEBUG - This is the LCR award!!!
+2024-01-20 23:00:32,728 - DEBUG - This pilot is ready for their LCR role.
+2024-01-20 23:00:32,728 - DEBUG - Squadron has an LCR role specified: 801 NAS [LCR]
+2024-01-20 23:00:32,959 - ERROR - Ignoring exception in on_command_error
+Traceback (most recent call last):
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\discord\ext\commands\core.py", line 235, in wrapped
+    ret = await coro(*args, **kwargs)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\src\bot.py", line 841, in give_award
+    discord_user_id = await fuzzy_match_pilot_to_discord_user(ctx, pilot_name)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\src\bot.py", line 64, in fuzzy_match_pilot_to_discord_user
+    best_match = process.extractOne(pilot_name, {user.name: user.id for user in all_discord_users})
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\fuzzywuzzy\process.py", line 220, in extractOne
+    return max(best_list, key=lambda i: i[1])
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\fuzzywuzzy\process.py", line 78, in extractWithoutOrder
+    processed_query = processor(query)
+                      ^^^^^^^^^^^^^^^^
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\fuzzywuzzy\utils.py", line 95, in full_process
+    string_out = StringProcessor.replace_non_letters_non_numbers_with_whitespace(s)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\fuzzywuzzy\string_processing.py", line 26, in replace_non_letters_non_numbers_with_whitespace
+    return cls.regex.sub(" ", a_string)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: expected string or bytes-like object, got 'NoneType'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\discord\client.py", line 441, in _run_event
+    await coro(*args, **kwargs)
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\src\bot.py", line 87, in on_command_error
+    raise error  # Re-raise other errors so you can notice them
+    ^^^^^^^^^^^
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\discord\ext\commands\bot.py", line 1350, in invoke
+    await ctx.command.invoke(ctx)
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\discord\ext\commands\core.py", line 1029, in invoke
+    await injected(*ctx.args, **ctx.kwargs)  # type: ignore
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\discord\ext\commands\core.py", line 244, in wrapped
+    raise CommandInvokeError(exc) from exc
+discord.ext.commands.errors.CommandInvokeError: Command raised an exception: TypeError: expected string or bytes-like object, got 'NoneType'
+2024-01-20 23:02:39,209 - DEBUG - Bot script started.
+2024-01-20 23:02:39,223 - DEBUG - Bot script started.
+2024-01-20 23:02:39,228 - INFO - logging in using static token
+2024-01-20 23:02:40,183 - INFO - Shard ID None has connected to Gateway (Session ID: 6a08388a030da64626552d1afd2e1ec9).
+2024-01-20 23:02:43,656 - DEBUG - Attempting to give awards
+2024-01-20 23:02:47,466 - DEBUG - Pilot id: ea2dca05dc204673da916448f77f00f1 is Engines who is assigned to 801 NAS
+2024-01-20 23:02:47,467 - DEBUG - Looking into award id 42 and checking if it matches the LCR award (42).
+2024-01-20 23:02:47,467 - DEBUG - This is the LCR award!!!
+2024-01-20 23:02:47,467 - DEBUG - This pilot is ready for their LCR role.
+2024-01-20 23:02:47,467 - DEBUG - Squadron has an LCR role specified: 801 NAS [LCR]
+2024-01-20 23:02:47,650 - ERROR - Ignoring exception in on_command_error
+Traceback (most recent call last):
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\discord\ext\commands\core.py", line 235, in wrapped
+    ret = await coro(*args, **kwargs)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\src\bot.py", line 841, in give_award
+    discord_user_id = await fuzzy_match_pilot_to_discord_user(ctx, pilot_name)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\src\bot.py", line 64, in fuzzy_match_pilot_to_discord_user
+    best_match = process.extractOne(pilot_name, {user.name: user.id for user in all_discord_users})
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\fuzzywuzzy\process.py", line 220, in extractOne
+    return max(best_list, key=lambda i: i[1])
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\fuzzywuzzy\process.py", line 78, in extractWithoutOrder
+    processed_query = processor(query)
+                      ^^^^^^^^^^^^^^^^
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\fuzzywuzzy\utils.py", line 95, in full_process
+    string_out = StringProcessor.replace_non_letters_non_numbers_with_whitespace(s)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\fuzzywuzzy\string_processing.py", line 26, in replace_non_letters_non_numbers_with_whitespace
+    return cls.regex.sub(" ", a_string)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: expected string or bytes-like object, got 'NoneType'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\discord\client.py", line 441, in _run_event
+    await coro(*args, **kwargs)
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\src\bot.py", line 87, in on_command_error
+    raise error  # Re-raise other errors so you can notice them
+    ^^^^^^^^^^^
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\discord\ext\commands\bot.py", line 1350, in invoke
+    await ctx.command.invoke(ctx)
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\discord\ext\commands\core.py", line 1029, in invoke
+    await injected(*ctx.args, **ctx.kwargs)  # type: ignore
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\discord\ext\commands\core.py", line 244, in wrapped
+    raise CommandInvokeError(exc) from exc
+discord.ext.commands.errors.CommandInvokeError: Command raised an exception: TypeError: expected string or bytes-like object, got 'NoneType'
+2024-01-20 23:06:38,123 - DEBUG - Bot script started.
+2024-01-20 23:06:38,139 - DEBUG - Bot script started.
+2024-01-20 23:06:38,141 - INFO - logging in using static token
+2024-01-20 23:06:38,965 - INFO - Shard ID None has connected to Gateway (Session ID: 3d2ff0fa68d963c4a75eb6c5ae52e414).
+2024-01-20 23:06:43,685 - DEBUG - Attempting to give awards
+2024-01-20 23:06:49,798 - DEBUG - Pilot id: ea2dca05dc204673da916448f77f00f1 is Engines who is assigned to 801 NAS
+2024-01-20 23:06:49,798 - DEBUG - Looking into award id 42 and checking if it matches the LCR award (42).
+2024-01-20 23:06:49,798 - DEBUG - This is the LCR award!!!
+2024-01-20 23:06:49,798 - DEBUG - This pilot is ready for their LCR role.
+2024-01-20 23:06:49,799 - DEBUG - Squadron has an LCR role specified: 801 NAS [LCR]
+2024-01-20 23:06:49,961 - ERROR - Unable to find matching Discord user.
+2024-01-20 23:08:17,869 - DEBUG - Bot script started.
+2024-01-20 23:08:17,879 - DEBUG - Bot script started.
+2024-01-20 23:08:17,887 - INFO - logging in using static token
+2024-01-20 23:08:18,652 - INFO - Shard ID None has connected to Gateway (Session ID: f9aa024274b2dc6a7d1b95a4855206ff).
+2024-01-20 23:08:25,849 - ERROR - Ignoring exception in on_command_error
+Traceback (most recent call last):
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\discord\client.py", line 441, in _run_event
+    await coro(*args, **kwargs)
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\src\bot.py", line 91, in on_command_error
+    raise error  # Re-raise other errors so you can notice them
+    ^^^^^^^^^^^
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\discord\ext\commands\bot.py", line 1350, in invoke
+    await ctx.command.invoke(ctx)
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\discord\ext\commands\core.py", line 1021, in invoke
+    await self.prepare(ctx)
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\discord\ext\commands\core.py", line 938, in prepare
+    await self._parse_arguments(ctx)
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\discord\ext\commands\core.py", line 853, in _parse_arguments
+    kwargs[name] = await self.transform(ctx, param, attachments)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\discord\ext\commands\core.py", line 697, in transform
+    raise MissingRequiredArgument(param)
+discord.ext.commands.errors.MissingRequiredArgument: pilot_name is a required argument that is missing.
+2024-01-20 23:08:39,851 - DEBUG - Attempting to give awards
+2024-01-20 23:08:44,271 - DEBUG - Pilot id: ea2dca05dc204673da916448f77f00f1 is Engines who is assigned to 801 NAS
+2024-01-20 23:08:44,271 - DEBUG - Looking into award id 42 and checking if it matches the LCR award (42).
+2024-01-20 23:08:44,271 - DEBUG - This is the LCR award!!!
+2024-01-20 23:08:44,271 - DEBUG - This pilot is ready for their LCR role.
+2024-01-20 23:08:44,272 - DEBUG - Squadron has an LCR role specified: 801 NAS [LCR]
+2024-01-20 23:08:44,477 - ERROR - Unable to find matching Discord user.
+2024-01-20 23:10:34,057 - DEBUG - Bot script started.
+2024-01-20 23:10:34,071 - DEBUG - Bot script started.
+2024-01-20 23:10:34,076 - INFO - logging in using static token
+2024-01-20 23:10:34,948 - INFO - Shard ID None has connected to Gateway (Session ID: 853e2525266ba21a1258c3794e6df853).
+2024-01-20 23:10:39,082 - DEBUG - Attempting to give awards
+2024-01-20 23:10:42,506 - DEBUG - Pilot id: ea2dca05dc204673da916448f77f00f1 is Engines who is assigned to 801 NAS
+2024-01-20 23:10:42,507 - DEBUG - Looking into award id 42 and checking if it matches the LCR award (42).
+2024-01-20 23:10:42,507 - DEBUG - This is the LCR award!!!
+2024-01-20 23:10:42,507 - DEBUG - This pilot is ready for their LCR role.
+2024-01-20 23:10:42,508 - DEBUG - Squadron has an LCR role specified: 801 NAS [LCR]
+2024-01-20 23:10:42,750 - ERROR - Unable to find matching Discord user.
+2024-01-20 23:10:56,224 - DEBUG - Bot script started.
+2024-01-20 23:10:56,240 - DEBUG - Bot script started.
+2024-01-20 23:10:56,240 - INFO - logging in using static token
+2024-01-20 23:10:57,089 - INFO - Shard ID None has connected to Gateway (Session ID: 86a55f06f38191409097f919c0c9d761).
+2024-01-20 23:11:12,201 - DEBUG - Bot script started.
+2024-01-20 23:11:12,214 - DEBUG - Bot script started.
+2024-01-20 23:11:12,218 - INFO - logging in using static token
+2024-01-20 23:11:13,173 - INFO - Shard ID None has connected to Gateway (Session ID: 3e0540fd2d3706186c1acdb8ec5ab8a6).
+2024-01-20 23:11:16,563 - DEBUG - Attempting to give awards
+2024-01-20 23:11:25,525 - DEBUG - Pilot id: ea2dca05dc204673da916448f77f00f1 is Engines who is assigned to 801 NAS
+2024-01-20 23:11:25,525 - DEBUG - Looking into award id 42 and checking if it matches the LCR award (42).
+2024-01-20 23:11:25,525 - DEBUG - This is the LCR award!!!
+2024-01-20 23:11:25,525 - DEBUG - This pilot is ready for their LCR role.
+2024-01-20 23:11:25,526 - DEBUG - Squadron has an LCR role specified: 801 NAS [LCR]
+2024-01-20 23:11:25,740 - ERROR - Unable to find matching Discord user.
+2024-01-20 23:12:37,777 - DEBUG - Bot script started.
+2024-01-20 23:12:37,790 - DEBUG - Bot script started.
+2024-01-20 23:12:37,795 - INFO - logging in using static token
+2024-01-20 23:12:38,667 - INFO - Shard ID None has connected to Gateway (Session ID: b73c75156aa9a009bfe1de2a52a4153b).
+2024-01-20 23:12:42,051 - DEBUG - Attempting to give awards
+2024-01-20 23:12:45,309 - DEBUG - Pilot id: ea2dca05dc204673da916448f77f00f1 is Engines who is assigned to 801 NAS
+2024-01-20 23:12:45,309 - DEBUG - Looking into award id 42 and checking if it matches the LCR award (42).
+2024-01-20 23:12:45,309 - DEBUG - This is the LCR award!!!
+2024-01-20 23:12:45,309 - DEBUG - This pilot is ready for their LCR role.
+2024-01-20 23:12:45,310 - DEBUG - Squadron has an LCR role specified: 801 NAS [LCR]
+2024-01-20 23:12:45,490 - DEBUG - Match: 1191000819806503062, Score: 0
+2024-01-20 23:12:45,491 - DEBUG - Match: 666056172192923649, Score: 0
+2024-01-20 23:12:45,491 - ERROR - Unable to find matching Discord user.
+2024-01-20 23:14:22,438 - DEBUG - Bot script started.
+2024-01-20 23:14:22,451 - DEBUG - Bot script started.
+2024-01-20 23:14:22,458 - INFO - logging in using static token
+2024-01-20 23:14:23,299 - INFO - Shard ID None has connected to Gateway (Session ID: ab42fc12a5384fef746b6c0802688ebd).
+2024-01-20 23:14:28,348 - DEBUG - Attempting to give awards
+2024-01-20 23:14:32,187 - DEBUG - Pilot id: ea2dca05dc204673da916448f77f00f1 is Engines who is assigned to 801 NAS
+2024-01-20 23:14:32,188 - DEBUG - Looking into award id 42 and checking if it matches the LCR award (42).
+2024-01-20 23:14:32,188 - DEBUG - This is the LCR award!!!
+2024-01-20 23:14:32,188 - DEBUG - This pilot is ready for their LCR role.
+2024-01-20 23:14:32,189 - DEBUG - Squadron has an LCR role specified: 801 NAS [LCR]
+2024-01-20 23:14:32,338 - DEBUG - Discord Name: logso, ID: 1191000819806503062
+2024-01-20 23:14:32,338 - DEBUG - Discord Name: engines, ID: 666056172192923649
+2024-01-20 23:14:32,339 - ERROR - Ignoring exception in on_command_error
+Traceback (most recent call last):
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\discord\ext\commands\core.py", line 235, in wrapped
+    ret = await coro(*args, **kwargs)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\src\bot.py", line 862, in give_award
+    discord_user_id = await fuzzy_match_pilot_to_discord_user(ctx, pilot_name)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\src\bot.py", line 78, in fuzzy_match_pilot_to_discord_user
+    match_scores = process.extract(normalized_pilot_name, valid_members)
+                                   ^^^^^^^^^^^^^^^^^^^^^
+NameError: name 'normalized_pilot_name' is not defined
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\discord\client.py", line 441, in _run_event
+    await coro(*args, **kwargs)
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\src\bot.py", line 108, in on_command_error
+    raise error  # Re-raise other errors so you can notice them
+    ^^^^^^^^^^^
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\discord\ext\commands\bot.py", line 1350, in invoke
+    await ctx.command.invoke(ctx)
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\discord\ext\commands\core.py", line 1029, in invoke
+    await injected(*ctx.args, **ctx.kwargs)  # type: ignore
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\discord\ext\commands\core.py", line 244, in wrapped
+    raise CommandInvokeError(exc) from exc
+discord.ext.commands.errors.CommandInvokeError: Command raised an exception: NameError: name 'normalized_pilot_name' is not defined
+2024-01-20 23:15:05,055 - DEBUG - Bot script started.
+2024-01-20 23:15:05,065 - DEBUG - Bot script started.
+2024-01-20 23:15:05,073 - INFO - logging in using static token
+2024-01-20 23:15:05,902 - INFO - Shard ID None has connected to Gateway (Session ID: 6eb531a98641788a289b4b85bb941235).
+2024-01-20 23:15:11,589 - DEBUG - Attempting to give awards
+2024-01-20 23:15:16,413 - DEBUG - Pilot id: ea2dca05dc204673da916448f77f00f1 is Engines who is assigned to 801 NAS
+2024-01-20 23:15:16,413 - DEBUG - Looking into award id 42 and checking if it matches the LCR award (42).
+2024-01-20 23:15:16,413 - DEBUG - This is the LCR award!!!
+2024-01-20 23:15:16,413 - DEBUG - This pilot is ready for their LCR role.
+2024-01-20 23:15:16,414 - DEBUG - Squadron has an LCR role specified: 801 NAS [LCR]
+2024-01-20 23:15:16,579 - DEBUG - Discord Name: logso, ID: 1191000819806503062
+2024-01-20 23:15:16,579 - DEBUG - Discord Name: engines, ID: 666056172192923649
+2024-01-20 23:15:16,580 - DEBUG - Match: 1191000819806503062, Score: 0
+2024-01-20 23:15:16,580 - DEBUG - Match: 666056172192923649, Score: 0
+2024-01-20 23:15:16,580 - ERROR - Unable to find matching Discord user.
+2024-01-20 23:17:30,426 - DEBUG - Bot script started.
+2024-01-20 23:17:30,439 - DEBUG - Bot script started.
+2024-01-20 23:17:30,440 - DEBUG - Test match score between 'engines' and 'engines': 100
+2024-01-20 23:17:30,444 - INFO - logging in using static token
+2024-01-20 23:17:31,426 - INFO - Shard ID None has connected to Gateway (Session ID: c73d85ca6605486dae8a26ed54ddfe07).
+2024-01-20 23:18:02,166 - DEBUG - Attempting to give awards
+2024-01-20 23:18:06,846 - DEBUG - Pilot id: ea2dca05dc204673da916448f77f00f1 is Engines who is assigned to 801 NAS
+2024-01-20 23:18:06,846 - DEBUG - Looking into award id 42 and checking if it matches the LCR award (42).
+2024-01-20 23:18:06,846 - DEBUG - This is the LCR award!!!
+2024-01-20 23:18:06,847 - DEBUG - This pilot is ready for their LCR role.
+2024-01-20 23:18:06,847 - DEBUG - Squadron has an LCR role specified: 801 NAS [LCR]
+2024-01-20 23:18:07,003 - DEBUG - Discord Name: logso, ID: 1191000819806503062
+2024-01-20 23:18:07,004 - DEBUG - Discord Name: engines, ID: 666056172192923649
+2024-01-20 23:18:07,004 - DEBUG - Match: 1191000819806503062, Score: 0
+2024-01-20 23:18:07,004 - DEBUG - Match: 666056172192923649, Score: 0
+2024-01-20 23:18:07,005 - ERROR - Unable to find matching Discord user.
+2024-01-20 23:18:53,219 - DEBUG - Bot script started.
+2024-01-20 23:18:53,231 - DEBUG - Bot script started.
+2024-01-20 23:18:53,233 - DEBUG - Test match score between 'engines' and 'engines': 100
+2024-01-20 23:18:53,236 - INFO - logging in using static token
+2024-01-20 23:18:54,114 - INFO - Shard ID None has connected to Gateway (Session ID: 499519ba82932a5fcbef30111c573201).
+2024-01-20 23:19:05,050 - DEBUG - Attempting to give awards
+2024-01-20 23:19:09,086 - DEBUG - Pilot id: ea2dca05dc204673da916448f77f00f1 is Engines who is assigned to 801 NAS
+2024-01-20 23:19:09,086 - DEBUG - Looking into award id 42 and checking if it matches the LCR award (42).
+2024-01-20 23:19:09,086 - DEBUG - This is the LCR award!!!
+2024-01-20 23:19:09,086 - DEBUG - This pilot is ready for their LCR role.
+2024-01-20 23:19:09,087 - DEBUG - Squadron has an LCR role specified: 801 NAS [LCR]
+2024-01-20 23:19:09,366 - DEBUG - Discord Name: logso, ID: 1191000819806503062
+2024-01-20 23:19:09,366 - DEBUG - Discord Name: engines, ID: 666056172192923649
+2024-01-20 23:19:09,367 - DEBUG - Match: 1191000819806503062, Score: 0
+2024-01-20 23:19:09,367 - DEBUG - Match: 666056172192923649, Score: 0
+2024-01-20 23:19:09,599 - DEBUG - Assigned role '801 NAS [LCR]' to pilot with Discord ID 1191000819806503062
+2024-01-20 23:26:00,600 - DEBUG - Bot script started.
+2024-01-20 23:26:00,614 - DEBUG - Bot script started.
+2024-01-20 23:26:00,615 - DEBUG - Test match score between 'engines' and 'engines': 100
+2024-01-20 23:26:00,619 - INFO - logging in using static token
+2024-01-20 23:26:01,564 - INFO - Shard ID None has connected to Gateway (Session ID: 2f55c7c98d41aee2f6b6b7f01397a3af).
+2024-01-20 23:27:04,641 - DEBUG - Bot script started.
+2024-01-20 23:27:04,654 - DEBUG - Bot script started.
+2024-01-20 23:27:04,656 - DEBUG - Test match score between 'engines' and 'engines': 100
+2024-01-20 23:27:04,660 - INFO - logging in using static token
+2024-01-20 23:27:05,497 - INFO - Shard ID None has connected to Gateway (Session ID: 928fc4a3bcc56a06111cf175e6f05a3a).
+2024-01-20 23:27:12,808 - DEBUG - Attempting to give awards
+2024-01-20 23:27:15,935 - DEBUG - Pilot id: ea2dca05dc204673da916448f77f00f1 is Engines who is assigned to 801 NAS
+2024-01-20 23:27:15,935 - DEBUG - Looking into award id 42 and checking if it matches the LCR award (42).
+2024-01-20 23:27:15,935 - DEBUG - This is the LCR award!!!
+2024-01-20 23:27:15,936 - DEBUG - This pilot is ready for their LCR role.
+2024-01-20 23:27:15,936 - DEBUG - Squadron has an LCR role specified: 801 NAS [LCR]
+2024-01-20 23:27:16,081 - DEBUG - Discord Name: logso, ID: 1191000819806503062
+2024-01-20 23:27:16,082 - DEBUG - Discord Name: engines, ID: 666056172192923649
+2024-01-20 23:27:16,082 - DEBUG - Normalized pilot Name: engines
+2024-01-20 23:27:16,082 - DEBUG - Match: 1191000819806503062, Score: 0
+2024-01-20 23:27:16,082 - DEBUG - Match: 666056172192923649, Score: 0
+2024-01-20 23:27:16,268 - DEBUG - Assigned role '801 NAS [LCR]' to pilot with Discord ID 1191000819806503062
+2024-01-20 23:28:19,602 - DEBUG - Bot script started.
+2024-01-20 23:28:19,616 - DEBUG - Bot script started.
+2024-01-20 23:28:19,618 - DEBUG - Test match score between 'engines' and 'engines': 100
+2024-01-20 23:28:19,621 - INFO - logging in using static token
+2024-01-20 23:28:20,486 - INFO - Shard ID None has connected to Gateway (Session ID: bb97f7c7134a7a1b785a54144229e40d).
+2024-01-20 23:28:26,410 - DEBUG - Attempting to give awards
+2024-01-20 23:28:29,346 - DEBUG - Pilot id: ea2dca05dc204673da916448f77f00f1 is Engines who is assigned to 801 NAS
+2024-01-20 23:28:29,347 - DEBUG - Looking into award id 42 and checking if it matches the LCR award (42).
+2024-01-20 23:28:29,347 - DEBUG - This is the LCR award!!!
+2024-01-20 23:28:29,347 - DEBUG - This pilot is ready for their LCR role.
+2024-01-20 23:28:29,347 - DEBUG - Squadron has an LCR role specified: 801 NAS [LCR]
+2024-01-20 23:28:29,669 - DEBUG - member names: {'logso': 1191000819806503062, 'engines': 666056172192923649}
+2024-01-20 23:28:29,669 - DEBUG - Discord Name: logso, ID: 1191000819806503062
+2024-01-20 23:28:29,669 - DEBUG - Discord Name: engines, ID: 666056172192923649
+2024-01-20 23:28:29,669 - DEBUG - Normalized pilot name: engines
+2024-01-20 23:28:29,670 - DEBUG - Match: 1191000819806503062, Score: 0
+2024-01-20 23:28:29,670 - DEBUG - Match: 666056172192923649, Score: 0
+2024-01-20 23:28:29,813 - DEBUG - Assigned role '801 NAS [LCR]' to pilot with Discord ID 1191000819806503062
+2024-01-20 23:29:10,788 - DEBUG - Bot script started.
+2024-01-20 23:29:10,803 - DEBUG - Bot script started.
+2024-01-20 23:29:10,803 - DEBUG - Test match score between 'engines' and 'engines': 100
+2024-01-20 23:29:10,803 - INFO - logging in using static token
+2024-01-20 23:29:11,966 - INFO - Shard ID None has connected to Gateway (Session ID: 9b2349b8b9f18ea8a9f1a417c1149eb6).
+2024-01-20 23:29:14,067 - DEBUG - Attempting to give awards
+2024-01-20 23:29:21,745 - DEBUG - Pilot id: None is None who is assigned to None
+2024-01-20 23:29:21,745 - DEBUG - Attempting to give awards
+2024-01-20 23:29:21,747 - ERROR - Ignoring exception in on_command_error
+Traceback (most recent call last):
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\discord\ext\commands\core.py", line 235, in wrapped
+    ret = await coro(*args, **kwargs)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\src\bot.py", line 864, in give_award
+    award_id = int(award_id.strip())
+               ^^^^^^^^^^^^^^^^^^^^^
+ValueError: invalid literal for int() with base 10: '!give_award'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\discord\client.py", line 441, in _run_event
+    await coro(*args, **kwargs)
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\src\bot.py", line 126, in on_command_error
+    raise error  # Re-raise other errors so you can notice them
+    ^^^^^^^^^^^
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\discord\ext\commands\bot.py", line 1350, in invoke
+    await ctx.command.invoke(ctx)
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\discord\ext\commands\core.py", line 1029, in invoke
+    await injected(*ctx.args, **ctx.kwargs)  # type: ignore
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\discord\ext\commands\core.py", line 244, in wrapped
+    raise CommandInvokeError(exc) from exc
+discord.ext.commands.errors.CommandInvokeError: Command raised an exception: ValueError: invalid literal for int() with base 10: '!give_award'
+2024-01-20 23:29:29,305 - DEBUG - Pilot id: ea2dca05dc204673da916448f77f00f1 is Engines who is assigned to 801 NAS
+2024-01-20 23:29:29,305 - DEBUG - Looking into award id 42 and checking if it matches the LCR award (42).
+2024-01-20 23:29:29,305 - DEBUG - This is the LCR award!!!
+2024-01-20 23:29:29,305 - DEBUG - This pilot is ready for their LCR role.
+2024-01-20 23:29:29,306 - DEBUG - Squadron has an LCR role specified: 801 NAS [LCR]
+2024-01-20 23:29:29,460 - DEBUG - member names: {'logso': 1191000819806503062, 'engines': 666056172192923649}
+2024-01-20 23:29:29,461 - DEBUG - Discord Name: logso, ID: 1191000819806503062
+2024-01-20 23:29:29,461 - DEBUG - Discord Name: engines, ID: 666056172192923649
+2024-01-20 23:29:29,461 - DEBUG - Normalized pilot name: engines
+2024-01-20 23:29:29,461 - DEBUG - Match: 1191000819806503062, Score: 0
+2024-01-20 23:29:29,462 - DEBUG - Match: 666056172192923649, Score: 0
+2024-01-20 23:29:29,462 - DEBUG - Comparing 'engines' with 'logso' (ID: 1191000819806503062), Score: 33
+2024-01-20 23:29:29,462 - DEBUG - Comparing 'engines' with 'engines' (ID: 666056172192923649), Score: 100
+2024-01-20 23:29:29,659 - DEBUG - Assigned role '801 NAS [LCR]' to pilot with Discord ID 1191000819806503062
+2024-01-20 23:32:05,011 - DEBUG - Bot script started.
+2024-01-20 23:32:05,024 - DEBUG - Bot script started.
+2024-01-20 23:32:05,026 - DEBUG - Test match score between 'engines' and 'engines': 100
+2024-01-20 23:32:05,029 - INFO - logging in using static token
+2024-01-20 23:32:05,960 - INFO - Shard ID None has connected to Gateway (Session ID: 215da065144a12d98d4de96849472054).
+2024-01-20 23:32:10,602 - DEBUG - Attempting to give awards
+2024-01-20 23:32:14,849 - DEBUG - Pilot id: ea2dca05dc204673da916448f77f00f1 is Engines who is assigned to 801 NAS
+2024-01-20 23:32:14,849 - DEBUG - Looking into award id 42 and checking if it matches the LCR award (42).
+2024-01-20 23:32:14,849 - DEBUG - This is the LCR award!!!
+2024-01-20 23:32:14,849 - DEBUG - This pilot is ready for their LCR role.
+2024-01-20 23:32:14,850 - DEBUG - Squadron has an LCR role specified: 801 NAS [LCR]
+2024-01-20 23:32:15,001 - DEBUG - member names: {'logso': 1191000819806503062, 'engines': 666056172192923649}
+2024-01-20 23:32:15,001 - DEBUG - Discord Name: logso, ID: 1191000819806503062
+2024-01-20 23:32:15,002 - DEBUG - Discord Name: engines, ID: 666056172192923649
+2024-01-20 23:32:15,002 - DEBUG - Normalized pilot name: engines
+2024-01-20 23:32:15,002 - DEBUG - Comparing 'engines' with 'logso' (ID: 1191000819806503062), Score: 33
+2024-01-20 23:32:15,002 - DEBUG - Comparing 'engines' with 'engines' (ID: 666056172192923649), Score: 100
+2024-01-20 23:32:15,251 - DEBUG - Assigned role '801 NAS [LCR]' to pilot with Discord ID 666056172192923649
+2024-01-20 23:33:45,438 - INFO - Seconds: 42386.873999999996, total: 11.8
+2024-01-20 23:33:45,439 - INFO - Seconds: 87618.4, total: 36.1
+2024-01-20 23:33:45,439 - INFO - Seconds: 210.048, total: 36.2
+2024-01-20 23:33:45,439 - INFO - Seconds: 54946.247, total: 51.5
+2024-01-20 23:33:45,439 - INFO - Seconds: 1435465.4490002, total: 450.2
+2024-01-20 23:33:45,439 - INFO - Seconds: 7759.34, total: 452.4
+2024-01-20 23:33:45,439 - INFO - Seconds: 20087.396, total: 458.0
+2024-01-20 23:33:45,439 - INFO - Seconds: 31332.528, total: 466.7
+2024-01-20 23:33:45,440 - INFO - Seconds: 130362.03, total: 502.9
+2024-01-20 23:33:45,440 - INFO - Seconds: 3511.936, total: 503.9
+2024-01-20 23:33:45,440 - INFO - Seconds: 15894.205, total: 508.29999999999995
+2024-01-20 23:33:45,440 - INFO - Seconds: 21477.569, total: 514.3
+2024-01-20 23:33:45,440 - INFO - Seconds: 5183.677, total: 515.6999999999999
+2024-01-20 23:33:45,440 - INFO - Seconds: 10011.462, total: 518.4999999999999
+2024-01-20 23:33:45,440 - INFO - Seconds: 1091.084, total: 518.7999999999998
+2024-01-20 23:33:45,440 - INFO - Seconds: 8689.942, total: 521.1999999999998
+2024-01-20 23:33:45,441 - INFO - Seconds: 13511.256, total: 524.9999999999998
+2024-01-20 23:33:45,441 - INFO - Seconds: 7087.85, total: 526.9999999999998
+2024-01-20 23:47:49,942 - DEBUG - Bot script started.
+2024-01-20 23:47:49,954 - DEBUG - Bot script started.
+2024-01-20 23:47:49,956 - DEBUG - Test match score between 'engines' and 'engines': 100
+2024-01-20 23:47:49,959 - INFO - logging in using static token
+2024-01-20 23:47:50,896 - INFO - Shard ID None has connected to Gateway (Session ID: 803bb0413645380646fa74d37b7b9221).
+2024-01-20 23:48:11,486 - DEBUG - Attempting to give awards
+2024-01-20 23:48:15,758 - ERROR - Ignoring exception in on_command_error
+Traceback (most recent call last):
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\discord\ext\commands\core.py", line 235, in wrapped
+    ret = await coro(*args, **kwargs)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\src\bot.py", line 859, in give_award
+    squadron_details = get_squadron_details(DB_PATH, squadron_id)
+                                                     ^^^^^^^^^^^
+UnboundLocalError: cannot access local variable 'squadron_id' where it is not associated with a value
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\discord\client.py", line 441, in _run_event
+    await coro(*args, **kwargs)
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\src\bot.py", line 125, in on_command_error
+    raise error  # Re-raise other errors so you can notice them
+    ^^^^^^^^^^^
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\discord\ext\commands\bot.py", line 1350, in invoke
+    await ctx.command.invoke(ctx)
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\discord\ext\commands\core.py", line 1029, in invoke
+    await injected(*ctx.args, **ctx.kwargs)  # type: ignore
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\discord\ext\commands\core.py", line 244, in wrapped
+    raise CommandInvokeError(exc) from exc
+discord.ext.commands.errors.CommandInvokeError: Command raised an exception: UnboundLocalError: cannot access local variable 'squadron_id' where it is not associated with a value
+2024-01-20 23:49:06,124 - DEBUG - Bot script started.
+2024-01-20 23:49:06,136 - DEBUG - Bot script started.
+2024-01-20 23:49:06,137 - DEBUG - Test match score between 'engines' and 'engines': 100
+2024-01-20 23:49:06,141 - INFO - logging in using static token
+2024-01-20 23:49:06,962 - INFO - Shard ID None has connected to Gateway (Session ID: 2665021a2f62d825471a408e3a40ab86).
+2024-01-20 23:49:13,471 - DEBUG - Attempting to give awards
+2024-01-20 23:49:18,203 - DEBUG - Pilot id: ea2dca05dc204673da916448f77f00f1 is Engines who is assigned to 801 NAS
+2024-01-20 23:49:18,203 - DEBUG - Looking into award id 42 and checking if it matches the LCR award (42).
+2024-01-20 23:49:18,203 - DEBUG - This is the LCR award!!!
+2024-01-20 23:49:18,203 - DEBUG - This pilot is ready for their LCR role.
+2024-01-20 23:49:18,203 - DEBUG - Squadron has an LCR role specified: 801 NAS [LCR]
+2024-01-20 23:49:18,358 - DEBUG - member names: {'logso': 1191000819806503062, 'engines': 666056172192923649}
+2024-01-20 23:49:18,358 - DEBUG - Discord Name: logso, ID: 1191000819806503062
+2024-01-20 23:49:18,358 - DEBUG - Discord Name: engines, ID: 666056172192923649
+2024-01-20 23:49:18,358 - DEBUG - Normalized pilot name: engines
+2024-01-20 23:49:18,358 - DEBUG - Comparing 'engines' with 'logso' (ID: 1191000819806503062), Score: 33
+2024-01-20 23:49:18,359 - DEBUG - Comparing 'engines' with 'engines' (ID: 666056172192923649), Score: 100
+2024-01-20 23:49:18,587 - DEBUG - Assigned role '801 NAS [LCR]' to pilot with Discord ID 666056172192923649
+2024-01-20 23:49:18,796 - DEBUG - Assigning award: 42 to pilot: Lt Cdr Engines
+2024-01-20 23:49:25,501 - INFO - Seconds: 42386.873999999996, total: 11.8
+2024-01-20 23:49:25,501 - INFO - Seconds: 87618.4, total: 36.1
+2024-01-20 23:49:25,501 - INFO - Seconds: 210.048, total: 36.2
+2024-01-20 23:49:25,501 - INFO - Seconds: 54946.247, total: 51.5
+2024-01-20 23:49:25,502 - INFO - Seconds: 1435465.4490002, total: 450.2
+2024-01-20 23:49:25,502 - INFO - Seconds: 7759.34, total: 452.4
+2024-01-20 23:49:25,502 - INFO - Seconds: 20087.396, total: 458.0
+2024-01-20 23:49:25,502 - INFO - Seconds: 31332.528, total: 466.7
+2024-01-20 23:49:25,502 - INFO - Seconds: 130362.03, total: 502.9
+2024-01-20 23:49:25,502 - INFO - Seconds: 3511.936, total: 503.9
+2024-01-20 23:49:25,502 - INFO - Seconds: 15894.205, total: 508.29999999999995
+2024-01-20 23:49:25,502 - INFO - Seconds: 21477.569, total: 514.3
+2024-01-20 23:49:25,503 - INFO - Seconds: 5183.677, total: 515.6999999999999
+2024-01-20 23:49:25,503 - INFO - Seconds: 10011.462, total: 518.4999999999999
+2024-01-20 23:49:25,503 - INFO - Seconds: 1091.084, total: 518.7999999999998
+2024-01-20 23:49:25,503 - INFO - Seconds: 8689.942, total: 521.1999999999998
+2024-01-20 23:49:25,503 - INFO - Seconds: 13511.256, total: 524.9999999999998
+2024-01-20 23:49:25,503 - INFO - Seconds: 7087.85, total: 526.9999999999998
+2024-01-20 23:53:32,789 - DEBUG - Bot script started.
+2024-01-20 23:53:32,794 - DEBUG - Bot script started.
+2024-01-20 23:53:32,794 - DEBUG - Test match score between 'engines' and 'engines': 100
+2024-01-20 23:53:32,794 - INFO - logging in using static token
+2024-01-20 23:53:33,627 - INFO - Shard ID None has connected to Gateway (Session ID: 714b4dfdb047f9bc880d637a0c38ef1f).

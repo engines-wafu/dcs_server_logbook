@@ -1,272 +1,42 @@
-2024-01-14 19:39:22,416 - DEBUG - Bot script started.
-2024-01-14 19:41:16,840 - DEBUG - Bot script started.
-2024-01-14 19:41:42,267 - DEBUG - Attempting to give awards
-2024-01-14 19:41:47,752 - DEBUG - Assigning award: 42 to pilot: Engines, Lt Cdr
-2024-01-14 19:41:47,752 - DEBUG - Attempting to assign LCR role for award ID 42
-2024-01-14 19:45:49,746 - DEBUG - Bot script started.
-2024-01-14 19:46:11,473 - DEBUG - Attempting to give awards
-2024-01-14 19:46:16,333 - DEBUG - Assigning award: 42 to pilot: Lt Cdr Engines
-2024-01-14 19:46:16,333 - DEBUG - Attempting to assign LCR role for award ID 42
-2024-01-14 19:46:22,632 - DEBUG - Bot script started.
-2024-01-14 19:46:47,373 - DEBUG - Bot script started.
-2024-01-14 19:47:01,925 - DEBUG - Attempting to give awards
-2024-01-14 19:47:07,062 - DEBUG - Assigning award: 42 to pilot: Lt Cdr Engines
-2024-01-14 19:47:07,062 - DEBUG - Attempting to assign LCR role for award ID 42
-2024-01-14 19:48:35,206 - DEBUG - Bot script started.
-2024-01-14 19:50:43,970 - DEBUG - Bot script started.
-2024-01-14 19:51:20,427 - DEBUG - Attempting to give awards
-2024-01-14 19:51:27,497 - DEBUG - Assigning award: 42 to pilot: Lt Cdr Engines
-2024-01-14 19:51:27,497 - DEBUG - Attempting to assign LCR role for award ID 42
-2024-01-14 19:52:59,292 - DEBUG - Bot script started.
-2024-01-14 19:53:19,490 - DEBUG - Attempting to give awards
-2024-01-14 19:53:26,053 - DEBUG - Assigning award: 42 to pilot: Lt Cdr Engines
-2024-01-14 19:53:26,053 - DEBUG - Attempting to assign LCR role for award ID 42
-2024-01-14 19:53:26,054 - DEBUG - Found Discord user ID: 666056172192923649 for pilot: Engines, Lt Cdr
-2024-01-14 19:53:26,054 - WARNING - Member or role not found. Member: engines., Role: None
-2024-01-14 20:02:33,873 - DEBUG - Attempting to give awards
-2024-01-14 20:02:38,766 - DEBUG - Assigning award: 42 to pilot: Lt Cdr Engines
-2024-01-14 20:02:38,766 - DEBUG - Attempting to assign LCR role for award ID 42
-2024-01-14 20:02:38,767 - DEBUG - Found Discord user ID: 666056172192923649 for pilot: Engines, Lt Cdr
-2024-01-14 20:02:38,767 - WARNING - Member or role not found. Member: engines., Role: None
-2024-01-14 20:07:11,103 - DEBUG - Bot script started.
-2024-01-14 20:07:26,136 - DEBUG - Attempting to give awards
-2024-01-14 20:07:30,116 - DEBUG - Assigning award: 42 to pilot: Lt Cdr Engines
-2024-01-14 20:07:30,116 - DEBUG - Attempting to assign LCR role for award ID 42
-2024-01-14 20:07:30,116 - DEBUG - Assigning role id: 1196287080184152064
-2024-01-14 20:07:30,117 - DEBUG - Found Discord user ID: 666056172192923649 for pilot: Engines, Lt Cdr
-2024-01-14 20:07:30,117 - WARNING - Member or role not found. Member: engines., Role: None
-2024-01-14 20:08:59,373 - DEBUG - Bot script started.
-2024-01-14 20:09:29,041 - DEBUG - Attempting to give awards
-2024-01-14 20:09:36,513 - DEBUG - Assigning award: 42 to pilot: Lt Cdr Engines
-2024-01-14 20:09:36,513 - DEBUG - Attempting to assign LCR role for award ID 42
-2024-01-14 20:09:36,513 - DEBUG - Assigning role id: 1196287080184152064
-2024-01-14 20:09:36,513 - DEBUG - Assigning role id 1196287080184152064 to Engines
-2024-01-14 20:09:36,514 - DEBUG - Found Discord user ID: 666056172192923649 for pilot: Engines, Lt Cdr
-2024-01-14 20:09:36,514 - WARNING - Member or role not found. Member: engines., Role: None
-2024-01-14 20:13:29,960 - DEBUG - Bot script started.
-2024-01-14 20:13:41,793 - DEBUG - Attempting to give awards
-2024-01-14 20:13:45,991 - DEBUG - Assigning award: 42 to pilot: Lt Cdr Engines
-2024-01-14 20:13:45,991 - DEBUG - Attempting to assign LCR role for award ID 42
-2024-01-14 20:13:45,991 - DEBUG - Assigning role id: 1196287080184152064
-2024-01-14 20:13:45,991 - DEBUG - Attempting to assign role ID 1196287080184152064 to pilot: Lt Cdr Engines
-2024-01-14 20:13:45,992 - DEBUG - Guild ID: 1190999875609968690, Guild Name: ETDS
-2024-01-14 20:13:45,992 - DEBUG - Role ID: 1190999875609968690, Role Name: @everyone
-2024-01-14 20:13:45,992 - DEBUG - Role ID: 1196303166854140006, Role Name: logso
-2024-01-14 20:13:45,992 - DEBUG - Role ID: 1196287277001871481, Role Name: CR
-2024-01-14 20:13:45,992 - DEBUG - Role ID: 1196287080184152064, Role Name: LCR
-2024-01-14 20:13:45,992 - DEBUG - Role ID: 1195908014746640434, Role Name: Squadron Commanders
-2024-01-14 20:13:45,992 - DEBUG - Role ID: 1195900618225758229, Role Name: Server admin
-2024-01-14 20:13:45,993 - DEBUG - Role ID: 1195557831223545888, Role Name: Controllers
-2024-01-14 20:13:59,516 - DEBUG - Bot script started.
-2024-01-14 20:14:06,656 - DEBUG - Attempting to give awards
-2024-01-14 20:14:10,838 - DEBUG - Assigning award: 42 to pilot: Lt Cdr Engines
-2024-01-14 20:14:10,839 - DEBUG - Attempting to assign LCR role for award ID 42
-2024-01-14 20:14:10,839 - DEBUG - Assigning role id: 1196287080184152064
-2024-01-14 20:14:10,839 - DEBUG - Attempting to assign role ID 1196287080184152064 to pilot: Lt Cdr Engines
-2024-01-14 20:14:10,839 - DEBUG - Guild ID: 1190999875609968690, Guild Name: ETDS
-2024-01-14 20:14:10,839 - DEBUG - Role ID: 1190999875609968690, Role Name: @everyone
-2024-01-14 20:14:10,839 - DEBUG - Role ID: 1196303166854140006, Role Name: logso
-2024-01-14 20:14:10,839 - DEBUG - Role ID: 1196287277001871481, Role Name: CR
-2024-01-14 20:14:10,840 - DEBUG - Role ID: 1196287080184152064, Role Name: LCR
-2024-01-14 20:14:10,840 - DEBUG - Role ID: 1195908014746640434, Role Name: Squadron Commanders
-2024-01-14 20:14:10,840 - DEBUG - Role ID: 1195900618225758229, Role Name: Server admin
-2024-01-14 20:14:10,840 - DEBUG - Role ID: 1195557831223545888, Role Name: Controllers
-2024-01-14 20:14:11,001 - ERROR - Error assigning role: 403 Forbidden (error code: 50013): Missing Permissions
-2024-01-14 20:14:28,264 - DEBUG - Attempting to give awards
-2024-01-14 20:14:33,121 - DEBUG - Assigning award: 42 to pilot: Lt Cdr Engines
-2024-01-14 20:14:33,121 - DEBUG - Attempting to assign LCR role for award ID 42
-2024-01-14 20:14:33,121 - DEBUG - Assigning role id: 1196287080184152064
-2024-01-14 20:14:33,122 - DEBUG - Attempting to assign role ID 1196287080184152064 to pilot: Lt Cdr Engines
-2024-01-14 20:14:33,122 - DEBUG - Guild ID: 1190999875609968690, Guild Name: ETDS
-2024-01-14 20:14:33,122 - DEBUG - Role ID: 1190999875609968690, Role Name: @everyone
-2024-01-14 20:14:33,122 - DEBUG - Role ID: 1196303166854140006, Role Name: logso
-2024-01-14 20:14:33,122 - DEBUG - Role ID: 1196287277001871481, Role Name: CR
-2024-01-14 20:14:33,122 - DEBUG - Role ID: 1196287080184152064, Role Name: LCR
-2024-01-14 20:14:33,122 - DEBUG - Role ID: 1195908014746640434, Role Name: Squadron Commanders
-2024-01-14 20:14:33,123 - DEBUG - Role ID: 1195900618225758229, Role Name: Server admin
-2024-01-14 20:14:33,123 - DEBUG - Role ID: 1195557831223545888, Role Name: Controllers
-2024-01-14 20:14:33,283 - ERROR - Error assigning role: 403 Forbidden (error code: 50013): Missing Permissions
-2024-01-14 20:16:45,077 - DEBUG - Attempting to give awards
-2024-01-14 20:16:49,337 - DEBUG - Assigning award: 42 to pilot: Lt Cdr Engines
-2024-01-14 20:16:49,337 - DEBUG - Attempting to assign LCR role for award ID 42
-2024-01-14 20:16:49,337 - DEBUG - Assigning role id: 1196287080184152064
-2024-01-14 20:16:49,337 - DEBUG - Attempting to assign role ID 1196287080184152064 to pilot: Lt Cdr Engines
-2024-01-14 20:16:49,338 - DEBUG - Guild ID: 1190999875609968690, Guild Name: ETDS
-2024-01-14 20:16:49,338 - DEBUG - Role ID: 1190999875609968690, Role Name: @everyone
-2024-01-14 20:16:49,338 - DEBUG - Role ID: 1196287277001871481, Role Name: CR
-2024-01-14 20:16:49,338 - DEBUG - Role ID: 1196287080184152064, Role Name: LCR
-2024-01-14 20:16:49,338 - DEBUG - Role ID: 1195908014746640434, Role Name: Squadron Commanders
-2024-01-14 20:16:49,338 - DEBUG - Role ID: 1195900618225758229, Role Name: Server admin
-2024-01-14 20:16:49,338 - DEBUG - Role ID: 1195557831223545888, Role Name: Controllers
-2024-01-14 20:16:49,339 - DEBUG - Role ID: 1196303166854140006, Role Name: logso
-2024-01-14 20:16:49,568 - INFO - Assigned role LCR to user Engines
-2024-01-14 20:38:46,454 - DEBUG - Attempting to give awards
-2024-01-14 20:38:52,071 - DEBUG - Assigning award: 16 to pilot: Lt Cdr Engines
-2024-01-14 20:38:52,071 - DEBUG - Attempting to assign CR role for award ID 16
-2024-01-14 20:38:52,071 - DEBUG - Attempting to assign role ID 1196287277001871481 to pilot: Lt Cdr Engines
-2024-01-14 20:38:52,072 - DEBUG - Guild ID: 1190999875609968690, Guild Name: ETDS
-2024-01-14 20:38:52,072 - DEBUG - Role ID: 1190999875609968690, Role Name: @everyone
-2024-01-14 20:38:52,072 - DEBUG - Role ID: 1196287277001871481, Role Name: CR
-2024-01-14 20:38:52,072 - DEBUG - Role ID: 1196287080184152064, Role Name: LCR
-2024-01-14 20:38:52,072 - DEBUG - Role ID: 1195908014746640434, Role Name: Squadron Commanders
-2024-01-14 20:38:52,072 - DEBUG - Role ID: 1195900618225758229, Role Name: Server admin
-2024-01-14 20:38:52,072 - DEBUG - Role ID: 1195557831223545888, Role Name: Controllers
-2024-01-14 20:38:52,072 - DEBUG - Role ID: 1196303166854140006, Role Name: logso
-2024-01-14 20:38:52,288 - INFO - Assigned role CR to user Engines
-2024-01-14 23:54:34,931 - DEBUG - Bot script started.
-2024-01-14 23:59:37,978 - DEBUG - Bot script started.
-2024-01-15 00:02:54,321 - DEBUG - Bot script started.
-2024-01-15 00:10:31,300 - DEBUG - Bot script started.
-2024-01-15 00:12:41,266 - DEBUG - Bot script started.
-2024-01-15 00:13:14,310 - INFO - Checking channel: Text Channels
-2024-01-15 00:13:14,311 - INFO - Checking channel: Voice Channels
-2024-01-15 00:13:14,311 - INFO - Checking channel: general
-2024-01-15 00:13:14,311 - INFO - Checking channel: General
-2024-01-15 00:13:14,311 - INFO - Checking channel: controllers
-2024-01-15 00:13:14,311 - INFO - Checking channel: flight-plans
-2024-01-15 00:13:14,311 - INFO - Found channel: flight-plans
-2024-01-15 00:13:14,311 - ERROR - Role not found.
-2024-01-15 00:16:00,118 - DEBUG - Bot script started.
-2024-01-15 00:16:25,901 - INFO - Checking channel: Text Channels
-2024-01-15 00:16:25,901 - INFO - Checking channel: Voice Channels
-2024-01-15 00:16:25,901 - INFO - Checking channel: general
-2024-01-15 00:16:25,901 - INFO - Checking channel: General
-2024-01-15 00:16:25,901 - INFO - Checking channel: controllers
-2024-01-15 00:16:25,901 - INFO - Checking channel: flight-plans
-2024-01-15 00:16:25,901 - INFO - Found channel: flight-plans
-2024-01-15 00:16:25,901 - INFO - Looking for role ID: 1195557831223545888.  Corresponsing role name: None
-2024-01-15 00:16:25,901 - ERROR - Role not found.
-2024-01-15 00:19:28,401 - DEBUG - Bot script started.
-2024-01-15 00:19:59,784 - INFO - Checking channel: Text Channels
-2024-01-15 00:19:59,784 - INFO - Checking channel: Voice Channels
-2024-01-15 00:19:59,785 - INFO - Checking channel: general
-2024-01-15 00:19:59,785 - INFO - Checking channel: General
-2024-01-15 00:19:59,785 - INFO - Checking channel: controllers
-2024-01-15 00:19:59,785 - INFO - Checking channel: flight-plans
-2024-01-15 00:19:59,785 - INFO - Found channel: flight-plans
-2024-01-15 00:19:59,785 - INFO - Looking for role ID: 1195557831223545888.  Corresponsing role name: Controllers
-2024-01-15 00:19:59,785 - INFO - Found role: Controllers
-2024-01-15 11:44:30,680 - DEBUG - Bot script started.
-2024-01-15 11:46:19,482 - INFO - Checking channel: 617 Sqn Crew Room
-2024-01-15 11:46:19,483 - INFO - Checking channel: operation-purple-warrior
-2024-01-15 11:46:19,483 - INFO - Checking channel: JSW HQ
-2024-01-15 11:46:19,483 - INFO - Checking channel: hardware-and-software
-2024-01-15 11:46:19,483 - INFO - Checking channel: guests
-2024-01-15 11:46:19,483 - INFO - Checking channel: squadron-commanders
-2024-01-15 11:46:19,483 - INFO - Checking channel: General Channels
-2024-01-15 11:46:19,483 - INFO - Checking channel: range-booking
-2024-01-15 11:46:19,484 - INFO - Checking channel: mission-briefings
-2024-01-15 11:46:19,484 - INFO - Checking channel: 4 Sqn Crew Room
-2024-01-15 11:46:19,484 - INFO - Checking channel: ops-room
-2024-01-15 11:46:19,484 - INFO - Checking channel: orders-from-hq
-2024-01-15 11:46:19,484 - INFO - Checking channel: briefing-and-debrief
-2024-01-15 11:46:19,484 - INFO - Checking channel: JSW HQ
-2024-01-15 11:46:19,484 - INFO - Checking channel: lizzy-chat
-2024-01-15 11:46:19,484 - INFO - Checking channel: server-details
-2024-01-15 11:46:19,485 - INFO - Checking channel: qhi-office
-2024-01-15 11:46:19,485 - INFO - Checking channel: server-admin
-2024-01-15 11:46:19,485 - INFO - Checking channel: IV AC Sqn
-2024-01-15 11:46:19,485 - INFO - Checking channel: special-events
-2024-01-15 11:46:19,485 - INFO - Checking channel: media
-2024-01-15 11:46:19,485 - INFO - Checking channel: operation-rampart
-2024-01-15 11:46:19,485 - INFO - Checking channel: cw-wardroom
-2024-01-15 11:46:19,485 - INFO - Checking channel: mods-and-skins
-2024-01-15 11:46:19,486 - INFO - Checking channel: operation-shader
-2024-01-15 11:46:19,486 - INFO - Checking channel: JSW Crew Room
-2024-01-15 11:46:19,486 - INFO - Checking channel: sqn-bar
-2024-01-15 11:46:19,486 - INFO - Checking channel: 892 NAS
-2024-01-15 11:46:19,486 - INFO - Checking channel: Green Channel
-2024-01-15 11:46:19,486 - INFO - Checking channel: controllers-bar
-2024-01-15 11:46:19,486 - INFO - Checking channel: JSW CO’s Office
-2024-01-15 11:46:19,486 - INFO - Checking channel: 801 NAS Wardroom
-2024-01-15 11:46:19,487 - INFO - Checking channel: joint-exercises
-2024-01-15 11:46:19,487 - INFO - Checking channel: ops
-2024-01-15 11:46:19,487 - INFO - Checking channel: logistics-office
-2024-01-15 11:46:19,487 - INFO - Checking channel: Operations
-2024-01-15 11:46:19,487 - INFO - Checking channel: Logistics
-2024-01-15 11:46:19,487 - INFO - Checking channel: WWII RAF
-2024-01-15 11:46:19,487 - INFO - Checking channel: orders
-2024-01-15 11:46:19,487 - INFO - Checking channel: Check Flight
-2024-01-15 11:46:19,488 - INFO - Checking channel: mods-and-skins
-2024-01-15 11:46:19,488 - INFO - Checking channel: 892 NAS Wardroom
-2024-01-15 11:46:19,488 - INFO - Checking channel: hq
-2024-01-15 11:46:19,488 - INFO - Checking channel: OCU QFI's Office
-2024-01-15 11:46:19,488 - INFO - Checking channel: paddles
-2024-01-15 11:46:19,488 - INFO - Checking channel: sqn-bar
-2024-01-15 11:46:19,488 - INFO - Checking channel: welcome-channel
-2024-01-15 11:46:19,488 - INFO - Checking channel: 617 Sqn RAF
-2024-01-15 11:46:19,489 - INFO - Checking channel: training-syllabus
-2024-01-15 11:46:19,489 - INFO - Checking channel: mission-making
-2024-01-15 11:46:19,489 - INFO - Checking channel: Yellow Channel
-2024-01-15 11:46:19,489 - INFO - Checking channel: Blue Channel
-2024-01-15 11:46:19,490 - INFO - Checking channel: sqn-bar
-2024-01-15 11:46:19,490 - INFO - Checking channel: training-reference
-2024-01-15 11:46:19,490 - INFO - Checking channel: cw-flyco
-2024-01-15 11:46:19,490 - INFO - Checking channel: reference
-2024-01-15 11:46:19,490 - INFO - Checking channel: Voice Channels
-2024-01-15 11:46:19,490 - INFO - Checking channel: ops-room
-2024-01-15 11:46:19,490 - INFO - Checking channel: paddles
-2024-01-15 11:46:19,490 - INFO - Checking channel: organise-flights
-2024-01-15 11:46:19,490 - INFO - Checking channel: Mission Briefing
-2024-01-15 11:46:19,491 - INFO - Checking channel: qfi-office
-2024-01-15 11:46:19,491 - INFO - Checking channel: Controllers Corner
-2024-01-15 11:46:19,491 - INFO - Checking channel: XI F Sqn RAF
-2024-01-15 11:46:19,491 - INFO - Checking channel: Red Channel
-2024-01-15 11:46:19,491 - INFO - Checking channel: operation-thresher
-2024-01-15 11:46:19,491 - INFO - Checking channel: squadron-commanders
-2024-01-15 11:46:19,491 - INFO - Checking channel: Mission Making
-2024-01-15 11:46:19,491 - INFO - Checking channel: crew-bar
-2024-01-15 11:46:19,492 - INFO - Checking channel: 656 AAC Crew Room
-2024-01-15 11:46:19,492 - INFO - Checking channel: sqn-bar
-2024-01-15 11:46:19,492 - INFO - Checking channel: sqn-bar
-2024-01-15 11:46:19,492 - INFO - Checking channel: hq
-2024-01-15 11:46:19,492 - INFO - Checking channel: dcs-world-general
-2024-01-15 11:46:19,492 - INFO - Checking channel: library
-2024-01-15 11:46:19,492 - INFO - Checking channel: training-syllabus
-2024-01-15 11:46:19,492 - INFO - Checking channel: sorties
-2024-01-15 11:46:19,493 - INFO - Checking channel: dispersal-hut
-2024-01-15 11:46:19,493 - INFO - Checking channel: aggressors
-2024-01-15 11:46:19,493 - INFO - Checking channel: Reference Library
-2024-01-15 11:46:19,493 - INFO - Checking channel: training-reference
-2024-01-15 11:46:19,493 - INFO - Checking channel: WWII Luftwaffe
-2024-01-15 11:46:19,493 - INFO - Checking channel: briefings
-2024-01-15 11:46:19,493 - INFO - Checking channel: 656 Sqn AAC
-2024-01-15 11:46:19,493 - INFO - Checking channel: ops-room
-2024-01-15 11:46:19,494 - INFO - Checking channel: 801 NAS
-2024-01-15 11:46:19,494 - INFO - Checking channel: WWII
-2024-01-15 11:46:19,494 - INFO - Checking channel: ATC
-2024-01-15 11:46:19,494 - INFO - Checking channel: orders-and-tasking
-2024-01-15 11:46:19,494 - INFO - Checking channel: flight-plans
-2024-01-15 11:46:19,494 - INFO - Found channel: flight-plans
-2024-01-15 11:46:19,494 - INFO - Looking for role ID: 939955938486538250.  Corresponsing role name: Controllers
-2024-01-15 11:46:19,494 - INFO - Found role: Controllers
-2024-01-15 14:23:19,277 - DEBUG - Attempting to give awards
-<<<<<<< HEAD
-2024-01-16 16:26:26,231 - DEBUG - Bot script started.
-2024-01-16 16:27:20,506 - DEBUG - Bot script started.
-=======
->>>>>>> cd9b18f0ab8822a7d6e9f4ba46673e31b187d6d3
-2024-01-18 11:51:15,729 - DEBUG - Bot script started.
-2024-01-18 11:51:18,269 - DEBUG - Bot script started.
+2024-01-20 17:33:49,009 - DEBUG - Bot script started.
 2024-01-20 17:33:49,122 - DEBUG - Bot script started.
+2024-01-20 17:34:15,819 - DEBUG - Bot script started.
 2024-01-20 17:34:15,928 - DEBUG - Bot script started.
+2024-01-20 17:35:57,760 - DEBUG - Bot script started.
 2024-01-20 17:35:57,869 - DEBUG - Bot script started.
+2024-01-20 17:37:46,343 - DEBUG - Bot script started.
 2024-01-20 17:37:46,458 - DEBUG - Bot script started.
+2024-01-20 17:40:04,824 - DEBUG - Bot script started.
 2024-01-20 17:40:04,935 - DEBUG - Bot script started.
+2024-01-20 17:40:42,863 - DEBUG - Bot script started.
 2024-01-20 17:40:42,979 - DEBUG - Bot script started.
+2024-01-20 17:45:07,141 - DEBUG - Bot script started.
 2024-01-20 17:45:07,247 - DEBUG - Bot script started.
+2024-01-20 17:45:29,168 - DEBUG - Bot script started.
 2024-01-20 17:45:29,275 - DEBUG - Bot script started.
+2024-01-20 17:47:02,277 - DEBUG - Bot script started.
 2024-01-20 17:47:02,394 - DEBUG - Bot script started.
+2024-01-20 17:48:03,480 - DEBUG - Bot script started.
 2024-01-20 17:48:03,586 - DEBUG - Bot script started.
+2024-01-20 17:49:05,977 - DEBUG - Bot script started.
 2024-01-20 17:49:06,086 - DEBUG - Bot script started.
+2024-01-20 17:53:42,693 - DEBUG - Bot script started.
 2024-01-20 17:53:42,804 - DEBUG - Bot script started.
+2024-01-20 18:29:10,049 - DEBUG - Bot script started.
 2024-01-20 18:29:10,156 - DEBUG - Bot script started.
+2024-01-20 18:29:43,950 - DEBUG - Bot script started.
 2024-01-20 18:29:44,062 - DEBUG - Bot script started.
+2024-01-20 18:32:57,544 - DEBUG - Bot script started.
 2024-01-20 18:32:57,652 - DEBUG - Bot script started.
+2024-01-20 18:46:18,376 - DEBUG - Bot script started.
 2024-01-20 18:46:18,491 - DEBUG - Bot script started.
+2024-01-20 18:47:23,499 - DEBUG - Bot script started.
 2024-01-20 18:47:23,608 - DEBUG - Bot script started.
+2024-01-20 18:50:11,535 - DEBUG - Bot script started.
 2024-01-20 18:50:11,654 - DEBUG - Bot script started.
+2024-01-20 18:51:33,910 - DEBUG - Bot script started.
 2024-01-20 18:51:34,026 - DEBUG - Bot script started.
+2024-01-20 19:46:32,458 - DEBUG - Bot script started.
 2024-01-20 19:46:32,566 - DEBUG - Bot script started.
 2024-01-20 19:46:45,183 - DEBUG - Attempting to give awards
 2024-01-20 19:47:08,457 - DEBUG - Assigning award: 42 to pilot: Lt Cdr Engines
@@ -282,6 +52,7 @@
 2024-01-20 19:47:08,458 - DEBUG - Role ID: 1195557831223545888, Role Name: Controllers
 2024-01-20 19:47:08,458 - DEBUG - Role ID: 1196303166854140006, Role Name: logso
 2024-01-20 19:47:08,651 - INFO - Assigned role LCR to user Engines
+2024-01-20 19:49:23,250 - DEBUG - Bot script started.
 2024-01-20 19:49:23,353 - DEBUG - Bot script started.
 2024-01-20 19:49:28,688 - DEBUG - Attempting to give awards
 2024-01-20 19:49:33,383 - DEBUG - Assigning award: 42 to pilot: Lt Cdr Engines
@@ -298,6 +69,7 @@
 2024-01-20 19:49:33,385 - DEBUG - Role ID: 1196303166854140006, Role Name: logso
 2024-01-20 19:49:33,604 - INFO - Assigned role LCR to user Engines
 2024-01-20 19:49:33,606 - DEBUG - No specific LCR role found for squadron 801 NAS
+2024-01-20 20:23:24,474 - DEBUG - Bot script started.
 2024-01-20 20:23:24,576 - DEBUG - Bot script started.
 2024-01-20 20:23:29,870 - DEBUG - Attempting to give awards
 2024-01-20 20:23:36,459 - DEBUG - Assigning award: 42 to pilot: Lt Cdr Engines
@@ -313,6 +85,7 @@
 2024-01-20 20:23:36,461 - DEBUG - Role ID: 1195557831223545888, Role Name: Controllers
 2024-01-20 20:23:36,461 - DEBUG - Role ID: 1196303166854140006, Role Name: logso
 2024-01-20 20:23:36,639 - INFO - Assigned role LCR to user Engines
+2024-01-20 20:29:57,846 - DEBUG - Bot script started.
 2024-01-20 20:29:57,947 - DEBUG - Bot script started.
 2024-01-20 20:30:05,918 - DEBUG - Attempting to give awards
 2024-01-20 20:30:10,691 - DEBUG - Assigning award: 42 to pilot: Lt Cdr Engines
@@ -344,6 +117,7 @@
 2024-01-20 20:31:28,564 - DEBUG - Role ID: 1196303166854140006, Role Name: logso
 2024-01-20 20:31:29,251 - INFO - Assigned role LCR to user Engines
 2024-01-20 20:31:29,253 - DEBUG - No specific LCR role found for squadron 801 NAS
+2024-01-20 20:32:01,153 - DEBUG - Bot script started.
 2024-01-20 20:32:01,258 - DEBUG - Bot script started.
 2024-01-20 20:32:12,976 - DEBUG - Attempting to give awards
 2024-01-20 20:32:18,463 - DEBUG - Assigning award: 42 to pilot: Lt Cdr Engines
@@ -360,12 +134,15 @@
 2024-01-20 20:32:18,465 - DEBUG - Role ID: 1196303166854140006, Role Name: logso
 2024-01-20 20:32:18,680 - INFO - Assigned role LCR to user Engines
 2024-01-20 20:32:18,681 - DEBUG - No specific LCR role found for squadron 801 NAS
+2024-01-20 21:03:44,569 - DEBUG - Bot script started.
 2024-01-20 21:03:44,679 - DEBUG - Bot script started.
 2024-01-20 21:04:38,916 - DEBUG - Attempting to give awards
 2024-01-20 21:04:43,834 - DEBUG - Assigning award: 42 to pilot: Lt Cdr Engines
+2024-01-20 21:17:02,242 - DEBUG - Bot script started.
 2024-01-20 21:17:02,348 - DEBUG - Bot script started.
 2024-01-20 21:17:48,384 - DEBUG - Attempting to give awards
 2024-01-20 21:21:03,643 - DEBUG - Attempting to give awards
+2024-01-20 21:23:53,469 - DEBUG - Bot script started.
 2024-01-20 21:23:53,575 - DEBUG - Bot script started.
 2024-01-20 21:24:09,055 - DEBUG - Attempting to give awards
 2024-01-20 21:24:14,389 - DEBUG - Looking for pilot_id: ea2dca05dc204673da916448f77f00f1
@@ -373,20 +150,25 @@
 2024-01-20 21:26:00,094 - DEBUG - Attempting to give awards
 2024-01-20 21:26:03,432 - DEBUG - Looking for pilot_id: ea2dca05dc204673da916448f77f00f1
 2024-01-20 21:26:03,432 - DEBUG -   - award_id: 42
+2024-01-20 21:26:46,234 - DEBUG - Bot script started.
 2024-01-20 21:26:46,340 - DEBUG - Bot script started.
 2024-01-20 21:26:57,337 - DEBUG - Attempting to give awards
 2024-01-20 21:27:02,643 - DEBUG - Looking for pilot_id: ea2dca05dc204673da916448f77f00f1
 2024-01-20 21:27:02,643 - DEBUG -   - award_id: 42
+2024-01-20 21:34:56,293 - DEBUG - Bot script started.
 2024-01-20 21:34:56,390 - DEBUG - Bot script started.
 2024-01-20 21:35:10,767 - DEBUG - Attempting to give awards
+2024-01-20 21:38:33,067 - DEBUG - Bot script started.
 2024-01-20 21:38:33,172 - DEBUG - Bot script started.
 2024-01-20 21:38:45,948 - DEBUG - Attempting to give awards
 2024-01-20 21:38:51,818 - DEBUG - Looking for pilot_id: ea2dca05dc204673da916448f77f00f1, who is assigned to None
 2024-01-20 21:38:51,818 - DEBUG -   - award_id: 42
+2024-01-20 21:39:30,758 - DEBUG - Bot script started.
 2024-01-20 21:39:30,869 - DEBUG - Bot script started.
 2024-01-20 21:39:47,554 - DEBUG - Attempting to give awards
 2024-01-20 21:39:51,997 - DEBUG - Looking for pilot_id: ea2dca05dc204673da916448f77f00f1, who is assigned to 801 NAS
 2024-01-20 21:39:51,997 - DEBUG -   - award_id: 42
+2024-01-20 21:44:43,601 - DEBUG - Bot script started.
 2024-01-20 21:44:43,706 - DEBUG - Bot script started.
 2024-01-20 21:44:54,347 - DEBUG - Attempting to give awards
 2024-01-20 21:45:03,601 - DEBUG - Attempting to give awards
@@ -403,19 +185,26 @@
 2024-01-20 21:45:08,562 - DEBUG - Role ID: 1195557831223545888, Role Name: Controllers
 2024-01-20 21:45:08,562 - DEBUG - Role ID: 1196303166854140006, Role Name: logso
 2024-01-20 21:45:08,723 - INFO - Assigned role LCR to user Engines
+2024-01-20 21:45:40,523 - DEBUG - Bot script started.
 2024-01-20 21:45:40,630 - DEBUG - Bot script started.
 2024-01-20 21:45:57,396 - DEBUG - Attempting to give awards
 2024-01-20 21:46:04,846 - DEBUG - Assigning award: 42 to pilot: Lt Cdr Engines
+2024-01-20 21:47:24,500 - DEBUG - Bot script started.
 2024-01-20 21:47:24,607 - DEBUG - Bot script started.
 2024-01-20 21:47:43,998 - DEBUG - Attempting to give awards
 2024-01-20 21:47:57,563 - DEBUG - Assigning award: 42 to pilot: Lt Cdr Engines
+2024-01-20 21:50:06,215 - DEBUG - Bot script started.
 2024-01-20 21:50:06,329 - DEBUG - Bot script started.
+2024-01-20 21:52:07,244 - DEBUG - Bot script started.
 2024-01-20 21:52:07,353 - DEBUG - Bot script started.
 2024-01-20 21:52:20,808 - DEBUG - Attempting to give awards
+2024-01-20 21:52:55,038 - DEBUG - Bot script started.
 2024-01-20 21:52:55,138 - DEBUG - Bot script started.
+2024-01-20 21:53:24,125 - DEBUG - Bot script started.
 2024-01-20 21:53:24,239 - DEBUG - Bot script started.
 2024-01-20 21:53:41,257 - DEBUG - Attempting to give awards
 2024-01-20 21:53:46,686 - DEBUG - Pilot id: ea2dca05dc204673da916448f77f00f1 is assigned to 801 NAS
+2024-01-20 21:55:26,929 - DEBUG - Bot script started.
 2024-01-20 21:55:27,036 - DEBUG - Bot script started.
 2024-01-20 21:55:42,162 - DEBUG - Attempting to give awards
 2024-01-20 21:55:45,922 - DEBUG - Pilot id: ea2dca05dc204673da916448f77f00f1 is assigned to 801 NAS
@@ -423,20 +212,24 @@
 2024-01-20 21:58:33,941 - DEBUG - Attempting to give awards
 2024-01-20 21:58:38,475 - DEBUG - Pilot id: ea2dca05dc204673da916448f77f00f1 is assigned to IV Sqn
 2024-01-20 21:58:38,488 - DEBUG - Assigning award: 42 to pilot: Lt Cdr Engines
+2024-01-20 22:03:58,516 - DEBUG - Bot script started.
 2024-01-20 22:03:58,622 - DEBUG - Bot script started.
 2024-01-20 22:04:10,392 - DEBUG - Attempting to give awards
 2024-01-20 22:04:15,772 - DEBUG - Pilot id: ea2dca05dc204673da916448f77f00f1 is assigned to IV Sqn
 2024-01-20 22:04:15,784 - DEBUG - Assigning award: 42 to pilot: Lt Cdr Engines
+2024-01-20 22:05:23,182 - DEBUG - Bot script started.
 2024-01-20 22:05:23,295 - DEBUG - Bot script started.
 2024-01-20 22:05:31,956 - DEBUG - Attempting to give awards
 2024-01-20 22:05:36,993 - DEBUG - Pilot id: ea2dca05dc204673da916448f77f00f1 is assigned to IV Sqn
 2024-01-20 22:05:36,993 - DEBUG - Looking into award id: 42
 2024-01-20 22:05:37,005 - DEBUG - Assigning award: 42 to pilot: Lt Cdr Engines
+2024-01-20 22:06:25,839 - DEBUG - Bot script started.
 2024-01-20 22:06:25,937 - DEBUG - Bot script started.
 2024-01-20 22:06:47,230 - DEBUG - Attempting to give awards
 2024-01-20 22:06:53,556 - DEBUG - Pilot id: ea2dca05dc204673da916448f77f00f1 is assigned to IV Sqn
 2024-01-20 22:06:53,556 - DEBUG - Looking into award id 42 and checking if it matches the LCR award (42).
 2024-01-20 22:06:53,568 - DEBUG - Assigning award: 42 to pilot: Lt Cdr Engines
+2024-01-20 22:08:54,323 - DEBUG - Bot script started.
 2024-01-20 22:08:54,420 - DEBUG - Bot script started.
 2024-01-20 22:09:05,556 - DEBUG - Attempting to give awards
 2024-01-20 22:09:15,128 - DEBUG - Pilot id: None is assigned to None
@@ -445,18 +238,21 @@
 2024-01-20 22:09:21,445 - DEBUG - Looking into award id 42 and checking if it matches the LCR award (42).
 2024-01-20 22:09:21,445 - DEBUG - This is the LCR award!!!
 2024-01-20 22:09:21,445 - DEBUG - This pilot is still in the OCU!
+2024-01-20 22:09:50,211 - DEBUG - Bot script started.
 2024-01-20 22:09:50,321 - DEBUG - Bot script started.
 2024-01-20 22:10:07,432 - DEBUG - Attempting to give awards
 2024-01-20 22:10:11,516 - DEBUG - Pilot id: ea2dca05dc204673da916448f77f00f1 is assigned to IV Sqn
 2024-01-20 22:10:11,516 - DEBUG - Looking into award id 42 and checking if it matches the LCR award (42).
 2024-01-20 22:10:11,517 - DEBUG - This is the LCR award!!!
 2024-01-20 22:10:11,517 - DEBUG - This pilot is still in the OCU!
+2024-01-20 22:24:40,985 - DEBUG - Bot script started.
 2024-01-20 22:24:41,101 - DEBUG - Bot script started.
 2024-01-20 22:25:00,905 - DEBUG - Attempting to give awards
 2024-01-20 22:25:08,439 - DEBUG - Pilot id: ea2dca05dc204673da916448f77f00f1 is assigned to 801 NAS
 2024-01-20 22:25:08,439 - DEBUG - Looking into award id 42 and checking if it matches the LCR award (42).
 2024-01-20 22:25:08,439 - DEBUG - This is the LCR award!!!
 2024-01-20 22:25:08,439 - DEBUG - This pilot is ready for their LCR role.
+2024-01-20 22:28:38,572 - DEBUG - Bot script started.
 2024-01-20 22:28:38,689 - DEBUG - Bot script started.
 2024-01-20 22:28:55,341 - DEBUG - Attempting to give awards
 2024-01-20 22:29:03,097 - DEBUG - Pilot id: ea2dca05dc204673da916448f77f00f1 is assigned to 801 NAS
@@ -470,8 +266,11 @@
 2024-01-20 22:30:39,560 - DEBUG - This is the LCR award!!!
 2024-01-20 22:30:39,561 - DEBUG - This pilot is ready for their LCR role.
 2024-01-20 22:30:39,561 - DEBUG - Squadron has an LCR role specified: 801 NAS [LCR]
+2024-01-20 22:32:18,220 - DEBUG - Bot script started.
 2024-01-20 22:32:18,236 - DEBUG - Bot script started.
+2024-01-20 22:41:21,159 - DEBUG - Bot script started.
 2024-01-20 22:41:21,169 - DEBUG - Bot script started.
+2024-01-20 22:41:53,549 - DEBUG - Bot script started.
 2024-01-20 22:41:53,565 - DEBUG - Bot script started.
 2024-01-20 22:42:07,726 - DEBUG - Attempting to give awards
 2024-01-20 22:42:11,628 - DEBUG - Pilot id: ea2dca05dc204673da916448f77f00f1 is assigned to 801 NAS
@@ -480,6 +279,7 @@
 2024-01-20 22:42:11,629 - DEBUG - This pilot is ready for their LCR role.
 2024-01-20 22:42:11,629 - DEBUG - Squadron has an LCR role specified: 801 NAS [LCR]
 2024-01-20 22:42:11,629 - ERROR - Member with ID ea2dca05dc204673da916448f77f00f1 not found.
+2024-01-20 22:51:56,233 - DEBUG - Bot script started.
 2024-01-20 22:51:56,246 - DEBUG - Bot script started.
 2024-01-20 22:52:01,963 - DEBUG - Attempting to give awards
 2024-01-20 22:52:09,508 - DEBUG - Pilot id: ea2dca05dc204673da916448f77f00f1 is assigned to 801 NAS
@@ -487,6 +287,7 @@
 2024-01-20 22:52:09,508 - DEBUG - This is the LCR award!!!
 2024-01-20 22:52:09,508 - DEBUG - This pilot is ready for their LCR role.
 2024-01-20 22:52:09,509 - DEBUG - Squadron has an LCR role specified: 801 NAS [LCR]
+2024-01-20 22:53:44,734 - DEBUG - Bot script started.
 2024-01-20 22:53:44,747 - DEBUG - Bot script started.
 2024-01-20 22:53:58,198 - DEBUG - Attempting to give awards
 2024-01-20 22:54:05,302 - DEBUG - Pilot id: ea2dca05dc204673da916448f77f00f1 is assigned to 801 NAS
@@ -494,6 +295,7 @@
 2024-01-20 22:54:05,302 - DEBUG - This is the LCR award!!!
 2024-01-20 22:54:05,302 - DEBUG - This pilot is ready for their LCR role.
 2024-01-20 22:54:05,302 - DEBUG - Squadron has an LCR role specified: 801 NAS [LCR]
+2024-01-20 22:56:48,543 - DEBUG - Bot script started.
 2024-01-20 22:56:48,557 - DEBUG - Bot script started.
 2024-01-20 22:56:53,524 - DEBUG - Attempting to give awards
 2024-01-20 22:56:58,067 - DEBUG - Pilot id: ea2dca05dc204673da916448f77f00f1 is assigned to 801 NAS
@@ -501,6 +303,7 @@
 2024-01-20 22:56:58,067 - DEBUG - This is the LCR award!!!
 2024-01-20 22:56:58,068 - DEBUG - This pilot is ready for their LCR role.
 2024-01-20 22:56:58,068 - DEBUG - Squadron has an LCR role specified: 801 NAS [LCR]
+2024-01-20 22:57:57,841 - DEBUG - Bot script started.
 2024-01-20 22:57:57,853 - DEBUG - Bot script started.
 2024-01-20 22:58:07,788 - DEBUG - Attempting to give awards
 2024-01-20 22:58:14,186 - DEBUG - Pilot id: ea2dca05dc204673da916448f77f00f1 is assigned to 801 NAS
@@ -509,6 +312,7 @@
 2024-01-20 22:58:14,186 - DEBUG - This pilot is ready for their LCR role.
 2024-01-20 22:58:14,187 - DEBUG - Squadron has an LCR role specified: 801 NAS [LCR]
 2024-01-20 22:58:14,403 - ERROR - Unable to find matching Discord user.
+2024-01-20 22:59:17,372 - DEBUG - Bot script started.
 2024-01-20 22:59:17,388 - DEBUG - Bot script started.
 2024-01-20 22:59:34,305 - DEBUG - Attempting to give awards
 2024-01-20 22:59:43,377 - DEBUG - Pilot id: ea2dca05dc204673da916448f77f00f1 is assigned to 801 NAS
@@ -516,6 +320,7 @@
 2024-01-20 22:59:43,377 - DEBUG - This is the LCR award!!!
 2024-01-20 22:59:43,377 - DEBUG - This pilot is ready for their LCR role.
 2024-01-20 22:59:43,378 - DEBUG - Squadron has an LCR role specified: 801 NAS [LCR]
+2024-01-20 23:00:24,712 - DEBUG - Bot script started.
 2024-01-20 23:00:24,729 - DEBUG - Bot script started.
 2024-01-20 23:00:28,429 - DEBUG - Attempting to give awards
 2024-01-20 23:00:32,727 - DEBUG - Pilot id: ea2dca05dc204673da916448f77f00f1 is assigned to 801 NAS
@@ -523,6 +328,7 @@
 2024-01-20 23:00:32,728 - DEBUG - This is the LCR award!!!
 2024-01-20 23:00:32,728 - DEBUG - This pilot is ready for their LCR role.
 2024-01-20 23:00:32,728 - DEBUG - Squadron has an LCR role specified: 801 NAS [LCR]
+2024-01-20 23:02:39,209 - DEBUG - Bot script started.
 2024-01-20 23:02:39,223 - DEBUG - Bot script started.
 2024-01-20 23:02:43,656 - DEBUG - Attempting to give awards
 2024-01-20 23:02:47,466 - DEBUG - Pilot id: ea2dca05dc204673da916448f77f00f1 is Engines who is assigned to 801 NAS
@@ -530,6 +336,7 @@
 2024-01-20 23:02:47,467 - DEBUG - This is the LCR award!!!
 2024-01-20 23:02:47,467 - DEBUG - This pilot is ready for their LCR role.
 2024-01-20 23:02:47,467 - DEBUG - Squadron has an LCR role specified: 801 NAS [LCR]
+2024-01-20 23:06:38,123 - DEBUG - Bot script started.
 2024-01-20 23:06:38,139 - DEBUG - Bot script started.
 2024-01-20 23:06:43,685 - DEBUG - Attempting to give awards
 2024-01-20 23:06:49,798 - DEBUG - Pilot id: ea2dca05dc204673da916448f77f00f1 is Engines who is assigned to 801 NAS
@@ -538,6 +345,7 @@
 2024-01-20 23:06:49,798 - DEBUG - This pilot is ready for their LCR role.
 2024-01-20 23:06:49,799 - DEBUG - Squadron has an LCR role specified: 801 NAS [LCR]
 2024-01-20 23:06:49,961 - ERROR - Unable to find matching Discord user.
+2024-01-20 23:08:17,869 - DEBUG - Bot script started.
 2024-01-20 23:08:17,879 - DEBUG - Bot script started.
 2024-01-20 23:08:39,851 - DEBUG - Attempting to give awards
 2024-01-20 23:08:44,271 - DEBUG - Pilot id: ea2dca05dc204673da916448f77f00f1 is Engines who is assigned to 801 NAS
@@ -546,6 +354,7 @@
 2024-01-20 23:08:44,271 - DEBUG - This pilot is ready for their LCR role.
 2024-01-20 23:08:44,272 - DEBUG - Squadron has an LCR role specified: 801 NAS [LCR]
 2024-01-20 23:08:44,477 - ERROR - Unable to find matching Discord user.
+2024-01-20 23:10:34,057 - DEBUG - Bot script started.
 2024-01-20 23:10:34,071 - DEBUG - Bot script started.
 2024-01-20 23:10:39,082 - DEBUG - Attempting to give awards
 2024-01-20 23:10:42,506 - DEBUG - Pilot id: ea2dca05dc204673da916448f77f00f1 is Engines who is assigned to 801 NAS
@@ -554,7 +363,9 @@
 2024-01-20 23:10:42,507 - DEBUG - This pilot is ready for their LCR role.
 2024-01-20 23:10:42,508 - DEBUG - Squadron has an LCR role specified: 801 NAS [LCR]
 2024-01-20 23:10:42,750 - ERROR - Unable to find matching Discord user.
+2024-01-20 23:10:56,224 - DEBUG - Bot script started.
 2024-01-20 23:10:56,240 - DEBUG - Bot script started.
+2024-01-20 23:11:12,201 - DEBUG - Bot script started.
 2024-01-20 23:11:12,214 - DEBUG - Bot script started.
 2024-01-20 23:11:16,563 - DEBUG - Attempting to give awards
 2024-01-20 23:11:25,525 - DEBUG - Pilot id: ea2dca05dc204673da916448f77f00f1 is Engines who is assigned to 801 NAS
@@ -563,6 +374,7 @@
 2024-01-20 23:11:25,525 - DEBUG - This pilot is ready for their LCR role.
 2024-01-20 23:11:25,526 - DEBUG - Squadron has an LCR role specified: 801 NAS [LCR]
 2024-01-20 23:11:25,740 - ERROR - Unable to find matching Discord user.
+2024-01-20 23:12:37,777 - DEBUG - Bot script started.
 2024-01-20 23:12:37,790 - DEBUG - Bot script started.
 2024-01-20 23:12:42,051 - DEBUG - Attempting to give awards
 2024-01-20 23:12:45,309 - DEBUG - Pilot id: ea2dca05dc204673da916448f77f00f1 is Engines who is assigned to 801 NAS
@@ -573,6 +385,7 @@
 2024-01-20 23:12:45,490 - DEBUG - Match: 1191000819806503062, Score: 0
 2024-01-20 23:12:45,491 - DEBUG - Match: 666056172192923649, Score: 0
 2024-01-20 23:12:45,491 - ERROR - Unable to find matching Discord user.
+2024-01-20 23:14:22,438 - DEBUG - Bot script started.
 2024-01-20 23:14:22,451 - DEBUG - Bot script started.
 2024-01-20 23:14:28,348 - DEBUG - Attempting to give awards
 2024-01-20 23:14:32,187 - DEBUG - Pilot id: ea2dca05dc204673da916448f77f00f1 is Engines who is assigned to 801 NAS
@@ -582,6 +395,7 @@
 2024-01-20 23:14:32,189 - DEBUG - Squadron has an LCR role specified: 801 NAS [LCR]
 2024-01-20 23:14:32,338 - DEBUG - Discord Name: logso, ID: 1191000819806503062
 2024-01-20 23:14:32,338 - DEBUG - Discord Name: engines, ID: 666056172192923649
+2024-01-20 23:15:05,055 - DEBUG - Bot script started.
 2024-01-20 23:15:05,065 - DEBUG - Bot script started.
 2024-01-20 23:15:11,589 - DEBUG - Attempting to give awards
 2024-01-20 23:15:16,413 - DEBUG - Pilot id: ea2dca05dc204673da916448f77f00f1 is Engines who is assigned to 801 NAS
@@ -594,6 +408,7 @@
 2024-01-20 23:15:16,580 - DEBUG - Match: 1191000819806503062, Score: 0
 2024-01-20 23:15:16,580 - DEBUG - Match: 666056172192923649, Score: 0
 2024-01-20 23:15:16,580 - ERROR - Unable to find matching Discord user.
+2024-01-20 23:17:30,426 - DEBUG - Bot script started.
 2024-01-20 23:17:30,439 - DEBUG - Bot script started.
 2024-01-20 23:17:30,440 - DEBUG - Test match score between 'engines' and 'engines': 100
 2024-01-20 23:18:02,166 - DEBUG - Attempting to give awards
@@ -607,6 +422,7 @@
 2024-01-20 23:18:07,004 - DEBUG - Match: 1191000819806503062, Score: 0
 2024-01-20 23:18:07,004 - DEBUG - Match: 666056172192923649, Score: 0
 2024-01-20 23:18:07,005 - ERROR - Unable to find matching Discord user.
+2024-01-20 23:18:53,219 - DEBUG - Bot script started.
 2024-01-20 23:18:53,231 - DEBUG - Bot script started.
 2024-01-20 23:18:53,233 - DEBUG - Test match score between 'engines' and 'engines': 100
 2024-01-20 23:19:05,050 - DEBUG - Attempting to give awards
@@ -620,8 +436,10 @@
 2024-01-20 23:19:09,367 - DEBUG - Match: 1191000819806503062, Score: 0
 2024-01-20 23:19:09,367 - DEBUG - Match: 666056172192923649, Score: 0
 2024-01-20 23:19:09,599 - DEBUG - Assigned role '801 NAS [LCR]' to pilot with Discord ID 1191000819806503062
+2024-01-20 23:26:00,600 - DEBUG - Bot script started.
 2024-01-20 23:26:00,614 - DEBUG - Bot script started.
 2024-01-20 23:26:00,615 - DEBUG - Test match score between 'engines' and 'engines': 100
+2024-01-20 23:27:04,641 - DEBUG - Bot script started.
 2024-01-20 23:27:04,654 - DEBUG - Bot script started.
 2024-01-20 23:27:04,656 - DEBUG - Test match score between 'engines' and 'engines': 100
 2024-01-20 23:27:12,808 - DEBUG - Attempting to give awards
@@ -636,6 +454,7 @@
 2024-01-20 23:27:16,082 - DEBUG - Match: 1191000819806503062, Score: 0
 2024-01-20 23:27:16,082 - DEBUG - Match: 666056172192923649, Score: 0
 2024-01-20 23:27:16,268 - DEBUG - Assigned role '801 NAS [LCR]' to pilot with Discord ID 1191000819806503062
+2024-01-20 23:28:19,602 - DEBUG - Bot script started.
 2024-01-20 23:28:19,616 - DEBUG - Bot script started.
 2024-01-20 23:28:19,618 - DEBUG - Test match score between 'engines' and 'engines': 100
 2024-01-20 23:28:26,410 - DEBUG - Attempting to give awards
@@ -651,6 +470,7 @@
 2024-01-20 23:28:29,670 - DEBUG - Match: 1191000819806503062, Score: 0
 2024-01-20 23:28:29,670 - DEBUG - Match: 666056172192923649, Score: 0
 2024-01-20 23:28:29,813 - DEBUG - Assigned role '801 NAS [LCR]' to pilot with Discord ID 1191000819806503062
+2024-01-20 23:29:10,788 - DEBUG - Bot script started.
 2024-01-20 23:29:10,803 - DEBUG - Bot script started.
 2024-01-20 23:29:10,803 - DEBUG - Test match score between 'engines' and 'engines': 100
 2024-01-20 23:29:14,067 - DEBUG - Attempting to give awards
@@ -670,6 +490,7 @@
 2024-01-20 23:29:29,462 - DEBUG - Comparing 'engines' with 'logso' (ID: 1191000819806503062), Score: 33
 2024-01-20 23:29:29,462 - DEBUG - Comparing 'engines' with 'engines' (ID: 666056172192923649), Score: 100
 2024-01-20 23:29:29,659 - DEBUG - Assigned role '801 NAS [LCR]' to pilot with Discord ID 1191000819806503062
+2024-01-20 23:32:05,011 - DEBUG - Bot script started.
 2024-01-20 23:32:05,024 - DEBUG - Bot script started.
 2024-01-20 23:32:05,026 - DEBUG - Test match score between 'engines' and 'engines': 100
 2024-01-20 23:32:10,602 - DEBUG - Attempting to give awards
@@ -685,9 +506,11 @@
 2024-01-20 23:32:15,002 - DEBUG - Comparing 'engines' with 'logso' (ID: 1191000819806503062), Score: 33
 2024-01-20 23:32:15,002 - DEBUG - Comparing 'engines' with 'engines' (ID: 666056172192923649), Score: 100
 2024-01-20 23:32:15,251 - DEBUG - Assigned role '801 NAS [LCR]' to pilot with Discord ID 666056172192923649
+2024-01-20 23:47:49,942 - DEBUG - Bot script started.
 2024-01-20 23:47:49,954 - DEBUG - Bot script started.
 2024-01-20 23:47:49,956 - DEBUG - Test match score between 'engines' and 'engines': 100
 2024-01-20 23:48:11,486 - DEBUG - Attempting to give awards
+2024-01-20 23:49:06,124 - DEBUG - Bot script started.
 2024-01-20 23:49:06,136 - DEBUG - Bot script started.
 2024-01-20 23:49:06,137 - DEBUG - Test match score between 'engines' and 'engines': 100
 2024-01-20 23:49:13,471 - DEBUG - Attempting to give awards
@@ -704,21 +527,6 @@
 2024-01-20 23:49:18,359 - DEBUG - Comparing 'engines' with 'engines' (ID: 666056172192923649), Score: 100
 2024-01-20 23:49:18,587 - DEBUG - Assigned role '801 NAS [LCR]' to pilot with Discord ID 666056172192923649
 2024-01-20 23:49:18,796 - DEBUG - Assigning award: 42 to pilot: Lt Cdr Engines
+2024-01-20 23:53:32,789 - DEBUG - Bot script started.
 2024-01-20 23:53:32,794 - DEBUG - Bot script started.
 2024-01-20 23:53:32,794 - DEBUG - Test match score between 'engines' and 'engines': 100
-2024-01-20 23:54:43,874 - DEBUG - Bot script started.
-2024-01-20 23:54:43,876 - DEBUG - Test match score between 'engines' and 'engines': 100
-2024-01-20 23:54:50,330 - DEBUG - Attempting to give awards
-2024-01-20 23:57:52,385 - DEBUG - Attempting to give awards
-2024-01-20 23:57:57,527 - DEBUG - Pilot id: ea2dca05dc204673da916448f77f00f1 is Engines who is assigned to 801 NAS
-2024-01-20 23:57:57,527 - DEBUG - Looking into award id 46 and checking if it matches the LCR award (42).
-2024-01-20 23:57:57,527 - DEBUG - This is the CR award!!!
-2024-01-20 23:57:57,527 - DEBUG - Squadron has an CR role specified: 801 NAS
-2024-01-20 23:57:57,692 - DEBUG - member names: {'logso': 1191000819806503062, 'engines': 666056172192923649}
-2024-01-20 23:57:57,692 - DEBUG - Discord Name: logso, ID: 1191000819806503062
-2024-01-20 23:57:57,692 - DEBUG - Discord Name: engines, ID: 666056172192923649
-2024-01-20 23:57:57,692 - DEBUG - Normalized pilot name: engines
-2024-01-20 23:57:57,692 - DEBUG - Comparing 'engines' with 'logso' (ID: 1191000819806503062), Score: 33
-2024-01-20 23:57:57,692 - DEBUG - Comparing 'engines' with 'engines' (ID: 666056172192923649), Score: 100
-2024-01-20 23:57:57,881 - DEBUG - Assigned role '801 NAS' to pilot with Discord ID 666056172192923649
-2024-01-20 23:57:58,115 - DEBUG - Assigning award: 46 to pilot: Lt Cdr Engines

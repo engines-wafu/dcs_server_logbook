@@ -66,7 +66,10 @@ def get_squadron_details(db_path, squadron_id):
                 "squadron_commission_date": row[3],
                 "squadron_commanding_officer": row[4],
                 "squadron_aircraft_type": row[5],
-                "squadron_pseudo_type": row[6]
+                "squadron_pseudo_type": row[6],
+                "squadron_lcr_role": row[7],
+                "squadron_cr_role": row[8],
+                "squadron_cr_award": row[9]
             }
             return details
         else:
@@ -248,6 +251,32 @@ def add_qualification_to_database(db_path, qualification_name, qualification_des
         raise Exception(f"Qualification already exists: {e}")
     except Exception as e:
         raise Exception(f"An error occurred: {e}")
+    finally:
+        conn.close()
+
+def get_all_pilots(db_path):
+    """
+    Retrieves all pilots and their IDs from the database.
+
+    :param db_path: Path to the SQLite database file.
+    :return: A list of tuples, each containing a pilot's ID and name.
+    """
+    try:
+        conn = sqlite3.connect(db_path)
+        cursor = conn.cursor()
+
+        # Assuming your table is named 'Pilots' and has columns 'pilot_id' and 'pilot_name'
+        query = "SELECT pilot_id, pilot_name FROM Pilots"
+        cursor.execute(query)
+
+        # Fetch all results
+        pilots = cursor.fetchall()
+
+        return pilots
+
+    except sqlite3.Error as e:
+        print(f"Database error: {e}")
+        return []
     finally:
         conn.close()
 
@@ -751,6 +780,22 @@ def insert_flight_plan(db_path, aircraft_type, aircraft_callsign, flight_rules, 
         conn.close()
 
     return True
+
+def get_pilot_squadron_id(db_path, pilot_id):
+    try:
+        conn = sqlite3.connect(db_path)
+        cursor = conn.cursor()
+
+        query = "SELECT squadron_id FROM Squadron_Pilots WHERE pilot_id = ?"
+        cursor.execute(query, (pilot_id,))
+        result = cursor.fetchone()
+
+        conn.close()
+
+        return result[0] if result else None
+    except sqlite3.Error as e:
+        print(f"Database error: {e}")
+        return None
 
 # Tests for db interactions
 

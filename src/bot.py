@@ -1,12 +1,14 @@
-import discord, asyncio, logging, time, datetime, tracemalloc, os
+import discord, asyncio, logging, time, datetime, tracemalloc, os, string
 from utils.time_management import epoch_from_date
 from main import update_logbook_report
 from utils.ribbon import *
 from utils.discord_utils import *
 from discord.ext import commands
+from fuzzywuzzy import process, fuzz
 from discord.ext.commands import has_role, CheckFailure
 from html_generator.html_generator import generate_index_html, load_combined_stats, generate_flight_plans_page
 from utils.stat_processing import get_pilot_qualifications_with_details, get_pilot_awards_with_details, get_pilot_details
+from utils.stats_analysis import generate_pilot_hour_report
 from database.db_crud import *
 from config import *
 
@@ -37,6 +39,17 @@ award_messages = {}
 bot = commands.Bot(command_prefix='!', intents=discord.Intents.all())
 predefined_colors = PREDEFINED_COLORS
 
+# Hardcoded test
+test_name = "engines"
+pilot_name = "Engines"
+normalized_test_name = ''.join(ch.lower() for ch in test_name if ch.isalnum())
+normalized_pilot_name = ''.join(ch.lower() for ch in pilot_name if ch.isalnum())
+
+# Perform a direct fuzzy match
+score = fuzz.ratio(normalized_test_name, normalized_pilot_name)
+logger.debug(f"Test match score between '{normalized_test_name}' and '{normalized_pilot_name}': {score}")
+
+
 def is_commanding_officer():
     async def predicate(ctx):
         return any(role.name == COMMANDING_OFFICER for role in ctx.author.roles)
@@ -46,6 +59,63 @@ def is_server_admin():
     async def predicate(ctx):
         return any(role.name == SERVER_ADMIN for role in ctx.author.roles)
     return commands.check(predicate)
+
+async def fuzzy_match_pilot_to_discord_user(ctx, pilot_name):
+    """
+    Perform a fuzzy search to match a pilot name to a Discord user ID.
+    """
+    if pilot_name is None:
+        logger.error("Pilot name is None")
+        return None
+
+    def normalize_name(name):
+        # Lowercase and remove whitespace and punctuation
+        return ''.join(ch.lower() for ch in name if ch.isalnum())
+
+    # Retrieve all Discord users from the guild
+    all_discord_users = await get_all_discord_users(ctx.guild)
+    
+    # Normalize names and create a mapping of names to IDs
+    valid_members = {normalize_name(user.display_name): user.id for user in all_discord_users if user and user.display_name}
+    logger.debug(f"member names: {valid_members}")
+
+    # Log the valid_members dictionary
+    for name, id in valid_members.items():
+        logger.debug(f"Discord Name: {name}, ID: {id}")
+
+    # Normalize pilot_name
+    normalized_pilot_name = normalize_name(pilot_name)
+    logger.debug(f"Normalized pilot name: {normalized_pilot_name}")
+
+    highest_score = 0
+    best_match_id = None
+
+    # Perform manual comparisons and find the best match
+    for discord_name, discord_id in valid_members.items():
+        score = fuzz.ratio(normalized_pilot_name, discord_name)
+        logger.debug(f"Comparing '{normalized_pilot_name}' with '{discord_name}' (ID: {discord_id}), Score: {score}")
+
+        if score > highest_score:
+            highest_score = score
+            best_match_id = discord_id
+
+    if highest_score > 60:  # Adjust the threshold as needed
+        return best_match_id
+    else:
+        return None
+
+
+async def get_all_discord_users(guild):
+    """
+    Retrieves all users from the given guild (server).
+
+    :param guild: The discord Guild (server) object.
+    :return: A list of Member objects.
+    """
+    members = []
+    async for member in guild.fetch_members(limit=None):
+        members.append(member)
+    return members
 
 @bot.event
 async def on_command_error(ctx, error):
@@ -84,6 +154,32 @@ async def on_reaction_add(reaction, user):
 
     # Remove the reaction to allow for re-use
     await reaction.message.remove_reaction(reaction.emoji, user)
+
+def chunk_report(report_sections):
+    # Convert the report sections into pages
+    return report_sections  # Each section is now a page
+
+def create_qualifications_embed(qualifications, current_page, items_per_page):
+    """
+    Creates a Discord embed for a paginated list of qualifications.
+
+    :param qualifications: A list of qualifications (tuple of qualification ID, name, and duration).
+    :param current_page: The current page number.
+    :param items_per_page: The number of items to display per page.
+    :return: A Discord Embed object containing the qualifications for the current page.
+    """
+    start_index = (current_page - 1) * items_per_page
+    end_index = start_index + items_per_page
+    paginated_qualifications = qualifications[start_index:end_index]
+
+    embed = discord.Embed(title="Available Qualifications", description="Select a qualification by its ID.", color=0x00ff00)
+    for qid, qname, _ in paginated_qualifications:
+        embed.add_field(name=str(qid), value=qname, inline=False)
+
+    # Optionally, you can add footer text to show the current page number
+    embed.set_footer(text=f"Page {current_page} of {(len(qualifications) + items_per_page - 1) // items_per_page}")
+
+    return embed
 
 def create_awards_embed(awards, page, items_per_page=ITEMS_PER_PAGE):
     embed = discord.Embed(title=f"Available Awards - Page {page}", color=0x00ff00)
@@ -760,27 +856,126 @@ async def give_award(ctx):
     award_ids = award_ids_response.split(",")
 
     for pilot_id in pilot_ids:
+        squadron_id = get_pilot_squadron_id(DB_PATH, pilot_id)
+        squadron_details = get_squadron_details(DB_PATH, squadron_id)
+        cr_award = squadron_details.get("squadron_cr_award")
+        cr_role = squadron_details.get("squadron_cr_role")
+        lcr_role = squadron_details.get("squadron_lcr_role")
+        pilot_name = get_pilot_name(DB_PATH, pilot_id)
+        logger.debug(f"Pilot id: {pilot_id} is {pilot_name} who is assigned to {squadron_id}")
         for award_id in award_ids:
-            if award_id.strip() in awards_dict:
-                # Assign the award
-                assign_award_to_pilot(DB_PATH, pilot_id, int(award_id.strip()))
+            award_id = int(award_id.strip())
+            logger.debug(f"Looking into award id {award_id} and checking if it matches the LCR award ({LCR_AWARD}).")
+            
+            # First check if the award matches the CR award
+            if award_id == cr_award:
+                logger.debug(f"This is the CR award!!!")
 
+                if squadron_details:
+
+                    # Check there is actually an CR role configured
+                    if lcr_role:
+                        logger.debug(f"Squadron has an CR role specified: {cr_role}")
+
+                        # Fuzzy match the pilot's Discord username
+                        discord_user_id = await fuzzy_match_pilot_to_discord_user(ctx, pilot_name)
+
+                        if discord_user_id:
+                            # Retrieve the guild (server) object
+                            guild = ctx.guild
+
+                            # Find the role by name in the guild
+                            role_to_assign = discord.utils.get(guild.roles, name=cr_role)
+                            if role_to_assign:
+                                # Find the member by their Discord user ID
+                                member = guild.get_member(discord_user_id)
+                                if member:
+
+                                    # Assign the role to the member
+                                    await member.add_roles(role_to_assign)
+                                    logger.debug(f"Assigned role '{cr_role}' to pilot with Discord ID {discord_user_id}")
+                                    await ctx.send(f"Assigned role '{cr_role}' to the pilot.")
+                                else:
+                                    logger.error(f"Member with Discord ID {discord_user_id} not found in the guild.")
+                                    await ctx.send("Pilot not found in the Discord server.")
+                            else:
+                                logger.error(f"Role '{cr_role}' not found in the guild.")
+                                await ctx.send(f"Role '{cr_role}' not found in the Discord server.")
+                        else:
+                            logger.error("Unable to find matching Discord user.")
+                            await ctx.send("Unable to find a matching Discord user.")
+                    else:
+                        logger.error("Squadron does not have an CR role specified.")
+                        await ctx.send(embed=discord.Embed(description="There's no CR role configured for this squadron, please notify an admin.", color=0xff0000))
+                else:
+                    logger.error("Failed to retrieve squadron details or squadron not found.")
+                    await ctx.send(embed=discord.Embed(description="Failed to retrieve squadron details, please notify an admin.", color=0xff0000))
+
+            # If it's not a CR award, is it a LCR award?
+            if award_id == LCR_AWARD:
+
+                # Yes!  Now check if the pilot has been assigned to a squadron yet:
+                logger.debug(f"This is the LCR award!!!")
+                if squadron_id == OCU_SQUADRON:
+
+                    # The pilot's still in the OCU, tell the user to assign them first
+                    logger.debug(f"This pilot is still in the OCU!")
+                    await ctx.send(embed=discord.Embed(description="This pilot is still in the OCU, please assign them to a primary squadron.", color=0x00ff00))
+                    return
+                else:
+
+                    # Assign the pilot the discord role
+                    logger.debug(f"This pilot is ready for their LCR role.")
+                    if squadron_details:
+
+                        # Check there is actually an LCR role configured
+                        if lcr_role:
+                            logger.debug(f"Squadron has an LCR role specified: {lcr_role}")
+
+                            # Fuzzy match the pilot's Discord username
+                            discord_user_id = await fuzzy_match_pilot_to_discord_user(ctx, pilot_name)
+
+                            if discord_user_id:
+                                # Retrieve the guild (server) object
+                                guild = ctx.guild
+
+                                # Find the role by name in the guild
+                                role_to_assign = discord.utils.get(guild.roles, name=lcr_role)
+                                if role_to_assign:
+                                    # Find the member by their Discord user ID
+                                    member = guild.get_member(discord_user_id)
+                                    if member:
+
+                                        # Assign the role to the member
+                                        await member.add_roles(role_to_assign)
+                                        logger.debug(f"Assigned role '{lcr_role}' to pilot with Discord ID {discord_user_id}")
+                                        await ctx.send(f"Assigned role '{lcr_role}' to the pilot.")
+                                    else:
+                                        logger.error(f"Member with Discord ID {discord_user_id} not found in the guild.")
+                                        await ctx.send("Pilot not found in the Discord server.")
+                                else:
+                                    logger.error(f"Role '{lcr_role}' not found in the guild.")
+                                    await ctx.send(f"Role '{lcr_role}' not found in the Discord server.")
+                            else:
+                                logger.error("Unable to find matching Discord user.")
+                                await ctx.send("Unable to find a matching Discord user.")
+                        else:
+                            logger.error("Squadron does not have an LCR role specified.")
+                            await ctx.send(embed=discord.Embed(description="There's no LCR role configured for this squadron, please notify an admin.", color=0xff0000))
+                    else:
+                        logger.error("Failed to retrieve squadron details or squadron not found.")
+                        await ctx.send(embed=discord.Embed(description="Failed to retrieve squadron details, please notify an admin.", color=0xff0000))
+
+            # Now the CR/LCR checks are complete, assign the role if it is a valid role
+            if str(award_id) in awards_dict:
+                # Assign the award
+                assign_award_to_pilot(DB_PATH, pilot_id, award_id)
+    
                 # Get pilot details for role assignment
                 pilot_name, pilot_rank = get_pilot_name_and_rank(DB_PATH, pilot_id)
-
+    
                 # Debug logger
-                logger.debug(f"Assigning award: {award_id.strip()} to pilot: {pilot_rank} {pilot_name}")
-
-                # Check for role assignment
-                if int(award_id.strip()) in LCR_AWARDS:
-                    logger.debug(f"Attempting to assign LCR role for award ID {award_id.strip()}")
-                    logger.debug(f"Assigning role id: {LCR_ROLE}")
-                    await assign_role(ctx, pilot_name, pilot_rank, LCR_ROLE)
-                elif int(award_id.strip()) in CR_AWARDS:
-                    logger.debug(f"Attempting to assign CR role for award ID {award_id.strip()}")
-                    await assign_role(ctx, pilot_name, pilot_rank, CR_ROLE)
-                else:
-                    logger.debug(f"Award {award_id.strip()} not a role award.")
+                logger.debug(f"Assigning award: {award_id} to pilot: {pilot_rank} {pilot_name}")
 
     # Confirmation message
     await ctx.send(embed=discord.Embed(description="Award(s) assigned to selected pilot(s).", color=0x00ff00))
@@ -825,6 +1020,7 @@ async def give_qualification(ctx):
     message = await ctx.send(embed=embed)
 
     # Store the message ID and other details for reaction handling
+    qualification_messages = {}
     qualification_messages[message.id] = {'page': current_page, 'total_pages': total_pages, 'qualifications': qualifications, 'items_per_page': items_per_page}
 
     # Add reaction emojis for navigation if there are multiple pages
@@ -1371,5 +1567,46 @@ async def help_command(ctx, command_name=None):
             first_line = command.help.split('\n')[0] if command.help else 'No description available'
             embed.add_field(name=f"!{command.name} {command.signature}{permission_info}", value=first_line, inline=False)
         await ctx.send(embed=embed)
+
+def create_embed(page_content, page_title, page_number):
+    embed = discord.Embed(title=page_title, description=f"Page {page_number}", color=0x00ff00)
+    
+    # Split the page_content to get the category and the list of pilots
+    category, pilots = page_content.split(':', 1)
+    category = f"**{category}**"  # Make the category bold
+
+    embed.add_field(name=category, value=pilots.strip(), inline=False)
+    return embed
+
+@bot.command(name='audit_logbook')
+@is_commanding_officer()
+async def audit_logbook(ctx):
+    report_data = generate_pilot_hour_report(JSON_PATH, DB_PATH)
+    report_pages = chunk_report(report_data)  # Assume chunk_report divides report_data into pages
+
+    current_page = 0
+    message = await ctx.send(embed=create_embed(report_pages[current_page], "Pilot Hour Audit Report", current_page + 1))
+    
+    # Add reaction arrows if there are multiple pages
+    if len(report_pages) > 1:
+        await message.add_reaction('⬅️')
+        await message.add_reaction('➡️')
+
+        def check(reaction, user):
+            return user == ctx.author and str(reaction.emoji) in ['⬅️', '➡️'] and reaction.message.id == message.id
+        
+        while True:
+            try:
+                reaction, user = await bot.wait_for('reaction_add', timeout=60.0, check=check)
+                if str(reaction.emoji) == '➡️' and current_page < len(report_pages) - 1:
+                    current_page += 1
+                    await message.edit(embed=create_embed(report_pages[current_page], "Pilot Hour Audit Report", current_page + 1))
+                    await message.remove_reaction(reaction, user)
+                elif str(reaction.emoji) == '⬅️' and current_page > 0:
+                    current_page -= 1
+                    await message.edit(embed=create_embed(report_pages[current_page], "Pilot Hour Audit Report", current_page + 1))
+                    await message.remove_reaction(reaction, user)
+            except asyncio.TimeoutError:
+                break
 
 bot.run(TOKEN)

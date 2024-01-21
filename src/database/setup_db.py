@@ -42,6 +42,9 @@ create_tables_commands = [
         squadron_commission_date TEXT NOT NULL,
         squadron_commanding_officer TEXT,
         squadron_aircraft_type TEXT,
+        squadron_lcr_role TEXT,
+        squadron_cr_role TEXT,
+        squadron_cr_award TEXT,
         squadron_pseudo_type TEXT
     );''',
     '''CREATE TABLE IF NOT EXISTS Aircraft (
@@ -94,6 +97,12 @@ create_tables_commands = [
         FOREIGN KEY (pilot_id) REFERENCES Pilots (pilot_id),
         FOREIGN KEY (award_id) REFERENCES Awards (award_id),
         PRIMARY KEY (pilot_id, award_id)
+    );'''
+    ''' CREATE TABLE IF NOT EXISTS Squadron_LCR_Roles (
+        squadron_id INTEGER,
+        role_id INTEGER,
+        FOREIGN KEY (squadron_id) REFERENCES Squadrons (squadron_id),
+        PRIMARY KEY (squadron_id)
     );'''
 ]
 

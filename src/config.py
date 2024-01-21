@@ -2,13 +2,12 @@
 COMMANDING_OFFICER = 'Squadron Commanders'
 CONTROLLER_ROLE = '939955938486538250'
 CONTROLLERS_CHANNEL_NAME = 'flight-plans'
-CR_AWARDS = [ 16,17,18,19,20 ]
-CR_ROLE = '1196287277001871481'
 DB_PATH = 'data/db/mayfly.db'
 ITEMS_PER_PAGE = 12
 JSON_PATH = 'data/stats/combinedStats.json'
-LCR_AWARDS = [ 42 ]
+LCR_AWARD = 42
 LCR_ROLE = '1196287080184152064'
+OCU_SQUADRON = "IV Sqn"
 PREDEFINED_COLORS = [
   "#C0C0C0",  # Silver
   "#B9CCED",  # Light Steel Blue
@@ -26,4 +25,4 @@ STATS_FILES = [
     'data/stats/SlmodStats_server2.json',
     'data/stats/SlmodStats_server3.json'
 ]
-TOKEN = 'MTE5MTAwMDgxOTgwNjUwMzA2Mg.GlyfGY.hUHcks8tl9CjGRjsW5QpHCQ6n-XEM7pbgynkVk'
+TOKEN = 'MTE5MTAwMDgxOTgwNjUwMzA2Mg.G-jN-h.-NRsUHmgzEmr3Fi2dJj3x31TpYqa2dkY99yJnI'
