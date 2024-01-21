@@ -26,4 +26,4 @@ STATS_FILES = [
     'data/stats/SlmodStats_server2.json',
     'data/stats/SlmodStats_server3.json'
 ]
-TOKEN = 'MTE5MTAwMDgxOTgwNjUwMzA2Mg.GlyfGY.hUHcks8tl9CjGRjsW5QpHCQ6n-XEM7pbgynkVk'
+TOKEN = ''
