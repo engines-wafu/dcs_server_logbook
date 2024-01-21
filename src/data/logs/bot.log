@@ -530,3 +530,20 @@
 2024-01-20 23:53:32,789 - DEBUG - Bot script started.
 2024-01-20 23:53:32,794 - DEBUG - Bot script started.
 2024-01-20 23:53:32,794 - DEBUG - Test match score between 'engines' and 'engines': 100
+2024-01-20 23:54:43,860 - DEBUG - Bot script started.
+2024-01-20 23:54:43,874 - DEBUG - Bot script started.
+2024-01-20 23:54:43,876 - DEBUG - Test match score between 'engines' and 'engines': 100
+2024-01-20 23:54:50,330 - DEBUG - Attempting to give awards
+2024-01-20 23:57:52,385 - DEBUG - Attempting to give awards
+2024-01-20 23:57:57,527 - DEBUG - Pilot id: ea2dca05dc204673da916448f77f00f1 is Engines who is assigned to 801 NAS
+2024-01-20 23:57:57,527 - DEBUG - Looking into award id 46 and checking if it matches the LCR award (42).
+2024-01-20 23:57:57,527 - DEBUG - This is the CR award!!!
+2024-01-20 23:57:57,527 - DEBUG - Squadron has an CR role specified: 801 NAS
+2024-01-20 23:57:57,692 - DEBUG - member names: {'logso': 1191000819806503062, 'engines': 666056172192923649}
+2024-01-20 23:57:57,692 - DEBUG - Discord Name: logso, ID: 1191000819806503062
+2024-01-20 23:57:57,692 - DEBUG - Discord Name: engines, ID: 666056172192923649
+2024-01-20 23:57:57,692 - DEBUG - Normalized pilot name: engines
+2024-01-20 23:57:57,692 - DEBUG - Comparing 'engines' with 'logso' (ID: 1191000819806503062), Score: 33
+2024-01-20 23:57:57,692 - DEBUG - Comparing 'engines' with 'engines' (ID: 666056172192923649), Score: 100
+2024-01-20 23:57:57,881 - DEBUG - Assigned role '801 NAS' to pilot with Discord ID 666056172192923649
+2024-01-20 23:57:58,115 - DEBUG - Assigning award: 46 to pilot: Lt Cdr Engines

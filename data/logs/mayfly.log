@@ -3861,3 +3861,104 @@ discord.ext.commands.errors.CommandInvokeError: Command raised an exception: Unb
 2024-01-20 23:53:32,794 - DEBUG - Test match score between 'engines' and 'engines': 100
 2024-01-20 23:53:32,794 - INFO - logging in using static token
 2024-01-20 23:53:33,627 - INFO - Shard ID None has connected to Gateway (Session ID: 714b4dfdb047f9bc880d637a0c38ef1f).
+2024-01-20 23:54:43,860 - DEBUG - Bot script started.
+2024-01-20 23:54:43,874 - DEBUG - Bot script started.
+2024-01-20 23:54:43,876 - DEBUG - Test match score between 'engines' and 'engines': 100
+2024-01-20 23:54:43,879 - INFO - logging in using static token
+2024-01-20 23:54:44,725 - INFO - Shard ID None has connected to Gateway (Session ID: c4b78dc3f4036220d09032e92b407d22).
+2024-01-20 23:54:50,330 - DEBUG - Attempting to give awards
+2024-01-20 23:56:01,180 - ERROR - Ignoring exception in on_command_error
+Traceback (most recent call last):
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\discord\ext\commands\core.py", line 235, in wrapped
+    ret = await coro(*args, **kwargs)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\src\bot.py", line 861, in give_award
+    cr_award = squadron_details.get("squadron_cr_award")
+               ^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'get'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\discord\client.py", line 441, in _run_event
+    await coro(*args, **kwargs)
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\src\bot.py", line 125, in on_command_error
+    raise error  # Re-raise other errors so you can notice them
+    ^^^^^^^^^^^
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\discord\ext\commands\bot.py", line 1350, in invoke
+    await ctx.command.invoke(ctx)
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\discord\ext\commands\core.py", line 1029, in invoke
+    await injected(*ctx.args, **ctx.kwargs)  # type: ignore
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\discord\ext\commands\core.py", line 244, in wrapped
+    raise CommandInvokeError(exc) from exc
+discord.ext.commands.errors.CommandInvokeError: Command raised an exception: AttributeError: 'NoneType' object has no attribute 'get'
+2024-01-20 23:57:52,385 - DEBUG - Attempting to give awards
+2024-01-20 23:57:57,527 - DEBUG - Pilot id: ea2dca05dc204673da916448f77f00f1 is Engines who is assigned to 801 NAS
+2024-01-20 23:57:57,527 - DEBUG - Looking into award id 46 and checking if it matches the LCR award (42).
+2024-01-20 23:57:57,527 - DEBUG - This is the CR award!!!
+2024-01-20 23:57:57,527 - DEBUG - Squadron has an CR role specified: 801 NAS
+2024-01-20 23:57:57,692 - DEBUG - member names: {'logso': 1191000819806503062, 'engines': 666056172192923649}
+2024-01-20 23:57:57,692 - DEBUG - Discord Name: logso, ID: 1191000819806503062
+2024-01-20 23:57:57,692 - DEBUG - Discord Name: engines, ID: 666056172192923649
+2024-01-20 23:57:57,692 - DEBUG - Normalized pilot name: engines
+2024-01-20 23:57:57,692 - DEBUG - Comparing 'engines' with 'logso' (ID: 1191000819806503062), Score: 33
+2024-01-20 23:57:57,692 - DEBUG - Comparing 'engines' with 'engines' (ID: 666056172192923649), Score: 100
+2024-01-20 23:57:57,881 - DEBUG - Assigned role '801 NAS' to pilot with Discord ID 666056172192923649
+2024-01-20 23:57:58,115 - DEBUG - Assigning award: 46 to pilot: Lt Cdr Engines
+2024-01-20 23:58:14,628 - ERROR - Ignoring exception in on_command_error
+Traceback (most recent call last):
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\discord\client.py", line 441, in _run_event
+    await coro(*args, **kwargs)
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\src\bot.py", line 125, in on_command_error
+    raise error  # Re-raise other errors so you can notice them
+    ^^^^^^^^^^^
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\discord\ext\commands\bot.py", line 1350, in invoke
+    await ctx.command.invoke(ctx)
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\discord\ext\commands\core.py", line 1021, in invoke
+    await self.prepare(ctx)
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\discord\ext\commands\core.py", line 938, in prepare
+    await self._parse_arguments(ctx)
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\discord\ext\commands\core.py", line 853, in _parse_arguments
+    kwargs[name] = await self.transform(ctx, param, attachments)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gavin\Dropbox\Git Repos\Project Mayfly\env\Lib\site-packages\discord\ext\commands\core.py", line 697, in transform
+    raise MissingRequiredArgument(param)
+discord.ext.commands.errors.MissingRequiredArgument: pilot_name is a required argument that is missing.
+2024-01-20 23:58:20,985 - INFO - Seconds: 42386.873999999996, total: 11.8
+2024-01-20 23:58:20,985 - INFO - Seconds: 87618.4, total: 36.1
+2024-01-20 23:58:20,985 - INFO - Seconds: 210.048, total: 36.2
+2024-01-20 23:58:20,985 - INFO - Seconds: 54946.247, total: 51.5
+2024-01-20 23:58:20,985 - INFO - Seconds: 1435465.4490002, total: 450.2
+2024-01-20 23:58:20,986 - INFO - Seconds: 7759.34, total: 452.4
+2024-01-20 23:58:20,986 - INFO - Seconds: 20087.396, total: 458.0
+2024-01-20 23:58:20,986 - INFO - Seconds: 31332.528, total: 466.7
+2024-01-20 23:58:20,986 - INFO - Seconds: 130362.03, total: 502.9
+2024-01-20 23:58:20,986 - INFO - Seconds: 3511.936, total: 503.9
+2024-01-20 23:58:20,986 - INFO - Seconds: 15894.205, total: 508.29999999999995
+2024-01-20 23:58:20,986 - INFO - Seconds: 21477.569, total: 514.3
+2024-01-20 23:58:20,987 - INFO - Seconds: 5183.677, total: 515.6999999999999
+2024-01-20 23:58:20,987 - INFO - Seconds: 10011.462, total: 518.4999999999999
+2024-01-20 23:58:20,987 - INFO - Seconds: 1091.084, total: 518.7999999999998
+2024-01-20 23:58:20,987 - INFO - Seconds: 8689.942, total: 521.1999999999998
+2024-01-20 23:58:20,987 - INFO - Seconds: 13511.256, total: 524.9999999999998
+2024-01-20 23:58:20,987 - INFO - Seconds: 7087.85, total: 526.9999999999998
+2024-01-20 23:58:39,858 - INFO - Seconds: 42386.873999999996, total: 11.8
+2024-01-20 23:58:39,858 - INFO - Seconds: 87618.4, total: 36.1
+2024-01-20 23:58:39,859 - INFO - Seconds: 210.048, total: 36.2
+2024-01-20 23:58:39,859 - INFO - Seconds: 54946.247, total: 51.5
+2024-01-20 23:58:39,859 - INFO - Seconds: 1435465.4490002, total: 450.2
+2024-01-20 23:58:39,859 - INFO - Seconds: 7759.34, total: 452.4
+2024-01-20 23:58:39,859 - INFO - Seconds: 20087.396, total: 458.0
+2024-01-20 23:58:39,859 - INFO - Seconds: 31332.528, total: 466.7
+2024-01-20 23:58:39,860 - INFO - Seconds: 130362.03, total: 502.9
+2024-01-20 23:58:39,860 - INFO - Seconds: 3511.936, total: 503.9
+2024-01-20 23:58:39,860 - INFO - Seconds: 15894.205, total: 508.29999999999995
+2024-01-20 23:58:39,860 - INFO - Seconds: 21477.569, total: 514.3
+2024-01-20 23:58:39,860 - INFO - Seconds: 5183.677, total: 515.6999999999999
+2024-01-20 23:58:39,860 - INFO - Seconds: 10011.462, total: 518.4999999999999
+2024-01-20 23:58:39,860 - INFO - Seconds: 1091.084, total: 518.7999999999998
+2024-01-20 23:58:39,860 - INFO - Seconds: 8689.942, total: 521.1999999999998
+2024-01-20 23:58:39,861 - INFO - Seconds: 13511.256, total: 524.9999999999998
+2024-01-20 23:58:39,861 - INFO - Seconds: 7087.85, total: 526.9999999999998
+2024-01-20 23:59:34,466 - INFO - Shard ID None session has been invalidated.
