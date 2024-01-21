@@ -58,6 +58,9 @@ def generate_index_html(db_path, output_path, json_file_path):
     :param json_file_path: Path to the combined stats JSON file.
     """
 
+    # Fetch the current date
+    current_date = datetime.datetime.now().strftime("%d %B %Y")
+
     # Load combined stats
     combined_stats = load_combined_stats(json_file_path)
 
@@ -126,6 +129,7 @@ def generate_index_html(db_path, output_path, json_file_path):
         <div class='container'>
             <h1>Joint Strike Wing Squadron Dashboard</h1>
             {squadrons_content}
+            <p>Page generated on {current_date}</p>
         </div>
     </body>
     </html>

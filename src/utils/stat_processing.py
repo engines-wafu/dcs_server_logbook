@@ -168,6 +168,9 @@ def generate_pilot_info_page(DB_PATH, pilot_id, pilot_specific_stats, output_dir
     conn = sqlite3.connect(DB_PATH)
     cursor = conn.cursor()
 
+    # Fetch the current date
+    current_date = datetime.datetime.now().strftime("%d %B %Y")
+
     # Fetch details for the specific pilot
     cursor.execute("SELECT pilot_id, pilot_name, pilot_service, pilot_rank FROM Pilots WHERE pilot_id = ?", (pilot_id,))
     pilot = cursor.fetchone()
@@ -257,6 +260,7 @@ def generate_pilot_info_page(DB_PATH, pilot_id, pilot_specific_stats, output_dir
                 {type_totals_html}
                 <h3>Kills</h3>
                 {kills_html}
+            <p>Page generated on {current_date}</p>
             </div>
         </body>
         </html>
