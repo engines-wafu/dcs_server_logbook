@@ -793,192 +793,108 @@ async def create_qualification(ctx):
 @bot.command(name='give_award')
 @is_commanding_officer()
 async def give_award(ctx):
-    """
-    Assigns specified awards to selected pilots.
-    
-    This command first displays a list of available awards. The user is then prompted to enter the names of the pilots (comma-separated) and the IDs of the awards (also comma-separated). The specified awards are then assigned to the given pilots.
-    
-    Usage: !give_award
-
-    Example:
-    User: !give_award
-    Bot: [Displays list of available awards]
-    Bot: Enter pilot name(s) (comma-separated):
-    User: JohnDoe, JaneDoe
-    Bot: Enter the award ID(s) from the list above (comma-separated):
-    User: 1, 3
-    """
-    logger.debug(f"Attempting to give awards")
-    # Retrieve available awards
+    logger.debug("Attempting to give awards")
     awards = get_awards(DB_PATH)
     if not awards:
         await ctx.send(embed=discord.Embed(description="No awards available.", color=0xff0000))
         return
 
-    # Create a dictionary of awards
-    awards_dict = {str(aid): aname for aid, aname in awards}
+    await display_awards(ctx, awards)
+    pilot_names_response = await get_and_process_user_input(ctx, "Enter pilot name(s) (comma-separated):")
+    if not pilot_names_response:
+        return
 
-    # Define page variables
+    award_ids_response = await get_and_process_user_input(ctx, "Enter the award ID(s) from the list above (comma-separated):")
+    if not award_ids_response:
+        return
+
+    pilot_ids = process_pilot_names(pilot_names_response)
+    award_ids = process_award_ids(award_ids_response)
+
+    for pilot_id in pilot_ids:
+        await process_pilot_award(ctx, pilot_id, award_ids)
+
+    await ctx.send(embed=discord.Embed(description="Award(s) assigned to selected pilot(s).", color=0x00ff00))
+
+async def get_and_process_user_input(ctx, prompt):
+    await ctx.send(prompt)
+    return await get_response(ctx)
+
+def process_pilot_names(pilot_names_response):
+    return [find_pilot_id_by_name(DB_PATH, name.strip()) for name in pilot_names_response.split(",") if name.strip()]
+
+def process_award_ids(award_ids_response):
+    return [int(award_id.strip()) for award_id in award_ids_response.split(",") if award_id.strip()]
+
+async def process_pilot_award(ctx, pilot_id, award_ids):
+    pilot_name = get_pilot_name(DB_PATH, pilot_id)
+    squadron_details = get_squadron_details(DB_PATH, get_pilot_squadron_id(DB_PATH, pilot_id))
+
+    for award_id in award_ids:
+        award_id = int(award_id.strip())
+        if award_id == squadron_details.get("squadron_cr_award"):
+            await handle_cr_award(ctx, pilot_id, pilot_name, squadron_details)
+        elif award_id == LCR_AWARD:
+            await handle_lcr_award(ctx, pilot_id, pilot_name, squadron_details)
+        elif str(award_id) in awards_dict:
+            assign_award_to_pilot(DB_PATH, pilot_id, award_id)
+
+async def display_awards(ctx, awards):
     current_page = 1
-    items_per_page = ITEMS_PER_PAGE
+    items_per_page = ITEMS_PER_PAGE  # Make sure this constant is defined
     total_pages = (len(awards) + items_per_page - 1) // items_per_page
 
-    # Create an embed for awards
     embed = create_awards_embed(awards, current_page, items_per_page)
-    
-    # Send the initial awards list
     message = await ctx.send(embed=embed)
 
-    # Store the message ID and other details for reaction handling
-    award_messages[message.id] = {'page': current_page, 'total_pages': total_pages, 'awards': awards, 'items_per_page': items_per_page}
-
-    # Add reaction emojis for navigation if there are multiple pages
     if total_pages > 1:
         await message.add_reaction("⬅️")
         await message.add_reaction("➡️")
 
-    # Get pilot names
-    await ctx.send("Enter pilot name(s) (comma-separated):")
-    pilot_names_response = await get_response(ctx)
-    if not pilot_names_response:
-        return
+async def handle_cr_award(ctx, pilot_id, pilot_name, squadron_details):
+    cr_role = squadron_details.get("squadron_cr_role")
+    lcr_role = squadron_details.get("squadron_lcr_role")
 
-    # Process pilot names and get their IDs
-    pilot_ids = [find_pilot_id_by_name(DB_PATH, name.strip()) for name in pilot_names_response.split(",") if name.strip()]
+    discord_user_id = await fuzzy_match_pilot_to_discord_user(ctx, pilot_name)
+    if discord_user_id:
+        guild = ctx.guild
+        member = guild.get_member(discord_user_id)
+        if member:
+            await remove_role_if_exists(member, lcr_role, guild)
+            await assign_role_if_exists(member, cr_role, guild, ctx)
+        else:
+            await ctx.send("Pilot not found in the Discord server.")
+    else:
+        await ctx.send("Unable to find a matching Discord user.")
 
-    # Get award IDs from the user
-    await ctx.send("Enter the award ID(s) from the list above (comma-separated):")
-    award_ids_response = await get_response(ctx)
-    if not award_ids_response:
-        return
+async def remove_role_if_exists(member, role_name, guild):
+    role = discord.utils.get(guild.roles, name=role_name)
+    if role and role in member.roles:
+        await member.remove_roles(role)
+        logger.debug(f"Removed role '{role_name}' from user {member.name}")
 
-    # Process award IDs
-    award_ids = award_ids_response.split(",")
+async def assign_role_if_exists(member, role_name, guild, ctx):
+    role = discord.utils.get(guild.roles, name=role_name)
+    if role:
+        await member.add_roles(role)
+        logger.debug(f"Assigned role '{role_name}' to user {member.name}")
+        await ctx.send(f"Assigned role '{role_name}' to the pilot.")
+    else:
+        await ctx.send(f"Role '{role_name}' not found in the Discord server.")
 
-    for pilot_id in pilot_ids:
-        squadron_id = get_pilot_squadron_id(DB_PATH, pilot_id)
-        squadron_details = get_squadron_details(DB_PATH, squadron_id)
-        cr_award = squadron_details.get("squadron_cr_award")
-        cr_role = squadron_details.get("squadron_cr_role")
-        lcr_role = squadron_details.get("squadron_lcr_role")
-        pilot_name = get_pilot_name(DB_PATH, pilot_id)
-        logger.debug(f"Pilot id: {pilot_id} is {pilot_name} who is assigned to {squadron_id}")
-        for award_id in award_ids:
-            award_id = int(award_id.strip())
-            logger.debug(f"Looking into award id {award_id} and checking if it matches the LCR award ({LCR_AWARD}).")
-            
-            # First check if the award matches the CR award
-            if award_id == cr_award:
-                logger.debug(f"This is the CR award!!!")
+async def handle_lcr_award(ctx, pilot_id, pilot_name, squadron_details):
+    lcr_role = squadron_details.get("squadron_lcr_role")
 
-                if squadron_details:
-
-                    # Check there is actually an CR role configured
-                    if lcr_role:
-                        logger.debug(f"Squadron has an CR role specified: {cr_role}")
-
-                        # Fuzzy match the pilot's Discord username
-                        discord_user_id = await fuzzy_match_pilot_to_discord_user(ctx, pilot_name)
-
-                        if discord_user_id:
-                            # Retrieve the guild (server) object
-                            guild = ctx.guild
-
-                            # Find the role by name in the guild
-                            role_to_assign = discord.utils.get(guild.roles, name=cr_role)
-                            if role_to_assign:
-                                # Find the member by their Discord user ID
-                                member = guild.get_member(discord_user_id)
-                                if member:
-
-                                    # Assign the role to the member
-                                    await member.add_roles(role_to_assign)
-                                    logger.debug(f"Assigned role '{cr_role}' to pilot with Discord ID {discord_user_id}")
-                                    await ctx.send(f"Assigned role '{cr_role}' to the pilot.")
-                                else:
-                                    logger.error(f"Member with Discord ID {discord_user_id} not found in the guild.")
-                                    await ctx.send("Pilot not found in the Discord server.")
-                            else:
-                                logger.error(f"Role '{cr_role}' not found in the guild.")
-                                await ctx.send(f"Role '{cr_role}' not found in the Discord server.")
-                        else:
-                            logger.error("Unable to find matching Discord user.")
-                            await ctx.send("Unable to find a matching Discord user.")
-                    else:
-                        logger.error("Squadron does not have an CR role specified.")
-                        await ctx.send(embed=discord.Embed(description="There's no CR role configured for this squadron, please notify an admin.", color=0xff0000))
-                else:
-                    logger.error("Failed to retrieve squadron details or squadron not found.")
-                    await ctx.send(embed=discord.Embed(description="Failed to retrieve squadron details, please notify an admin.", color=0xff0000))
-
-            # If it's not a CR award, is it a LCR award?
-            if award_id == LCR_AWARD:
-
-                # Yes!  Now check if the pilot has been assigned to a squadron yet:
-                logger.debug(f"This is the LCR award!!!")
-                if squadron_id == OCU_SQUADRON:
-
-                    # The pilot's still in the OCU, tell the user to assign them first
-                    logger.debug(f"This pilot is still in the OCU!")
-                    await ctx.send(embed=discord.Embed(description="This pilot is still in the OCU, please assign them to a primary squadron.", color=0x00ff00))
-                    return
-                else:
-
-                    # Assign the pilot the discord role
-                    logger.debug(f"This pilot is ready for their LCR role.")
-                    if squadron_details:
-
-                        # Check there is actually an LCR role configured
-                        if lcr_role:
-                            logger.debug(f"Squadron has an LCR role specified: {lcr_role}")
-
-                            # Fuzzy match the pilot's Discord username
-                            discord_user_id = await fuzzy_match_pilot_to_discord_user(ctx, pilot_name)
-
-                            if discord_user_id:
-                                # Retrieve the guild (server) object
-                                guild = ctx.guild
-
-                                # Find the role by name in the guild
-                                role_to_assign = discord.utils.get(guild.roles, name=lcr_role)
-                                if role_to_assign:
-                                    # Find the member by their Discord user ID
-                                    member = guild.get_member(discord_user_id)
-                                    if member:
-
-                                        # Assign the role to the member
-                                        await member.add_roles(role_to_assign)
-                                        logger.debug(f"Assigned role '{lcr_role}' to pilot with Discord ID {discord_user_id}")
-                                        await ctx.send(f"Assigned role '{lcr_role}' to the pilot.")
-                                    else:
-                                        logger.error(f"Member with Discord ID {discord_user_id} not found in the guild.")
-                                        await ctx.send("Pilot not found in the Discord server.")
-                                else:
-                                    logger.error(f"Role '{lcr_role}' not found in the guild.")
-                                    await ctx.send(f"Role '{lcr_role}' not found in the Discord server.")
-                            else:
-                                logger.error("Unable to find matching Discord user.")
-                                await ctx.send("Unable to find a matching Discord user.")
-                        else:
-                            logger.error("Squadron does not have an LCR role specified.")
-                            await ctx.send(embed=discord.Embed(description="There's no LCR role configured for this squadron, please notify an admin.", color=0xff0000))
-                    else:
-                        logger.error("Failed to retrieve squadron details or squadron not found.")
-                        await ctx.send(embed=discord.Embed(description="Failed to retrieve squadron details, please notify an admin.", color=0xff0000))
-
-            # Now the CR/LCR checks are complete, assign the role if it is a valid role
-            if str(award_id) in awards_dict:
-                # Assign the award
-                assign_award_to_pilot(DB_PATH, pilot_id, award_id)
-    
-                # Get pilot details for role assignment
-                pilot_name, pilot_rank = get_pilot_name_and_rank(DB_PATH, pilot_id)
-    
-                # Debug logger
-                logger.debug(f"Assigning award: {award_id} to pilot: {pilot_rank} {pilot_name}")
-
-    # Confirmation message
-    await ctx.send(embed=discord.Embed(description="Award(s) assigned to selected pilot(s).", color=0x00ff00))
+    discord_user_id = await fuzzy_match_pilot_to_discord_user(ctx, pilot_name)
+    if discord_user_id:
+        guild = ctx.guild
+        member = guild.get_member(discord_user_id)
+        if member:
+            await assign_role_if_exists(member, lcr_role, guild, ctx)
+        else:
+            await ctx.send("Pilot not found in the Discord server.")
+    else:
+        await ctx.send("Unable to find a matching Discord user.")
 
 @bot.command(name='give_qualification')
 @is_commanding_officer()

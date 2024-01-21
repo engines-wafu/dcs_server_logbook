@@ -224,7 +224,9 @@ def generate_pilot_info_page(DB_PATH, pilot_id, pilot_specific_stats, output_dir
     kills_html += "</table>"
 
     last_join = pilot_stats.get('lastJoin', 0)
+    first_join = pilot_stats.get('joinDate', 0)
     last_join_date = datetime.datetime.fromtimestamp(last_join).strftime('%Y-%m-%d')
+    first_join_date = datetime.datetime.fromtimestamp(first_join).strftime('%Y-%m-%d')
 
     # Construct HTML content
     pilot_html = f"""
@@ -247,6 +249,7 @@ def generate_pilot_info_page(DB_PATH, pilot_id, pilot_specific_stats, output_dir
                 {qualifications_html if qualifications else '<p>No qualifications.</p>'}
                 <h2>Logbook</h2>
                 <h3>Totals</h3>
+                <p>First Joined: {first_join_date}</p>
                 <p>Last Joined: {last_join_date}</p>
                 <p>Total hours: {total_hours:.1f}</p>
                 <h3>Type Totals</h3>
@@ -278,6 +281,9 @@ def combine_pilot_stats_and_output(file_paths, output_file_path):
 
             # Update lastJoin
             combined_stats[pilot_id]["lastJoin"] = max(combined_stats[pilot_id]["lastJoin"], stats.get("lastJoin", 0))
+
+            # Update joinDate
+            combined_stats[pilot_id]["joinDate"] = min(combined_stats[pilot_id]["joinDate"], stats.get("joinDate", 0))
 
             # Aggregate times and kills for each aircraft
             for aircraft, aircraft_stats in stats.get("times", {}).items():
