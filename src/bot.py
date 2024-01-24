@@ -847,7 +847,7 @@ async def process_pilot_award(ctx, pilot_id, award_ids, awards_dict):
 
 async def display_awards(ctx, awards):
     current_page = 1
-    items_per_page = ITEMS_PER_PAGE  # Make sure this constant is defined
+    items_per_page = ITEMS_PER_PAGE
     total_pages = (len(awards) + items_per_page - 1) // items_per_page
 
     embed = create_awards_embed(awards, current_page, items_per_page)
@@ -856,6 +856,27 @@ async def display_awards(ctx, awards):
     if total_pages > 1:
         await message.add_reaction("⬅️")
         await message.add_reaction("➡️")
+
+        def check(reaction, user):
+            return user == ctx.author and str(reaction.emoji) in ["⬅️", "➡️"] and reaction.message.id == message.id
+
+        while True:
+            try:
+                reaction, user = await bot.wait_for('reaction_add', timeout=60.0, check=check)
+
+                if str(reaction.emoji) == "➡️" and current_page < total_pages:
+                    current_page += 1
+                elif str(reaction.emoji) == "⬅️" and current_page > 1:
+                    current_page -= 1
+                else:
+                    continue
+
+                await message.remove_reaction(reaction, user)
+                embed = create_awards_embed(awards, current_page, items_per_page)
+                await message.edit(embed=embed)
+
+            except asyncio.TimeoutError:
+                break
 
 async def handle_cr_award(ctx, pilot_id, pilot_name, squadron_details):
     cr_role = squadron_details.get("squadron_cr_role")
