@@ -281,17 +281,15 @@ def get_all_pilots(db_path):
     finally:
         conn.close()
 
-def get_awards(db_path):
-    conn = sqlite3.connect(db_path)
-    cursor = conn.cursor()
-    try:
-        cursor.execute("SELECT award_id, award_name FROM Awards")
-        awards = cursor.fetchall()
-    except Exception as e:
-        print(f"An error occurred: {e}")
-        awards = []
-    finally:
-        conn.close()
+async def get_awards(db_path):
+    async with aiosqlite.connect(db_path) as conn:
+        async with conn.cursor() as cursor:
+            try:
+                await cursor.execute("SELECT award_id, award_name FROM Awards")
+                awards = await cursor.fetchall()
+            except Exception as e:
+                print(f"An error occurred: {e}")
+                awards = []
     return awards
 
 def get_qualifications(db_path):

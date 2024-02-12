@@ -62,30 +62,36 @@ def is_server_admin():
 
 async def fuzzy_match_pilot_to_discord_user(ctx, pilot_name):
     """
-    Perform a fuzzy search to match a pilot name to a Discord user ID.
+    Perform a fuzzy search to match a pilot name to a Discord user ID,
+    accounting for possible rank prefixes in Discord user names.
     """
     if pilot_name is None:
         logger.error("Pilot name is None")
         return None
 
+    rank_prefixes = ['slt', 'lt', 'ltcdr', 'cdr', '2lt', 'lt', 'cpt', 'maj', 'ltcol', 'col', 'pltoff', 'flgoff', 'fltlt', 'sqnldr', 'wgcdr']  # Add or remove ranks as needed
+
     def normalize_name(name):
         # Lowercase and remove whitespace and punctuation
-        return ''.join(ch.lower() for ch in name if ch.isalnum())
+        normalized = ''.join(ch.lower() for ch in name if ch.isalnum())
+        # Remove common rank prefixes
+        for prefix in rank_prefixes:
+            if normalized.startswith(prefix):
+                return normalized[len(prefix):]
+        return normalized
 
-    # Retrieve all Discord users from the guild
-    all_discord_users = await get_all_discord_users(ctx.guild)
-    
+    try:
+        # Retrieve all Discord users from the guild
+        all_discord_users = await get_all_discord_users(ctx.guild)
+    except Exception as e:
+        logger.error(f"Error retrieving Discord users: {e}")
+        return None
+
     # Normalize names and create a mapping of names to IDs
     valid_members = {normalize_name(user.display_name): user.id for user in all_discord_users if user and user.display_name}
-    logger.debug(f"member names: {valid_members}")
-
-    # Log the valid_members dictionary
-    for name, id in valid_members.items():
-        logger.debug(f"Discord Name: {name}, ID: {id}")
 
     # Normalize pilot_name
     normalized_pilot_name = normalize_name(pilot_name)
-    logger.debug(f"Normalized pilot name: {normalized_pilot_name}")
 
     highest_score = 0
     best_match_id = None
@@ -93,7 +99,6 @@ async def fuzzy_match_pilot_to_discord_user(ctx, pilot_name):
     # Perform manual comparisons and find the best match
     for discord_name, discord_id in valid_members.items():
         score = fuzz.ratio(normalized_pilot_name, discord_name)
-        logger.debug(f"Comparing '{normalized_pilot_name}' with '{discord_name}' (ID: {discord_id}), Score: {score}")
 
         if score > highest_score:
             highest_score = score
@@ -794,7 +799,7 @@ async def create_qualification(ctx):
 @is_commanding_officer()
 async def give_award(ctx):
     logger.debug("Attempting to give awards")
-    awards = get_awards(DB_PATH)
+    awards = await get_awards(DB_PATH)
     if not awards:
         await ctx.send(embed=discord.Embed(description="No awards available.", color=0xff0000))
         return
@@ -802,10 +807,11 @@ async def give_award(ctx):
     # Correctly create a dictionary from the list of tuples
     awards_dict = {str(award[0]): award[1] for award in awards}
 
-    await display_awards(ctx, awards)
     pilot_names_response = await get_and_process_user_input(ctx, "Enter pilot name(s) (comma-separated):")
     if not pilot_names_response:
         return
+
+    await display_awards(ctx, awards)
 
     award_ids_response = await get_and_process_user_input(ctx, "Enter the award ID(s) from the list above (comma-separated):")
     if not award_ids_response:
@@ -862,7 +868,7 @@ async def display_awards(ctx, awards):
 
         while True:
             try:
-                reaction, user = await bot.wait_for('reaction_add', timeout=60.0, check=check)
+                reaction, user = await bot.wait_for('reaction_add', timeout=10.0, check=check)
 
                 if str(reaction.emoji) == "➡️" and current_page < total_pages:
                     current_page += 1

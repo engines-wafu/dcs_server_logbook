@@ -35,6 +35,9 @@ def update_logbook_report():
     generate_awards_qualifications_page(DB_PATH, 'html/awards.html')
     generate_flight_plans_page(DB_PATH, 'html/flights.html')
 
+    # Call the function to generate the simplified training HTML
+    generate_qualification_html(DB_PATH, 'html/training.html')
+
     logging.info("Generating pilot pages")
     output_dir = 'html/pilot'
 
