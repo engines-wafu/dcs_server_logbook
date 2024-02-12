@@ -4,6 +4,56 @@
         <title>Project Mayfly - JSW Dashboard</title>
         <meta name='viewport' content='width=device-width, initial-scale=1'>
         <link rel='stylesheet' type='text/css' href='styles.css'>
+        
+    <script>
+    var lastSortedCol = -1;
+    var sortAscending = false; // Start with descending sort by default
+    
+    function sortTable(tableId, col, isNumeric) {
+        var table, rows, switching, i, x, y, shouldSwitch, xVal, yVal;
+        table = document.getElementById(tableId);
+        switching = true;
+    
+        // If the clicked column is different from the last, start with descending sort
+        if (col != lastSortedCol) {
+            sortAscending = false; // Start descending for a new column
+        } else {
+            // If the same column is clicked again, toggle the sorting direction
+            sortAscending = !sortAscending;
+        }
+        lastSortedCol = col; // Update the last sorted column
+    
+        while (switching) {
+            switching = false;
+            rows = table.rows;
+            for (i = 1; i < (rows.length - 1); i++) {
+                shouldSwitch = false;
+                x = rows[i].getElementsByTagName("TD")[col];
+                y = rows[i + 1].getElementsByTagName("TD")[col];
+                xVal = isNumeric ? parseFloat(x.innerHTML) || 0 : x.innerHTML.toLowerCase();
+                yVal = isNumeric ? parseFloat(y.innerHTML) || 0 : y.innerHTML.toLowerCase();
+    
+                // Determine if rows should switch place based on the sort direction
+                if (sortAscending) {
+                    if (xVal > yVal) {
+                        shouldSwitch = true;
+                        break;
+                    }
+                } else {
+                    if (xVal < yVal) {
+                        shouldSwitch = true;
+                        break;
+                    }
+                }
+            }
+            if (shouldSwitch) {
+                rows[i].parentNode.insertBefore(rows[i + 1], rows[i]);
+                switching = true;
+            }
+        }
+    }
+    </script>
+    
     </head>
     <body>
         <!-- navbar.html -->
@@ -25,15 +75,24 @@
                 <h3>Commanding Officer</h3>
                 <p>Cdr Engines</p>
                 <h3>Pilots</h3>
-                <table style='border:1'>
-                    <tr><th style='width:30%'>Name</th><th style='width:10%'>Type hours</th><th style='width:10%'>Total hours</th><th style='width:10%'>Kills</th><th style='width:10%'>Currency</th></tr>
-                    
+                <table id="squadron801 NASTable" style="border:1; cursor: pointer;">
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th onclick="sortTable('squadron801 NASTable', 1, true)">Type hours</th>
+                            <th onclick="sortTable('squadron801 NASTable', 2, true)">Total hours</th>
+                            <th onclick="sortTable('squadron801 NASTable', 3, true)">Kills</th>
+                            <th onclick="sortTable('squadron801 NASTable', 4, true)">Currency</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        
             <tr>
                 <td><a href='pilot/ea2dca.html'>Cdr Engines</a></td>
                 <td>398.7</td>
                 <td>527.0</td>
                 <td>166</td>
-                <td style='background-color:orange'>22 days</td>
+                <td style='background-color:orange'>23 days</td>
             </tr>
         
             <tr>
@@ -100,6 +159,7 @@
                 <td style='background-color:orange'>28 days</td>
             </tr>
         
+                    </tbody>
                 </table>
                 <hr>
             </section>
@@ -112,9 +172,18 @@
                 <h3>Commanding Officer</h3>
                 <p>Sqn Ldr Cactus</p>
                 <h3>Pilots</h3>
-                <table style='border:1'>
-                    <tr><th style='width:30%'>Name</th><th style='width:10%'>Type hours</th><th style='width:10%'>Total hours</th><th style='width:10%'>Kills</th><th style='width:10%'>Currency</th></tr>
-                    
+                <table id="squadronIV SqnTable" style="border:1; cursor: pointer;">
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th onclick="sortTable('squadronIV SqnTable', 1, true)">Type hours</th>
+                            <th onclick="sortTable('squadronIV SqnTable', 2, true)">Total hours</th>
+                            <th onclick="sortTable('squadronIV SqnTable', 3, true)">Kills</th>
+                            <th onclick="sortTable('squadronIV SqnTable', 4, true)">Currency</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        
             <tr>
                 <td><a href='pilot/c153e4.html'>Sqn Ldr RJF</a></td>
                 <td>55.4</td>
@@ -251,6 +320,7 @@
                 <td style='background-color:red'>77 days</td>
             </tr>
         
+                    </tbody>
                 </table>
                 <hr>
             </section>
@@ -263,9 +333,18 @@
                 <h3>Commanding Officer</h3>
                 <p>Lt Col Gimbal</p>
                 <h3>Pilots</h3>
-                <table style='border:1'>
-                    <tr><th style='width:30%'>Name</th><th style='width:10%'>Type hours</th><th style='width:10%'>Total hours</th><th style='width:10%'>Kills</th><th style='width:10%'>Currency</th></tr>
-                    
+                <table id="squadron656 SqnTable" style="border:1; cursor: pointer;">
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th onclick="sortTable('squadron656 SqnTable', 1, true)">Type hours</th>
+                            <th onclick="sortTable('squadron656 SqnTable', 2, true)">Total hours</th>
+                            <th onclick="sortTable('squadron656 SqnTable', 3, true)">Kills</th>
+                            <th onclick="sortTable('squadron656 SqnTable', 4, true)">Currency</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        
             <tr>
                 <td><a href='pilot/813759.html'>Wg Cdr Razor</a></td>
                 <td>49.0</td>
@@ -506,6 +585,7 @@
                 <td style='background-color:grey'>19765 days</td>
             </tr>
         
+                    </tbody>
                 </table>
                 <hr>
             </section>
@@ -518,9 +598,18 @@
                 <h3>Commanding Officer</h3>
                 <p>Lt Cdr Mailman</p>
                 <h3>Pilots</h3>
-                <table style='border:1'>
-                    <tr><th style='width:30%'>Name</th><th style='width:10%'>Type hours</th><th style='width:10%'>Total hours</th><th style='width:10%'>Kills</th><th style='width:10%'>Currency</th></tr>
-                    
+                <table id="squadron892 NASTable" style="border:1; cursor: pointer;">
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th onclick="sortTable('squadron892 NASTable', 1, true)">Type hours</th>
+                            <th onclick="sortTable('squadron892 NASTable', 2, true)">Total hours</th>
+                            <th onclick="sortTable('squadron892 NASTable', 3, true)">Kills</th>
+                            <th onclick="sortTable('squadron892 NASTable', 4, true)">Currency</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        
             <tr>
                 <td><a href='pilot/813759.html'>Wg Cdr Razor</a></td>
                 <td>73.7</td>
@@ -633,6 +722,7 @@
                 <td style='background-color:red'>62 days</td>
             </tr>
         
+                    </tbody>
                 </table>
                 <hr>
             </section>
@@ -645,9 +735,18 @@
                 <h3>Commanding Officer</h3>
                 <p>Wg Cdr Dangerman</p>
                 <h3>Pilots</h3>
-                <table style='border:1'>
-                    <tr><th style='width:30%'>Name</th><th style='width:10%'>Type hours</th><th style='width:10%'>Total hours</th><th style='width:10%'>Kills</th><th style='width:10%'>Currency</th></tr>
-                    
+                <table id="squadron617 SqnTable" style="border:1; cursor: pointer;">
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th onclick="sortTable('squadron617 SqnTable', 1, true)">Type hours</th>
+                            <th onclick="sortTable('squadron617 SqnTable', 2, true)">Total hours</th>
+                            <th onclick="sortTable('squadron617 SqnTable', 3, true)">Kills</th>
+                            <th onclick="sortTable('squadron617 SqnTable', 4, true)">Currency</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        
             <tr>
                 <td><a href='pilot/813759.html'>Wg Cdr Razor</a></td>
                 <td>3.1</td>
@@ -752,6 +851,7 @@
                 <td style='background-color:red'>31 days</td>
             </tr>
         
+                    </tbody>
                 </table>
                 <hr>
             </section>
@@ -764,9 +864,18 @@
                 <h3>Commanding Officer</h3>
                 <p>Sqn Ldr RJF</p>
                 <h3>Pilots</h3>
-                <table style='border:1'>
-                    <tr><th style='width:30%'>Name</th><th style='width:10%'>Type hours</th><th style='width:10%'>Total hours</th><th style='width:10%'>Kills</th><th style='width:10%'>Currency</th></tr>
-                    
+                <table id="squadronXI SqnTable" style="border:1; cursor: pointer;">
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th onclick="sortTable('squadronXI SqnTable', 1, true)">Type hours</th>
+                            <th onclick="sortTable('squadronXI SqnTable', 2, true)">Total hours</th>
+                            <th onclick="sortTable('squadronXI SqnTable', 3, true)">Kills</th>
+                            <th onclick="sortTable('squadronXI SqnTable', 4, true)">Currency</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        
             <tr>
                 <td><a href='pilot/c153e4.html'>Sqn Ldr RJF</a></td>
                 <td>130.9</td>
@@ -871,6 +980,7 @@
                 <td style='background-color:red'>84 days</td>
             </tr>
         
+                    </tbody>
                 </table>
                 <hr>
             </section>

@@ -51,12 +51,15 @@ def fetch_squadron_pilots(db_path):
 
 def generate_index_html(db_path, output_path, json_file_path):
     """
-    Generates an HTML file for the index page with details for each squadron.
+    Generates an HTML file for the index page with details for each squadron, including the ability to sort table columns by clicking on them.
 
     :param db_path: Path to the SQLite database file.
     :param output_path: Path where the HTML file will be saved.
     :param json_file_path: Path to the combined stats JSON file.
     """
+
+    # Placeholder for auxiliary functions like load_combined_stats, get_pilot_full_name, and generate_squadron_pilot_rows
+    # Ensure these functions are defined or imported in your script
 
     # Fetch the current date
     current_date = datetime.datetime.now().strftime("%d %B %Y")
@@ -108,13 +111,75 @@ def generate_index_html(db_path, output_path, json_file_path):
                 <h3>Commanding Officer</h3>
                 <p>{co_full_name if co_full_name else 'Not available'}</p>
                 <h3>Pilots</h3>
-                <table style='border:1'>
-                    <tr><th style='width:30%'>Name</th><th style='width:10%'>Type hours</th><th style='width:10%'>Total hours</th><th style='width:10%'>Kills</th><th style='width:10%'>Currency</th></tr>
-                    {pilot_rows_html}
+                <table id="squadron{squadron_id}Table" style="border:1; cursor: pointer;">
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th onclick="sortTable('squadron{squadron_id}Table', 1, true)">Type hours</th>
+                            <th onclick="sortTable('squadron{squadron_id}Table', 2, true)">Total hours</th>
+                            <th onclick="sortTable('squadron{squadron_id}Table', 3, true)">Kills</th>
+                            <th onclick="sortTable('squadron{squadron_id}Table', 4, true)">Currency</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {pilot_rows_html}
+                    </tbody>
                 </table>
                 <hr>
             </section>
         """
+
+    # JavaScript for sorting tables
+    sort_function_script = """
+    <script>
+    var lastSortedCol = -1;
+    var sortAscending = false; // Start with descending sort by default
+    
+    function sortTable(tableId, col, isNumeric) {
+        var table, rows, switching, i, x, y, shouldSwitch, xVal, yVal;
+        table = document.getElementById(tableId);
+        switching = true;
+    
+        // If the clicked column is different from the last, start with descending sort
+        if (col != lastSortedCol) {
+            sortAscending = false; // Start descending for a new column
+        } else {
+            // If the same column is clicked again, toggle the sorting direction
+            sortAscending = !sortAscending;
+        }
+        lastSortedCol = col; // Update the last sorted column
+    
+        while (switching) {
+            switching = false;
+            rows = table.rows;
+            for (i = 1; i < (rows.length - 1); i++) {
+                shouldSwitch = false;
+                x = rows[i].getElementsByTagName("TD")[col];
+                y = rows[i + 1].getElementsByTagName("TD")[col];
+                xVal = isNumeric ? parseFloat(x.innerHTML) || 0 : x.innerHTML.toLowerCase();
+                yVal = isNumeric ? parseFloat(y.innerHTML) || 0 : y.innerHTML.toLowerCase();
+    
+                // Determine if rows should switch place based on the sort direction
+                if (sortAscending) {
+                    if (xVal > yVal) {
+                        shouldSwitch = true;
+                        break;
+                    }
+                } else {
+                    if (xVal < yVal) {
+                        shouldSwitch = true;
+                        break;
+                    }
+                }
+            }
+            if (shouldSwitch) {
+                rows[i].parentNode.insertBefore(rows[i + 1], rows[i]);
+                switching = true;
+            }
+        }
+    }
+    </script>
+    """
 
     # Final HTML assembly
     final_html = f"""
@@ -123,6 +188,7 @@ def generate_index_html(db_path, output_path, json_file_path):
         <title>Project Mayfly - JSW Dashboard</title>
         <meta name='viewport' content='width=device-width, initial-scale=1'>
         <link rel='stylesheet' type='text/css' href='styles.css'>
+        {sort_function_script}
     </head>
     <body>
         {navbar_html}
