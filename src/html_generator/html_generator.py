@@ -114,11 +114,11 @@ def generate_index_html(db_path, output_path, json_file_path):
                 <table id="squadron{squadron_id}Table" style="border:1; cursor: pointer;">
                     <thead>
                         <tr>
-                            <th>Name</th>
-                            <th onclick="sortTable('squadron{squadron_id}Table', 1, true)">Type hours</th>
-                            <th onclick="sortTable('squadron{squadron_id}Table', 2, true)">Total hours</th>
-                            <th onclick="sortTable('squadron{squadron_id}Table', 3, true)">Kills</th>
-                            <th onclick="sortTable('squadron{squadron_id}Table', 4, true)">Currency</th>
+                            <th style='width:30%;'>Name</th>
+                            <th style='width:10%;' onclick="sortTable('squadron{squadron_id}Table', 1, true)">Type hours</th>
+                            <th style='width:10%;' onclick="sortTable('squadron{squadron_id}Table', 2, true)">Total hours</th>
+                            <th style='width:10%;' onclick="sortTable('squadron{squadron_id}Table', 3, true)">Kills</th>
+                            <th style='width:10%;' onclick="sortTable('squadron{squadron_id}Table', 4, true)">Currency</th>
                         </tr>
                     </thead>
                     <tbody>
