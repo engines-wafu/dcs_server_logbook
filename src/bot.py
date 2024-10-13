@@ -1,5 +1,6 @@
 from config import *
 from database.db_crud import *
+from datetime import datetime, timedelta
 from discord.ext import commands
 from discord.ext.commands import has_role, CheckFailure
 from fuzzywuzzy import process, fuzz
@@ -11,7 +12,7 @@ from utils.stat_processing import get_pilot_qualifications_with_details, get_pil
 from utils.stats_analysis import generate_pilot_hour_report
 from utils.time_management import epoch_from_date
 
-import discord, asyncio, logging, time, datetime, tracemalloc, os, string, math
+import discord, asyncio, logging, time, datetime, tracemalloc, os, string, math, subprocess
 
 # Get the absolute path of the project root directory
 project_root = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -1330,10 +1331,11 @@ async def assign_aircraft(ctx):
 async def update_mayfly(ctx):
     """
     Updates the state, ETBOL, and remarks for selected aircraft.
-
     This command prompts the user to enter aircraft IDs, then provides options to update
     the aircraft state, ETBOL, and remarks for those aircraft.
-
+    
+    It will also take the number of hours to add to the current time for ETBOL.
+    
     Usage: !update_mayfly
     """
     # Ask the user to enter the aircraft IDs directly
@@ -1354,16 +1356,18 @@ async def update_mayfly(ctx):
     if state_response is None:
         return
 
-    # Prompt for ETBOL (expected time before offloading)
-    await ctx.send("Enter new ETBOL (in minutes):")
+    # Prompt for ETBOL in hours (expected time before offloading)
+    await ctx.send("Enter new ETBOL in hours (to be added to the current time):")
     etbol_response = await get_response(ctx)
     if etbol_response is None:
         return
 
     try:
-        etbol = int(etbol_response)
+        hours_to_add = int(etbol_response)
+        new_etbol_time = datetime.now() + timedelta(hours=hours_to_add)
+        etbol_epoch = int(new_etbol_time.timestamp())  # Convert to epoch time
     except ValueError:
-        await ctx.send("Invalid ETBOL. Please enter a valid number.")
+        await ctx.send("Invalid ETBOL. Please enter a valid number of hours.")
         return
 
     # Prompt for remarks
@@ -1378,7 +1382,7 @@ async def update_mayfly(ctx):
         aircraft_updates.append({
             'aircraft_id': aircraft_id,
             'aircraft_state': state_response,
-            'aircraft_etbol': etbol,
+            'aircraft_etbol': etbol_epoch,  # Store the new ETBOL time as an epoch
             'aircraft_remarks': remarks_response
         })
 
@@ -1387,6 +1391,14 @@ async def update_mayfly(ctx):
 
     # Confirmation message
     await ctx.send(f"Aircraft {', '.join(selected_aircraft_ids)} updated.")
+
+    # Run the batch file after updating the aircraft state
+    batch_file_path = "../Run Logbook Parser.bat"
+    try:
+        subprocess.run(batch_file_path, shell=True, check=True)
+        await ctx.send("Logbook Parser has been run successfully.")
+    except subprocess.CalledProcessError as e:
+        await ctx.send(f"Failed to run Logbook Parser: {e}")
 
 @bot.command(name='file_flight_plan')
 async def file_flight_plan(ctx):
