@@ -1330,6 +1330,9 @@ async def assign_aircraft(ctx):
 async def update_mayfly(ctx):
     """
     Updates the state, ETBOL, and remarks for selected aircraft.
+
+    This command prompts the user to select aircraft by IDs, then provides options to update
+    the aircraft state, ETBOL, and remarks for those aircraft.
     """
     # Fetch and display available aircraft
     assigned_aircraft, unassigned_aircraft = fetch_aircraft_by_squadron(DB_PATH)
@@ -1340,17 +1343,15 @@ async def update_mayfly(ctx):
         await ctx.send("No aircraft available.")
         return
 
+    aircraft_embed = discord.Embed(title="Available Aircraft", description="Select aircraft by ID(s):", color=0x00ff00)
     aircraft_ids = [str(aircraft[0]) for aircraft in aircraft_list]
 
-    # Create embed and add aircraft IDs in chunks
-    aircraft_embed = discord.Embed(title="Available Aircraft", description="Select aircraft by ID(s):", color=0x00ff00)
-    
-    chunk_size = 1024  # Maximum characters per field
-    max_ids_per_chunk = math.ceil(chunk_size / 7)  # Estimate how many IDs fit in 1024 chars (assuming 6 chars per ID + comma)
-    
-    for i in range(0, len(aircraft_ids), max_ids_per_chunk):
-        aircraft_chunk = ", ".join(aircraft_ids[i:i+max_ids_per_chunk])
-        aircraft_embed.add_field(name=f"Aircraft IDs {i+1}-{i+len(aircraft_chunk.split(', '))}", value=aircraft_chunk, inline=False)
+    # Split aircraft IDs into chunks to avoid exceeding the 1024 character limit
+    chunk_size = 1024
+    chunked_aircraft_ids = [", ".join(aircraft_ids[i:i+chunk_size]) for i in range(0, len(aircraft_ids), chunk_size)]
+
+    for i, chunk in enumerate(chunked_aircraft_ids, start=1):
+        aircraft_embed.add_field(name=f"Aircraft IDs (Part {i})", value=chunk, inline=False)
 
     await ctx.send(embed=aircraft_embed)
 
@@ -1371,7 +1372,7 @@ async def update_mayfly(ctx):
         return
 
     # Prompt for ETBOL (expected time before offloading)
-    await ctx.send("Enter new ETBOL (in minutes):")
+    await ctx.send("Enter new ETBOL (in hours):")
     etbol_response = await get_response(ctx)
     if etbol_response is None:
         return
