@@ -49,10 +49,9 @@ normalized_pilot_name = ''.join(ch.lower() for ch in pilot_name if ch.isalnum())
 score = fuzz.ratio(normalized_test_name, normalized_pilot_name)
 logger.debug(f"Test match score between '{normalized_test_name}' and '{normalized_pilot_name}': {score}")
 
-
-def is_commanding_officer():
+def is_commanding_officer_or_hq():
     async def predicate(ctx):
-        return any(role.name == COMMANDING_OFFICER for role in ctx.author.roles)
+        return any(role.name in {COMMANDING_OFFICER, HQ_ROLE} for role in ctx.author.roles)
     return commands.check(predicate)
 
 def is_server_admin():
