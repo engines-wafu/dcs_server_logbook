@@ -12,7 +12,17 @@ from utils.stat_processing import get_pilot_qualifications_with_details, get_pil
 from utils.stats_analysis import generate_pilot_hour_report
 from utils.time_management import epoch_from_date
 
-import discord, asyncio, logging, time, datetime, tracemalloc, os, string, math, subprocess
+import asyncio
+import datetime
+import discord
+import logging
+import math
+import os
+import shutil
+import string
+import subprocess
+import time
+import tracemalloc
 
 # Get the absolute path of the project root directory
 project_root = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -50,6 +60,28 @@ normalized_pilot_name = ''.join(ch.lower() for ch in pilot_name if ch.isalnum())
 # Perform a direct fuzzy match
 score = fuzz.ratio(normalized_test_name, normalized_pilot_name)
 logger.debug(f"Test match score between '{normalized_test_name}' and '{normalized_pilot_name}': {score}")
+
+def update_mayfly_html():
+    try:
+        # Copy SlmodStats files from their respective locations
+        shutil.copy(r"C:\Users\JointStrikeWing\Saved Games\DCS.openbeta_server\Slmod\SlmodStats.json",
+                    r"C:\dcs_server_logbook\data\stats\SlmodStats_server1.json")
+        shutil.copy(r"C:\Users\JointStrikeWing\Saved Games\DCS.openbeta_server2\Slmod\SlmodStats.json",
+                    r"C:\dcs_server_logbook\data\stats\SlmodStats_server2.json")
+        shutil.copy(r"C:\Users\JointStrikeWing\Saved Games\DCS.openbeta_server3\Slmod\SlmodStats.json",
+                    r"C:\dcs_server_logbook\data\stats\SlmodStats_server3.json")
+
+        # Set the current working directory to the project root
+        os.chdir(r"C:\dcs_server_logbook")
+
+        # Run the Python script
+        subprocess.run(["python", r"src\main.py"], check=True)
+
+        print("Mayfly HTML update completed successfully!")
+        return True
+    except (shutil.Error, subprocess.CalledProcessError, FileNotFoundError) as e:
+        print(f"Failed to update Mayfly HTML: {e}")
+        return False
 
 def is_commanding_officer():
     async def predicate(ctx):
@@ -1399,12 +1431,11 @@ async def update_mayfly(ctx):
         # Run the batch file after updating the aircraft state
     batch_file_path = os.path.abspath(os.path.join('C:', 'dcs_server_logbook', 'Run Logbook Parser.bat'))
     
-    try:
-        # Running the batch file
-        subprocess.run(batch_file_path, shell=True, check=True)
-        await ctx.send("Logbook Parser has been run successfully.")
-    except subprocess.CalledProcessError as e:
-        await ctx.send(f"Failed to run Logbook Parser: {e}")
+    if update_mayfly_html():
+        await ctx.send("Mayfly HTML updated successfully!")
+    else:
+        await ctx.send("Failed to update Mayfly HTML.")
+
 
 @bot.command(name='file_flight_plan')
 async def file_flight_plan(ctx):
