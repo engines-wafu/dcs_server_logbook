@@ -1326,7 +1326,6 @@ async def assign_aircraft(ctx):
         await ctx.send(f"Aircraft {', '.join(selected_aircraft_ids)} assigned to squadron {selected_squadron_id}.")
 
 @bot.command(name='update_mayfly')
-@is_commanding_officer_or_hq()
 async def update_mayfly(ctx):
     """
     Updates the state, ETBOL, and remarks for selected aircraft.
