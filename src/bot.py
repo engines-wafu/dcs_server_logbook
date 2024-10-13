@@ -1351,9 +1351,13 @@ async def update_mayfly(ctx):
         return
 
     # Prompt for new state
-    await ctx.send("Enter new state for the aircraft:")
+    await ctx.send("Enter new state for the aircraft ('S' for Serviceable, 'US' for Unserviceable):")
     state_response = await get_response(ctx)
     if state_response is None:
+        return
+
+    if state_response not in ['S', 'US']:
+        await ctx.send("Invalid state. Please enter 'S' for Serviceable or 'US' for Unserviceable.")
         return
 
     # Prompt for ETBOL in hours (expected time before offloading)
@@ -1364,7 +1368,7 @@ async def update_mayfly(ctx):
 
     try:
         hours_to_add = int(etbol_response)
-        new_etbol_time = datetime.now() + timedelta(hours=hours_to_add)
+        new_etbol_time = datetime.datetime.now() + timedelta(hours=hours_to_add)
         etbol_epoch = int(new_etbol_time.timestamp())  # Convert to epoch time
     except ValueError:
         await ctx.send("Invalid ETBOL. Please enter a valid number of hours.")
@@ -1393,12 +1397,13 @@ async def update_mayfly(ctx):
     await ctx.send(f"Aircraft {', '.join(selected_aircraft_ids)} updated.")
 
     # Run the batch file after updating the aircraft state
-    batch_file_path = "../Run Logbook Parser.bat"
+    batch_file_path = os.path.join('C:', 'dcs_server_logbook', 'Run Logbook Parser.bat')
     try:
         subprocess.run(batch_file_path, shell=True, check=True)
         await ctx.send("Logbook Parser has been run successfully.")
     except subprocess.CalledProcessError as e:
         await ctx.send(f"Failed to run Logbook Parser: {e}")
+    
 
 @bot.command(name='file_flight_plan')
 async def file_flight_plan(ctx):
