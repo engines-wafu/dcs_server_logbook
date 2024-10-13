@@ -1396,14 +1396,15 @@ async def update_mayfly(ctx):
     # Confirmation message
     await ctx.send(f"Aircraft {', '.join(selected_aircraft_ids)} updated.")
 
-    # Run the batch file after updating the aircraft state
-    batch_file_path = os.path.join('C:', 'dcs_server_logbook', 'Run Logbook Parser.bat')
+        # Run the batch file after updating the aircraft state
+    batch_file_path = os.path.abspath(os.path.join('C:', 'dcs_server_logbook', 'Run Logbook Parser.bat'))
+    
     try:
+        # Running the batch file
         subprocess.run(batch_file_path, shell=True, check=True)
         await ctx.send("Logbook Parser has been run successfully.")
     except subprocess.CalledProcessError as e:
         await ctx.send(f"Failed to run Logbook Parser: {e}")
-    
 
 @bot.command(name='file_flight_plan')
 async def file_flight_plan(ctx):
