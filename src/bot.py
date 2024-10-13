@@ -1325,6 +1325,93 @@ async def assign_aircraft(ctx):
         assign_aircraft_to_squadron(DB_PATH, selected_squadron_id, selected_aircraft_ids)
         await ctx.send(f"Aircraft {', '.join(selected_aircraft_ids)} assigned to squadron {selected_squadron_id}.")
 
+@bot.command(name='update_mayfly')
+async def update_mayfly(ctx):
+    """
+    Updates the state, ETBOL, and remarks for selected aircraft.
+
+    This command prompts the user to select aircraft by IDs, then provides options to update
+    the aircraft state, ETBOL, and remarks for those aircraft.
+
+    Usage: !update_mayfly
+
+    Example:
+    User: !update_mayfly
+    Bot: [Displays list of aircraft]
+    Bot: Enter aircraft ID(s) (comma-separated):
+    User: 1, 2
+    Bot: Enter new state for the aircraft:
+    User: In Flight
+    Bot: Enter new ETBOL (in minutes):
+    User: 120
+    Bot: Enter remarks for the aircraft:
+    User: Flying at low altitude
+    Bot: Aircraft 1, 2 updated.
+    """
+    # Fetch and display available aircraft
+    assigned_aircraft, unassigned_aircraft = fetch_aircraft_by_squadron(DB_PATH)
+
+    # Format aircraft information
+    aircraft_list = assigned_aircraft + unassigned_aircraft
+    if not aircraft_list:
+        await ctx.send("No aircraft available.")
+        return
+
+    aircraft_embed = discord.Embed(title="Available Aircraft", description="Select aircraft by ID(s):", color=0x00ff00)
+    aircraft_ids = [str(aircraft[0]) for aircraft in aircraft_list]
+    aircraft_embed.add_field(name="Aircraft IDs", value=", ".join(aircraft_ids), inline=False)
+    await ctx.send(embed=aircraft_embed)
+
+    # Get user response for aircraft IDs
+    aircraft_response = await get_response(ctx)
+    if aircraft_response is None:
+        return
+
+    selected_aircraft_ids = [aid.strip() for aid in aircraft_response.split(',')]
+    if any(aid not in aircraft_ids for aid in selected_aircraft_ids):
+        await ctx.send("Invalid aircraft IDs. Please select valid IDs.")
+        return
+
+    # Prompt for new state
+    await ctx.send("Enter new state for the aircraft:")
+    state_response = await get_response(ctx)
+    if state_response is None:
+        return
+
+    # Prompt for ETBOL (expected time before offloading)
+    await ctx.send("Enter new ETBOL (in minutes):")
+    etbol_response = await get_response(ctx)
+    if etbol_response is None:
+        return
+
+    try:
+        etbol = int(etbol_response)
+    except ValueError:
+        await ctx.send("Invalid ETBOL. Please enter a valid number.")
+        return
+
+    # Prompt for remarks
+    await ctx.send("Enter remarks for the aircraft:")
+    remarks_response = await get_response(ctx)
+    if remarks_response is None:
+        return
+
+    # Prepare updates for each selected aircraft
+    aircraft_updates = []
+    for aircraft_id in selected_aircraft_ids:
+        aircraft_updates.append({
+            'aircraft_id': aircraft_id,
+            'aircraft_state': state_response,
+            'aircraft_etbol': etbol,
+            'aircraft_remarks': remarks_response
+        })
+
+    # Update the database with the new values
+    update_aircraft_state(DB_PATH, aircraft_updates)
+
+    # Confirmation message
+    await ctx.send(f"Aircraft {', '.join(selected_aircraft_ids)} updated.")
+
 @bot.command(name='file_flight_plan')
 async def file_flight_plan(ctx):
     """

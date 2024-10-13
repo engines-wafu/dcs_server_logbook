@@ -121,6 +121,30 @@ def update_squadron(db_path, squadron_id, new_details):
     finally:
         conn.close()
 
+def update_aircraft_state(db_path, aircraft_updates):
+    """
+    Updates the state, ETBOL, and remarks for one or more aircraft.
+
+    :param db_path: Path to the database.
+    :param aircraft_updates: A list of dictionaries where each dictionary contains 
+                             'aircraft_id', 'aircraft_state', 'aircraft_etbol', and 'aircraft_remarks'.
+    """
+    conn = sqlite3.connect(db_path)
+    cursor = conn.cursor()
+
+    for update in aircraft_updates:
+        try:
+            cursor.execute("""
+                UPDATE Aircraft 
+                SET aircraft_state = ?, aircraft_etbol = ?, aircraft_remarks = ? 
+                WHERE aircraft_id = ?
+            """, (update['aircraft_state'], update['aircraft_etbol'], update['aircraft_remarks'], update['aircraft_id']))
+        except sqlite3.Error as e:
+            print(f"Error updating aircraft {update['aircraft_id']}: {e}")
+
+    conn.commit()
+    conn.close()
+
 def fetch_aircraft_by_squadron(db_path):
     conn = sqlite3.connect(db_path)
     cursor = conn.cursor()
