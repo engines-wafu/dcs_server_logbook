@@ -1331,38 +1331,21 @@ async def update_mayfly(ctx):
     """
     Updates the state, ETBOL, and remarks for selected aircraft.
 
-    This command prompts the user to select aircraft by IDs, then provides options to update
+    This command prompts the user to enter aircraft IDs, then provides options to update
     the aircraft state, ETBOL, and remarks for those aircraft.
+
+    Usage: !update_mayfly
     """
-    # Fetch and display available aircraft
-    assigned_aircraft, unassigned_aircraft = fetch_aircraft_by_squadron(DB_PATH)
-
-    # Format aircraft information
-    aircraft_list = assigned_aircraft + unassigned_aircraft
-    if not aircraft_list:
-        await ctx.send("No aircraft available.")
-        return
-
-    aircraft_embed = discord.Embed(title="Available Aircraft", description="Select aircraft by ID(s):", color=0x00ff00)
-    aircraft_ids = [str(aircraft[0]) for aircraft in aircraft_list]
-
-    # Split aircraft IDs into chunks to avoid exceeding the 1024 character limit
-    chunk_size = 1024
-    chunked_aircraft_ids = [", ".join(aircraft_ids[i:i+chunk_size]) for i in range(0, len(aircraft_ids), chunk_size)]
-
-    for i, chunk in enumerate(chunked_aircraft_ids, start=1):
-        aircraft_embed.add_field(name=f"Aircraft IDs (Part {i})", value=chunk, inline=False)
-
-    await ctx.send(embed=aircraft_embed)
-
-    # Get user response for aircraft IDs
+    # Ask the user to enter the aircraft IDs directly
+    await ctx.send("Enter aircraft ID(s) (comma-separated):")
     aircraft_response = await get_response(ctx)
     if aircraft_response is None:
         return
 
+    # Clean up and validate the aircraft IDs entered by the user
     selected_aircraft_ids = [aid.strip() for aid in aircraft_response.split(',')]
-    if any(aid not in aircraft_ids for aid in selected_aircraft_ids):
-        await ctx.send("Invalid aircraft IDs. Please select valid IDs.")
+    if not selected_aircraft_ids:
+        await ctx.send("No aircraft IDs provided. Please try again.")
         return
 
     # Prompt for new state
@@ -1372,7 +1355,7 @@ async def update_mayfly(ctx):
         return
 
     # Prompt for ETBOL (expected time before offloading)
-    await ctx.send("Enter new ETBOL (in hours):")
+    await ctx.send("Enter new ETBOL (in minutes):")
     etbol_response = await get_response(ctx)
     if etbol_response is None:
         return
