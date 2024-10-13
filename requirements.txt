@@ -15,7 +15,7 @@ iniconfig==2.0.0
 kiwisolver==1.4.5
 Levenshtein==0.23.0
 matplotlib==3.8.2
-multidict==6.0.4
+#multidict==6.0.4
 numpy==1.26.3
 packaging==23.2
 pandas==2.1.4

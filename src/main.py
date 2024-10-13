@@ -33,9 +33,10 @@ def update_logbook_report():
     generate_index_html(DB_PATH, 'html/index.html', JSON_PATH)
     generate_mayfly_html(DB_PATH, 'html/mayfly.html')
     generate_awards_qualifications_page(DB_PATH, 'html/awards.html')
-
     generate_flight_plans_page(DB_PATH, 'html/flights.html')
-    logging.info("Created html output")
+
+    # Call the function to generate the simplified training HTML
+    generate_qualification_html(DB_PATH, 'html/training.html')
 
     logging.info("Generating pilot pages")
     output_dir = 'html/pilot'

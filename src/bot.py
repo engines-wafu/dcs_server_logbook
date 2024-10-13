@@ -1,12 +1,14 @@
-import discord, asyncio, logging, time, datetime, tracemalloc, os
+import discord, asyncio, logging, time, datetime, tracemalloc, os, string
 from utils.time_management import epoch_from_date
 from main import update_logbook_report
 from utils.ribbon import *
 from utils.discord_utils import *
 from discord.ext import commands
+from fuzzywuzzy import process, fuzz
 from discord.ext.commands import has_role, CheckFailure
 from html_generator.html_generator import generate_index_html, load_combined_stats, generate_flight_plans_page
 from utils.stat_processing import get_pilot_qualifications_with_details, get_pilot_awards_with_details, get_pilot_details
+from utils.stats_analysis import generate_pilot_hour_report
 from database.db_crud import *
 from config import *
 
@@ -37,6 +39,17 @@ award_messages = {}
 bot = commands.Bot(command_prefix='!', intents=discord.Intents.all())
 predefined_colors = PREDEFINED_COLORS
 
+# Hardcoded test
+test_name = "engines"
+pilot_name = "Engines"
+normalized_test_name = ''.join(ch.lower() for ch in test_name if ch.isalnum())
+normalized_pilot_name = ''.join(ch.lower() for ch in pilot_name if ch.isalnum())
+
+# Perform a direct fuzzy match
+score = fuzz.ratio(normalized_test_name, normalized_pilot_name)
+logger.debug(f"Test match score between '{normalized_test_name}' and '{normalized_pilot_name}': {score}")
+
+
 def is_commanding_officer():
     async def predicate(ctx):
         return any(role.name == COMMANDING_OFFICER for role in ctx.author.roles)
@@ -46,6 +59,68 @@ def is_server_admin():
     async def predicate(ctx):
         return any(role.name == SERVER_ADMIN for role in ctx.author.roles)
     return commands.check(predicate)
+
+async def fuzzy_match_pilot_to_discord_user(ctx, pilot_name):
+    """
+    Perform a fuzzy search to match a pilot name to a Discord user ID,
+    accounting for possible rank prefixes in Discord user names.
+    """
+    if pilot_name is None:
+        logger.error("Pilot name is None")
+        return None
+
+    rank_prefixes = ['slt', 'lt', 'ltcdr', 'cdr', '2lt', 'lt', 'cpt', 'maj', 'ltcol', 'col', 'pltoff', 'flgoff', 'fltlt', 'sqnldr', 'wgcdr']  # Add or remove ranks as needed
+
+    def normalize_name(name):
+        # Lowercase and remove whitespace and punctuation
+        normalized = ''.join(ch.lower() for ch in name if ch.isalnum())
+        # Remove common rank prefixes
+        for prefix in rank_prefixes:
+            if normalized.startswith(prefix):
+                return normalized[len(prefix):]
+        return normalized
+
+    try:
+        # Retrieve all Discord users from the guild
+        all_discord_users = await get_all_discord_users(ctx.guild)
+    except Exception as e:
+        logger.error(f"Error retrieving Discord users: {e}")
+        return None
+
+    # Normalize names and create a mapping of names to IDs
+    valid_members = {normalize_name(user.display_name): user.id for user in all_discord_users if user and user.display_name}
+
+    # Normalize pilot_name
+    normalized_pilot_name = normalize_name(pilot_name)
+
+    highest_score = 0
+    best_match_id = None
+
+    # Perform manual comparisons and find the best match
+    for discord_name, discord_id in valid_members.items():
+        score = fuzz.ratio(normalized_pilot_name, discord_name)
+
+        if score > highest_score:
+            highest_score = score
+            best_match_id = discord_id
+
+    if highest_score > 60:  # Adjust the threshold as needed
+        return best_match_id
+    else:
+        return None
+
+
+async def get_all_discord_users(guild):
+    """
+    Retrieves all users from the given guild (server).
+
+    :param guild: The discord Guild (server) object.
+    :return: A list of Member objects.
+    """
+    members = []
+    async for member in guild.fetch_members(limit=None):
+        members.append(member)
+    return members
 
 @bot.event
 async def on_command_error(ctx, error):
@@ -84,6 +159,32 @@ async def on_reaction_add(reaction, user):
 
     # Remove the reaction to allow for re-use
     await reaction.message.remove_reaction(reaction.emoji, user)
+
+def chunk_report(report_sections):
+    # Convert the report sections into pages
+    return report_sections  # Each section is now a page
+
+def create_qualifications_embed(qualifications, current_page, items_per_page):
+    """
+    Creates a Discord embed for a paginated list of qualifications.
+
+    :param qualifications: A list of qualifications (tuple of qualification ID, name, and duration).
+    :param current_page: The current page number.
+    :param items_per_page: The number of items to display per page.
+    :return: A Discord Embed object containing the qualifications for the current page.
+    """
+    start_index = (current_page - 1) * items_per_page
+    end_index = start_index + items_per_page
+    paginated_qualifications = qualifications[start_index:end_index]
+
+    embed = discord.Embed(title="Available Qualifications", description="Select a qualification by its ID.", color=0x00ff00)
+    for qid, qname, _ in paginated_qualifications:
+        embed.add_field(name=str(qid), value=qname, inline=False)
+
+    # Optionally, you can add footer text to show the current page number
+    embed.set_footer(text=f"Page {current_page} of {(len(qualifications) + items_per_page - 1) // items_per_page}")
+
+    return embed
 
 def create_awards_embed(awards, page, items_per_page=ITEMS_PER_PAGE):
     embed = discord.Embed(title=f"Available Awards - Page {page}", color=0x00ff00)
@@ -697,107 +798,146 @@ async def create_qualification(ctx):
 @bot.command(name='give_award')
 @is_commanding_officer()
 async def give_award(ctx):
-    """
-    Assigns specified awards to selected pilots.
-    
-    This command first displays a list of available awards. The user is then prompted to enter the names of the pilots (comma-separated) and the IDs of the awards (also comma-separated). The specified awards are then assigned to the given pilots.
-    
-    Usage: !give_award
-
-    Example:
-    User: !give_award
-    Bot: [Displays list of available awards]
-    Bot: Enter pilot name(s) (comma-separated):
-    User: JohnDoe, JaneDoe
-    Bot: Enter the award ID(s) from the list above (comma-separated):
-    User: 1, 3
-    """
-    logger.debug(f"Attempting to give awards")
-    # Retrieve available awards
-    awards = get_awards(DB_PATH)
+    logger.debug("Attempting to give awards")
+    awards = await get_awards(DB_PATH)
     if not awards:
         await ctx.send(embed=discord.Embed(description="No awards available.", color=0xff0000))
         return
 
-    # Create a dictionary of awards
-    awards_dict = {str(aid): aname for aid, aname in awards}
+    # Correctly create a dictionary from the list of tuples
+    awards_dict = {str(award[0]): award[1] for award in awards}
 
-    # Define page variables
+    pilot_names_response = await get_and_process_user_input(ctx, "Enter pilot name(s) (comma-separated):")
+    if not pilot_names_response:
+        return
+
+    await display_awards(ctx, awards)
+
+    award_ids_response = await get_and_process_user_input(ctx, "Enter the award ID(s) from the list above (comma-separated):")
+    if not award_ids_response:
+        return
+
+    pilot_ids = process_pilot_names(pilot_names_response)
+    award_ids = process_award_ids(award_ids_response)
+
+    for pilot_id in pilot_ids:
+        await process_pilot_award(ctx, pilot_id, award_ids, awards_dict)
+
+    await ctx.send(embed=discord.Embed(description="Award(s) assigned to selected pilot(s).", color=0x00ff00))
+
+async def get_and_process_user_input(ctx, prompt):
+    await ctx.send(prompt)
+    return await get_response(ctx)
+
+def process_pilot_names(pilot_names_response):
+    return [find_pilot_id_by_name(DB_PATH, name.strip()) for name in pilot_names_response.split(",") if name.strip()]
+
+def process_award_ids(award_ids_response):
+    return [int(award_id.strip()) for award_id in award_ids_response.split(",") if award_id.strip()]
+
+async def process_pilot_award(ctx, pilot_id, award_ids, awards_dict):
+    pilot_name = get_pilot_name(DB_PATH, pilot_id)
+    squadron_details = get_squadron_details(DB_PATH, get_pilot_squadron_id(DB_PATH, pilot_id))
+
+    if squadron_details is None:
+        logging.error(f"No squadron details found for pilot ID {pilot_id}")
+        return
+
+    for award_id in award_ids:
+        assign_award_to_pilot(DB_PATH, pilot_id, award_id)
+
+async def display_awards(ctx, awards):
     current_page = 1
     items_per_page = ITEMS_PER_PAGE
     total_pages = (len(awards) + items_per_page - 1) // items_per_page
 
-    # Create an embed for awards
     embed = create_awards_embed(awards, current_page, items_per_page)
-    
-    # Send the initial awards list
     message = await ctx.send(embed=embed)
 
-    # Store the message ID and other details for reaction handling
-    award_messages[message.id] = {'page': current_page, 'total_pages': total_pages, 'awards': awards, 'items_per_page': items_per_page}
-
-    # Add reaction emojis for navigation if there are multiple pages
     if total_pages > 1:
         await message.add_reaction("⬅️")
         await message.add_reaction("➡️")
 
-    # Get pilot names
-    await ctx.send("Enter pilot name(s) (comma-separated):")
-    pilot_names_response = await get_response(ctx)
-    if not pilot_names_response:
-        return
+        def check(reaction, user):
+            return user == ctx.author and str(reaction.emoji) in ["⬅️", "➡️"] and reaction.message.id == message.id
 
-    # Process pilot names and get their IDs
-    pilot_ids = [find_pilot_id_by_name(DB_PATH, name.strip()) for name in pilot_names_response.split(",") if name.strip()]
+        while True:
+            try:
+                reaction, user = await bot.wait_for('reaction_add', timeout=10.0, check=check)
 
-    # Get award IDs from the user
-    await ctx.send("Enter the award ID(s) from the list above (comma-separated):")
-    award_ids_response = await get_response(ctx)
-    if not award_ids_response:
-        return
-
-    # Process award IDs
-    award_ids = award_ids_response.split(",")
-
-    for pilot_id in pilot_ids:
-        for award_id in award_ids:
-            if award_id.strip() in awards_dict:
-                # Assign the award
-                assign_award_to_pilot(DB_PATH, pilot_id, int(award_id.strip()))
-
-                # Get pilot details for role assignment
-                pilot_name, pilot_rank = get_pilot_name_and_rank(DB_PATH, pilot_id)
-
-                # Debug logger
-                logger.debug(f"Assigning award: {award_id.strip()} to pilot: {pilot_rank} {pilot_name}")
-
-                # Check for role assignment
-                if int(award_id.strip()) in LCR_AWARDS:
-                    logger.debug(f"Attempting to assign LCR role for award ID {award_id.strip()}")
-                    logger.debug(f"Assigning role id: {LCR_ROLE}")
-                    await assign_role(ctx, pilot_name, pilot_rank, LCR_ROLE)
-                elif int(award_id.strip()) in CR_AWARDS:
-                    logger.debug(f"Attempting to assign CR role for award ID {award_id.strip()}")
-                    await assign_role(ctx, pilot_name, pilot_rank, CR_ROLE)
+                if str(reaction.emoji) == "➡️" and current_page < total_pages:
+                    current_page += 1
+                elif str(reaction.emoji) == "⬅️" and current_page > 1:
+                    current_page -= 1
                 else:
-                    logger.debug(f"Award {award_id.strip()} not a role award.")
+                    continue
 
-    # Confirmation message
-    await ctx.send(embed=discord.Embed(description="Award(s) assigned to selected pilot(s).", color=0x00ff00))
+                await message.remove_reaction(reaction, user)
+                embed = create_awards_embed(awards, current_page, items_per_page)
+                await message.edit(embed=embed)
+
+            except asyncio.TimeoutError:
+                break
+
+async def handle_cr_award(ctx, pilot_id, pilot_name, squadron_details):
+    cr_role = squadron_details.get("squadron_cr_role")
+    lcr_role = squadron_details.get("squadron_lcr_role")
+
+    discord_user_id = await fuzzy_match_pilot_to_discord_user(ctx, pilot_name)
+    if discord_user_id:
+        guild = ctx.guild
+        member = guild.get_member(discord_user_id)
+        if member:
+            await remove_role_if_exists(member, lcr_role, guild)
+            await assign_role_if_exists(member, cr_role, guild, ctx)
+        else:
+            await ctx.send("Pilot not found in the Discord server.")
+    else:
+        await ctx.send("Unable to find a matching Discord user.")
+
+async def remove_role_if_exists(member, role_name, guild):
+    role = discord.utils.get(guild.roles, name=role_name)
+    if role and role in member.roles:
+        await member.remove_roles(role)
+        logger.debug(f"Removed role '{role_name}' from user {member.name}")
+
+async def assign_role_if_exists(member, role_name, guild, ctx):
+    role = discord.utils.get(guild.roles, name=role_name)
+    if role:
+        await member.add_roles(role)
+        logger.debug(f"Assigned role '{role_name}' to user {member.name}")
+        await ctx.send(f"Assigned role '{role_name}' to the pilot.")
+    else:
+        await ctx.send(f"Role '{role_name}' not found in the Discord server.")
+
+async def handle_lcr_award(ctx, pilot_id, pilot_name, squadron_details):
+    lcr_role = squadron_details.get("squadron_lcr_role")
+
+    discord_user_id = await fuzzy_match_pilot_to_discord_user(ctx, pilot_name)
+    if discord_user_id:
+        guild = ctx.guild
+        member = guild.get_member(discord_user_id)
+        if member:
+            await assign_role_if_exists(member, lcr_role, guild, ctx)
+        else:
+            await ctx.send("Pilot not found in the Discord server.")
+    else:
+        await ctx.send("Unable to find a matching Discord user.")
 
 @bot.command(name='give_qualification')
 @is_commanding_officer()
 async def give_qualification(ctx):
     """
-    Assigns specified qualifications to selected pilots.
+    Assigns a specified qualification to selected pilots, with paginated qualification display.
 
-    This command first displays a list of available qualifications. The user is then prompted to enter the names of the pilots (comma-separated) and the ID of the qualification. The specified qualification is then assigned to the given pilots, along with its duration.
+    This command first displays a list of available qualifications in a paginated format. Users can navigate through the pages using reaction emojis. Once the user views the qualifications, they are prompted to enter the names of the pilots (comma-separated) and the ID of the chosen qualification. The specified qualification is then assigned to the given pilots, along with its duration.
 
     Usage: !give_qualification
 
     Example:
     User: !give_qualification
-    Bot: [Displays list of available qualifications]
+    Bot: [Displays list of available qualifications with pagination]
+    [User navigates through pages using reaction emojis]
     Bot: Enter pilot name(s) (comma-separated):
     User: JohnDoe, JaneDoe
     Bot: Enter the qualification ID from the list above:
@@ -809,24 +949,53 @@ async def give_qualification(ctx):
         await ctx.send(embed=discord.Embed(description="No qualifications available.", color=0xff0000))
         return
 
-    # Create an embed for qualifications
-    embed = discord.Embed(title="Available Qualifications", description="Select a qualification by its ID.", color=0x00ff00)
-    for qid, qname, _ in qualifications:
-        embed.add_field(name=qid, value=qname, inline=False)
+    # Create a dictionary of qualifications
+    qualifications_dict = {str(qid): qname for qid, qname, _ in qualifications}
 
-    # Send qualification list and ask for pilot name(s)
-    qualification_msg = await ctx.send(embed=embed)
+    # Define page variables
+    current_page = 1
+    items_per_page = ITEMS_PER_PAGE
+    total_pages = (len(qualifications) + items_per_page - 1) // items_per_page
+
+    # Create an embed for qualifications
+    embed = create_qualifications_embed(qualifications, current_page, items_per_page)
+
+    # Send the initial qualifications list
+    message = await ctx.send(embed=embed)
+
+    # Store the message ID and other details for reaction handling
+    qualification_messages = {}
+    qualification_messages[message.id] = {'page': current_page, 'total_pages': total_pages, 'qualifications': qualifications, 'items_per_page': items_per_page}
+
+    # Add reaction emojis for navigation if there are multiple pages
+    if total_pages > 1:
+        await message.add_reaction("⬅️")
+        await message.add_reaction("➡️")
+
+    # Reaction handling for page navigation (you'll need to implement this logic)
+    # ...
+
+    # Get pilot names
     await ctx.send("Enter pilot name(s) (comma-separated):")
-    pilot_names = await get_response(ctx)
-    if not pilot_names:
+    pilot_names_response = await get_response(ctx)
+    if not pilot_names_response:
         return
 
-    pilot_ids = [find_pilot_id_by_name(DB_PATH, name.strip()) for name in pilot_names.split(",")]
+    # Process pilot names and get their IDs
+    pilot_ids = [find_pilot_id_by_name(DB_PATH, name.strip()) for name in pilot_names_response.split(",") if name.strip()]
 
-    # Prompt for qualification selection
+    # Get qualification ID from the user
     await ctx.send("Enter the qualification ID from the list above:")
-    qualification_id = await get_response(ctx)
-    if not qualification_id:
+    qualification_id_response = await get_response(ctx)
+    if not qualification_id_response:
+        return
+
+    # Process qualification ID
+    qualification_id = qualification_id_response.strip()
+
+    # Ensure the qualification ID is valid
+    if qualification_id not in qualifications_dict:
+        await ctx.send(embed=discord.Embed(description="Invalid qualification ID.", color=0xff0000))
         return
 
     # Get the qualification duration
@@ -1342,5 +1511,46 @@ async def help_command(ctx, command_name=None):
             first_line = command.help.split('\n')[0] if command.help else 'No description available'
             embed.add_field(name=f"!{command.name} {command.signature}{permission_info}", value=first_line, inline=False)
         await ctx.send(embed=embed)
+
+def create_embed(page_content, page_title, page_number):
+    embed = discord.Embed(title=page_title, description=f"Page {page_number}", color=0x00ff00)
+    
+    # Split the page_content to get the category and the list of pilots
+    category, pilots = page_content.split(':', 1)
+    category = f"**{category}**"  # Make the category bold
+
+    embed.add_field(name=category, value=pilots.strip(), inline=False)
+    return embed
+
+@bot.command(name='audit_logbook')
+@is_commanding_officer()
+async def audit_logbook(ctx):
+    report_data = generate_pilot_hour_report(JSON_PATH, DB_PATH)
+    report_pages = chunk_report(report_data)  # Assume chunk_report divides report_data into pages
+
+    current_page = 0
+    message = await ctx.send(embed=create_embed(report_pages[current_page], "Pilot Hour Audit Report", current_page + 1))
+    
+    # Add reaction arrows if there are multiple pages
+    if len(report_pages) > 1:
+        await message.add_reaction('⬅️')
+        await message.add_reaction('➡️')
+
+        def check(reaction, user):
+            return user == ctx.author and str(reaction.emoji) in ['⬅️', '➡️'] and reaction.message.id == message.id
+        
+        while True:
+            try:
+                reaction, user = await bot.wait_for('reaction_add', timeout=60.0, check=check)
+                if str(reaction.emoji) == '➡️' and current_page < len(report_pages) - 1:
+                    current_page += 1
+                    await message.edit(embed=create_embed(report_pages[current_page], "Pilot Hour Audit Report", current_page + 1))
+                    await message.remove_reaction(reaction, user)
+                elif str(reaction.emoji) == '⬅️' and current_page > 0:
+                    current_page -= 1
+                    await message.edit(embed=create_embed(report_pages[current_page], "Pilot Hour Audit Report", current_page + 1))
+                    await message.remove_reaction(reaction, user)
+            except asyncio.TimeoutError:
+                break
 
 bot.run(TOKEN)

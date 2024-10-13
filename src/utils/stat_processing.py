@@ -15,7 +15,7 @@ os.makedirs(os.path.dirname(log_filename), exist_ok=True)
 
 # Configure a separate logger for your bot
 logger = logging.getLogger('stats_processor')
-logger.setLevel(logging.DEBUG)
+logger.setLevel(logging.ERROR)
 file_handler = logging.FileHandler(filename=log_filename)
 file_handler.setFormatter(logging.Formatter('%(asctime)s - %(levelname)s - %(message)s'))
 logger.addHandler(file_handler)
@@ -168,6 +168,9 @@ def generate_pilot_info_page(DB_PATH, pilot_id, pilot_specific_stats, output_dir
     conn = sqlite3.connect(DB_PATH)
     cursor = conn.cursor()
 
+    # Fetch the current date
+    current_date = datetime.datetime.now().strftime("%d %B %Y")
+
     # Fetch details for the specific pilot
     cursor.execute("SELECT pilot_id, pilot_name, pilot_service, pilot_rank FROM Pilots WHERE pilot_id = ?", (pilot_id,))
     pilot = cursor.fetchone()
@@ -224,6 +227,9 @@ def generate_pilot_info_page(DB_PATH, pilot_id, pilot_specific_stats, output_dir
     kills_html += "</table>"
 
     last_join = pilot_stats.get('lastJoin', 0)
+    first_join = pilot_stats.get('joinDate', 0)
+
+    first_join_date = datetime.datetime.fromtimestamp(first_join).strftime('%Y-%m-%d')
     last_join_date = datetime.datetime.fromtimestamp(last_join).strftime('%Y-%m-%d')
 
     # Construct HTML content
@@ -241,18 +247,20 @@ def generate_pilot_info_page(DB_PATH, pilot_id, pilot_specific_stats, output_dir
                 <p>Pilot ID: {pilot_id[:6]}</p>
                 <p>Pilot Service: {pilot_service}</p>
                 <p>Pilot Rank: {pilot_rank}</p>
+                <p>First Joined: {first_join_date}</p>
+                <p>Last Joined: {last_join_date}</p>
                 <h2>Awards</h2>
                 {awards_html if awards else '<p>No awards.</p>'}
                 <h2>Qualifications</h2>
                 {qualifications_html if qualifications else '<p>No qualifications.</p>'}
                 <h2>Logbook</h2>
                 <h3>Totals</h3>
-                <p>Last Joined: {last_join_date}</p>
                 <p>Total hours: {total_hours:.1f}</p>
                 <h3>Type Totals</h3>
                 {type_totals_html}
                 <h3>Kills</h3>
                 {kills_html}
+            <p>Page generated on {current_date}</p>
             </div>
         </body>
         </html>
@@ -274,10 +282,12 @@ def combine_pilot_stats_and_output(file_paths, output_file_path):
                 continue  # Skip the "host" entry
 
             if pilot_id not in combined_stats:
-                combined_stats[pilot_id] = {"times": {}, "lastJoin": 0}
+                combined_stats[pilot_id] = {"times": {}, "lastJoin": 0, "joinDate": 0}
 
             # Update lastJoin
             combined_stats[pilot_id]["lastJoin"] = max(combined_stats[pilot_id]["lastJoin"], stats.get("lastJoin", 0))
+            join_dates = [combined_stats[pilot_id]["joinDate"], stats.get("joinDate", 0)]
+            combined_stats[pilot_id]["joinDate"] = min(date for date in join_dates if date != 0) or 0
 
             # Aggregate times and kills for each aircraft
             for aircraft, aircraft_stats in stats.get("times", {}).items():

@@ -51,12 +51,18 @@ def fetch_squadron_pilots(db_path):
 
 def generate_index_html(db_path, output_path, json_file_path):
     """
-    Generates an HTML file for the index page with details for each squadron.
+    Generates an HTML file for the index page with details for each squadron, including the ability to sort table columns by clicking on them.
 
     :param db_path: Path to the SQLite database file.
     :param output_path: Path where the HTML file will be saved.
     :param json_file_path: Path to the combined stats JSON file.
     """
+
+    # Placeholder for auxiliary functions like load_combined_stats, get_pilot_full_name, and generate_squadron_pilot_rows
+    # Ensure these functions are defined or imported in your script
+
+    # Fetch the current date
+    current_date = datetime.datetime.now().strftime("%d %B %Y")
 
     # Load combined stats
     combined_stats = load_combined_stats(json_file_path)
@@ -105,13 +111,75 @@ def generate_index_html(db_path, output_path, json_file_path):
                 <h3>Commanding Officer</h3>
                 <p>{co_full_name if co_full_name else 'Not available'}</p>
                 <h3>Pilots</h3>
-                <table style='border:1'>
-                    <tr><th style='width:30%'>Name</th><th style='width:10%'>Type hours</th><th style='width:10%'>Total hours</th><th style='width:10%'>Kills</th><th style='width:10%'>Currency</th></tr>
-                    {pilot_rows_html}
+                <table id="squadron{squadron_id}Table" style="border:1; cursor: pointer;">
+                    <thead>
+                        <tr>
+                            <th style='width:30%;'>Name</th>
+                            <th style='width:10%;' onclick="sortTable('squadron{squadron_id}Table', 1, true)">Type hours</th>
+                            <th style='width:10%;' onclick="sortTable('squadron{squadron_id}Table', 2, true)">Total hours</th>
+                            <th style='width:10%;' onclick="sortTable('squadron{squadron_id}Table', 3, true)">Kills</th>
+                            <th style='width:10%;' onclick="sortTable('squadron{squadron_id}Table', 4, true)">Currency</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {pilot_rows_html}
+                    </tbody>
                 </table>
                 <hr>
             </section>
         """
+
+    # JavaScript for sorting tables
+    sort_function_script = """
+    <script>
+    var lastSortedCol = -1;
+    var sortAscending = false; // Start with descending sort by default
+    
+    function sortTable(tableId, col, isNumeric) {
+        var table, rows, switching, i, x, y, shouldSwitch, xVal, yVal;
+        table = document.getElementById(tableId);
+        switching = true;
+    
+        // If the clicked column is different from the last, start with descending sort
+        if (col != lastSortedCol) {
+            sortAscending = false; // Start descending for a new column
+        } else {
+            // If the same column is clicked again, toggle the sorting direction
+            sortAscending = !sortAscending;
+        }
+        lastSortedCol = col; // Update the last sorted column
+    
+        while (switching) {
+            switching = false;
+            rows = table.rows;
+            for (i = 1; i < (rows.length - 1); i++) {
+                shouldSwitch = false;
+                x = rows[i].getElementsByTagName("TD")[col];
+                y = rows[i + 1].getElementsByTagName("TD")[col];
+                xVal = isNumeric ? parseFloat(x.innerHTML) || 0 : x.innerHTML.toLowerCase();
+                yVal = isNumeric ? parseFloat(y.innerHTML) || 0 : y.innerHTML.toLowerCase();
+    
+                // Determine if rows should switch place based on the sort direction
+                if (sortAscending) {
+                    if (xVal > yVal) {
+                        shouldSwitch = true;
+                        break;
+                    }
+                } else {
+                    if (xVal < yVal) {
+                        shouldSwitch = true;
+                        break;
+                    }
+                }
+            }
+            if (shouldSwitch) {
+                rows[i].parentNode.insertBefore(rows[i + 1], rows[i]);
+                switching = true;
+            }
+        }
+    }
+    </script>
+    """
 
     # Final HTML assembly
     final_html = f"""
@@ -120,12 +188,14 @@ def generate_index_html(db_path, output_path, json_file_path):
         <title>Project Mayfly - JSW Dashboard</title>
         <meta name='viewport' content='width=device-width, initial-scale=1'>
         <link rel='stylesheet' type='text/css' href='styles.css'>
+        {sort_function_script}
     </head>
     <body>
         {navbar_html}
         <div class='container'>
             <h1>Joint Strike Wing Squadron Dashboard</h1>
             {squadrons_content}
+            <p>Page generated on {current_date}</p>
         </div>
     </body>
     </html>
@@ -234,8 +304,6 @@ def generate_flight_plans_page(db_path, output_path):
     with open(output_file_path, 'w') as file:
         file.write(html_content)
 
-    print("Flight plans page generated successfully.")
-
 def generate_mayfly_html(db_path, output_file_path):
     # Fetch data from the database
     squadrons = get_squadron_ids(db_path)
@@ -297,3 +365,136 @@ def generate_mayfly_html(db_path, output_file_path):
     # Write to file
     with open(output_file_path, "w") as file:
         file.write(html_content)
+
+def generate_qualification_html(db_path, output_filename):
+    # Connect to the SQLite database
+    conn = sqlite3.connect(db_path)
+    cursor = conn.cursor()
+
+    # Read the navbar HTML content
+    navbar_path = 'html/navbar.html'
+    with open(navbar_path, 'r') as file:
+        navbar_html = file.read()
+
+    # Start HTML document
+    html_content = f"""
+    <html>
+    <head>
+        <title>Pilot Qualifications</title>
+        <meta name='viewport' content='width=device-width, initial-scale=1'>
+        <style>
+            .fixed-width-table {{
+                table-layout: fixed;
+                width: auto; /* Override the 100% width */
+            }}
+    
+            .fixed-width-table th {{
+                font-size: 10px;
+            }}
+    
+            .fixed-width-table th, .fixed-width-table td {{
+                width: 70px; /* Fixed width for each column */
+                overflow: hidden; /* Hide text that doesn't fit */
+                text-overflow: ellipsis; /* Add ellipsis to text that doesn't fit */
+            }}
+    
+            .expired {{
+                background-color: red;
+                color: white; /* White text for better contrast on dark background */
+            }}
+    
+            .warning {{
+                background-color: orange;
+                color: black; /* Black text for better contrast on light background */
+            }}
+    
+            .valid {{
+                background-color: green;
+                color: white; /* White text for better contrast on dark background */
+            }}
+        </style>
+        <link rel='stylesheet' type='text/css' href='styles.css'>
+    </head>
+    <body>
+        {navbar_html}
+        <div class='container'>
+        <h1>Pilot Training Records</h1>
+    """
+
+    # Fetch squadrons sorted by commission date
+    cursor.execute("SELECT squadron_id FROM Squadrons ORDER BY squadron_commission_date ASC")
+    squadrons = cursor.fetchall()
+
+    for squadron in squadrons:
+        # Identify applicable qualifications for the squadron
+        cursor.execute("""
+            SELECT DISTINCT q.qualification_id, q.qualification_name
+            FROM Squadron_Pilots sp
+            JOIN Pilot_Qualifications pq ON sp.pilot_id = pq.pilot_id
+            JOIN Qualifications q ON pq.qualification_id = q.qualification_id
+            WHERE sp.squadron_id = ?
+            ORDER BY q.qualification_id ASC
+        """, (squadron[0],))
+        qualifications = cursor.fetchall()
+
+        # Skip squadrons with no qualifications
+        if not qualifications:
+            continue
+
+        # Squadron header
+        html_content += f"<h2>{squadron[0]}</h2>"
+        html_content += '<table class="fixed-width-table"><tr><th></th>' + ''.join([f"<th>{qual[1]}</th>" for qual in qualifications]) + "</tr>"
+
+        # Fetch pilots for each squadron
+        cursor.execute("""
+            SELECT p.pilot_id, p.pilot_name FROM Squadron_Pilots sp
+            JOIN Pilots p ON sp.pilot_id = p.pilot_id
+            WHERE sp.squadron_id = ?
+        """, (squadron[0],))
+        pilots = cursor.fetchall()
+
+        # Populate table rows for each pilot
+        for pilot in pilots:
+            html_content += f"<tr><td>{pilot[1]}</td>"
+            for qual in qualifications:
+                cursor.execute("""
+                    SELECT pq.date_expires FROM Pilot_Qualifications pq
+                    WHERE pq.pilot_id = ? AND pq.qualification_id = ?
+                """, (pilot[0], qual[0]))
+                expiry_epoch = cursor.fetchone()
+                if expiry_epoch:
+                    expiry_date = datetime.datetime.fromtimestamp(expiry_epoch[0])
+                    today = datetime.datetime.now()
+                    delta = expiry_date - today
+
+                    # Determine cell color based on expiry date
+                    if delta.days < 0:
+                        cell_class = 'expired'
+                    elif delta.days <= 14:
+                        cell_class = 'warning'
+                    else:
+                        cell_class = 'valid'
+
+                    expiry_date_str = expiry_date.strftime('%d %b %y')
+                    html_content += f"<td class='{cell_class}'>{expiry_date_str}</td>"
+                else:
+                    html_content += "<td></td>"
+            html_content += "</tr>"
+
+        html_content += "</table>"
+
+    # Close HTML document
+    html_content += """
+        </div>
+    </body>
+    </html>
+    """
+
+    # Write HTML content to file
+    with open(output_filename, "w") as file:
+        file.write(html_content)
+
+    # Close database connection
+    conn.close()
+
+    return f"HTML file generated and saved as {output_filename}"

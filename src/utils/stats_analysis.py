@@ -1,4 +1,4 @@
-import json, re, logging, os
+import json, re, logging, os, sqlite3
 import pandas as pd
 
 # Get the absolute path of the project root directory
@@ -18,6 +18,48 @@ logger.setLevel(logging.DEBUG)
 file_handler = logging.FileHandler(filename=log_filename)
 file_handler.setFormatter(logging.Formatter('%(asctime)s - %(levelname)s - %(message)s'))
 logger.addHandler(file_handler)
+
+def has_award(db_path, pilot_id, award_name):
+    # Connect to the SQLite database
+    conn = sqlite3.connect(db_path)
+    cursor = conn.cursor()
+
+    # Query to check if the pilot has the specified award
+    query = '''SELECT COUNT(*) FROM Pilot_Awards
+               INNER JOIN Awards ON Pilot_Awards.award_id = Awards.award_id
+               WHERE pilot_id = ? AND award_name = ?'''
+    cursor.execute(query, (pilot_id, award_name))
+
+    # Check if the count is greater than 0
+    has_award = cursor.fetchone()[0] > 0
+
+    # Close the database connection
+    conn.close()
+
+    return has_award
+
+def get_pilot_name(db_path, pilot_id):
+    """
+    Fetches the name of a pilot based on the pilot_id.
+
+    :param db_path: Path to the SQLite database file.
+    :param pilot_id: Unique identifier of the pilot.
+    :return: String of pilot's name or None if not found.
+    """
+    conn = sqlite3.connect(db_path)
+    cursor = conn.cursor()
+
+    # Fetch pilot details
+    cursor.execute("SELECT pilot_name FROM Pilots WHERE pilot_id = ?", (pilot_id,))
+    result = cursor.fetchone()
+
+    conn.close()
+
+    if result:
+        pilot_name = result[0]  # Accessing the first element of the tuple
+        return pilot_name
+    else:
+        return None
 
 def json_integrity_check(file_path):
     # Regex pattern for 32-character hex hash
@@ -141,8 +183,104 @@ def combine_pilot_stats_and_output(file_paths, output_file_path):
 
     print(f"Combined stats written to {output_file_path}")
 
+def print_pilot_hour_report(file_path, db_path, thresholds=[50, 100, 250, 500]):
+    # Load the JSON file
+    with open(file_path, 'r') as file:
+        data = json.load(file)
+
+    # Initialize report data structure
+    report_total = {threshold: set() for threshold in thresholds}
+    report_type = {threshold: set() for threshold in thresholds}
+
+    # Process each pilot's data
+    for pilot_id, stats in data.items():
+        if pilot_id == "host":
+            continue  # Skip the "host" entry
+
+        # Get pilot's full name
+        pilot_name = get_pilot_name(db_path, pilot_id)
+        if pilot_name:
+            pilot_name = f"{pilot_name}"  # ({pilot_id[:4]})"
+
+        # Calculate the total time across all aircraft types
+        total_seconds = sum(aircraft_stats.get('total', 0) for aircraft_stats in stats.get('times', {}).values())
+        total_hours = total_seconds / 3600
+
+        # Check if total hours exceed any threshold
+        for threshold in thresholds:
+            if total_hours >= threshold and pilot_name:
+                report_total[threshold].add(pilot_name)
+
+        # Check hours for each aircraft type
+        for aircraft, aircraft_stats in stats.get('times', {}).items():
+            aircraft_hours = aircraft_stats.get('total', 0) / 3600
+            for threshold in thresholds:
+                if aircraft_hours >= threshold and pilot_name:
+                    report_type[threshold].add(pilot_name)
+
+    # Print the report
+    for threshold in thresholds:
+        total_pilots = ', '.join(report_total[threshold])
+        type_pilots = ', '.join(report_type[threshold])
+
+        print(f"\nPilots exceeding {threshold} Total Hours:\n{total_pilots}")
+        print(f"\nPilots exceeding {threshold} Type Hours:\n{type_pilots}")
+
+def generate_pilot_hour_report(file_path, db_path, thresholds=[50, 100, 250, 500]):
+    # Load the JSON file
+    with open(file_path, 'r') as file:
+        data = json.load(file)
+
+    # Initialize report data structure
+    report = {f"{threshold} Total Hours": [] for threshold in thresholds}
+    report.update({f"{threshold} Type Hours": [] for threshold in thresholds})
+
+    # Process each pilot's data
+    for pilot_id, stats in data.items():
+        if pilot_id == "host":
+            continue  # Skip the "host" entry
+
+        # Get pilot's full name
+        pilot_name = get_pilot_name(db_path, pilot_id)
+        if not pilot_name:
+            continue
+
+        pilot_name = f"{pilot_name} ({pilot_id[:4]})"
+
+        # Calculate the total time across all aircraft types
+        total_seconds = sum(aircraft_stats.get('total', 0) for aircraft_stats in stats.get('times', {}).values())
+        total_hours = total_seconds / 3600
+
+        # Check if total hours exceed any threshold and if the pilot has not been awarded yet
+        for threshold in thresholds:
+            award_name_total = f"{threshold}_HOURS"
+            award_name_type = f"{threshold}_TYPE_HOURS"
+            award_status_total = ' **Award Pending**' if not has_award(db_path, pilot_id, award_name_total) else ''
+            award_status_type = ' **Award Pending**' if not has_award(db_path, pilot_id, award_name_type) else ''
+
+            if total_hours >= threshold:
+                report[f"{threshold} Total Hours"].append(pilot_name + award_status_total)
+
+            # Check hours for each aircraft type
+            for aircraft, aircraft_stats in stats.get('times', {}).items():
+                aircraft_hours = aircraft_stats.get('total', 0) / 3600
+                if aircraft_hours >= threshold:
+                    report[f"{threshold} Type Hours"].append(pilot_name + award_status_type)
+                    break  # Break if any aircraft type exceeds the threshold
+
+    # Format the report data
+    report_sections = []
+    for category, pilots in report.items():
+        if pilots:
+            section = f"{category}:\n" + '\n'.join(pilots)
+            report_sections.append(section)
+
+    return report_sections
+
 # Example usage
 file_paths = ['data/stats/SlmodStats_server1.json','data/stats/SlmodStats_server2.json','data/stats/SlmodStats_server3.json']  # Replace with your actual file path
-output_file_path = 'data/stats/combinedStatsNew.json'
+output_file_path = 'data/stats/combinedStats.json'
+db_path = 'data/db/mayfly.db'
 
-combine_pilot_stats_and_output(file_paths, output_file_path)
+# combine_pilot_stats_and_output(file_paths, output_file_path)
+# print_pilot_hour_report(output_file_path, db_path)
