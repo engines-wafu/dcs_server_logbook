@@ -1,16 +1,17 @@
-import discord, asyncio, logging, time, datetime, tracemalloc, os, string
-from utils.time_management import epoch_from_date
-from main import update_logbook_report
-from utils.ribbon import *
-from utils.discord_utils import *
+from config import *
+from database.db_crud import *
 from discord.ext import commands
-from fuzzywuzzy import process, fuzz
 from discord.ext.commands import has_role, CheckFailure
+from fuzzywuzzy import process, fuzz
 from html_generator.html_generator import generate_index_html, load_combined_stats, generate_flight_plans_page
+from main import update_logbook_report
+from utils.discord_utils import *
+from utils.ribbon import *
 from utils.stat_processing import get_pilot_qualifications_with_details, get_pilot_awards_with_details, get_pilot_details
 from utils.stats_analysis import generate_pilot_hour_report
-from database.db_crud import *
-from config import *
+from utils.time_management import epoch_from_date
+
+import discord, asyncio, logging, time, datetime, tracemalloc, os, string, math
 
 # Get the absolute path of the project root directory
 project_root = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
