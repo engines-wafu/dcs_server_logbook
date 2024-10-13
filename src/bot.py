@@ -1326,27 +1326,10 @@ async def assign_aircraft(ctx):
         await ctx.send(f"Aircraft {', '.join(selected_aircraft_ids)} assigned to squadron {selected_squadron_id}.")
 
 @bot.command(name='update_mayfly')
+@is_commanding_officer_or_hq()
 async def update_mayfly(ctx):
     """
     Updates the state, ETBOL, and remarks for selected aircraft.
-
-    This command prompts the user to select aircraft by IDs, then provides options to update
-    the aircraft state, ETBOL, and remarks for those aircraft.
-
-    Usage: !update_mayfly
-
-    Example:
-    User: !update_mayfly
-    Bot: [Displays list of aircraft]
-    Bot: Enter aircraft ID(s) (comma-separated):
-    User: 1, 2
-    Bot: Enter new state for the aircraft:
-    User: In Flight
-    Bot: Enter new ETBOL (in minutes):
-    User: 120
-    Bot: Enter remarks for the aircraft:
-    User: Flying at low altitude
-    Bot: Aircraft 1, 2 updated.
     """
     # Fetch and display available aircraft
     assigned_aircraft, unassigned_aircraft = fetch_aircraft_by_squadron(DB_PATH)
@@ -1357,9 +1340,18 @@ async def update_mayfly(ctx):
         await ctx.send("No aircraft available.")
         return
 
-    aircraft_embed = discord.Embed(title="Available Aircraft", description="Select aircraft by ID(s):", color=0x00ff00)
     aircraft_ids = [str(aircraft[0]) for aircraft in aircraft_list]
-    aircraft_embed.add_field(name="Aircraft IDs", value=", ".join(aircraft_ids), inline=False)
+
+    # Create embed and add aircraft IDs in chunks
+    aircraft_embed = discord.Embed(title="Available Aircraft", description="Select aircraft by ID(s):", color=0x00ff00)
+    
+    chunk_size = 1024  # Maximum characters per field
+    max_ids_per_chunk = math.ceil(chunk_size / 7)  # Estimate how many IDs fit in 1024 chars (assuming 6 chars per ID + comma)
+    
+    for i in range(0, len(aircraft_ids), max_ids_per_chunk):
+        aircraft_chunk = ", ".join(aircraft_ids[i:i+max_ids_per_chunk])
+        aircraft_embed.add_field(name=f"Aircraft IDs {i+1}-{i+len(aircraft_chunk.split(', '))}", value=aircraft_chunk, inline=False)
+
     await ctx.send(embed=aircraft_embed)
 
     # Get user response for aircraft IDs
