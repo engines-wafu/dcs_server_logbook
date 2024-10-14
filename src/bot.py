@@ -1533,6 +1533,11 @@ async def submit_stores_request(ctx):
         # Handle the failure to insert a new stores request
         await ctx.send("Failed to submit the stores request.")
 
+    if update_mayfly_html():
+        await ctx.send("Mayfly HTML updated successfully!")
+    else:
+        await ctx.send("Failed to update Mayfly HTML.")
+
 @bot.command(name='submit_expenditure_report')
 async def submit_expenditure_report(ctx):
     """
