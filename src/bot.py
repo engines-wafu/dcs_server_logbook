@@ -1428,9 +1428,6 @@ async def update_mayfly(ctx):
     # Confirmation message
     await ctx.send(f"Aircraft {', '.join(selected_aircraft_ids)} updated.")
 
-        # Run the batch file after updating the aircraft state
-    batch_file_path = os.path.abspath(os.path.join('C:', 'dcs_server_logbook', 'Run Logbook Parser.bat'))
-    
     if update_mayfly_html():
         await ctx.send("Mayfly HTML updated successfully!")
     else:
@@ -1491,7 +1488,7 @@ async def submit_expenditure_report(ctx):
     reporter = str(ctx.author)
 
     # Use the current date for the report
-    report_date = datetime.now().strftime("%Y-%m-%d")
+    report_date = datetime.datetime.now().strftime("%Y-%m-%d")
 
     # Insert data into the database
     insert_success = insert_expenditure_report(DB_PATH, reporter, report_date, operation_name, squadron, stores_used, bda, aar)
@@ -1516,6 +1513,18 @@ async def submit_expenditure_report(ctx):
     else:
         # Handle the failure to insert a new expenditure report
         await ctx.send("Failed to submit the expenditure report.")
+
+    if update_mayfly_html():
+        await ctx.send("Mayfly HTML updated successfully!")
+    else:
+        await ctx.send("Failed to update Mayfly HTML.")
+
+    if update_mayfly_html():
+        await ctx.send("Mayfly HTML updated successfully!")
+    else:
+        await ctx.send("Failed to update Mayfly HTML.")
+
+
 
 @bot.command(name='file_flight_plan')
 async def file_flight_plan(ctx):
@@ -1659,6 +1668,12 @@ async def file_flight_plan(ctx):
     else:
         # Handle the failure to insert a new flight plan
         await ctx.send("Failed to file the flight plan.")
+
+    if update_mayfly_html():
+        await ctx.send("Mayfly HTML updated successfully!")
+    else:
+        await ctx.send("Failed to update Mayfly HTML.")
+
 
 # Override the default help command
 bot.remove_command('help')
