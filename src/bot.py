@@ -1436,6 +1436,86 @@ async def update_mayfly(ctx):
     else:
         await ctx.send("Failed to update Mayfly HTML.")
 
+@bot.command(name='submit_expenditure_report')
+async def submit_expenditure_report(ctx):
+    """
+    Allows users to submit an expenditure report by collecting necessary details through direct messages (DMs).
+
+    This command facilitates the filing of an expenditure report by prompting the user to provide various details
+    such as the operation name, squadron, stores used, and optionally a battle damage assessment (BDA) and after-action report (AAR).
+    The process is carried out through DMs for privacy and ease of data collection.
+
+    Usage: !submit_expenditure_report
+    """
+
+    # Helper function to prompt for input and return response in DMs
+    async def prompt_and_get_response_dm(prompt):
+        dm_channel = await ctx.author.create_dm()
+        await dm_channel.send(prompt)
+        response = await get_response_dm(ctx, dm_channel)
+        return response if response else None
+
+    # Function to wait for user's response in DMs
+    async def get_response_dm(ctx, dm_channel):
+        def check(m):
+            return m.author == ctx.author and m.channel == dm_channel
+
+        try:
+            response = await bot.wait_for('message', check=check, timeout=90.0)
+            return response.content
+        except asyncio.TimeoutError:
+            await dm_channel.send("You did not respond in time.")
+            return None
+
+    # Inform user that the interaction will continue in DMs
+    await ctx.send(f"{ctx.author.mention}, please check your DMs to submit the expenditure report.")
+
+    # Collecting all necessary inputs from the user
+    operation_name = await prompt_and_get_response_dm("Please enter the operation/exercise name (e.g., Operation Thunderstrike):")
+    if not operation_name:
+        return
+
+    squadron = await prompt_and_get_response_dm("Please enter your squadron name:")
+    if not squadron:
+        return
+
+    stores_used = await prompt_and_get_response_dm("Please enter the stores/weapons used (e.g., 2x AGM-65, 4x AIM-9X):")
+    if not stores_used:
+        return
+
+    bda = await prompt_and_get_response_dm("Please enter the battle damage assessment (optional, press Enter to skip):")
+
+    aar = await prompt_and_get_response_dm("Please enter the after-action report (optional, press Enter to skip):")
+
+    # Use ctx.author.name to get the reporter's Discord name
+    reporter = str(ctx.author)
+
+    # Use the current date for the report
+    report_date = datetime.now().strftime("%Y-%m-%d")
+
+    # Insert data into the database
+    insert_success = insert_expenditure_report(DB_PATH, reporter, report_date, operation_name, squadron, stores_used, bda, aar)
+
+    if insert_success:
+        # Send a confirmation message
+        embed = discord.Embed(title="JSW Expenditure Reporting System", color=0x2ecc71)
+        embed.add_field(name="Reporter", value=reporter, inline=True)
+        embed.add_field(name="Date", value=report_date, inline=True)
+        embed.add_field(name="Operation Name", value=operation_name, inline=True)
+        embed.add_field(name="Squadron", value=squadron, inline=True)
+        embed.add_field(name="Stores Used", value=stores_used, inline=False)
+        embed.add_field(name="Battle Damage Assessment", value=bda or "N/A", inline=False)
+        embed.add_field(name="After Action Report", value=aar or "N/A", inline=False)
+
+        embed.set_footer(text="Expenditure Report Submitted Successfully")
+
+        # Send confirmation to the user in DMs
+        dm_channel = await ctx.author.create_dm()
+        await dm_channel.send(embed=embed)
+
+    else:
+        # Handle the failure to insert a new expenditure report
+        await ctx.send("Failed to submit the expenditure report.")
 
 @bot.command(name='file_flight_plan')
 async def file_flight_plan(ctx):

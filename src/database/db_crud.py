@@ -1,5 +1,29 @@
-import sqlite3, time, logging, aiosqlite
+import aiosqlite
 import datetime
+import logging
+import sqlite3
+import time
+
+def create_expenditure_report_table(db_path):
+    conn = sqlite3.connect(db_path)
+    cursor = conn.cursor()
+
+    # Create Expenditure_Report table
+    cursor.execute('''
+        CREATE TABLE IF NOT EXISTS Expenditure_Report (
+            id INTEGER PRIMARY KEY AUTOINCREMENT,
+            reporter TEXT NOT NULL,
+            date TEXT NOT NULL,
+            operation_name TEXT NOT NULL,
+            squadron TEXT NOT NULL,
+            stores_used TEXT NOT NULL,
+            bda TEXT,
+            aar TEXT
+        )
+    ''')
+    
+    conn.commit()
+    conn.close()
 
 def find_pilot_id_by_name(db_path, pilot_name):
     """
@@ -768,6 +792,36 @@ def find_pilot_id_by_name(db_path, pilot_name):
     conn.close()
 
     return result[0] if result else None
+
+def insert_expenditure_report(db_path, reporter, date, operation_name, squadron, stores_used, bda=None, aar=None):
+    """
+    Inserts a new expenditure report into the Expenditure_Report table.
+
+    :param db_path: Path to the SQLite database file.
+    :param reporter: The name of the reporter (eventually from Discord username).
+    :param date: The date of the report (could be a timestamp or string).
+    :param operation_name: The name of the operation or exercise.
+    :param squadron: The squadron involved in the operation.
+    :param stores_used: Free text listing the weapons or stores used.
+    :param bda: Optional battle damage report (BDA).
+    :param aar: Optional after-action report (AAR).
+    """
+    conn = sqlite3.connect(db_path)
+    cursor = conn.cursor()
+
+    try:
+        cursor.execute("""
+            INSERT INTO Expenditure_Report (reporter, date, operation_name, squadron, stores_used, bda, aar)
+            VALUES (?, ?, ?, ?, ?, ?, ?)
+        """, (reporter, date, operation_name, squadron, stores_used, bda, aar))
+
+        conn.commit()
+    except Exception as e:
+        print(f"An error occurred: {e}")
+    finally:
+        conn.close()
+
+    return True
 
 def insert_flight_plan(db_path, aircraft_type, aircraft_callsign, flight_rules, type_of_flight, departure_aerodrome, departure_time, route, destination_aerodrome, total_estimated_elapsed_time, alternate_aerodrome, fuel_on_board, other_information):
     """
