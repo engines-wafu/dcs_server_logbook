@@ -1044,6 +1044,11 @@ async def give_qualification(ctx):
 
     await ctx.send(embed=discord.Embed(description="Qualification assigned to selected pilots.", color=0x00ff00))
 
+    if update_mayfly_html():
+        await ctx.send("Mayfly HTML updated successfully!")
+    else:
+        await ctx.send("Failed to update Mayfly HTML.")
+
 @bot.command(name='clear_award')
 @is_commanding_officer()
 async def clear_award(ctx, *, pilot_name):
@@ -1092,6 +1097,11 @@ async def clear_award(ctx, *, pilot_name):
 
     await ctx.send(f"Awards removed from pilot {pilot_name}'s record.")
 
+    if update_mayfly_html():
+        await ctx.send("Mayfly HTML updated successfully!")
+    else:
+        await ctx.send("Failed to update Mayfly HTML.")
+
 @bot.command(name='clear_qualification')
 @is_commanding_officer()
 async def clear_qualification(ctx, *, pilot_name):
@@ -1139,6 +1149,11 @@ async def clear_qualification(ctx, *, pilot_name):
         remove_qualification_from_pilot(DB_PATH, pilot_id, qid)
 
     await ctx.send(f"Qualifications removed from pilot {pilot_name}'s record.")
+
+    if update_mayfly_html():
+        await ctx.send("Mayfly HTML updated successfully!")
+    else:
+        await ctx.send("Failed to update Mayfly HTML.")
 
 @bot.command(name='assign_co')
 @is_server_admin()
