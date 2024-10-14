@@ -304,6 +304,96 @@ def generate_flight_plans_page(db_path, output_path):
     with open(output_file_path, 'w') as file:
         file.write(html_content)
 
+def generate_stores_requests_page(db_path, output_path):
+    conn = sqlite3.connect(db_path)
+    cursor = conn.cursor()
+
+    # Fetch stores request data
+    cursor.execute("SELECT * FROM Stores_Request ORDER BY id DESC")
+    stores_requests = cursor.fetchall()
+    conn.close()
+
+    # Read the navbar HTML content
+    navbar_path = 'html/navbar.html'
+    with open(navbar_path, 'r') as file:
+        navbar_html = file.read()
+
+    # HTML structure
+    html_content = f"""
+    <html>
+    <head>
+        <title>Stores Requests</title>
+        <meta name='viewport' content='width=device-width, initial-scale=1'>
+        <link rel="stylesheet" type="text/css" href="styles.css">
+    </head>
+    <body>
+        {navbar_html}
+        <div class="container">
+        <h1>Stores Requests</h1>
+        <table>
+            <tr><th>Requester</th><th>Date</th><th>Receiving Unit</th><th>Magazine Location</th><th>Need By</th><th>Stores Requested</th><th>Details</th></tr>
+    """
+
+    # Populate table rows
+    for request in stores_requests:
+        html_content += "<tr>" + "".join([f"<td>{item}</td>" for item in request[1:]]) + "</tr>"  # Skip the ID column
+
+    html_content += '''
+        </table>
+        </div>
+    </body>
+    </html>
+    '''
+
+    # Write HTML content to file
+    with open(output_path, 'w') as file:
+        file.write(html_content)
+
+def generate_expenditure_reports_page(db_path, output_path):
+    conn = sqlite3.connect(db_path)
+    cursor = conn.cursor()
+
+    # Fetch expenditure report data
+    cursor.execute("SELECT * FROM Expenditure_Report ORDER BY id DESC")
+    expenditure_reports = cursor.fetchall()
+    conn.close()
+
+    # Read the navbar HTML content
+    navbar_path = 'html/navbar.html'
+    with open(navbar_path, 'r') as file:
+        navbar_html = file.read()
+
+    # HTML structure
+    html_content = f"""
+    <html>
+    <head>
+        <title>Expenditure Reports</title>
+        <meta name='viewport' content='width=device-width, initial-scale=1'>
+        <link rel="stylesheet" type="text/css" href="styles.css">
+    </head>
+    <body>
+        {navbar_html}
+        <div class="container">
+        <h1>Expenditure Reports</h1>
+        <table>
+            <tr><th>Reporter</th><th>Date</th><th>Operation</th><th>Squadron</th><th>Stores Used</th><th>BDA</th><th>AAR</th></tr>
+    """
+
+    # Populate table rows
+    for report in expenditure_reports:
+        html_content += "<tr>" + "".join([f"<td>{item}</td>" for item in report[1:]]) + "</tr>"  # Skip the ID column
+
+    html_content += '''
+        </table>
+        </div>
+    </body>
+    </html>
+    '''
+
+    # Write HTML content to file
+    with open(output_path, 'w') as file:
+        file.write(html_content)
+
 def generate_mayfly_html(db_path, output_file_path):
     # Fetch data from the database
     squadrons = get_squadron_ids(db_path)
