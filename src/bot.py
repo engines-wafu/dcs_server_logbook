@@ -1632,7 +1632,7 @@ async def submit_expenditure_report(ctx):
         await ctx.send("Failed to submit the expenditure report.")
 
     if update_mayfly_html():
-        break
+        await ctx.send("Mayfly HTML updated successfully!")
     else:
         await ctx.send("Failed to update Mayfly HTML.")
 
