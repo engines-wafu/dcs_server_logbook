@@ -1433,6 +1433,106 @@ async def update_mayfly(ctx):
     else:
         await ctx.send("Failed to update Mayfly HTML.")
 
+@bot.command(name='submit_stores_request')
+async def submit_stores_request(ctx):
+    """
+    Allows users to submit a stores request by collecting necessary details through direct messages (DMs).
+
+    This command facilitates the filing of a stores request by prompting the user to provide various details
+    such as receiving unit, receiving magazine location, need-by date, stores requested, and additional details.
+    The process is carried out through DMs for privacy and ease of data collection.
+
+    Usage: !submit_stores_request
+    """
+
+    # Helper function to prompt for input and return response in DMs
+    async def prompt_and_get_response_dm(prompt):
+        dm_channel = await ctx.author.create_dm()
+        await dm_channel.send(prompt)
+        response = await get_response_dm(ctx, dm_channel)
+        return response if response else None
+
+    # Function to wait for user's response in DMs
+    async def get_response_dm(ctx, dm_channel):
+        def check(m):
+            return m.author == ctx.author and m.channel == dm_channel
+
+        try:
+            response = await bot.wait_for('message', check=check, timeout=90.0)
+            return response.content
+        except asyncio.TimeoutError:
+            await dm_channel.send("You did not respond in time.")
+            return None
+
+    # Inform user that the interaction will continue in DMs
+    await ctx.send(f"{ctx.author.mention}, please check your DMs to submit the stores request.")
+
+    # Collecting all necessary inputs from the user
+    receiving_unit = await prompt_and_get_response_dm("Please enter the receiving unit:")
+    if not receiving_unit:
+        return
+
+    receiving_magazine_location = await prompt_and_get_response_dm("Please enter the receiving magazine location:")
+    if not receiving_magazine_location:
+        return
+
+    need_by_date = await prompt_and_get_response_dm("Please enter the need-by date (e.g., 2024-10-20):")
+    if not need_by_date:
+        return
+
+    stores_requested = await prompt_and_get_response_dm("Please enter the stores requested (e.g., 10x AGM-65, 50x 120mm rounds):")
+    if not stores_requested:
+        return
+
+    additional_details = await prompt_and_get_response_dm("Please enter additional details (e.g., operation or mission details) (optional, press Enter to skip):")
+
+    # Use ctx.author.name to get the requester's Discord name
+    requester = str(ctx.author)
+
+    # Use the current date for the request
+    request_date = datetime.datetime.now().strftime("%Y-%m-%d")
+
+    # Insert data into the database
+    insert_success = insert_stores_request(DB_PATH, requester, request_date, receiving_unit, receiving_magazine_location, need_by_date, stores_requested, additional_details)
+
+    if insert_success:
+        # Send a confirmation message
+        embed = discord.Embed(title="JSW Stores Request System", color=0x2ecc71)
+        embed.add_field(name="Requester", value=requester, inline=True)
+        embed.add_field(name="Date", value=request_date, inline=True)
+        embed.add_field(name="Receiving Unit", value=receiving_unit, inline=True)
+        embed.add_field(name="Receiving Magazine Location", value=receiving_magazine_location, inline=True)
+        embed.add_field(name="Need By Date", value=need_by_date, inline=True)
+        embed.add_field(name="Stores Requested", value=stores_requested, inline=False)
+        embed.add_field(name="Additional Details", value=additional_details or "N/A", inline=False)
+
+        embed.set_footer(text="Stores Request Submitted Successfully")
+
+        # Send confirmation to the user in DMs
+        dm_channel = await ctx.author.create_dm()
+        await dm_channel.send(embed=embed)
+
+        # Now send the report to the relevant channel (if applicable)
+        target_channel_name = STORES_REQUEST_CHANNEL_NAME  # Update with the correct channel name
+        target_channel = None
+        for channel in ctx.guild.channels:
+            if channel.name == target_channel_name:
+                target_channel = channel
+                break
+
+        # Specify the role you want to mention (by ID)
+        role_id = int(STORES_OFFICER_ROLE)  # Update with the correct role ID
+        role_to_mention = ctx.guild.get_role(role_id)
+
+        # Send the report to the stores request channel
+        if target_channel and role_to_mention:
+            await target_channel.send(content=f"{role_to_mention.mention}", embed=embed)
+        else:
+            await ctx.send("Target channel or role not found.")
+    else:
+        # Handle the failure to insert a new stores request
+        await ctx.send("Failed to submit the stores request.")
+
 @bot.command(name='submit_expenditure_report')
 async def submit_expenditure_report(ctx):
     """
@@ -1532,7 +1632,7 @@ async def submit_expenditure_report(ctx):
         await ctx.send("Failed to submit the expenditure report.")
 
     if update_mayfly_html():
-        await ctx.send("Mayfly HTML updated successfully!")
+        break
     else:
         await ctx.send("Failed to update Mayfly HTML.")
 

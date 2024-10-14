@@ -4,6 +4,36 @@ import logging
 import sqlite3
 import time
 
+def insert_stores_request(db_path, requester, date, receiving_unit, receiving_magazine_location, need_by_date, stores_requested, additional_details=None):
+    """
+    Inserts a new stores request into the Stores_Request table.
+
+    :param db_path: Path to the SQLite database file.
+    :param requester: The Discord username of the requester.
+    :param date: Date the request is submitted (could be timestamp or string).
+    :param receiving_unit: The unit receiving the stores.
+    :param receiving_magazine_location: Location where the stores will be stored.
+    :param need_by_date: The date the stores are needed by.
+    :param stores_requested: The stores requested (free text).
+    :param additional_details: Additional information (optional).
+    """
+    conn = sqlite3.connect(db_path)
+    cursor = conn.cursor()
+
+    try:
+        cursor.execute("""
+            INSERT INTO Stores_Request (requester, date, receiving_unit, receiving_magazine_location, need_by_date, stores_requested, additional_details)
+            VALUES (?, ?, ?, ?, ?, ?, ?)
+        """, (requester, date, receiving_unit, receiving_magazine_location, need_by_date, stores_requested, additional_details))
+
+        conn.commit()
+    except Exception as e:
+        print(f"An error occurred: {e}")
+    finally:
+        conn.close()
+
+    return True
+
 def create_expenditure_report_table(db_path):
     conn = sqlite3.connect(db_path)
     cursor = conn.cursor()
