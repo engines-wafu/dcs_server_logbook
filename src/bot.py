@@ -1037,7 +1037,8 @@ async def give_qualification(ctx):
         return
 
     # Process pilot names and get their IDs
-    pilot_ids = [find_pilot_id_by_name(DB_PATH, name.strip()) for name in pilot_names_response.split(",") if name.strip()]
+    pilot_names = [name.strip() for name in pilot_names_response.split(",") if name.strip()]
+    pilot_ids = [find_pilot_id_by_name(DB_PATH, name) for name in pilot_names]
 
     # Get qualification ID from the user
     await ctx.send("Enter the qualification ID from the list above:")
@@ -1061,16 +1062,16 @@ async def give_qualification(ctx):
     date_expires = date_issued + duration if duration else None
 
     # Check if pilot already has the qualification, then assign or refresh it
-    for pilot_id in pilot_ids:
+    for pilot_id, pilot_name in zip(pilot_ids, pilot_names):
         existing_qualification = check_existing_qualification(DB_PATH, pilot_id, qualification_id)
         if existing_qualification:
             # If the qualification already exists, refresh the dates
             refresh_qualification(DB_PATH, pilot_id, qualification_id, date_issued, date_expires)
-            await ctx.send(f"Qualification refreshed for pilot with ID {pilot_id}.")
+            await ctx.send(f"Qualification refreshed for pilot {pilot_name}.")
         else:
             # If the pilot does not have the qualification, assign it
             assign_qualification_to_pilot(DB_PATH, pilot_id, qualification_id, date_issued, date_expires)
-            await ctx.send(f"Qualification assigned to pilot with ID {pilot_id}.")
+            await ctx.send(f"Qualification assigned to pilot {pilot_name}.")
 
     await ctx.send(embed=discord.Embed(description="Qualification process completed.", color=0x00ff00))
 
