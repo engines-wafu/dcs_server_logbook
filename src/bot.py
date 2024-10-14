@@ -1510,6 +1510,23 @@ async def submit_expenditure_report(ctx):
         dm_channel = await ctx.author.create_dm()
         await dm_channel.send(embed=embed)
 
+        # Now send the report to the flight plan channel
+        target_channel_name = BDA_CHANNEL_NAME
+        target_channel = None
+        for channel in ctx.guild.channels:
+            if channel.name == target_channel_name:
+                target_channel = channel
+                break
+
+        # Specify the role you want to mention (by ID)
+        role_id = int(CO_ROLE)
+        role_to_mention = ctx.guild.get_role(role_id)
+
+        # Send the report to the flight plan channel
+        if target_channel and role_to_mention:
+            await target_channel.send(content=f"{role_to_mention.mention}", embed=embed)
+        else:
+            await ctx.send("Target channel or role not found.")
     else:
         # Handle the failure to insert a new expenditure report
         await ctx.send("Failed to submit the expenditure report.")
@@ -1518,13 +1535,6 @@ async def submit_expenditure_report(ctx):
         await ctx.send("Mayfly HTML updated successfully!")
     else:
         await ctx.send("Failed to update Mayfly HTML.")
-
-    if update_mayfly_html():
-        await ctx.send("Mayfly HTML updated successfully!")
-    else:
-        await ctx.send("Failed to update Mayfly HTML.")
-
-
 
 @bot.command(name='file_flight_plan')
 async def file_flight_plan(ctx):
@@ -1673,7 +1683,6 @@ async def file_flight_plan(ctx):
         await ctx.send("Mayfly HTML updated successfully!")
     else:
         await ctx.send("Failed to update Mayfly HTML.")
-
 
 # Override the default help command
 bot.remove_command('help')
