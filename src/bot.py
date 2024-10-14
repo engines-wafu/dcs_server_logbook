@@ -61,6 +61,33 @@ normalized_pilot_name = ''.join(ch.lower() for ch in pilot_name if ch.isalnum())
 score = fuzz.ratio(normalized_test_name, normalized_pilot_name)
 logger.debug(f"Test match score between '{normalized_test_name}' and '{normalized_pilot_name}': {score}")
 
+def check_existing_qualification(db_path, pilot_id, qualification_id):
+    conn = sqlite3.connect(db_path)
+    cursor = conn.cursor()
+
+    cursor.execute("""
+        SELECT * FROM Pilot_Qualifications 
+        WHERE pilot_id = ? AND qualification_id = ?
+    """, (pilot_id, qualification_id))
+
+    result = cursor.fetchone()
+    conn.close()
+
+    return result
+
+def refresh_qualification(db_path, pilot_id, qualification_id, date_issued, date_expires):
+    conn = sqlite3.connect(db_path)
+    cursor = conn.cursor()
+
+    cursor.execute("""
+        UPDATE Pilot_Qualifications
+        SET date_issued = ?, date_expires = ?
+        WHERE pilot_id = ? AND qualification_id = ?
+    """, (date_issued, date_expires, pilot_id, qualification_id))
+
+    conn.commit()
+    conn.close()
+
 def update_mayfly_html():
     try:
         # Copy SlmodStats files from their respective locations
@@ -961,9 +988,11 @@ async def handle_lcr_award(ctx, pilot_id, pilot_name, squadron_details):
 @is_commanding_officer()
 async def give_qualification(ctx):
     """
-    Assigns a specified qualification to selected pilots, with paginated qualification display.
+    Assigns or refreshes a specified qualification for selected pilots, with paginated qualification display.
 
-    This command first displays a list of available qualifications in a paginated format. Users can navigate through the pages using reaction emojis. Once the user views the qualifications, they are prompted to enter the names of the pilots (comma-separated) and the ID of the chosen qualification. The specified qualification is then assigned to the given pilots, along with its duration.
+    This command displays available qualifications in a paginated format. Users can navigate through the pages using reaction emojis.
+    Once the user views the qualifications, they are prompted to enter the names of the pilots (comma-separated) and the ID of the chosen qualification.
+    If a pilot already has the qualification, it will be refreshed (i.e., the expiration date will be extended).
 
     Usage: !give_qualification
 
@@ -996,17 +1025,10 @@ async def give_qualification(ctx):
     # Send the initial qualifications list
     message = await ctx.send(embed=embed)
 
-    # Store the message ID and other details for reaction handling
-    qualification_messages = {}
-    qualification_messages[message.id] = {'page': current_page, 'total_pages': total_pages, 'qualifications': qualifications, 'items_per_page': items_per_page}
-
     # Add reaction emojis for navigation if there are multiple pages
     if total_pages > 1:
         await message.add_reaction("⬅️")
         await message.add_reaction("➡️")
-
-    # Reaction handling for page navigation (you'll need to implement this logic)
-    # ...
 
     # Get pilot names
     await ctx.send("Enter pilot name(s) (comma-separated):")
@@ -1038,11 +1060,19 @@ async def give_qualification(ctx):
     date_issued = int(time.time())
     date_expires = date_issued + duration if duration else None
 
-    # Assign qualification to pilots
+    # Check if pilot already has the qualification, then assign or refresh it
     for pilot_id in pilot_ids:
-        assign_qualification_to_pilot(DB_PATH, pilot_id, qualification_id, date_issued, date_expires)
+        existing_qualification = check_existing_qualification(DB_PATH, pilot_id, qualification_id)
+        if existing_qualification:
+            # If the qualification already exists, refresh the dates
+            refresh_qualification(DB_PATH, pilot_id, qualification_id, date_issued, date_expires)
+            await ctx.send(f"Qualification refreshed for pilot with ID {pilot_id}.")
+        else:
+            # If the pilot does not have the qualification, assign it
+            assign_qualification_to_pilot(DB_PATH, pilot_id, qualification_id, date_issued, date_expires)
+            await ctx.send(f"Qualification assigned to pilot with ID {pilot_id}.")
 
-    await ctx.send(embed=discord.Embed(description="Qualification assigned to selected pilots.", color=0x00ff00))
+    await ctx.send(embed=discord.Embed(description="Qualification process completed.", color=0x00ff00))
 
     if update_mayfly_html():
         await ctx.send("Mayfly HTML updated successfully!")
