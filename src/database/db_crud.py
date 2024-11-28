@@ -1,8 +1,21 @@
 import aiosqlite
 import datetime
 import logging
+import re
 import sqlite3
 import time
+
+def remove_emojis(text):
+    emoji_pattern = re.compile(
+        "["
+        u"\U0001F600-\U0001F64F"  # emoticons
+        u"\U0001F300-\U0001F5FF"  # symbols & pictographs
+        u"\U0001F680-\U0001F6FF"  # transport & map symbols
+        u"\U0001F1E0-\U0001F1FF"  # flags (iOS)
+        u"\U00002702-\U000027B0"  # other symbols
+        u"\U000024C2-\U0001F251" 
+        "]+", flags=re.UNICODE)
+    return emoji_pattern.sub(r'', text)
 
 def insert_stores_request(db_path, requester, date, receiving_unit, receiving_magazine_location, need_by_date, stores_requested, additional_details=None):
     """
@@ -17,6 +30,14 @@ def insert_stores_request(db_path, requester, date, receiving_unit, receiving_ma
     :param stores_requested: The stores requested (free text).
     :param additional_details: Additional information (optional).
     """
+    # Remove emojis from inputs
+    requester = remove_emojis(requester)
+    receiving_unit = remove_emojis(receiving_unit)
+    receiving_magazine_location = remove_emojis(receiving_magazine_location)
+    stores_requested = remove_emojis(stores_requested)
+    if additional_details:
+        additional_details = remove_emojis(additional_details)
+
     conn = sqlite3.connect(db_path)
     cursor = conn.cursor()
 
@@ -823,19 +844,27 @@ def find_pilot_id_by_name(db_path, pilot_name):
 
     return result[0] if result else None
 
-def insert_expenditure_report(db_path, reporter, date, operation_name, squadron, stores_used, bda=None, aar=None):
+def insert_expenditure_report(db_path, reporter, date, operation_name, squadron, stores_used, bda, aar):
     """
     Inserts a new expenditure report into the Expenditure_Report table.
 
     :param db_path: Path to the SQLite database file.
-    :param reporter: The name of the reporter (eventually from Discord username).
-    :param date: The date of the report (could be a timestamp or string).
-    :param operation_name: The name of the operation or exercise.
-    :param squadron: The squadron involved in the operation.
-    :param stores_used: Free text listing the weapons or stores used.
-    :param bda: Optional battle damage report (BDA).
-    :param aar: Optional after-action report (AAR).
+    :param reporter: The Discord username of the reporter.
+    :param date: Date the report is submitted (could be timestamp or string).
+    :param operation_name: Name of the operation.
+    :param squadron: The squadron involved.
+    :param stores_used: The stores used (free text).
+    :param bda: Battle Damage Assessment (free text).
+    :param aar: After Action Report (free text).
     """
+    # Remove emojis from inputs
+    reporter = remove_emojis(reporter)
+    operation_name = remove_emojis(operation_name)
+    squadron = remove_emojis(squadron)
+    stores_used = remove_emojis(stores_used)
+    bda = remove_emojis(bda)
+    aar = remove_emojis(aar)
+
     conn = sqlite3.connect(db_path)
     cursor = conn.cursor()
 
@@ -853,32 +882,40 @@ def insert_expenditure_report(db_path, reporter, date, operation_name, squadron,
 
     return True
 
-def insert_flight_plan(db_path, aircraft_type, aircraft_callsign, flight_rules, type_of_flight, departure_aerodrome, departure_time, route, destination_aerodrome, total_estimated_elapsed_time, alternate_aerodrome, fuel_on_board, other_information):
+def insert_flight_plan(db_path, aircraft_type, aircraft_callsign, flight_rules, type_of_flight, departure_aerodrome, route, destination_aerodrome, alternate_aerodrome, other_information):
     """
-    Inserts a new flight plan into the Flight_Plans table.
+    Inserts a new flight plan into the Flight_Plan table.
 
     :param db_path: Path to the SQLite database file.
     :param aircraft_type: Type of the aircraft.
     :param aircraft_callsign: Callsign of the aircraft.
-    :param flight_rules: Flight rules (e.g., IFR, VFR).
-    :param type_of_flight: Type of the flight (e.g., commercial, private).
-    :param departure_aerodrome: Aerodrome of departure.
-    :param departure_time: Estimated time of departure.
-    :param route: Planned route.
+    :param flight_rules: Flight rules.
+    :param type_of_flight: Type of the flight.
+    :param departure_aerodrome: Departure aerodrome.
+    :param route: Route of the flight.
     :param destination_aerodrome: Destination aerodrome.
-    :param total_estimated_elapsed_time: Total estimated elapsed time for the flight.
-    :param alternate_aerodrome: Alternate aerodrome in case of changes.
-    :param fuel_on_board: Amount of fuel on board.
-    :param other_information: Any other relevant information.
+    :param alternate_aerodrome: Alternate aerodrome.
+    :param other_information: Other information (free text).
     """
+    # Remove emojis from inputs
+    aircraft_type = remove_emojis(aircraft_type)
+    aircraft_callsign = remove_emojis(aircraft_callsign)
+    flight_rules = remove_emojis(flight_rules)
+    type_of_flight = remove_emojis(type_of_flight)
+    departure_aerodrome = remove_emojis(departure_aerodrome)
+    route = remove_emojis(route)
+    destination_aerodrome = remove_emojis(destination_aerodrome)
+    alternate_aerodrome = remove_emojis(alternate_aerodrome)
+    other_information = remove_emojis(other_information)
+
     conn = sqlite3.connect(db_path)
     cursor = conn.cursor()
 
     try:
         cursor.execute("""
-            INSERT INTO Flight_Plans (aircraft_type, aircraft_callsign, flight_rules, type_of_flight, departure_aerodrome, departure_time, route, destination_aerodrome, total_estimated_elapsed_time, alternate_aerodrome, fuel_on_board, other_information)
-            VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
-        """, (aircraft_type, aircraft_callsign, flight_rules, type_of_flight, departure_aerodrome, departure_time, route, destination_aerodrome, total_estimated_elapsed_time, alternate_aerodrome, fuel_on_board, other_information))
+            INSERT INTO Flight_Plan (aircraft_type, aircraft_callsign, flight_rules, type_of_flight, departure_aerodrome, route, destination_aerodrome, alternate_aerodrome, other_information)
+            VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)
+        """, (aircraft_type, aircraft_callsign, flight_rules, type_of_flight, departure_aerodrome, route, destination_aerodrome, alternate_aerodrome, other_information))
 
         conn.commit()
     except Exception as e:
