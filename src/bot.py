@@ -871,8 +871,6 @@ async def edit_qualification(ctx):
     """
     Edits an existing qualification's details, including name, description, duration, 
     and associated squadrons.
-    
-    Usage: !edit_qualification
     """
     await ctx.send("Enter the qualification ID or name to edit:")
     qualification_identifier = await get_response(ctx)
@@ -883,14 +881,17 @@ async def edit_qualification(ctx):
         await ctx.send(f"No qualification found with ID or name '{qualification_identifier}'.")
         return
 
-    current_duration = current_duration /  (24 * 60 * 60)
     qualification_id, current_name, current_description, current_duration = qualification
+
+    # Handle None for `current_duration`
+    if current_duration is None:
+        current_duration = 0  # Set to default duration (or another appropriate value)
 
     # Display current qualification details
     await ctx.send(f"Editing qualification:\n"
                    f"Name: {current_name}\n"
                    f"Description: {current_description or 'None'}\n"
-                   f"Duration: {current_duration or 'None'} days\n")
+                   f"Duration: {current_duration} days\n")
 
     # Prompt user for new details
     await ctx.send("Enter new name (or leave blank to keep current):")
