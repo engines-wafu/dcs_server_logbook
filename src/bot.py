@@ -1429,13 +1429,13 @@ async def update_mayfly(ctx):
         return
 
     # Prompt for new state
-    await ctx.send("Enter new state for the aircraft ('S' for Serviceable, 'US' for Unserviceable):")
+    await ctx.send("Enter new state for the aircraft ('S' for Serviceable, 'US' for Unserviceable, 'L' for Lost):")
     state_response = await get_response(ctx)
     if state_response is None:
         return
 
-    if state_response not in ['S', 'US']:
-        await ctx.send("Invalid state. Please enter 'S' for Serviceable or 'US' for Unserviceable.")
+    if state_response not in ['S', 'US', 'L']:
+        await ctx.send("Invalid state. Please enter 'S' for Serviceable, 'US' for Unserviceable, or 'L' for Lost.")
         return
 
     # Prompt for ETBOL in hours (expected time before offloading)
@@ -1478,7 +1478,7 @@ async def update_mayfly(ctx):
         await ctx.send("Mayfly HTML updated successfully!")
     else:
         await ctx.send("Failed to update Mayfly HTML.")
-
+        
 @bot.command(name='submit_stores_request')
 async def submit_stores_request(ctx):
     """
