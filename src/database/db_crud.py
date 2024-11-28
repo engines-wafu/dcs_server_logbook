@@ -55,6 +55,30 @@ def insert_stores_request(db_path, requester, date, receiving_unit, receiving_ma
 
     return True
 
+def update_qualification_in_database(db_path, qualification_id, name, description, duration):
+    """
+    Updates a qualification's details in the database.
+
+    Args:
+        db_path (str): Path to the SQLite database.
+        qualification_id (int): ID of the qualification to update.
+        name (str): New name of the qualification.
+        description (str): New description of the qualification.
+        duration (int): New duration of the qualification in days.
+
+    Returns:
+        None
+    """
+    conn = sqlite3.connect(db_path)
+    cursor = conn.cursor()
+    cursor.execute("""
+        UPDATE Qualifications
+        SET qualification_name = ?, qualification_description = ?, qualification_duration = ?
+        WHERE qualification_id = ?
+    """, (name, description, duration, qualification_id))
+    conn.commit()
+    conn.close()
+
 def get_squadrons_for_qualification(db_path, qualification_id):
     """
     Fetches the list of squadrons associated with a given qualification.
