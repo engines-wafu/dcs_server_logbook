@@ -62,7 +62,7 @@ def get_qualification_by_identifier(db_path, identifier):
     conn = sqlite3.connect(db_path)
     cursor = conn.cursor()
     cursor.execute("""
-        SELECT qualification_id, qualification_name, description, duration_days
+        SELECT qualification_id, qualification_name, qualification_description, qualification_duration
         FROM Qualifications
         WHERE qualification_id = ? OR qualification_name = ?
     """, (identifier, identifier))
