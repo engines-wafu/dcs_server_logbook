@@ -55,6 +55,21 @@ def insert_stores_request(db_path, requester, date, receiving_unit, receiving_ma
 
     return True
 
+def get_qualification_by_identifier(db_path, identifier):
+    """
+    Fetches a qualification by its ID or name from the database.
+    """
+    conn = sqlite3.connect(db_path)
+    cursor = conn.cursor()
+    cursor.execute("""
+        SELECT qualification_id, qualification_name, description, duration_days
+        FROM Qualifications
+        WHERE qualification_id = ? OR qualification_name = ?
+    """, (identifier, identifier))
+    qualification = cursor.fetchone()
+    conn.close()
+    return qualification
+
 def create_expenditure_report_table(db_path):
     conn = sqlite3.connect(db_path)
     cursor = conn.cursor()
