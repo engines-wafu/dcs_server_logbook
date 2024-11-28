@@ -55,6 +55,28 @@ def insert_stores_request(db_path, requester, date, receiving_unit, receiving_ma
 
     return True
 
+def get_squadrons_for_qualification(db_path, qualification_id):
+    """
+    Fetches the list of squadrons associated with a given qualification.
+    
+    Args:
+        db_path (str): Path to the SQLite database.
+        qualification_id (int): ID of the qualification.
+
+    Returns:
+        list of tuples: Each tuple contains a squadron_id associated with the qualification.
+    """
+    conn = sqlite3.connect(db_path)
+    cursor = conn.cursor()
+    cursor.execute("""
+        SELECT squadron_id
+        FROM Squadron_Qualifications
+        WHERE qualification_id = ?
+    """, (qualification_id,))
+    squadrons = cursor.fetchall()
+    conn.close()
+    return squadrons
+
 def get_qualification_by_identifier(db_path, identifier):
     """
     Fetches a qualification by its ID or name from the database.
