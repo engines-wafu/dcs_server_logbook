@@ -1313,6 +1313,93 @@ async def assign_pilot(ctx, *, pilot_names):  # Use '*' to capture all text afte
     except Exception as e:
         await ctx.send(f"An error occurred: {e}")
 
+@bot.command(name='unassign_pilot')
+@is_commanding_officer()
+async def unassign_pilot(ctx, *, pilot_names):  # Use '*' to capture all text after the command
+    """
+    Unassigns one or more pilots from squadrons.
+
+    This command allows the user to unassign multiple pilots from squadrons. The user enters the names of the pilots (comma-separated), and then selects the squadrons for each pilot by entering their numbers (also comma-separated).
+
+    Usage: !unassign_pilot <pilot_names>
+
+    Parameters:
+    pilot_names (str): The names of the pilots to be unassigned, separated by commas.
+
+    Example:
+    User: !unassign_pilot JohnDoe, JaneDoe
+    Bot: [Displays list of squadrons]
+    Bot: Select squadrons for the pilots by number:
+    User: 1, 2
+    """
+    pilot_names = [name.strip() for name in pilot_names.split(',')]  # Split and strip pilot names
+
+    pilot_ids = []
+    for name in pilot_names:
+        pilot_id = find_pilot_id_by_name(DB_PATH, name)
+        if pilot_id:
+            pilot_ids.append((name, pilot_id))
+        else:
+            await ctx.send(f"No pilot found with the name: {name}")
+
+    if not pilot_ids:
+        return  # Exit if no valid pilots were found
+
+    squadrons = get_squadron_ids(DB_PATH)
+    if not squadrons:
+        await ctx.send("No squadrons available.")
+        return
+
+    embed = discord.Embed(title="Squadron Unassignment",
+                          description="Select squadrons to unassign the pilots from by number:",
+                          color=0xff0000)
+
+    # Add squadrons to the embed as fields
+    for index, squadron_id in enumerate(squadrons, start=1):
+        embed.add_field(name=f"{index}.", value=squadron_id, inline=False)
+
+    message = await ctx.send(embed=embed)
+
+    def check(m):
+        return m.author == ctx.author and m.channel == ctx.channel
+
+    try:
+        response = await bot.wait_for('message', check=check, timeout=60.0)  # 60 seconds to reply
+        selected_indices = [int(num.strip()) for num in response.content.split(',')]
+        selected_squadrons = [squadrons[idx - 1] for idx in selected_indices if 1 <= idx <= len(squadrons)]
+
+        for name, pilot_id in pilot_ids:
+            name = get_pilot_name(DB_PATH, pilot_id)
+            for squadron_id in selected_squadrons:
+                unassign_pilot_from_squadron(DB_PATH, pilot_id, squadron_id)
+            await ctx.send(f"Pilot '{name}' unassigned from selected squadrons: {', '.join(selected_squadrons)}.")
+
+    except ValueError:
+        await ctx.send("Invalid selection. Please enter valid numbers.")
+    except asyncio.TimeoutError:
+        await ctx.send("You did not respond in time.")
+    except Exception as e:
+        await ctx.send(f"An error occurred: {e}")
+
+# Helper function to unassign a pilot from a squadron
+def unassign_pilot_from_squadron(db_path, pilot_id, squadron_id):
+    try:
+        conn = sqlite3.connect(db_path)
+        cursor = conn.cursor()
+        
+        cursor.execute("""
+            DELETE FROM PilotAssignments
+            WHERE pilot_id = ? AND squadron_id = ?
+        """, (pilot_id, squadron_id))
+        
+        conn.commit()
+        return True
+    except sqlite3.Error as e:
+        print(f"Database error: {e}")
+        return False
+    finally:
+        conn.close()
+
 @bot.command(name='assign_aircraft')
 @is_commanding_officer()
 async def assign_aircraft(ctx):
