@@ -883,6 +883,7 @@ async def edit_qualification(ctx):
         await ctx.send(f"No qualification found with ID or name '{qualification_identifier}'.")
         return
 
+    current_duration = current_duration /  (24 * 60 * 60)
     qualification_id, current_name, current_description, current_duration = qualification
 
     # Display current qualification details
