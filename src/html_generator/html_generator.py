@@ -519,12 +519,12 @@ def generate_qualification_html(db_path, output_filename):
         # Identify applicable qualifications for the squadron
         cursor.execute("""
             SELECT DISTINCT q.qualification_id, q.qualification_name
-            FROM Squadron_Pilots sp
-            JOIN Pilot_Qualifications pq ON sp.pilot_id = pq.pilot_id
-            JOIN Qualifications q ON pq.qualification_id = q.qualification_id
-            WHERE sp.squadron_id = ?
+            FROM Squadron_Qualifications sq
+            JOIN Qualifications q ON sq.qualification_id = q.qualification_id
+            WHERE sq.squadron_id = ?
             ORDER BY q.qualification_id ASC
         """, (squadron[0],))
+        qualifications = cursor.fetchall()
         qualifications = cursor.fetchall()
 
         # Skip squadrons with no qualifications

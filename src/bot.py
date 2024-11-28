@@ -819,27 +819,10 @@ async def create_award(ctx):
 @bot.command(name='create_qualification')
 @is_server_admin()
 async def create_qualification(ctx):
-    """
-    Creates a new qualification entry in the database.
-
-    This command prompts the user to enter the name, optional description, and optional duration (in days) of a new qualification. The qualification is then added to the database.
-
-    Usage: !create_qualification
-
-    Example:
-    User: !create_qualification
-    Bot: Enter qualification name:
-    User: Advanced Flight Training
-    Bot: Enter qualification description (optional):
-    User: Qualification for advanced flight techniques
-    Bot: Enter qualification duration in days (optional, enter a number or skip):
-    User: 365
-    """
-    # Ask for qualification details
     await ctx.send("Enter qualification name:")
     qualification_name = await get_response(ctx)
     if not qualification_name:
-        return  # Exit if no response
+        return
 
     await ctx.send("Enter qualification description (optional):")
     qualification_description = await get_response(ctx)
@@ -848,12 +831,118 @@ async def create_qualification(ctx):
     qualification_duration_str = await get_response(ctx)
     qualification_duration_days = int(qualification_duration_str) if qualification_duration_str.isdigit() else None
 
-    # Add qualification to database
+    # Fetch squadrons for association
+    squadrons = get_squadron_ids(DB_PATH)
+    if not squadrons:
+        await ctx.send("No squadrons available.")
+        return
+
+    embed = discord.Embed(title="Qualification Squadron Assignment",
+                          description="Select squadrons for this qualification by number:",
+                          color=0x00ff00)
+    for index, squadron_id in enumerate(squadrons, start=1):
+        embed.add_field(name=f"{index}.", value=squadron_id, inline=False)
+    await ctx.send(embed=embed)
+
+    def check(m):
+        return m.author == ctx.author and m.channel == ctx.channel
+
     try:
-        add_qualification_to_database(DB_PATH, qualification_name, qualification_description, qualification_duration_days)
-        await ctx.send(f"Qualification '{qualification_name}' created successfully.")
+        response = await bot.wait_for('message', check=check, timeout=60.0)
+        selected_indices = [int(num.strip()) for num in response.content.split(',')]
+        selected_squadrons = [squadrons[idx - 1] for idx in selected_indices if 1 <= idx <= len(squadrons)]
+
+        qualification_id = add_qualification_to_database(DB_PATH, qualification_name, qualification_description, qualification_duration_days)
+        for squadron_id in selected_squadrons:
+            associate_qualification_with_squadron(DB_PATH, qualification_id, squadron_id)
+
+        await ctx.send(f"Qualification '{qualification_name}' created successfully and assigned to selected squadrons.")
+
+    except ValueError:
+        await ctx.send("Invalid selection. Please enter valid numbers.")
+    except asyncio.TimeoutError:
+        await ctx.send("You did not respond in time.")
     except Exception as e:
-        await ctx.send(f"Failed to create qualification: {e}")
+        await ctx.send(f"An error occurred: {e}")
+
+@bot.command(name='edit_qualification')
+@is_server_admin()
+async def edit_qualification(ctx):
+    """
+    Edits an existing qualification's details, including name, description, duration, 
+    and associated squadrons.
+    
+    Usage: !edit_qualification
+    """
+    await ctx.send("Enter the qualification ID or name to edit:")
+    qualification_identifier = await get_response(ctx)
+
+    # Fetch the qualification details by ID or name
+    qualification = get_qualification_by_identifier(DB_PATH, qualification_identifier)
+    if not qualification:
+        await ctx.send(f"No qualification found with ID or name '{qualification_identifier}'.")
+        return
+
+    qualification_id, current_name, current_description, current_duration = qualification
+
+    # Display current qualification details
+    await ctx.send(f"Editing qualification:\n"
+                   f"Name: {current_name}\n"
+                   f"Description: {current_description or 'None'}\n"
+                   f"Duration: {current_duration or 'None'} days\n")
+
+    # Prompt user for new details
+    await ctx.send("Enter new name (or leave blank to keep current):")
+    new_name = await get_response(ctx) or current_name
+
+    await ctx.send("Enter new description (or leave blank to keep current):")
+    new_description = await get_response(ctx) or current_description
+
+    await ctx.send("Enter new duration in days (or leave blank to keep current):")
+    new_duration_str = await get_response(ctx)
+    new_duration = int(new_duration_str) if new_duration_str.isdigit() else current_duration
+
+    # Fetch current associated squadrons
+    associated_squadrons = get_squadrons_for_qualification(DB_PATH, qualification_id)
+    associated_squadron_ids = [squadron[0] for squadron in associated_squadrons]
+
+    # Display current squadron associations
+    await ctx.send("Current squadrons associated with this qualification:")
+    await ctx.send(", ".join(associated_squadron_ids) if associated_squadrons else "None")
+
+    # Fetch all squadrons for re-association
+    squadrons = get_squadron_ids(DB_PATH)
+    if not squadrons:
+        await ctx.send("No squadrons available.")
+        return
+
+    embed = discord.Embed(title="Edit Squadron Associations",
+                          description="Select new squadrons for this qualification by number (comma-separated):",
+                          color=0x00ff00)
+    for index, squadron_id in enumerate(squadrons, start=1):
+        embed.add_field(name=f"{index}.", value=squadron_id, inline=False)
+    await ctx.send(embed=embed)
+
+    def check(m):
+        return m.author == ctx.author and m.channel == ctx.channel
+
+    try:
+        response = await bot.wait_for('message', check=check, timeout=60.0)
+        selected_indices = [int(num.strip()) for num in response.content.split(',')]
+        new_squadrons = [squadrons[idx - 1] for idx in selected_indices if 1 <= idx <= len(squadrons)]
+
+        # Update qualification in the database
+        update_qualification_in_database(DB_PATH, qualification_id, new_name, new_description, new_duration)
+        update_qualification_squadron_associations(DB_PATH, qualification_id, new_squadrons)
+
+        await ctx.send(f"Qualification '{new_name}' updated successfully with new associations.")
+
+    except ValueError:
+        await ctx.send("Invalid selection. Please enter valid numbers.")
+    except asyncio.TimeoutError:
+        await ctx.send("You did not respond in time.")
+    except Exception as e:
+        await ctx.send(f"An error occurred: {e}")
 
 @bot.command(name='give_award')
 @is_commanding_officer()
