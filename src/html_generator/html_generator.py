@@ -502,6 +502,10 @@ def generate_qualification_html(db_path, output_filename):
                 background-color: green;
                 color: white; /* White text for better contrast on dark background */
             }}
+            
+            .date-cell {{
+                font-size: 8px; /* Reduced font size for dates */
+            }}
         </style>
         <link rel='stylesheet' type='text/css' href='styles.css'>
     </head>
@@ -519,7 +523,7 @@ def generate_qualification_html(db_path, output_filename):
         # Identify applicable qualifications for the squadron
         cursor.execute("""
             SELECT DISTINCT q.qualification_id, q.qualification_name
-            FROM Squadron_Qualifications sq
+            FROM SquadronQualifications sq
             JOIN Qualifications q ON sq.qualification_id = q.qualification_id
             WHERE sq.squadron_id = ?
             ORDER BY q.qualification_id ASC
@@ -536,7 +540,7 @@ def generate_qualification_html(db_path, output_filename):
 
         # Fetch pilots for each squadron
         cursor.execute("""
-            SELECT p.pilot_id, p.pilot_name FROM Squadron_Pilots sp
+            SELECT p.pilot_id, p.pilot_name FROM SquadronPilots sp
             JOIN Pilots p ON sp.pilot_id = p.pilot_id
             WHERE sp.squadron_id = ?
         """, (squadron[0],))
@@ -547,7 +551,7 @@ def generate_qualification_html(db_path, output_filename):
             html_content += f"<tr><td>{pilot[1]}</td>"
             for qual in qualifications:
                 cursor.execute("""
-                    SELECT pq.date_expires FROM Pilot_Qualifications pq
+                    SELECT pq.date_expires FROM PilotQualifications pq
                     WHERE pq.pilot_id = ? AND pq.qualification_id = ?
                 """, (pilot[0], qual[0]))
                 expiry_epoch = cursor.fetchone()
@@ -565,7 +569,7 @@ def generate_qualification_html(db_path, output_filename):
                         cell_class = 'valid'
 
                     expiry_date_str = expiry_date.strftime('%d %b %y')
-                    html_content += f"<td class='{cell_class}'>{expiry_date_str}</td>"
+                    html_content += f"<td class='{cell_class} date-cell'>{expiry_date_str}</td>"
                 else:
                     html_content += "<td></td>"
             html_content += "</tr>"
