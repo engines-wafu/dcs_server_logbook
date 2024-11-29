@@ -760,19 +760,23 @@ async def update_logbook(ctx):
     """
     Updates the logbook with the latest data.
 
-    This command triggers an update process that refreshes the logbook with the most current information. It's typically used to ensure that the logbook reflects recent changes or additions.
-
-    Usage: !update_logbook
-
-    Example:
-    User: !update_logbook
-    Bot: Updating logbook, please wait...
-    Bot: Logbook updated successfully.
+    This command triggers an update process that refreshes the logbook with the most current information.
+    It runs a batch file on the server and then updates the logbook.
     """
     try:
         await ctx.send("Updating logbook, please wait...")
-        update_logbook_report()  # Call the main function from main.py
-        await ctx.send("Logbook updated successfully.")
+
+        # Run the batch file
+        batch_file_path = r"C:\dcs_server_logbook\run_logbook_parser.bat"
+        result = subprocess.run(batch_file_path, capture_output=True, text=True, shell=True)
+
+        # Check if the batch file ran successfully
+        if result.returncode == 0:
+            await ctx.send("Logbook updated successfully!")
+        else:
+            await ctx.send(f"Batch file execution failed with return code {result.returncode}.")
+            await ctx.send(f"Error Output:\n{result.stderr}")
+
     except Exception as e:
         await ctx.send(f"An error occurred while updating the logbook: {e}")
 
