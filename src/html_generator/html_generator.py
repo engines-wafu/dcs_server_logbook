@@ -523,7 +523,7 @@ def generate_qualification_html(db_path, output_filename):
         # Identify applicable qualifications for the squadron
         cursor.execute("""
             SELECT DISTINCT q.qualification_id, q.qualification_name
-            FROM SquadronQualifications sq
+            FROM Squadron_Qualifications sq
             JOIN Qualifications q ON sq.qualification_id = q.qualification_id
             WHERE sq.squadron_id = ?
             ORDER BY q.qualification_id ASC
