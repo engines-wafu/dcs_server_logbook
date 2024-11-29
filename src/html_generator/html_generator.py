@@ -525,7 +525,6 @@ def generate_qualification_html(db_path, output_filename):
             ORDER BY q.qualification_id ASC
         """, (squadron[0],))
         qualifications = cursor.fetchall()
-        qualifications = cursor.fetchall()
 
         # Skip squadrons with no qualifications
         if not qualifications:
