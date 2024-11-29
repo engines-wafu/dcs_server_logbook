@@ -551,7 +551,7 @@ def generate_qualification_html(db_path, output_filename):
             html_content += f"<tr><td>{pilot[1]}</td>"
             for qual in qualifications:
                 cursor.execute("""
-                    SELECT pq.date_expires FROM PilotQualifications pq
+                    SELECT pq.date_expires FROM Pilot_Qualifications pq
                     WHERE pq.pilot_id = ? AND pq.qualification_id = ?
                 """, (pilot[0], qual[0]))
                 expiry_epoch = cursor.fetchone()
