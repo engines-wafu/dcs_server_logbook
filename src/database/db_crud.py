@@ -389,6 +389,37 @@ def add_award_to_database(db_path, award_name, award_description):
     finally:
         conn.close()
 
+def update_qualification_squadron_associations(db_path, qualification_id, new_squadrons):
+    """
+    Updates the squadrons associated with a qualification.
+
+    Args:
+        db_path (str): Path to the SQLite database.
+        qualification_id (int): ID of the qualification to update.
+        new_squadrons (list): List of squadron IDs to associate with the qualification.
+
+    Returns:
+        None
+    """
+    conn = sqlite3.connect(db_path)
+    cursor = conn.cursor()
+
+    # Remove existing associations
+    cursor.execute("""
+        DELETE FROM Squadron_Qualifications
+        WHERE qualification_id = ?
+    """, (qualification_id,))
+
+    # Add new associations
+    for squadron_id in new_squadrons:
+        cursor.execute("""
+            INSERT INTO Squadron_Qualifications (qualification_id, squadron_id)
+            VALUES (?, ?)
+        """, (qualification_id, squadron_id))
+
+    conn.commit()
+    conn.close()
+
 def add_qualification_to_database(db_path, qualification_name, qualification_description, qualification_duration_days):
     """
     Inserts a new qualification into the Qualifications table.
