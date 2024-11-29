@@ -479,7 +479,7 @@ def generate_qualification_html(db_path, output_filename):
             }}
     
             .fixed-width-table th {{
-                font-size: 10px;
+                font-size: 8px;
             }}
     
             .fixed-width-table th, .fixed-width-table td {{
