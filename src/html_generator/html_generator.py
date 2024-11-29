@@ -540,7 +540,7 @@ def generate_qualification_html(db_path, output_filename):
 
         # Fetch pilots for each squadron
         cursor.execute("""
-            SELECT p.pilot_id, p.pilot_name FROM SquadronPilots sp
+            SELECT p.pilot_id, p.pilot_name FROM Squadron_Pilots sp
             JOIN Pilots p ON sp.pilot_id = p.pilot_id
             WHERE sp.squadron_id = ?
         """, (squadron[0],))
