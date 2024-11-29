@@ -830,6 +830,7 @@ async def create_qualification(ctx):
     await ctx.send("Enter qualification duration in days (optional, enter a number or skip):")
     qualification_duration_str = await get_response(ctx)
     qualification_duration_days = int(qualification_duration_str) if qualification_duration_str.isdigit() else None
+    qualification_duration_seconds = qualification_duration_days * 86400 if qualification_duration_days else None
 
     # Fetch squadrons for association
     squadrons = get_squadron_ids(DB_PATH)
@@ -881,17 +882,14 @@ async def edit_qualification(ctx):
         await ctx.send(f"No qualification found with ID or name '{qualification_identifier}'.")
         return
 
-    qualification_id, current_name, current_description, current_duration = qualification
-
-    # Handle None for `current_duration`
-    if current_duration is None:
-        current_duration = 0  # Set to default duration (or another appropriate value)
+    qualification_id, current_name, current_description, current_duration_seconds = qualification
+    current_duration_days = current_duration_seconds // 86400 if current_duration_seconds else 0
 
     # Display current qualification details
     await ctx.send(f"Editing qualification:\n"
                    f"Name: {current_name}\n"
                    f"Description: {current_description or 'None'}\n"
-                   f"Duration: {current_duration} days\n")
+                   f"Duration: {current_duration_days} days\n")
 
     # Prompt user for new details
     await ctx.send("Enter new name (or leave blank to keep current):")
@@ -902,7 +900,8 @@ async def edit_qualification(ctx):
 
     await ctx.send("Enter new duration in days (or leave blank to keep current):")
     new_duration_str = await get_response(ctx)
-    new_duration = int(new_duration_str) if new_duration_str.isdigit() else current_duration
+    new_duration_days = int(new_duration_str) if new_duration_str.isdigit() else current_duration_days
+    new_duration_seconds = new_duration_days * 86400
 
     # Fetch current associated squadrons
     associated_squadrons = get_squadrons_for_qualification(DB_PATH, qualification_id)
@@ -934,7 +933,7 @@ async def edit_qualification(ctx):
         new_squadrons = [squadrons[idx - 1] for idx in selected_indices if 1 <= idx <= len(squadrons)]
 
         # Update qualification in the database
-        update_qualification_in_database(DB_PATH, qualification_id, new_name, new_description, new_duration)
+        update_qualification_in_database(DB_PATH, qualification_id, new_name, new_description, new_duration_seconds)
         update_qualification_squadron_associations(DB_PATH, qualification_id, new_squadrons)
 
         await ctx.send(f"Qualification '{new_name}' updated successfully with new associations.")
@@ -945,7 +944,7 @@ async def edit_qualification(ctx):
         await ctx.send("You did not respond in time.")
     except Exception as e:
         await ctx.send(f"An error occurred: {e}")
-
+        
 @bot.command(name='give_award')
 @is_commanding_officer()
 async def give_award(ctx):
