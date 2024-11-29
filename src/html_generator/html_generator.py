@@ -504,7 +504,7 @@ def generate_qualification_html(db_path, output_filename):
             }}
             
             .date-cell {{
-                font-size: 8px; /* Reduced font size for dates */
+                font-size: 10px; /* Reduced font size for dates */
             }}
         </style>
         <link rel='stylesheet' type='text/css' href='styles.css'>
