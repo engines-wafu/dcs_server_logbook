@@ -767,7 +767,7 @@ async def update_logbook(ctx):
         await ctx.send("Updating logbook, please wait...")
 
         # Run the batch file
-        batch_file_path = r"C:\dcs_server_logbook\run_logbook_parser.bat"
+        batch_file_path = r"C:\dcs_server_logbook\RunLogbookParser.bat"
         result = subprocess.run(batch_file_path, capture_output=True, text=True, shell=True)
 
         # Check if the batch file ran successfully
